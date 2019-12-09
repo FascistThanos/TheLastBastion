@@ -1,0 +1,72 @@
+division_template = {
+	name = "Infanterie-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Kavalleriedivision"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Rüstung Division"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+}
+units ={
+	division = {
+		name = "26th Wurttemburgian Royal Division"
+		location = 3530
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "27th Wurttemburgian Royal Division"
+		location = 3530
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "39th Wurttemburgian Royal Division"
+		location = 3692
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "35th Wurttemburgian Reserve Division"
+		location = 9517
+		division_template = "Rüstung Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+}

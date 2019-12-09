@@ -1,0 +1,35 @@
+add_namespace = tlb
+
+country_event = {
+  id = tlb.1
+  title = tlb.1.t
+  desc = tlb.1.d
+  picture = GFX_report_event_hitler_handshake
+
+  is_triggered_only = yes
+
+  option = {
+    name = tlb.1.a
+  }
+}
+country_event = {
+  id = tlb.2
+  title = tlb.2.t
+  desc = tlb.2.d
+  picture = GFX_report_event_election_vote
+
+  is_triggered_only = yes
+
+  option = {
+    name = tlb.2.a
+  }
+  option = {
+    name = tlb.2.b
+    hidden_effect = {
+      create_wargoal = {
+        type = puppet_wargoal_focus
+        target = MEX
+      }
+    }
+  }
+}

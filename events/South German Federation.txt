@@ -1,0 +1,85 @@
+﻿add_namespace = southgermany
+
+#Proposal - BAW and BAV get the event
+
+country_event = {
+  id = southgermany.1
+  title = southgermany.1.t
+  desc = southgermany.1.d
+
+  fire_only_once = yes
+
+  trigger = {
+    GER = {
+      OR = {
+        has_war_with = BAV
+        has_war_with = BAW
+      }
+    }
+    AND = {
+      OR = {
+        original_tag = BAW
+        original_tag = BAV
+      }
+    }
+  }
+
+  option = {
+    name = southgermany.1.a
+    BAW = {
+      if = {
+        limit = {
+          is_ai = yes
+        }
+        country_event = southgermany.2
+      }
+    }
+    BAV = {
+      if = {
+        limit = {
+          is_ai = yes
+        }
+        country_event = southgermany.2
+      }
+    }
+  }
+  option = {
+    name = southgermany.1.b
+  }
+}
+
+country_event = {
+  id = southgermany.2
+  title = southgermany.2.t
+  desc = southgermany.2.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = southgermany.2.a
+    FROM = {
+      annex_country = {
+        target = ROOT
+        transfer_troops = yes
+      }
+      set_cosmetic_tag = SGF
+    }
+  }
+  option = {
+    name = southgermany.2.b
+    FROM = {
+      country_event = southgermany.3
+    }
+  }
+}
+country_event = {
+  id = southgermany.3
+  title = southgermany.3.t
+  desc = southgermany.3.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = southgermany.3.a
+  }
+}

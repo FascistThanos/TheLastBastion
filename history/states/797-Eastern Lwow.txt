@@ -1,0 +1,23 @@
+state={
+	id=797
+	name="STATE_797"
+	manpower = 1023648
+	
+	state_category = city
+	
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			air_base = 5
+		}
+		add_core_of = POL
+		add_core_of = UKR
+	}
+	provinces={
+		438 491 3483 3562 9454 11427 
+	}
+	state_category = town
+	buildings_max_level_factor=1.000
+}

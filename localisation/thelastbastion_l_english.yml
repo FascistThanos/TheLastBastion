@@ -1,0 +1,55 @@
+﻿l_english:
+#National Ideas
+
+
+
+#Custom Tooltips
+ mexico_accepts:0 "Mexico has accepted the offer"
+
+
+
+
+
+
+#Events
+ tlb.1.t:0 "Mexico has Accepted Our Offer"
+ tlb.1.d:0 "The Mexican government has put out a public statement of approval of our work. In echange for economic help, we have received official approval of our influencers to enter their country. Hopefully, with this development, there will be call for govenrmental reform and democracy will be implemented. For now, we just have to wait and see how this unfolds."
+ tlb.1.a:0 "This is cause for celebration!"
+ tlb.2.t:0 "Mexico Declines our Offer"
+ tlb.2.d:0 "We have recieved a formal response from the Mexican government. They've refused to open their borders to our influencers in exchange for economic aid. Such poor administration should be removed and replaced with some more... complacent."
+ tlb.2.a:0 "We shouldn't press the matter."
+ tlb.2.b:0 "Some greater action must be taken."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Focuses
+ TLB_The_Last_Bastion:0 "The Last Bastion"
+ TLB_The_Last_Bastion_desc:0 "The many powers of this world have fallen. Our only hope is ourselves. The world has betrayed us, but that does not mean we have given up on them. We are The Last Bastion."
+ TLB_canadian_question:0 "The Canadian Question"
+ TLB_canadian_question_desc:0 "Our neighbor in the north has fallen to communism. We need to choke the communism out of the Americas if we want to survive. We can support Canada's independence, or we can leave them to spread the influence of their overlord."
+ TLB_Intervensionism_america:0 "Americas First"
+ TLB_Intervensionism_america_desc:0 "While we have one ally in Asia, Japan, they must wait for our foreign aid. The Americas are our first priority. It will allow us to allocate more to Asia, and when the time comes, we'll put forth the most help we can to secure democracy anywhere we can."
+ TLB_Intervensionism_asia:0 "Intervensionism in Asia"
+ TLB_Intervensionism_asia_desc:0 "While the Americas are the closest to us, we need to influence Asia. Asia is the only place in the old world that hasn't fallen. The only nation that has a strong prescence in Asia is Japan, and they should be willing to cooperate. China's civil war is a crucial point in the sucess of our Asian operations, if we fail, we may not succeed."
+ TLB_japanese_proposition:0 "Proposition to Japan"
+ TLB_japanese_proposition_desc:0 "Japan is a nation that has great potential in Asia. With their cooperation, we could stage a great intervention in Asia. From there, we could help support democratic upheval throughout Asia and Asia minor. The high population might be difficult to persuade, but with enough effort, we may just be able to do it well."
+ TLB_chinese_intervention:0 "Chinese Intervention"
+ TLB_chinese_intervention_desc:0 "China has always been fractured, making this time unsuprising. Following much of Europe, they have succumb to the revolution. While underdeveloped, China could easily be exploited by the communists for their natural recources and manpower. We can stop that from happening by offering support in return for safe desinations for diplomats and influencers."
+ TLB_secure_mexico:0 "Secure Mexico"
+ TLB_secure_mexico_desc:0 "Our Southern border has a country that will, undoubtably, be a battle ground for the ideologies. While non-aligned, they have the potential to fall to communism. If we can secure Mexico and Canada, we should be able to secure the rest of America fairly easily."
+ TLB_secure_CA:0 "Secure Central America"
+ TLB_secure_CA_desc:0 "While Mexico is important, we should focus on Central America. The area has many small countries, but if we offer them a union, it would be easier for them to conscript and build industry."

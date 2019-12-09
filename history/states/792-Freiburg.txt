@@ -1,0 +1,26 @@
+state={
+	id=792
+	name="STATE_792"
+	resources={
+		steel = 15.00
+	}
+
+	history={
+		owner = BAW
+		victory_points = {
+			3692 25 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = GER
+		add_core_of = BAW
+	}
+	provinces={
+		694 3679 3692 6542 6712 11640 
+	}
+	state_category = town
+	manpower=598623
+	buildings_max_level_factor=1.000
+}

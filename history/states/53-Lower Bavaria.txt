@@ -1,0 +1,38 @@
+state={
+	id=53
+	name="STATE_793"
+	resources={
+		chromium=2
+	}
+	
+	state_category = city
+
+	history={
+		owner = BAV
+		victory_points = {
+			9515 15
+		}
+		victory_points = {
+			532 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 6
+		}
+		add_core_of = GER
+		add_core_of = BAV
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 10
+			}
+		}
+	}
+	provinces={
+		532 6725 9515 9681 
+	}
+	manpower=2315486
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,270 @@
+focus_tree = {
+	id = United_States
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			tag = USA
+		}
+	}
+	default = no
+	focus = {
+		id = TLB_The_Last_Bastion
+		icon = GFX_Generic_Blue_Democracy
+		cost = 3.00
+		x = 15
+		y = 0
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TLB_canadian_question
+		icon = GFX_Generic_Canada
+		cost = 10.00
+		prerequisite = {
+			focus = TLB_The_Last_Bastion
+		}
+		x = 15
+		y = 1
+		completion_reward = {
+			CAN = {
+				country_event = can.1
+			}
+		}
+	}
+	focus = {
+		id = TLB_Intervensionism_asia
+		icon = GFX_focus_usa_focus_on_asia
+		prerequisite = {
+			focus = TLB_canadian_question
+		}
+		x = 20
+		y = 2
+
+		cost = 10
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TLB_japanese_proposition
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = {
+			focus = TLB_Intervensionism_asia
+		}
+		x = 16
+		y = 3
+
+		cost = 10
+
+		completion_reward = {
+			JAP = {
+				country_event = jap.1
+			}
+		}
+	}
+	focus = {
+		id = TLB_chinese_intervention
+		icon = GFX_Focus_TLB_secure_china
+		prerequisite = {
+			focus = TLB_Intervensionism_asia
+		}
+		x = 24
+		y = 3
+
+		cost = 10
+
+		completion_reward = {
+			CHI = {
+				country_event = chi.1
+			}
+			SOV = {
+				country_event = sov.1
+			}
+		}
+	}
+	focus = {
+		id = TLB_Intervensionism_america
+		icon = GFX_Generic_Manifest_Destiny
+		prerequisite = {
+			focus = TLB_canadian_question
+		}
+
+		cost = 10.00
+
+		x = 10
+		y = 2
+
+		completion_reward = {
+			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = TLB_secure_mexico
+		icon = GFX_Focus_TLB_Secure_Mexico
+		cost = 10.00
+		prerequisite = {
+			focus = TLB_Intervensionism_america
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			MEX = {
+				country_event = mex.1
+			}
+		}
+	}
+	focus = {
+		id = TLB_aid_mexico1
+		icon = GFX_Generic_Industry02
+		cost = 10
+		available = {
+			OR = {
+				MEX = {
+					is_puppet_of = USA
+				}
+				has_country_flag = mexico_accepts
+			}
+		}
+		prerequisite = {
+			focus = TLB_secure_mexico
+		}
+
+		x = 5
+		y = 4
+
+		completion_reward = {
+			277 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_DCMexicoCity_railway
+		icon = GFX_Generic_Railroads
+		cost = 10
+		available = {
+			OR = {
+				MEX = {
+					is_puppet_of = USA
+				}
+				has_country_flag = mexico_accepts
+			}
+		}
+		prerequisite = {
+			focus = TLB_secure_mexico
+		}
+
+		x = 9
+		y = 4
+
+		completion_reward = {
+			277 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			479 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			480 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			375 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			371 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			370 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			367 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			365 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			364 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			363 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			362 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			362 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_secure_CA
+		text = TLB_secure_CA
+		icon = GFX_Generic_Central_America
+		cost = 10.00
+		prerequisite = {
+			focus = TLB_Intervensionism_america
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+}

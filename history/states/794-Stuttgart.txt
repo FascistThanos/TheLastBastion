@@ -1,0 +1,27 @@
+state={
+	id=794
+	name="STATE_794"
+	resources={
+		chromium = 5.00
+	}
+
+	history={
+		owner = BAW
+		victory_points = {
+			9517 50 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 3
+		}
+		add_core_of = GER
+		add_core_of = BAW
+	}
+	provinces={
+		6555 6581 9517 9545 
+	}
+	manpower=724659
+	state_category = large_city
+	buildings_max_level_factor=1.000
+}

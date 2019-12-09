@@ -1,0 +1,33 @@
+add_namespace = mex
+
+country_event = {
+	id = mex.1
+	title = mex.1.t
+	desc = mex.1.d
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+
+	option = { #Mexico Accepts
+		name = mex.1.a
+		ai_chance = {
+			base = 90
+		}
+		hidden_effect = {
+			set_country_flag = mexico_accepts
+			USA = {
+				country_event = tlb.1
+			}
+		}
+	}
+	option = { #Mexico Denies
+		name = mex.1.b
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			USA = {
+				country_event = tlb.2
+			}
+		}
+	}
+}

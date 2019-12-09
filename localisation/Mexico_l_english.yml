@@ -1,0 +1,14 @@
+﻿l_english:
+  #Events
+  mex.1.t:0 "A Proposition From the United States of America"
+  mex.1.d:0 "We've recently recieved a diplomatic envoy from the United States of America. They've given us a chance to let their influencers into our country in return for economic aid. The proposition could potentially be dangerous for us with the communist powers in Europe. After much of the world has succumbed to the revoliution, we may be next. We should give capitalism a shot and keep democracy prevalent in America, if not the world."
+  mex.1.a:0 "It's an offer we can't refuse."
+  mex.1.b:0 "We would rather remain neutral."
+
+
+
+
+
+
+  #Country Flags/Tooltips
+  mexico_accepts:0 "Mexico Has Accepted the Offer"
