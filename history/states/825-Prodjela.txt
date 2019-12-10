@@ -13,6 +13,9 @@ state = {
 			3924 = {
 				naval_base = 3
 			}
+			6889 = {
+				naval_base = 1
+			}
 			infrastructure = 4
 			industrial_complex = 2
 		}
