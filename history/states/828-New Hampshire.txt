@@ -1,0 +1,23 @@
+state = {
+	id = 828
+	name = "New Hampshire"
+	manpower = 1680942
+	state_category = town
+	resources={
+		steel=2
+	}
+
+	history = {
+		owner = USA
+		add_core_of = USA
+
+		buildings = {
+			infrastructure = 4
+		}
+	}
+
+	provinces = {
+		3712 733 10481 3715
+	}
+
+}

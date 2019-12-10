@@ -1,0 +1,18 @@
+state = {
+  id = 830
+  name = "Tropolje"
+  state_category = rural
+  manpower = 143500
+
+  history = {
+    owner = BOS
+    add_core_of = BOS
+    buildings = {
+      infrastructure = 3
+    }
+  }
+
+  provinces = {
+    3985 6942 6957 6983 9922 11872
+  }
+}

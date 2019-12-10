@@ -1,0 +1,26 @@
+state = {
+	id = 829
+	name = "Maine"
+	manpower = 840471
+	state_category = rural
+	resources={
+		steel=3
+	}
+
+	history = {
+		owner = USA
+		add_core_of = USA
+
+		buildings = {
+			infrastructure = 3
+		}
+
+		victory_points = {
+			12459 1
+		}
+	}
+
+	provinces = {
+		3732 6719 7462 12202 10318 12221 10247 4287 1282 1338 1619 12459
+	}
+}

@@ -1,0 +1,19 @@
+state = {
+  id = 831
+  name = "Soli"
+  state_category = town
+  manpower = 358200
+
+  history = {
+    owner = BOS
+    add_core_of = BOS
+    buildings = {
+      infrastructure = 5
+      air_base = 2
+    }
+  }
+
+  provinces = {
+    606 6799 11574 11741
+  }
+}

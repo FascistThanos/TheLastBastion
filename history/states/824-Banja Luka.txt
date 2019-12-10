@@ -1,7 +1,7 @@
 state = {
 	id = 824
-	name = "Banja Luka"
-	manpower = 1228700‬
+	name = "Krajina"
+	manpower = 453850
 	state_category = rural
 
 	resources = {
@@ -21,6 +21,6 @@ state = {
 	}
 
 	provinces = {
-		3985 6614 6619 6957 6983 9586 9588 9591 9922 11572
+		6614 6619 9586 9588 9591 11572
 	}
 }

@@ -1,0 +1,18 @@
+state = {
+  id = 836
+  name = "Sumadija"
+  state_category = town
+  manpower = 459300
+
+  history = {
+    owner = SER
+    add_core_of = SER
+    buildings = {
+      infrastructure = 4
+    }
+  }
+
+  provinces = {
+    797 3609 3922 3939 3956 3984 6940 6953 6970 9849 9874 9890
+  }
+}

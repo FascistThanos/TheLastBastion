@@ -1,0 +1,26 @@
+state = {
+  id = 834
+  name = "Pelagonia"
+  manpower = 463600
+  resources={
+		chromium=50
+		aluminium=11
+	}
+  state_category = town
+
+  provinces = {
+    833 867 974 3865 3882 11856
+  }
+
+  history = {
+    owner = MAC
+    add_core_of = MAC
+		victory_points = {
+			3882 5
+		}
+    buildings = {
+      infrastructure = 5
+      industrial_complex = 1
+    }
+  }
+}
