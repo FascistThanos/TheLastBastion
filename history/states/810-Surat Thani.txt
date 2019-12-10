@@ -1,0 +1,24 @@
+state={
+	id=810
+	name="Surat Thani"
+	manpower = 1386500
+
+	state_category = town
+
+	resources={
+		rubber=12 # was: 70
+	}
+
+
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SIA
+	}
+
+	provinces={
+		1281 1308 1366 1394 4312 4388 10158 12201 12230
+	}
+}

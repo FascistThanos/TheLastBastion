@@ -1,0 +1,28 @@
+state = {
+  id = 805
+  name = "Chiang Mai"
+  manpower = 223400
+  state_category = town
+
+  resources = {
+    rubber = 2
+  }
+
+  history = {
+    owner = SIA
+    add_core_of = SIA
+    add_claim_by = RAJ
+    buildings = {
+      infrastructure = 4
+      industrial_complex = 2
+		}
+
+		victory_points = {
+			1488 1
+    }
+  }
+
+  provinces = {
+    1253 1488 7312 7559 7675
+  }
+}

@@ -1,0 +1,26 @@
+state={
+	id=821
+	name="West Camboida"
+	history = {
+		add_core_of = CAM
+		add_core_of = SIA
+		owner = SIA
+		add_claim_by = FRA
+		victory_points = {
+			7376 1
+		}
+		buildings = {
+			infrastructure = 2
+			4359 = {
+				naval_base = 3
+			}
+
+		}
+	}
+	provinces={
+		10134 1353 10177 4251 4359 12191 7404
+	}
+	manpower=989679
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

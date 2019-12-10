@@ -1,7 +1,7 @@
 state={
-	id=670
-	name="Bolikhamxai"
-	manpower = 238400
+	id=814
+	name="Salavan"
+	manpower = 317250
 
 	state_category = pastoral
 
@@ -10,11 +10,12 @@ state={
 		add_core_of = LAO
 		add_claim_by = FRA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 		}
+
 	}
 
 	provinces={
-		1362 1390 1520 4260 10195 10326 12332  
+	 1374 1563 1577 1592 4539 4554 7426 10238 10453 12210
 	}
 }

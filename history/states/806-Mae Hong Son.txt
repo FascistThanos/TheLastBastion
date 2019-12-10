@@ -1,0 +1,23 @@
+state = {
+  id = 806
+  name = "Mae Hong Son"
+  manpower = 58900
+  state_category = rural
+
+  resources = {
+    rubber = 1
+  }
+
+  history = {
+    owner = SIA
+    add_core_of = SIA
+    buildings = {
+      infrastructure = 4
+      arms_factory = 1
+		}
+  }
+
+  provinces = {
+    1990 4496 7353 7492 7572 7531 8045 10371
+  }
+}

@@ -1,0 +1,19 @@
+state = {
+  id = 818
+  name = "Dak Lak"
+  manpower = 139400
+  state_category = rural
+
+  history = {
+    owner = VIN
+    add_core_of = VIN
+    add_claim_by = FRA
+    buildings = {
+      infrastructure = 2
+    }
+  }
+
+  provinces = {
+    1300 1328 1400 1605 4334 4363 4405 7380 10162 12109
+  }
+}

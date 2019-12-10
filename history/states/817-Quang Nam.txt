@@ -1,0 +1,18 @@
+state = {
+  id = 817
+  name = "Quang Nam"
+  state_category = rural
+  manpower = 118400
+  history = {
+    owner = VIN
+    add_core_of = VIN
+    add_claim_by = FRA
+    buildings = {
+      infrastructure = 3
+    }
+  }
+
+  provinces = {
+    1248 4255 7229 10137 10180 10309
+  }
+}

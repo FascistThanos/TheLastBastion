@@ -1,20 +1,22 @@
 state={
-	id=670
-	name="Bolikhamxai"
-	manpower = 238400
+	id=812
+	name="Xaignabouli"
+	manpower = 59200
 
-	state_category = pastoral
+	state_category = rural
 
 	history={
 		owner = LAO
 		add_core_of = LAO
+    add_core_of = SIA
 		add_claim_by = FRA
 		buildings = {
 			infrastructure = 2
 		}
+
 	}
 
 	provinces={
-		1362 1390 1520 4260 10195 10326 12332  
+		10330 10356 10456
 	}
 }

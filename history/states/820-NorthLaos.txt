@@ -1,0 +1,26 @@
+
+state={
+	id=820
+	name="Viangchan"
+	manpower = 834620
+
+	state_category = town
+
+	history={
+		owner = LAO
+		add_core_of = LAO
+		add_claim_by = FRA
+		victory_points = {
+			1464 5
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		1464 1507 4339 7075 7218 7356 9961 10496
+	}
+}

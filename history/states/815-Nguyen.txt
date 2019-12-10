@@ -1,0 +1,23 @@
+state = {
+  id = 815
+  name = "Nguyen"
+  resources = {
+    rubber=11
+  }
+
+  history = {
+    add_core_of = VIN
+    owner = VIN
+    add_claim_by = FRA
+    buildings = {
+      infrastructure = 5
+      industrial_complex = 1
+    }
+  }
+
+  state_category = pastoral
+  manpower = 328900
+  provinces = {
+    1073 1157 4119 7015 7093 7518 9948 12008 12048 12065
+  }
+}

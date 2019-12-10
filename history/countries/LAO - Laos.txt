@@ -1,4 +1,4 @@
-﻿capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
+﻿capital = 820
 
 oob = "LAO_1936"
 
@@ -87,7 +87,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
-		
+
 	}
 }
 
@@ -98,18 +98,18 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = despotism
 	traits = {
-		
+
 	}
 }
 
 create_country_leader = {
-	name = "Kou Voragong" 
+	name = "Kou Voragong"
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
-		
+
 	}
 }
 

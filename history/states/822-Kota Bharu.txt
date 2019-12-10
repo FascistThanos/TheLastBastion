@@ -1,0 +1,33 @@
+state = {
+  id = 822
+  name = "Kota Bharu"
+  manpower = 468300
+  state_category = town
+
+  resources={
+  	rubber=183 # was: 848
+    tungsten=124
+  }
+
+  history = {
+    owner = MAL
+    add_core_of = MAL
+    add_claim_by = SIA
+		victory_points = {
+			7329 1
+		}
+
+    buildings = {
+      7329 = {
+        naval_base = 1
+      }
+
+      infrastructure = 4
+      air_base = 5
+    }
+  }
+
+  provinces = {
+    1291 1348 1364 1392 4310 4355 7329 7342 7399 10227 12144 12199 12215
+  }
+}
