@@ -1,0 +1,27 @@
+state = {
+	id = 825
+	name = "Prodjela"
+	manpower = 715850
+	state_category = town
+
+	provinces = {
+		3868 3924 6889 11816
+	}
+
+	history = {
+		buildings = {
+			3924 = {
+				naval_base = 3
+			}
+			infrastructure = 4
+			industrial_complex = 2
+		}
+
+		owner = CRO
+		add_core_of = CRO
+
+		victory_points = {
+			3924 3
+		}
+	}
+}

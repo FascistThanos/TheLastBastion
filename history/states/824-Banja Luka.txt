@@ -1,0 +1,26 @@
+state = {
+	id = 824
+	name = "Banja Luka"
+	manpower = 1228700‬
+	state_category = rural
+
+	resources = {
+		aluminium = 2
+	}
+
+	history = {
+		owner = BOS
+		add_core_of = BOS
+		victory_points = {
+			6983 3
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+	}
+
+	provinces = {
+		3985 6614 6619 6957 6983 9586 9588 9591 9922 11572
+	}
+}
