@@ -1,0 +1,13 @@
+add_namespace = can
+
+country_event = {
+  id = can.1
+  title = can.1.t
+  desc = can.1.d
+
+  is_triggered_only = yes
+
+  option = {
+    add_ideas = US_intervension
+  }
+}
