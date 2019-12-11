@@ -170,16 +170,16 @@ if = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 18
-	fascism = 19
-	communism = 63
+	democratic = 62
+	fascism = 10
+	communism = 28
 }
 
 create_country_leader = {

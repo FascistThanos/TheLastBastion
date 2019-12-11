@@ -7,6 +7,12 @@ focus_tree = {
 			tag = USA
 		}
 	}
+
+	continuous_focus_position = {
+		x = 1
+		y = 1
+	}
+
 	default = no
 	focus = {
 		id = TLB_The_Last_Bastion
@@ -109,7 +115,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TLB_Intervensionism_america
 		}
-		x = 7
+		x = 10
 		y = 3
 		completion_reward = {
 			MEX = {
@@ -133,13 +139,74 @@ focus_tree = {
 			focus = TLB_secure_mexico
 		}
 
-		x = 5
+		x = 8
 		y = 4
 
 		completion_reward = {
 			277 = {
 				add_building_construction = {
 					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_aid_mexico2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = TLB_aid_mexico1
+		}
+
+		x = 6
+		y = 5
+
+		completion_reward = {
+			478 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			485 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			277 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_aid_mexico3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = TLB_aid_mexico1
+		}
+
+		x = 10
+		y = 5
+
+		completion_reward = {
+			277 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -162,7 +229,7 @@ focus_tree = {
 			focus = TLB_secure_mexico
 		}
 
-		x = 9
+		x = 12
 		y = 4
 
 		completion_reward = {
@@ -253,15 +320,61 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = TLB_LAMexicoCityRailroad
+		icon = GFX_Generic_Railroads
+		cost = 10
+		prerequisite = {
+			focus = TLB_DCMexicoCity_railway
+		}
+
+		x = 12
+		y = 5
+
+		completion_reward = {
+			277 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			481 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			483 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			484 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = TLB_secure_CA
 		text = TLB_secure_CA
 		icon = GFX_Generic_Central_America
 		cost = 10.00
-		prerequisite = {
-			focus = TLB_Intervensionism_america
-		}
-		x = 13
-		y = 3
+		x = 15
+		y = 10
 		completion_reward = {
 			add_political_power = 50
 		}
