@@ -11,7 +11,7 @@ if = {
 
 set_research_slots = 3
 set_stability = 0.5
-set_war_support = 0.15
+set_war_support = 0.30
 
 # Starting tech
 set_technology = {
@@ -88,6 +88,10 @@ set_autonomy = {
 	target = LAO
 	autonomous_state = autonomy_integrated_puppet
 }
+set_autonomy = {
+	target = VIN
+	autonomous_state = autonomy_integrated_puppet
+}
 1939.1.1 = {
 
 	add_political_power = 899
@@ -117,9 +121,6 @@ set_autonomy = {
 	complete_national_focus = FRA_algerie_france
 	complete_national_focus = FRA_colonial_industry
 	complete_national_focus = FRA_colonial_military_factories
-
-	give_guarantee = POL
-	ENG = { add_to_faction = FRA }
 
 	oob = "FRA_1939"
 	if = {
@@ -218,24 +219,22 @@ declare_war_on = {
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1932.5.1"
+	last_election = "1933.5.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 69
-	fascism = 1
-	communism = 30
+	democratic = 68
+	fascism = 13
+	communism = 6
+	neutrality = 13
 }
 
 add_ideas = {
-	FRA_victors_of_wwi
 	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line
-	limited_conscription
+	service_by_requirement
+	tot_economic_mobilisation
 }
-
-#give_guarantee = CZE
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
@@ -271,13 +270,13 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Philippe Leclerc"
 	picture = "portrait_france_philippe_leclerc.dds"
 	traits = {  armor_officer trait_reckless career_officer }
 	skill = 3
 	attack_skill = 3
-	defense_skill = 2
+	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 3
 }
@@ -288,9 +287,9 @@ create_corps_commander = {
 	traits = {  trickster trait_cautious career_officer infantry_officer }
 	skill = 3
 	attack_skill = 2
-	defense_skill = 2
+	defense_skill = 3
 	planning_skill = 4
-	logistics_skill = 2
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -298,10 +297,10 @@ create_corps_commander = {
 	picture = "portrait_france_charles_huntziger.dds"
 	traits = { old_guard infantry_officer }
 	skill = 3
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 1
 	planning_skill = 3
-	logistics_skill = 3
+	logistics_skill = 2
 }
 
 

@@ -79,10 +79,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-set_autonomy = {
-	target = VIN
-	autonomous_state = autonomy_integrated_puppet
-}
 1939.1.1 = {
 
 	add_political_power = 899
@@ -220,7 +216,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_protected_by_the_maginot_line
+	FRA_disjointed_government
 }
 
 #give_guarantee = CZE
