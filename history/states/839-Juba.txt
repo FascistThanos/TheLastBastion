@@ -1,0 +1,22 @@
+state = {
+  id = 839
+  name = "Juba"
+  state_category = rural
+  manpower = 432600
+
+  provinces = {
+    2063 8164 10928 11014 12941
+  }
+
+  history = {
+    buildings = {
+      12941 = {
+        naval_base = 2
+      }
+      infrastructure = 3
+    }
+    
+    owner = ITA
+    add_core_of = SOM
+  }
+}
