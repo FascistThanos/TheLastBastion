@@ -8,7 +8,7 @@ GER_mefo_bills_category = {
 		icon = ger_mefo_bills
 
 		available = {
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 			GER_can_delay_mefo_payment = yes
 			has_political_power > 0
 		}
@@ -208,7 +208,7 @@ GER_mefo_bills_category = {
 				}
 				add_political_power = -380
 				add_timed_idea = { idea = GER_mefo_bills_ended days = 420 }
-			}			
+			}
 		}
 
 		ai_will_do = {
@@ -250,7 +250,7 @@ operations = {
 		}
 
 		timeout_effect = {
-			
+
 		}
 
 		ai_will_do = {
@@ -485,7 +485,7 @@ GER_reichskommissariats = {
 						puppet = PREV
 						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 					}
-					
+
 					set_cosmetic_tag = HOL_reichskommissariat
 					create_country_leader = {
 						name = "Arthur Seyss-Inquart"
@@ -681,7 +681,7 @@ GER_reichskommissariats = {
 						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
 					}
 				}
-				
+
 				set_cosmetic_tag = BLR_reichskommissariat
 				create_country_leader = {
 					name = "Hinrich Lohse"
@@ -818,7 +818,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 100
@@ -844,7 +844,7 @@ political_actions = {
 			}
 		}
 	}
-	
+
 	# Agnatic-Cognatic Primogeniture
 	modernize_the_succession_laws = {
 
@@ -853,7 +853,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 150
@@ -923,7 +923,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 50
@@ -946,7 +946,7 @@ political_actions = {
 }
 
 foreign_politics = {
-	
+
 	# Titles Deprivation Act 1917
 	request_restoration_of_british_titles = {
 
@@ -1058,7 +1058,7 @@ GER_military_buildup = {
 			has_completed_focus = GER_plan_z
 		}
 
-		
+
 		visible = {
 			has_completed_focus = GER_plan_z
 		}
@@ -1068,7 +1068,7 @@ GER_military_buildup = {
 			navy_experience = 150
 		}
 
-		
+
 	}
 
 	GER_jaegernotprogramm = {
@@ -1208,7 +1208,7 @@ special_projects = {
 				}
 			}
 		}
-	}	
+	}
 	GER_dismantle_czechoslovakian_forts = {
 
 		icon = generic_construction
@@ -1394,24 +1394,24 @@ special_projects = {
 		complete_effect = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
 		}
-	}	
+	}
 }
 
-GER_aid_hun_rom_democratic_civil_war = {
+GER_aid_hun_rom_conservative_civil_war = {
 
-	GER_aid_hun_democratic_civil_war = {
+	GER_aid_hun_conservative_civil_war = {
 
 		icon = generic_prepare_civil_war
 
 		available = {
 			HUN = {
-				NOT = { has_government = democratic }
+				NOT = { has_government = conservative }
 				NOT = { has_war_with = GER }
 				has_civil_war = yes
 				exists = yes
 				any_enemy_country = {
 					original_tag = HUN
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 		}
@@ -1422,10 +1422,10 @@ GER_aid_hun_rom_democratic_civil_war = {
 			factor = 200
 		}
 
-		#Available if democratic civil war
+		#Available if conservative civil war
 		visible = {
 			has_completed_focus = GER_align_hungary
-			GER = { has_government = democratic }
+			GER = { has_government = conservative }
 		}
 
 		complete_effect = {
@@ -1437,7 +1437,7 @@ GER_aid_hun_rom_democratic_civil_war = {
 				random_country = {
 					limit = {
 						original_tag = HUN
-						has_government = democratic
+						has_government = conservative
 						has_war_with = HUN
 					}
 					GER = { add_to_faction = PREV }
@@ -1446,7 +1446,7 @@ GER_aid_hun_rom_democratic_civil_war = {
 			random_country = {
 				limit = {
 					original_tag = HUN
-					has_government = democratic
+					has_government = conservative
 					has_war_with = HUN
 				}
 				GER = { add_to_war = { targeted_alliance = PREV enemy = HUN hostility_reason = asked_to_join } }
@@ -1454,19 +1454,19 @@ GER_aid_hun_rom_democratic_civil_war = {
 		}
 	}
 
-	GER_aid_rom_democratic_civil_war = {
+	GER_aid_rom_conservative_civil_war = {
 
 		icon = generic_prepare_civil_war
 
 		available = {
 			ROM = {
-				NOT = { has_government = democratic }
+				NOT = { has_government = conservative }
 				NOT = { has_war_with = GER }
 				has_civil_war = yes
 				exists = yes
 				any_enemy_country = {
 					original_tag = ROM
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 		}
@@ -1477,10 +1477,10 @@ GER_aid_hun_rom_democratic_civil_war = {
 			factor = 200
 		}
 
-		#Available if democratic civil war
+		#Available if conservative civil war
 		visible = {
 			has_completed_focus = GER_align_romania
-			GER = { has_government = democratic }
+			GER = { has_government = conservative }
 		}
 
 		complete_effect = {
@@ -1492,7 +1492,7 @@ GER_aid_hun_rom_democratic_civil_war = {
 				random_country = {
 					limit = {
 						original_tag = ROM
-						has_government = democratic
+						has_government = conservative
 						has_war_with = ROM
 					}
 					GER = { add_to_faction = PREV }
@@ -1501,7 +1501,7 @@ GER_aid_hun_rom_democratic_civil_war = {
 			random_country = {
 				limit = {
 					original_tag = ROM
-					has_government = democratic
+					has_government = conservative
 					has_war_with = ROM
 				}
 				GER = { add_to_war = { targeted_alliance = PREV enemy = ROM hostility_reason = asked_to_join } }
@@ -1545,8 +1545,8 @@ GER_austro_hungarian_empire = {
 		}
 
 		visible = {
-			GER = { 
-				has_completed_focus = GER_rekindle_imperial_sentiment 
+			GER = {
+				has_completed_focus = GER_rekindle_imperial_sentiment
 				has_government = neutrality
 			}
 			AUS = {

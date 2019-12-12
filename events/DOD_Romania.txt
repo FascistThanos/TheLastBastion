@@ -13,9 +13,9 @@ country_event = {
 	title = DOD_romania.1.t
 	desc = DOD_romania.1.desc
 	picture = GFX_report_event_romania_poland_visit
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #sure
 		name = DOD_romania.1.a
 		ai_chance = {
@@ -38,17 +38,17 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		ROM = { country_event = DOD_romania.3 }	
+		ROM = { country_event = DOD_romania.3 }
 	}
 
 }
 #Romania wants to strengthen the Romanian-polish alliance - Poland agrees
 country_event = {
-	id = DOD_romania.2 
+	id = DOD_romania.2
 	title = DOD_romania.2.t
 	desc = DOD_romania.2.desc
 	picture = GFX_report_event_romania_poland_visit
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -63,11 +63,11 @@ country_event = {
 
 #Romania wants to strengthen the Romanian-polish alliance - Poland refuses
 country_event = {
-	id = DOD_romania.3 
+	id = DOD_romania.3
 	title = DOD_romania.3.t
 	desc = DOD_romania.3.desc
 	picture = GFX_report_event_poland_rejects
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -83,9 +83,9 @@ country_event = {
 	title = DOD_romania.10.t
 	desc = DOD_romania.10.desc
 	picture = GFX_report_event_generic_conference
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #sure
 		name = DOD_romania.10.a
 		ai_chance = {
@@ -112,17 +112,17 @@ country_event = {
 				factor = 0
 			}
 		}
-		ROM = { country_event = DOD_romania.12 }	
+		ROM = { country_event = DOD_romania.12 }
 	}
 
 }
 #Cordon Sanitaire - country agrees
 country_event = {
-	id = DOD_romania.11 
+	id = DOD_romania.11
 	title = DOD_romania.11.t
 	desc = DOD_romania.11.desc
 	picture = GFX_report_event_generic_sign_treaty3
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -134,11 +134,11 @@ country_event = {
 
 #Cordon sanitaire - country refuses
 country_event = {
-	id = DOD_romania.12 
+	id = DOD_romania.12
 	title = DOD_romania.12.t
 	desc = DOD_romania.12.desc
 	picture = GFX_report_event_poland_rejects
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -154,9 +154,9 @@ country_event = {
 	title = DOD_romania.20.t
 	desc = DOD_romania.20.desc
 	picture = GFX_report_event_generic_rally
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #sure
 		name = DOD_romania.20.a
 		ai_chance = {
@@ -181,17 +181,17 @@ country_event = {
 				factor = 1.5 #Romania was naughty
 			}
 		}
-		ROM = { country_event = DOD_romania.22 }	
+		ROM = { country_event = DOD_romania.22 }
 	}
 
 }
 #western guarantee - country agrees
 country_event = {
-	id = DOD_romania.21 
+	id = DOD_romania.21
 	title = DOD_romania.21.t
 	desc = DOD_romania.21.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -202,11 +202,11 @@ country_event = {
 
 #western guarantee - country refuses
 country_event = {
-	id = DOD_romania.22 
+	id = DOD_romania.22
 	title = DOD_romania.22.t
 	desc = DOD_romania.22.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -222,9 +222,9 @@ country_event = {
 	title = DOD_romania.30.t
 	desc = DOD_romania.30.desc
 	picture = GFX_report_event_aid_pact
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #sure
 		name = DOD_romania.30.a
 		give_guarantee = ROM
@@ -247,17 +247,17 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		ROM = { country_event = DOD_romania.32 }	
+		ROM = { country_event = DOD_romania.32 }
 	}
 
 }
 #SOV agrees, gets military access in return
 country_event = {
-	id = DOD_romania.31 
+	id = DOD_romania.31
 	title = DOD_romania.31.t
 	desc = DOD_romania.31.desc
 	picture = GFX_report_event_soviet_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -269,11 +269,11 @@ country_event = {
 
 #SOV refuses
 country_event = {
-	id = DOD_romania.32 
+	id = DOD_romania.32
 	title = DOD_romania.32.t
 	desc = DOD_romania.32.desc
 	picture = GFX_report_event_stalin_meeting
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -289,9 +289,9 @@ country_event = {
 	title = DOD_romania.40.t
 	desc = DOD_romania.40.desc
 	picture = GFX_report_event_romanian_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #sure
 		name = DOD_romania.40.a
 		ai_chance = {
@@ -321,17 +321,17 @@ country_event = {
 				factor = 0.5
 			}
 		}
-		ROM = { country_event = DOD_romania.42 }	
+		ROM = { country_event = DOD_romania.42 }
 	}
 
 }
 #Bulgaria agrees
 country_event = {
-	id = DOD_romania.41 
+	id = DOD_romania.41
 	title = DOD_romania.41.t
 	desc = DOD_romania.41.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -346,11 +346,11 @@ country_event = {
 
 #BUL refuses
 country_event = {
-	id = DOD_romania.42 
+	id = DOD_romania.42
 	title = DOD_romania.42.t
 	desc = DOD_romania.42.desc
 	picture = GFX_report_event_bulgarian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -368,7 +368,7 @@ country_event = {
 				factor = 10
 			}
 		}
-		
+
 	}
 
 	option = { #war
@@ -391,9 +391,9 @@ country_event = {
 	title = DOD_romania.50.t
 	desc = DOD_romania.50.desc
 	picture = GFX_report_event_journalists_speech
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #become their puppet
 		name = DOD_romania.50.a
 		ai_chance = {
@@ -407,7 +407,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		ROM = { country_event = DOD_romania.52 }	
+		ROM = { country_event = DOD_romania.52 }
 	}
 
 	option = { #no deals
@@ -425,17 +425,17 @@ country_event = {
 				is_in_faction = yes
 			}
 		}
-		ROM = { country_event = DOD_romania.53 }	
+		ROM = { country_event = DOD_romania.53 }
 	}
 
 }
 #hungary agrees to become puppet
 country_event = {
-	id = DOD_romania.51 
+	id = DOD_romania.51
 	title = DOD_romania.51.t
 	desc = DOD_romania.51.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -448,11 +448,11 @@ country_event = {
 
 #HUN offers to align somewhat
 country_event = {
-	id = DOD_romania.52 
+	id = DOD_romania.52
 	title = DOD_romania.52.t
 	desc = DOD_romania.52.desc
 	picture = GFX_report_event_hungary_parliament
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -491,11 +491,11 @@ country_event = {
 
 #HUN refuses
 country_event = {
-	id = DOD_romania.53 
+	id = DOD_romania.53
 	title = DOD_romania.53.t
 	desc = DOD_romania.53.desc
 	picture = GFX_report_event_hungarian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = { #cool
@@ -532,9 +532,9 @@ country_event = {
 	title = DOD_romania.60.t
 	desc = DOD_romania.60.desc
 	picture = GFX_report_event_yugoslavian_split
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #sure
 		name = DOD_romania.60.a
 		ai_chance = {
@@ -573,7 +573,7 @@ country_event = {
 				strength_ratio = { tag = ROM ratio > 1.0 } #stronger than Romania
 			}
 		}
-		ROM = { country_event = DOD_romania.62 }	
+		ROM = { country_event = DOD_romania.62 }
 	}
 
 }
@@ -584,9 +584,9 @@ country_event = {
 	title = DOD_romania.61.t
 	desc = DOD_romania.61.desc
 	picture = GFX_report_event_generic_peaceful_annexation
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #cool
 		name = DOD_romania.61.a
 		if = {
@@ -669,9 +669,9 @@ country_event = {
 	title = DOD_romania.62.t
 	desc = DOD_romania.62.desc
 	picture = GFX_report_event_yugoslavian_cavalry
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #unliateral action
 		name = DOD_romania.62.a
 		ai_chance = {
@@ -701,19 +701,19 @@ country_event = {
 		}
 		if = {
 			limit = { GER = { NOT = { owns_state = 102 } } }
-			GER = { country_event = DOD_romania.63 }	
+			GER = { country_event = DOD_romania.63 }
 		}
 		if = {
-			limit = { 
-				ITA = { 
-					NOT = { owns_state = 103 } 
-				} 
+			limit = {
+				ITA = {
+					NOT = { owns_state = 103 }
+				}
 				GER = { owns_state = 102 }
 			}
 			ITA = { country_event = DOD_romania.64 }
-			
+
 		}
-		
+
 	}
 
 }
@@ -724,20 +724,20 @@ country_event = {
 	title = DOD_romania.63.t
 	desc = DOD_romania.63.desc
 	picture = GFX_report_event_hitler_handshake
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #certainly
 		name = DOD_romania.63.a
 		ai_chance = {
 			factor = 80
 		}
 		add_state_claim = 102
-		ROM = { 
-			country_event = DOD_romania.65 
+		ROM = {
+			country_event = DOD_romania.65
 			set_country_flag = ROM_YUG_GER_approves
 		}
-		ITA = { country_event = DOD_romania.64 }	
+		ITA = { country_event = DOD_romania.64 }
 	}
 
 	option = { # rather not
@@ -746,7 +746,7 @@ country_event = {
 			factor = 20
 		}
 		ROM = { country_event = DOD_romania.66 }
-		ITA = { country_event = DOD_romania.64 }	
+		ITA = { country_event = DOD_romania.64 }
 	}
 
 }
@@ -757,15 +757,15 @@ country_event = {
 	title = DOD_romania.63.t
 	desc = DOD_romania.64.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #certainly
 		name = DOD_romania.63.a
 		ai_chance = {
 			factor = 80
 				modifier = {
-					factor = 10 #that sounds great!	
+					factor = 10 #that sounds great!
 				}
 		}
 		if = {
@@ -774,8 +774,8 @@ country_event = {
 			}
 			add_state_claim = 103
 		}
-		ROM = { 
-			country_event = DOD_romania.65 
+		ROM = {
+			country_event = DOD_romania.65
 			set_country_flag = ROM_YUG_ITA_approves
 		}
 		ROM = { country_event = { id = DOD_romania.67 hours = 12 } }
@@ -808,9 +808,9 @@ country_event = {
 	title = DOD_romania.65.t
 	desc = DOD_romania.65.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #cool
 		name = DOD_romania.65.a
 
@@ -824,9 +824,9 @@ country_event = {
 	title = DOD_romania.66.t
 	desc = DOD_romania.66.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #shame
 		name = DOD_romania.66.a
 
@@ -840,9 +840,9 @@ country_event = {
 	title = DOD_romania.67.t
 	desc = DOD_romania.67.desc
 	picture = GFX_report_event_german_inspect_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #send an ultimatum
 		name = DOD_romania.67.a
 		YUG = { country_event = DOD_romania.69 }
@@ -857,9 +857,9 @@ country_event = {
 	title = DOD_romania.68.t
 	desc = DOD_romania.68.desc
 	picture = GFX_report_event_romanian_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #oh well
 		name = DOD_romania.68.a
 		create_wargoal = {
@@ -878,7 +878,7 @@ country_event = {
 	desc = {
 		text = DOD_romania.69.desc_GER
 		trigger = {
-			 ROM = { 
+			 ROM = {
 			 	has_country_flag = ROM_YUG_GER_approves
 			 	NOT = { has_country_flag = ROM_YUG_ITA_approves }
 			 }
@@ -887,7 +887,7 @@ country_event = {
 	desc = {
 		text = DOD_romania.69.desc_ITA
 		trigger = {
-			 ROM = { 
+			 ROM = {
 			 	has_country_flag = ROM_YUG_ITA_approves
 			 	NOT = { has_country_flag = ROM_YUG_GER_approves }
 			 }
@@ -896,16 +896,16 @@ country_event = {
 	desc = {
 		text = DOD_romania.69.desc_GERITA
 		trigger = {
-			ROM = { 
+			ROM = {
 			 	has_country_flag = ROM_YUG_GER_approves
-			 	has_country_flag = ROM_YUG_ITA_approves 
+			 	has_country_flag = ROM_YUG_ITA_approves
 			 }
 		}
 	}
 	picture = GFX_report_event_german_troops
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #agree
 		name = DOD_romania.69.a
 		ai_chance = {
@@ -951,9 +951,9 @@ country_event = {
 	title = DOD_romania.70.t
 	desc = DOD_romania.70.desc
 	picture = GFX_report_event_yugoslavian_split
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #cool
 		name = DOD_romania.70.a
 		if = {
@@ -1005,8 +1005,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				103 = { 
-					is_owned_by = YUG 
+				103 = {
+					is_owned_by = YUG
 					NOT = { is_claimed_by = ITA }
 				}
 
@@ -1015,8 +1015,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				103 = { 
-					is_owned_by = YUG 
+				103 = {
+					is_owned_by = YUG
 					is_claimed_by = ITA
 				}
 
@@ -1037,8 +1037,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				102 = { 
-					is_owned_by = YUG 
+				102 = {
+					is_owned_by = YUG
 					NOT = { is_claimed_by = GER }
 				}
 
@@ -1047,8 +1047,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				102 = { 
-					is_owned_by = YUG 
+				102 = {
+					is_owned_by = YUG
 					is_claimed_by = GER
 				}
 
@@ -1061,13 +1061,13 @@ country_event = {
 		}
 		if = {
 			limit = { NOT = { has_country_flag = ROM_YUG_GER_approves } }
-			puppet = CRO 
+			puppet = CRO
 		}
 		hidden_effect = {
 			annex_country = { target = YUG }
 			news_event = { id = news.321 days = 1 }
 		}
-		
+
 	}
 
 }
@@ -1078,9 +1078,9 @@ country_event = {
 	title = DOD_romania.71.t
 	desc = DOD_romania.71.desc
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
-	
+
 
 	option = { #refuse
 		name = DOD_romania.71.a
@@ -1088,27 +1088,27 @@ country_event = {
 			declare_war_on = {
 				target = YUG
 				type = take_state_focus
-				generator = { 45 107 108 } 
+				generator = { 45 107 108 }
 			}
 		}
 		if = {
 			limit = { ROM = { has_country_flag = ROM_YUG_GER_approves } }
-			GER = { 
+			GER = {
 				create_wargoal = {
 					target = YUG
 					type = take_state_focus
-					generator = { 104 102 109 } 
+					generator = { 104 102 109 }
 				}
 			}
 		}
 		if = {
 			limit = { ROM = { has_country_flag = ROM_YUG_ITA_approves } }
-			ITA = { 
+			ITA = {
 				create_wargoal = {
 					target = YUG
 					type = take_state_focus
-					generator = { 106 103 105 } 
-				}	
+					generator = { 106 103 105 }
+				}
 			}
 		}
 		news_event = { id = news.320 days = 1 }
@@ -1119,7 +1119,7 @@ country_event = {
 #Hidden dispatch event
 country_event = {
 	id = DOD_romania.80
-	
+
 	is_triggered_only = yes
 
 	hidden = yes
@@ -1162,7 +1162,7 @@ country_event = {
 	title = DOD_romania.81.t
 	desc = DOD_romania.81.desc
 	picture = GFX_report_event_ROM_mistress
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1200,7 +1200,7 @@ country_event = {
 					amount < 1
 					slots = { political_advisor }
 				}
-			}			
+			}
 			modifier = {
 				add = 5
 				amount_taken_ideas = {
@@ -1255,7 +1255,7 @@ country_event = {
 	title = DOD_romania.82.t
 	desc = DOD_romania.82.desc
 	picture = GFX_report_event_ROM_mistress
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1293,14 +1293,14 @@ country_event = {
 					amount < 1
 					slots = { political_advisor }
 				}
-			}						
+			}
 			modifier = {
 				add = 5
 				amount_taken_ideas = {
 					amount < 1
 					slots = { army_chief }
 				}
-			}			
+			}
 
 			modifier = {
 				add = -10
@@ -1308,13 +1308,13 @@ country_event = {
 					neutrality < 0.5
 					has_war = no
 					NOT = { has_idea = ROM_mihail_sturdza }
-					NOT = { has_idea = generic_democratic_reformer }
+					NOT = { has_idea = generic_conservative_reformer }
 				}
 			}
 		}
 		add_stability = -0.05
 		add_popularity = { ideology = fascism popularity = 0.05 } #because she is Jewish
-		add_popularity = { ideology = democratic popularity = 0.05 } #because Freedom of the Press
+		add_popularity = { ideology = conservative popularity = 0.05 } #because Freedom of the Press
 		hidden_effect = {
 			country_event = { id = DOD_romania.80 }
 		}
@@ -1337,7 +1337,7 @@ country_event = {
 	title = DOD_romania.83.t
 	desc = DOD_romania.83.desc
 	picture = GFX_report_event_carol_party
-	
+
 	is_triggered_only = yes
 	trigger = {
 		has_idea = ROM_king_carol_ii_hedonist
@@ -1374,7 +1374,7 @@ country_event = {
 					amount < 1
 					slots = { political_advisor }
 				}
-			}			
+			}
 			modifier = {
 				add = 5
 				amount_taken_ideas = {
@@ -1429,7 +1429,7 @@ country_event = {
 	title = DOD_romania.84.t
 	desc = DOD_romania.84.desc
 	picture = GFX_report_event_ROM_mistress
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1467,7 +1467,7 @@ country_event = {
 					amount < 1
 					slots = { political_advisor }
 				}
-			}			
+			}
 			modifier = {
 				add = 5
 				amount_taken_ideas = {
@@ -1522,7 +1522,7 @@ country_event = {
 	title = DOD_romania.85.t
 	desc = DOD_romania.85.desc
 	picture = GFX_report_event_carol_party
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1560,7 +1560,7 @@ country_event = {
 					amount < 1
 					slots = { political_advisor }
 				}
-			}			
+			}
 			modifier = {
 				add = 5
 				amount_taken_ideas = {
@@ -1616,7 +1616,7 @@ country_event = {
 	title = DOD_romania.86.t
 	desc = DOD_romania.86.desc
 	picture = GFX_report_event_iww_demonstration
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1654,7 +1654,7 @@ country_event = {
 					amount < 1
 					slots = { political_advisor }
 				}
-			}			
+			}
 			modifier = {
 				add = 5
 				amount_taken_ideas = {
@@ -1708,9 +1708,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.110
 	title = DOD_romania.110.t
-	desc = DOD_romania.110.desc 
+	desc = DOD_romania.110.desc
 	picture = GFX_report_event_hitler_handshake
-	
+
 	is_triggered_only = yes
 
 	option = {# agree
@@ -1737,9 +1737,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.111
 	title = DOD_romania.111.t
-	desc = DOD_romania.111.desc 
+	desc = DOD_romania.111.desc
 	picture = GFX_report_event_generic_sign_treaty3
-	
+
 	is_triggered_only = yes
 
 	option = {# agree
@@ -1752,9 +1752,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.113
 	title = DOD_romania.113.t
-	desc = DOD_romania.113.desc 
+	desc = DOD_romania.113.desc
 	picture = GFX_report_event_german_politician_speech
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -1779,12 +1779,12 @@ country_event = {
 country_event = {
 	id = DOD_romania.114
 	title = DOD_romania.114.t
-	desc = DOD_romania.114.desc 
+	desc = DOD_romania.114.desc
 	picture = GFX_report_event_german_troops
-	
+
 	is_triggered_only = yes
 
-	option = {# okay 
+	option = {# okay
 		name = DOD_romania.114.a
 		ai_chance = {
 			factor = 80
@@ -1859,7 +1859,7 @@ country_event = {
 			}
 			country_event = DOD_romania.115
 		}
-		HUN = { 
+		HUN = {
 			create_wargoal = {
 				type = take_state_focus
 				target = CZE
@@ -1882,9 +1882,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.115
 	title = DOD_romania.115.t
-	desc = DOD_romania.115.desc 
+	desc = DOD_romania.115.desc
 	picture = GFX_report_event_czech_soldier_01
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -1896,9 +1896,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.120
 	title = DOD_romania.120.t
-	desc = DOD_romania.120.desc 
+	desc = DOD_romania.120.desc
 	picture = GFX_report_event_generic_truck
-	
+
 	is_triggered_only = yes
 
 	option = {# Britain
@@ -1948,9 +1948,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.150
 	title = DOD_hungary.150.t
-	desc = DOD_hungary.150.desc 
+	desc = DOD_hungary.150.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# light fighter
@@ -1989,8 +1989,8 @@ country_event = {
 				factor = 0
 			}
 		}
-		country_event = DOD_romania.151 
-		
+		country_event = DOD_romania.151
+
 	}
 
 	option = {# heavy fighter
@@ -2040,13 +2040,13 @@ country_event = {
 	desc = {
 		text = DOD_hungary.151.desc_light_fighter
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_country_flag = GER_fighter_refused
 				has_country_flag = ENG_fighter_refused
 				has_country_flag = USA_fighter_refused
 				has_country_flag = FRA_fighter_refused
 				has_country_flag = ITA_fighter_refused
-			} 
+			}
 		}
 	}
 	desc = {
@@ -2062,7 +2062,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# Select German Plane
@@ -2114,7 +2114,7 @@ country_event = {
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_fighter_refused }
 		}
-		GER = { country_event = DOD_romania.153 }	
+		GER = { country_event = DOD_romania.153 }
 	}
 
 	option = {# select italian plane
@@ -2166,7 +2166,7 @@ country_event = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_fighter_refused }
 		}
-		ITA = { country_event = DOD_romania.153 }	
+		ITA = { country_event = DOD_romania.153 }
 	}
 
 	option = {# select french plane
@@ -2217,9 +2217,9 @@ country_event = {
 			}
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_fighter_refused }
-			
+
 		}
-		FRA = { country_event = DOD_romania.153 }	
+		FRA = { country_event = DOD_romania.153 }
 	}
 	option = {# select british plane
 		name = DOD_hungary.151.d
@@ -2270,7 +2270,7 @@ country_event = {
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_fighter_refused }
 		}
-		ENG = { country_event = DOD_romania.153 }	
+		ENG = { country_event = DOD_romania.153 }
 	}
 	option = {# select american plane
 		name = DOD_hungary.151.e
@@ -2337,10 +2337,10 @@ country_event = {
 				}
 			}
 		}
-		USA = { country_event = DOD_romania.153 }	
+		USA = { country_event = DOD_romania.153 }
 	}
 	option = {# failsafe
-		name = DOD_hungary.151.f	
+		name = DOD_hungary.151.f
 		trigger = {
 			OR = {
 				has_country_flag = GER_fighter_refused
@@ -2362,13 +2362,13 @@ country_event = {
 	desc = {
 		text = DOD_hungary.152.desc_heavy_fighter
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_country_flag = GER_heavy_fighter_refused
 				has_country_flag = ENG_heavy_fighter_refused
 				has_country_flag = USA_heavy_fighter_refused
 				has_country_flag = FRA_heavy_fighter_refused
 				has_country_flag = ITA_heavy_fighter_refused
-			} 
+			}
 		}
 	}
 	desc = {
@@ -2384,7 +2384,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# Select German Plane
@@ -2436,7 +2436,7 @@ country_event = {
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_heavy_fighter_refused }
 		}
-		GER = { country_event = DOD_romania.154 }	
+		GER = { country_event = DOD_romania.154 }
 	}
 
 	option = {# select italian plane
@@ -2488,7 +2488,7 @@ country_event = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_heavy_fighter_refused }
 		}
-		ITA = { country_event = DOD_romania.154 }	
+		ITA = { country_event = DOD_romania.154 }
 	}
 
 	option = {# select french plane
@@ -2539,9 +2539,9 @@ country_event = {
 			}
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_heavy_fighter_refused }
-			
+
 		}
-		FRA = { country_event = DOD_romania.154 }	
+		FRA = { country_event = DOD_romania.154 }
 	}
 	option = {# select british plane
 		name = DOD_hungary.152.d
@@ -2592,7 +2592,7 @@ country_event = {
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_heavy_fighter_refused }
 		}
-		ENG = { country_event = DOD_romania.154 }	
+		ENG = { country_event = DOD_romania.154 }
 	}
 	option = {# select american plane
 		name = DOD_hungary.152.e
@@ -2659,10 +2659,10 @@ country_event = {
 				}
 			}
 		}
-		USA = { country_event = DOD_romania.154 }	
+		USA = { country_event = DOD_romania.154 }
 	}
 	option = {# failsafe
-		name = DOD_hungary.151.f	
+		name = DOD_hungary.151.f
 		trigger = {
 			OR = {
 				has_country_flag = GER_heavy_fighter_refused
@@ -2681,9 +2681,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.153
 	title = DOD_hungary.153.t
-	desc = DOD_hungary.153.desc 
+	desc = DOD_hungary.153.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# certainly
@@ -2703,10 +2703,10 @@ country_event = {
 				NOT = { has_tech = fighter2 }
 			}
 			create_production_license = {
-				target = ROM 
+				target = ROM
 				equipment = {
 					type = fighter_equipment_1
-					
+
 				}
 				cost_factor = 0
 			}
@@ -2717,7 +2717,7 @@ country_event = {
 				NOT = { has_tech = fighter3 }
 			}
 			create_production_license = {
-				target = ROM 
+				target = ROM
 				equipment = {
 					type = fighter_equipment_2
 				}
@@ -2729,7 +2729,7 @@ country_event = {
 				has_tech = fighter3
 			}
 			create_production_license = {
-				target = ROM 
+				target = ROM
 				equipment = {
 					type = fighter_equipment_3
 				}
@@ -2776,9 +2776,9 @@ country_event = {
 country_event = {
 	id = DOD_romania.154
 	title = DOD_hungary.153.t
-	desc = DOD_hungary.154.desc 
+	desc = DOD_hungary.154.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# certainly
@@ -2798,7 +2798,7 @@ country_event = {
 				NOT = { has_tech = heavy_fighter2 }
 			}
 			create_production_license = {
-				target = ROM 
+				target = ROM
 				equipment = {
 					type = heavy_fighter_equipment_1
 				}
@@ -2811,9 +2811,9 @@ country_event = {
 				NOT = { has_tech = heavy_fighter3 }
 			}
 			create_production_license = {
-				target = ROM 
+				target = ROM
 				equipment = {
-					type = heavy_fighter_equipment_2	
+					type = heavy_fighter_equipment_2
 				}
 				cost_factor = 0
 			}
@@ -2823,14 +2823,14 @@ country_event = {
 				has_tech = heavy_fighter3
 			}
 			create_production_license = {
-				target = ROM 
+				target = ROM
 				equipment = {
 					type = heavy_fighter_equipment_3
 				}
 				cost_factor = 0
 			}
 		}
-		
+
 	}
 
 	option = {# no
@@ -2871,14 +2871,14 @@ country_event = {
 country_event = {
 	id = DOD_romania.155
 	title = DOD_hungary.155.t
-	desc = DOD_hungary.155.desc 
+	desc = DOD_hungary.155.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# neat
 		name = DOD_hungary.155.a
-		
+
 	}
 }
 

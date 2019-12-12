@@ -12,7 +12,7 @@ if = {
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -44,7 +44,7 @@ set_convoys = 10
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -55,7 +55,7 @@ set_convoys = 10
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "COL_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -102,13 +102,13 @@ set_convoys = 10
 
 set_convoys = 5
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 99
+	conservative = 99
 	communism = 1
 }
 
@@ -137,14 +137,14 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservative
 		last_election = "1938.5.1"
-		election_frequency = 48  
+		election_frequency = 48
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		democratic = 100
+		conservative = 100
 	}
 
 	create_country_leader = {
@@ -180,7 +180,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
-		name = "Antioquia Class"				
+		name = "Antioquia Class"
 		type = ship_hull_light_1
 		name_group = COL_DD_HISTORICAL
 		parent_version = 0

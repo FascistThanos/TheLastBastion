@@ -48,7 +48,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -59,7 +59,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "PRU_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -110,7 +110,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 49
+	conservative = 49
 	fascism = 51
 }
 
@@ -149,7 +149,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "R1 Class"				
+		name = "R1 Class"
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {
@@ -160,7 +160,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Almirante Villar Class"				
+		name = "Almirante Villar Class"
 		type = ship_hull_light_1
 		name_group = PRU_DD_HISTORICAL
 		parent_version = 0
@@ -177,7 +177,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Almirante Grau Class"				
+		name = "Almirante Grau Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = PRU_CA_HISTORICAL
 		parent_version = 0

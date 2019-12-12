@@ -48,7 +48,7 @@ continent = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			}
@@ -139,7 +139,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservatism = {
+		conservative = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -179,7 +179,7 @@ continent = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			}
@@ -270,7 +270,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservatism = {
+		conservative = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -309,7 +309,7 @@ continent = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 			}
@@ -400,7 +400,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservatism = {
+		conservative = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -440,7 +440,7 @@ continent = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			}
@@ -531,7 +531,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservatism = {
+		conservative = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -572,7 +572,7 @@ continent = {
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
@@ -679,7 +679,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservatism = {
+		conservative = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -719,7 +719,7 @@ continent = {
 					"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 			}
@@ -810,7 +810,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservatism = {
+		conservative = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -847,7 +847,7 @@ continent = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 			}
@@ -938,7 +938,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservatism = {
+		conservative = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -1290,7 +1290,7 @@ RAJ = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
@@ -1323,7 +1323,7 @@ PAK = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
@@ -1385,7 +1385,7 @@ AFG = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 			}
@@ -1544,7 +1544,7 @@ BAH = {
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
@@ -1594,7 +1594,7 @@ BLZ = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 			}
 		}
-		democratic = {
+		conservative = {
 				male = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 			}

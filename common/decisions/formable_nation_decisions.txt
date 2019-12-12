@@ -1,5 +1,5 @@
 form_scandinavia_category = {
-	
+
 	form_scandinavia = {
 
 		icon = generic_form_nation
@@ -285,7 +285,7 @@ form_gran_colombia_category = {
 			hidden_effect = {
 				305 = { add_core_of = ROOT }
 				649 = { add_core_of = ROOT }
-			}	
+			}
 			# Colombia
 			custom_effect_tooltip = form_country_colombia_coring_states_tt
 			hidden_effect = {
@@ -1088,7 +1088,7 @@ form_european_union_category = {
 				original_tag = ITA
 				original_tag = GER
 			}
-			has_government = democratic 
+			has_government = conservative
 			NOT = { has_global_flag = form_european_union_flag }
 			is_major = yes
 		}
@@ -1683,7 +1683,7 @@ form_roman_empire_category = {
 						expire = "1965.1.1"
 						ideology = fascism_ideology
 						traits = {
-							
+
 						}
 					}
 				}
@@ -2169,7 +2169,7 @@ form_byzantine_empire_category = {
 		complete_effect = {
 			677 = { add_core_of = ROOT }
 			680 = { add_core_of = ROOT }
-			553 = { add_core_of = ROOT } 
+			553 = { add_core_of = ROOT }
 			554 = { add_core_of = ROOT }
 			164 = { add_core_of = ROOT }
 			453 = { add_core_of = ROOT }
@@ -2759,4 +2759,3 @@ form_greater_german_reich_category = {
 		}
 	}
 }
-

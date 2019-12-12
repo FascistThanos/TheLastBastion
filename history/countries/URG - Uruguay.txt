@@ -39,7 +39,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -50,7 +50,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "URG_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -93,13 +93,13 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1934.4.19"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 97
+	conservative = 97
 	communism = 3
 }
 
@@ -116,7 +116,7 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservative
 		last_election = "1938.3.28"
 		election_frequency = 48
 		elections_allowed = yes
@@ -144,7 +144,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Uruguay Class"				
+		name = "Uruguay Class"
 		type = ship_hull_light_1
 		name_group = URG_DD_HISTORICAL
 		parent_version = 0

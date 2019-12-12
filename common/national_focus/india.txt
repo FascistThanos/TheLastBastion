@@ -1,9 +1,9 @@
 focus_tree = {
 	id = indian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = RAJ
@@ -16,7 +16,7 @@ focus_tree = {
 		#	has_dlc = "Together for Victory"
 		#}
 	}
-	
+
 	default = no
 
 
@@ -28,7 +28,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -39,7 +39,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -92,7 +92,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100			
+			add_political_power = 100
 			add_autonomy_ratio = {
 				value = 0.1
 				localization = RAJ_provincial_elections
@@ -294,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_seek_help_from_soviet
 		icon = GFX_focus_RAJ_seek_help_from_soviet
-		prerequisite = { focus = RAJ_all_india_forward_bloc }		
+		prerequisite = { focus = RAJ_all_india_forward_bloc }
 		x = -1
 		y = 1
 		relative_position_id = RAJ_all_india_forward_bloc
@@ -457,7 +457,7 @@ focus_tree = {
 						popularity = 0.15
 					}
 					ENG = { add_to_faction = PREV }
-				}						
+				}
 			}
 		}
 	}
@@ -610,11 +610,11 @@ focus_tree = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
 					infantry = { x = 0 y = 2 }
-		
+
 		        	infantry = { x = 1 y = 0 }
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 1 y = 2 }
-		
+
 		        	infantry = { x = 2 y = 0 }
 					infantry = { x = 2 y = 1 }
 					infantry = { x = 2 y = 2 }
@@ -623,8 +623,8 @@ focus_tree = {
 
 		random_owned_controlled_state = {
 			prioritize = { 439 }
-			create_unit = { 
-				division = "name = \"1. Rani of Jhansi Division\" division_template = \"Rani of Jhansi Division\" start_experience_factor = 0.5" 
+			create_unit = {
+				division = "name = \"1. Rani of Jhansi Division\" division_template = \"Rani of Jhansi Division\" start_experience_factor = 0.5"
 				owner = RAJ
 				}
 
@@ -759,7 +759,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_seek_help_from_germany
 		icon = GFX_focus_RAJ_seek_help_from_germany
-		prerequisite = { focus = RAJ_all_india_forward_bloc }		
+		prerequisite = { focus = RAJ_all_india_forward_bloc }
 		x = 1
 		y = 1
 		relative_position_id = RAJ_all_india_forward_bloc
@@ -790,7 +790,7 @@ focus_tree = {
 			}
 			has_civil_war = no
 			NOT = { has_global_flag = RAJ_seek_help_from_soviet_promised }
-			GER = {				
+			GER = {
 				exists = yes
 				has_government = fascism
 			}
@@ -921,7 +921,7 @@ focus_tree = {
 						popularity = 0.15
 					}
 					ENG = { add_to_faction = PREV }
-				}					
+				}
 			}
 		}
 	}
@@ -965,7 +965,7 @@ focus_tree = {
 			if = {
 				limit = { NOT = { has_tech = paratroopers } }
 				set_technology = { paratroopers = 1 }
-				
+
 				else = {
 					add_tech_bonus = {
 						name = RAJ_battaglione_azad_hindoustan
@@ -976,17 +976,17 @@ focus_tree = {
 					}
 				}
 			}
-			
-		
+
+
 			ITA = {
 				country_event = { id = tfv_raj.201 }
 			}
-			
+
 			if = {
 				limit = {
 					is_ai = no
 				}
-				
+
 				division_template = {
 					name = "Battaglione Azad Hindoustan" #Hindu paratrooper division created for Italy
 					division_names_group = RAJ_PAR_01
@@ -1000,15 +1000,15 @@ focus_tree = {
 						paratrooper = { x = 1 y = 2 }
 					}
 				}
-					
+
 				ITA = {
 					random_owned_controlled_state = {
 						prioritize = { 2 }
-						
+
 						custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
 						hidden_effect = {
-							create_unit = { 
-								division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0" 
+							create_unit = {
+								division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0"
 								owner = RAJ
 							}
 						}
@@ -1092,7 +1092,7 @@ focus_tree = {
 
 		}
 
-		completion_reward = {	
+		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = RAJ_japanese_army_air_force_academy
@@ -1112,7 +1112,7 @@ focus_tree = {
 
 
 	############################
-	### SOMEWHAT DEMOCRATIC ####
+	### SOMEWHAT conservative ####
 	############################
 
 	focus = {
@@ -1161,7 +1161,7 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value =	0.05
 				localization = RAJ_cripps_mission
-		 	}		 	
+		 	}
 		}
 	}
 
@@ -1379,8 +1379,8 @@ focus_tree = {
 					not = { has_dlc = "Man the Guns" }
 				}
 				if = {
-					limit = { 
-						has_tech = basic_light_cruiser 
+					limit = {
+						has_tech = basic_light_cruiser
 					}
 					add_equipment_production = {
 						equipment = {
@@ -1453,8 +1453,8 @@ focus_tree = {
 						}
 					}
 					else = {
-						set_technology = { 
-							basic_ship_hull_cruiser = 1 
+						set_technology = {
+							basic_ship_hull_cruiser = 1
 							basic_torpedo = 1
 							basic_medium_battery = 1
 						}
@@ -1547,7 +1547,7 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-			
+
 	    	   		 	infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
@@ -1562,13 +1562,13 @@ focus_tree = {
         				engineer = { x = 0 y = 1 }
 					}
 				}
-	
+
 				random_owned_controlled_state = {
 					prioritize = { 439 }
 					create_unit = {
-						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
 						owner = RAJ
-					}	
+					}
 				}
 			}
 		}
@@ -1768,9 +1768,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = RAJ_indian_gurkhas			
+			add_ideas = RAJ_indian_gurkhas
 			custom_effect_tooltip = RAJ_create_unit_gurkas_tt
-			hidden_effect = {	
+			hidden_effect = {
 				division_template = {
 					name = "Gorkha Rifles"
 					priority = 2
@@ -1779,7 +1779,7 @@ focus_tree = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
 						mountaineers = { x = 0 y = 2 }
-			
+
 	    	   		 	mountaineers = { x = 1 y = 0 }
 						mountaineers = { x = 1 y = 1 }
 						mountaineers = { x = 1 y = 2 }
@@ -1789,13 +1789,13 @@ focus_tree = {
 						mountaineers = { x = 2 y = 2 }
 					}
 				}
-	
+
 				random_owned_controlled_state = {
 					prioritize = { 439 }
 					create_unit = {
-						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0" 
+						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0"
 						owner = RAJ
-					}	
+					}
 				}
 			}
 
@@ -1829,7 +1829,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = RAJ_indian_sandhurst_tt 
+			custom_effect_tooltip = RAJ_indian_sandhurst_tt
 			hidden_effect = {
 				create_corps_commander = {
 					name = "Kodandera Madappa Cariappa"
@@ -1903,7 +1903,7 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-		
+
 		        		infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
@@ -1913,14 +1913,14 @@ focus_tree = {
 						infantry = { x = 2 y = 2 }
 							}
 						}
-		
+
 					random_owned_controlled_state = {
 							prioritize = { 439 }
-							create_unit = { 
-								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5" 
+							create_unit = {
+								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5"
 								owner = RAJ
 								}
-		
+
 					}
 				}
 
@@ -2418,7 +2418,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_air_support_effort
 				bonus = 1.0
@@ -3905,4 +3905,4 @@ focus_tree = {
 	}
 
 
-}		
+}

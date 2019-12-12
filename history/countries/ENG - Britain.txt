@@ -320,7 +320,7 @@ set_politics = {
 set_popularities = {
 	communism = 97
 	fascism = 2
-	democratic = 1
+	conservative = 1
 }
 
 
@@ -345,7 +345,7 @@ create_country_leader = {
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 	picture = "Portrait_Britain_Winston_Churchill.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
 	}

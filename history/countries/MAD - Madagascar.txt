@@ -20,7 +20,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	set_technology = {
 
 		#doctrines
@@ -50,14 +50,14 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 27
+	conservative = 27
 	fascism = 8
 	communism = 15
 	neutrality = 50
 }
 
 #create_country_leader = {
-#	
+#
 #	name = "Jonas Lote"
 #	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 #	expire = "1965.1.1"

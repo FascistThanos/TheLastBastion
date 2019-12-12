@@ -12,7 +12,7 @@ country_event = {
 	picture = GFX_report_event_yugoslavian_king_peter
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ENG
 		NOT = {
@@ -43,7 +43,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 14
 	}
-	
+
 	option = {
 		name = yugoslavia.1.a
 		add_political_power = -50
@@ -113,7 +113,7 @@ country_event = {
 		name = yugoslavia.2.b
 		ai_chance = { factor = 0 }
 		start_civil_war = {
-			ideology = democratic
+			ideology = conservative
 			size = 0.4
 		}
 	}
@@ -126,7 +126,7 @@ country_event = {
 	id = yugoslavia.3
 	title = yugoslavia.3.t
 	desc = {
-		text = yugoslavia.3.d 
+		text = yugoslavia.3.d
 		trigger = {
 			NOT = { has_global_flag = FRA_abandoned_yugoslavia }
 		}
@@ -138,9 +138,9 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_chamberlain_announce
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = yugoslavia.3.a
 		effect_tooltip = {
@@ -161,9 +161,9 @@ country_event = {
 	title = yugoslavia.3.t
 	desc = yugoslavia.4.d
 	picture = GFX_report_event_chamberlain_announce
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = yugoslavia.4.a
 		effect_tooltip = {
@@ -184,9 +184,9 @@ country_event = {
 	title = yugoslavia.5.t
 	desc = yugoslavia.5.d
 	picture = GFX_report_event_hitler_croatia_handshake
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Surrender Slovenia
 		name = yugoslavia.5.a
 		ai_chance = {
@@ -239,9 +239,9 @@ country_event = {
 	title = yugoslavia.3.t
 	desc = yugoslavia.6.d
 	picture = GFX_report_event_fascists_posing
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = yugoslavia.6.a
 		effect_tooltip = {
@@ -264,17 +264,17 @@ country_event = {
 		text = yugoslavia.7.d
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
+
 	is_triggered_only = yes
-	
+
 	#Nope
 	option = {
 		name = yugoslavia.7.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 5
 		}
 
-		GER = { country_event = { id = germany.111 days = 1 } 
+		GER = { country_event = { id = germany.111 days = 1 }
 			effect_tooltip = {
 				create_wargoal = {
 					type = annex_everything
@@ -287,7 +287,7 @@ country_event = {
 	#Alrighty
 	option = {
 		name = yugoslavia.7.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 0
@@ -307,7 +307,7 @@ country_event = {
 		custom_effect_tooltip = GAME_OVER_TT
 		GER = {
 
-			add_political_power = -75		
+			add_political_power = -75
 			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
 			annex_country = { target = YUG transfer_troops = no }
 
@@ -327,17 +327,17 @@ country_event = {
 		text = yugoslavia.8.d
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
+
 	is_triggered_only = yes
-	
+
 	#Fuck that
 	option = {
 		name = yugoslavia.8.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 		}
 
-		GER = { country_event = { id = germany.111 days = 1 } 
+		GER = { country_event = { id = germany.111 days = 1 }
 			effect_tooltip = {
 				create_wargoal = {
 					type = annex_everything
@@ -366,23 +366,23 @@ country_event = {
 			modifier = {
 				factor = 0
 				is_puppet = yes
-			} 
+			}
 		}
 
-		trigger = { 
-			YUG = { 
-				OR = { 
+		trigger = {
+			YUG = {
+				OR = {
 					owns_state = 103
 					owns_state = 104
 					owns_state = 109
-				} 
-			} 
+				}
+			}
 		}
 
-		GER = {		
+		GER = {
 			add_political_power = -25
 			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-			
+
 			CRO = {
 				if = {
 					limit = { YUG = { owns_state = 103 } }
@@ -395,7 +395,7 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 109 } }
 					transfer_state = 109
-				}						
+				}
 			}
 			puppet = CRO
 			annex_country = { target = YUG transfer_troops = no }
@@ -416,15 +416,15 @@ country_event = {
 		text = yugoslavia.9.d
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
+
 	is_triggered_only = yes
-	
+
 	#No way
 	option = {
 		name = yugoslavia.9.a
 		ai_chance = { factor = 2 }
 
-		GER = { country_event = { id = germany.111 days = 1 } 
+		GER = { country_event = { id = germany.111 days = 1 }
 			effect_tooltip = {
 				create_wargoal = {
 					type = annex_everything
@@ -437,7 +437,7 @@ country_event = {
 	#Seems fair
 	option = {
 		name = yugoslavia.9.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 0
@@ -452,13 +452,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				is_puppet = yes
-			} 
+			}
 		}
 
 		GER = {
 
 			add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
-			
+
 			CRO = {
 				if = {
 					limit = { YUG = { owns_state = 103 } }
@@ -471,7 +471,7 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 109 } }
 					transfer_state = 109
-				}						
+				}
 			}
 			puppet = CRO
 			puppet = YUG
@@ -484,4 +484,3 @@ country_event = {
 		}
 	}
 }
-

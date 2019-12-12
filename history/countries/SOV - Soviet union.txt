@@ -265,7 +265,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
+	conservative = 10
 	fascism = 2
 	trotskyism = 88
 }

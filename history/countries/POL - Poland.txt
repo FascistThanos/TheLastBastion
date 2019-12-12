@@ -181,7 +181,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 18
+	conservative = 18
 	fascism = 15
 	neutrality = 2
 	communism = 65
@@ -189,7 +189,7 @@ set_popularities = {
 
 1939.1.1 = {
 	set_popularities = {
-		democratic = 13
+		conservative = 13
 		fascism = 7
 		communism = 2
 		neutrality = 78
@@ -234,7 +234,7 @@ create_country_leader = {
 	desc = "POLITICS_WINCENTY_WITOS_DESC"
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		#
 	}

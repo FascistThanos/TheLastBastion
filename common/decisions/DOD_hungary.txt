@@ -1,11 +1,11 @@
 political_actions = {
-	
+
 	HUN_closer_ties_to_CZE = {
 		allowed = {
 			original_tag = HUN
 		}
 		available = {
-			
+
 		}
 		visible = {
 			has_completed_focus = HUN_protect_czechoslovakia
@@ -38,30 +38,30 @@ political_actions = {
 
 economy_decisions = {
 
-	
+
 }
 
 
 
 
 operations = {
-	
-	
+
+
 }
 
 
 
 war_measures = {
-	
-	
+
+
 }
 
 foreign_politics = {
-	
+
 }
 
 economy_decisions = {
-	
+
 }
 
 foreign_support = {
@@ -70,7 +70,7 @@ foreign_support = {
 			has_war = yes
 		}
 		visible = {
-			has_completed_focus = HUN_elect_a_democratic_king
+			has_completed_focus = HUN_elect_a_conservative_king
 			NOT = {
 				has_war_with = SWE
 			}
@@ -101,7 +101,7 @@ foreign_support = {
 			original_tag = SWE
 		}
 		visible = {
-			HUN = { has_completed_focus = HUN_elect_a_democratic_king }
+			HUN = { has_completed_focus = HUN_elect_a_conservative_king }
 			NOT = {
 				has_war_with = HUN
 			}

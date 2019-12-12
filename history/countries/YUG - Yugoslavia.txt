@@ -27,7 +27,7 @@ add_ideas = {
 }
 
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1
@@ -82,7 +82,7 @@ if = {
 }
 
 	add_political_power = 1198
-	
+
 	if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
@@ -103,12 +103,12 @@ if = {
 		complete_national_focus = YUG_rare_minerals_exploitation
 		complete_national_focus = YUG_traditional_values
 		complete_national_focus = YUG_greater_yugoslavia
-		complete_national_focus = YUG_small_arms 
+		complete_national_focus = YUG_small_arms
 		complete_national_focus = YUG_domestic_artillery_production
 		complete_national_focus = YUG_expand_the_serbian_shipyards
 		complete_national_focus = YUG_coastal_defense
 	}
-	
+
 	if = {
 	limit = {
 		NOT = { has_dlc = "Death or Dishonor" }
@@ -124,7 +124,7 @@ if = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	}
-	
+
 	oob = "YUG_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -189,7 +189,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 15
+	conservative = 15
 	fascism = 10
 	communism = 15
 	neutrality = 60
@@ -203,7 +203,7 @@ set_popularities = {
 		elections_allowed = yes
 	}
 	set_popularities = {
-		democratic = 10
+		conservative = 10
 		fascism = 20
 		communism = 10
 		neutrality = 60
@@ -272,7 +272,7 @@ create_corps_commander = {
 	gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
 	traits = { urban_assault_specialist }
 	skill = 3
-	
+
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
@@ -294,7 +294,7 @@ create_field_marshal = {
 	name = "Milutin Nedić"
 	gfx = GFX_Portrait_yugoslavia_milutin_nedic
 	traits = { thorough_planner }
-	skill = 3	
+	skill = 3
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
@@ -354,7 +354,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Hrabri Class"				
+		name = "Hrabri Class"
 		type = ship_hull_submarine_2
 		name_group = YUG_SS_HISTORICAL
 		parent_version = 0
@@ -366,7 +366,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Dubrovnik Class"				
+		name = "Dubrovnik Class"
 		type = ship_hull_light_2
 		name_group = YUG_DD_HISTORICAL
 		parent_version = 0
@@ -383,7 +383,7 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Dalmacija Class"				
+		name = "Dalmacija Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = YUG_CL_HISTORICAL
 		parent_version = 0
@@ -412,7 +412,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Destroyers #
 		create_equipment_variant = {
-			name = "Beograd Class"	
+			name = "Beograd Class"
 			type = ship_hull_light_2
 			name_group = YUG_DD_HISTORICAL
 			parent_version = 0

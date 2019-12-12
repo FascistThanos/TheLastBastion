@@ -1,9 +1,9 @@
 focus_tree = {
 	id = romanian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = ROM
@@ -11,7 +11,7 @@ focus_tree = {
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
@@ -23,7 +23,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -34,7 +34,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -376,7 +376,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_in_faction = no
-				is_in_faction_with = GER 
+				is_in_faction_with = GER
 			}
 		}
 
@@ -418,7 +418,7 @@ focus_tree = {
 		}
 
 		available = {
-			GER = { 
+			GER = {
 				is_faction_leader = yes
 				has_government = fascism
 			}
@@ -563,8 +563,8 @@ focus_tree = {
 		}
 
 		available = {
-			POL = { 
-				exists = yes 
+			POL = {
+				exists = yes
 				is_puppet = no
 			}
 			NOT = { has_war_with = POL }
@@ -581,7 +581,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_popularity = { ideology = conservative popularity = 0.05 }
 			POL = { country_event = DOD_romania.1 }
 		}
 	}
@@ -623,8 +623,8 @@ focus_tree = {
 			create_faction = ROM_CORDON_SANITAIRE_FACTION
 			if = {
 				limit = {
-					CZE = { 
-						exists = yes 
+					CZE = {
+						exists = yes
 						has_capitulated = no
 						is_subject = no
 						is_in_faction = no
@@ -634,8 +634,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					POL = { 
-						exists = yes 
+					POL = {
+						exists = yes
 						has_capitulated = no
 						is_subject = no
 						is_in_faction = no
@@ -681,14 +681,14 @@ focus_tree = {
 			ENG = { is_subject = no }
 			if = {
 				limit = {
-					NOT = { ENG = { has_government = democratic } }
+					NOT = { ENG = { has_government = conservative } }
 					FRA = {
 						NOT = { is_in_faction_with = ENG }
 					}
 				}
 				FRA = { is_subject = no }
 			}
-			
+
 		}
 
 		bypass = {
@@ -707,7 +707,7 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						NOT = { ENG = { has_government = democratic } }
+						NOT = { ENG = { has_government = conservative } }
 						FRA = {
 							OR = {
 								NOT = { is_in_faction_with = ENG }
@@ -721,13 +721,13 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						is_faction_leader = yes 
+						is_faction_leader = yes
 					}
 				}
 				ENG = { country_event = DOD_romania.20 }
 			}
-			
-			
+
+
 		}
 	}
 
@@ -759,12 +759,12 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+
 			add_relation_modifier = {
 				target = ENG
 				modifier = ROM_military_modernization
 			}
-			
+
 			if = {
 				limit = {
 					FRA = {
@@ -775,7 +775,7 @@ focus_tree = {
 					target = FRA
 					modifier = ROM_military_modernization
 				}
-			
+
 			}
 		}
 	}
@@ -808,7 +808,7 @@ focus_tree = {
 		available = {
 			ENG = {
 				is_faction_leader = yes
-				has_government = democratic
+				has_government = conservative
 			}
 			is_in_faction = no
 			NOT = { has_war_with = ENG }
@@ -1190,7 +1190,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
+					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1288,7 +1288,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
+					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1536,7 +1536,7 @@ focus_tree = {
 			BUL = {
 				OR = {
 					is_puppet_of = ROM
-					exists = no 
+					exists = no
 					AND = {
 						has_war_with = ROM
 						has_capitulated = yes
@@ -1590,7 +1590,7 @@ focus_tree = {
 			HUN = {
 				OR = {
 					is_puppet_of = ROM
-					exists = no 
+					exists = no
 				}
 			}
 		}
@@ -1631,12 +1631,12 @@ focus_tree = {
 			strength_ratio = { tag = GRE ratio > 1 }
 			has_army_manpower = { size > 500000 }
 		}
- 
+
 		bypass = {
 			GRE = {
 				OR = {
 					is_puppet_of = ROM
-					exists = no 
+					exists = no
 				}
 			}
 		}
@@ -1702,7 +1702,7 @@ focus_tree = {
 					type = annex_everything
 					target = YUG
 				}
-				else = {				
+				else = {
 					YUG = {
 						country_event = DOD_romania.60
 					}
@@ -1811,7 +1811,7 @@ focus_tree = {
 			is_subject = no
 			communism < 0.5
 			fascism < 0.5
-			democratic < 0.5
+			conservative < 0.5
 		}
 
 		bypass = {
@@ -1827,7 +1827,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Carol II"
 				desc = "POLITICS_CAROL_II_DESC"
-				picture = GFX_Portrait_romania_Carol_II				
+				picture = GFX_Portrait_romania_Carol_II
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -1877,7 +1877,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Michael I"
 				desc = "POLITICS_MICHAEL_I_DESC"
-				picture = GFX_Portrait_romania_michael_i				
+				picture = GFX_Portrait_romania_michael_i
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -1892,7 +1892,7 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = news.322 days = 1 }
 			}
-			
+
 		}
 	}
 
@@ -1982,7 +1982,7 @@ focus_tree = {
 		id = ROM_militarize_the_sentinels
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_his_majestys_loyal_government }
-	
+
 		x = 0
 		y = 1
 		relative_position_id = ROM_his_majestys_loyal_government
@@ -2013,7 +2013,7 @@ focus_tree = {
 			swap_ideas = {
 				add_idea = ROM_the_sentinel_of_the_motherland_2
 				remove_idea = ROM_the_sentinel_of_the_motherland
-			}			
+			}
 		}
 	}
 
@@ -2021,7 +2021,7 @@ focus_tree = {
 		id = ROM_all_parties_must_end
 		icon = GFX_focus_rom_parties_end
 		prerequisite = { focus = ROM_militarize_the_sentinels }
-	
+
 		x = 0
 		y = 2
 		relative_position_id = ROM_his_majestys_loyal_government
@@ -2072,7 +2072,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -2087,7 +2087,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -2112,11 +2112,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2351,7 +2351,7 @@ focus_tree = {
 			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
 			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
-			
+
 			#Cancel guarantees
 			diplomatic_relation = {
 				country = YUG
@@ -2453,7 +2453,7 @@ focus_tree = {
 		available = {
 			has_idea = ROM_king_carol_ii_hedonist
 			OR = {
-				democratic > 0.35
+				conservative > 0.35
 				communism > 0.35
 				fascism > 0.35
 			}
@@ -2476,10 +2476,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					democratic > 0.35
+					conservative > 0.35
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = conservative
 					elections_allowed = yes
 				}
 				limit = {
@@ -2500,7 +2500,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_idea = ROM_constitutional_guarantees
-				}				
+				}
 				else = {
 					if = {
 						limit = {
@@ -2544,7 +2544,7 @@ focus_tree = {
 			is_subject = no
 			ENG = {
 				is_faction_leader = yes
-				has_government = democratic
+				has_government = conservative
 				NOT = { has_war_with = ROM }
 			}
 		}
@@ -2585,7 +2585,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				popularity = 0.35
-				ideology = democratic
+				ideology = conservative
 			}
 			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ENG }
@@ -2608,7 +2608,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -2664,7 +2664,7 @@ focus_tree = {
 					tooltip = ROM_carol_current_leader_trigger
 					has_country_leader = { id = 550 }
 				}
-				has_government = democratic
+				has_government = conservative
 			}
 		}
 
@@ -2685,10 +2685,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = conservative
 					elections_allowed = yes
 				}
 			}
@@ -3338,7 +3338,7 @@ focus_tree = {
 			add_ideas = ROM_army_war_college
 			custom_effect_tooltip = ROM_war_college_tt
 			hidden_effect = {
-				create_corps_commander = { 
+				create_corps_commander = {
 					name = "Barbu Paraianu"
 					gfx = GFX_Portrait_romania_barbu_paraianu
 					traits = { infantry_officer }
@@ -3388,7 +3388,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {		
+	focus = {
 		id = ROM_vanatori_de_munte
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = ROM_the_zb_53 }
@@ -3425,11 +3425,11 @@ focus_tree = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
 						mountaineers = { x = 0 y = 2 }
-			
+
 	    	   		 	mountaineers = { x = 1 y = 0 }
 						mountaineers = { x = 1 y = 1 }
 						mountaineers = { x = 1 y = 2 }
-			
+
 	    	   		 	mountaineers = { x = 2 y = 0 }
 						mountaineers = { x = 2 y = 1 }
 						mountaineers = { x = 2 y = 2 }
@@ -3442,7 +3442,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
 					create_unit = {
-						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0" 
+						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0"
 						owner = ROM
 					}
 				}
@@ -3603,11 +3603,11 @@ focus_tree = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
-				
+
 		    	   		 	infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
-				
+
 		    	   		 	infantry = { x = 2 y = 0 }
 							artillery_brigade = { x = 2 y = 1 }
 							artillery_brigade = { x = 2 y = 2 }
@@ -3626,11 +3626,11 @@ focus_tree = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
-					
+
 			    	   		 	infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
-					
+
 			    	   		 	infantry = { x = 2 y = 0 }
 								artillery_brigade = { x = 2 y = 1 }
 								artillery_brigade = { x = 2 y = 2 }
@@ -3645,11 +3645,11 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
 					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0"
 						owner = ROM
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -3728,10 +3728,10 @@ focus_tree = {
 						regiments = {
 							medium_armor = { x = 0 y = 0 }
 							medium_armor = { x = 0 y = 1 }
-				
+
 		    	   		 	medium_armor = { x = 1 y = 0 }
 							medium_armor = { x = 1 y = 1 }
-				
+
 		    	   		 	motorized = { x = 2 y = 0 }
 							motorized = { x = 2 y = 1 }
 
@@ -3756,10 +3756,10 @@ focus_tree = {
 								regiments = {
 									medium_armor = { x = 0 y = 0 }
 									medium_armor = { x = 0 y = 1 }
-						
+
 				    	   		 	medium_armor = { x = 1 y = 0 }
 									medium_armor = { x = 1 y = 1 }
-						
+
 				    	   		 	motorized = { x = 2 y = 0 }
 									motorized = { x = 2 y = 1 }
 
@@ -3784,10 +3784,10 @@ focus_tree = {
 										regiments = {
 											light_armor = { x = 0 y = 0 }
 											light_armor = { x = 0 y = 1 }
-								
+
 						    	   		 	light_armor = { x = 1 y = 0 }
 											light_armor = { x = 1 y = 1 }
-								
+
 						    	   		 	motorized = { x = 2 y = 0 }
 											motorized = { x = 2 y = 1 }
 
@@ -3808,10 +3808,10 @@ focus_tree = {
 											regiments = {
 												light_armor = { x = 0 y = 0 }
 												light_armor = { x = 0 y = 1 }
-									
+
 							    	   		 	light_armor = { x = 1 y = 0 }
 												light_armor = { x = 1 y = 1 }
-									
+
 							    	   		 	motorized = { x = 2 y = 0 }
 												motorized = { x = 2 y = 1 }
 
@@ -3833,11 +3833,11 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
 					create_unit = {
-						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
+						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7"
 						owner = ROM
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -4069,9 +4069,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ROM_coastal_defense_ships
 			#custom_effect_tooltip = ROM_coastal_defense_ships_tech_tt
-			if = { 
+			if = {
 				limit = { has_dlc = "Man the Guns" }
-				set_technology = { coastal_defense_ships = 1 } 
+				set_technology = { coastal_defense_ships = 1 }
 			}
 		}
 	}
@@ -4209,7 +4209,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_black_sea_dominance_designer
 		}

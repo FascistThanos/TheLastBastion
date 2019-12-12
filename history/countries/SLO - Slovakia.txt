@@ -22,7 +22,7 @@ set_technology = {
 }
 
 1939.1.1 = {
-	
+
 	add_political_power = 1198
 
 	#generic focuses
@@ -35,7 +35,7 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	set_technology = {
 		#doctrines
 		formation_flying = 1
@@ -65,7 +65,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
+	conservative = 5
 	fascism = 90
 	communism = 5
 }

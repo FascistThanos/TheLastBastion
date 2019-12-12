@@ -82,7 +82,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
+	conservative = 5
 	fascism = 2
 	communism = 93
 }
@@ -114,7 +114,7 @@ create_country_leader = {
 	desc = "POLITICS_HANNS_SIDEL_DESC"
 	picture = "Portrait_BAW_Herman_Hummel.dds"
 	expire = "1961.8.5"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 
 	}

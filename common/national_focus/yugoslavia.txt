@@ -1,16 +1,16 @@
 focus_tree = {
 	id = yugoslavian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = YUG
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1350 }
@@ -22,7 +22,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -52,7 +52,7 @@ focus_tree = {
 #	}
 
 	###############################
-	##### Democratic/Fascist ######
+	##### conservative/Fascist ######
 	###############################
 
 	focus = {
@@ -176,7 +176,7 @@ focus_tree = {
 
 		completion_reward = {
 			ENG = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 						target = ROOT
 						modifier = large_increase
 					}
@@ -191,7 +191,7 @@ focus_tree = {
 				modifier = YUG_western_license
 			}
 			FRA = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 						target = ROOT
 						modifier = large_increase
 					}
@@ -277,7 +277,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = YUG_idea_slovene_nationalism
 			ITA = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 						target = ROOT
 						modifier = huge_increase
 					}
@@ -321,7 +321,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = YUG_greater_yugoslavia
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -376,7 +376,7 @@ focus_tree = {
 		}
 
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -565,7 +565,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -796,7 +796,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = YUG_idea_croatian_opposition
-			release_puppet = CRO 
+			release_puppet = CRO
 			set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
 			hidden_effect = {
 				news_event = { id = news.326 hours = 6 }
@@ -858,14 +858,14 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 			any_other_country = {
 				NOT = { has_war_with = ROOT }
 				is_faction_leader = yes
 				is_major = yes
-				has_government = democratic
+				has_government = conservative
 			}
-			
+
 			NOT = {
 				any_other_country = {
 					is_in_faction_with = ENG
@@ -882,7 +882,7 @@ focus_tree = {
 					any_other_country = {
 						is_faction_leader = yes
 						is_in_faction_with = ROOT
-						has_government = democratic
+						has_government = conservative
 					}
 				}
 			}
@@ -894,17 +894,17 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { 
+				limit = {
 					ENG = {
 						is_faction_leader = yes
-						has_government = democratic
+						has_government = conservative
 						not = { has_war_with = ROOT }
 					}
 				}
 				ENG = { country_event = generic.2 }
 			}
 			else = {
-				get_best_alliance_match_democratic_effect = yes
+				get_best_alliance_match_conservative_effect = yes
 				var:best_leader = {
 					country_event = generic.2
 				}
@@ -1026,7 +1026,7 @@ focus_tree = {
 
 		completion_reward = {
 			SOV = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = medium_increase
 				}
@@ -1947,7 +1947,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-		
+
 		}
 
 		completion_reward = {
@@ -2357,7 +2357,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	############################
 	######## AIR FORCE #########
 	############################
@@ -2906,7 +2906,7 @@ focus_tree = {
 			factor = 25
 		}
 
-		
+
 		available = {
 			NOT = {
 				has_tech = CAS3
@@ -2960,7 +2960,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 
 		bypass = {
 
@@ -4061,7 +4061,7 @@ focus_tree = {
 							}
 							level = 2
 							instant_build = yes
-						}			
+						}
 						add_building_construction = {
 							type = coastal_bunker
 							province = {
@@ -4074,7 +4074,7 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 			if = {
 				limit = { has_full_control_of_state = 105 }
 				105 = {
@@ -4089,7 +4089,7 @@ focus_tree = {
 							}
 							level = 2
 							instant_build = yes
-						}			
+						}
 						add_building_construction = {
 							type = coastal_bunker
 							province = {

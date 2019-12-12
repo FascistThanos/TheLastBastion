@@ -10,9 +10,9 @@ country_event = {
 	title = DOD_hungary.1.t
 	desc = DOD_hungary.1.desc
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #sure
 		name = DOD_hungary.1.a
 		ai_chance = {
@@ -35,12 +35,12 @@ country_event = {
 			limit = {
 				OR = {
 					AND = {
-						HUN = { has_completed_focus = HUN_reintegrate_the_railroads } 
+						HUN = { has_completed_focus = HUN_reintegrate_the_railroads }
 						NOT = { AUS = { has_opinion = { target = HUN value > 75 } } }
 					}
 					AND = {
 						NOT = { HUN = { has_completed_focus = HUN_reintegrate_the_railroads } }
-						AUS = { has_opinion = { target = HUN value > 75 } } 
+						AUS = { has_opinion = { target = HUN value > 75 } }
 					}
 				}
 			}
@@ -52,8 +52,8 @@ country_event = {
 		if = {
 			limit = {
 				AND = {
-					HUN = { has_completed_focus = HUN_reintegrate_the_railroads } 
-					AUS = { has_opinion = { target = HUN value > 75 } } 
+					HUN = { has_completed_focus = HUN_reintegrate_the_railroads }
+					AUS = { has_opinion = { target = HUN value > 75 } }
 				}
 			}
 			random_list = {
@@ -68,7 +68,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 			modifier = {
-				has_government = democratic
+				has_government = conservative
 				factor = 0
 			}
 		}
@@ -92,29 +92,29 @@ country_event = {
 }
 #country votes yes
 country_event = {
-	id = DOD_hungary.2 
+	id = DOD_hungary.2
 	title = DOD_hungary.2.t
 	desc = DOD_hungary.2.desc
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = DOD_hungary.2.a
 		custom_effect_tooltip = GAME_OVER_TT
 		HUN = { country_event = { id = DOD_hungary.4 } }
-		
+
 	}
 
 }
 
 #country votes no
 country_event = {
-	id = DOD_hungary.3 
+	id = DOD_hungary.3
 	title = DOD_hungary.3.t
 	desc = DOD_hungary.3.desc
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -125,11 +125,11 @@ country_event = {
 }
 #country votes yes - hungary
 country_event = {
-	id = DOD_hungary.4 
+	id = DOD_hungary.4
 	title = DOD_hungary.4.t
 	desc = DOD_hungary.4.desc
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -147,11 +147,11 @@ country_event = {
 }
 #country votes no - hungary
 country_event = {
-	id = DOD_hungary.5 
+	id = DOD_hungary.5
 	title = DOD_hungary.5.t
 	desc = DOD_hungary.5.desc
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
 
 	option = { #TO WAR
@@ -168,7 +168,7 @@ country_event = {
 					target = AUS
 				}
 		hidden_effect = { news_event = { id = news.294 days = 1 } }
-		
+
 	}
 	option = { #Let it go
 		name = DOD_hungary.5.b
@@ -185,11 +185,11 @@ country_event = {
 }
 #Austria refuses
 country_event = {
-	id = DOD_hungary.6 
+	id = DOD_hungary.6
 	title = DOD_hungary.6.t
 	desc = DOD_hungary.6.desc
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
 
 	option = { #TO WAR
@@ -219,7 +219,7 @@ country_event = {
 					target = AUS
 				}
 		hidden_effect = { news_event = { id = news.315 days = 1 } }
-		
+
 	}
 	option = { #Let it go
 		name = DOD_hungary.6.b
@@ -231,11 +231,11 @@ country_event = {
 }
 #Cheat on the Referendum
 country_event = {
-	id = DOD_hungary.7 
+	id = DOD_hungary.7
 	title = DOD_hungary.7.t
 	desc = DOD_hungary.7.desc
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
 
 	option = { #say no
@@ -244,7 +244,7 @@ country_event = {
 			factor = 80
 		}
 		HUN = { country_event = { id = DOD_hungary.5 } }
-		
+
 	}
 	option = { #say yes
 		name = DOD_hungary.7.b
@@ -260,11 +260,11 @@ country_event = {
 
 #protect Czechoslovakia
 country_event = {
-	id = DOD_hungary.10 
+	id = DOD_hungary.10
 	title = DOD_hungary.10.t
 	desc = DOD_hungary.10.desc
 	picture = GFX_report_event_czech_soldiers_01
-	
+
 	is_triggered_only = yes
 
 	option = { #Agree to join the Empire
@@ -295,7 +295,7 @@ country_event = {
 		}
 		custom_effect_tooltip =  GAME_OVER_TT
 		HUN = { country_event = { id = DOD_hungary.11 hours = 6 } }
-		
+
 	}
 	option = { #A close association status
 		name = DOD_hungary.10.b
@@ -337,7 +337,7 @@ country_event = {
 	title = DOD_hungary.11.t
 	desc = DOD_hungary.11.desc
 	picture = GFX_report_event_polish_army
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -359,7 +359,7 @@ country_event = {
 	title = DOD_hungary.12.t
 	desc = DOD_hungary.12.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -371,8 +371,8 @@ country_event = {
 				is_in_faction = yes
 			}
 			random_country = {
-				limit = { 
-					is_in_faction_with = HUN 
+				limit = {
+					is_in_faction_with = HUN
 					is_faction_leader = yes
 				}
 				add_to_faction = CZE
@@ -388,7 +388,7 @@ country_event = {
 	title = DOD_hungary.13.t
 	desc = DOD_hungary.13.desc
 	picture = GFX_report_event_czech_soldiers_02
-	
+
 	is_triggered_only = yes
 
 	option = { #say no
@@ -402,7 +402,7 @@ country_event = {
 			add_state_claim = 73
 			add_state_claim = 72
 			add_state_claim = 664
-		
+
 	}
 
 }
@@ -425,7 +425,7 @@ country_event = {
 			}
 		}
 		HUN = { country_event = { id = DOD_hungary.21 hours = 24 } }
-		
+
 	}
 	option = { #send volunteers/support
 		name = DOD_hungary.20.b
@@ -447,7 +447,7 @@ country_event = {
 			}
 		}
 		HUN = { country_event = { id = DOD_hungary.22 hours = 24 } }
-		
+
 	}
 	option = { #to war!
 		name = DOD_hungary.20.c
@@ -461,7 +461,7 @@ country_event = {
 			}
 		}
 		HUN = { country_event = { id = DOD_hungary.23 hours = 24 } }
-		
+
 	}
 
 }
@@ -471,13 +471,13 @@ country_event = {
 	title = DOD_hungary.21.t
 	desc = DOD_hungary.21.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = DOD_hungary.21.a
 		add_opinion_modifier = { target = SWE modifier = refused_help }
-		
+
 	}
 
 }
@@ -487,18 +487,18 @@ country_event = {
 	title = DOD_hungary.22.t
 	desc = DOD_hungary.22.desc
 	picture = GFX_report_event_swedish_soldier
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = DOD_hungary.22.a
 		add_opinion_modifier = { target = SWE modifier = took_stand_for_us }
-		SWE = { 
-			add_manpower = -8000 
+		SWE = {
+			add_manpower = -8000
 			send_equipment = { target = HUN type = infantry_equipment amount = 500 }
 			add_ai_strategy = { #preferable to an event chain for lend-lease support
     			type = support
-     			id = "HUN"			
+     			id = "HUN"
  				value = 200
     		}
 		}
@@ -512,16 +512,16 @@ country_event = {
 	title = DOD_hungary.23.t
 	desc = DOD_hungary.23.desc
 	picture = GFX_report_event_sweden_tank
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = DOD_hungary.23.a
 		add_opinion_modifier = { target = SWE modifier = took_stand_for_us }
 		SWE = { give_guarantee = HUN } #should make Sweden want to join the war on the side of Hungary
-		add_ai_strategy = { 
+		add_ai_strategy = {
     		type = alliance
-     		id = "HUN"			
+     		id = "HUN"
  			value = 200
     	}
     	if = {
@@ -560,7 +560,7 @@ country_event = {
 	title = DOD_hungary.24.t
 	desc = DOD_hungary.24.desc
 	picture = GFX_report_event_generic_panzer_attack
-	
+
 	is_triggered_only = yes
 
 	option = { #stay out
@@ -569,7 +569,7 @@ country_event = {
 			factor = 20
 		}
 		SWE = { country_event = { id = DOD_hungary.25 hours = 24 } }
-		
+
 	}
 	option = { #send volunteers/support
 		name = DOD_hungary.24.b
@@ -581,7 +581,7 @@ country_event = {
 			factor = 50
 		}
 		SWE = { country_event = { id = DOD_hungary.26 hours = 24 } }
-		
+
 	}
 	option = { #to war!
 		name = DOD_hungary.24.c
@@ -589,7 +589,7 @@ country_event = {
 			factor = 30
 		}
 		SWE = { country_event = { id = DOD_hungary.27 hours = 24 } }
-		
+
 	}
 
 }
@@ -599,13 +599,13 @@ country_event = {
 	title = DOD_hungary.25.t
 	desc = DOD_hungary.25.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = DOD_hungary.25.a
 		add_opinion_modifier = { target = HUN modifier = refused_help }
-		
+
 	}
 
 }
@@ -615,18 +615,18 @@ country_event = {
 	title = DOD_hungary.26.t
 	desc = DOD_hungary.26.desc
 	picture = GFX_report_event_german_volunteers
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = DOD_hungary.26.a
 		add_opinion_modifier = { target = HUN modifier = took_stand_for_us }
-		HUN = { 
-			add_manpower = -8000 
+		HUN = {
+			add_manpower = -8000
 			send_equipment = { target = SWE type = infantry_equipment amount = 500 }
 			add_ai_strategy = { #preferable to an event chain for lend-lease support
     			type = support
-     			id = "SWE"			
+     			id = "SWE"
  				value = 200
     		}
 		}
@@ -640,16 +640,16 @@ country_event = {
 	title = DOD_hungary.27.t
 	desc = DOD_hungary.27.desc
 	picture = GFX_report_event_hungarian_soldiers
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = DOD_hungary.27.a
 		add_opinion_modifier = { target = HUN modifier = took_stand_for_us }
 		HUN = { give_guarantee = SWE } #should make them want to join war
-		add_ai_strategy = { 
+		add_ai_strategy = {
     		type = alliance
-     		id = "SWE"			
+     		id = "SWE"
  			value = 200
     	}
     	if = {
@@ -688,8 +688,8 @@ country_event = {
 	id = DOD_hungary.30
 	title = DOD_hungary.30.t
 	desc = DOD_hungary.30.desc
-	picture = GFX_report_event_vienna_award_negotiations 
-	
+	picture = GFX_report_event_vienna_award_negotiations
+
 	is_triggered_only = yes
 
 	option = { #agree
@@ -732,13 +732,13 @@ country_event = {
 						YUG = { country_event = DOD_hungary.30 }
 						else = {
 							if = {
-								limit = { 
+								limit = {
 									country_exists = CZE
 								}
 								CZE = { country_event = DOD_hungary.30 }
 								else = {
 									#No one left to object
-									HUN = { country_event = DOD_hungary.31 }					
+									HUN = { country_event = DOD_hungary.31 }
 								}
 							}
 						}
@@ -760,13 +760,13 @@ country_event = {
 				YUG = { country_event = DOD_hungary.30 }
 				else = {
 					if = {
-						limit = { 
+						limit = {
 							country_exists = CZE
 						}
 						CZE = { country_event = DOD_hungary.30 }
 						else = {
 							#No one left to object
-							HUN = { country_event = DOD_hungary.31 }					
+							HUN = { country_event = DOD_hungary.31 }
 						}
 					}
 				}
@@ -783,9 +783,9 @@ country_event = {
 					country_exists = CZE
 				}
 				CZE = { country_event = DOD_hungary.30 }
-				else = {					
+				else = {
 					#No one left to object
-					HUN = { country_event = DOD_hungary.31 }					
+					HUN = { country_event = DOD_hungary.31 }
 				}
 			}
 		}
@@ -797,7 +797,7 @@ country_event = {
 			}
 			HUN = { country_event = { id = DOD_hungary.31 days = 1 } }
 		}
-		
+
 	}
 
 
@@ -813,8 +813,8 @@ country_event = {
 				factor = 2 #let's not potentially get another front going
 			}
 		}
-		HUN = { 
-			country_event = { id = DOD_hungary.32 hours = 12 } 
+		HUN = {
+			country_event = { id = DOD_hungary.32 hours = 12 }
 			set_country_flag = HUN_rearmament_refused
 		}
 		set_country_flag = HUN_refused
@@ -828,7 +828,7 @@ country_event = {
 	title = DOD_hungary.31.t
 	desc = DOD_hungary.31.desc
 	picture = GFX_report_event_vienna_award_hungary
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -847,13 +847,13 @@ country_event = {
 
 }
 
-#Rearmament denied - appeal to major democratic nations?
+#Rearmament denied - appeal to major conservative nations?
 country_event = {
 	id = DOD_hungary.32
 	title = DOD_hungary.32.t
 	desc = DOD_hungary.32.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -882,11 +882,11 @@ country_event = {
 			FRA = {
 				NOT = { has_war_with = HUN }
 				NOT = { has_completed_focus = FRA_little_entente } #would be super awkward
-				has_government = democratic
+				has_government = conservative
 			}
 		}
-		FRA = { 
-			country_event = { id = DOD_hungary.33 hours = 12 } 
+		FRA = {
+			country_event = { id = DOD_hungary.33 hours = 12 }
 		}
 	}
 	option = { #approach Britain
@@ -901,11 +901,11 @@ country_event = {
 		trigger = {
 			ENG = {
 				NOT = { has_war_with = HUN }
-				has_government = democratic
+				has_government = conservative
 			}
 		}
-		ENG = { 
-			country_event = { id = DOD_hungary.33 hours = 12 } 
+		ENG = {
+			country_event = { id = DOD_hungary.33 hours = 12 }
 		}
 	}
 
@@ -917,7 +917,7 @@ country_event = {
 	title = DOD_hungary.33.t
 	desc = DOD_hungary.33.desc
 	picture = GFX_report_event_generic_politician_speech
-	
+
 	is_triggered_only = yes
 
 	option = { #allow
@@ -941,14 +941,14 @@ country_event = {
 
 	option = { #deny
 		name = DOD_hungary.33.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 25
 			modifier = {
 				threat < 0.2
 				factor = 2 #not yet
 			}
 		}
-		
+
 		HUN = { country_event = { id = DOD_hungary.35 hours = 12 } }
 	}
 
@@ -960,7 +960,7 @@ country_event = {
 	title = DOD_hungary.34.t
 	desc = DOD_hungary.34.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
 	option = { #fold
@@ -968,8 +968,8 @@ country_event = {
 			factor = 90
 		}
 		name = DOD_hungary.34.a
-		HUN = { 
-			country_event = { id = DOD_hungary.31 days = 3 } 
+		HUN = {
+			country_event = { id = DOD_hungary.31 days = 3 }
 			clr_country_flag = HUN_rearmament_refused
 		}
 	}
@@ -986,14 +986,14 @@ country_event = {
 		}
 		add_threat = 1
 		HUN = { set_country_flag = HUN_rearmament_refused }
-		
+
 		reverse_add_opinion_modifier = { target = FROM modifier = HUN_stubborn_fools }
 
 		add_relation_modifier = {
 				target = FROM
 				modifier = HUN_stubborn_fools
 			}
-		
+
 		HUN = { country_event = { id = DOD_hungary.36 hours = 12 } }
 	}
 
@@ -1005,12 +1005,12 @@ country_event = {
 	title = DOD_hungary.35.t
 	desc = DOD_hungary.35.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = { #mean!
 		name = DOD_hungary.35.a
-		
+
 	}
 
 }
@@ -1020,12 +1020,12 @@ country_event = {
 	title = DOD_hungary.36.t
 	desc = DOD_hungary.36.desc
 	picture = GFX_report_event_french_british_officers
-	
+
 	is_triggered_only = yes
 
 	option = { #mean!
 		name = DOD_hungary.36.a
-		
+
 	}
 
 }
@@ -1036,7 +1036,7 @@ country_event = {
 	title = DOD_hungary.40.t
 	desc = DOD_hungary.40.desc
 	picture = GFX_report_event_generic_rally_3
-	
+
 	is_triggered_only = yes
 
 	option = { #challenge
@@ -1055,7 +1055,7 @@ country_event = {
 		add_stability = -0.05
 		add_war_support = -0.1
 		HUN = { country_event = { id = DOD_hungary.41 } } #option for HUN to back down
-		
+
 	}
 	option = { #Fold
 		name = DOD_hungary.40.b
@@ -1071,7 +1071,7 @@ country_event = {
 	title = DOD_hungary.41.t
 	desc = DOD_hungary.41.desc
 	picture = GFX_report_event_soldiers_in_france
-	
+
 	is_triggered_only = yes
 
 	option = { #NO RETREAT NO SURRENDER
@@ -1088,7 +1088,7 @@ country_event = {
 			}
 		}
 		FROM = { country_event = { id = DOD_hungary.43 } }
-		
+
 	}
 	option = { #Fold
 		name = DOD_hungary.41.b
@@ -1104,7 +1104,7 @@ country_event = {
 	title = DOD_hungary.42.t
 	desc = DOD_hungary.42.desc
 	picture = GFX_report_event_vienna_award_hungary
-	
+
 	is_triggered_only = yes
 
 	option = { #Excellent!
@@ -1112,7 +1112,7 @@ country_event = {
 		remove_ideas = HUN_treaty_of_triannon
 		news_event = { id = news.298 days = 1 }
 	}
-	
+
 }
 #Hungary refuses to back down
 country_event = {
@@ -1120,7 +1120,7 @@ country_event = {
 	title = DOD_hungary.43.t
 	desc = DOD_hungary.43.desc
 	picture = GFX_report_event_hungarian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = { #war!
@@ -1160,22 +1160,22 @@ country_event = {
 			create_faction = BALKAN_ENTENTE_FACTION
 		}
 		if = {
-			limit = { 
-				is_faction_leader = yes 
+			limit = {
+				is_faction_leader = yes
 				NOT = { is_in_faction_with = CZE }
-				CZE = { 
-					is_puppet = no 
+				CZE = {
+					is_puppet = no
 					is_in_faction = no
 				}
 			}
 			CZE = { country_event = { id = DOD_hungary.45 } } #invite CZE
 		}
 		if = {
-			limit = { 
-				is_faction_leader = yes 
+			limit = {
+				is_faction_leader = yes
 				NOT = { is_in_faction_with = YUG }
-				YUG = { 
-					is_puppet = no 
+				YUG = {
+					is_puppet = no
 					is_in_faction = no
 				}
 			}
@@ -1186,7 +1186,7 @@ country_event = {
 		name = DOD_hungary.43.b
 		ai_chance = {
 			factor = 34
-			
+
 			modifier = {
 				factor = 0
 				has_war_with = HUN
@@ -1194,7 +1194,7 @@ country_event = {
 		}
 		HUN = { country_event = { id = DOD_hungary.42 } }
 	}
-	
+
 }
 #Hungary folds
 country_event = {
@@ -1202,14 +1202,14 @@ country_event = {
 	title = DOD_hungary.44.t
 	desc = DOD_hungary.44.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = DOD_hungary.44.a
 		add_stability = 0.1
 	}
-	
+
 }
 
 #Intervention in Hungary - invite surrounding countries
@@ -1218,10 +1218,10 @@ country_event = {
 	title = DOD_hungary.45.t
 	desc = DOD_hungary.45.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
 
-	option = {#yes 
+	option = {#yes
 		name = DOD_hungary.45.a
 		ai_chance = {
 			factor = 70
@@ -1229,7 +1229,7 @@ country_event = {
 		FROM = { add_to_faction = PREV }
 	}
 
-	option = {#no 
+	option = {#no
 		name = DOD_hungary.45.b
 		ai_chance = {
 			factor = 30
@@ -1245,7 +1245,7 @@ country_event = {
 	title = DOD_hungary.46.t
 	desc = DOD_hungary.46.desc
 	picture = GFX_report_event_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1260,10 +1260,10 @@ country_event = {
 	title = DOD_hungary.50.t
 	desc = DOD_hungary.50.desc
 	picture = GFX_report_event_vienna_award_negotiations
-	
+
 	is_triggered_only = yes
 
-	option = {#yes 
+	option = {#yes
 		name = DOD_hungary.50.a
 		ai_chance = {
 			factor = 10
@@ -1282,7 +1282,7 @@ country_event = {
 
 	}
 
-	option = {#no 
+	option = {#no
 		name = DOD_hungary.50.b
 		ai_chance = {
 			factor = 90
@@ -1297,7 +1297,7 @@ country_event = {
 	title = DOD_hungary.51.t
 	desc = DOD_hungary.51.desc
 	picture = GFX_report_event_vienna_award_hungary
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1306,7 +1306,7 @@ country_event = {
 		}
 	}
 
-	option = {# 
+	option = {#
 		name = DOD_hungary.51.a
 		hidden_effect = {
 			ROM = {
@@ -1340,7 +1340,7 @@ country_event = {
 				}
 				transfer_state = 84
 			}
-			
+
 			if = {
 				limit = {
 					FROM = {
@@ -1369,7 +1369,7 @@ country_event = {
 	title = DOD_hungary.52.t
 	desc = DOD_hungary.52.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# Let it go
@@ -1418,19 +1418,19 @@ country_event = {
 	title = DOD_hungary.53.t
 	desc = DOD_hungary.53.desc
 	picture = GFX_report_event_hungarian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = {# Back down
 		name = DOD_hungary.53.a
 		ai_chance = {
 			factor = 35
-			modifier = { 
+			modifier = {
 				strength_ratio = { tag = HUN ratio < 0.8 }
 				factor = 0.5
 			}
-			modifier = { 
-				ROM_is_on_historical_plan_trigger = yes 
+			modifier = {
+				ROM_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 			modifier = {
@@ -1453,11 +1453,11 @@ country_event = {
 				has_completed_focus = ROM_balkans_dominance
 				factor = 10 #NO DEALS WITH THE HUNGARIAN SCUM
 			}
-			modifier = { 
-				ROM_is_on_historical_plan_trigger = yes 
+			modifier = {
+				ROM_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
-			modifier = { 
+			modifier = {
 				is_in_faction = yes
 				factor = 2
 			}
@@ -1466,7 +1466,7 @@ country_event = {
 		add_war_support = 0.1
 		add_threat = 1
 		if = {
-			limit = { 
+			limit = {
 				GER = {
 					NOT = {
 						OR = {
@@ -1479,7 +1479,7 @@ country_event = {
 			GER = { country_event = { id = DOD_hungary.60 } } #Germany given option to intervene
 		}
 		if = {
-			limit = { 
+			limit = {
 				ITA = {
 					NOT = {
 						OR = {
@@ -1493,19 +1493,19 @@ country_event = {
 			ITA = { country_event = { id = DOD_hungary.60 } } #Italy given option to intervene, if not in faction with Germany
 		}
 		if = {
-			limit = { 
+			limit = {
 				FRA = {
 					has_war = no
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 			FRA = { country_event = { id = DOD_hungary.60 } } #France given option to intervene, if they don't have bigger problems
 		}
 		if = {
-			limit = { 
+			limit = {
 				ENG = {
 					has_war = no
-					has_government = democratic
+					has_government = conservative
 					has_completed_focus = uk_balkan_strategy
 				}
 			}
@@ -1519,7 +1519,7 @@ country_event = {
 			factor = 35
 		}
 		HUN = { country_event = { id = DOD_hungary.55 hours = 24 } }
-		
+
 	}
 }
 
@@ -1529,7 +1529,7 @@ country_event = {
 	title = DOD_hungary.54.t
 	desc = DOD_hungary.54.desc
 	picture = GFX_report_event_romanian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = {# Back down
@@ -1540,8 +1540,8 @@ country_event = {
 				strength_ratio = { tag = ROM ratio < 0.5 } #weaker than Romania
 				factor = 2
 			}
-			modifier = { 
-				HUN_is_on_historical_plan_trigger = yes 
+			modifier = {
+				HUN_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1552,18 +1552,18 @@ country_event = {
 		add_threat = -1
 		ROM = {	country_event = { id = DOD_hungary.57 } }
 		remove_ideas = HUN_war_preparation
-		
+
 	}
 
 	option = {# To war!
 		name = DOD_hungary.54.b
 		ai_chance = {
 			factor = 35
-			modifier = { 
-				HUN_is_on_historical_plan_trigger = yes 
+			modifier = {
+				HUN_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
-			modifier = { 
+			modifier = {
 				strength_ratio = { tag = ROM ratio > 1.25 } #stronger than Romania
 				factor = 2
 			}
@@ -1571,11 +1571,11 @@ country_event = {
 		declare_war_on = {
 				target = ROM
 				type = take_state_focus
-				generator = { 76 83 84 } 
+				generator = { 76 83 84 }
 			}
 
 	}
-	
+
 	option = {# Ask for mediation
 		name = DOD_hungary.54.c
 		ai_chance = {
@@ -1591,7 +1591,7 @@ country_event = {
 	title = DOD_hungary.55.t
 	desc = DOD_hungary.55.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# Germany
@@ -1608,8 +1608,8 @@ country_event = {
 				}
 			}
 		}
-		GER = { 
-			country_event = { id = DOD_hungary.58 } 
+		GER = {
+			country_event = { id = DOD_hungary.58 }
 			set_country_flag = HUN_mediation
 		}
 
@@ -1629,12 +1629,12 @@ country_event = {
 				}
 			}
 		}
-		ENG = { 
-			country_event = { id = DOD_hungary.58 } 
+		ENG = {
+			country_event = { id = DOD_hungary.58 }
 			set_country_flag = HUN_mediation
 		}
 	}
-	
+
 	option = {# France
 		name = DOD_hungary.55.d
 		trigger = {
@@ -1649,8 +1649,8 @@ country_event = {
 				}
 			}
 		}
-		FRA = { 
-			country_event = { id = DOD_hungary.58 } 
+		FRA = {
+			country_event = { id = DOD_hungary.58 }
 			set_country_flag = HUN_mediation
 		}
 	}
@@ -1669,8 +1669,8 @@ country_event = {
 				}
 			}
 		}
-		ITA = { 
-			country_event = { id = DOD_hungary.58 } 
+		ITA = {
+			country_event = { id = DOD_hungary.58 }
 			set_country_flag = HUN_mediation
 		}
 	}
@@ -1726,7 +1726,7 @@ country_event = {
 	title = DOD_hungary.55.t
 	desc = DOD_hungary.55.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# Germany
@@ -1743,12 +1743,12 @@ country_event = {
 				}
 			}
 		}
-		GER = { 
-			country_event = { id = DOD_hungary.59 } 
+		GER = {
+			country_event = { id = DOD_hungary.59 }
 			set_country_flag = ROM_mediation
 		}
-		
-		
+
+
 	}
 
 	option = {# Britain
@@ -1765,15 +1765,15 @@ country_event = {
 				}
 			}
 		}
-		ENG = { 
-			country_event = { id = DOD_hungary.59 } 
+		ENG = {
+			country_event = { id = DOD_hungary.59 }
 			set_country_flag = ROM_mediation
 		}
-		
-		
+
+
 
 	}
-	
+
 	option = {# France
 		name = DOD_hungary.55.d
 		trigger = {
@@ -1788,8 +1788,8 @@ country_event = {
 				}
 			}
 		}
-		FRA = { 
-			country_event = { id = DOD_hungary.59 } 
+		FRA = {
+			country_event = { id = DOD_hungary.59 }
 			set_country_flag = ROM_mediation
 		}
 	}
@@ -1809,8 +1809,8 @@ country_event = {
 			}
 			has_government = communism
 		}
-		SOV = { 
-			country_event = { id = DOD_hungary.59 } 
+		SOV = {
+			country_event = { id = DOD_hungary.59 }
 			set_country_flag = ROM_mediation
 		}
 	}
@@ -1828,8 +1828,8 @@ country_event = {
 				}
 			}
 		}
-		ITA = { 
-			country_event = { id = DOD_hungary.59 } 
+		ITA = {
+			country_event = { id = DOD_hungary.59 }
 			set_country_flag = ROM_mediation
 		}
 	}
@@ -1887,7 +1887,7 @@ country_event = {
 	title = DOD_hungary.57.t
 	desc = DOD_hungary.57.desc
 	picture = GFX_report_event_lithuania_army
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1900,7 +1900,7 @@ country_event = {
 		name = DOD_hungary.57.a
 		add_stability = 0.05
 		remove_ideas = ROM_war_preparation
-	
+
 	}
 }
 #Hungary seeks Mediation
@@ -1909,7 +1909,7 @@ country_event = {
 	title = DOD_hungary.58.t
 	desc = DOD_hungary.58.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	immediate = { clr_global_flag = Balkan_crisis_mediation_requested }
@@ -1959,7 +1959,7 @@ country_event = {
 	title = DOD_hungary.59.t
 	desc = DOD_hungary.59.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	immediate = { clr_global_flag = Balkan_crisis_mediation_requested }
@@ -1979,7 +1979,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_country_flag = HUN_mediation } 
+				NOT = { has_country_flag = HUN_mediation }
 			}
 			event_target:HUN_mediator = { country_event = { id = DOD_hungary.71 } } #
 		}
@@ -2006,7 +2006,7 @@ country_event = {
 			set_global_flag = ROM_rebuffed
 		}
 		clr_country_flag = ROM_mediation
-		set_country_flag = ROM_mediation_refused	
+		set_country_flag = ROM_mediation_refused
 	}
 }
 #Balkan Crisis - Intervention
@@ -2015,7 +2015,7 @@ country_event = {
 	title = DOD_hungary.60.t
 	desc = DOD_hungary.60.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
 
 	option = {# back Hungary
@@ -2065,7 +2065,7 @@ country_event = {
 		ai_chance = {
 			factor = 35
 		}
-		
+
 	}
 }
 
@@ -2075,7 +2075,7 @@ country_event = {
 	title = DOD_hungary.61.t
 	desc = DOD_hungary.61.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -2146,7 +2146,7 @@ country_event = {
 	title = DOD_hungary.62.t
 	desc = DOD_hungary.62.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 
@@ -2210,25 +2210,25 @@ country_event = {
 	desc = {
 		text = DOD_hungary.63.desc_HUN_refused #Hungary found no supporter
 		trigger = {
-			NOT = { 
+			NOT = {
 				OR = {
 			 		has_global_flag = HUN_mediation_HUN_nothing
 			 		has_country_flag = HUN_mediation_against
 			 	}
-			 } 
+			 }
 		}
 	}
 	desc = {
 		text = DOD_hungary.63.desc_HUN_nothing #Mediation went against Hungary
 		trigger = {
 				OR = {
-			 		has_global_flag = HUN_mediation_HUN_nothing 
+			 		has_global_flag = HUN_mediation_HUN_nothing
 			 		has_country_flag = HUN_mediation_against
 			 	}
 		}
 	}
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -2256,7 +2256,7 @@ country_event = {
 		declare_war_on = {
 				target = ROM
 				type = take_state_focus
-				generator = { 76 83 84 } 
+				generator = { 76 83 84 }
 			}
 		event_target:ROM_mediator = {
 			country_event = { id = DOD_hungary.65 }
@@ -2272,12 +2272,12 @@ country_event = {
 	desc = {
 		text = DOD_hungary.63.desc_HUN_refused #Romania found no supporter
 		trigger = {
-			NOT = { 
+			NOT = {
 				OR = {
 			 		has_global_flag = HUN_mediation_HUN_all
 			 		has_country_flag = ROM_mediation_against
 			 	}
-			 } 
+			 }
 		}
 	}
 	desc = {
@@ -2290,7 +2290,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -2324,7 +2324,7 @@ country_event = {
 	title = DOD_hungary.65.t
 	desc = DOD_hungary.65.desc
 	picture = GFX_report_event_hungarian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -2354,9 +2354,9 @@ country_event = {
 			}
 			add_to_faction = ROM
 		}
-		add_ai_strategy = { 
+		add_ai_strategy = {
     		type = alliance
-     		id = "ROM"			
+     		id = "ROM"
  			value = 200
     	}
 	}
@@ -2369,7 +2369,7 @@ country_event = {
 	title = DOD_hungary.66.t
 	desc = DOD_hungary.66.desc
 	picture = GFX_report_event_romanian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -2389,15 +2389,15 @@ country_event = {
 	option = {# Support Hungary
 		name = DOD_hungary.66.b
 		ai_chance = {
-			factor = 70 
+			factor = 70
 		}
 		give_guarantee = HUN #should make them want to join war
 		HUN = { country_event = { id = DOD_hungary.67 hours = 12} }
 		set_country_flag = HUN_war_support
 		add_war_support = 0.05
-		add_ai_strategy = { 
+		add_ai_strategy = {
     		type = support
-     		id = "HUN"			
+     		id = "HUN"
  			value = 200
     	}
 	}
@@ -2410,7 +2410,7 @@ country_event = {
 	title = DOD_hungary.67.t
 	desc = DOD_hungary.67.desc
 	picture = GFX_report_event_generic_battle
-	
+
 	is_triggered_only = yes
 
 	option = {# then war it is
@@ -2431,7 +2431,7 @@ country_event = {
 		declare_war_on = {
 				target = ROM
 				type = take_state_focus
-				generator = { 76 83 84 } 
+				generator = { 76 83 84 }
 			}
 	}
 
@@ -2439,10 +2439,10 @@ country_event = {
 #Transylvania Mediation - both sides have agreed on a mediator, who gets to decide
 country_event = {
 	id = DOD_hungary.68
-	title = DOD_hungary.68.t 
+	title = DOD_hungary.68.t
 	desc = DOD_hungary.68.desc
 	picture = GFX_report_event_vienna_award_negotiations
-	
+
 	is_triggered_only = yes
 
 	option = {# all for Hungary
@@ -2450,9 +2450,9 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		ROM = { 
+		ROM = {
 			set_country_flag = ROM_mediation_against
-			country_event = { id = DOD_hungary.64 days = 1} 
+			country_event = { id = DOD_hungary.64 days = 1}
 		}
 	}
 	option = {# compromise
@@ -2467,11 +2467,11 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		HUN = { 
+		HUN = {
 			set_country_flag = HUN_mediation_against
-			country_event = { id = DOD_hungary.63 days = 1 } 
+			country_event = { id = DOD_hungary.63 days = 1 }
 		}
-		
+
 	}
 
 }
@@ -2481,7 +2481,7 @@ country_event = {
 	title = DOD_hungary.69.t
 	desc = DOD_hungary.69.desc
 	picture = GFX_report_event_vienna_award_negotiations
-	
+
 	is_triggered_only = yes
 
 	option = {# accept
@@ -2493,7 +2493,7 @@ country_event = {
 		remove_ideas = ROM_war_preparation
 		set_country_flag = second_vienna_accepted_north #for event bulgaria.4
 	}
-	
+
 	option = {# refuse
 		name = DOD_hungary.69.b
 		ai_chance = {
@@ -2503,7 +2503,7 @@ country_event = {
 		event_target:HUN_mediator = {
 			country_event = { id = DOD_hungary.66 }
 		}
-		
+
 	}
 }
 
@@ -2513,7 +2513,7 @@ country_event = {
 	title = DOD_hungary.70.t
 	desc = DOD_hungary.70.desc
 	picture = GFX_report_event_generic_peaceful_annexation
-	
+
 	is_triggered_only = yes
 
 	option = {# accept
@@ -2530,7 +2530,7 @@ country_event = {
 	title = DOD_hungary.71.t
 	desc = DOD_hungary.71.desc
 	picture = GFX_report_event_vienna_award_negotiations
-	
+
 	is_triggered_only = yes
 
 	option = {# all for Hungary
@@ -2572,7 +2572,7 @@ country_event = {
 		}
 		set_global_flag = HUN_mediation_HUN_nothing
 		event_target:ROM_mediator = { country_event = { id = DOD_hungary.72 hours = 24 } }
-		
+
 	}
 
 }
@@ -2594,7 +2594,7 @@ country_event = {
 		trigger = { has_global_flag = HUN_mediation_HUN_nothing }
 	}
 	picture = GFX_report_event_vienna_award_negotiations
-	
+
 	is_triggered_only = yes
 
 	option = {# agree
@@ -2642,7 +2642,7 @@ country_event = {
 				factor = 100
 			}
 		}
-		country_event = { id = DOD_hungary.73 hours = 24 } 
+		country_event = { id = DOD_hungary.73 hours = 24 }
 	}
 
 }
@@ -2653,7 +2653,7 @@ country_event = {
 	title = DOD_hungary.73.t
 	desc = DOD_hungary.73.desc
 	picture = GFX_report_event_vienna_award_negotiations
-	
+
 	is_triggered_only = yes
 
 	option = {# all for Hungary
@@ -2731,7 +2731,7 @@ country_event = {
 			clr_global_flag = HUN_mediation_HUN_all
 		}
 		event_target:HUN_mediator = { country_event = { id = DOD_hungary.74 hours = 24 } }
-		
+
 	}
 
 }
@@ -2751,9 +2751,9 @@ country_event = {
 	desc = {
 		text = DOD_hungary.74.desc_HUN_nothing
 		trigger = { has_global_flag = HUN_mediation_HUN_nothing }
-	} 
+	}
 	picture = GFX_report_event_vienna_award_negotiations
-	
+
 	is_triggered_only = yes
 
 	option = {# agree
@@ -2806,9 +2806,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.75
 	title = DOD_hungary.67.t
-	desc = DOD_hungary.67.desc 
+	desc = DOD_hungary.67.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -2839,9 +2839,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.80
 	title = DOD_hungary.80.t
-	desc = DOD_hungary.80.desc 
+	desc = DOD_hungary.80.desc
 	picture = GFX_report_event_generic_rally2
-	
+
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -2853,11 +2853,11 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		HUN = { country_event = DOD_hungary.81 } 
+		HUN = { country_event = DOD_hungary.81 }
 		hidden_effect = {
 			news_event = { id = news.304 days = 1 }
 		}
-		
+
 	}
 
 	option = {# Appeal to your allies
@@ -2873,7 +2873,7 @@ country_event = {
 			is_in_faction = yes
 		}
 		random_other_country = {
-			limit = { 
+			limit = {
 				is_in_faction_with = CZE
 				is_faction_leader = yes
 			 }
@@ -2903,15 +2903,15 @@ country_event = {
 country_event = {
 	id = DOD_hungary.81
 	title = DOD_hungary.81.t
-	desc = DOD_hungary.81.desc 
+	desc = DOD_hungary.81.desc
 	picture = GFX_report_event_german_polish_border
-	
+
 	is_triggered_only = yes
 
 	option = {# great
 		name = DOD_hungary.81.a
 		transfer_state = 664
-		
+
 	}
 }
 
@@ -2919,9 +2919,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.82
 	title = DOD_hungary.82.t
-	desc = DOD_hungary.82.desc 
+	desc = DOD_hungary.82.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# support them
@@ -2941,14 +2941,14 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		CZE = { 
-			country_event = DOD_hungary.86 
+		CZE = {
+			country_event = DOD_hungary.86
 		}
 		if = {
 			limit = {
 				is_faction_leader = yes
 			}
-			remove_from_faction = CZE 
+			remove_from_faction = CZE
 		}
 	}
 }
@@ -2957,9 +2957,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.83
 	title = DOD_hungary.83.t
-	desc = DOD_hungary.83.desc 
+	desc = DOD_hungary.83.desc
 	picture = GFX_report_event_german_inspect_troops
-	
+
 	is_triggered_only = yes
 
 	option = {# tell Hungary to go ahead
@@ -2991,9 +2991,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.84
 	title = DOD_hungary.84.t
-	desc = DOD_hungary.84.desc 
+	desc = DOD_hungary.84.desc
 	picture = GFX_report_event_hungary_refused
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -3010,7 +3010,7 @@ country_event = {
 			}
 		}
 		add_stability = -0.05
-		
+
 	}
 	option = {# war!
 		name = DOD_hungary.84.b
@@ -3025,7 +3025,7 @@ country_event = {
 		}
 		add_war_support = 0.05
 		if = {
-			limit = { 
+			limit = {
 				CZE = {
 					owns_state = 664
 				}
@@ -3038,7 +3038,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				SLO = {
 					owns_state = 664
 				}
@@ -3060,9 +3060,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.85
 	title = DOD_hungary.85.t
-	desc = DOD_hungary.85.desc 
+	desc = DOD_hungary.85.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -3081,7 +3081,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				CZE = {
 					owns_state = 664
 				}
@@ -3094,7 +3094,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				SLO = {
 					owns_state = 664
 				}
@@ -3113,9 +3113,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.86
 	title = DOD_hungary.86.t
-	desc = DOD_hungary.86.desc 
+	desc = DOD_hungary.86.desc
 	picture = GFX_report_event_hitler_croatia_handshake
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -3144,9 +3144,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.90
 	title = DOD_hungary.90.t
-	desc = DOD_hungary.90.desc 
+	desc = DOD_hungary.90.desc
 	picture = GFX_report_event_hungary_parliament
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -3176,7 +3176,7 @@ country_event = {
 			}
 		}
 		HUN = { country_event = DOD_hungary.92 }
-		
+
 	}
 }
 
@@ -3184,9 +3184,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.91
 	title = DOD_hungary.91.t
-	desc = DOD_hungary.91.desc 
+	desc = DOD_hungary.91.desc
 	picture = GFX_report_event_generic_peaceful_annexation
-	
+
 	is_triggered_only = yes
 
 	option = {# great
@@ -3200,9 +3200,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.92
 	title = DOD_hungary.92.t
-	desc = DOD_hungary.92.desc 
+	desc = DOD_hungary.92.desc
 	picture = GFX_report_event_hungary_refused
-	
+
 	is_triggered_only = yes
 
 	option = {# back down
@@ -3249,13 +3249,13 @@ country_event = {
 			}
 		}
 		GER = { country_event = DOD_hungary.93 }
-		
+
 	}
 	option = {# ask Italy for help
 		trigger = {
 			ITA = {
 				NOT = { has_war_with = ROOT }
-				exists = yes 
+				exists = yes
 				is_puppet = no
 				has_capitulated = no
 			}
@@ -3282,7 +3282,7 @@ country_event = {
 			}
 		}
 		ITA = { country_event = DOD_hungary.93 }
-		
+
 	}
 	option = {# ask both for help
 		name = DOD_hungary.92.d
@@ -3296,7 +3296,7 @@ country_event = {
 			}
 		}
 		set_country_flag = HUN_YUG_both
-		GER = { country_event = DOD_hungary.93 }	
+		GER = { country_event = DOD_hungary.93 }
 	}
 	option = {# Go alone
 		name = DOD_hungary.92.e
@@ -3330,9 +3330,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.93
 	title = DOD_hungary.93.t
-	desc = DOD_hungary.93.desc 
+	desc = DOD_hungary.93.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
 	option = {# yes
@@ -3344,7 +3344,7 @@ country_event = {
 				factor = 0.25
 			}
 		}
-		
+
 		if = {
 			limit = {
 				tag = GER
@@ -3381,7 +3381,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				has_government = democratic
+				has_government = conservative
 				factor = 10
 			}
 		}
@@ -3389,7 +3389,7 @@ country_event = {
 			limit = {
 				tag = GER
 			}
-			
+
 			if = {
 				limit = {
 					HUN = {
@@ -3412,7 +3412,7 @@ country_event = {
 				tag = ITA
 				HUN = {
 					NOT = { has_country_flag = HUN_YUG_both }
-				}	
+				}
 			}
 			HUN = { country_event = DOD_hungary.95 }
 		}
@@ -3427,7 +3427,7 @@ country_event = {
 				country_event = DOD_hungary.94
 			}
 		}
-		
+
 	}
 }
 
@@ -3435,9 +3435,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.94
 	title = DOD_hungary.94.t
-	desc = DOD_hungary.94.desc 
+	desc = DOD_hungary.94.desc
 	picture = GFX_report_event_generic_sign_treaty3
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -3453,9 +3453,9 @@ country_event = {
 				NOT = { 103 = { is_claimed_by = ITA } } #only GER agreed
 			}
 			add_threat = 1
-			
+
 		}
-		if = {	
+		if = {
 			limit = {
 				103 = { is_claimed_by = ITA }
 				NOT = { 102 = { is_claimed_by = GER } } #only ITA agreed
@@ -3463,7 +3463,7 @@ country_event = {
 			add_threat = 1
 		}
 
-		if = {	
+		if = {
 			limit = {
 				103 = { is_claimed_by = ITA }
 				102 = { is_claimed_by = GER } #both agreed
@@ -3483,7 +3483,7 @@ country_event = {
 		}
 		if = {
 			limit = { 102 = { is_claimed_by = GER } }
-			GER = { 
+			GER = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
@@ -3493,7 +3493,7 @@ country_event = {
 		}
 		if = {
 			limit = { 103 = { is_claimed_by = ITA } }
-			ITA = { 
+			ITA = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
@@ -3511,7 +3511,7 @@ country_event = {
 				generator = { 45 }
 			}
 		}
-		news_event = { id = news.308 days = 1 }		
+		news_event = { id = news.308 days = 1 }
 	}
 }
 
@@ -3519,9 +3519,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.95
 	title = DOD_hungary.95.t
-	desc = DOD_hungary.95.desc 
+	desc = DOD_hungary.95.desc
 	picture = GFX_report_event_german_speech
-	
+
 	is_triggered_only = yes
 
 	option = {# pity
@@ -3545,27 +3545,27 @@ country_event = {
 	title = DOD_hungary.96.t
 	desc = {
 		text = DOD_hungary.96.desc_HUN_GER
-		trigger = { 
-			102 = { is_claimed_by = GER } 
+		trigger = {
+			102 = { is_claimed_by = GER }
 			103 = { NOT = { is_claimed_by = ITA } }
 		}
 	}
 	desc = {
 		text = DOD_hungary.96.desc_HUN_ITA
-		trigger = { 
+		trigger = {
 			102 = { NOT = { is_claimed_by = GER } }
-			103 = { is_claimed_by = ITA } 
+			103 = { is_claimed_by = ITA }
 		}
 	}
 	desc = {
 		text = DOD_hungary.96.desc_HUN_both
-		trigger = { 
-			102 = { is_claimed_by = GER } 
-			103 = { is_claimed_by = ITA } 
+		trigger = {
+			102 = { is_claimed_by = GER }
+			103 = { is_claimed_by = ITA }
 		}
-	} 
+	}
 	picture = GFX_report_event_hitler_parade
-	
+
 	is_triggered_only = yes
 
 	option = {# fold
@@ -3579,7 +3579,7 @@ country_event = {
 			}
 			GER = { transfer_state = 102 }
 		}
-		if = {	
+		if = {
 			limit = {
 				103 = { is_claimed_by = ITA }
 			}
@@ -3598,19 +3598,19 @@ country_event = {
 			}
 		}
 		HUN = { country_event = DOD_hungary.97 }
-		if = {	
+		if = {
 			limit = {
 				103 = { is_claimed_by = ITA }
 			}
 			ITA = { country_event = DOD_hungary.97 }
 		}
-		if = {	
+		if = {
 			limit = {
 				102 = { is_claimed_by = GER }
 			}
 			GER = { country_event = DOD_hungary.97 }
 		}
-		
+
 	}
 }
 
@@ -3618,18 +3618,18 @@ country_event = {
 country_event = {
 	id = DOD_hungary.97
 	title = DOD_hungary.97.t
-	desc = DOD_hungary.97.desc 
+	desc = DOD_hungary.97.desc
 	picture = GFX_report_event_polish_army
-	
+
 	is_triggered_only = yes
 
 	option = {# war
 		name = DOD_hungary.97.a
 		if = {
-			limit = { 
+			limit = {
 				tag = GER
 				102 = { is_claimed_by = GER } }
-			GER = { 
+			GER = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
@@ -3638,11 +3638,11 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				tag = ITA
-				103 = { is_claimed_by = ITA } 
+				103 = { is_claimed_by = ITA }
 			}
-			ITA = { 
+			ITA = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
@@ -3653,7 +3653,7 @@ country_event = {
 		if = {
 			limit = {
 				tag = HUN
-			}	
+			}
 			HUN = {
 				create_wargoal = {
 					type = take_state_focus
@@ -3673,9 +3673,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.100
 	title = DOD_hungary.100.t
-	desc = DOD_hungary.100.desc 
+	desc = DOD_hungary.100.desc
 	picture = GFX_report_event_hungary_parliament
-	
+
 	is_triggered_only = yes
 
 	option = {# hand over Slovakia
@@ -3714,9 +3714,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.101
 	title = DOD_hungary.101.t
-	desc = DOD_hungary.101.desc 
+	desc = DOD_hungary.101.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
 
 	option = {# annex
@@ -3760,7 +3760,7 @@ country_event = {
 		if = {
 			limit = {
 				71 = {
-					is_owned_by = CZE	
+					is_owned_by = CZE
 				}
 			}
 			SLO = { transfer_state = 71 }
@@ -3768,7 +3768,7 @@ country_event = {
 		if = {
 			limit = {
 				72 = {
-					is_owned_by = CZE	
+					is_owned_by = CZE
 				}
 			}
 			SLO = { transfer_state = 72 }
@@ -3818,9 +3818,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.102
 	title = DOD_hungary.102.t
-	desc = DOD_hungary.102.desc 
+	desc = DOD_hungary.102.desc
 	picture = GFX_report_event_czech_soldiers_01
-	
+
 	is_triggered_only = yes
 
 	option = {# let it go
@@ -3854,9 +3854,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.103
 	title = DOD_hungary.103.t
-	desc = DOD_hungary.103.desc 
+	desc = DOD_hungary.103.desc
 	picture = GFX_report_event_hitler_croatia_handshake
-	
+
 	is_triggered_only = yes
 
 	option = {# yes
@@ -3864,13 +3864,13 @@ country_event = {
 		ai_chance = {
 			factor = 75
 			modifier = {
-				has_government = democratic
+				has_government = conservative
 				factor = 0
 			}
 		}
 		set_global_flag = GER_HUN_CZE_split
-		HUN = { 
-			country_event = DOD_hungary.104 
+		HUN = {
+			country_event = DOD_hungary.104
 			add_opinion_modifier = { target = GER modifier = HUN_split_CZE }
 			add_ai_strategy = {
 					type = alliance
@@ -3894,22 +3894,22 @@ country_event = {
 country_event = {
 	id = DOD_hungary.104
 	title = DOD_hungary.104.t
-	desc = DOD_hungary.104.desc 
+	desc = DOD_hungary.104.desc
 	picture = GFX_report_event_generic_sign_treaty3
-	
+
 	is_triggered_only = yes
 
 	option = {# great
 		name = DOD_hungary.104.a
-	}	
+	}
 }
 #Demand Overlordship over Slovakia - GER refuses to split CZE with Hungary
 country_event = {
 	id = DOD_hungary.105
 	title = DOD_hungary.105.t
-	desc = DOD_hungary.105.desc 
+	desc = DOD_hungary.105.desc
 	picture = GFX_report_event_german_inspect_troops
-	
+
 	is_triggered_only = yes
 
 	option = {# let it go
@@ -3938,9 +3938,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.106
 	title = DOD_hungary.106.t
-	desc = DOD_hungary.106.desc 
+	desc = DOD_hungary.106.desc
 	picture = GFX_report_event_german_troops
-	
+
 	is_triggered_only = yes
 
 	option = {# fume
@@ -3967,7 +3967,7 @@ country_event = {
 		hidden_effect = {
 			news_event = { id = news.311 days = 1 }
 		}
-	}	
+	}
 }
 
 #Demand Overlordship over Slovakia - Slovakia independent
@@ -3976,18 +3976,18 @@ country_event = {
 	title = DOD_hungary.107.t
 	desc = {
 		text = DOD_hungary.107.desc_SLO_independent
-		trigger = { 
+		trigger = {
 			SLO = { is_subject = no }
 		}
 	}
 	desc = {
 		text = DOD_hungary.107.desc_SLO_puppet
-		trigger = { 
+		trigger = {
 			SLO = { is_subject = yes }
 		}
 	}
 	picture = GFX_report_event_lithuania_army
-	
+
 	is_triggered_only = yes
 
 	option = {# agree to being a puppet
@@ -4012,17 +4012,17 @@ country_event = {
 			}
 		}
 		HUN = { country_event = DOD_hungary.109 }
-		
-	}	
+
+	}
 }
 
 #Demand Overlordship over Slovakia - Slovakia agrees to become a puppet
 country_event = {
 	id = DOD_hungary.108
 	title = DOD_hungary.108.t
-	desc = DOD_hungary.108.desc 
+	desc = DOD_hungary.108.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# good
@@ -4030,16 +4030,16 @@ country_event = {
 		puppet = SLO
 	}
 
-	
+
 }
 
 #Demand Overlordship over Slovakia - Slovakia refuses to become a puppet
 country_event = {
 	id = DOD_hungary.109
 	title = DOD_hungary.109.t
-	desc = DOD_hungary.109.desc 
+	desc = DOD_hungary.109.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
 
 	option = {# war!
@@ -4053,24 +4053,24 @@ country_event = {
 		}
 	}
 
-	
+
 }
 
 #Pressure Romania - Event for SOV to agree to hungarian Scheme
 country_event = {
 	id = DOD_hungary.110
 	title = DOD_hungary.110.t
-	desc = DOD_hungary.110.desc 
+	desc = DOD_hungary.110.desc
 	picture = GFX_report_event_generic_communist_congress
-	
+
 	is_triggered_only = yes
 
-	option = {# agree 
+	option = {# agree
 		name = DOD_hungary.110.a
 		ai_chance = {
 			factor = 75
-			modifier = { 
-				NOT = { has_completed_focus = SOV_great_purge } 
+			modifier = {
+				NOT = { has_completed_focus = SOV_great_purge }
 				factor = 0.6
 			}
 			modifier = {
@@ -4078,7 +4078,7 @@ country_event = {
 				factor = 0.25
 			}
 			modifier = {
-				has_government = democratic
+				has_government = conservative
 				factor = 0.25
 			}
 		}
@@ -4096,17 +4096,17 @@ country_event = {
 			}
 		}
 		HUN = { country_event = DOD_hungary.112 }
-		
-	}	
+
+	}
 }
 
 #Pressure Romania - Romania presented with an Ultimatum
 country_event = {
 	id = DOD_hungary.111
 	title = DOD_hungary.111.t
-	desc = DOD_hungary.111.desc 
+	desc = DOD_hungary.111.desc
 	picture = GFX_report_event_soviet_soldiers_tank
-	
+
 	is_triggered_only = yes
 
 	option = {# give in to territorial demands
@@ -4118,7 +4118,7 @@ country_event = {
 			country_event = { days = 1 id = soviet.4 }
 		}
 		set_country_flag = bessarabia_ceded
-		HUN = { country_event = DOD_hungary.51 } 
+		HUN = { country_event = DOD_hungary.51 }
 	}
 
 	option = {# compromise on territorial demands
@@ -4138,15 +4138,15 @@ country_event = {
 			NOT = { has_completed_focus = ROM_appoint_soviet_friendly_government }
 		}
 		SOV = { country_event = DOD_hungary.114 }
-		
-	}	
+
+	}
 	option = {# no deals!
 		name = DOD_hungary.111.d
 		ai_chance = {
 			factor = 25
 		}
 		SOV = { country_event = DOD_hungary.115 }
-		
+
 	}
 }
 
@@ -4154,9 +4154,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.112
 	title = DOD_hungary.112.t
-	desc = DOD_hungary.112.desc 
+	desc = DOD_hungary.112.desc
 	picture = GFX_report_event_stalin_02
-	
+
 	is_triggered_only = yes
 
 	option = {# proceed alone
@@ -4174,17 +4174,17 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		
-	}	
+
+	}
 }
 
 #Pressure Romania - Romania wants to compromise
 country_event = {
 	id = DOD_hungary.113
 	title = DOD_hungary.113.t
-	desc = DOD_hungary.113.desc 
+	desc = DOD_hungary.113.desc
 	picture = GFX_report_event_stalin_meeting
-	
+
 	is_triggered_only = yes
 
 	option = {# force them to give up Transylvania
@@ -4208,7 +4208,7 @@ country_event = {
 		ROM = {
 			set_country_flag = ROM_SOV_compromise_Bessarabia
 			country_event = DOD_hungary.116
-		}	
+		}
 	}
 
 	option = {# force them to give up both
@@ -4219,17 +4219,17 @@ country_event = {
 		ROM = {
 			set_country_flag = ROM_SOV_compromise_no_deal
 			country_event = DOD_hungary.116
-		}	
-	}	
+		}
+	}
 }
 
 #Pressure Romania - Romania offers SOV to put communists in government
 country_event = {
 	id = DOD_hungary.114
 	title = DOD_hungary.114.t
-	desc = DOD_hungary.114.desc 
+	desc = DOD_hungary.114.desc
 	picture = GFX_report_event_stalin_meeting
-	
+
 	is_triggered_only = yes
 
 	option = {# agree
@@ -4250,17 +4250,17 @@ country_event = {
 			factor = 25
 		}
 		country_event = DOD_hungary.113
-		
-	}	
+
+	}
 }
 
 #Pressure Romania - Romania refuses outright
 country_event = {
 	id = DOD_hungary.115
 	title = DOD_hungary.115.t
-	desc = DOD_hungary.115.desc 
+	desc = DOD_hungary.115.desc
 	picture = GFX_report_event_romanian_soldiers
-	
+
 	is_triggered_only = yes
 
 	option = {# accept
@@ -4284,7 +4284,7 @@ country_event = {
 	#	}
 	#	country_event = DOD_hungary.113
 	#	set_country_flag = ROM_refused_once
-	#}	
+	#}
 	option = {# war
 		name = DOD_hungary.115.c
 		ai_chance = {
@@ -4305,7 +4305,7 @@ country_event = {
 				target = ROM
 				generator = { 80 78 }
 		}
-	}	
+	}
 }
 
 #Pressure Romania - Romania gets compromise offer from SOV
@@ -4314,24 +4314,24 @@ country_event = {
 	title = DOD_hungary.116.t
 	desc = {
 		text = DOD_hungary.116.desc_transylvania
-		trigger = { 
+		trigger = {
 			has_country_flag = ROM_SOV_compromise_Transylvania
 		}
-	} 
+	}
 	desc = {
 		text = DOD_hungary.116.desc_bessarabia
-		trigger = { 
+		trigger = {
 			has_country_flag = ROM_SOV_compromise_Bessarabia
 		}
 	}
 	desc = {
 		text = DOD_hungary.116.desc_no_deal
-		trigger = { 
+		trigger = {
 			has_country_flag = ROM_SOV_compromise_no_deal
 		}
 	}
 	picture = GFX_report_event_stalin_01
-	
+
 	is_triggered_only = yes
 
 	option = {# agree
@@ -4346,7 +4346,7 @@ country_event = {
 		if = {
 			limit = { has_country_flag = ROM_SOV_compromise_Transylvania }
 			HUN = { country_event = DOD_hungary.51 }
-		}	
+		}
 		if = {
 			limit = { has_country_flag = ROM_SOV_compromise_Bessarabia }
 			SOV = {
@@ -4364,8 +4364,8 @@ country_event = {
 				country_event = { days = 1 id = soviet.4 }
 			}
 			set_country_flag = bessarabia_ceded
-		}	
-		
+		}
+
 	}
 
 	option = {# refuse
@@ -4374,16 +4374,16 @@ country_event = {
 			factor = 25
 		}
 		SOV = { country_event = DOD_hungary.115 }
-	}	
+	}
 }
 
 #Pressure Romania - SOV agrees to drop demands in return for political concessions
 country_event = {
 	id = DOD_hungary.117
 	title = DOD_hungary.117.t
-	desc = DOD_hungary.117.desc 
+	desc = DOD_hungary.117.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4397,9 +4397,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.118
 	title = DOD_hungary.118.t
-	desc = DOD_hungary.118.desc 
+	desc = DOD_hungary.118.desc
 	picture = GFX_report_event_lithuania_army
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4411,9 +4411,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.120
 	title = DOD_hungary.120.t
-	desc = DOD_hungary.120.desc 
+	desc = DOD_hungary.120.desc
 	picture = GFX_report_event_stalin_meeting
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4430,7 +4430,7 @@ country_event = {
 		CZE = {
 			country_event = DOD_hungary.121
 		}
-		
+
 	}
 	option = {# rather not
 		name = DOD_hungary.120.b
@@ -4445,9 +4445,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.121
 	title = DOD_hungary.121.t
-	desc = DOD_hungary.121.desc 
+	desc = DOD_hungary.121.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4460,15 +4460,15 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				664 = { is_owned_by = CZE }
 			}
 			HUN = {
 				country_event = DOD_hungary.81
 			}
 		}
-		
-		SOV = { give_guarantee = CZE } 
+
+		SOV = { give_guarantee = CZE }
 		if = {
 			limit = {
 				NOT = {
@@ -4492,9 +4492,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.122
 	title = DOD_hungary.122.t
-	desc = DOD_hungary.122.desc 
+	desc = DOD_hungary.122.desc
 	picture = GFX_report_event_czech_soldiers_02
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4523,9 +4523,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.123
 	title = DOD_hungary.123.t
-	desc = DOD_hungary.123.desc 
+	desc = DOD_hungary.123.desc
 	picture = GFX_report_event_stalin_02
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4552,9 +4552,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.124
 	title = DOD_hungary.124.t
-	desc = DOD_hungary.124.desc 
+	desc = DOD_hungary.124.desc
 	picture = GFX_report_event_molotov_ribentrop_handshake
-	
+
 	is_triggered_only = yes
 
 	option = {# offer them Slovakia as a puppet
@@ -4585,9 +4585,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.125
 	title = DOD_hungary.124.t
-	desc = DOD_hungary.124.desc 
+	desc = DOD_hungary.124.desc
 	picture = GFX_report_event_hitler_handshake
-	
+
 	is_triggered_only = yes
 
 	option = {# offer them Slovakia as a puppet
@@ -4614,9 +4614,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.126
 	title = DOD_hungary.126.t
-	desc = DOD_hungary.126.desc 
+	desc = DOD_hungary.126.desc
 	picture = GFX_report_event_stlin_meeting
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4628,9 +4628,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.127
 	title = DOD_hungary.127.t
-	desc = DOD_hungary.127.desc 
+	desc = DOD_hungary.127.desc
 	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
-	
+
 	is_triggered_only = yes
 
 	option = {# agree
@@ -4661,9 +4661,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.128
 	title = DOD_hungary.128.t
-	desc = DOD_hungary.128.desc 
+	desc = DOD_hungary.128.desc
 	picture = GFX_report_event_german_speech
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4686,9 +4686,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.129
 	title = DOD_hungary.129.t
-	desc = DOD_hungary.129.desc 
+	desc = DOD_hungary.129.desc
 	picture = GFX_report_event_soviet_german_soldier_handshake
-	
+
 	is_triggered_only = yes
 
 	option = {# okay
@@ -4707,7 +4707,7 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
-		GER = { 
+		GER = {
 			transfer_state = 9
 			transfer_state = 69
 			transfer_state = 75
@@ -4767,7 +4767,7 @@ country_event = {
 				generator = { 9 69 75 74 }
 			}
 		}
-		HUN = { 
+		HUN = {
 			create_wargoal = {
 				type = take_state_focus
 				target = CZE
@@ -4780,7 +4780,7 @@ country_event = {
 				target = CZE
 				generator = { 70 71 72 73 }
 			}
-			
+
 		}
 	}
 }
@@ -4789,9 +4789,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.130
 	title = DOD_hungary.130.t
-	desc = DOD_hungary.130.desc 
+	desc = DOD_hungary.130.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# alright then
@@ -4803,9 +4803,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.140
 	title = DOD_hungary.140.t
-	desc = DOD_hungary.140.desc 
+	desc = DOD_hungary.140.desc
 	picture = GFX_report_event_hungary_parliament
-	
+
 	is_triggered_only = yes
 
 	option = {# allow
@@ -4822,12 +4822,12 @@ country_event = {
 			}
 			modifier = {
 				HUN = {
-					has_government = democratic
+					has_government = conservative
 				}
 				factor = 3
 			}
 		}
-		if = { 
+		if = {
 			limit = { tag = FRA }
 			set_global_flag = HUN_FRA_engaged
 			ROM = { country_event = { id = DOD_hungary.141 days = 4 } }
@@ -4841,7 +4841,7 @@ country_event = {
 				CZE = { country_event = { id = DOD_hungary.141 days = 4 } }
 			}
 		}
-		if = { 
+		if = {
 			limit = { tag = ROM }
 			YUG = { country_event = { id = DOD_hungary.141 days = 4 } }
 			if = {
@@ -4875,9 +4875,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.141
 	title = DOD_hungary.141.t
-	desc = DOD_hungary.141.desc 
+	desc = DOD_hungary.141.desc
 	picture = GFX_report_event_journalists_speech
-	
+
 	is_triggered_only = yes
 
 	option = {# intervene
@@ -4927,12 +4927,12 @@ country_event = {
 country_event = {
 	id = DOD_hungary.142
 	title = DOD_hungary.142.t
-	desc = DOD_hungary.142.desc 
+	desc = DOD_hungary.142.desc
 	picture = GFX_report_event_generic_military_parade
-	
+
 	is_triggered_only = yes
 
-	option = {# 
+	option = {#
 		name = DOD_hungary.142.a
 		if = {
 			limit = { has_idea = HUN_treaty_of_triannon }
@@ -4949,31 +4949,31 @@ country_event = {
 			}
 		}
 	}
-	
+
 }
 
 #Bled Agreement - Neighbours issue a protest
 country_event = {
 	id = DOD_hungary.143
 	title = DOD_hungary.143.t
-	desc = DOD_hungary.143.desc 
+	desc = DOD_hungary.143.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# good for them
 		name = DOD_hungary.143.a
 	}
-	
+
 }
 
 #Bled Agreement - Hungary denied rearmament
 country_event = {
 	id = DOD_hungary.144
 	title = DOD_hungary.144.t
-	desc = DOD_hungary.144.desc 
+	desc = DOD_hungary.144.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# accept
@@ -5002,9 +5002,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.145
 	title = DOD_hungary.145.t
-	desc = DOD_hungary.145.desc 
+	desc = DOD_hungary.145.desc
 	picture = GFX_report_event_hungary_refused
-	
+
 	is_triggered_only = yes
 
 	option = {# appeal to Germany
@@ -5035,8 +5035,8 @@ country_event = {
 			}
 		}
 		trigger = {
-		 	NOT = { 
-		 		has_global_flag = HUN_FRA_engaged 
+		 	NOT = {
+		 		has_global_flag = HUN_FRA_engaged
 		 		has_war_with = FRA
 		 	}
 		}
@@ -5103,9 +5103,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.146
 	title = DOD_hungary.146.t
-	desc = DOD_hungary.146.desc 
+	desc = DOD_hungary.146.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
 	option = {# put pressure on the minors
@@ -5117,7 +5117,7 @@ country_event = {
 				factor = 10
 			}
 		}
-		if = { limit = { has_global_flag = HUN_FRA_engaged} 
+		if = { limit = { has_global_flag = HUN_FRA_engaged}
 			FRA = { country_event = { id = DOD_hungary.147 days = 1} }
 		}
 		if = { limit = { NOT = { has_global_flag = HUN_FRA_engaged } }
@@ -5141,9 +5141,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.147
 	title = DOD_hungary.147.t
-	desc = DOD_hungary.147.desc 
+	desc = DOD_hungary.147.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {# yield
@@ -5153,14 +5153,14 @@ country_event = {
 		}
 		HUN = { country_event = DOD_hungary.142 }
 		HUN = { add_opinion_modifier = { target = FROM modifier = offered_support } }
-		if = { 
+		if = {
 			limit = { tag = FRA }
 			set_global_flag = HUN_FRA_engaged
 			ROM = { country_event = DOD_hungary.141 }
 			YUG = { country_event = DOD_hungary.141 }
 			CZE = { country_event = DOD_hungary.141 }
 		}
-		if = { 
+		if = {
 			limit = { tag = ROM }
 			YUG = { country_event = DOD_hungary.141 }
 			CZE = { country_event = DOD_hungary.141 }
@@ -5183,9 +5183,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.148
 	title = DOD_hungary.148.t
-	desc = DOD_hungary.148.desc 
+	desc = DOD_hungary.148.desc
 	picture = GFX_report_event_hungary_refused
-	
+
 	is_triggered_only = yes
 
 	option = {# yield
@@ -5214,9 +5214,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.150
 	title = DOD_hungary.150.t
-	desc = DOD_hungary.150.desc 
-	picture = GFX_report_event_fighters 
-	
+	desc = DOD_hungary.150.desc
+	picture = GFX_report_event_fighters
+
 	is_triggered_only = yes
 
 	option = {# light fighter
@@ -5255,8 +5255,8 @@ country_event = {
 				factor = 0
 			}
 		}
-		country_event = DOD_hungary.151 
-		
+		country_event = DOD_hungary.151
+
 	}
 
 	option = {# heavy fighter
@@ -5306,13 +5306,13 @@ country_event = {
 	desc = {
 		text = DOD_hungary.151.desc_light_fighter
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_country_flag = GER_fighter_refused
 				has_country_flag = ENG_fighter_refused
 				has_country_flag = USA_fighter_refused
 				has_country_flag = FRA_fighter_refused
 				has_country_flag = ITA_fighter_refused
-			} 
+			}
 		}
 	}
 	desc = {
@@ -5328,7 +5328,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# Select German Plane
@@ -5380,7 +5380,7 @@ country_event = {
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_fighter_refused }
 		}
-		GER = { country_event = DOD_hungary.153 }	
+		GER = { country_event = DOD_hungary.153 }
 	}
 
 	option = {# select italian plane
@@ -5432,7 +5432,7 @@ country_event = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_fighter_refused }
 		}
-		ITA = { country_event = DOD_hungary.153 }	
+		ITA = { country_event = DOD_hungary.153 }
 	}
 
 	option = {# select french plane
@@ -5483,9 +5483,9 @@ country_event = {
 			}
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_fighter_refused }
-			
+
 		}
-		FRA = { country_event = DOD_hungary.153 }	
+		FRA = { country_event = DOD_hungary.153 }
 	}
 	option = {# select british plane
 		name = DOD_hungary.151.d
@@ -5536,7 +5536,7 @@ country_event = {
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_fighter_refused }
 		}
-		ENG = { country_event = DOD_hungary.153 }	
+		ENG = { country_event = DOD_hungary.153 }
 	}
 	option = {# select american plane
 		name = DOD_hungary.151.e
@@ -5603,10 +5603,10 @@ country_event = {
 				}
 			}
 		}
-		USA = { country_event = DOD_hungary.153 }	
+		USA = { country_event = DOD_hungary.153 }
 	}
 	option = {# failsafe
-		name = DOD_hungary.151.f	
+		name = DOD_hungary.151.f
 		trigger = {
 			OR = {
 				has_country_flag = GER_fighter_refused
@@ -5628,13 +5628,13 @@ country_event = {
 	desc = {
 		text = DOD_hungary.152.desc_heavy_fighter
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_country_flag = GER_heavy_fighter_refused
 				has_country_flag = ENG_heavy_fighter_refused
 				has_country_flag = USA_heavy_fighter_refused
 				has_country_flag = FRA_heavy_fighter_refused
 				has_country_flag = ITA_heavy_fighter_refused
-			} 
+			}
 		}
 	}
 	desc = {
@@ -5650,7 +5650,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# Select German Plane
@@ -5702,7 +5702,7 @@ country_event = {
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_heavy_fighter_refused }
 		}
-		GER = { country_event = DOD_hungary.154 }	
+		GER = { country_event = DOD_hungary.154 }
 	}
 
 	option = {# select italian plane
@@ -5754,7 +5754,7 @@ country_event = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_heavy_fighter_refused }
 		}
-		ITA = { country_event = DOD_hungary.154 }	
+		ITA = { country_event = DOD_hungary.154 }
 	}
 
 	option = {# select french plane
@@ -5805,9 +5805,9 @@ country_event = {
 			}
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_heavy_fighter_refused }
-			
+
 		}
-		FRA = { country_event = DOD_hungary.154 }	
+		FRA = { country_event = DOD_hungary.154 }
 	}
 	option = {# select british plane
 		name = DOD_hungary.151.d
@@ -5858,7 +5858,7 @@ country_event = {
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_heavy_fighter_refused }
 		}
-		ENG = { country_event = DOD_hungary.154 }	
+		ENG = { country_event = DOD_hungary.154 }
 	}
 	option = {# select american plane
 		name = DOD_hungary.151.e
@@ -5925,10 +5925,10 @@ country_event = {
 				}
 			}
 		}
-		USA = { country_event = DOD_hungary.154 }	
+		USA = { country_event = DOD_hungary.154 }
 	}
 	option = {# failsafe
-		name = DOD_hungary.151.f	
+		name = DOD_hungary.151.f
 		trigger = {
 			OR = {
 				has_country_flag = GER_heavy_fighter_refused
@@ -5947,9 +5947,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.153
 	title = DOD_hungary.153.t
-	desc = DOD_hungary.153.desc 
+	desc = DOD_hungary.153.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# certainly
@@ -5969,10 +5969,10 @@ country_event = {
 				NOT = { has_tech = fighter2 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = fighter_equipment_1
-					
+
 				}
 				cost_factor = 0
 			}
@@ -5983,7 +5983,7 @@ country_event = {
 				NOT = { has_tech = fighter3 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = fighter_equipment_2
 				}
@@ -5995,7 +5995,7 @@ country_event = {
 				has_tech = fighter3
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = fighter_equipment_3
 				}
@@ -6042,9 +6042,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.154
 	title = DOD_hungary.153.t
-	desc = DOD_hungary.154.desc 
+	desc = DOD_hungary.154.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# certainly
@@ -6064,7 +6064,7 @@ country_event = {
 				NOT = { has_tech = heavy_fighter2 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = heavy_fighter_equipment_1
 				}
@@ -6077,9 +6077,9 @@ country_event = {
 				NOT = { has_tech = heavy_fighter3 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
-					type = heavy_fighter_equipment_2	
+					type = heavy_fighter_equipment_2
 				}
 				cost_factor = 0
 			}
@@ -6089,14 +6089,14 @@ country_event = {
 				has_tech = heavy_fighter3
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = heavy_fighter_equipment_3
 				}
 				cost_factor = 0
 			}
 		}
-		
+
 	}
 
 	option = {# no
@@ -6137,14 +6137,14 @@ country_event = {
 country_event = {
 	id = DOD_hungary.155
 	title = DOD_hungary.155.t
-	desc = DOD_hungary.155.desc 
+	desc = DOD_hungary.155.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	option = {# neat
 		name = DOD_hungary.155.a
-		
+
 	}
 }
 
@@ -6153,9 +6153,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.160
 	title = DOD_hungary.160.t
-	desc = DOD_hungary.160.desc 
+	desc = DOD_hungary.160.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	option = {# CAS
@@ -6194,7 +6194,7 @@ country_event = {
 				factor = 0
 			}
 		}
-		country_event = DOD_hungary.161 	
+		country_event = DOD_hungary.161
 	}
 
 	option = {# TAC
@@ -6244,13 +6244,13 @@ country_event = {
 	desc = {
 		text = DOD_hungary.161.desc_cas
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_country_flag = GER_CAS_refused
 				has_country_flag = ENG_CAS_refused
 				has_country_flag = USA_CAS_refused
 				has_country_flag = FRA_CAS_refused
 				has_country_flag = ITA_CAS_refused
-			} 
+			}
 		}
 	}
 	desc = {
@@ -6266,7 +6266,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	option = {# Select German Plane
@@ -6318,7 +6318,7 @@ country_event = {
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_CAS_refused }
 		}
-		GER = { country_event = DOD_hungary.163 }	
+		GER = { country_event = DOD_hungary.163 }
 	}
 
 	option = {# select italian plane
@@ -6370,7 +6370,7 @@ country_event = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_CAS_refused }
 		}
-		ITA = { country_event = DOD_hungary.163 }	
+		ITA = { country_event = DOD_hungary.163 }
 	}
 
 	option = {# select french plane
@@ -6422,7 +6422,7 @@ country_event = {
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_CAS_refused }
 		}
-		FRA = { country_event = DOD_hungary.163 }	
+		FRA = { country_event = DOD_hungary.163 }
 	}
 	option = {# select british plane
 		name = DOD_hungary.151.d
@@ -6473,7 +6473,7 @@ country_event = {
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_CAS_refused }
 		}
-		ENG = { country_event = DOD_hungary.163 }	
+		ENG = { country_event = DOD_hungary.163 }
 	}
 	option = {# select american plane
 		name = DOD_hungary.151.e
@@ -6540,10 +6540,10 @@ country_event = {
 				}
 			}
 		}
-		USA = { country_event = DOD_hungary.163 }	
+		USA = { country_event = DOD_hungary.163 }
 	}
 	option = {# failsafe
-		name = DOD_hungary.151.f	
+		name = DOD_hungary.151.f
 		trigger = {
 			OR = {
 				has_country_flag = GER_CAS_refused
@@ -6564,13 +6564,13 @@ country_event = {
 	desc = {
 		text = DOD_hungary.162.desc_tac
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_country_flag = GER_tactical_bomber_refused
 				has_country_flag = ENG_tactical_bomber_refused
 				has_country_flag = USA_tactical_bomber_refused
 				has_country_flag = FRA_tactical_bomber_refused
 				has_country_flag = ITA_tactical_bomber_refused
-			} 
+			}
 		}
 	}
 	desc = {
@@ -6586,7 +6586,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	option = {# Select German Plane
@@ -6638,7 +6638,7 @@ country_event = {
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_tactical_bomber_refused }
 		}
-		GER = { country_event = DOD_hungary.164 }	
+		GER = { country_event = DOD_hungary.164 }
 	}
 
 	option = {# select italian plane
@@ -6690,7 +6690,7 @@ country_event = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_tactical_bomber_refused }
 		}
-		ITA = { country_event = DOD_hungary.164 }	
+		ITA = { country_event = DOD_hungary.164 }
 	}
 
 	option = {# select french plane
@@ -6742,7 +6742,7 @@ country_event = {
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_tactical_bomber_refused }
 		}
-		FRA = { country_event = DOD_hungary.164 }	
+		FRA = { country_event = DOD_hungary.164 }
 	}
 	option = {# select british plane
 		name = DOD_hungary.151.d
@@ -6793,7 +6793,7 @@ country_event = {
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_tactical_bomber_refused }
 		}
-		ENG = { country_event = DOD_hungary.164 }	
+		ENG = { country_event = DOD_hungary.164 }
 	}
 	option = {# select american plane
 		name = DOD_hungary.151.e
@@ -6860,10 +6860,10 @@ country_event = {
 				}
 			}
 		}
-		USA = { country_event = DOD_hungary.164 }	
+		USA = { country_event = DOD_hungary.164 }
 	}
 	option = {# failsafe
-		name = DOD_hungary.151.f	
+		name = DOD_hungary.151.f
 		trigger = {
 			OR = {
 				has_country_flag = GER_tactical_bomber_refused
@@ -6882,9 +6882,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.163
 	title = DOD_hungary.163.t
-	desc = DOD_hungary.163.desc 
+	desc = DOD_hungary.163.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	option = {# certainly
@@ -6904,7 +6904,7 @@ country_event = {
 				NOT = { has_tech = CAS2 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = CAS_equipment_1
 				}
@@ -6917,9 +6917,9 @@ country_event = {
 				NOT = { has_tech = CAS3 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
-					type = CAS_equipment_2	
+					type = CAS_equipment_2
 				}
 				cost_factor = 0
 			}
@@ -6929,7 +6929,7 @@ country_event = {
 				has_tech = CAS3
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = CAS_equipment_3
 				}
@@ -6976,9 +6976,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.164
 	title = DOD_hungary.164.t
-	desc = DOD_hungary.164.desc 
+	desc = DOD_hungary.164.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	option = {# certainly
@@ -6998,7 +6998,7 @@ country_event = {
 				NOT = { has_tech = tactical_bomber2 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = tac_bomber_equipment_1
 				}
@@ -7011,9 +7011,9 @@ country_event = {
 				NOT = { has_tech = tactical_bomber3 }
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
-					type = tac_bomber_equipment_2	
+					type = tac_bomber_equipment_2
 				}
 				cost_factor = 0
 			}
@@ -7023,7 +7023,7 @@ country_event = {
 				has_tech = tactical_bomber3
 			}
 			create_production_license = {
-				target = HUN 
+				target = HUN
 				equipment = {
 					type = tac_bomber_equipment_3
 				}
@@ -7070,14 +7070,14 @@ country_event = {
 country_event = {
 	id = DOD_hungary.165
 	title = DOD_hungary.165.t
-	desc = DOD_hungary.165.desc 
+	desc = DOD_hungary.165.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	option = {# neat
 		name = DOD_hungary.165.a
-		
+
 	}
 }
 
@@ -7085,9 +7085,9 @@ country_event = {
 country_event = {
 	id = DOD_hungary.170
 	title = DOD_hungary.170.t
-	desc = DOD_hungary.170.desc 
+	desc = DOD_hungary.170.desc
 	picture = GFX_report_event_generic_military_parade
-	
+
 	mean_time_to_happen = { days = 2 }
 
 	trigger = {

@@ -196,7 +196,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 16
+	conservative = 16
 	communism = 77
 	neutrality = 2
 	fascism = 5

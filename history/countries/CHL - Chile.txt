@@ -54,7 +54,7 @@ set_convoys = 20
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -65,7 +65,7 @@ set_convoys = 20
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "CHL_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -116,13 +116,13 @@ set_convoys = 20
 
 set_convoys = 5
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1932.10.30"
 	election_frequency = 72  #but 4 years after this one in 1938.
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
+	conservative = 98
 	communism = 2
 }
 
@@ -139,14 +139,14 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservative
 		last_election = "1938.10.25"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		democratic = 100
+		conservative = 100
 	}
 
 	create_country_leader = {
@@ -225,7 +225,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "H1 Class"				
+		name = "H1 Class"
 		type = ship_hull_submarine_1
 		name_group = CHL_SS_HISTORICAL
 		parent_version = 0
@@ -237,7 +237,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Capitán O'Brien Class"				
+		name = "Capitán O'Brien Class"
 		type = ship_hull_submarine_1
 		name_group = CHL_SS_HISTORICAL
 		parent_version = 0
@@ -249,7 +249,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Almirante Lynch Class"				
+		name = "Almirante Lynch Class"
 		type = ship_hull_light_1
 		name_group = CHL_DD_HISTORICAL
 		parent_version = 0
@@ -266,7 +266,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Serrano Class"	
+		name = "Serrano Class"
 		type = ship_hull_light_1
 		name_group = CHL_DD_HISTORICAL
 		parent_version = 0
@@ -283,7 +283,7 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "O'Higgins Class"				
+		name = "O'Higgins Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = CHL_CA_HISTORICAL
 		parent_version = 0
@@ -301,7 +301,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Chacabuco Class"				
+		name = "Chacabuco Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = CHL_CL_HISTORICAL
 		parent_version = 0
@@ -320,7 +320,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Almirante Latorre Class"	
+		name = "Almirante Latorre Class"
 		type = ship_hull_heavy_1
 		name_group = CHL_BB_HISTORICAL
 		parent_version = 0

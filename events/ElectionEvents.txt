@@ -10,9 +10,9 @@ country_event = {
 	title = election.1.t
 	desc = election.1.d
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = election.1.a
 	}
@@ -24,18 +24,18 @@ country_event = {
 	title = election.2.t
 	desc = election.2.d
 	picture = GFX_report_event_airplane_factory
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		NOT = {
 			OR = {
 				has_war = yes
@@ -51,7 +51,7 @@ country_event = {
 	}
 
 	option = {
-		ai_chance = { 
+		ai_chance = {
 			base = 1
 		}
 		name = election.2.a
@@ -79,18 +79,18 @@ country_event = {
 	title = election.3.t
 	desc = election.3.d
 	picture = GFX_report_event_tank_factory
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		has_war = no
 		OR = {
 			any_neighbor_country = {
@@ -154,22 +154,22 @@ country_event = {
 	title = election.4.t
 	desc = election.4.d
 	picture = GFX_report_event_fascist_gathering
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		NOT = { has_idea = fascism_defeated }
 		fascism > 0.15
 	}
-	
+
 	option = {
 		name = election.4.a
 		ai_chance = {
@@ -201,7 +201,7 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = conservative
 			popularity = 0.03
 		}
 		set_country_flag = government_declined_fascists
@@ -214,22 +214,22 @@ country_event = {
 	title = election.5.t
 	desc = election.5.d
 	picture = GFX_report_event_worker_protests
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		NOT = { has_idea = communism_defeated }
 		communism > 0.15
 	}
-	
+
 	option = {
 		name = election.5.a
 		ai_chance = {
@@ -283,36 +283,36 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = conservative
 			popularity = 0.03
 		}
 		set_country_flag = government_declined_communists
 	}
 }
 
-# Democratic Parties in Minority
+# conservative Parties in Minority
 country_event = {
 	id = election.6
 	title = election.6.t
 	desc = election.6.d
 	picture = GFX_report_event_journalists_speech
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
-		democratic < 0.5
+		has_government = conservative
+		conservative < 0.5
 		fascism < 0.5
 		communism < 0.5
 	}
-	
+
 	option = {
 		name = election.6.a
 		ai_chance = {
@@ -355,7 +355,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = democratic
+			ideology = conservative
 			popularity = 0.05
 		}
 		add_political_power = -80
@@ -368,27 +368,27 @@ country_event = {
 	title = election.7.t
 	desc = election.7.d
 	picture = GFX_report_event_fascist_gathering
-	
+
 	mean_time_to_happen = {
 		days = 730
 	}
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		has_country_flag = coalition_with_fascists
 		any_other_country = {
 			has_government = fascism
 			is_faction_leader = yes
 		}
 	}
-	
+
 	option = {
 		name = election.7.a
 		ai_chance = {
@@ -410,7 +410,7 @@ country_event = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = fascists_in_government
-			}			
+			}
 		}
 		add_popularity = {
 			ideology = fascism
@@ -429,7 +429,7 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = conservative
 			popularity = 0.03
 		}
 	}
@@ -441,27 +441,27 @@ country_event = {
 	title = election.8.t
 	desc = election.8.d
 	picture = GFX_report_event_worker_protests
-	
+
 	mean_time_to_happen = {
 		days = 730
 	}
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		has_country_flag = coalition_with_communists
 		any_other_country = {
 			has_government = communism
 			is_faction_leader = yes
 		}
 	}
-	
+
 	option = {
 		name = election.8.a
 		ai_chance = {
@@ -503,7 +503,7 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = conservative
 			popularity = 0.03
 		}
 	}
@@ -515,19 +515,19 @@ country_event = {
 	title = election.11.t
 	desc = election.11.d
 	picture = GFX_report_event_fascist_gathering
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		has_government = conservative
 		fascism > 0.5
 		is_puppet = no
 	}
-	
-	option = {	
+
+	option = {
 		name = election.11.a
 		ai_chance = {
-			base = 75			
+			base = 75
 		}
 		set_politics = {
 			ruling_party = fascism
@@ -538,7 +538,7 @@ country_event = {
 	option = {
 		name = election.11.b
 		ai_chance = {
-			base = 35			
+			base = 35
 		}
 		start_civil_war = {
 			ideology = fascism
@@ -553,16 +553,16 @@ country_event = {
 	title = election.12.t
 	desc = election.12.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
 
 	trigger = {
 
-		has_government = democratic
+		has_government = conservative
 		communism > 0.5
 		is_puppet = no
 	}
-	
+
 	option = {
 		name = election.12.a
 		ai_chance = {
@@ -577,7 +577,7 @@ country_event = {
 	option = {
 		name = election.12.b
 		ai_chance = {
-			base = 35			
+			base = 35
 		}
 		start_civil_war = {
 			ideology = communism
@@ -592,20 +592,20 @@ country_event = {
 	title = election.13.t
 	desc = election.13.d
 	picture = GFX_report_event_fascist_gathering
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			AND = {
 				Tag = USA
 				date < 1949.1.1
 			}
 		}
-		has_government = democratic
+		has_government = conservative
 		has_idea_with_trait = motorized_equipment_manufacturer
 	}
-	
+
 	option = {
 		name = election.13.a
 		ai_chance = {
@@ -631,7 +631,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = democratic
+			ideology = conservative
 			popularity = 0.05
 		}
 		remove_ideas_with_trait = motorized_equipment_manufacturer
@@ -644,21 +644,21 @@ country_event = {
 	title = election.14.t
 	desc = election.14.d
 	picture = GFX_report_event_tank_factory
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		has_war = yes
 	}
-	
+
 	option = {
 		name = election.14.a
 		ai_chance = {
@@ -677,7 +677,7 @@ country_event = {
 			modifier = {
 				add = 3
 				can_lose_democracy_support = yes
-			}			
+			}
 			modifier = {
 				add = 1
 				can_lose_unity = no
@@ -703,29 +703,29 @@ country_event = {
 	title = election.15.t
 	desc = election.15.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		has_government = conservative
 		has_war = yes
 		any_war_score < 20
 	}
-	
+
 	option = {
 		ai_chance = {
 			base = 0
 			modifier = {
 				add = 3
 				can_lose_democracy_support = no
-			}			
+			}
 		}
 		name = election.15.a
 		add_political_power = -50
@@ -739,7 +739,7 @@ country_event = {
 			modifier = {
 				add = 10
 				can_lose_democracy_support = yes
-			}			
+			}
 			modifier = {
 				add = 1
 				can_lose_unity = no
@@ -764,21 +764,21 @@ country_event = {
 	title = election.16.t
 	desc = election.16.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = fascism
 		fascism > 0.5
 	}
-	
+
 	option = {
 		name = election.16.a
 		add_stability = 0.05
@@ -791,13 +791,13 @@ country_event = {
 	title = election.17.t
 	desc = election.17.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
 			}
 		}
@@ -805,7 +805,7 @@ country_event = {
 		has_government = fascism
 		NOT = { fascism > 0.5 }
 	}
-	
+
 	option = {
 		name = election.17.a
 		add_stability = -0.05

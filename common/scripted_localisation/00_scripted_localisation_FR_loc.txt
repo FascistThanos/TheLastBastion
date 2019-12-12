@@ -66,9 +66,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAN original_tag = BAN }
-			OR = { has_government = democratic has_government = neutrality }
+			OR = { has_government = conservative has_government = neutrality }
 		}
-		localization_key = FRLOC_BAN_INHAB_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_BAN_INHAB_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = { OR = { tag = BEL original_tag = BEL } }
@@ -205,9 +205,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_CRC_INHAB_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_CRC_INHAB_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -259,7 +259,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
+			has_government = conservative
 		}
 		localization_key = FRLOC_USA_REBEL_INHAB_DEMOCRACY
 	}
@@ -286,9 +286,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = DAH original_tag = DAH }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_DAH_INHAB_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_DAH_INHAB_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -340,7 +340,7 @@ defined_text = {
 		localization_key = FRLOC_ENG_INHAB
 	}
 	text = {
-		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = democratic } }
+		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = conservative } }
 		localization_key = FRLOC_ENG_INHAB
 	}
 	text = {
@@ -390,16 +390,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			NOT = { OR = { has_government = democratic has_government = neutrality } }
+			NOT = { OR = { has_government = conservative has_government = neutrality } }
 		}
-		localization_key = FRLOC_FIJ_INHAB_NOT_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_FIJ_INHAB_NOT_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_FIJ_INHAB_DEMOCRATIC
+		localization_key = FRLOC_FIJ_INHAB_conservative
 	}
 	text = {
 		trigger = {
@@ -491,16 +491,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = conservative } }
 		}
 		localization_key = FRLOC_HOL_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+			has_cosmetic_tag = HOL_benelux_unified has_government = conservative
 		}
-		localization_key = HOL_benelux_unified_democratic_INHAB
+		localization_key = HOL_benelux_unified_conservative_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -756,9 +756,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = NIR original_tag = NIR }
-			OR = { has_government = democratic has_government = communism }
+			OR = { has_government = conservative has_government = communism }
 		}
-		localization_key = FRLOC_NIR_INHAB_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_NIR_INHAB_conservative_COMMUNISM
 	}
 	text = {
 		trigger = { OR = { tag = NOR original_tag = NOR } }
@@ -845,16 +845,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_PNG_INHAB_NOT_DEMOCRATIC
+		localization_key = FRLOC_PNG_INHAB_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_PNG_INHAB_DEMOCRATIC
+		localization_key = FRLOC_PNG_INHAB_conservative
 	}
 	text = {
 		trigger = { OR = { tag = POL original_tag = POL } }
@@ -1187,16 +1187,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			NOT = { OR = { has_government = democratic has_government = communism } }
+			NOT = { OR = { has_government = conservative has_government = communism } }
 		}
-		localization_key = FRLOC_UAE_INHAB_NOT_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_UAE_INHAB_NOT_conservative_COMMUNISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_UAE_INHAB_DEMOCRATIC
+		localization_key = FRLOC_UAE_INHAB_conservative
 	}
 	text = {
 		trigger = {
@@ -1266,16 +1266,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_VOL_INHAB_NOT_DEMOCRATIC
+		localization_key = FRLOC_VOL_INHAB_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_VOL_INHAB_DEMOCRATIC
+		localization_key = FRLOC_VOL_INHAB_conservative
 	}
 	text = {
 		trigger = {
@@ -1413,9 +1413,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAN original_tag = BAN }
-			OR = { has_government = democratic has_government = neutrality }
+			OR = { has_government = conservative has_government = neutrality }
 		}
-		localization_key = FRLOC_BAN_ADJ_M_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_BAN_ADJ_M_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = { OR = { tag = BAS original_tag = BAS } }
@@ -1556,9 +1556,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_CRC_ADJ_M_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_M_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -1610,7 +1610,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
+			has_government = conservative
 		}
 		localization_key = FRLOC_USA_REBEL_ADJ_S_DEMOCRACY
 	}
@@ -1637,9 +1637,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = DAH original_tag = DAH }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_DAH_ADJ_M_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_DAH_ADJ_M_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -1691,8 +1691,8 @@ defined_text = {
 		localization_key = FRLOC_ENG_ADJ_S
 	}
 	text = {
-		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = democratic } }
-		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_democratic
+		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = conservative } }
+		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_conservative
 	}
 	text = {
 		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = fascism has_government = neutrality } }
@@ -1741,16 +1741,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			NOT = { OR = { has_government = democratic has_government = neutrality } }
+			NOT = { OR = { has_government = conservative has_government = neutrality } }
 		}
-		localization_key = FRLOC_FIJ_ADJ_S_NOT_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_FIJ_ADJ_S_NOT_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_FIJ_ADJ_MS_DEMOCRATIC
+		localization_key = FRLOC_FIJ_ADJ_MS_conservative
 	}
 	text = {
 		trigger = {
@@ -1842,16 +1842,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = conservative } }
 		}
 		localization_key = FRLOC_HOL_ADJ_M
 	}
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+			has_cosmetic_tag = HOL_benelux_unified has_government = conservative
 		}
-		localization_key = HOL_benelux_unified_democratic_ADJ_m_frloc
+		localization_key = HOL_benelux_unified_conservative_ADJ_m_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -2117,9 +2117,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = NIR original_tag = NIR }
-			OR = { has_government = democratic has_government = communism }
+			OR = { has_government = conservative has_government = communism }
 		}
-		localization_key = FRLOC_NIR_ADJ_M_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_NIR_ADJ_M_conservative_COMMUNISM
 	}
 	text = {
 		trigger = { OR = { tag = NOR original_tag = NOR } }
@@ -2203,16 +2203,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_PNG_ADJ_MS_NOT_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_MS_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_PNG_ADJ_MS_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_MS_conservative
 	}
 	text = {
 		trigger = { OR = { tag = POL original_tag = POL } }
@@ -2545,16 +2545,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			NOT = { OR = { has_government = democratic has_government = communism } }
+			NOT = { OR = { has_government = conservative has_government = communism } }
 		}
-		localization_key = FRLOC_UAE_ADJ_MS_NOT_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_UAE_ADJ_MS_NOT_conservative_COMMUNISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_UAE_ADJ_MS_DEMOCRATIC
+		localization_key = FRLOC_UAE_ADJ_MS_conservative
 	}
 	text = {
 		trigger = {
@@ -2624,16 +2624,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_VOL_ADJ_S_NOT_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_S_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_VOL_ADJ_MS_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_MS_conservative
 	}
 	text = {
 		trigger = {
@@ -2769,9 +2769,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAN original_tag = BAN }
-			OR = { has_government = democratic has_government = neutrality }
+			OR = { has_government = conservative has_government = neutrality }
 		}
-		localization_key = FRLOC_BAN_ADJ_FS_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_BAN_ADJ_FS_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = { OR = { tag = BAS original_tag = BAS } }
@@ -2912,9 +2912,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_CRC_ADJ_FS_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_FS_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -2966,7 +2966,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
+			has_government = conservative
 		}
 		localization_key = FRLOC_USA_REBEL_ADJ_S_DEMOCRACY
 	}
@@ -2993,9 +2993,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = DAH original_tag = DAH }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_DAH_ADJ_FS_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_DAH_ADJ_FS_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -3047,8 +3047,8 @@ defined_text = {
 		localization_key = FRLOC_ENG_ADJ_S
 	}
 	text = {
-		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = democratic } }
-		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_democratic
+		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = conservative } }
+		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_conservative
 	}
 	text = {
 		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = fascism has_government = neutrality } }
@@ -3097,16 +3097,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			NOT = { OR = { has_government = democratic has_government = neutrality } }
+			NOT = { OR = { has_government = conservative has_government = neutrality } }
 		}
-		localization_key = FRLOC_FIJ_ADJ_S_NOT_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_FIJ_ADJ_S_NOT_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_FIJ_ADJ_FS_DEMOCRATIC
+		localization_key = FRLOC_FIJ_ADJ_FS_conservative
 	}
 	text = {
 		trigger = {
@@ -3198,16 +3198,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = conservative } }
 		}
 		localization_key = FRLOC_HOL_ADJ_FS
 	}
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+			has_cosmetic_tag = HOL_benelux_unified has_government = conservative
 		}
-		localization_key = HOL_benelux_unified_democratic_ADJ_fs_frloc
+		localization_key = HOL_benelux_unified_conservative_ADJ_fs_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -3473,9 +3473,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = NIR original_tag = NIR }
-			OR = { has_government = democratic has_government = communism }
+			OR = { has_government = conservative has_government = communism }
 		}
-		localization_key = FRLOC_NIR_ADJ_FS_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_NIR_ADJ_FS_conservative_COMMUNISM
 	}
 	text = {
 		trigger = { OR = { tag = NOR original_tag = NOR } }
@@ -3559,16 +3559,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_PNG_ADJ_FS_NOT_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_FS_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_PNG_ADJ_FS_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_FS_conservative
 	}
 	text = {
 		trigger = { OR = { tag = POL original_tag = POL } }
@@ -3901,16 +3901,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			NOT = { OR = { has_government = democratic has_government = communism } }
+			NOT = { OR = { has_government = conservative has_government = communism } }
 		}
-		localization_key = FRLOC_UAE_ADJ_FS_NOT_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_UAE_ADJ_FS_NOT_conservative_COMMUNISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_UAE_ADJ_FS_DEMOCRATIC
+		localization_key = FRLOC_UAE_ADJ_FS_conservative
 	}
 	text = {
 		trigger = {
@@ -3980,16 +3980,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_VOL_ADJ_S_NOT_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_S_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_VOL_ADJ_FS_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_FS_conservative
 	}
 	text = {
 		trigger = {
@@ -4125,9 +4125,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAN original_tag = BAN }
-			OR = { has_government = democratic has_government = neutrality }
+			OR = { has_government = conservative has_government = neutrality }
 		}
-		localization_key = FRLOC_BAN_ADJ_M_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_BAN_ADJ_M_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = { OR = { tag = BAS original_tag = BAS } }
@@ -4268,9 +4268,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_CRC_ADJ_M_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_M_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -4322,7 +4322,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
+			has_government = conservative
 		}
 		localization_key = FRLOC_USA_REBEL_ADJ_P_DEMOCRACY
 	}
@@ -4349,9 +4349,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = DAH original_tag = DAH }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_DAH_ADJ_M_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_DAH_ADJ_M_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -4403,8 +4403,8 @@ defined_text = {
 		localization_key = FRLOC_ENG_ADJ_P
 	}
 	text = {
-		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = democratic } }
-		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_democratic
+		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = conservative } }
+		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_conservative
 	}
 	text = {
 		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = fascism has_government = neutrality } }
@@ -4453,16 +4453,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			NOT = { OR = { has_government = democratic has_government = neutrality } }
+			NOT = { OR = { has_government = conservative has_government = neutrality } }
 		}
-		localization_key = FRLOC_FIJ_ADJ_P_NOT_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_FIJ_ADJ_P_NOT_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_FIJ_ADJ_MP_DEMOCRATIC
+		localization_key = FRLOC_FIJ_ADJ_MP_conservative
 	}
 	text = {
 		trigger = {
@@ -4554,16 +4554,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = conservative } }
 		}
 		localization_key = FRLOC_HOL_ADJ_M
 	}
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+			has_cosmetic_tag = HOL_benelux_unified has_government = conservative
 		}
-		localization_key = HOL_benelux_unified_democratic_ADJ_m_frloc
+		localization_key = HOL_benelux_unified_conservative_ADJ_m_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -4829,9 +4829,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = NIR original_tag = NIR }
-			OR = { has_government = democratic has_government = communism }
+			OR = { has_government = conservative has_government = communism }
 		}
-		localization_key = FRLOC_NIR_ADJ_M_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_NIR_ADJ_M_conservative_COMMUNISM
 	}
 	text = {
 		trigger = { OR = { tag = NOR original_tag = NOR } }
@@ -4915,16 +4915,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_PNG_ADJ_MP_NOT_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_MP_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_PNG_ADJ_MP_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_MP_conservative
 	}
 	text = {
 		trigger = { OR = { tag = POL original_tag = POL } }
@@ -5257,16 +5257,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			NOT = { OR = { has_government = democratic has_government = communism } }
+			NOT = { OR = { has_government = conservative has_government = communism } }
 		}
-		localization_key = FRLOC_UAE_ADJ_MP_NOT_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_UAE_ADJ_MP_NOT_conservative_COMMUNISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_UAE_ADJ_MP_DEMOCRATIC
+		localization_key = FRLOC_UAE_ADJ_MP_conservative
 	}
 	text = {
 		trigger = {
@@ -5336,16 +5336,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_VOL_ADJ_P_NOT_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_P_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_VOL_ADJ_MP_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_MP_conservative
 	}
 	text = {
 		trigger = {
@@ -5481,9 +5481,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAN original_tag = BAN }
-			OR = { has_government = democratic has_government = neutrality }
+			OR = { has_government = conservative has_government = neutrality }
 		}
-		localization_key = FRLOC_BAN_ADJ_FP_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_BAN_ADJ_FP_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = { OR = { tag = BAS original_tag = BAS } }
@@ -5624,9 +5624,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_CRC_ADJ_FP_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_FP_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -5678,7 +5678,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
+			has_government = conservative
 		}
 		localization_key = FRLOC_USA_REBEL_ADJ_P_DEMOCRACY
 	}
@@ -5705,9 +5705,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = DAH original_tag = DAH }
-			OR = { has_government = fascism has_government = democratic }
+			OR = { has_government = fascism has_government = conservative }
 		}
-		localization_key = FRLOC_DAH_ADJ_FP_FASCISM_DEMOCRATIC
+		localization_key = FRLOC_DAH_ADJ_FP_FASCISM_conservative
 	}
 	text = {
 		trigger = {
@@ -5759,8 +5759,8 @@ defined_text = {
 		localization_key = FRLOC_ENG_ADJ_P
 	}
 	text = {
-		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = democratic } }
-		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_democratic
+		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = communism has_government = conservative } }
+		localization_key = FRLOC_ENG_ADJ_imperial_federation_unified_communism_conservative
 	}
 	text = {
 		trigger = { OR = { tag = ENG original_tag = ENG } OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } OR = { has_government = fascism has_government = neutrality } }
@@ -5809,16 +5809,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			NOT = { OR = { has_government = democratic has_government = neutrality } }
+			NOT = { OR = { has_government = conservative has_government = neutrality } }
 		}
-		localization_key = FRLOC_FIJ_ADJ_P_NOT_DEMOCRATIC_NEUTRALITY
+		localization_key = FRLOC_FIJ_ADJ_P_NOT_conservative_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = FIJ original_tag = FIJ }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_FIJ_ADJ_FP_DEMOCRATIC
+		localization_key = FRLOC_FIJ_ADJ_FP_conservative
 	}
 	text = {
 		trigger = {
@@ -5910,16 +5910,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = conservative } }
 		}
 		localization_key = FRLOC_HOL_ADJ_FP
 	}
 	text = {
 		trigger = {
 			OR = { tag = HOL original_tag = HOL }
-			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+			has_cosmetic_tag = HOL_benelux_unified has_government = conservative
 		}
-		localization_key = HOL_benelux_unified_democratic_ADJ_fp_frloc
+		localization_key = HOL_benelux_unified_conservative_ADJ_fp_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -6185,9 +6185,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = NIR original_tag = NIR }
-			OR = { has_government = democratic has_government = communism }
+			OR = { has_government = conservative has_government = communism }
 		}
-		localization_key = FRLOC_NIR_ADJ_FP_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_NIR_ADJ_FP_conservative_COMMUNISM
 	}
 	text = {
 		trigger = { OR = { tag = NOR original_tag = NOR } }
@@ -6271,16 +6271,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_PNG_ADJ_FP_NOT_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_FP_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = PNG original_tag = PNG }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_PNG_ADJ_FP_DEMOCRATIC
+		localization_key = FRLOC_PNG_ADJ_FP_conservative
 	}
 	text = {
 		trigger = { OR = { tag = POL original_tag = POL } }
@@ -6613,16 +6613,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			NOT = { OR = { has_government = democratic has_government = communism } }
+			NOT = { OR = { has_government = conservative has_government = communism } }
 		}
-		localization_key = FRLOC_UAE_ADJ_FP_NOT_DEMOCRATIC_COMMUNISM
+		localization_key = FRLOC_UAE_ADJ_FP_NOT_conservative_COMMUNISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = UAE original_tag = UAE }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_UAE_ADJ_FP_DEMOCRATIC
+		localization_key = FRLOC_UAE_ADJ_FP_conservative
 	}
 	text = {
 		trigger = {
@@ -6692,16 +6692,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			NOT = { has_government = democratic }
+			NOT = { has_government = conservative }
 		}
-		localization_key = FRLOC_VOL_ADJ_P_NOT_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_P_NOT_conservative
 	}
 	text = {
 		trigger = {
 			OR = { tag = VOL original_tag = VOL }
-			has_government = democratic
+			has_government = conservative
 		}
-		localization_key = FRLOC_VOL_ADJ_FP_DEMOCRATIC
+		localization_key = FRLOC_VOL_ADJ_FP_conservative
 	}
 	text = {
 		trigger = {
@@ -11638,7 +11638,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISME
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIE
 	}
 	text = {
@@ -11658,7 +11658,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISME_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIE_CAP
 	}
 	text = {
@@ -11684,7 +11684,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -11706,7 +11706,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -11731,7 +11731,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -11753,7 +11753,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -11775,7 +11775,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATE
 	}
 	text = {
@@ -11795,7 +11795,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATE_CAP
 	}
 	text = {
@@ -11815,7 +11815,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUE
 	}
 	text = {
@@ -11835,7 +11835,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUE_CAP
 	}
 	text = {
@@ -11858,7 +11858,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATE
 	}
 	text = {
@@ -11878,7 +11878,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATE_CAP
 	}
 	text = {
@@ -11898,7 +11898,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUE
 	}
 	text = {
@@ -11918,7 +11918,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTE_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUE_CAP
 	}
 	text = {
@@ -11941,7 +11941,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATES
 	}
 	text = {
@@ -11961,7 +11961,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATES_CAP
 	}
 	text = {
@@ -11981,7 +11981,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUES
 	}
 	text = {
@@ -12001,7 +12001,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUES_CAP
 	}
 	text = {
@@ -12024,7 +12024,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATES
 	}
 	text = {
@@ -12044,7 +12044,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATES_CAP
 	}
 	text = {
@@ -12064,7 +12064,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUES
 	}
 	text = {
@@ -12084,7 +12084,7 @@ defined_text = {
 		localization_key = FRLOC_COMMUNISTES_CAP
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { has_government = conservative }
 		localization_key = FRLOC_DEMOCRATIQUES_CAP
 	}
 	text = {
@@ -14735,7 +14735,7 @@ defined_text = {
 
 
 
-### Democratic Parties / Partis démocratiques ###
+### conservative Parties / Partis démocratiques ###
 
 ### "The ruling party is [the] NSDAP/IKL/Misr al-Fatah/UNF/Armenian Legion/Fire Horses." => "Le parti au pouvoir est [le] NSDAP/[] Misr al-Fatah/[l']IKL/[la] Légion arménienne/[les] Chevaux de feu" (lower case / minuscule)
 defined_text = {
@@ -17051,7 +17051,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_LES
@@ -17068,7 +17068,7 @@ defined_text = {
 	text = { # FALLBACK FOR FASCIST & COMMUNIST FACTION RANDOM NAMES
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17163,7 +17163,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_LES_CAP
@@ -17180,7 +17180,7 @@ defined_text = {
 	text = { # FALLBACK FOR FASCIST & COMMUNIST FACTION RANDOM NAMES
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17278,7 +17278,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_DES
@@ -17295,7 +17295,7 @@ defined_text = {
 	text = { # FALLBACK FOR FASCIST & COMMUNIST FACTION RANDOM NAMES
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17390,7 +17390,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_DES_CAP
@@ -17407,7 +17407,7 @@ defined_text = {
 	text = { # FALLBACK FOR FASCIST & COMMUNIST FACTION RANDOM NAMES
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17505,7 +17505,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_AUX
@@ -17522,7 +17522,7 @@ defined_text = {
 	text = { # FALLBACK FOR FASCIST & COMMUNIST FACTION RANDOM NAMES
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17617,7 +17617,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_AUX_CAP
@@ -17634,7 +17634,7 @@ defined_text = {
 	text = { # FALLBACK FOR FASCIST & COMMUNIST FACTION RANDOM NAMES
 		trigger = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17724,7 +17724,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_S
@@ -17734,7 +17734,7 @@ defined_text = {
 			OR = {
 				has_government = fascism
 				has_government = communism
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17817,7 +17817,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_ENT
@@ -17827,7 +17827,7 @@ defined_text = {
 			OR = {
 				has_government = fascism
 				has_government = communism
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -17910,7 +17910,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_ONT
@@ -17920,7 +17920,7 @@ defined_text = {
 			OR = {
 				has_government = fascism
 				has_government = communism
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -18003,7 +18003,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_SONT
@@ -18013,7 +18013,7 @@ defined_text = {
 			OR = {
 				has_government = fascism
 				has_government = communism
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -18096,7 +18096,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_FONT
@@ -18106,7 +18106,7 @@ defined_text = {
 			OR = {
 				has_government = fascism
 				has_government = communism
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}
@@ -18189,7 +18189,7 @@ defined_text = {
 				AND = { is_in_faction_with = ROM ROM = { is_faction_leader = yes } ROM = { has_country_flag = ROM_HUN_aligned } ROM = { has_completed_focus = ROM_align_hungary } } # ROM_BALKAN_FACTION
 				AND = { is_in_faction_with = GER GER = { is_faction_leader = yes } GER = { has_completed_focus = GER_the_central_powers } has_government = neutrality  } # GER_central_powers_faction
 				# LOWER PRIORITY
-				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = democratic } } # Allies
+				AND = { is_in_faction_with = ENG ENG = { is_faction_leader = yes } ENG = { has_government = conservative } } # Allies
 			}
 		}
 		localization_key = FRLOC_VENT
@@ -18199,7 +18199,7 @@ defined_text = {
 			OR = {
 				has_government = fascism
 				has_government = communism
-				has_government = democratic
+				has_government = conservative
 				has_government = neutrality
 			}
 		}

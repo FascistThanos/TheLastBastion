@@ -61,7 +61,7 @@ bookmarks = {
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				home_of_the_free
 				great_depression
@@ -75,7 +75,7 @@ bookmarks = {
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -89,7 +89,7 @@ bookmarks = {
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				state_shintoism
 				JAP_zaibatsus
@@ -123,7 +123,7 @@ bookmarks = {
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				CAN_great_depression_1
 				CAN_conscription_crisis
@@ -137,7 +137,7 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				AST_great_depression_1
 			}
@@ -150,7 +150,7 @@ bookmarks = {
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 
 			}
@@ -163,7 +163,7 @@ bookmarks = {
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				SAF_ossewabrandwag
 				SAF_history_of_segregation
@@ -191,7 +191,7 @@ bookmarks = {
 		"CZE"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				CZE_skoda_works
 				CZE_divided_nation
@@ -383,7 +383,7 @@ bookmarks = {
 		"HOL"={
 			minor = yes
 			history = "NETHERLANDS_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				HOL_wilhelmina
 				HOL_shell_shocked_spectator_5

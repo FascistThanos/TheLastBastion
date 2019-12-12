@@ -65,7 +65,7 @@ if = {
 	add_political_power = 1198
 
 	set_global_flag = flag_mexico_cedillo_has_revolted
-	
+
 	oob = "MEX_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -74,7 +74,7 @@ if = {
 			set_naval_oob = "MEX_1939_naval_legacy"
 		}
 	}
-	
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -116,7 +116,7 @@ if = {
 		remove_ideas = {
 			MEX_cedillo_tension_2 # Already rebelled by this point
 		}
-		
+
 		complete_national_focus = MEX_focus_plan_of_agua_prieta
 		# 70
 		complete_national_focus = MEX_focus_exile_calles # Increase Church Power (3)
@@ -148,7 +148,7 @@ if = {
 		remove_ideas = {
 			MEX_oil_concessions
 		}
-		
+
 		ENG = {
 			add_opinion_modifier = {
 				target = MEX
@@ -169,7 +169,7 @@ if = {
 			target = USA
 			modifier = embargo
 		}
-		
+
 		else = {
 			#generic focuses
 			complete_national_focus = army_effort
@@ -192,7 +192,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 18
+	conservative = 18
 	fascism = 20
 	communism = 9
 	neutrality = 53
@@ -225,7 +225,7 @@ create_country_leader = { # Exiled until 1935 following a rebellion attempt, all
 	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
 	picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -389,7 +389,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Nicolás Bravo Class"			
+		name = "Nicolás Bravo Class"
 		type = ship_hull_light_1
 		name_group = MEX_DD_HISTORICAL
 		parent_version = 0
@@ -422,7 +422,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Anahuac Class"			
+		name = "Anahuac Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = MEX_BB_HISTORICAL
 		parent_version = 0

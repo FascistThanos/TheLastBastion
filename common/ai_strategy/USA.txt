@@ -2,13 +2,13 @@
 USA_save_the_aussies = {
 	enable = {
 		tag = USA
-		has_government = democratic
+		has_government = conservative
 		is_in_faction = no
 		has_war = no
 
 		JAP = {	has_war_with = AST }
 		AST = {
-			has_government = democratic			
+			has_government = conservative			
 			surrender_progress > 0.15
 		}
 		has_opinion = {
@@ -20,26 +20,26 @@ USA_save_the_aussies = {
 		OR = {
 			has_war_with = AST
 			is_in_faction_with = JAP
-			JAP = {	
-				NOT = { has_war_with = AST } 
+			JAP = {
+				NOT = { has_war_with = AST }
 			}
 		}
 	}
-	
+
 	ai_strategy = {
 		type = contain
-		id = "JAP"			
+		id = "JAP"
 		value = 200
 	}
-	
+
 	ai_strategy = {
 		type = protect
-		id = "AST"			
+		id = "AST"
 		value = 200
 	}
 	ai_strategy = {
 		type = support
-		id = "AST"			
+		id = "AST"
 		value = 100
 	}
 }
@@ -47,12 +47,12 @@ USA_save_the_aussies = {
 USA_save_india = { # in the case where japan has beaten china and is moving on india we should step up
 	enable = {
 		tag = USA
-		has_government = democratic
+		has_government = conservative
 		is_in_faction = no
 		has_war = no
 
-		JAP = {	
-			has_war_with = RAJ 
+		JAP = {
+			has_war_with = RAJ
 			NOT = { has_war_with = CHI }
 		}
 		RAJ = {
@@ -64,21 +64,21 @@ USA_save_india = { # in the case where japan has beaten china and is moving on i
 		OR = {
 			has_war_with = RAJ
 			is_in_faction_with = JAP
-			JAP = {	
-				NOT = { has_war_with = RAJ } 
+			JAP = {
+				NOT = { has_war_with = RAJ }
 			}
 		}
 	}
-	
+
 	ai_strategy = {
 		type = contain
-		id = "JAP"			
+		id = "JAP"
 		value = 200
 	}
-	
+
 	ai_strategy = {
 		type = protect
-		id = "RAJ"			
+		id = "RAJ"
 		value = 200
 	}
 }
@@ -92,8 +92,8 @@ USA_stop_soviet_from_falling = {
 		NOT = { has_government = fascism }
 		NOT = { is_in_faction_with = GER }
 		NOT = { has_war_with = SOV }
-		GER = { 
-			has_war_with = SOV 
+		GER = {
+			has_war_with = SOV
 			has_war_with = ENG
 			has_government = fascism
 		}
@@ -154,8 +154,8 @@ USA_stop_soviet_from_falling_2 = {
 		NOT = { has_government = fascism }
 		NOT = { is_in_faction_with = GER }
 		NOT = { has_war_with = SOV }
-		GER = { 
-			has_war_with = SOV 
+		GER = {
+			has_war_with = SOV
 			has_war_with = USA
 		}
 		SOV = {
@@ -186,9 +186,9 @@ USA_stop_soviet_from_falling_2 = {
 USA_template_design_1 = {
 	enable = {
 		original_tag = USA
-		date < 1940.1.1				
+		date < 1940.1.1
 	}
-	abort = { 
+	abort = {
 		date > 1940.1.1
 	}
 
@@ -203,7 +203,7 @@ USA_template_design_1 = {
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
@@ -227,7 +227,7 @@ USA_template_design_1 = {
 		id = paratroopers
 		value = -50
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = infantry
@@ -238,7 +238,7 @@ USA_template_design_1 = {
 USA_template_design_2 = {
 	enable = {
 		original_tag = USA
-		date > 1940.1.1				
+		date > 1940.1.1
 	}
 
 	ai_strategy = {
@@ -252,7 +252,7 @@ USA_template_design_2 = {
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
@@ -264,7 +264,7 @@ USA_template_design_2 = {
 		id = medium_armor
 		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = modern_armor
@@ -282,13 +282,13 @@ USA_template_design_2 = {
 		id = paratroopers
 		value = -50
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = infantry
 		value = 10
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = marines
@@ -313,13 +313,13 @@ USA_garrison_production = {
 }
 
 # This will prompt USA to try and support countries who are fighting against extremist elements.
-# Should improve alt-history situations like democratic Germany fighting the USSR etc.
+# Should improve alt-history situations like conservative Germany fighting the USSR etc.
 USA_protect_against_extremism = { # Reverse strategy
 	reversed = yes
 
 	enable_reverse = {
 		USA = {
-			has_government = democratic
+			has_government = conservative
 		}
 	}
 
@@ -355,7 +355,7 @@ USA_protect_against_extremism = { # Reverse strategy
 			}
 			USA = {
 				OR = {
-					NOT = {	has_government = democratic }
+					NOT = {	has_government = conservative }
 					has_war_with = ROOT
 				}
 			}
@@ -402,13 +402,13 @@ USA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 130 
+		value = 130
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_escort
-		value = 65 
+		value = 65
 	}
 
 	ai_strategy = {
@@ -472,13 +472,13 @@ USA_naval_role_ratios_anti_submarine = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = -20 
+		value = -20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_escort
-		value = 50 
+		value = 50
 	}
 
 	ai_strategy = {
@@ -528,8 +528,8 @@ USA_home_land_is_safe = {
 		}
 	}
 	abort_when_not_enabled = yes
-	
-	
+
+
 	ai_strategy = {
 		type = garrison
 		value = -60
@@ -581,7 +581,7 @@ USA_TEST_help_uk_be_winnigest = {
 	}
 
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = spare_unit_factor
 		value = 50
@@ -601,7 +601,7 @@ USA_TEST_help_uk_be_winnigest = {
     ai_strategy = {
         type = area_priority
         id = suez
-        value = 130 # brings it 90 above base 
+        value = 130 # brings it 90 above base
     }
 
     ai_strategy = {

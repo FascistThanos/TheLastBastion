@@ -15,7 +15,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
@@ -59,13 +59,13 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 47
+	conservative = 47
 	fascism = 46
 	communism = 7
 }
@@ -76,7 +76,7 @@ set_stability = 0.5
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -87,7 +87,7 @@ set_stability = 0.5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "SPA_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -97,7 +97,7 @@ set_stability = 0.5
 		}
 	}
 	load_oob = "unlock_tanks"
-	
+
 	set_technology = {
 		fighter1 = 1
 		CAS1 = 1
@@ -160,7 +160,7 @@ set_stability = 0.5
 		elections_allowed = no
 	}
 	set_popularities = {
-		democratic = 22
+		conservative = 22
 		fascism = 76
 		communism = 2
 	}
@@ -174,7 +174,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_AZANA_DESC"
 	picture = "Portrait_Spain_Manuel_Azana.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -255,7 +255,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "B Class"				
+		name = "B Class"
 		type = ship_hull_submarine_1
 		parent_version = 0
 		name_group = SPR_SS_HISTORICAL
@@ -267,7 +267,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "C Class"				
+		name = "C Class"
 		type = ship_hull_submarine_2
 		name_group = SPR_SS_HISTORICAL
 		parent_version = 0
@@ -279,7 +279,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Alsedo Class"				
+		name = "Alsedo Class"
 		type = ship_hull_light_1
 		name_group = SPR_DD_HISTORICAL
 		parent_version = 0
@@ -296,7 +296,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Churucca Class"	
+		name = "Churucca Class"
 		type = ship_hull_light_2
 		name_group = SPR_DD_HISTORICAL
 		parent_version = 0
@@ -383,7 +383,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Canarias Class"				
+		name = "Canarias Class"
 		type = ship_hull_cruiser_2
 		name_group = SPR_CA_HISTORICAL
 		parent_version = 0
@@ -401,7 +401,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "España Class"	
+		name = "España Class"
 		type = ship_hull_heavy_1
 		name_group = SPR_BB_HISTORICAL
 		parent_version = 0
@@ -444,7 +444,7 @@ if = {
 		}
 		# Destroyers #
 		create_equipment_variant = {
-			name = "Melilla Class"								# purchased from Italy				
+			name = "Melilla Class"								# purchased from Italy
 			type = ship_hull_light_1
 			name_group = SPR_DD_HISTORICAL
 			parent_version = 0

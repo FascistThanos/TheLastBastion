@@ -9,13 +9,13 @@ foreign_influence = {
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				democratic < 0.9
+				conservative < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -24,10 +24,10 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = democratic
+			has_government = conservative
 			FROM = {
 				is_puppet_of = ROOT
-				democratic < 0.99
+				conservative < 0.99
 			}
 		}
 
@@ -51,13 +51,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	socialist_education = {
 
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -116,13 +116,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	paramilitary_training = {
 
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -182,13 +182,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	military_parade = {
 
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -230,30 +230,30 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	police_action = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				democratic > 0.6
+				conservative > 0.6
 			}
 			FROM = {
-				NOT = { has_government = democratic }
+				NOT = { has_government = conservative }
 			}
 		}
 
 		visible = {
-			has_government = democratic
+			has_government = conservative
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = democratic }
+				NOT = { has_government = conservative }
 			}
 		}
 
@@ -275,23 +275,23 @@ foreign_influence = {
 			}
 			FROM = {
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = conservative
 					elections_allowed = yes
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	fraternal_republic = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -350,18 +350,18 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	ultranationalist_coup = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -420,18 +420,18 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	military_dictatorship = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -475,7 +475,7 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}

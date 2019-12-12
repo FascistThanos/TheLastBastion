@@ -150,19 +150,19 @@ set_politics = {
 set_popularities = {
 	communism = 75
 	neutrality = 14
-	democratic = 8
+	conservative = 8
 	fascism = 3
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservative
 		last_election = "1936.9.20"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
-		democratic = 85
+		conservative = 85
 		neutrality = 10
 		communism = 4
 		fascism = 1

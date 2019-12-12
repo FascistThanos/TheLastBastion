@@ -9,7 +9,7 @@ set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	transport = 1
@@ -39,7 +39,7 @@ set_convoys = 20
 set_cosmetic_tag = RAJ_UK # British Raj
 
 1939.1.1 = {
-	
+
 	if = {
 		limit = {
 			has_dlc = "Together for Victory"
@@ -75,9 +75,9 @@ set_cosmetic_tag = RAJ_UK # British Raj
 		low_economic_mobilisation
 	}
 
-	
+
 	set_technology = {
-		
+
 		early_fighter = 1
 		fighter1 = 1
 		#doctrines
@@ -125,7 +125,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 17
+	conservative = 17
 	fascism = 2
 	communism = 1
 	neutrality = 80
@@ -138,7 +138,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		
+
 	}
 }
 
@@ -150,7 +150,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
-		
+
 	}
 }
 
@@ -161,7 +161,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
+
 	}
 }
 
@@ -172,7 +172,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		
+
 	}
 }
 

@@ -1,15 +1,15 @@
 focus_tree = {
 	id = french_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = FRA
 		}
 	}
-	
+
 	default = no
 
 	focus = {
@@ -22,7 +22,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}		
+		}
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -36,7 +36,7 @@ focus_tree = {
 						OR = {
 							region = 19
 							region = 20
-						}		
+						}
 					}
 				}
 			}
@@ -89,7 +89,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_french_focus_3Inf
-			}			
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -107,7 +107,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_french_focus_3Inf
-			}			
+			}
 		}
 	}
 
@@ -138,7 +138,7 @@ focus_tree = {
 						OR = {
 							region = 19
 							region = 20
-						}		
+						}
 					}
 				}
 			}
@@ -177,7 +177,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -198,7 +198,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -219,7 +219,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -240,7 +240,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -266,7 +266,7 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
-		
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = FRA_military_factories_tt
@@ -280,7 +280,7 @@ focus_tree = {
 						OR = {
 							region = 19
 							region = 20
-						}		
+						}
 					}
 				}
 			}
@@ -318,7 +318,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -339,7 +339,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -360,7 +360,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -381,7 +381,7 @@ focus_tree = {
 					OR = {
 						region = 19
 						region = 20
-					}					
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -390,7 +390,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_1MF
-			}						
+			}
 		}
 	}
 
@@ -422,7 +422,7 @@ focus_tree = {
 					}
 				}
 			}
-		}		
+		}
 
 		complete_tooltip = {
 			every_state = {
@@ -479,7 +479,7 @@ focus_tree = {
 								}
 							}
 						}
-					}					
+					}
 				}
 				random_owned_controlled_state = {
 					limit =  {
@@ -516,7 +516,7 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						NOT = {				
+						NOT = {
 							459 = {
 								free_building_slots = {
 									building = infrastructure
@@ -524,7 +524,7 @@ focus_tree = {
 								}
 							}
 						}
-						NOT = {				
+						NOT = {
 							460 = {
 								free_building_slots = {
 									building = infrastructure
@@ -557,9 +557,9 @@ focus_tree = {
 						}
 						OR = {
 							state = 459
-							state = 460					
+							state = 460
 						}
-					}					
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 4
@@ -602,7 +602,7 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_colonial_industry
@@ -847,7 +847,7 @@ focus_tree = {
 						instant_build = yes
 					}
 					set_state_flag = FRA_colonial_military_factories_4MF
-				}			
+				}
 			}
 		}
 	}
@@ -900,7 +900,7 @@ focus_tree = {
 				category = nuclear
 				category = rocketry
 			}
-			news_event = { id = news.174 } 
+			news_event = { id = news.174 }
 		}
 	}
 
@@ -931,13 +931,13 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 		focus = {
 		id = FRA_extra_research_slot_2
 		icon = GFX_focus_research
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_jet_effort
-			focus = FRA_nuclear_effort 
+			focus = FRA_nuclear_effort
 		}
 		available = {
 			num_of_factories > 75
@@ -952,7 +952,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
-	}	
+	}
 
 	#### END ####
 
@@ -1178,9 +1178,9 @@ focus_tree = {
 	focus = {
 		id = FRA_army_reform
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { 
-			focus = FRA_light_medium_armor 
-			focus = FRA_heavy_armor_focus 
+		prerequisite = {
+			focus = FRA_light_medium_armor
+			focus = FRA_heavy_armor_focus
 		}
 		x = -1
 		y = 1
@@ -1204,7 +1204,7 @@ focus_tree = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = FRA_AMX
 		}
-	}	
+	}
 
 #### END ####
 
@@ -1225,7 +1225,7 @@ focus_tree = {
 			add_political_power = 120
 		}
 	}
-	
+
 
 	focus = {
 		id = FRA_revise_versailles
@@ -1306,7 +1306,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {	
+	focus = {
 		id = FRA_scw_intervention_republicans
 		icon = GFX_goal_generic_military_deal
 	 	available = {
@@ -1325,7 +1325,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			SPR = {
-				add_opinion_modifier = {				
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_scw_intervention_republicans_SPR
 				}
@@ -1335,7 +1335,7 @@ focus_tree = {
 					original_tag = SPR
 					has_government = fascism
 				}
-				add_opinion_modifier = {				
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_scw_intervention_republicans_SPA
 				}
@@ -1421,32 +1421,32 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = maurice_thorez
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = communism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier =  FRA_leftist_rhetoric_communism
 				}
 			}
 			every_other_country = {
-				limit = { 
-					has_government = democratic
+				limit = {
+					has_government = conservative
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_leftist_rhetoric_democratic
 				}
 			}
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = fascism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = FRA_leftist_rhetoric_fascism
 				}
 			}
@@ -1515,7 +1515,7 @@ focus_tree = {
 		completion_reward = {
 			SOV = { country_event = { id = soviet.29 days = 1 } }
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_humanite_unie
@@ -1538,7 +1538,7 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_support_status_quo
@@ -1628,7 +1628,7 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			create_faction = "french_entente_alliance"
 			if = {
-				limit = { 
+				limit = {
 					has_dlc = "Death or Dishonor"
 					CZE = {
 						has_completed_focus = CZE_an_entente_of_our_own
@@ -1639,7 +1639,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					CZE = { 
+					CZE = {
 						is_subject = no
 						NOT = { has_war_with = FRA }
 						is_in_faction = no
@@ -1659,10 +1659,10 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		available = {
 			is_puppet = no
-			has_government = democratic
+			has_government = conservative
 			ENG = {
 				exists = yes
-				has_government = democratic
+				has_government = conservative
 			}
 			NOT = { has_war_with = ENG }
 		}
@@ -1733,7 +1733,7 @@ focus_tree = {
 				days = 365
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_defensive_strategems
@@ -1760,7 +1760,7 @@ focus_tree = {
 			remove_ideas = FRA_disjointed_government
 			set_rule = { can_send_volunteers = yes }
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_invite_yugoslavia
@@ -1852,7 +1852,7 @@ focus_tree = {
 	#	#	factor = 1
 	#	#}
 	#	completion_reward = {
-	#		give_guarantee = CZE			
+	#		give_guarantee = CZE
 	#	}
 	#}
 
@@ -1914,13 +1914,13 @@ focus_tree = {
 					original_tag = SPR
 					has_government = fascism
 				}
-				add_opinion_modifier = {				
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_scw_intervention_nationalists_SPA
 				}
 			}
 			SPR = {
-				add_opinion_modifier = {				
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_scw_intervention_nationalists_SPR
 				}
@@ -2004,38 +2004,38 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = marcel_bucard
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = fascism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier =  FRA_right_wing_rhetoric_fascism
 				}
 			}
 			every_other_country = {
-				limit = { 
-					has_government = democratic
+				limit = {
+					has_government = conservative
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_right_wing_rhetoric_democratic
 				}
 			}
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = communism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = FRA_right_wing_rhetoric_communism
 				}
-			}			
+			}
 		}
 	}
-	
+
 	focus = {
 		id = FRA_army_of_aggression
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -2065,13 +2065,13 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					ENG = { 
+					ENG = {
 						is_in_faction_with = FRA
 						is_faction_leader = yes
 					}
 				}
 				ENG = { remove_from_faction = FRA }
-			}			
+			}
 		}
 	}
 
@@ -2080,7 +2080,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 	 	mutually_exclusive = { focus = FRA_join_germany focus = FRA_woo_italy }
 	 	available = {
-	 		is_puppet = no	 		
+	 		is_puppet = no
 		}
 	 	prerequisite = { focus = FRA_army_of_aggression }
 		x = -2
@@ -2127,7 +2127,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			ITA = { country_event = { id = italy.8 days = 1 } }			
+			ITA = { country_event = { id = italy.8 days = 1 } }
 			### Fires event to ITA asking them to join your faction - creates faction if you don't already lead one.
 			hidden_effect = {
 				if = {
@@ -2346,7 +2346,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 	 	available = {
 	 		is_puppet = no
-	 		GER = { has_government = democratic }
+	 		GER = { has_government = conservative }
 		}
 	 	prerequisite = { focus = FRA_woo_italy }
 	 	will_lead_to_war_with = GER
@@ -2389,7 +2389,7 @@ focus_tree = {
 	 			has_government = fascism
 	 			fascism > 0.4
 	 		}
-	 		
+
 	 		GER = {
 	 			exists = yes
 	 			has_government = fascism
@@ -2409,7 +2409,7 @@ focus_tree = {
 		#}
 		completion_reward = {
 			### EVENT ASKING GERMANY TO JOIN FACTION
-			GER = { country_event = { id = germany.91 days = 1 } }			
+			GER = { country_event = { id = germany.91 days = 1 } }
 		}
 	}
 
@@ -2428,7 +2428,7 @@ focus_tree = {
 			navy_experience = 25
 			every_state = {
 				limit = { has_state_flag = FRA_navy_focus_2NB }
-			}		
+			}
 		}
 
 		completion_reward = {
@@ -2543,7 +2543,7 @@ focus_tree = {
 	focus = {
 		id = FRA_naval_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-	 	prerequisite = { 
+	 	prerequisite = {
 	 		focus = FRA_carrier_focus
 	 		focus = FRA_capital_ship_focus
 	 		focus = FRA_improved_screen_ships
@@ -2569,7 +2569,7 @@ focus_tree = {
 	focus = {
 		id = FRA_cas_focus
 		icon = GFX_goal_generic_CAS
-	 	prerequisite = { 
+	 	prerequisite = {
 	 		focus = FRA_carrier_focus
 	 		focus = FRA_fighter_focus
 	 	}
@@ -2741,8 +2741,8 @@ focus_tree = {
 	focus = {
 		id = FRA_air_doctrine
 		icon = GFX_goal_generic_air_doctrine
-	 	prerequisite = { 
-	 		focus = FRA_fighter_focus 
+	 	prerequisite = {
+	 		focus = FRA_fighter_focus
 	 		focus = FRA_bomber_focus
 	 	}
 		x = 1

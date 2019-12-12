@@ -127,7 +127,7 @@ USA_congress = {
 	USA_beat_up_opposition = {
 		icon = oppression
 		available = {
-			has_government = democratic
+			has_government = conservative
 		}
 		visible = { has_completed_focus = USA_ally_with_the_silver_shirts }
 		cost = 10
@@ -148,7 +148,7 @@ USA_congress = {
 	USA_pay_farm_subsidies = {
 		icon = ger_mefo_bills
 		available = {
-			has_government = democratic
+			has_government = conservative
 			OR = {
 				check_variable = { senators_support < senators_total }
 				check_variable = { representatives_support < representatives_total }
@@ -172,7 +172,7 @@ USA_congress = {
 	USA_give_tax_break = {
 		icon = ger_mefo_bills
 		available = {
-			has_government = democratic
+			has_government = conservative
 			OR = {
 				check_variable = { senators_support < senators_total }
 				check_variable = { representatives_support < representatives_total }
@@ -198,7 +198,7 @@ USA_congress = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		visible = {has_government = democratic }
+		visible = {has_government = conservative }
 		cost = 25
 		days_remove = 90
 		days_re_enable = 275
@@ -219,7 +219,7 @@ USA_congress = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		visible = {has_government = democratic }
+		visible = {has_government = conservative }
 		cost = 25
 		days_remove = 90
 		days_re_enable = 275
@@ -264,8 +264,8 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_factory
 				clear_variable = factory_goal
 			}
-			
-			USA_congress_small_opposition = yes 
+
+			USA_congress_small_opposition = yes
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -277,10 +277,10 @@ USA_congress = {
 				clear_variable = factory_goal
 			}
 			ROOT = {
-				USA_congress_medium_support = yes 
+				USA_congress_medium_support = yes
 				clr_country_flag = USA_congress_investment
 			}
-			
+
 		}
 	}
 	USA_invest_in_state_arms_factory = {
@@ -312,8 +312,8 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_arms_factory
 				clear_variable = arms_factory_goal
 			}
-			
-			USA_congress_small_opposition = yes 
+
+			USA_congress_small_opposition = yes
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -325,10 +325,10 @@ USA_congress = {
 				clear_variable = arms_factory_goal
 			}
 			ROOT = {
-				USA_congress_medium_support = yes 
+				USA_congress_medium_support = yes
 				clr_country_flag = USA_congress_investment
 			}
-			
+
 		}
 	}
 	USA_invest_in_state_dockyard = {
@@ -360,7 +360,7 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_dockyard
 				clear_variable = dockyard_goal
 			}
-			USA_congress_small_opposition = yes 
+			USA_congress_small_opposition = yes
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -372,7 +372,7 @@ USA_congress = {
 				clear_variable = dockyard_goal
 			}
 			ROOT = {
-				USA_congress_medium_support = yes 
+				USA_congress_medium_support = yes
 				clr_country_flag = USA_congress_investment
 			}
 		}
@@ -406,8 +406,8 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_infrastructure
 				clear_variable = infrastructure_goal
 			}
-			
-			USA_congress_small_opposition = yes 
+
+			USA_congress_small_opposition = yes
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -419,10 +419,10 @@ USA_congress = {
 				clear_variable = infrastructure_goal
 			}
 			ROOT = {
-				USA_congress_medium_support = yes 
+				USA_congress_medium_support = yes
 				clr_country_flag = USA_congress_investment
 			}
-			
+
 		}
 	}
 	USA_statehood_for_alaska = {
@@ -523,7 +523,7 @@ USA_congress = {
 	}
 	USA_readmit_state = {
 		icon = infiltrate_state
-		available = {	
+		available = {
 			political_power_daily > 0.1
 		}
 		visible = {
@@ -535,7 +535,7 @@ USA_congress = {
 			has_completed_focus = USA_reintegration
 		}
 		ai_will_do = {
-			factor = 1	
+			factor = 1
 		}
 		days_remove = 120
 		cost = 25
@@ -562,7 +562,7 @@ USA_congress = {
 					add_state_core = PREV
 				}
 				clr_state_flag = USA_state_admit
-			}			
+			}
 		}
 	}
 	USA_reshuffle_congress = {

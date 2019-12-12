@@ -33,7 +33,7 @@ GER_case_anton_category = {
 }
 
 GER_reichskommissariats = {
-	
+
 	allowed = {
 		original_tag = GER
 	}
@@ -45,21 +45,21 @@ GER_reichskommissariats = {
 
 GER_military_buildup = {
 	icon = generic_political_actions
-	
+
 	allowed = {
 		original_tag = GER
 	}
 	visible = {
-	
+
 	}
 }
 
-GER_aid_hun_rom_democratic_civil_war = {
+GER_aid_hun_rom_conservative_civil_war = {
 	allowed = {
 		original_tag = GER
 	}
 	visible = {
-		has_government = democratic
+		has_government = conservative
 	}
 }
 

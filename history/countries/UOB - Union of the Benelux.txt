@@ -94,7 +94,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 4
+	conservative = 4
 	fascism = 4
 	communism = 92
 }
@@ -107,7 +107,7 @@ set_stability = 0.75
 #	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
 #	picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
 #	expire = "1965.1.1"
-#	ideology = conservatism
+#	ideology = conservative
 #	traits = {
 #		#
 #	}
@@ -118,7 +118,7 @@ create_country_leader = {
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
 	picture = "GFX_portrait_holland_hendrikus_colijn"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		strict_austerity_adherent
 	}

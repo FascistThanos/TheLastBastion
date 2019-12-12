@@ -11,7 +11,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	gwtank = 1
 	gw_artillery = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	early_fighter = 1
@@ -57,7 +57,7 @@ if = {
 			set_naval_oob = "NZL_1939_naval_legacy"
 		}
 	}
-	
+
 	if = {
 		limit = { has_dlc = "Together for Victory" }
 		complete_national_focus = NZL_army_reforms
@@ -68,8 +68,8 @@ if = {
 		complete_national_focus = NZL_national_roads_board
 		complete_national_focus = NZL_new_zealand_steel
 		complete_national_focus = NZL_taranaki_oil
-		complete_national_focus = NZL_bureau_of_industry 
-		
+		complete_national_focus = NZL_bureau_of_industry
+
 		else = {
 			#generic focuses
 			complete_national_focus = army_effort
@@ -90,7 +90,7 @@ if = {
 		limited_conscription
 	}
 
-	
+
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1
@@ -148,13 +148,13 @@ if = {
 	}
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1935.11.27"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 100
+	conservative = 100
 }
 
 create_country_leader = {
@@ -205,7 +205,7 @@ set_convoys = 70
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservative
 		last_election = "1938.10.15"
 		election_frequency = 60
 		elections_allowed = yes
