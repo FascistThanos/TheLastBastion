@@ -435,16 +435,6 @@ spriteTypes = {
 		name = "GFX_ideology_democratic_group"
 		texturefile = "gfx/interface/ideologies/democratic_group.dds"
 	}
-
-	spriteType = {
-		name = "GFX_ideology_trotskyism_group"
-		texturefile = "gfx/interface/ideologies/trotskyism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_stalinism_group"
-		texturefile = "gfx/interface/ideologies/stalinism_group.dds"
-	}
 	
 	spriteType = {
 		name = "GFX_ideology_unknown"
@@ -627,5 +617,24 @@ spriteTypes = {
 		allwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
-	
+		spriteType = {
+		name = "GFX_ideology_monarchy_group"
+		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_theocratic_group"
+		textureFile = "gfx/interface/ideologies/theocratic_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_socialism_group"
+		textureFile = "gfx/interface/ideologies/socialism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_communism_group"
+		textureFile = "gfx/interface/ideologies/communism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_democratic_group"
+		textureFile = "gfx/interface/ideologies/democratic_group.dds"
+	}
 }
