@@ -225,6 +225,8 @@
  ITA_conservative_ADJ:0 "Italian"
  ITA_neutrality_ADJ:0 "Italian"
  ITA_communism_ADJ:0 "Italian"
+ ITA_socialism:0 "Italian Republic"
+ ITA_socialism_ADJ:0 "Italian"
  ROM_fascism:0 "Legionary Romania"
  ROM_fascism_DEF:0 "Legionary Romania"
  ROM_conservative:0 "Romania"
