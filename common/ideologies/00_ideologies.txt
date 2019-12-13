@@ -123,7 +123,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 255 0 0 }
+		color = { 168 50 50 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -177,43 +177,6 @@ ideologies = {
 		modifiers = {
 			puppet_cost_factor = -0.3
 			foreign_subversive_activites = -0.25
-		}
-
-		faction_modifiers = {
-
-		}
-
-	}
-	stalinism = {
-
-		types = {
-			stalinism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
-
-		color = { 255 0 0 }
-
-		war_impact_on_world_tension = 0.1
-		faction_impact_on_world_tension = 0.5
-
-		ai_communist = yes # uses the commie AI behaviour
-
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-
-		modifiers = {
-			puppet_cost_factor = -0.5
 		}
 
 		faction_modifiers = {
@@ -286,69 +249,7 @@ ideologies = {
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-	progressive = {
-		types = {
-			progressive_subtype = {}
-		}
-		dynamic_faction_names = {
-			"FACTION_NAME_PROGRESSIVE_1"
-			"FACTION_NAME_PROGRESSIVE_2"
-			"FACTION_NAME_PROGRESSIVE_3"
-			"FACTION_NAME_PROGRESSIVE_4"
-			"FACTION_NAME_PROGRESSIVE_5"
-			"FACTION_NAME_PROGRESSIVE_6"
-		}
-		color = { 30 176 7 }
-		rules = {
-			can_force_government = no
-			can_puppet = no
-			can_join_factions = no
-			can_send_volunteers = no
-		}
-		can_host_government_in_exile = yes
-		modifiers = {
-			join_faction_tension = 0.3
-			generate_wargoal_tension = 0.75
-		}
-		ai_democratic = yes
-		can_be_boosted = yes
-	}
-	anarchy = {
 
-		types = {
-			anarchist_communism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_ANARCHY_1"
-			"FACTION_NAME_ANARCHY_2"
-			"FACTION_NAME_ANARCHY_3"
-			"FACTION_NAME_ANARCHY_4"
-			"FACTION_NAME_ANARCHY_5"
-		}
-
-		color = { 120 5 5 }
-
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
-
-		ai_communist = yes # uses the commie AI behaviour
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = no
-		}
-
-		modifiers = {
-
-		}
-
-		faction_modifiers = {
-
-		}
-	}
 	socialism = {
 
 		types = {
@@ -400,7 +301,7 @@ ideologies = {
 	conservative = {
 		types = {
 			conservative = {
-			
+
 			}
 		}
 
