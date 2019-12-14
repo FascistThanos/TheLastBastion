@@ -1,0 +1,19 @@
+state = {
+  id = 842
+  name = "Welega"
+  state_category = town
+  manpower = 108350
+
+  history = {
+    owner = ETH
+    add_core_of = ETH
+    buildings = {
+      infrastucture = 4
+      industrial_complex = 2
+    }
+  }
+
+  provinces = {
+    2009 2040 4954 12856
+  }
+}

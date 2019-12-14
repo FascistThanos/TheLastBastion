@@ -1,0 +1,18 @@
+state = {
+  id = 856
+  name = "Kagera"
+  state_category = pastoral
+  manpower = 784900
+
+  history = {
+    owner = ENG
+    add_core_of = TZN
+    buildings = {
+      infrastructure = 3
+    }
+  }
+
+  provinces = {
+    2308 4171 5180 8144 10932 11017
+  }
+}

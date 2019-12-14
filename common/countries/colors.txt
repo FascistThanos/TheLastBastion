@@ -479,6 +479,10 @@ BOS = {
 	color = rgb { 79 115 81 }
 	color_ui = rgb { 79 115 81 }
 }
+SSD = {
+	color = rgb { 23 74 105 }
+	color_ui = rgb { 23 74 105 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

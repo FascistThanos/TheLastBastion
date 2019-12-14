@@ -1,0 +1,18 @@
+state = {
+  id = 858
+  name = "Lindi"
+  state_category = town
+  manpower = 2094580
+
+  history = {
+    owner = ENG
+    add_core_of = TZN
+    buildings = {
+      infrastructure = 5
+    }
+  }
+
+  provinces = {
+    8182 8201 10845 12944 12967
+  }
+}

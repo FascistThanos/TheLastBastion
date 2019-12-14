@@ -1,0 +1,18 @@
+state = {
+  id = 861
+  name = "Fas-Meknas"
+  state_category = town
+  manpower = 1548474
+
+  history = {
+    owner = FRA
+    add_core_of = MOR
+    buildings = {
+      infrastructure = 4
+    }
+  }
+
+  provinces = {
+    989 1111 1194 7100 7116 7173 10013 10070 11987 12042
+  }
+}

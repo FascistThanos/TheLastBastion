@@ -1,0 +1,24 @@
+state = {
+  id = 847
+  name = "Abia"
+  state_category = rural
+  manpower = 489600
+
+  resources = {
+    steel = 4
+    rubber = 8
+  }
+
+  history = {
+    owner = ENG
+    add_core_of = NGA
+    buildings = {
+      infrastructure = 4
+      arms_factory = 1
+    }
+  }
+
+  provinces = {
+    1992 4889 7978 8034 10831
+  }
+}

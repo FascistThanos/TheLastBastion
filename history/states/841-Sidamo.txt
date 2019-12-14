@@ -1,0 +1,19 @@
+state = {
+  id = 841
+  name = "Sidamo"
+  state_category = town
+  manpower = 102300
+
+  history = {
+    owner = ETH
+    add_core_of = ETH
+
+    buildings = {
+      infrastructure = 4
+    }
+  }
+
+  provinces = {
+    7912 8019 8062 10734 
+  }
+}

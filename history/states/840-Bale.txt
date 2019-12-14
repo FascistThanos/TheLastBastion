@@ -1,0 +1,18 @@
+state = {
+  id = 840
+  name = "Bale"
+  state_category = rural
+  manpower = 28400
+
+  history = {
+    owner = ETH
+    add_core_of = ETH
+    buildings = {
+      infrastucture = 3
+    }
+  }
+
+  provinces = {
+    4995 10775 12757 12812
+  }
+}
