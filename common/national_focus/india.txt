@@ -1112,7 +1112,7 @@ focus_tree = {
 
 
 	############################
-	### SOMEWHAT conservative ####
+	### SOMEWHAT democratic ####
 	############################
 
 	focus = {

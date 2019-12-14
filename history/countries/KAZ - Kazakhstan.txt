@@ -61,7 +61,7 @@ if = {
 }
 
 set_popularities = {
-	conservative = 60
+	democratic = 60
 	communism = 40
 }
 
@@ -81,7 +81,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_KAZ_Ilyas_Zhansugurov.dds"
 	expire = "1953.3.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 
 	}

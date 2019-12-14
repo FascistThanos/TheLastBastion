@@ -52,7 +52,7 @@ focus_tree = {
 #	}
 
 	###############################
-	##### conservative/Fascist ######
+	##### democratic/Fascist ######
 	###############################
 
 	focus = {
@@ -863,7 +863,7 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				is_faction_leader = yes
 				is_major = yes
-				has_government = conservative
+				has_government = democratic
 			}
 
 			NOT = {
@@ -882,7 +882,7 @@ focus_tree = {
 					any_other_country = {
 						is_faction_leader = yes
 						is_in_faction_with = ROOT
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 			}
@@ -897,14 +897,14 @@ focus_tree = {
 				limit = {
 					ENG = {
 						is_faction_leader = yes
-						has_government = conservative
+						has_government = democratic
 						not = { has_war_with = ROOT }
 					}
 				}
 				ENG = { country_event = generic.2 }
 			}
 			else = {
-				get_best_alliance_match_conservative_effect = yes
+				get_best_alliance_match_democratic_effect = yes
 				var:best_leader = {
 					country_event = generic.2
 				}

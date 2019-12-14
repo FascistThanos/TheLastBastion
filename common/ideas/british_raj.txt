@@ -309,7 +309,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conservative_drift = -0.02
+				democratic_drift = -0.02
 				neutrality_drift = -0.02
 			}
 		}
@@ -329,7 +329,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conservative_drift = -0.02
+				democratic_drift = -0.02
 				neutrality_drift = -0.02
 				fascism_drift = 0.03
 				autonomy_gain = 0.5
@@ -351,7 +351,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conservative_drift = -0.02
+				democratic_drift = -0.02
 				neutrality_drift = -0.02
 				communism_drift = 0.03
 				autonomy_gain = 0.5
@@ -424,11 +424,11 @@ ideas = {
 
 			picture = generic_political_advisor_india_1
 
-			traits = { conservative_reformer }
+			traits = { democratic_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = conservative
+					has_government = democratic
 				}
 			}
 

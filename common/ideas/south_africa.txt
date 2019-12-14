@@ -106,7 +106,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 NOT = { has_government = conservative }
+				 NOT = { has_government = democratic }
 			}
 
 			removal_cost = -1
@@ -115,7 +115,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 0.5
-				conservative_drift = -0.03
+				democratic_drift = -0.03
 			}
 
 		}
@@ -135,7 +135,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 0.5
-				conservative_drift = -0.03
+				democratic_drift = -0.03
 				fascism_drift = 0.03
 			}
 
@@ -156,7 +156,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				conservative_drift = -0.03
+				democratic_drift = -0.03
 				communism_drift = 0.03
 			}
 
@@ -556,13 +556,13 @@ ideas = {
 				}
 			}
 
-			picture = generic_conservative_reformer_western_european_2d
+			picture = generic_democratic_reformer_western_european_2d
 
-			traits = { conservative_reformer }
+			traits = { democratic_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = conservative
+					has_government = democratic
 				}
 			}
 

@@ -298,20 +298,20 @@ ideologies = {
 		}
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
-	conservative = {
+	democratic = {
 		types = {
-			conservative = {
+			democratic = {
 
 			}
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_CONSERVATIVE_1"
-			"FACTION_NAME_CONSERVATIVE_2"
-			"FACTION_NAME_CONSERVATIVE_3"
-			"FACTION_NAME_CONSERVATIVE_4"
-			"FACTION_NAME_CONSERVATIVE_5"
-			"FACTION_NAME_CONSERVATIVE_6"
+			"FACTION_NAME_democratic_1"
+			"FACTION_NAME_democratic_2"
+			"FACTION_NAME_democratic_3"
+			"FACTION_NAME_democratic_4"
+			"FACTION_NAME_democratic_5"
+			"FACTION_NAME_democratic_6"
 		}
 
 		color = { 3 119 252 }

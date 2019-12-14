@@ -1794,7 +1794,7 @@ focus_tree = {
 		mutually_exclusive = { focus = collectivist_ethos }
 		available = {
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = neutrality
 			}
 		}
@@ -1820,7 +1820,7 @@ focus_tree = {
 				NOT = {
 					any_neighbor_country = {
 						is_major = yes
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 			}

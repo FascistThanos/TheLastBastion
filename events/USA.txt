@@ -202,7 +202,7 @@ country_event = {
 
 	trigger = {
 		tag = USA
-		conservative > 0.5
+		democratic > 0.5
 		date > 1936.1.1
 		date < 1937.1.1
 	}
@@ -273,7 +273,7 @@ country_event = {
 				}
 			}
 		}
-		set_party_name = { ideology = conservative long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
@@ -298,7 +298,7 @@ country_event = {
 			desc = "POLITICS_ALF_LANDON_DESC"
 			picture = "portrait_USA_alf_landon.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 				staunch_constitutionalist
 			}
@@ -318,7 +318,7 @@ country_event = {
 
 	trigger = {
 		tag = USA
-		conservative > 0.5
+		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
 		has_idea = new_deal
@@ -374,7 +374,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		set_party_name = { ideology = conservative long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		remove_ideas = new_deal
 		add_ideas = wilkies_new_deal
 		set_variable = { election_factor = random }
@@ -409,7 +409,7 @@ country_event = {
 
 	trigger = {
 		tag = USA
-		conservative > 0.5
+		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
 		NOT = { has_idea = new_deal }
@@ -456,7 +456,7 @@ country_event = {
 
 	option = {
 		name = usa.8.b
-		set_party_name = { ideology = conservative long_name = USA_conservative_party name = USA_conservative_party }
+		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		add_ideas = new_deal
 		retire_country_leader = yes
 		add_political_power = 120
@@ -496,7 +496,7 @@ country_event = {
 	}
 	trigger = {
 		tag = USA
-		conservative > 0.5
+		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
 		has_idea = new_deal
@@ -538,7 +538,7 @@ country_event = {
 			}
 		}
 		remove_ideas = new_deal
-		set_party_name = { ideology = conservative long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
@@ -551,7 +551,7 @@ country_event = {
 			desc = "POLITICS_THOMAS_DEWEY_DESC"
 			picture = "portrait_USA_thomas_dewey.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 
 			}
@@ -586,7 +586,7 @@ country_event = {
 	}
 	trigger = {
 		tag = USA
-		conservative > 0.5
+		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
 		NOT = { has_idea = new_deal }
@@ -617,7 +617,7 @@ country_event = {
 	option = {
 		name = usa.10.b
 		add_ideas = new_deal
-		set_party_name = { ideology = conservative long_name = USA_conservative_party name = USA_conservative_party }
+		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
@@ -660,7 +660,7 @@ country_event = {
 	}
 	trigger = {
 		tag = USA
-		conservative > 0.5
+		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
 		has_idea = new_deal
@@ -705,7 +705,7 @@ country_event = {
 			}
 		}
 		remove_ideas = new_deal
-		set_party_name = { ideology = conservative long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
@@ -718,7 +718,7 @@ country_event = {
 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
 			picture = "Portrait_USA_Douglas_MacArthur.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 
 			}
@@ -739,7 +739,7 @@ country_event = {
 
 	trigger = {
 		tag = USA
-		conservative > 0.5
+		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
 		has_idea = new_deal
@@ -768,7 +768,7 @@ country_event = {
 		tag = USA
 		date > 1945.3.29
 		has_idea = new_deal
-		has_government = conservative
+		has_government = democratic
 	}
 
 	fire_only_once = yes
@@ -812,11 +812,11 @@ country_event = {
 	option = {
 		name = usa.14.a
 		set_politics = {
-			ruling_party = conservative
+			ruling_party = democratic
 			elections_allowed = yes
 		}
 		set_political_party = {
-			ideology = conservative
+			ideology = democratic
 			popularity = 50
 		}
 		remove_ideas = great_depression
@@ -1108,11 +1108,11 @@ country_event = {
 	option = {
 		name = usa.24.a
 		set_politics = {
-			ruling_party = conservative
+			ruling_party = democratic
 			elections_allowed = yes
 		}
 		set_political_party = {
-			ideology = conservative
+			ideology = democratic
 			popularity = 50
 		}
 		remove_ideas = great_depression

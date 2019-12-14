@@ -48,7 +48,7 @@ country_event = {
 				set_war_support = 0.8
 				#country_event = { id = spain.3 days = 1 }
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = 0.35
 				}
 			}
@@ -423,7 +423,7 @@ country_event = {
 				set_stability = 0.8
 				set_war_support = 0.8
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = 0.35
 				}
 			}
@@ -481,7 +481,7 @@ country_event = {
 				popularity = 1
 			}
 			add_popularity = {
-				ideology = conservative
+				ideology = democratic
 				popularity = 0.35
 			}
 

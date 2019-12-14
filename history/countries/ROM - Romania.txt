@@ -218,7 +218,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	conservative = 20
+	democratic = 20
 	fascism = 18
 	neutrality = 2
 	communism = 60
@@ -232,7 +232,7 @@ set_popularities = {
 		elections_allowed = no
 	}
 	set_popularities = {
-		conservative = 20
+		democratic = 20
 		fascism = 35
 		communism = 2
 		neutrality = 43
@@ -266,7 +266,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMAND_CALINESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}

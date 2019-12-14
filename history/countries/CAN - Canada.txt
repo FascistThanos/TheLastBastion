@@ -170,14 +170,14 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 62
+	democratic = 62
 	fascism = 10
 	communism = 28
 }

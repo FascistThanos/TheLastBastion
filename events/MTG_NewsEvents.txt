@@ -49,7 +49,7 @@ news_event = {
 		trigger = {
 			NOT = { original_tag = USA }
 			or = {
-				has_government = conservative
+				has_government = democratic
 				has_government = neutrality
 			}
 		}
@@ -94,7 +94,7 @@ news_event = {
 		name = mtg_news.2.d
 		trigger = {
 			NOT = { original_tag = USA }
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 }
@@ -137,7 +137,7 @@ news_event = {
 			NOT = { original_tag = BEL }
 			NOT = { has_idea = HOL_aloof_neutrality }
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = neutrality
 			}
 		}
@@ -191,7 +191,7 @@ news_event = {
 		trigger = {
 			NOT = { original_tag = USA }
 			Or = {
-				has_government = conservative
+				has_government = democratic
 				has_government = neutrality
 			}
 		}
@@ -233,7 +233,7 @@ news_event = {
 		trigger = {
 			NOT = { original_tag = USA }
 			Or = {
-				has_government = conservative
+				has_government = democratic
 				has_government = neutrality
 			}
 		}
@@ -280,7 +280,7 @@ news_event = {
 		name = mtg_news.6.d
 		trigger = {
 			NOT = { original_tag = USA }
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 }
@@ -323,7 +323,7 @@ news_event = {
 		name = mtg_news.7.d
 		trigger = {
 			NOT = { original_tag = USA }
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 }

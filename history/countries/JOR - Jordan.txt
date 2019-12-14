@@ -63,7 +63,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	conservative = 25
+	democratic = 25
 	fascism = 20
 	communism = 5
 	neutrality = 50
@@ -73,7 +73,7 @@ create_country_leader = {
 	name = "Hashim Kheir"
 	desc = ""
 	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_2.dds"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}

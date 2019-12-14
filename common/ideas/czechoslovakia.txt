@@ -2,22 +2,22 @@ ideas = {
 
 	country = {
 
-		CZE_conservative_bastion = {
+		CZE_democratic_bastion = {
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
-			picture = generic_conservative_drift_bonus
+			picture = generic_democratic_drift_bonus
 
 			removal_cost = -1
 
 			modifier = {
-				conservative_drift = 0.05
+				democratic_drift = 0.05
 				drift_defence_factor = 0.3
 				war_support_factor = 0.05
 			}
@@ -50,15 +50,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
-			picture = generic_conservative_drift_bonus
+			picture = generic_democratic_drift_bonus
 
 			removal_cost = -1
 
 			modifier = {
-				conservative_drift = 0.1
+				democratic_drift = 0.1
 				drift_defence_factor = 0.3
 				war_support_factor = 0.1
 				army_core_defence_factor = 0.1
@@ -130,9 +130,9 @@ ideas = {
 						}
 					}
 					AND = {
-						has_government = conservative
+						has_government = democratic
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 				}
@@ -557,7 +557,7 @@ ideas = {
 			available = {
 				if = {
 					limit = { has_dlc = "Death or Dishonor" }
-					has_completed_focus = CZE_conservative_bastion
+					has_completed_focus = CZE_democratic_bastion
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }
@@ -565,7 +565,7 @@ ideas = {
 				}
 			}
 
-			traits = { conservative_reformer }
+			traits = { democratic_reformer }
 
 			ai_will_do = {
 				factor = 0
