@@ -112,7 +112,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_conservative_drift_bonus
 
 			modifier = {
 				stability_factor = -0.10
@@ -132,7 +132,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_conservative_drift_bonus
 
 			modifier = {
 				stability_factor = -0.10
@@ -259,7 +259,7 @@ ideas = {
 			}
 		}
 
-		GER_align_hungary_democratic = {
+		GER_align_hungary_conservative = {
 			allowed = {
 				always = no
 			}
@@ -270,11 +270,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_conservative_drift_bonus
 
 			modifier = {
-				democratic_drift = 0.2
-				democratic_acceptance = 85
+				conservative_drift = 0.2
+				conservative_acceptance = 85
 			}
 		}
 
@@ -316,22 +316,22 @@ ideas = {
 			}
 		}
 
-		GER_align_romania_democratic = {
+		GER_align_romania_conservative = {
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = democratic
+				 has_government = conservative
 			}
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_conservative_drift_bonus
 
 			modifier = {
-				democratic_drift = 0.2
-				democratic_acceptance = 85
+				conservative_drift = 0.2
+				conservative_acceptance = 85
 			}
 		}
 
@@ -390,7 +390,7 @@ ideas = {
 
 			modifier = {
 				neutrality_drift = 0.1
-				democratic_drift = -0.02
+				conservative_drift = -0.02
 				drift_defence_factor = 0.1
 				join_faction_tension = -0.2
 				lend_lease_tension = -0.2
@@ -404,15 +404,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = democratic
+				 has_government = conservative
 			}
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_conservative_drift_bonus
 
 			modifier = {
-				democratic_drift = 0.1
+				conservative_drift = 0.1
 			}
 		}
 
@@ -675,7 +675,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			removal_cost = -1
@@ -693,7 +693,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			removal_cost = -1
@@ -702,7 +702,7 @@ ideas = {
 
 			modifier = {
 				communism_drift = -0.02
-				democratic_drift = 0.02
+				conservative_drift = 0.02
 			}
 		}
 
@@ -713,7 +713,7 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					has_government = democratic
+					has_government = conservative
 					has_government = neutrality
 				}
 			}
@@ -1693,11 +1693,11 @@ ideas = {
 				}
 			}
 
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 

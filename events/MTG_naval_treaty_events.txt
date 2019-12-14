@@ -14,7 +14,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 			modifier = {
-				has_government = democratic
+				has_government = conservative
 				factor = 5
 			}
 			modifier = {
@@ -128,7 +128,7 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				has_government = democratic
+				has_government = conservative
 				factor = 0
 			}
 		}

@@ -14,7 +14,7 @@ ideas = {
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic
+						has_government = conservative
 						NOT = {
 							tag = ROOT
 						}
@@ -42,7 +42,7 @@ ideas = {
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic
+						has_government = conservative
 						NOT = {
 							tag = ROOT
 						}
@@ -95,7 +95,7 @@ ideas = {
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic
+						has_government = conservative
 						NOT = {
 							tag = ROOT
 						}
@@ -269,7 +269,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			picture = generic_morale_bonus
@@ -463,7 +463,7 @@ ideas = {
 			}
 
 			modifier = {
-				democratic_drift = 0.1
+				conservative_drift = 0.1
 				stability_weekly = 0.002
 			}
 
@@ -555,7 +555,7 @@ ideas = {
 			}
 
 			modifier = {
-				democratic_drift = -0.1
+				conservative_drift = -0.1
 				war_support_weekly = 0.002
 				political_power_factor = 0.1
 			}
@@ -788,7 +788,7 @@ ideas = {
 			}
 
 			modifier = {
-				democratic_drift = -0.02
+				conservative_drift = -0.02
 			}
 
 			targeted_modifier = {
@@ -1159,7 +1159,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			modifier = {
@@ -1180,7 +1180,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			modifier = {
@@ -1203,7 +1203,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			modifier = {
@@ -1266,11 +1266,11 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			modifier = {
-				democratic_drift = 0.2
+				conservative_drift = 0.2
 			}
 
 			picture = generic_pp_unity_bonus
@@ -1803,11 +1803,11 @@ ideas = {
 				original_tag = ENG
 			}
 
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 
@@ -1856,7 +1856,7 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 					NOT = { has_completed_focus = ENG_no_further_appeasement }
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 
@@ -1985,7 +1985,7 @@ ideas = {
 
 		ENG_winston_churchill = {
 
-			#picture = generic_democratic_reformer_western_european_2d
+			#picture = generic_conservative_reformer_western_european_2d
 
 			available = {
 				has_government = neutrality

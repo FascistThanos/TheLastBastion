@@ -1045,11 +1045,11 @@ country_event = {
 				OR = {
 					has_game_rule = {
 						rule = ENG_ai_behavior
-						option = democratic_HISTORICAL
+						option = conservative_HISTORICAL
 					}
 					has_game_rule = {
 						rule = ENG_ai_behavior
-						option = democratic_ALTERNATE
+						option = conservative_ALTERNATE
 					}
 					has_game_rule = {
 						rule = ENG_ai_behavior
@@ -1830,7 +1830,7 @@ country_event = {
 					country_exists = YUG
 					YUG = { has_war = no }
 					ENG = { NOT = { has_war_with = YUG } }
-					ENG = { has_government = democratic }
+					ENG = { has_government = conservative }
 				}
 				ENG = {
 					country_event = {
@@ -2530,7 +2530,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = democratic
+					ideology = conservative
 					size = 0.3
 				}
 			}
@@ -2573,7 +2573,7 @@ country_event = {
 				OR = {
 					has_game_rule = {
 						rule = ENG_ai_behavior
-						option = democratic_ALTERNATE
+						option = conservative_ALTERNATE
 					}
 					has_game_rule = {
 						rule = ENG_ai_behavior
@@ -2728,7 +2728,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = democratic
+					ideology = conservative
 					size = 0.3
 				}
 			}
@@ -2775,7 +2775,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = democratic
+					ideology = conservative
 					size = 0.3
 				}
 			}
@@ -2831,7 +2831,7 @@ country_event = {
 					has_government = communism
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = conservative
 					size = 0.3
 				}
 			}
@@ -2916,7 +2916,7 @@ country_event = {
 					has_government = communism
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = conservative
 					size = 0.3
 				}
 			}
@@ -3125,7 +3125,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ruling_party = democratic
+				ruling_party = conservative
 				ideology = fascism
 				size = 0.5
 			}
@@ -3138,7 +3138,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ruling_party = democratic
+				ruling_party = conservative
 				ideology = fascism
 				size = 0.7
 			}
@@ -3168,7 +3168,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = democratic
+				ideology = conservative
 				size = 0.5
 			}
 		}
@@ -3180,7 +3180,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = democratic
+				ideology = conservative
 				size = 0.3
 			}
 		}
@@ -3209,7 +3209,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = democratic
+				ideology = conservative
 				size = 0.5
 			}
 		}
@@ -3221,7 +3221,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = democratic
+				ideology = conservative
 				size = 0.3
 			}
 		}
@@ -3398,7 +3398,7 @@ country_event = {
 				factor = 5 #seems safe
 			}
 			modifier = {
-				has_government = democratic
+				has_government = conservative
 				factor = 5
 			}
 		}
@@ -3981,7 +3981,7 @@ country_event = {
 				CZE = {
 					exists = yes
 					is_subject = no
-					has_government = democratic
+					has_government = conservative
 					NOT = { is_in_faction_with = GER }
 				}
 			}
@@ -4021,7 +4021,7 @@ country_event = {
 						NOT = { tag = GER }
 						has_government = fascism
 					}
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 			add_opinion_modifier = { target = SOV modifier = unholy_alliance }
@@ -4051,7 +4051,7 @@ country_event = {
 			}
 			every_other_country = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 				}
 				add_opinion_modifier = { target = GER modifier = unholy_alliance }
 			}
@@ -5181,7 +5181,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		#A democratic faction leader whose faction holds at least one German core state while SOV holds another can get this.
+		#A conservative faction leader whose faction holds at least one German core state while SOV holds another can get this.
 		has_war_with = GER
 		GER = {
 			surrender_progress > 0.5
@@ -5193,7 +5193,7 @@ country_event = {
 				is_in_faction_with = ROOT
 			}
 		}
-		has_government = democratic
+		has_government = conservative
 		NOT = {
 			tag = SOV
 		}
@@ -5931,7 +5931,7 @@ country_event = {
 				add = 1
 				OR = {
 					has_government = communism
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 		}

@@ -238,11 +238,11 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			modifier = {
-				democratic_drift = 0.02
+				conservative_drift = 0.02
 			}
 		}
 
@@ -698,7 +698,7 @@ ideas = {
 
 		ROM_iuliu_maniu = {
 
-			picture = generic_democratic_reformer_western_european_2d
+			picture = generic_conservative_reformer_western_european_2d
 
 			allowed = {
 				original_tag = ROM
@@ -711,7 +711,7 @@ ideas = {
 				}
 			}
 
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 		}
 
 		ROM_gheorghe_gheorghiu_dej = {

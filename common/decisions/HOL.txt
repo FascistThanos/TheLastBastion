@@ -600,7 +600,7 @@ HOL_war_on_pacifism = {
 
 		remove_effect = {
 			add_popularity = {
-			    ideology = democratic
+			    ideology = conservative
 			    popularity = -0.05
 			}
 			add_stability = -0.03
@@ -1017,7 +1017,7 @@ HOL_gateway_to_europe_eng_category = {
 		}
 
 		available = {
-			has_government = democratic
+			has_government = conservative
 			GER = { has_government = fascism }
 		}
 
@@ -1221,7 +1221,7 @@ HOL_gateway_to_europe_ger_category = {
 
 		available = {
 			has_government = fascism
-			ENG = { has_government = democratic }
+			ENG = { has_government = conservative }
 		}
 
 		targets = { HOL }
@@ -1403,7 +1403,7 @@ HOL_gateway_to_europe_hol_category = {
 			HOL = { has_completed_focus = HOL_gateway_to_europe }
 			ENG = {
 				exists = yes
-				has_government = democratic
+				has_government = conservative
 			}
 		}
 
@@ -2021,7 +2021,7 @@ political_actions = {
 			has_capitulated = yes
 			has_completed_focus = HOL_continue_the_war_in_batavia
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = fascism
 			}
 			OR = {

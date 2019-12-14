@@ -23,6 +23,6 @@ set_popularities = {
   trotskyism = 15
   socialism = 4
   liberal = 16
-  democratic = 6
+  conservative = 6
   fascism = 3
 }

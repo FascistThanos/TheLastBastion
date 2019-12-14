@@ -117,7 +117,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			removal_cost = -1
@@ -185,7 +185,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_conservative_drift_bonus
 
 			modifier = {
 				conscription = 0.02

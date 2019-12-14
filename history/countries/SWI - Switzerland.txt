@@ -75,13 +75,13 @@ set_politics = {
 set_popularities = {
 	communism = 96
 	fascism = 2
-	democratic = 2
+	conservative = 2
 }
 
 1939.1.1 = {
 	#next election october 39
 	set_popularities = {
-		democratic = 95
+		conservative = 95
 		fascism = 2
 		communism = 3
 	}
@@ -99,7 +99,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

@@ -59,13 +59,13 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1932.10.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 100
+	conservative = 100
 }
 
 create_country_leader = {
@@ -73,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
 	picture = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -81,7 +81,7 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservative
 		last_election = "1936.3.28"
 		election_frequency = 48
 		elections_allowed = yes

@@ -74,7 +74,7 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_popularities = {	democratic = 33	communism = 33	neutrality = 34
+set_popularities = {	conservative = 33	communism = 33	neutrality = 34
 }
 
 create_country_leader = {
@@ -82,7 +82,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
 	expire = "1953.3.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 
 	}
@@ -93,7 +93,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_malaya_shenton_thomas"
 	expire = "1953.3.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 
 	}

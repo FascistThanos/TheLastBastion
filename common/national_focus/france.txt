@@ -1432,7 +1432,7 @@ focus_tree = {
 			}
 			every_other_country = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 					num_of_factories > 30
 				}
 				add_opinion_modifier = {
@@ -1659,10 +1659,10 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		available = {
 			is_puppet = no
-			has_government = democratic
+			has_government = conservative
 			ENG = {
 				exists = yes
-				has_government = democratic
+				has_government = conservative
 			}
 			NOT = { has_war_with = ENG }
 		}
@@ -2015,7 +2015,7 @@ focus_tree = {
 			}
 			every_other_country = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 					num_of_factories > 30
 				}
 				add_opinion_modifier = {
@@ -2346,7 +2346,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 	 	available = {
 	 		is_puppet = no
-	 		GER = { has_government = democratic }
+	 		GER = { has_government = conservative }
 		}
 	 	prerequisite = { focus = FRA_woo_italy }
 	 	will_lead_to_war_with = GER

@@ -675,7 +675,7 @@ news_event = {
 	}
 }
 
-# Germany democratically annexes Austria
+# Germany conservativeally annexes Austria
 news_event = {
 	id = wtt_news.18
 	title = wtt_news.18.t
@@ -941,7 +941,7 @@ news_event = {
 				original_tag = ENG
 				AND = {
 					original_tag = FRA
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 		}
@@ -955,7 +955,7 @@ news_event = {
 				original_tag = ENG
 				AND = {
 					original_tag = FRA
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 		}

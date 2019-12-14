@@ -85,7 +85,7 @@ fascism_on_the_rise = {
 	#}
 }
 
-democratic_on_the_rise = {
+conservative_on_the_rise = {
 	icon = generic_democracy
 
 	allowed = {
@@ -93,8 +93,8 @@ democratic_on_the_rise = {
 	}
 
 	#visible = {
-	#	NOT = { has_government = democratic }
-	#	has_idea_with_trait = democratic_reformer
+	#	NOT = { has_government = conservative }
+	#	has_idea_with_trait = conservative_reformer
 	#}
 }
 

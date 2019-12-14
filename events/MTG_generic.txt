@@ -179,7 +179,7 @@ country_event = {
 		if = {
 			limit = {
 				FROM = {
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 			effect_tooltip = {
@@ -188,7 +188,7 @@ country_event = {
 					days = 365
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = conservative
 					elections_allowed = yes
 				}
 			}

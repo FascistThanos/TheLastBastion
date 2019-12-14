@@ -50,7 +50,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				NOT = { has_government = democratic }
+				NOT = { has_government = conservative }
 			}
 
 			removal_cost = -1
@@ -102,19 +102,19 @@ ideas = {
 			}
 		}
 
-		CAN_defence_of_canada_regulations_democratic = {
+		CAN_defence_of_canada_regulations_conservative = {
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = democratic
+				 has_government = conservative
 			}
 
 			removal_cost = -1
 
-			picture = can_defence_of_canada_regulations_democratic
+			picture = can_defence_of_canada_regulations_conservative
 
 			modifier = {
 				communism_drift = -0.01
@@ -138,7 +138,7 @@ ideas = {
 			picture = can_defence_of_canada_regulations_fascism
 
 			modifier = {
-				democratic_drift = -0.01
+				conservative_drift = -0.01
 				communism_drift = -0.01
 				foreign_subversive_activites = -0.50
 			}
@@ -159,7 +159,7 @@ ideas = {
 			picture = can_defence_of_canada_regulations_communism
 
 			modifier = {
-				democratic_drift = -0.01
+				conservative_drift = -0.01
 				fascism_drift = -0.01
 				foreign_subversive_activites = -0.50
 			}
@@ -393,7 +393,7 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				conservative_drift = -0.1
 				fascism_drift = 0.2
 			}
 		}
@@ -412,7 +412,7 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				conservative_drift = -0.1
 				fascism_drift = 0.2
 				war_support_factor = 0.05
 				conscription = 0.02
@@ -433,7 +433,7 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				conservative_drift = -0.1
 				fascism_drift = 0.2
 				war_support_factor = 0.05
 				conscription = 0.02
@@ -456,7 +456,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				conservative_drift = -0.1
 				communism_drift = 0.2
 			}
 		}
@@ -475,7 +475,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				conservative_drift = -0.1
 				communism_drift = 0.2
 				industrial_capacity_factory = 0.02
 				industrial_capacity_dockyard = 0.02
@@ -498,7 +498,7 @@ ideas = {
 			rule = { can_send_volunteers = yes }
 
 			modifier = {
-				democratic_drift = -0.1
+				conservative_drift = -0.1
 				communism_drift = 0.2
 				industrial_capacity_factory = 0.04
 				industrial_capacity_dockyard = 0.04
@@ -609,13 +609,13 @@ ideas = {
 				}
 			}
 
-			picture = generic_democratic_reformer_commonwealth_2d
+			picture = generic_conservative_reformer_commonwealth_2d
 
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 

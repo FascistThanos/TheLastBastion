@@ -3262,13 +3262,13 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = mtg_netherlands.10 hours = 6 }
 			effect_tooltip = {
-				set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
+				set_party_name = { ideology = conservative long_name = HOL_CHU_party_long name = HOL_CHU_party }
 				create_country_leader = {
 					name = "Dirk Jan de Geer"
 					desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
 					picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
 					expire = "1965.1.1"
-					ideology = democratic
+					ideology = conservative
 					traits = {
 						defeatist
 					}
@@ -3403,7 +3403,7 @@ focus_tree = {
 		bypass = {
 			OR = {
 				GER = { NOT = { has_government = fascism } }
-				ENG = { NOT = { has_government = democratic } }
+				ENG = { NOT = { has_government = conservative } }
 			}
 			NOT = {
 				OR = {
@@ -3463,7 +3463,7 @@ focus_tree = {
 		}
 		bypass = {
 			OR = {
-				ENG = { NOT = { has_government = democratic } }
+				ENG = { NOT = { has_government = conservative } }
 				ENG = { exists = no }
 				has_war_with = GER
 			}
@@ -5182,7 +5182,7 @@ focus_tree = {
 			country_event = { id = mtg_netherlands.14 }
 			effect_tooltip = {
 				add_popularity = {
-				    ideology = democratic
+				    ideology = conservative
 				    popularity = -0.05
 				}
 				retire_country_leader = yes
@@ -5191,7 +5191,7 @@ focus_tree = {
 					desc = "POLITICS_PIETER_SJOERDS_GERBRANDY_DESC"
 					picture = "portrait_hol_pieter_sjoerds_gerbrandy.dds"
 					expire = "1965.1.1"
-					ideology = democratic
+					ideology = conservative
 					traits = {
 						little_churchill
 					}
@@ -5278,16 +5278,16 @@ focus_tree = {
 				popularity = ban_fascism_var
 			}
 			set_temp_variable = {
-				var = ban_democratic_var
-				value = party_popularity@democratic
+				var = ban_conservative_var
+				value = party_popularity@conservative
 			}
 			multiply_temp_variable = {
-				var = ban_democratic_var
+				var = ban_conservative_var
 				value = -1
 			}
 			add_popularity = {
-				ideology = democratic
-				popularity = ban_democratic_var
+				ideology = conservative
+				popularity = ban_conservative_var
 			}
 			swap_ruler_traits = { remove = disdain_for_politicians_1 add = disdain_for_politicians_2 }
 		}
@@ -5538,7 +5538,7 @@ focus_tree = {
 							tag = FRA
 							tag = BEL
 						}
-						has_government = democratic
+						has_government = conservative
 					}
 					add_opinion_modifier = { target = HOL modifier = HOL_wilhelminism }
 					hidden_effect = {
@@ -5605,7 +5605,7 @@ focus_tree = {
 								tag = FRA
 								tag = BEL
 							}
-							has_government = democratic
+							has_government = conservative
 						}
 						add_opinion_modifier = { target = HOL modifier = HOL_wilhelminism }
 					}
@@ -5645,7 +5645,7 @@ focus_tree = {
 				if = {
 					limit = {
 						ENG = {
-							has_government = democratic
+							has_government = conservative
 						}
 					}
 					ENG = {
@@ -5680,7 +5680,7 @@ focus_tree = {
 	focus = {
 		id = HOL_go_with_britain
 		available = {
-			ENG = { has_government = democratic }
+			ENG = { has_government = conservative }
 			threat > 0.25
 		}
 		bypass = {
@@ -5756,7 +5756,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_go_with_britain }
 		available = {
 			has_completed_focus = HOL_unity_through_democracy
-			has_government = democratic
+			has_government = conservative
 			is_in_faction_with = ENG
 			is_in_faction_with = AST
 			is_in_faction_with = MAL
@@ -6103,7 +6103,7 @@ focus_tree = {
 						is_on_continent = europe
 					}
 					is_major = no
-					has_government = democratic
+					has_government = conservative
 				}
 				add_opinion_modifier = { target = HOL modifier = HOL_lead_the_minor_democracies }
 				add_timed_idea = { idea = HOL_lead_the_minor_democracies days = 1095 }
@@ -6212,7 +6212,7 @@ focus_tree = {
 						is_on_continent = europe
 					}
 					is_major = no
-					has_government = democratic
+					has_government = conservative
 					NOT = { is_in_faction_with = ROOT }
 				}
 				country_event = { id = generic.5 hours = 6 }

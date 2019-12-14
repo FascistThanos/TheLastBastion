@@ -321,7 +321,7 @@ governments_in_exile = {
 		targeted_modifier = {
 			tag = FROM
 			targeted_legitimacy_daily = -1
-			democratic_drift = 0.05
+			conservative_drift = 0.05
 		}
 
 		remove_effect = {

@@ -2840,7 +2840,7 @@ focus_tree = {
 			add_ideas = AST_classify_aliens
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 				}
 				add_popularity = {
 					ideology = fascism
@@ -2856,7 +2856,7 @@ focus_tree = {
 					has_government = fascism
 				}
 				add_popularity = {
-					ideology = democratic
+					ideology = conservative
 					popularity = -0.1
 				}
 				add_popularity = {
@@ -2869,7 +2869,7 @@ focus_tree = {
 					has_government = communism
 				}
 				add_popularity = {
-					ideology = democratic
+					ideology = conservative
 					popularity = -0.1
 				}
 				add_popularity = {
@@ -2928,7 +2928,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NOT = { ENG = { has_government = democratic } } #less likely to do if ENG not democratic
+				NOT = { ENG = { has_government = conservative } } #less likely to do if ENG not conservative
 				factor = 0.5
 			}
 			modifier = {
@@ -2987,7 +2987,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				ENG = { NOT = { has_government = democratic } }
+				ENG = { NOT = { has_government = conservative } }
 				factor = 0
 			}
 		}
@@ -3423,7 +3423,7 @@ focus_tree = {
 				factor = 30
 			}
 			modifier = {
-				NOT = { ENG = { has_government = democratic } }
+				NOT = { ENG = { has_government = conservative } }
 				factor = 5
 			}
 		}
@@ -4860,7 +4860,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NZL = { has_government = democratic } 
+				NZL = { has_government = conservative } 
 				factor = 10
 			}
 		}

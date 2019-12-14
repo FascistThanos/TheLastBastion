@@ -142,7 +142,7 @@ set_politics = {
 
 }
 set_popularities = {
-	democratic = 30
+	conservative = 30
 	fascism = 10
 	communism = 60
 }
@@ -166,7 +166,7 @@ create_country_leader = {
 #	desc = ""
 #	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 #	expire = "1965.1.1"
-#	ideology = democratic
+#	ideology = conservative
 #	traits = {
 #	}
 #}

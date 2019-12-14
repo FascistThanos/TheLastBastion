@@ -136,7 +136,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 5
+	conservative = 5
 	fascism = 5
 	communism = 12
 	neutrality = 78
@@ -162,7 +162,7 @@ create_country_leader = {
 	}
 
 	set_popularities = {
-		democratic = 5
+		conservative = 5
 		fascism = 5
 		communism = 12
 		neutrality = 78

@@ -192,7 +192,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 18
+	conservative = 18
 	fascism = 20
 	communism = 9
 	neutrality = 53
@@ -225,7 +225,7 @@ create_country_leader = { # Exiled until 1935 following a rebellion attempt, all
 	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
 	picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

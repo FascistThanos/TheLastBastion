@@ -154,7 +154,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = EGY_embassytousa }
+		prerequisite = { focus = EGY_IZznoibU }
 		ai_will_do = {
 			factor = 1
 		}

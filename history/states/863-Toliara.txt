@@ -1,7 +1,7 @@
 state = {
   id = 863
   name = "Toliara"
-  state_category = rural
+  state_category = pastoral
   manpower = 1843058
 
   history = {
@@ -14,6 +14,6 @@ state = {
   }
 
   provinces = {
-    2200 8180 8246 10993 12956
+    2200 8180 8246 10993 12956 
   }
 }

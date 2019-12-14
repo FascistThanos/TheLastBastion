@@ -444,7 +444,7 @@ focus_tree = {
 			every_country = {
 				limit = {
 					is_major = yes
-					has_government = democratic
+					has_government = conservative
 				}
 				add_opinion_modifier = {
 					target = ROOT
@@ -811,7 +811,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				JAP = {
-					has_government = democratic
+					has_government = conservative
 				}
 				factor = 0
 			}

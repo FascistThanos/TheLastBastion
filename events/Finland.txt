@@ -128,9 +128,9 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 5
-				has_government = democratic
+				has_government = conservative
 				FIN = {
-				 has_government = democratic
+				 has_government = conservative
 				}
 			}
 		}
@@ -192,13 +192,13 @@ country_event = {
 			modifier = {
 				factor = 100
 				has_war = no
-				has_government = democratic
+				has_government = conservative
 				strength_ratio = {
 					tag = SOV
 					ratio > 0.2
 				}
 				FIN = {
-					has_government = democratic
+					has_government = conservative
 					strength_ratio = {
 						tag = SOV
 						ratio > 0.3

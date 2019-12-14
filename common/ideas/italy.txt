@@ -35,7 +35,7 @@ ideas = {
 				NOT = {
 					OR = {
 						has_government = communism
-						has_government = democratic
+						has_government = conservative
 					}
 				}
 			}
@@ -44,7 +44,7 @@ ideas = {
 
 			modifier = {
 				communism_acceptance = -10
-				democratic_acceptance = -10
+				conservative_acceptance = -10
 				fascism_acceptance = 10
 				ai_focus_aggressive_factor = 0.5
 				justify_war_goal_time = -0.05
@@ -74,9 +74,9 @@ ideas = {
 						}
 					}
 					AND = {
-						has_government = democratic
+						has_government = conservative
 						GER = {
-							has_government = democratic
+							has_government = conservative
 						}
 					}
 				}
@@ -135,11 +135,11 @@ ideas = {
 				}
 			}
 
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 

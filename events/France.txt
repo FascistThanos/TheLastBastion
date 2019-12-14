@@ -651,7 +651,7 @@ country_event = {
 				elections_allowed = no
 			}
 			set_popularities = {
-				democratic = 22
+				conservative = 22
 				fascism = 76
 				communism = 2
 			}
@@ -944,7 +944,7 @@ country_event = {
 				elections_allowed = no
 			}
 			set_popularities = {
-				democratic = 22
+				conservative = 22
 				neutrality = 60
 				fascism = 16
 				communism = 2
@@ -1098,7 +1098,7 @@ country_event = {
 				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 				picture = "Portrait_France_Charles_De_Gaulle.dds"
 				expire = "1965.1.1"
-				ideology = democratic
+				ideology = conservative
 				traits = {
 
 				}
@@ -1224,7 +1224,7 @@ country_event = {
 #	trigger = {
 #		tag = FRA
 #		SOV = { has_government = communism }
-#		has_government = democratic
+#		has_government = conservative
 #		communism < 0.5
 #		has_global_flag = sov_yes_pact
 #	}
@@ -1513,7 +1513,7 @@ country_event = {
 			random_other_country = {
 				limit = {
 					original_tag = FRA
-					has_government = democratic
+					has_government = conservative
 				}
 				if = {
 					limit = { ROOT = { owns_state = 554 } }
@@ -1588,7 +1588,7 @@ country_event = {
 
     trigger = {
         original_tag = FRA
-        has_government = democratic
+        has_government = conservative
         has_global_flag = fall_of_france
         NOT = { has_country_flag = france_de_gaulle }
     }
@@ -1644,7 +1644,7 @@ country_event = {
 }
 
 # Britain is at peace after annexing France in the Franco-British Union
-# AI will tend to release France if historic mode is on or they are democratic
+# AI will tend to release France if historic mode is on or they are conservative
 
 country_event = {
 	id = france.33
@@ -1685,15 +1685,15 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 				}
 				FRA = {
 					set_politics = {
-						ruling_party = democratic
+						ruling_party = conservative
 						elections_allowed = yes
 					}
 					set_popularities = {
-						democratic = 60
+						conservative = 60
 						fascism = 20
 						communism = 20
 					}
@@ -1709,7 +1709,7 @@ country_event = {
 						elections_allowed = no
 					}
 					set_popularities = {
-						democratic = 20
+						conservative = 20
 						fascism = 60
 						communism = 20
 					}
@@ -1725,7 +1725,7 @@ country_event = {
 						elections_allowed = no
 					}
 					set_popularities = {
-						democratic = 20
+						conservative = 20
 						fascism = 20
 						communism = 60
 					}
@@ -1741,7 +1741,7 @@ country_event = {
 						elections_allowed = no
 					}
 					set_popularities = {
-						democratic = 15
+						conservative = 15
 						neutrality = 55
 						fascism = 15
 						communism = 15
@@ -1806,7 +1806,7 @@ country_event = {
 
 			modifier = {
 				factor = 2
-				has_government = democratic
+				has_government = conservative
 			}
 		}
 	}

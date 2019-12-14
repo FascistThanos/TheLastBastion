@@ -581,7 +581,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_popularity = { ideology = conservative popularity = 0.05 }
 			POL = { country_event = DOD_romania.1 }
 		}
 	}
@@ -681,7 +681,7 @@ focus_tree = {
 			ENG = { is_subject = no }
 			if = {
 				limit = {
-					NOT = { ENG = { has_government = democratic } }
+					NOT = { ENG = { has_government = conservative } }
 					FRA = {
 						NOT = { is_in_faction_with = ENG }
 					}
@@ -707,7 +707,7 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						NOT = { ENG = { has_government = democratic } }
+						NOT = { ENG = { has_government = conservative } }
 						FRA = {
 							OR = {
 								NOT = { is_in_faction_with = ENG }
@@ -808,7 +808,7 @@ focus_tree = {
 		available = {
 			ENG = {
 				is_faction_leader = yes
-				has_government = democratic
+				has_government = conservative
 			}
 			is_in_faction = no
 			NOT = { has_war_with = ENG }
@@ -1811,7 +1811,7 @@ focus_tree = {
 			is_subject = no
 			communism < 0.5
 			fascism < 0.5
-			democratic < 0.5
+			conservative < 0.5
 		}
 
 		bypass = {
@@ -2453,7 +2453,7 @@ focus_tree = {
 		available = {
 			has_idea = ROM_king_carol_ii_hedonist
 			OR = {
-				democratic > 0.35
+				conservative > 0.35
 				communism > 0.35
 				fascism > 0.35
 			}
@@ -2476,10 +2476,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					democratic > 0.35
+					conservative > 0.35
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = conservative
 					elections_allowed = yes
 				}
 				limit = {
@@ -2544,7 +2544,7 @@ focus_tree = {
 			is_subject = no
 			ENG = {
 				is_faction_leader = yes
-				has_government = democratic
+				has_government = conservative
 				NOT = { has_war_with = ROM }
 			}
 		}
@@ -2585,7 +2585,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				popularity = 0.35
-				ideology = democratic
+				ideology = conservative
 			}
 			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ENG }
@@ -2664,7 +2664,7 @@ focus_tree = {
 					tooltip = ROM_carol_current_leader_trigger
 					has_country_leader = { id = 550 }
 				}
-				has_government = democratic
+				has_government = conservative
 			}
 		}
 
@@ -2685,10 +2685,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = conservative
 					elections_allowed = yes
 				}
 			}

@@ -146,7 +146,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
+	conservative = 10
 	fascism = 13
 	communism = 2
 	communism = 75
@@ -181,7 +181,7 @@ create_country_leader = {
 	desc = "POLITICS_KONSTANTINOS_TSALDARIS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

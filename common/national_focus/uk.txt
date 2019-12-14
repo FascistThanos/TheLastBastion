@@ -61,10 +61,10 @@ focus_tree = {
 	focus = {
 		id = tizard_mission_focus
 		available = {
-			has_government = democratic
+			has_government = conservative
 			any_other_country = {
 				has_war_with = ROOT
-				NOT = { has_government = democratic }
+				NOT = { has_government = conservative }
 				num_of_factories > 30
 			}
 			NOt = {
@@ -261,7 +261,7 @@ focus_tree = {
 					threat > 0.05
 					has_war = yes
 					has_idea = ENG_no_further_appeasement_idea
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 			if = {
@@ -271,7 +271,7 @@ focus_tree = {
 				OR = {
 					threat > 0.05
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 		}
@@ -562,7 +562,7 @@ focus_tree = {
 					threat > 0.05
 					has_war = yes
 					has_idea = ENG_no_further_appeasement_idea
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 			if = {
@@ -572,7 +572,7 @@ focus_tree = {
 				OR = {
 					threat > 0.05
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 		}
@@ -648,7 +648,7 @@ focus_tree = {
 					threat > 0.1
 					has_war = yes
 					has_idea = ENG_no_further_appeasement_idea
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 			if = {
@@ -658,7 +658,7 @@ focus_tree = {
 				OR = {
 					threat > 0.1
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 		}
@@ -719,7 +719,7 @@ focus_tree = {
 					}
 					threat > 0.2
 					has_idea = ENG_no_further_appeasement_idea
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 			if = {
@@ -735,7 +735,7 @@ focus_tree = {
 						has_completed_focus = GER_rhineland
 					}
 					threat > 0.2
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 				}
 			}
 		} #at war with major or ger in rhineland or high threat
@@ -1747,7 +1747,7 @@ focus_tree = {
 	#	}
 	#	completion_reward = {
 	#		every_other_country = {
-	#			limit = { NOT = { has_government = democratic } }
+	#			limit = { NOT = { has_government = conservative } }
 	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions }
 	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions_relations }
 	#		}
@@ -1937,24 +1937,24 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			# + relations with SPA/SPR - they become more democratic and like fascist/commies less
+			# + relations with SPA/SPR - they become more conservative and like fascist/commies less
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 				}
 				every_other_country = {
 					limit = {
 						original_tag = SPR
 					}
-					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_timed_idea = { idea = democratic_influence days = 1095 }
+					add_opinion_modifier = { target = ENG modifier = conservative_leanings_good }
+					add_timed_idea = { idea = conservative_influence days = 1095 }
 					country_event = { id = generic.1 }
 					every_other_country = {
 						limit = {
-							NOT = { has_government = democratic }
+							NOT = { has_government = conservative }
 							num_of_factories > 30
 						}
-						add_opinion_modifier = { target = PREV modifier = democratic_leanings_bad }
+						add_opinion_modifier = { target = PREV modifier = conservative_leanings_bad }
 					}
 				}
 			}
@@ -2085,7 +2085,7 @@ focus_tree = {
 		prerequisite = { focus = uk_malta_focus }
 		icon = GFX_goal_generic_improve_relations
 		available = {
-			has_government = democratic
+			has_government = conservative
 		}
 		bypass = {
 			NOT = {
@@ -2231,20 +2231,20 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			# + relations with TUR - they become more democratic and like fascist/commies less
+			# + relations with TUR - they become more conservative and like fascist/commies less
 			if = {
-				limit = { has_government = democratic }
+				limit = { has_government = conservative }
 				TUR = {
-					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_timed_idea = { idea = democratic_influence days = 1095 }
+					add_opinion_modifier = { target = ENG modifier = conservative_leanings_good }
+					add_timed_idea = { idea = conservative_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
 					limit = {
-						NOT = { has_government = democratic }
+						NOT = { has_government = conservative }
 						num_of_factories > 30
 					}
-					add_opinion_modifier = { target = TUR modifier = democratic_leanings_bad }
+					add_opinion_modifier = { target = TUR modifier = conservative_leanings_bad }
 				}
 			}
 			if = {
@@ -2302,18 +2302,18 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			if = {
-				limit = { has_government = democratic }
+				limit = { has_government = conservative }
 				GRE = {
-					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_timed_idea = { idea = democratic_influence days = 1095 }
+					add_opinion_modifier = { target = ENG modifier = conservative_leanings_good }
+					add_timed_idea = { idea = conservative_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
 					limit = {
-						NOT = { has_government = democratic }
+						NOT = { has_government = conservative }
 						num_of_factories > 30
 					}
-					add_opinion_modifier = { target = GRE modifier = democratic_leanings_bad }
+					add_opinion_modifier = { target = GRE modifier = conservative_leanings_bad }
 				}
 			}
 			if = {
@@ -2415,7 +2415,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = communism
 			}
 		}
@@ -2746,13 +2746,13 @@ focus_tree = {
 							add_ideas = ENG_guided_by_britain_raj_1
 							hidden_effect = {
 								set_politics = {
-									ruling_party = democratic
+									ruling_party = conservative
 									last_election = "1936.1.1"
 									election_frequency = 48
 									elections_allowed = yes
 								}
 								set_popularities = {
-									democratic = 65
+									conservative = 65
 									fascism = 10
 									communism =  2
 									neutrality = 23
@@ -2779,7 +2779,7 @@ focus_tree = {
 									elections_allowed = no
 								}
 								set_popularities = {
-									democratic = 17
+									conservative = 17
 									fascism = 2
 									communism = 1
 									neutrality = 80
@@ -4843,7 +4843,7 @@ focus_tree = {
 			JAP = {
 				ENG_focus_available_embargo_sanction = yes
 			}
-			has_government = democratic
+			has_government = conservative
 		}
 		bypass = {
 			has_war_with = JAP
@@ -4874,7 +4874,7 @@ focus_tree = {
 			JAP = {
 				ENG_focus_available_war = yes
 			}
-			has_government = democratic
+			has_government = conservative
 		}
 		bypass = {
 			has_war_with = JAP
@@ -5227,7 +5227,7 @@ focus_tree = {
 		prerequisite = { focus = hk_air_focus  }
 		available = {
 			CHI = { exists = yes }
-			has_government = democratic
+			has_government = conservative
 		}
 		cancel = {
 			CHI = { exists = no }
@@ -5247,17 +5247,17 @@ focus_tree = {
 		completion_reward = {
 			event_target:WTT_current_china_leader = {
 				add_offsite_building = { type = arms_factory level = 2 }
-				add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-				add_timed_idea = { idea = democratic_influence days = 1095 }
+				add_opinion_modifier = { target = ENG modifier = conservative_leanings_good }
+				add_timed_idea = { idea = conservative_influence days = 1095 }
 				country_event = { id = generic.1 }
 				set_country_flag = ENG_influenced_by_britain_flag
 			}
 			every_other_country = {
 				limit = {
-					NOT = { has_government = democratic }
+					NOT = { has_government = conservative }
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { target = CHI modifier = democratic_leanings_bad }
+				add_opinion_modifier = { target = CHI modifier = conservative_leanings_bad }
 			}
 		}
 	}
@@ -5552,7 +5552,7 @@ focus_tree = {
 						}
 					}
 					AND = {
-						NOT = { has_government = democratic }
+						NOT = { has_government = conservative }
 						RAJ = {
 							is_subject_of = ENG
 							has_war = no
@@ -5561,7 +5561,7 @@ focus_tree = {
 				}
 				else = {
 					has_global_flag = indian_national_army_setup
-					has_government = democratic
+					has_government = conservative
 					RAJ = {
 						is_puppet_of = ENG
 					}
@@ -6984,7 +6984,7 @@ focus_tree = {
 		}
 	}
 
-	### democratic BRANCH - STEADY AS SHE GOES ###
+	### conservative BRANCH - STEADY AS SHE GOES ###
 
 	focus = {
 		id = ENG_steady_as_she_goes
@@ -7577,7 +7577,7 @@ focus_tree = {
 						is_capital = yes
 						is_on_continent = europe
 					}
-					has_government = democratic
+					has_government = conservative
 				}
 				add_opinion_modifier = { target = ENG modifier = ENG_maintaining_the_balance_of_power_good }
 			}
@@ -8661,7 +8661,7 @@ focus_tree = {
 			hidden_effect = {
 				set_temp_variable = {
 					var = alliance_with_germany_var
-					value = party_popularity@democratic
+					value = party_popularity@conservative
 				}
 				multiply_temp_variable = {
 					var = alliance_with_germany_var
@@ -10843,7 +10843,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			country_exists = USA
-			USA = { has_government = democratic }
+			USA = { has_government = conservative }
 		}
 		icon = GFX_focus_generic_strike_at_democracy3
 		x = 1
@@ -10909,7 +10909,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			NOT = { is_in_faction_with = USA }
-			USA = { has_government = democratic }
+			USA = { has_government = conservative }
 		}
 		will_lead_to_war_with = USA
 		icon = GFX_focus_eng_crush_the_dream

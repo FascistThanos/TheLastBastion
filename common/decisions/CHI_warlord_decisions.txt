@@ -209,7 +209,7 @@ CHI_seek_japanese_support = {
 		}
 	}
 
-	CHI_internal_party_support_democratic = {
+	CHI_internal_party_support_conservative = {
 
 		icon = generic_political_discourse
 
@@ -219,7 +219,7 @@ CHI_seek_japanese_support = {
 
 		visible = {
 			has_completed_focus = CHI_seek_japanese_support
-			JAP = { has_government = democratic }
+			JAP = { has_government = conservative }
 		}
 
 		fire_only_once = no
@@ -229,7 +229,7 @@ CHI_seek_japanese_support = {
 		cost = 35
 
 		modifier = {
-			democratic_drift = 0.05
+			conservative_drift = 0.05
 			stability_weekly = -0.005
 			political_power_gain = -0.5
 		}
@@ -250,8 +250,8 @@ CHI_seek_japanese_support = {
 				fascism > 0.4
 			}
 			if = {
-				limit = { JAP = { has_government = democratic } }
-				democratic > 0.4
+				limit = { JAP = { has_government = conservative } }
+				conservative > 0.4
 			}
 			if = {
 				limit = { JAP = { has_government = communism } }

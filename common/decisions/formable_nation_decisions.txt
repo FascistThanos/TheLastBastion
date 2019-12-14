@@ -1088,7 +1088,7 @@ form_european_union_category = {
 				original_tag = ITA
 				original_tag = GER
 			}
-			has_government = democratic
+			has_government = conservative
 			NOT = { has_global_flag = form_european_union_flag }
 			is_major = yes
 		}

@@ -1308,13 +1308,13 @@ country_event = {
 					neutrality < 0.5
 					has_war = no
 					NOT = { has_idea = ROM_mihail_sturdza }
-					NOT = { has_idea = generic_democratic_reformer }
+					NOT = { has_idea = generic_conservative_reformer }
 				}
 			}
 		}
 		add_stability = -0.05
 		add_popularity = { ideology = fascism popularity = 0.05 } #because she is Jewish
-		add_popularity = { ideology = democratic popularity = 0.05 } #because Freedom of the Press
+		add_popularity = { ideology = conservative popularity = 0.05 } #because Freedom of the Press
 		hidden_effect = {
 			country_event = { id = DOD_romania.80 }
 		}

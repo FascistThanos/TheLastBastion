@@ -86,11 +86,11 @@ country_event = {
 				}
 			}
 		}
-		start_civil_war = { ideology = democratic size = 0.6 capital = 107 states = { 108 107 106 105 } }
+		start_civil_war = { ideology = conservative size = 0.6 capital = 107 states = { 108 107 106 105 } }
 		random_country = {
 			limit = {
 				original_tag = YUG
-				has_government = democratic
+				has_government = conservative
 			}
 			retire_country_leader = yes
 			set_capital = 107
@@ -99,7 +99,7 @@ country_event = {
 				desc = "POLITICS_PETER_II_DESC"
 				picture = "Portrait_Yugoslavia_Peter_II.dds"
 				expire = "1965.1.1"
-				ideology = democratic
+				ideology = conservative
 				traits = {
 					#
 				}
@@ -1066,7 +1066,7 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		has_government = democratic
+		has_government = conservative
 		has_war_with = GER
 		NOT = { has_war_with = YUG }
 		NOT = { is_in_faction_with = YUG }
@@ -1124,7 +1124,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = ENG
-		has_government = democratic
+		has_government = conservative
 		YUG = { is_in_faction = no }
 		YUG = { exists = yes }
 		has_war_with = GER

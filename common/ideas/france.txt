@@ -34,7 +34,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = conservative
 			}
 
 			removal_cost = -1
@@ -58,9 +58,9 @@ ideas = {
 				NOT = {
 					OR = {
 						AND = {
-							has_government = democratic
+							has_government = conservative
 							GER = {
-								has_government = democratic
+								has_government = conservative
 							}
 						}
 						AND = {
@@ -208,17 +208,17 @@ ideas = {
 			}
 		}
 		FRA_support_the_centre_focus = {
-				picture = generic_democratic_drift_bonus
+				picture = generic_conservative_drift_bonus
 				allowed = {
 					always = no # Added via focus
 				}
 
 				allowed_civil_war = {
-					has_government = democratic
+					has_government = conservative
 				}
 
 				modifier = {
-					democratic_drift = 0.2
+					conservative_drift = 0.2
 				}
 		}
 
@@ -229,7 +229,7 @@ ideas = {
 				}
 
 				allowed_civil_war = {
-					has_government = democratic
+					has_government = conservative
 				}
 
 				modifier = {
@@ -393,11 +393,11 @@ ideas = {
 				}
 			}
 
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = conservative
 				}
 			}
 

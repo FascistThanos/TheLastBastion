@@ -1297,7 +1297,7 @@ country_event = {
 
 		trigger = {
 			NOT = {
-				has_government = democratic
+				has_government = conservative
 			}
 		}
 
@@ -1494,7 +1494,7 @@ country_event = {
 	#	}
 	#}
 
-	# democratic
+	# conservative
 
 	option = { # Far-left successor: Vicente Lombardo
 		name = mexico.19.e
@@ -1506,7 +1506,7 @@ country_event = {
 					name = "Vicente Lombardo"
 				}
 			}
-			has_government = democratic
+			has_government = conservative
 		}
 
 		create_country_leader = {
@@ -1552,7 +1552,7 @@ country_event = {
 					name = "Francisco Múgica"
 				}
 			}
-			has_government = democratic
+			has_government = conservative
 		}
 
 		create_country_leader = {
@@ -1598,7 +1598,7 @@ country_event = {
 					name = "Manuel Ávila Camacho"
 				}
 			}
-			has_government = democratic
+			has_government = conservative
 		}
 
 		create_country_leader = {
@@ -1606,7 +1606,7 @@ country_event = {
 			desc = "POLITICS_MANUEL_AVILA_DESC"
 			picture = "GFX_portrait_mex_avila_civil"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 				the_gentleman_president
 			}
@@ -1648,7 +1648,7 @@ country_event = {
 	#				name = "Juan Andreu"
 	#			}
 	#		}
-	#		has_government = democratic
+	#		has_government = conservative
 	#	}
 
 	#	create_country_leader = {
@@ -1656,7 +1656,7 @@ country_event = {
 	#		desc = "POLITICS_JUAN_ANDREU_DESC"
 	#		picture = "GFX_portrait_mex_juan_andreu"
 	#		expire = "1965.1.1"
-	#		ideology = democratic
+	#		ideology = conservative
 	#		traits = {
 	#			the_silver_president
 	#		}
@@ -1690,7 +1690,7 @@ country_event = {
 		}
 	}
 
-	option = { # Social democratic successor: Francisco Múgica
+	option = { # Social conservative successor: Francisco Múgica
 		name = mexico.19.j
 
 		trigger = {
@@ -1934,7 +1934,7 @@ country_event = {
 
 }
 
-# If a centre/left-wing neutral or democratic leader is selected, Juan Andreu complains (historic)
+# If a centre/left-wing neutral or conservative leader is selected, Juan Andreu complains (historic)
 # Only triggered if America exists, is independent and not at war with Mexico (flavour text reasons)
 
 country_event = {
@@ -2426,7 +2426,7 @@ country_event = {
 					has_government = fascism
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = conservative
 					size = 0.35
 					keep_unit_leaders = { 700 701 702 703 704 705 706 707 708 709 710 711 712 }
 				}
@@ -2436,7 +2436,7 @@ country_event = {
 					has_government = neutrality
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = conservative
 					size = 0.35
 					keep_unit_leaders = { 700 701 702 703 704 705 706 707 708 709 710 711 712 }
 				}
@@ -2545,7 +2545,7 @@ country_event = {
 					}
 				}
 				set_party_name = { ideology = fascism name = MEX_fascist_party_legionnaires_of_christ_short long_name = MEX_fascist_party_legionnaires_of_christ_long }
-				set_party_name = { ideology = democratic name = MEX_democratic_party_national_action_party_short long_name = MEX_democratic_party_national_action_party_long }
+				set_party_name = { ideology = conservative name = MEX_conservative_party_national_action_party_short long_name = MEX_conservative_party_national_action_party_long }
 			}
 		}
 	}
@@ -2637,7 +2637,7 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 					NOT = {
 						has_completed_focus = MEX_focus_jefe_maximo
 					}
@@ -2649,7 +2649,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = conservative
 					has_completed_focus = MEX_focus_jefe_maximo
 				}
 				start_civil_war = {
@@ -2740,7 +2740,7 @@ country_event = {
 					desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
 					picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
 					expire = "1965.1.1"
-					ideology = democratic
+					ideology = conservative
 					traits = {
 						#
 					}
@@ -2920,7 +2920,7 @@ country_event = {
 
 		has_war = yes # Ostensibly over fabrics in short supply during wartime. Sumptuary laws help create an orderly and peaceful society under God
 
-		has_government = democratic # Bigger concerns if they are fascists or communists
+		has_government = conservative # Bigger concerns if they are fascists or communists
 
 		country_exists = MEX
 

@@ -277,13 +277,13 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_netherlands.10.a
-		set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
+		set_party_name = { ideology = conservative long_name = HOL_CHU_party_long name = HOL_CHU_party }
 		create_country_leader = {
 			name = "Dirk Jan de Geer"
 			desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
 			picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 				defeatist
 			}
@@ -473,7 +473,7 @@ country_event = {
 	option = {
 		name = mtg_netherlands.14.a
 		add_popularity = {
-		    ideology = democratic
+		    ideology = conservative
 		    popularity = -0.05
 		}
 		retire_country_leader = yes
@@ -482,7 +482,7 @@ country_event = {
 			desc = "POLITICS_PIETER_SJOERDS_GERBRANDY_DESC"
 			picture = "portrait_hol_pieter_sjoerds_gerbrandy.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 				little_churchill
 			}
@@ -629,7 +629,7 @@ country_event = {
 	}
 }
 
-# Event for democratic minors: HOL invites to European Union
+# Event for conservative minors: HOL invites to European Union
 country_event = {
 	id = mtg_netherlands.20
 	title = mtg_netherlands.20.t
@@ -987,7 +987,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				has_government = democratic
+				has_government = conservative
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
@@ -1068,7 +1068,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				has_government = democratic
+				has_government = conservative
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
@@ -1149,7 +1149,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				has_government = democratic
+				has_government = conservative
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
@@ -1331,7 +1331,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				has_government = democratic
+				has_government = conservative
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
@@ -1527,7 +1527,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				has_government = democratic
+				has_government = conservative
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
@@ -1755,7 +1755,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				has_government = democratic
+				has_government = conservative
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {

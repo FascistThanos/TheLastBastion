@@ -8,7 +8,7 @@ add_namespace = tfv_australia
 # Australian national focus.
 country_event = {
 	id = tfv_australia.1
-	title = tfv_australia.1.t	# democratic Australia proposes to govern Singapore/Borneo colonies.
+	title = tfv_australia.1.t	# conservative Australia proposes to govern Singapore/Borneo colonies.
 	desc = tfv_australia.1.d	#
 	picture = GFX_report_event_ast_navy
 
@@ -80,7 +80,7 @@ country_event = {
 # Australian national focus.
 country_event = {
 	id = tfv_australia.10
-	title = tfv_australia.10.t	# democratic Australia offers protection of the Dutch colonies in SEA.
+	title = tfv_australia.10.t	# conservative Australia offers protection of the Dutch colonies in SEA.
 	desc = tfv_australia.10.d	#
 	picture = GFX_report_event_ast_navy
 
@@ -889,11 +889,11 @@ country_event = {
 		name = tfv_australia.96.b
 		if = {
 			limit = {
-				has_government = democratic
+				has_government = conservative
 			}
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = democratic
+				ideology = conservative
 				size = 0.5
 			}
 		}

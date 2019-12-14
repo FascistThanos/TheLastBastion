@@ -63,7 +63,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
+	conservative = 25
 	fascism = 20
 	communism = 5
 	neutrality = 50
@@ -72,7 +72,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Bashir es Sadawi"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_democratic1.dds"
+	picture = "Portrait_Arabia_Generic_conservative1.dds"
 	ideology = liberalism
 	traits = {
 		#

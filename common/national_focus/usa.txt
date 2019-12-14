@@ -73,7 +73,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = democratic
+			has_government = conservative
 		}
 
 		bypass = {
@@ -219,7 +219,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_democratic_socialism
+		id = USA_conservative_socialism
 		icon = GFX_focus_generic_soviet_politics
 		x = 1
 		y = 1
@@ -265,7 +265,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		x = 0
 		y = 2
-		prerequisite = { focus = USA_democratic_socialism }
+		prerequisite = { focus = USA_conservative_socialism }
 		prerequisite = { focus = USA_full_desegregation }
 		relative_position_id = USA_desegregate_the_armed_forces
 		cost = 10
@@ -529,7 +529,7 @@ focus_tree = {
 		icon = GFX_focus_usa_guarantee_the_american_dream
 		x = 0
 		y = 2
-		#prerequisite = { focus = USA_democratic_socialism }
+		#prerequisite = { focus = USA_conservative_socialism }
 		prerequisite = { focus = USA_old_age_pension_act }
 		prerequisite = { focus = USA_accumulated_wealth_tax_act }
 		relative_position_id = USA_union_representation_act
@@ -739,7 +739,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_government = democratic
+				has_government = conservative
 				has_government = communism
 			}
 		}
@@ -961,7 +961,7 @@ focus_tree = {
 				limit = {
 					JAP = {
 						not = { has_government = communism }
-						not = { has_government = democratic }
+						not = { has_government = conservative }
 						not = { is_in_faction_with = ROOT }
 					}
 				}
@@ -1190,7 +1190,7 @@ focus_tree = {
 
 		available = {
 			congress_medium_support_trigger = yes
-			has_government = democratic
+			has_government = conservative
 		}
 
 		bypass = {
@@ -1230,7 +1230,7 @@ focus_tree = {
 
 		available = {
 			congress_medium_support_trigger = yes
-			has_government = democratic
+			has_government = conservative
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
 
@@ -1270,7 +1270,7 @@ focus_tree = {
 
 		available = {
 			congress_medium_support_trigger = yes
-			has_government = democratic
+			has_government = conservative
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
 
@@ -1439,7 +1439,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			congress_high_support_trigger = yes
-			has_government = democratic
+			has_government = conservative
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
@@ -1495,7 +1495,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_limited_intervention }
 		available = {
-			has_government = democratic
+			has_government = conservative
 		}
 
 		bypass = {
@@ -1536,7 +1536,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = democratic
+			has_government = conservative
 		}
 
 		bypass = {
@@ -1696,7 +1696,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		available = {
-			has_government = democratic
+			has_government = conservative
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -1748,7 +1748,7 @@ focus_tree = {
 
 		available = {
 			congress_low_support_trigger = yes
-			democratic > 0.95
+			conservative > 0.95
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
@@ -1800,7 +1800,7 @@ focus_tree = {
 			else = {
 				congress_high_support_trigger = yes
 			}
-			democratic > 0.95
+			conservative > 0.95
 			custom_trigger_tooltip = {
 				tooltip = USA_lend_lease_act_neutrality_tt
 			}
@@ -1896,7 +1896,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			democratic > 0.95
+			conservative > 0.95
 		}
 		bypass = {
 			AND = {
@@ -2021,7 +2021,7 @@ focus_tree = {
 				has_war = yes
 				has_war_support > 0.3
 			}
-			democratic > 0.95
+			conservative > 0.95
 		}
 		continue_if_invalid = yes
 		x = 0
@@ -2073,7 +2073,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
-			democratic > 0.95
+			conservative > 0.95
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
@@ -2450,7 +2450,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = USA_continue_the_new_deal }
 		available = {
-			has_government = democratic
+			has_government = conservative
 			NOT = {
 				has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
 			}
@@ -2785,7 +2785,7 @@ focus_tree = {
 			USA_return_majority = yes
 			if = {
 				limit = {
-					democratic > 0.75
+					conservative > 0.75
 				}
 				add_stability = -0.1
 			}

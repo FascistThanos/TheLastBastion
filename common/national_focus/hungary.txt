@@ -161,7 +161,7 @@ focus_tree = {
 		id = HUN_invite_the_habsburg_prince
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = HUN_elect_a_king }
-		mutually_exclusive = { focus =  HUN_elect_a_democratic_king }
+		mutually_exclusive = { focus =  HUN_elect_a_conservative_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
 		x = -3
 		y = 1
@@ -715,11 +715,11 @@ focus_tree = {
 	}
 
 	############################
-	##### democratic KING ######
+	##### conservative KING ######
 	############################
 
 	focus = {
-		id = HUN_elect_a_democratic_king
+		id = HUN_elect_a_conservative_king
 		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = HUN_elect_a_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
@@ -748,7 +748,7 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				add_idea = HUN_hungarian_monarchy_democratic
+				add_idea = HUN_hungarian_monarchy_conservative
 				remove_idea = HUN_hungarian_monarchy_2
 			}
 			add_ideas = HUN_dynastic_ties
@@ -790,10 +790,10 @@ focus_tree = {
 	focus = {
 		id = HUN_responsible_government
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = HUN_elect_a_democratic_king }
+		prerequisite = { focus = HUN_elect_a_conservative_king }
 		x = 0
 		y = 1
-		relative_position_id = HUN_elect_a_democratic_king
+		relative_position_id = HUN_elect_a_conservative_king
 
 		cost = 10
 
@@ -802,7 +802,7 @@ focus_tree = {
 		}
 
 		available = {
-			democratic > 0.4
+			conservative > 0.4
 		}
 
 		bypass = {
@@ -814,12 +814,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = democratic }
+			set_politics = { ruling_party = conservative }
 			hold_election = HUN
 
 			swap_ideas = {
 				add_idea = HUN_his_majestys_government
-				remove_idea = HUN_hungarian_monarchy_democratic
+				remove_idea = HUN_hungarian_monarchy_conservative
 			}
 		}
 	}
@@ -830,7 +830,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_responsible_government }
 		x = 0
 		y = 2
-		relative_position_id = HUN_elect_a_democratic_king
+		relative_position_id = HUN_elect_a_conservative_king
 
 		cost = 10
 
@@ -900,7 +900,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HUN_the_balkan_pact }
 		x = -1
 		y = 3
-		relative_position_id = HUN_elect_a_democratic_king
+		relative_position_id = HUN_elect_a_conservative_king
 
 		cost = 10
 
@@ -929,7 +929,7 @@ focus_tree = {
 			any_other_country = {
 				is_major = yes
 				is_faction_leader = yes
-				has_government = democratic
+				has_government = conservative
 			}
 			NOT = {
 				any_other_country = {
@@ -951,7 +951,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						has_government = democratic
+						has_government = conservative
 						is_faction_leader = yes
 						not = { has_war_with = ROOT }
 					}
@@ -959,7 +959,7 @@ focus_tree = {
 				ENG = { country_event = generic.2 }
 			}
 			else = {
-				get_best_alliance_match_democratic_effect = yes
+				get_best_alliance_match_conservative_effect = yes
 				var:best_leader = {
 					country_event = generic.2
 				}
@@ -974,7 +974,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HUN_join_allies }
 		x = 1
 		y = 3
-		relative_position_id = HUN_elect_a_democratic_king
+		relative_position_id = HUN_elect_a_conservative_king
 
 		cost = 10
 
@@ -1006,7 +1006,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_the_balkan_pact }
 		x = 1
 		y = 4
-		relative_position_id = HUN_elect_a_democratic_king
+		relative_position_id = HUN_elect_a_conservative_king
 
 		cost = 10
 
@@ -1041,7 +1041,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_join_allies }
 		x = -1
 		y = 4
-		relative_position_id = HUN_elect_a_democratic_king
+		relative_position_id = HUN_elect_a_conservative_king
 
 		cost = 10
 
@@ -1053,7 +1053,7 @@ focus_tree = {
 			is_in_faction_with = ENG
 			ENG = {
 				is_faction_leader = yes
-				has_government = democratic
+				has_government = conservative
 			}
 		}
 
@@ -1082,7 +1082,7 @@ focus_tree = {
 		id = HUN_elect_a_fascist_king
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = HUN_elect_a_king }
-		mutually_exclusive = { focus =  HUN_elect_a_democratic_king }
+		mutually_exclusive = { focus =  HUN_elect_a_conservative_king }
 		mutually_exclusive = { focus =  HUN_invite_the_habsburg_prince }
 		x = 3
 		y = 1

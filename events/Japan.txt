@@ -502,7 +502,7 @@ country_event = {
 					popularity = 0.1
 				}
 				add_popularity = {
-					ideology = democratic
+					ideology = conservative
 					popularity = -0.05
 				}
 				else = {
