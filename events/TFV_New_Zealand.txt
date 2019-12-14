@@ -141,7 +141,7 @@ country_event = {
 
 	trigger = {
 		original_tag = NZL
-		has_government = conservative
+		has_government = democratic
 		date > 1940.3.27
 		has_country_leader = { ruling_only = yes name = "Michael Joseph Savage" }
 	}

@@ -72,11 +72,11 @@ country_event = {
 				OR = {
 					has_game_rule = {
 						rule = ENG_ai_behavior
-						option = conservative_HISTORICAL
+						option = democratic_HISTORICAL
 					}
 					has_game_rule = {
 						rule = ENG_ai_behavior
-						option = conservative_ALTERNATE
+						option = democratic_ALTERNATE
 					}
 					has_game_rule = {
 						rule = ENG_ai_behavior
@@ -143,11 +143,11 @@ country_event = {
 				OR = {
 					has_game_rule = {
 						rule = ENG_ai_behavior
-						option = conservative_HISTORICAL
+						option = democratic_HISTORICAL
 					}
 					has_game_rule = {
 						rule = ENG_ai_behavior
-						option = conservative_ALTERNATE
+						option = democratic_ALTERNATE
 					}
 					has_game_rule = {
 						rule = ENG_ai_behavior
@@ -232,7 +232,7 @@ country_event = {
 			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
 			picture = "portrait_eng_fallen_government.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 				cabinet_crisis
 			}
@@ -1392,7 +1392,7 @@ country_event = {
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 				british_bulldog
 			}
@@ -1769,7 +1769,7 @@ country_event = {
 			}
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = conservative
+				ideology = democratic
 				size = 0.5
 				states = all
 				states_filter = {
@@ -1789,15 +1789,15 @@ country_event = {
 				popularity = 0.05
 			}
 			add_popularity = {
-				ideology = conservative
+				ideology = democratic
 				popularity = 0.15
 			}
 			random_other_country = {
 				limit = {
 					original_tag = ENG
-					has_government = conservative
+					has_government = democratic
 				}
-				save_event_target_as = conservative_uk_civil_war
+				save_event_target_as = democratic_uk_civil_war
 				every_unit_leader = {
 					limit = {
 						OR = {
@@ -1824,12 +1824,12 @@ country_event = {
 									has_id = 992
 								}
 							}
-							set_nationality = event_target:conservative_uk_civil_war
+							set_nationality = event_target:democratic_uk_civil_war
 						}
 					}
 				}
 			}
-			event_target:conservative_uk_civil_war = {
+			event_target:democratic_uk_civil_war = {
 				if = {
 					limit = {
 						has_full_control_of_state = 126
@@ -1883,11 +1883,11 @@ country_event = {
 						limit = {
 							is_on_continent = europe
 						}
-						event_target:conservative_uk_civil_war = { set_capital = PREV }
+						event_target:democratic_uk_civil_war = { set_capital = PREV }
 					}
 				}
 			}
-			event_target:conservative_uk_civil_war = {
+			event_target:democratic_uk_civil_war = {
 				division_template = {
 					name = "Loyalist Brigade"
 					priority = 1
@@ -1919,7 +1919,7 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_britain.33.a
-		custom_effect_tooltip = ENG_conservative_civil_war_tt
+		custom_effect_tooltip = ENG_democratic_civil_war_tt
 		hidden_effect = {
 			RAJ = { retire_country_leader = yes }
 		}

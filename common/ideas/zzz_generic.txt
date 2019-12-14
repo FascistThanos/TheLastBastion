@@ -195,7 +195,7 @@ ideas = {
 				communism_acceptance = 85
 			}
 		}
-		conservative_influence = {
+		democratic_influence = {
 
 
 			allowed = {
@@ -203,16 +203,16 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
 			removal_cost = -1
 
-			picture = generic_conservative_drift_bonus
+			picture = generic_democratic_drift_bonus
 
 			modifier = {
-				conservative_drift = 0.1
-				conservative_acceptance = 85
+				democratic_drift = 0.1
+				democratic_acceptance = 85
 			}
 		}
 		neutrality_influence = {
@@ -335,15 +335,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
 			removal_cost = -1
 
-			picture = generic_conservative_drift_bonus
+			picture = generic_democratic_drift_bonus
 
 			modifier = {
-				conservative_drift = 0.1
+				democratic_drift = 0.1
 				stability_factor = 0.1
 			}
 		}
@@ -402,7 +402,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 
 			modifier = {
-				conservative_drift = -0.02
+				democratic_drift = -0.02
 			}
 		}
 
@@ -414,12 +414,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
 			removal_cost = -1
 
-			picture = generic_conservative_drift_bonus
+			picture = generic_democratic_drift_bonus
 
 			modifier = {
 				trade_opinion_factor = 0.2
@@ -1137,12 +1137,12 @@ ideas = {
 			}
 		}
 
-		generic_conservative_reformer = {
+		generic_democratic_reformer = {
 
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL } }
 				NOT = {
-					has_available_idea_with_traits = { idea = conservative_reformer limit = 1 }
+					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
 
 			}
@@ -1165,7 +1165,7 @@ ideas = {
 			}
 
 
-			traits = { conservative_reformer }
+			traits = { democratic_reformer }
 
 			on_add = {
 				#country_event = political.13
@@ -1173,7 +1173,7 @@ ideas = {
 
 			do_effect = {
 				NOT = {
-					has_government = conservative
+					has_government = democratic
 				}
 			}
 

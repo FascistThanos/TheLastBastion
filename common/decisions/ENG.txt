@@ -8169,7 +8169,7 @@ political_actions = {
 	#
 	#	}
 	#	available = {
-	#		has_government = conservative
+	#		has_government = democratic
 	#	}
 	#	cost = 50
 	#	fire_only_once = yes
@@ -8206,7 +8206,7 @@ political_actions = {
 		}
 
 		available = {
-			has_government = conservative
+			has_government = democratic
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			has_war_with = GER
 		}
@@ -8217,7 +8217,7 @@ political_actions = {
 
 		visible = {
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
@@ -8252,7 +8252,7 @@ political_actions = {
 		}
 
 		available = {
-			has_government = conservative
+			has_government = democratic
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			has_war_with = GER
 			is_in_faction_with = FRA
@@ -8267,7 +8267,7 @@ political_actions = {
 
 		visible = {
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			has_country_flag = blood_toil_tears_sweat_speech
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
@@ -8302,7 +8302,7 @@ political_actions = {
 		}
 
 		available = {
-			has_government = conservative
+			has_government = democratic
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			has_war_with = GER
 			is_in_faction_with = FRA
@@ -8315,7 +8315,7 @@ political_actions = {
 
 		visible = {
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			has_country_flag = fight_on_the_beaches_speech
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
@@ -8349,7 +8349,7 @@ political_actions = {
 
 		available = {
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			IRE = { exists = yes }
 			NOT = { is_in_faction_with = IRE }
@@ -8361,14 +8361,14 @@ political_actions = {
 
 		visible = {
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			IRE = { exists = yes }
 		}
 
 		complete_effect = {
 			IRE = { country_event = { id = wtt_britain.24 } }
-			add_popularity = { ideology = conservative popularity = 0.03 }
+			add_popularity = { ideology = democratic popularity = 0.03 }
 			add_stability = -0.05
 		}
 
@@ -8387,7 +8387,7 @@ political_actions = {
 
 		available = {
 			has_war = yes
-			has_government = conservative
+			has_government = democratic
 			POR = {
 				OR = {
 					has_government = ROOT
@@ -8430,7 +8430,7 @@ political_actions = {
 
 		available = {
 			has_war = yes
-			has_government = conservative
+			has_government = democratic
 			POR = {
 				has_full_control_of_state = 698
 				OR = {
@@ -8816,7 +8816,7 @@ operations = {
 
 		available = {
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			ICE = { exists = yes }
 			NOR = { has_capitulated = yes }
@@ -8840,7 +8840,7 @@ operations = {
 
 		complete_effect = {
 			declare_war_on = { target = ICE type = puppet_wargoal_focus }
-			add_popularity = { ideology = conservative popularity = -0.05 }
+			add_popularity = { ideology = democratic popularity = -0.05 }
 		}
 	}
 
@@ -8854,7 +8854,7 @@ operations = {
 
 		available = {
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			IRE = { exists = yes }
 			NOT = { is_in_faction_with = IRE }
@@ -8897,7 +8897,7 @@ operations = {
 			add_state_claim = 134
 			add_state_claim = 135
 			declare_war_on = { target = IRE type = annex_everything }
-			add_popularity = { ideology = conservative popularity = -0.03 }
+			add_popularity = { ideology = democratic popularity = -0.03 }
 		}
 	}
 
@@ -8911,7 +8911,7 @@ operations = {
 
 		available = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			any_country = {
 				original_tag = FRA
@@ -8930,7 +8930,7 @@ operations = {
 		visible = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			tag = ENG
-			has_government = conservative
+			has_government = democratic
 			has_war_with = GER
 			OR = {
 				AND = {

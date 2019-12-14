@@ -44,13 +44,13 @@ set_convoys = 5
 	}
 }
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 75
+	democratic = 75
 	fascism = 1
 	communism = 1
 	neutrality = 23

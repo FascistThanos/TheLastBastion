@@ -2,13 +2,13 @@
 USA_save_the_aussies = {
 	enable = {
 		tag = USA
-		has_government = conservative
+		has_government = democratic
 		is_in_faction = no
 		has_war = no
 
 		JAP = {	has_war_with = AST }
 		AST = {
-			has_government = conservative			
+			has_government = democratic			
 			surrender_progress > 0.15
 		}
 		has_opinion = {
@@ -47,7 +47,7 @@ USA_save_the_aussies = {
 USA_save_india = { # in the case where japan has beaten china and is moving on india we should step up
 	enable = {
 		tag = USA
-		has_government = conservative
+		has_government = democratic
 		is_in_faction = no
 		has_war = no
 
@@ -313,13 +313,13 @@ USA_garrison_production = {
 }
 
 # This will prompt USA to try and support countries who are fighting against extremist elements.
-# Should improve alt-history situations like conservative Germany fighting the USSR etc.
+# Should improve alt-history situations like democratic Germany fighting the USSR etc.
 USA_protect_against_extremism = { # Reverse strategy
 	reversed = yes
 
 	enable_reverse = {
 		USA = {
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 
@@ -355,7 +355,7 @@ USA_protect_against_extremism = { # Reverse strategy
 			}
 			USA = {
 				OR = {
-					NOT = {	has_government = conservative }
+					NOT = {	has_government = democratic }
 					has_war_with = ROOT
 				}
 			}

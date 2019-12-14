@@ -82,7 +82,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	conservative = 5
+	democratic = 5
 	fascism = 2
 	communism = 93
 }
@@ -114,7 +114,7 @@ create_country_leader = {
 	desc = "POLITICS_HANNS_SIDEL_DESC"
 	picture = "Portrait_BAV_Hanns_Seidel.dds"
 	expire = "1961.8.5"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 
 	}

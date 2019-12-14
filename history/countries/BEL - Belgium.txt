@@ -77,27 +77,27 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservative = 83
+	democratic = 83
 	fascism = 11
 	communism = 6
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservative
+		ruling_party = democratic
 		last_election = "1939.4.2"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
-		conservative = 87
+		democratic = 87
 		fascism = 8
 		communism = 5
 	}
@@ -111,7 +111,7 @@ create_country_leader = {
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}

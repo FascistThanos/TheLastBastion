@@ -809,7 +809,7 @@ country_event = {
 		ai_chance = {
 			factor = 60
 			modifier = {
-				has_government = conservative
+				has_government = democratic
 				factor = 2
 			}
 			modifier = {

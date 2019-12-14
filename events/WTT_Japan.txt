@@ -870,7 +870,7 @@ country_event = {
 #  # #   #   # #  # #  # #  # #  #  #   #  #  #     #  # #  # #  # #
 ###  ### #   #  ##   ##  #  # #  #  #  ###  ##       ##   ##   ##  #
 
-#conservative Coup event
+#democratic Coup event
 country_event = {
 	id = wtt_japan.114
 	title = wtt_japan.114.t
@@ -902,9 +902,9 @@ country_event = {
 			}
 			MAN = { remove_ideas = MAN_kwantung_veto }
 		}
-		add_popularity = { ideology = conservative popularity = 0.1 }
+		add_popularity = { ideology = democratic popularity = 0.1 }
 		start_civil_war = {
-			ruling_party = conservative
+			ruling_party = democratic
 			ideology = fascism
 			size = 0.5
 		}
