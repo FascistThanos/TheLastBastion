@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_HOEGNER_DESC"
 	picture = "Portrait_BAV_Wilhelm_hoegner.dds"
 	expire = "1980.4.5"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 
 	}

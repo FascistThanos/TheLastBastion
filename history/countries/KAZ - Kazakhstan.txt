@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_KAZ_Nikolay_Skvortsov.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 
 	}

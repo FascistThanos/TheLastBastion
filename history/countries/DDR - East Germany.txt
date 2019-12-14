@@ -176,7 +176,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
 		exiled # He left in 1933 so he should still be exiled

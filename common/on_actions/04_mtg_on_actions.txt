@@ -489,7 +489,7 @@ on_actions = {
 						desc = "POLITICS_DIONISIO_ENCINA_DESC"
 						picture = "GFX_portrait_mex_dionisio_encina"
 						expire = "1965.1.1"
-						ideology = stalinism
+						ideology = leninism
 						traits = {
 							staunch_stalinist
 						}

@@ -92,7 +92,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANZ_RITTER_DESC"
 	picture = "Portrait_BAW_Anton_Geiss.dds"
 	expire = "1947.1.31"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 
 	}

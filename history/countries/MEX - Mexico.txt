@@ -236,7 +236,7 @@ create_country_leader = { # Stalinist, took over after assassination of Trotsky.
 	desc = "POLITICS_DIONISIO_ENCINA_DESC"
 	picture = "GFX_Portrait_MEX_Dionisio_Encina"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 		staunch_stalinist
 	}

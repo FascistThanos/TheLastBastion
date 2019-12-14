@@ -17,7 +17,7 @@ SWE = {
 	color_ui = rgb { 8 89 189 }
 }
 FRA = {
-	color = rgb { 4 43 143 }
+	color = rgb { 60 108 135 }
 	color_ui = rgb { 4 43 143 }
 }
 LUX = {
@@ -31,11 +31,12 @@ BEL = { color 	 = rgb { 217 193 39 }
 HOL = {	color = rgb { 186 96 0 }
 		color_ui = rgb { 186 96 0 }
 }
-CZE = {	color = rgb { 125 161 129 }
+CZE = {
+		color = rgb { 25 166 119 }
 		color_ui = rgb { 125 161 129 }
 }
 POL = {
-	color = rgb { 237 128 143 }
+	color = rgb { 175 82 182 }
 	color_ui = rgb { 237 128 143 }
 }
 AUS = {
@@ -47,23 +48,23 @@ LIT = {
 	color_ui = rgb { 75 129 180 }
 }
 EST = {
-	color = rgb { 140 140 140 }
+	color = rgb { 179 214 220 }
 	color_ui = rgb { 140 140 140 }
 }
 LAT = {
-	color = rgb { 179 61 18 }
+	color = rgb { 166 116 94 }
 	color_ui = rgb { 179 61 18 }
 }
 SPR = {
-	color = rgb { 209 174 69 }
+	color = rgb { 209 233 41 }
 	color_ui = rgb { 209 174 69 }
 }
 ITA = {
-	color = rgb { 150 189 60 }
+	color = rgb { 94 185 61 }
 	color_ui = rgb { 150 189 60 }
 }
 ROM = {
-	color = rgb { 168 93 56 }
+	color = rgb { 183 161 17 }
 	color_ui = rgb { 168 93 56 }
 }
 YUG = {
@@ -75,7 +76,7 @@ SWI = {
 	color_ui = rgb { 179 0 0 }
 }
 TUR = {
-	color = rgb { 18 84 0 }
+	color = rgb { 47 95 46 }
 	color_ui = rgb { 18 84 0 }
 }
 GRE = {
@@ -83,7 +84,7 @@ GRE = {
 	color_ui = rgb { 91 148 179 }
 }
 ALB = {
-	color = rgb { 203 181 37 }
+	color = rgb { 202 114 71 }
 	color_ui = rgb { 203 181 37 }
 }
 NOR = {
@@ -91,19 +92,19 @@ NOR = {
 	color_ui = rgb { 114 158 204 }
 }
 DEN = {
-	color = rgb { 148 118 74 }
+	color = rgb { 110 65 13 }
 	color_ui = rgb { 148 118 74 }
 }
 BUL = {
-	color = rgb { 60 186 106 }
+	color = rgb { 116 192 113 }
 	color_ui = rgb { 60 186 106 }
 }
 POR = {
-	color = rgb { 21 143 70 }
+	color = rgb { 36 162 129 }
 	color_ui = rgb { 21 143 70 }
 }
 FIN = {
-	color = rgb { 154 118 163 }
+	color = rgb { 210 170 156 }
 	color_ui = rgb { 154 118 163 }
 }
 IRE = {
@@ -111,7 +112,7 @@ IRE = {
 	color_ui = rgb { 9 171 29 }
 }
 HUN = {
-	color = rgb { 57 130 40 }
+	color = rgb { 138 121 66 }
 	color_ui = rgb { 57 130 40 }
 }
 AFG = {
@@ -125,6 +126,14 @@ ARG = {
 AST = {
 	color = rgb { 18 166 87 }
 	color_ui = rgb { 18 166 87 }
+}
+BAW = {
+	color = rgb { 68 203 118 }
+	color_ui = rgb { 171 171 19 }
+}
+BAV = {
+	color = rgb { 49 73 143 }
+	color_ui = rgb { 49 73 143 }
 }
 BHU = {
 	color = rgb { 172 122 88 }

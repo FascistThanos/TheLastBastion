@@ -209,7 +209,7 @@ create_country_leader = {
 	desc = "POLITICS_RICHARD_DIXON_DESC"
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = marxism
 	traits = {
 		#
 	}
