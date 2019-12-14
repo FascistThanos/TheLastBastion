@@ -59,13 +59,13 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservative = 100
+	democratic = 100
 }
 
 create_country_leader = {
@@ -73,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_STENIO_VINCENT_DESC"
 	picture = "GFX_portrait_haiti_stenio_vincent"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}

@@ -153,7 +153,7 @@ war_measures = {
 		visible = {
 			has_completed_focus = USA_recruit_the_free_corps
 			not = { has_country_flag = USA_free_corps_raised }
-			not = { has_government = conservative }
+			not = { has_government = democratic }
 		}
 		cost = 0
 		fire_only_once = yes
@@ -873,7 +873,7 @@ foreign_support = {
 		}
 
 		visible = {
-			has_government = conservative
+			has_government = democratic
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_war_with = JAP
@@ -958,7 +958,7 @@ foreign_support = {
 		}
 
 		visible = {
-			has_government = conservative
+			has_government = democratic
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
@@ -1929,7 +1929,7 @@ USA_intervention_mandate = {
 					is_on_continent = europe
 				}
 				has_added_tension_amount > 10
-				not = { has_government = conservative }
+				not = { has_government = democratic }
 			}
 		}
 
@@ -1991,7 +1991,7 @@ USA_intervention_mandate = {
 					is_on_continent = asia
 				}
 				has_added_tension_amount > 10
-				not = { has_government = conservative }
+				not = { has_government = democratic }
 			}
 		}
 		cost = 75

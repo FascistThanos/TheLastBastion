@@ -6277,7 +6277,7 @@ political_actions = {
 			if = {
 				limit = {
 					NOT = {
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 				add_stability = -0.05
@@ -6290,14 +6290,14 @@ political_actions = {
 		available = {
 			NOT = { has_idea = CHI_inter_party_coordination_council }
 			NOT = {
-				has_government = conservative
+				has_government = democratic
 			}
 			has_completed_focus = CHI_inter_party_coordination_council
 		}
 		visible = {
 			NOT = { has_idea = CHI_inter_party_coordination_council }
 			NOT = {
-				has_government = conservative
+				has_government = democratic
 			}
 			has_completed_focus = CHI_inter_party_coordination_council
 		}

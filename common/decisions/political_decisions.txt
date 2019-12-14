@@ -272,11 +272,11 @@ fascism_on_the_rise = {
 		complete_effect = {
 			if = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@conservative
+					value = party_popularity@democratic
 				}
 			}
 			if = {
@@ -368,7 +368,7 @@ fascism_on_the_rise = {
 
 		available = {
 			fascism < 0.9
-			conservative < 0.9
+			democratic < 0.9
 			communism < 0.9
 			neutrality < 0.9
 		}
@@ -403,7 +403,7 @@ fascism_on_the_rise = {
 
 		available = {
 			fascism < 0.8
-			conservative < 0.8
+			democratic < 0.8
 			communism < 0.8
 			neutrality < 0.8
 			has_idea_with_trait = fascist_demagogue
@@ -427,10 +427,10 @@ fascism_on_the_rise = {
 			add_stability = -0.010
 			if = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 				}
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = -0.1
 				}
 			}
@@ -498,20 +498,20 @@ fascism_on_the_rise = {
 	}
 }
 
-conservative_on_the_rise = {
-	prepare_for_conservative_civil_war = {
+democratic_on_the_rise = {
+	prepare_for_democratic_civil_war = {
 
 		icon = generic_prepare_civil_war
 
 		available = {
-			conservative > 0.1
+			democratic > 0.1
 		}
 
 		visible = {
-			NOT = { has_country_flag = preparation_for_conservative_civil_war }
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			NOT = { has_country_flag = preparation_for_democratic_civil_war }
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		fire_only_once = yes
@@ -519,7 +519,7 @@ conservative_on_the_rise = {
 		cost = 50
 
 		complete_effect = {
-			set_country_flag = preparation_for_conservative_civil_war
+			set_country_flag = preparation_for_democratic_civil_war
 		}
 
 		ai_will_do = {
@@ -527,18 +527,18 @@ conservative_on_the_rise = {
 		}
 	}
 
-	expand_civil_conservative_support = {
+	expand_civil_democratic_support = {
 
 		icon = generic_civil_support
 
 		visible = {
 			OR = {
-				has_country_flag = preparation_for_conservative_civil_war
-				has_country_flag = open_up_political_discourse_conservative
+				has_country_flag = preparation_for_democratic_civil_war
+				has_country_flag = open_up_political_discourse_democratic
 			}
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		cancel_trigger = {
@@ -554,7 +554,7 @@ conservative_on_the_rise = {
 		days_remove = 30
 
 		modifier = {
-			conservative_drift = 0.02
+			democratic_drift = 0.02
 			stability_weekly = -0.03
  			political_power_gain = -0.2
 		}
@@ -564,15 +564,15 @@ conservative_on_the_rise = {
 		}
 	}
 
-	army_support_for_conservative_civil_war = {
+	army_support_for_democratic_civil_war = {
 
 		icon = generic_army_support
 
 		visible = {
-			has_country_flag = preparation_for_conservative_civil_war
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			has_country_flag = preparation_for_democratic_civil_war
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		cancel_trigger = {
@@ -604,7 +604,7 @@ conservative_on_the_rise = {
 				}
 				add_to_variable = { var = army_support_var value = 0.1 }
 			}
-			set_country_flag = military_support_for_conservative_civil_war
+			set_country_flag = military_support_for_democratic_civil_war
 		}
 
 		complete_effect = {
@@ -615,24 +615,24 @@ conservative_on_the_rise = {
 		}
 	}
 
-	ensure_general_loyalty_for_conservative_civil_war = {
+	ensure_general_loyalty_for_democratic_civil_war = {
 
 		icon = generic_army_support
 
 		available = {
-			has_country_flag = military_support_for_conservative_civil_war
+			has_country_flag = military_support_for_democratic_civil_war
 			command_power > 2
 		}
 
 		visible = {
-			has_country_flag = preparation_for_conservative_civil_war
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
+			has_country_flag = preparation_for_democratic_civil_war
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
 			any_army_leader = {
 				is_field_marshal = no
 				NOT = { has_trait = hidden_sympathies }
 			}
-			check_has_focus_tree_to_switch_to_conservative = yes
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		fire_only_once = yes
@@ -648,23 +648,23 @@ conservative_on_the_rise = {
 		}
 	}
 
-	ensure_marshal_loyalty_for_conservative_civil_war = {
+	ensure_marshal_loyalty_for_democratic_civil_war = {
 
 		icon = generic_army_support
 
 		available = {
-			has_country_flag = military_support_for_conservative_civil_war
+			has_country_flag = military_support_for_democratic_civil_war
 			command_power > 2
 		}
 
 		visible = {
-			has_country_flag = preparation_for_conservative_civil_war
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
+			has_country_flag = preparation_for_democratic_civil_war
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
 			any_army_leader = {
 				NOT = { has_trait = hidden_sympathies }
 			}
-			check_has_focus_tree_to_switch_to_conservative = yes
+			check_has_focus_tree_to_switch_to_democratic = yes
 			any_army_leader = {
 				is_field_marshal = yes
 				NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
@@ -684,22 +684,22 @@ conservative_on_the_rise = {
 		}
 	}
 
-	siphon_equipment_stockpiles_for_conservative_civil_war = {
+	siphon_equipment_stockpiles_for_democratic_civil_war = {
 
 		icon = generic_prepare_civil_war
 
 		available = {
-			has_country_flag = military_support_for_conservative_civil_war
+			has_country_flag = military_support_for_democratic_civil_war
 			has_equipment = { infantry_equipment > 1000 }
 			command_power > 2
 		}
 
 		visible = {
-			has_country_flag = preparation_for_conservative_civil_war
-			has_country_flag = military_support_for_conservative_civil_war
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			has_country_flag = preparation_for_democratic_civil_war
+			has_country_flag = military_support_for_democratic_civil_war
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		fire_only_once = no
@@ -720,20 +720,20 @@ conservative_on_the_rise = {
 		}
 	}
 
-	formulate_surprise_attack_plan_for_conservative_civil_war = {
+	formulate_surprise_attack_plan_for_democratic_civil_war = {
 
 		icon = generic_army_support
 
 		available = {
-			has_country_flag = military_support_for_conservative_civil_war
+			has_country_flag = military_support_for_democratic_civil_war
 			command_power > 2
 		}
 
 		visible = {
-			has_country_flag = preparation_for_conservative_civil_war
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			has_country_flag = preparation_for_democratic_civil_war
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		fire_only_once = yes
@@ -751,7 +751,7 @@ conservative_on_the_rise = {
 		}
 	}
 
-	ignite_the_conservative_civil_war = {
+	ignite_the_democratic_civil_war = {
 
 		icon = generic_ignite_civil_war
 
@@ -760,10 +760,10 @@ conservative_on_the_rise = {
 		}
 
 		visible = {
-			has_country_flag = preparation_for_conservative_civil_war
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			has_country_flag = preparation_for_democratic_civil_war
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		fire_only_once = yes
@@ -816,16 +816,16 @@ conservative_on_the_rise = {
 				}
 			}
 			start_civil_war = {
-				ruling_party = conservative
+				ruling_party = democratic
 				ideology = ROOT
 				size = civil_war_size_var
 				keep_unit_leaders_trigger = {
 					has_trait = hidden_sympathies
 				}
 			}
-			clr_country_flag = preparation_for_conservative_civil_war
-			clr_country_flag = military_support_for_conservative_civil_war
-			clr_country_flag = civil_support_for_conservative_civil_war
+			clr_country_flag = preparation_for_democratic_civil_war
+			clr_country_flag = military_support_for_democratic_civil_war
+			clr_country_flag = civil_support_for_democratic_civil_war
 		}
 
 		ai_will_do = {
@@ -833,12 +833,12 @@ conservative_on_the_rise = {
 		}
 	}
 
-	rebuild_the_nation_conservative = {
+	rebuild_the_nation_democratic = {
 
 		icon = generic_construction
 
 		visible = {
-			has_government = conservative
+			has_government = democratic
 			has_country_flag = won_ideology_civil_war
 		}
 
@@ -862,25 +862,25 @@ conservative_on_the_rise = {
 		}
 	}
 
-	open_up_political_discourse_conservative = {
+	open_up_political_discourse_democratic = {
 
 		icon = generic_political_discourse
 
 		available = {
 			fascism < 0.9
-			conservative < 0.9
+			democratic < 0.9
 			communism < 0.9
 			neutrality < 0.9
 		}
 
 		visible = {
-			has_idea_with_trait = conservative_reformer
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			has_idea_with_trait = democratic_reformer
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		remove_trigger = {
-			has_government = conservative
+			has_government = democratic
 		}
 
 		fire_only_once = yes
@@ -888,7 +888,7 @@ conservative_on_the_rise = {
 		cost = 75
 
 		complete_effect = {
-			set_country_flag = open_up_political_discourse_conservative
+			set_country_flag = open_up_political_discourse_democratic
 		}
 
 		ai_will_do = {
@@ -896,26 +896,26 @@ conservative_on_the_rise = {
 		}
 	}
 
-	discredit_government_conservative = {
+	discredit_government_democratic = {
 
 		icon = generic_political_discourse
 
 		available = {
 			fascism < 0.8
-			conservative < 0.8
+			democratic < 0.8
 			communism < 0.8
 			neutrality < 0.8
-			has_idea_with_trait = conservative_reformer
+			has_idea_with_trait = democratic_reformer
 		}
 
 		visible = {
-			has_country_flag = open_up_political_discourse_conservative
-			NOT = { has_government = conservative }
-			check_has_focus_tree_to_switch_to_conservative = yes
+			has_country_flag = open_up_political_discourse_democratic
+			NOT = { has_government = democratic }
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		remove_trigger = {
-			has_government = conservative
+			has_government = democratic
 		}
 
 		fire_only_once = yes
@@ -958,25 +958,25 @@ conservative_on_the_rise = {
 		}
 	}
 
-	hold_the_conservative_national_referendum = {
+	hold_the_democratic_national_referendum = {
 
 		icon = generic_political_discourse
 
 		available = {
-			conservative > 0.5
+			democratic > 0.5
 		}
 
 		visible = {
-			NOT = { has_government = conservative }
+			NOT = { has_government = democratic }
 			OR = {
-				conservative > 0.6
-				has_country_flag = open_up_political_discourse_conservative
+				democratic > 0.6
+				has_country_flag = open_up_political_discourse_democratic
 			}
-			check_has_focus_tree_to_switch_to_conservative = yes
+			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 
 		remove_trigger = {
-			has_government = conservative
+			has_government = democratic
 		}
 
 		fire_only_once = yes
@@ -990,7 +990,7 @@ conservative_on_the_rise = {
 		ai_will_do = {
 			factor = 210
 			modifier = {
-				conservative > 0.6
+				democratic > 0.6
 				factor = 10
 			}
 		}
@@ -1281,11 +1281,11 @@ communism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@conservative
+					value = party_popularity@democratic
 				}
 			}
 			if = {
@@ -1367,7 +1367,7 @@ communism_on_the_rise = {
 
 		available = {
 			fascism < 0.9
-			conservative < 0.9
+			democratic < 0.9
 			communism < 0.9
 			neutrality < 0.9
 		}
@@ -1401,7 +1401,7 @@ communism_on_the_rise = {
 
 		available = {
 			fascism < 0.8
-			conservative < 0.8
+			democratic < 0.8
 			communism < 0.8
 			neutrality < 0.8
 			has_idea_with_trait = communist_revolutionary
@@ -1434,10 +1434,10 @@ communism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 				}
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = -0.1
 				}
 			}
@@ -1647,20 +1647,20 @@ political_actions = {
 		}
     }
 
-    anti_conservative_raids = {
+    anti_democratic_raids = {
 
     	icon = generic_civil_support
 
     	visible = {
-			NOT = { has_government = conservative }
+			NOT = { has_government = democratic }
 		}
 
 		available = {
-            conservative > 0.1
+            democratic > 0.1
         }
 
 		modifier = {
-			conservative_drift = -0.05
+			democratic_drift = -0.05
 			stability_weekly = 0.007
 		}
 
@@ -1761,27 +1761,27 @@ political_actions = {
 		}
 	}
 
-	ban_conservative_party = {
+	ban_democratic_party = {
 
 		icon = generic_civil_support
 
 		available = {
-			conservative < 0.2
+			democratic < 0.2
 		}
 
 		visible = {
-			NOT = { has_government = conservative }
-			conservative > 0
+			NOT = { has_government = democratic }
+			democratic > 0
 		}
 
 		remove_trigger = {
 			hidden_trigger = {
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 
 		modifier = {
-			conservative_drift = -0.02
+			democratic_drift = -0.02
 		}
 
 		days_remove = -1
@@ -1791,14 +1791,14 @@ political_actions = {
 			hidden_effect = {
 				set_temp_variable = {
 					var = ban_ideology_var
-					value = party_popularity@conservative
+					value = party_popularity@democratic
 				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = -1
 				}
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = ban_ideology_var
 				}
 				multiply_temp_variable = {
@@ -1806,7 +1806,7 @@ political_actions = {
 					value = 0.66
 				}
 			}
-			custom_effect_tooltip = ban_conservative_party_tt
+			custom_effect_tooltip = ban_democratic_party_tt
 			add_stability = ban_ideology_var
 		}
 	}
@@ -1876,7 +1876,7 @@ political_actions = {
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = 0.03
-			conservative_drift = -0.01
+			democratic_drift = -0.01
 			neutrality_drift = -0.01
 		}
 
@@ -1888,18 +1888,18 @@ political_actions = {
 		}
 	}
 
-	institute_press_censorship_conservative_state = {
+	institute_press_censorship_democratic_state = {
 
 		icon = generic_political_discourse
 
 		visible = {
-			has_government = conservative
+			has_government = democratic
 		}
 
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = -0.01
-			conservative_drift = 0.03
+			democratic_drift = 0.03
 			neutrality_drift = -0.01
 		}
 
@@ -1922,7 +1922,7 @@ political_actions = {
 		modifier = {
 			communism_drift = 0.03
 			fascism_drift = -0.01
-			conservative_drift = -0.01
+			democratic_drift = -0.01
 			neutrality_drift = -0.01
 		}
 
@@ -1945,7 +1945,7 @@ political_actions = {
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = -0.01
-			conservative_drift = -0.01
+			democratic_drift = -0.01
 			neutrality_drift = 0.03
 		}
 

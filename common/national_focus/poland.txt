@@ -1907,7 +1907,7 @@ focus_tree = {
 				idea = POL_authoritarianism_focus
 				days = 720
 			}
-			#Reduction in conservative Support
+			#Reduction in democratic Support
 		}
 	}
 
@@ -2101,10 +2101,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = conservative_influence
+				idea = democratic_influence
 				days = 720
 			}
-			#Increase in conservative Support
+			#Increase in democratic Support
 		}
 	}
 

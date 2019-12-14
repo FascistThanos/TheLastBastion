@@ -1,5 +1,5 @@
 MTG_naval_treaties = {
-	MTG_abandon_treaty_conservative = {
+	MTG_abandon_treaty_democratic = {
 
 		icon = generic
 
@@ -20,7 +20,7 @@ MTG_naval_treaties = {
 		visible = {
 			has_naval_treaty_trigger = yes
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = neutrality
 			}
 		}
@@ -297,7 +297,7 @@ MTG_naval_treaties = {
 					tag = ENG
 					tag = USA
 				}
-				has_government = conservative
+				has_government = democratic
 				add = 10
 			}
 		}

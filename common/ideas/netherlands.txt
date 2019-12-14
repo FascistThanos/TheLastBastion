@@ -17,7 +17,7 @@ ideas = {
 				NOT = {
 					any_other_country = {
 						original_tag = HOL
-						has_government = conservative
+						has_government = democratic
 						NOT = {
 							tag = ROOT
 						}
@@ -863,7 +863,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conservative_drift = -0.02
+				democratic_drift = -0.02
 			}
 		}
 
@@ -1215,14 +1215,14 @@ ideas = {
 
 		HOL_unity_through_democracy = {
 
-			picture = generic_conservative_drift_bonus
+			picture = generic_democratic_drift_bonus
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
 			removal_cost = -1
@@ -1230,7 +1230,7 @@ ideas = {
 			modifier = {
 				fascism_drift = -0.02
 				communism_drift = -0.02
-				conservative_drift = 0.05
+				democratic_drift = 0.05
 				stability_weekly = 0.001
 			}
 		}
@@ -1306,7 +1306,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
 			removal_cost = -1
@@ -1325,7 +1325,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = conservative
+				has_government = democratic
 			}
 
 			removal_cost = -1
@@ -1944,7 +1944,7 @@ ideas = {
 
 		HOL_willem_schermerhorn = {
 
-			picture = generic_conservative_reformer_western_european_2d
+			picture = generic_democratic_reformer_western_european_2d
 
 			allowed = {
 				original_tag = HOL
@@ -1963,7 +1963,7 @@ ideas = {
 				}
 			}
 
-			traits = { conservative_reformer }
+			traits = { democratic_reformer }
 
 		}
 
@@ -2052,7 +2052,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = conservative
+					has_government = democratic
 					has_government = neutrality
 				}
 			}
@@ -2086,7 +2086,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = conservative
+					has_government = democratic
 					has_government = neutrality
 				}
 
@@ -2107,7 +2107,7 @@ ideas = {
 			available = {
 				has_capitulated = yes
 				OR = {
-					has_government = conservative
+					has_government = democratic
 					has_government = neutrality
 				}
 			}

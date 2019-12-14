@@ -430,7 +430,7 @@ focus_tree = {
 				}
 			}
 
-			set_party_name = { ideology = communism name = MEX_conservative_party_mexican_revolution_party_short long_name = MEX_conservative_party_mexican_revolution_party_long }
+			set_party_name = { ideology = communism name = MEX_democratic_party_mexican_revolution_party_short long_name = MEX_democratic_party_mexican_revolution_party_long }
 
 			hidden_effect = {set_cosmetic_tag = MEX_cristero } # Hidden because the tooltip looks odd together with ideology changes
 		}
@@ -586,7 +586,7 @@ focus_tree = {
 
 			modifier = {
 				factor = 10
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 
@@ -985,7 +985,7 @@ focus_tree = {
 					}
 					ENG = {
 						NOT = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 				}
@@ -1161,10 +1161,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					ENG = { has_government = conservative }
+					ENG = { has_government = democratic }
 				}
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = 0.1
 				}
 			}
@@ -1655,10 +1655,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					GER = { has_government = conservative }
+					GER = { has_government = democratic }
 				}
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = 0.1
 				}
 			}
@@ -1803,10 +1803,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					SOV = { has_government = conservative }
+					SOV = { has_government = democratic }
 				}
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = 0.1
 				}
 			}
@@ -2029,10 +2029,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					USA = { has_government = conservative }
+					USA = { has_government = democratic }
 				}
 				add_popularity = {
-					ideology = conservative
+					ideology = democratic
 					popularity = 0.1
 				}
 			}
@@ -2245,7 +2245,7 @@ focus_tree = {
 		}
 
 		available = {
-			conservative > 0.4
+			democratic > 0.4
 			has_civil_war = no
 			NOT = { has_completed_focus = MEX_focus_party_of_the_revolution }
 			NOT = { has_completed_focus = MEX_focus_catholic_politics }
@@ -2264,7 +2264,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = conservative
+				ideology = democratic
 				popularity = 0.1
 			}
 
@@ -2298,16 +2298,16 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 				set_politics = {
-					ruling_party = conservative
+					ruling_party = democratic
 					elections_allowed = yes
 				}
 			}
 
-			set_party_name = { ideology = conservative name = MEX_conservative_party_institutional_revolutionary_party_short long_name = MEX_conservative_party_institutional_revolutionary_party_long }
+			set_party_name = { ideology = democratic name = MEX_democratic_party_institutional_revolutionary_party_short long_name = MEX_democratic_party_institutional_revolutionary_party_long }
 		}
 	}
 
@@ -2941,7 +2941,7 @@ focus_tree = {
 
 		available = {
 			has_idea = MEX_church_power_5
-			conservative > 0.4
+			democratic > 0.4
 			has_civil_war = no
 			NOT = { has_completed_focus = MEX_focus_party_of_the_revolution }
 			NOT = { has_completed_focus = MEX_focus_institutional_revolution }
@@ -2960,7 +2960,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = conservative
+				ideology = democratic
 				popularity = 0.1
 			}
 
@@ -2969,11 +2969,11 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 				set_politics = {
-					ruling_party = conservative
+					ruling_party = democratic
 					elections_allowed = yes
 				}
 			}
@@ -2988,7 +2988,7 @@ focus_tree = {
 				}
 			}
 
-			set_party_name = { ideology = conservative name = MEX_conservative_party_national_action_party_short long_name = MEX_conservative_party_national_action_party_long }
+			set_party_name = { ideology = democratic name = MEX_democratic_party_national_action_party_short long_name = MEX_democratic_party_national_action_party_long }
 
 			hidden_effect = {set_cosmetic_tag = MEX_cristero } # Hidden because the tooltip looks odd together with ideology changes
 		}
@@ -3809,7 +3809,7 @@ focus_tree = {
 					}
 				}
 			}
-			set_party_name = { ideology = neutrality name = MEX_conservative_party_institutional_revolutionary_party_short long_name = MEX_conservative_party_institutional_revolutionary_party_long }
+			set_party_name = { ideology = neutrality name = MEX_democratic_party_institutional_revolutionary_party_short long_name = MEX_democratic_party_institutional_revolutionary_party_long }
 			set_party_name = { ideology = fascism name = MEX_fascist_party_national_revolutionary_party_short long_name = MEX_fascist_party_national_revolutionary_party_long }
 		}
 	}
@@ -4537,7 +4537,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						has_government = neutrality
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 				BRA = {

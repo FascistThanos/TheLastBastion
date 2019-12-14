@@ -3420,11 +3420,11 @@ focus_tree = {
 		}
 
 		available = {
-			conservative > 0.3
+			democratic > 0.3
 		}
 
 		bypass = {
-			has_government = conservative
+			has_government = democratic
 		}
 
 		cancel_if_invalid = yes
@@ -3461,9 +3461,9 @@ focus_tree = {
 					}
 					MAN = { puppet = MEN }
 				}
-				add_popularity = { ideology = conservative popularity = 0.1 }
+				add_popularity = { ideology = democratic popularity = 0.1 }
 				start_civil_war = {
-					ruling_party = conservative
+					ruling_party = democratic
 					ideology = fascism
 					size = 0.5
 				}
@@ -3564,7 +3564,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 2
-				CHI = { has_government = conservative }
+				CHI = { has_government = democratic }
 			}
 		}
 
@@ -3603,10 +3603,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = conservative
+			has_government = democratic
 			is_subject = no
 			ENG = {
-				has_government = conservative
+				has_government = democratic
 				is_faction_leader = yes
 			}
 			NOT = { has_war_with = ENG }
@@ -3626,7 +3626,7 @@ focus_tree = {
 				limit = {
 					ENG = {
 						is_faction_leader = yes
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 				ENG = { country_event = generic.2 }
@@ -3636,7 +3636,7 @@ focus_tree = {
 					ENG = {
 						is_in_faction = yes
 						is_faction_leader = no
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 				random_country = {
@@ -3741,7 +3741,7 @@ focus_tree = {
 			modifier = {
 				factor = 3
 				any_country = {
-					has_government = conservative
+					has_government = democratic
 					has_war_with = SOV
 				}
 			}
@@ -3796,17 +3796,17 @@ focus_tree = {
 			if = {
 				limit = {
 					country_exists = KOR
-					has_government = conservative
+					has_government = democratic
 				}
 				KOR = { country_event = generic.5 }
 			}
 			else_if = {
 				limit = {
 					country_exists = KOR
-					NOT = { has_government = conservative }
+					NOT = { has_government = democratic }
 					is_subject = no
 				}
-				KOR = { add_timed_idea = { idea = conservative_influence days = 360 } }
+				KOR = { add_timed_idea = { idea = democratic_influence days = 360 } }
 			}
 			else_if = {
 				limit = {
@@ -3849,13 +3849,13 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { NOT = { has_government = conservative } }
+			MAN = { NOT = { has_government = democratic } }
 		}
 
 		bypass = {
 			OR = {
 				NOT = { country_exists = MAN }
-				MAN = { has_government = conservative }
+				MAN = { has_government = democratic }
 			}
 		}
 

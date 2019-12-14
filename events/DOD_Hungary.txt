@@ -68,7 +68,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 			modifier = {
-				has_government = conservative
+				has_government = democratic
 				factor = 0
 			}
 		}
@@ -847,7 +847,7 @@ country_event = {
 
 }
 
-#Rearmament denied - appeal to major conservative nations?
+#Rearmament denied - appeal to major democratic nations?
 country_event = {
 	id = DOD_hungary.32
 	title = DOD_hungary.32.t
@@ -882,7 +882,7 @@ country_event = {
 			FRA = {
 				NOT = { has_war_with = HUN }
 				NOT = { has_completed_focus = FRA_little_entente } #would be super awkward
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 		FRA = {
@@ -901,7 +901,7 @@ country_event = {
 		trigger = {
 			ENG = {
 				NOT = { has_war_with = HUN }
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 		ENG = {
@@ -1496,7 +1496,7 @@ country_event = {
 			limit = {
 				FRA = {
 					has_war = no
-					has_government = conservative
+					has_government = democratic
 				}
 			}
 			FRA = { country_event = { id = DOD_hungary.60 } } #France given option to intervene, if they don't have bigger problems
@@ -1505,7 +1505,7 @@ country_event = {
 			limit = {
 				ENG = {
 					has_war = no
-					has_government = conservative
+					has_government = democratic
 					has_completed_focus = uk_balkan_strategy
 				}
 			}
@@ -3381,7 +3381,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				has_government = conservative
+				has_government = democratic
 				factor = 10
 			}
 		}
@@ -3864,7 +3864,7 @@ country_event = {
 		ai_chance = {
 			factor = 75
 			modifier = {
-				has_government = conservative
+				has_government = democratic
 				factor = 0
 			}
 		}
@@ -4078,7 +4078,7 @@ country_event = {
 				factor = 0.25
 			}
 			modifier = {
-				has_government = conservative
+				has_government = democratic
 				factor = 0.25
 			}
 		}
@@ -4822,7 +4822,7 @@ country_event = {
 			}
 			modifier = {
 				HUN = {
-					has_government = conservative
+					has_government = democratic
 				}
 				factor = 3
 			}

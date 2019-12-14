@@ -102,13 +102,13 @@ set_convoys = 10
 
 set_convoys = 5
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 99
+	democratic = 99
 	communism = 1
 }
 
@@ -137,14 +137,14 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservative
+		ruling_party = democratic
 		last_election = "1938.5.1"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		conservative = 100
+		democratic = 100
 	}
 
 	create_country_leader = {

@@ -43,7 +43,7 @@ country_event = {
 				popularity = 0.2
 			}
 			add_popularity = {
-				ideology = conservative
+				ideology = democratic
 				popularity = 0.30
 			}
 			add_popularity = {
@@ -1110,7 +1110,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = conservative
+					ideology = democratic
 					size = 0.3
 				}
 			}
@@ -1181,7 +1181,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = conservative
+					ideology = democratic
 					size = 0.3
 				}
 			}
@@ -1420,7 +1420,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = conservative
+					ideology = democratic
 					size = 0.3
 				}
 			}
@@ -1467,7 +1467,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = conservative
+					ideology = democratic
 					size = 0.3
 				}
 			}
@@ -1523,7 +1523,7 @@ country_event = {
 					has_government = communism
 				}
 				start_civil_war = {
-					ideology = conservative
+					ideology = democratic
 					size = 0.3
 				}
 			}
@@ -1622,7 +1622,7 @@ country_event = {
 					has_government = communism
 				}
 				start_civil_war = {
-					ideology = conservative
+					ideology = democratic
 					size = 0.3
 				}
 			}
@@ -2352,7 +2352,7 @@ country_event = {
 	}
 }
 
-# Unconservative faction member civil war aid event for Germany
+# Undemocratic faction member civil war aid event for Germany
 country_event = {
 	id = wtt_germany.52
 	title = wtt_germany.52.t
@@ -2377,7 +2377,7 @@ country_event = {
 	}
 }
 
-# German event for Austrian referendum to join conservative Germany
+# German event for Austrian referendum to join democratic Germany
 country_event = {
 	id = wtt_germany.53
 	title = wtt_germany.53.t
@@ -2387,7 +2387,7 @@ country_event = {
 	trigger = {
 		original_tag = GER
 		OR = {
-			has_government = conservative
+			has_government = democratic
 			has_government = neutrality
 		}
 		is_in_faction_with = AUS
@@ -2395,7 +2395,7 @@ country_event = {
 			is_major = no
 		}
 		OR = {
-			AUS = { has_government = conservative }
+			AUS = { has_government = democratic }
 			AUS = { has_government = neutrality }
 		}
 		NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
@@ -2424,7 +2424,7 @@ country_event = {
 	}
 }
 
-# Austrian event for Austrian referendum to join conservative Germany
+# Austrian event for Austrian referendum to join democratic Germany
 country_event = {
 	id = wtt_germany.54
 	title = wtt_germany.54.t
@@ -2449,7 +2449,7 @@ country_event = {
 	}
 }
 
-# German confirmation event for Austrian referendum to join conservative Germany
+# German confirmation event for Austrian referendum to join democratic Germany
 country_event = {
 	id = wtt_germany.55
 	title = wtt_germany.55.t
@@ -2489,7 +2489,7 @@ country_event = {
 	}
 }
 
-# Polish event when attacked by SOV and not in faction with conservative Germany
+# Polish event when attacked by SOV and not in faction with democratic Germany
 country_event = {
 	id = wtt_germany.56
 	title = wtt_germany.56.t
@@ -2507,7 +2507,7 @@ country_event = {
 		has_defensive_war_with = SOV
 		NOT = { has_government = communism }
 		NOT = { has_government = fascism }
-		GER = { has_government = conservative }
+		GER = { has_government = democratic }
 		NOT = { GER = { has_war_together_with = POL } }
 		NOT = { is_in_faction_with = GER }
 	}
@@ -2569,7 +2569,7 @@ country_event = {
 	}
 }
 
-# German notification event for Austrian rejection of referendum to join conservative Germany
+# German notification event for Austrian rejection of referendum to join democratic Germany
 country_event = {
 	id = wtt_germany.58
 	title = wtt_germany.58.t

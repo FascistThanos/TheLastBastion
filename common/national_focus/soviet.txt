@@ -1552,7 +1552,7 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 200
-				GER = { has_government = conservative }
+				GER = { has_government = democratic }
 			}
 		}
 
@@ -1811,7 +1811,7 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 200
-				GER = { has_government = conservative }
+				GER = { has_government = democratic }
 			}
 		}
 		bypass = {
@@ -1950,7 +1950,7 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 200
-				GER = { has_government = conservative }
+				GER = { has_government = democratic }
 				FRA = { has_government = fascism }
 				GER = { has_war_with = FRA }
 			}
@@ -1975,7 +1975,7 @@ focus_tree = {
 			factor = 0.5
 
 			modifier = {
-				has_government = conservative
+				has_government = democratic
 				factor = 0
 			}
 
