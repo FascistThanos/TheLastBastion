@@ -15,7 +15,7 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				conservative < 0.9
+				democratic < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -24,10 +24,10 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = conservative
+			has_government = democratic
 			FROM = {
 				is_puppet_of = ROOT
-				conservative < 0.99
+				democratic < 0.99
 			}
 		}
 
@@ -242,18 +242,18 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				conservative > 0.6
+				democratic > 0.6
 			}
 			FROM = {
-				NOT = { has_government = conservative }
+				NOT = { has_government = democratic }
 			}
 		}
 
 		visible = {
-			has_government = conservative
+			has_government = democratic
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = conservative }
+				NOT = { has_government = democratic }
 			}
 		}
 
@@ -275,7 +275,7 @@ foreign_influence = {
 			}
 			FROM = {
 				set_politics = {
-					ruling_party = conservative
+					ruling_party = democratic
 					elections_allowed = yes
 				}
 			}

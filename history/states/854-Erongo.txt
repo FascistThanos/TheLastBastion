@@ -1,0 +1,20 @@
+state = {
+  id = 854
+  name = "Erongo"
+  state_category = pastoral
+  manpower = 189400
+
+  history = {
+    owner = SAF
+    add_claim_by = SAF
+    add_core_of = NMB
+
+    buildings = {
+      infrastructure = 2
+    }
+  }
+
+  provinces = {
+    7770 8136 10957 10978 12519 12921 13217
+  }
+}

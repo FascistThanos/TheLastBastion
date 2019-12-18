@@ -19,8 +19,6 @@ focus_tree = {
 
 	default = no
 
-
-
 #	focus = {
 #		id = RAJ_
 #		icon = GFX_
@@ -440,7 +438,7 @@ focus_tree = {
 						desc = "POLITICS_SUBHAS_CHANDRA_BOSE_DESC"
 						picture = GFX_RAJ_subhas_chandra_bose
 						expire = "1965.1.1"
-						ideology = stalinism
+						ideology = leninism
 						traits = {
 							indomitable_perseverance
 						}
@@ -1112,7 +1110,7 @@ focus_tree = {
 
 
 	############################
-	### SOMEWHAT conservative ####
+	### SOMEWHAT democratic ####
 	############################
 
 	focus = {

@@ -1,0 +1,19 @@
+state = {
+  id = 848
+  name = "Adamwa"
+  state_category = pastoral
+  manpower = 742300
+
+  history = {
+    owner = FRA
+    add_core_of = CMR
+
+    buildings = {
+      infrastructure = 2
+    }
+  }
+
+  provinces = {
+    7963 11194
+  }
+}

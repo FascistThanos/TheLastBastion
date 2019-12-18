@@ -210,7 +210,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 13
+	democratic = 13
 	fascism = 1
 	communism = 86
 }
@@ -238,7 +238,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
-	ideology = 	stalinism
+	ideology = 	leninism
 	traits = {
 
 	}

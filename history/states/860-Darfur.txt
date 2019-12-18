@@ -1,0 +1,18 @@
+state = {
+  id = 860
+  name = "Darfur"
+  manpower = 67049
+  state_category = wasteland
+
+  history = {
+    owner = ENG
+    add_core_of = SUD
+    buildings = {
+      infrastructure = 1
+    }
+  }
+
+  provinces = {
+    1960 4033 5060 8052 10739 10764 10857
+  }
+}

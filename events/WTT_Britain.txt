@@ -111,7 +111,7 @@ country_event = {
 			factor = 85
 		}
 		name = wtt_britain.27.a
-		add_popularity = { ideology = conservative popularity = -0.05 }
+		add_popularity = { ideology = democratic popularity = -0.05 }
 		add_war_support = 0.05
 		random_other_country = {
 			limit = {

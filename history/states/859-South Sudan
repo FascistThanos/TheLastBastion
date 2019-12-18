@@ -1,0 +1,23 @@
+state = {
+  id = 859
+  name = "South Sudan"
+  state_category = rural
+  manpower = 947305
+
+  history = {
+    owner = ENG
+    add_core_of = SSD
+    add_claim_by = SUD
+    buildings = {
+      infrastructure = 3
+    }
+
+    victory_points = {
+      2096 3
+    }
+  }
+
+  provinces = {
+    1953 2096 7996 10859 10877 10908
+  }
+}

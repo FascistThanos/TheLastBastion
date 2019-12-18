@@ -1,0 +1,18 @@
+state = {
+  id = 853
+  name = "Moxico"
+  state_category = rural
+  manpower = 1489200
+
+  history = {
+    owner = POR
+    add_core_of = ANG
+    buildings = {
+      infrastructure = 2
+    }
+  }
+
+  provinces = {
+    1552 2126 4735 7548 8054 12391
+  }
+}

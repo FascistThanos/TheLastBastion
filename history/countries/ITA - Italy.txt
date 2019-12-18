@@ -3,16 +3,16 @@
 oob = "ITA_1936"
 
 set_research_slots = 4
-set_stability = 0.6
-set_war_support = 0.7
+set_stability = 0.43
+set_war_support = 0.28
 add_ideas = {
-	victor_emmanuel
-	vittoria_mutilata
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	victor_emmanuel
+	ITA_mussolini_detained
+	ITA_bloated_bureaucracy
 }
-
 
 # Starting tech
 set_technology = {
@@ -26,17 +26,15 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	early_bomber = 1
 	naval_bomber1 = 1
 	CAS1 = 1
-	trench_warfare = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
@@ -51,6 +49,7 @@ if = {
 	}
 	set_naval_oob = "ITA_1936_naval_legacy"
 }
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
@@ -79,127 +78,23 @@ if = {
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-}
-
-
-1939.1.1 = {
-
-	add_political_power = 1198
-
-	#white_peace = ETH
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-	}
-	#adding ministers
-	add_ideas = {
-		ITA_giovanni_marinelli
-		ITA_giacomo_acerbo
-		emilio_de_bono
-		vittorio_ambrosio
-		fiat
-		beretta
-
-		#laws
-		partial_economic_mobilisation
-		extensive_conscription
-	}
-	oob = "ITA_1939"
-	set_technology = {
-		fighter1 = 1
-		fighter2 = 1
-		tactical_bomber1 = 1
-		tactical_bomber2 = 1
-		improved_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		tech_recon = 1
-
-		#doctrines
-		grand_battle_plan = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			basic_destroyer = 1
-			improved_destroyer = 1
-			basic_light_cruiser = 1
-			basic_battleship = 1
-			improved_battleship = 1
-		}
-		set_naval_oob = "ITA_1939_naval_legacy"
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_airplane_launcher = 1
-
-		}
-		set_naval_oob = "ITA_1939_naval_mtg"
-	}
-
-	set_stability = 0.8
-	GER = { add_to_faction = ITA }
-}
-
 
 set_convoys = 200
 
 set_politics = {
 	ruling_party = socialism
-	last_election = "1931.3.26"
-	election_frequency = 20
+	last_election = "1934.3.26"
+	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 16
-	socialism = 60
-	neutrality = 14
-	fascism = 10
+	socialism = 41
+	fascism = 8
+	communism = 11
+	trotskyism = 26
+	monarchist = 2
+	democratic = 7
+	liberal = 5
 }
 
 create_country_leader = {
@@ -218,18 +113,51 @@ create_country_leader = {
 	desc = "POLITICS_VICTOR_EMMANUEL_DESC"
 	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = monarchist_subtype
 	traits = {
 		ww_one_trauma
 	}
 }
 
 create_country_leader = {
+	name = "Victor Emmanuel III"
+	desc = "POLITICS_VICTOR_EMMANUEL_DESC"
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		ww_one_trauma
+	}
+}
+
+create_country_leader = {
+	name = "Benedetto Croce"
+	desc = "POLITICS_CROCE_DESC"
+	picture = "Portrait_Italy_Benedetto_Croce.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Ferruccio Parri"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	desc = "POLITICS_PARRI_DESC"
 	picture = "GFX_portrait_italy_ferruccio_parri"
 	expire = "1965.1.1"
 	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Palmiro Togliatti"
+	desc = "POLITICS_TOGLIATTI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 
 	}
@@ -237,12 +165,34 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Palmiro Togliatti"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	desc = "POLITICS_TOGLIATTI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = trotskyism
 	traits = {
 
+	}
+}
+
+create_country_leader = {
+	name = "Palmiro Togliatti"
+	desc = "POLITICS_TOGLIATTI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = maoism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Luigi Sturzo"
+	desc = "POLITICS_STURZO_DESC"
+	picture = "Portrait_Italy_Luigi_Sturzo.dds"
+	expire = "1965.1.1"
+	ideology = democratic
+	traits = {
+		#
 	}
 }
 

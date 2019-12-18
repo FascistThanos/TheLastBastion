@@ -11,6 +11,16 @@ spriteTypes = {
 	### new tfv nat spirit icons
 
 	spriteType = {
+		name = "GFX_idea_ITA_Mussolini_Jailed"
+		texturefile = "gfx/interface/ideas/idea_ITA_Mussolini_Jailed.dds"
+	}
+
+	#spriteType = {
+	#	name = "GFX_idea_ITA_italia_electorum"
+	#	texturefile = "gfx/interface/ideas/idea_ITA_Italia_Electorum.dds"
+	#}
+
+	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}
@@ -111,7 +121,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_can_defence_of_canada_regulations_conservative"
+		name = "GFX_idea_can_defence_of_canada_regulations_democratic"
 		texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_democratic.dds"
 	}
 
@@ -589,7 +599,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_generic_conservative_drift_bonus"
+		name = "GFX_idea_generic_democratic_drift_bonus"
 		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
 	}
 
@@ -708,7 +718,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_europe.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_conservative_reformer_western_european_2d"
+		name = "GFX_idea_generic_democratic_reformer_western_european_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
 	}
 	spriteType = {
@@ -789,7 +799,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_europe.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_conservative_reformer_commonwealth_2d"
+		name = "GFX_idea_generic_democratic_reformer_commonwealth_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
 	}
 	spriteType = {
@@ -869,7 +879,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_europe.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_conservative_reformer_eastern_european_2d"
+		name = "GFX_idea_generic_democratic_reformer_eastern_european_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
 	}
 	spriteType = {
@@ -2538,7 +2548,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_HUN_hungarian_monarchy_conservative"
+		name = "GFX_idea_HUN_hungarian_monarchy_democratic"
 		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_democratic.dds"
 	}
 
@@ -2843,7 +2853,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_asia.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_conservative_reformer_asian_2d"
+		name = "GFX_idea_generic_democratic_reformer_asian_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
 	}
 	spriteType = {
@@ -2990,7 +3000,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_south_america.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_conservative_reformer_southamerican_2d"
+		name = "GFX_idea_generic_democratic_reformer_southamerican_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
 	}
 	spriteType = {
@@ -3129,7 +3139,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_arab.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_conservative_reformer_middle_eastern_2d"
+		name = "GFX_idea_generic_democratic_reformer_middle_eastern_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
 	}
 	spriteType = {
@@ -3262,7 +3272,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_africa.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_conservative_reformer_african_2d"
+		name = "GFX_idea_generic_democratic_reformer_african_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
 	}
 	spriteType = {

@@ -1405,7 +1405,7 @@ focus_tree = {
 			}
 			every_other_country = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 					num_of_factories > 30
 				}
 				add_opinion_modifier = {
@@ -1707,7 +1707,7 @@ focus_tree = {
 		}
 
 		available = {
-			conservative > 0.7
+			democratic > 0.7
 		}
 
 		bypass = {
@@ -1845,7 +1845,7 @@ focus_tree = {
 			}
 			every_other_country = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 					num_of_factories > 30
 				}
 				add_opinion_modifier = {

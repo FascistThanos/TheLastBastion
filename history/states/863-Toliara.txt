@@ -1,0 +1,19 @@
+state = {
+  id = 863
+  name = "Toliara"
+  state_category = pastoral
+  manpower = 1843058
+
+  history = {
+    owner = FRA
+    add_core_of = MAD
+    buildings = {
+      infrastructure = 2
+      industrial_complex = 1
+    }
+  }
+
+  provinces = {
+    2200 8180 8246 10993 12956 
+  }
+}

@@ -29,7 +29,7 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 3
+	democratic = 3
 	neutrality = 2
 	fascism = 5
 	communism = 90
@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}
@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
 	picture = "Portrait_Czech_Klement_Gottwald.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 		#
 	}

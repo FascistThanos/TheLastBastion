@@ -1,0 +1,23 @@
+state = {
+  id = 851
+  name = "Maniema"
+  state_category = rural
+  manpower = 2184500
+
+  resources = {
+    rubber = 2
+  }
+
+  history = {
+    owner = UOB
+    add_core_of = COG
+    buildings = {
+      infrastructure = 3
+      air_base = 1
+    }
+  }
+
+  provinces = {
+    1181 1950 4941 7161 10766 12783 12847
+  }
+}

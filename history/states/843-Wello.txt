@@ -1,0 +1,30 @@
+state = {
+  id = 843
+  name = "Wello"
+  state_category = town
+  manpower = 209600
+
+  resources = {
+    steel = 1
+    rubber = 3
+  }
+
+  history = {
+    owner = ETH
+    add_core_of = ETH
+
+    buildings = {
+      infrastucture = 5
+      arms_factory = 1
+      air_base = 1
+    }
+
+		victory_points = {
+			1984 1
+		}
+  }
+
+  provinces = {
+    1984 2072 5041 5097 7944 13137
+  }
+}

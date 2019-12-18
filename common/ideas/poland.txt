@@ -53,7 +53,7 @@ country = {
 
 		allowed_civil_war = {
 			NOT = {
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 
@@ -62,8 +62,8 @@ country = {
 		picture = generic_intel_bonus
 
 		modifier = {
-			conservative_drift = -0.1
-			conservative_acceptance = -100
+			democratic_drift = -0.1
+			democratic_acceptance = -100
 		}
 	}
 
@@ -159,7 +159,7 @@ political_advisor = {
 
 	POL_mieczyslaw_michalowicz = {
 
-		picture = generic_conservative_reformer_eastern_european_2d
+		picture = generic_democratic_reformer_eastern_european_2d
 
 		allowed = {
 			original_tag = POL
@@ -172,7 +172,7 @@ political_advisor = {
 			}
 		}
 
-		traits = { conservative_reformer }
+		traits = { democratic_reformer }
 
 		ai_will_do = {
 			factor = 0

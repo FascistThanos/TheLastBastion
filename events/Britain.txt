@@ -234,7 +234,7 @@ country_event = {
 	trigger = {
 		tag = ENG
 		has_war = yes
-		has_government = conservative
+		has_government = democratic
 		NOT = {
 			has_completed_focus = uk_scandinavian_focus
 		}
@@ -272,7 +272,7 @@ country_event = {
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 				british_bulldog
 			}
@@ -294,7 +294,7 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		has_government = conservative
+		has_government = democratic
 		date > 1940.9.11
 		NOT = { has_country_flag = chamberlain_resigned }
 		has_country_leader = {
@@ -317,7 +317,7 @@ country_event = {
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 				british_bulldog
 			}
@@ -331,7 +331,7 @@ country_event = {
 			desc = "POLITICS_EDWARD_HALIFAX_DESC"
 			picture = "Portrait_Britain_Edward_Halifax.dds"
 			expire = "1965.1.1"
-			ideology = conservative
+			ideology = democratic
 			traits = {
 
 			}
@@ -358,7 +358,7 @@ country_event = {
 				limit = {
 					NOT = { has_war_with = ENG }
 					is_in_faction = no
-					has_government = conservative
+					has_government = democratic
 					is_puppet = no
 					OR = {
 						capital_scope = {
@@ -815,7 +815,7 @@ country_event = {
 
     trigger = {
         original_tag = ENG
-        has_government = conservative
+        has_government = democratic
         has_idea = ENG_george_vi
         date > 1937.5.27
         has_start_date < 1936.01.02
@@ -834,7 +834,7 @@ country_event = {
         	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
         	picture = "Portrait_Britain_Neville_Chamberlain.dds"
         	expire = "1965.1.1"
-        	ideology = conservative
+        	ideology = democratic
         	traits = {
         		chamberlain_appeaser rearmer
         	}

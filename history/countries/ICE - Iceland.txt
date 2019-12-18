@@ -72,26 +72,26 @@ set_convoys = 30
 set_stability = 0.75
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 96
+	democratic = 96
 	fascism = 2
 	communism = 2
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservative
+		ruling_party = democratic
 		last_election = "1936.10.19"
 		election_frequency = 36
 		elections_allowed = yes
 	}
 	set_popularities = {
-		conservative = 84
+		democratic = 84
 		fascism = 2
 		communism = 2
 		neutrality = 12
@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = ""
 	picture = "portrait_ice_sveinn_bjornsson.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}

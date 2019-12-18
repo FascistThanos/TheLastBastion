@@ -25,6 +25,50 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+
+		ITA_mussolini_detained = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			picture = ITA_Mussolini_Jailed
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = -0.01
+				fascism_acceptance = -50
+				drift_defence_factor = 0.02
+			}
+		}
+
+		ITA_bloated_bureaucracy = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = FRA_factory_strikes
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.35
+				political_advisor_cost_factor = 0.20
+			}
+		}
+
 		vittoria_mutilata = {
 
 			allowed = {
@@ -35,7 +79,7 @@ ideas = {
 				NOT = {
 					OR = {
 						has_government = communism
-						has_government = conservative
+						has_government = democratic
 					}
 				}
 			}
@@ -44,7 +88,7 @@ ideas = {
 
 			modifier = {
 				communism_acceptance = -10
-				conservative_acceptance = -10
+				democratic_acceptance = -10
 				fascism_acceptance = 10
 				ai_focus_aggressive_factor = 0.5
 				justify_war_goal_time = -0.05
@@ -74,9 +118,9 @@ ideas = {
 						}
 					}
 					AND = {
-						has_government = conservative
+						has_government = democratic
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 				}
@@ -135,11 +179,11 @@ ideas = {
 				}
 			}
 
-			traits = { conservative_reformer }
+			traits = { democratic_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = conservative
+					has_government = democratic
 				}
 			}
 

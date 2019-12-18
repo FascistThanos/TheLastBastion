@@ -48,7 +48,7 @@ continent = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			}
@@ -59,6 +59,32 @@ continent = {
 			}
 		}
 		trotskyism = {
+			male = {
+				"gfx/leaders/generic/portrait_generic_politician_europe_4.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_5.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_6.dds"
+				"gfx/leaders/generic/USA_portrait_fascist_1"
+				"gfx/leaders/generic/USA_portrait_fascist_2"
+				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_2.dds"
+			}
+		}
+		stalinism = {
+			male = {
+				"gfx/leaders/generic/portrait_generic_politician_europe_4.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_5.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_6.dds"
+				"gfx/leaders/generic/USA_portrait_fascist_1"
+				"gfx/leaders/generic/USA_portrait_fascist_2"
+				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_2.dds"
+			}
+		}
+		conservatism = {
 			male = {
 				"gfx/leaders/generic/portrait_generic_politician_europe_4.dds"
 				"gfx/leaders/generic/portrait_generic_politician_europe_5.dds"
@@ -112,7 +138,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservative = {
+		democratic = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -152,7 +178,7 @@ continent = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			}
@@ -180,6 +206,19 @@ continent = {
 				"gfx/leaders/generic/Portrait_Britain_Generic_2.dds"
 			}
 		}
+		stalinism = {
+			male = {
+				"gfx/leaders/generic/portrait_generic_politician_europe_4.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_5.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_6.dds"
+				"gfx/leaders/generic/USA_portrait_fascist_1"
+				"gfx/leaders/generic/USA_portrait_fascist_2"
+				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_2.dds"
+			}
+		}
 		maoism = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
@@ -187,6 +226,19 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
 				"gfx/leaders/generic/USA_portrait_fascist_1"
 				"gfx/leaders/generic/USA_portrait_fascist_2"
+			}
+		}
+		conservatism = {
+			male = {
+				"gfx/leaders/generic/portrait_generic_politician_europe_4.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_5.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_6.dds"
+				"gfx/leaders/generic/USA_portrait_fascist_1"
+				"gfx/leaders/generic/USA_portrait_fascist_2"
+				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_2.dds"
 			}
 		}
 		monarchist = {
@@ -216,7 +268,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservative = {
+		democratic = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -255,7 +307,7 @@ continent = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 			}
@@ -281,6 +333,15 @@ continent = {
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
 				"gfx/leaders/generic/Portrait_Britain_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_Britain_Generic_2.dds"
+			}
+		}
+		stalinism = {
+			male = {
+				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
+				"gfx/leaders/generic/USA_portrait_fascist_1"
+				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
 		maoism = {
@@ -319,7 +380,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservative = {
+		democratic = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -359,7 +420,7 @@ continent = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			}
@@ -375,6 +436,19 @@ continent = {
 			}
 		}
 		trotskyism = {
+			male = {
+				"gfx/leaders/generic/portrait_generic_politician_europe_4.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_5.dds"
+				"gfx/leaders/generic/portrait_generic_politician_europe_6.dds"
+				"gfx/leaders/generic/USA_portrait_fascist_1"
+				"gfx/leaders/generic/USA_portrait_fascist_2"
+				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_Britain_Generic_2.dds"
+			}
+		}
+		stalinism = {
 			male = {
 				"gfx/leaders/generic/portrait_generic_politician_europe_4.dds"
 				"gfx/leaders/generic/portrait_generic_politician_europe_5.dds"
@@ -423,7 +497,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservative = {
+		democratic = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -464,7 +538,7 @@ continent = {
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
@@ -472,6 +546,24 @@ continent = {
 			}
 		}
 		fascism = {
+				male = {
+					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			}
+		}
+		stalinism = {
+				male = {
+					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			}
+		}
+		conservatism = {
 				male = {
 					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
@@ -540,7 +632,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservative = {
+		democratic = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -580,7 +672,7 @@ continent = {
 					"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 			}
@@ -593,6 +685,16 @@ continent = {
 		neutrality = {
 				male = {
 					"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+			}
+		}
+		stalinism = {
+				male = {
+					"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+			}
+		}
+		conservatism = {
+				male = {
+					"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 			}
 		}
 		trotskyism = {
@@ -644,7 +746,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservative = {
+		democratic = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -681,7 +783,17 @@ continent = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
 			}
 		}
-		conservative = {
+		stalinism = {
+				male = {
+					"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+			}
+		}
+		democratic = {
+				male = {
+					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+			}
+		}
+		conservatism = {
 				male = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 			}
@@ -745,7 +857,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		conservative = {
+		democratic = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
@@ -1097,7 +1209,7 @@ RAJ = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
@@ -1130,7 +1242,7 @@ PAK = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
@@ -1192,7 +1304,7 @@ AFG = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 			}
@@ -1351,7 +1463,7 @@ BAH = {
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
@@ -1401,7 +1513,7 @@ BLZ = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 			}
 		}
-		conservative = {
+		democratic = {
 				male = {
 					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 			}

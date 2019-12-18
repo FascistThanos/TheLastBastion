@@ -61,20 +61,20 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 98
+	democratic = 98
 	fascism = 1
 	communism = 1
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservative
+		ruling_party = democratic
 		last_election = "1938.6.17"
 		election_frequency = 48
 		elections_allowed = yes
@@ -85,7 +85,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
 	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}

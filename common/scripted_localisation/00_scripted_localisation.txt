@@ -22,7 +22,7 @@ defined_text = { # Country
 			original_tag = GER
 			OR = {
 				has_government = communism
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 		localization_key = GER_VOLKS_WAGEN_NAME
@@ -278,7 +278,7 @@ defined_text = {
 				NZL = { not = { is_subject_of = ENG } }
 			}
 		}
-		localization_key = AST_conservative
+		localization_key = AST_democratic
 	}
 	text = {
 		trigger = {
@@ -287,7 +287,7 @@ defined_text = {
 				AST = { not = { is_subject_of = ENG } }
 			}
 		}
-		localization_key = NZL_conservative
+		localization_key = NZL_democratic
 	}
 	text = {
 		localization_key = AST_NZL_NO_PUPPET_FALLBACK
@@ -368,7 +368,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -390,7 +390,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -412,7 +412,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -434,7 +434,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -456,7 +456,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -496,7 +496,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -518,7 +518,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -540,7 +540,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -562,7 +562,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}
@@ -584,7 +584,7 @@ defined_text = {
 		trigger = {
 			original_tag = ENG
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
 			}

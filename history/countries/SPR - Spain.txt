@@ -59,13 +59,13 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 47
+	democratic = 47
 	fascism = 46
 	communism = 7
 }
@@ -160,7 +160,7 @@ set_stability = 0.5
 		elections_allowed = no
 	}
 	set_popularities = {
-		conservative = 22
+		democratic = 22
 		fascism = 76
 		communism = 2
 	}
@@ -174,7 +174,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_AZANA_DESC"
 	picture = "Portrait_Spain_Manuel_Azana.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = democratic
 	traits = {
 		#
 	}
@@ -185,7 +185,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_DIAZ_DESC"
 	picture = "Portrait_Spain_Jose_Diaz.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 		#
 	}

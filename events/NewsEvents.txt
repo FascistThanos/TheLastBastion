@@ -1192,7 +1192,7 @@ news_event = {
 				NOT = { original_tag = FRA }
 				AND = {
 					original_tag = FRA
-					NOT = { has_government = conservative }
+					NOT = { has_government = democratic }
 				}
 			}
 			NOT = { TAG = GER	}
@@ -1212,7 +1212,7 @@ news_event = {
 		name = news.34.c
 		trigger = {
 			original_tag = FRA
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 }
@@ -5187,7 +5187,7 @@ news_event = {
 	}
 	desc = {
 		text = news.159.d_02
-		trigger = { FROM = { has_government = conservative } }
+		trigger = { FROM = { has_government = democratic } }
 	}
 	desc = {
 		text = news.159.d_03
@@ -6308,7 +6308,7 @@ news_event = {
 	option = {
 		name = news.178.c
 		trigger = {
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 
@@ -6355,7 +6355,7 @@ news_event = {
 	option = {
 		name = news.179.c
 		trigger = {
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 
@@ -6412,7 +6412,7 @@ news_event = {
 	option = {
 		name = news.180.c
 		trigger = {
-			has_government = conservative
+			has_government = democratic
 			NOT = {
 				tag = FRA
 			}
@@ -6471,7 +6471,7 @@ news_event = {
 			NOT = {
 				tag = ITA
 			}
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 
@@ -6486,7 +6486,7 @@ news_event = {
 				tag = ITA
 			}
 			NOT = {
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 	}
@@ -7153,7 +7153,7 @@ news_event = {
 	option = {
 		name = news.196.a
 		trigger = {
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 
@@ -7385,7 +7385,7 @@ news_event = {
 		name = news.200.c
 		trigger = {
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = communism
 			}
 			NOT = {
@@ -7404,7 +7404,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					has_government = conservative
+					has_government = democratic
 					has_government = communism
 				}
 			}
@@ -7601,7 +7601,7 @@ news_event = {
 	option = {
 		name = news.203.a
 		trigger = {
-			has_government = conservative
+			has_government = democratic
 			NOT = {
 				is_in_faction_with = GER
 			}
@@ -7803,7 +7803,7 @@ news_event = {
 	option = {
 		name = news.206.c
 		trigger = {
-			has_government = conservative
+			has_government = democratic
 			NOT = {
 				OR = {
 					tag = ENG
@@ -9229,7 +9229,7 @@ news_event = {
 	}
 }
 
-#US Supports conservative Rebellions
+#US Supports democratic Rebellions
 news_event = {
 	id = news.230
 	title = news.230.t
@@ -9260,7 +9260,7 @@ news_event = {
 	option = {
 		name = news.230.c
 		trigger = {
-			has_government = conservative
+			has_government = democratic
 			NOT = {
 				OR = {
 					tag = USA
@@ -9275,7 +9275,7 @@ news_event = {
 		name = news.230.e
 		trigger = {
 			NOT = {
-				has_government = conservative
+				has_government = democratic
 				tag = USA
 				tag = MEX
 				tag = ARG
@@ -11258,7 +11258,7 @@ news_event = {
 			NOT = {
 				TAG = HUN
 				TAG = GER
-				has_government = conservative
+				has_government = democratic
 			}
 		}
 	}
@@ -11269,7 +11269,7 @@ news_event = {
 				TAG = HUN
 				TAG = GER
 			}
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 }
@@ -11407,7 +11407,7 @@ news_event = {
 	}
 }
 
-#Hungary elects a conservative king
+#Hungary elects a democratic king
 news_event = {
 	id = news.296
 	title = news.296.t
@@ -11438,7 +11438,7 @@ news_event = {
 		name = news.296.c
 		trigger = {
 			NOT = { TAG = HUN }
-			has_government = conservative
+			has_government = democratic
 		}
 	}
 }
@@ -11465,7 +11465,7 @@ news_event = {
 		trigger = {
 			NOT = { TAG = HUN }
 			OR = {
-				has_government = conservative
+				has_government = democratic
 				has_government = communism
 			}
 		}

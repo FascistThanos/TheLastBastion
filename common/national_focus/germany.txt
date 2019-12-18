@@ -1630,7 +1630,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 				}
 				HUN = {
 					add_timed_idea = { idea = GER_align_hungary_democratic days = 730 }
@@ -1693,7 +1693,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_government = conservative
+					has_government = democratic
 				}
 				ROM = {
 					add_timed_idea = { idea = GER_align_romania_democratic days = 730 }
@@ -2994,7 +2994,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 					add_timed_idea = { idea = democratic_influence days = 1095 }
@@ -3651,7 +3651,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 					add_timed_idea = { idea = democratic_influence days = 1095 }
@@ -4222,7 +4222,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 					add_timed_idea = { idea = democratic_influence days = 1095 }
@@ -4858,7 +4858,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 					add_timed_idea = { idea = democratic_influence days = 1095 }
@@ -4920,7 +4920,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 					add_timed_idea = { idea = democratic_influence days = 1095 }
@@ -4988,7 +4988,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 					add_timed_idea = { idea = democratic_influence days = 1095 }
@@ -5050,7 +5050,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = conservative
+							has_government = democratic
 						}
 					}
 					add_timed_idea = { idea = democratic_influence days = 1095 }
@@ -5677,7 +5677,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_reestablish_free_elections }
 		bypass = {
 			has_country_flag = GER_mackensen_dead
-			NOT = { has_government = conservative }
+			NOT = { has_government = democratic }
 		}
 		available = {
 			is_puppet = no
@@ -5856,7 +5856,7 @@ focus_tree = {
 		}
 		bypass = {
 			has_country_flag = GER_mackensen_dead
-			NOT = { has_government = conservative }
+			NOT = { has_government = democratic }
 		}
 		x = -2
 		y = 1
@@ -7386,7 +7386,7 @@ focus_tree = {
 		prerequisite = { focus = GER_reestablish_free_elections }
 		available = {
 			is_puppet = no
-			conservative > 0.4
+			democratic > 0.4
 		}
 		cancel_if_invalid = yes
 		x = 2
@@ -7398,8 +7398,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = { ideology = conservative popularity = 0.1 }
-			set_politics = { ruling_party = conservative elections_allowed = yes }
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			set_politics = { ruling_party = democratic elections_allowed = yes }
 			add_ideas = { GER_wilhelm_iii }
 			add_stability = 0.05
 			hidden_effect = {

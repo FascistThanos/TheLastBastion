@@ -135,7 +135,7 @@ MEX_category_military_issues = {
 			OR = {
 				NOT = { has_idea = MEX_church_power_1 }
 				has_stability > 0.6
-				has_government = conservative
+				has_government = democratic
 				has_global_flag = flag_second_mexican_civil_war
 				has_civil_war = yes
 			}
@@ -150,7 +150,7 @@ MEX_category_military_issues = {
 
 			NOT = { has_global_flag = flag_second_mexican_civil_war } # Second Cristiada / Second Mexican Revolution are mutually exclusive
 
-			NOT = { has_government = conservative } # Government has a genuine commitment to reform
+			NOT = { has_government = democratic } # Government has a genuine commitment to reform
 
 			has_civil_war = no
 
@@ -196,7 +196,7 @@ MEX_category_military_issues = {
 
 			has_civil_war = no
 
-			NOT = { has_government = conservative } # Government has a genuine commitment to reform
+			NOT = { has_government = democratic } # Government has a genuine commitment to reform
 
 			OR = { # Domestic violence or antagonised world powers
 				has_completed_focus = MEX_focus_triumph_over_the_cristeros

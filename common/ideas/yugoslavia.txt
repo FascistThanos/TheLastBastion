@@ -630,7 +630,7 @@ ideas = {
 
 		YUG_milovan_djilas = {
 
-			picture = generic_conservative_reformer_western_european_2d
+			picture = generic_democratic_reformer_western_european_2d
 
 			available = {
 				if = {
@@ -643,7 +643,7 @@ ideas = {
 				original_tag = YUG
 			}
 
-			traits = { conservative_reformer }
+			traits = { democratic_reformer }
 		}
 
 		YUG_dimitrije_ljotic = {

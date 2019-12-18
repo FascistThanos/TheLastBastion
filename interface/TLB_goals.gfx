@@ -1,5 +1,10 @@
 spriteTypes = {
 
+spriteType = {
+	name = "GFX_focus_ITA_Pricinipalia_Italia"
+	texturefile = "gfx/interface/goals/Focus_ITA_Pricinipalia_Italia.dds"
+}
+
 	SpriteType = {
   name = "GFX_Focus_Bolshevik_Skull"
   texturefile = "gfx/interface/goals/Focus_Bolshevik_Skull.dds"
@@ -840,6 +845,50 @@ SpriteType = {
 SpriteType = {
   name = "GFX_Focus_TLB_secure_china"
   texturefile = "gfx/interface/goals/TLB_Secure_China.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_CommunistDefeat"
+  texturefile = "gfx/interface/goals/GFX_FRA_CommunistDefeat.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_FrenchSoldiers"
+  texturefile = "gfx/interface/goals/GFX_FRA_FrenchSoldiers.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_SoldiersFlag"
+  texturefile = "gfx/interface/goals/GFX_FRA_SoldiersFlag.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_FrenchFlag"
+  texturefile = "gfx/interface/goals/GFX_FRA_FrenchFlag.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_JetFighter"
+  texturefile = "gfx/interface/goals/GFX_FRA_JetFighter.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_CrushCommunists"
+  texturefile = "gfx/interface/goals/GFX_FRA_CrushCommunists.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_ShieldGuns"
+  texturefile = "gfx/interface/goals/GFX_FRA_ShieldGuns.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_MilitaryLoyalty"
+  texturefile = "gfx/interface/goals/GFX_FRA_MilitaryLoyalty.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_CyprusDeal"
+  texturefile = "gfx/interface/goals/GFX_FRA_CyprusDeal.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_Wargoal"
+  texturefile = "gfx/interface/goals/GFX_FRA_Wargoal.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_CommunistsDeath"
+  texturefile = "gfx/interface/goals/GFX_FRA_CommunistsDeath.dds"
 }
 
 

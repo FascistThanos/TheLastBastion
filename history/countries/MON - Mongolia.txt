@@ -14,7 +14,7 @@ add_ideas = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -26,15 +26,15 @@ add_ideas = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "MON_1939"
 	set_technology = {
 		support_weapons = 1
 		gw_artillery = 1
-		
+
 		#doctrines
 		air_superiority = 1
-		
+
 		mass_assault = 1
 		pocket_defence = 1
 		defence_in_depth = 1
@@ -87,7 +87,7 @@ create_country_leader = {
 		desc = "POLITICS_KHORLOOGIIN_CHOIBALSAN_DESC"
 		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 		expire = "1965.1.1"
-		ideology = stalinism
+		ideology = leninism
 		traits = {
 			#
 		}

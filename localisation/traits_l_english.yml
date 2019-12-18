@@ -1,4 +1,4 @@
-﻿conservative﻿l_english:
+﻿l_english:
  cc_leader:0 "General"
  fm_leader:0 "Field Marshal"
  navy_leader:0 "Admiral"
@@ -652,7 +652,7 @@
  british_bulldog:0 "British Bulldog"
  chamberlain_appeaser:0 "Appeaser"
  rearmer:0 "Rearmer"
- conservative_grandee:0 "Conservative Grandee"
+ democratic_grandee:0 "democratic Grandee"
  genial_anti_revolutionary:0 "Genial Anti-Revolutionary"
  liberal_journalist:0 "Liberal Journalist"
  anti_fascist_agent:0 "Anti-Fascist Agent"

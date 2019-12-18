@@ -1,0 +1,18 @@
+state = {
+  id = 844
+  name = "Montagnes"
+  state_category = pastoral
+  manpower = 1032800
+
+  history = {
+    owner = FRA
+    add_claim_by = LIB
+    buildings = {
+      infrastructure = 2
+    }
+  }
+
+  provinces = {
+    5070 8065 10762
+  }
+}

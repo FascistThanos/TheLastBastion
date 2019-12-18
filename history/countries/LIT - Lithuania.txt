@@ -75,7 +75,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	conservative = 20
+	democratic = 20
 	fascism = 15
 	neutrality = 15
 	communism = 50
@@ -106,7 +106,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
 		#
 	}

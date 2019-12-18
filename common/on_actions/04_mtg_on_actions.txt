@@ -90,7 +90,7 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = ENG
-					has_government = conservative
+					has_government = democratic
 					FROM = {
 						has_government = fascism
 						has_completed_focus = ENG_organize_the_blackshirts
@@ -139,7 +139,7 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = USA
-					has_government = conservative
+					has_government = democratic
 					FROM = {
 						original_tag = USA
 						OR = {
@@ -149,13 +149,13 @@ on_actions = {
 					}
 				}
 				drop_cosmetic_tag = yes # we are done here
-				set_country_flag = conservative_usa_won_civil_war
+				set_country_flag = democratic_usa_won_civil_war
 			}
 			#End of British Communist Civil War
 			if = {
 				limit = {
 					original_tag = ENG
-					has_government = conservative
+					has_government = democratic
 					has_completed_focus = ENG_concessions_to_the_trade_unions
 				}
 				country_event = { id = mtg_britain.56 }
@@ -199,7 +199,7 @@ on_actions = {
 				random_other_country = {
 					limit = {
 						original_tag = ENG
-						has_government = conservative
+						has_government = democratic
 					}
 					transfer_navy = { target = ENG }
 					every_unit_leader = {
@@ -489,7 +489,7 @@ on_actions = {
 						desc = "POLITICS_DIONISIO_ENCINA_DESC"
 						picture = "GFX_portrait_mex_dionisio_encina"
 						expire = "1965.1.1"
-						ideology = stalinism
+						ideology = leninism
 						traits = {
 							staunch_stalinist
 						}
