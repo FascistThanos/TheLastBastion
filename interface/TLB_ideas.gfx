@@ -15,6 +15,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ITA_Mussolini_Jailed.dds"
 	}
 
+	#spriteType = {
+	#	name = "GFX_idea_ITA_italia_electorum"
+	#	texturefile = "gfx/interface/ideas/idea_ITA_Italia_Electorum.dds"
+	#}
+
 	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"

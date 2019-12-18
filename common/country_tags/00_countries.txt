@@ -188,3 +188,8 @@ BAW = "countries/Bade-Wurtemberg.txt"
 UOB = "countries/Union of the Benelux.txt"
 KUR = "countries/Kurdistan.txt"
 SSD = "countries/South Sudan.txt"
+
+PAP = "countries/Papal States.txt"
+SRD = "countries/Sardinia-Piedmont.txt"
+SIC = "countries/Two-Sicilies.txt"
+VEN = "countries/Venice.txt"
