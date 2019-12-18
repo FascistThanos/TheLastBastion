@@ -847,6 +847,10 @@ SpriteType = {
   texturefile = "gfx/interface/goals/TLB_Secure_China.dds"
 }
 SpriteType = {
+  name = "GFX_Focus_TLB_panama_deal"
+  texturefile = "gfx/interface/goals/deal_panama.dds"
+}
+SpriteType = {
   name = "GFX_FRA_CommunistDefeat"
   texturefile = "gfx/interface/goals/GFX_FRA_CommunistDefeat.dds"
 }
@@ -890,6 +894,7 @@ SpriteType = {
   name = "GFX_FRA_CommunistsDeath"
   texturefile = "gfx/interface/goals/GFX_FRA_CommunistsDeath.dds"
 }
+
 
 
 

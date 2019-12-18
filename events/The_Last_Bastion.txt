@@ -12,7 +12,7 @@ country_event = {
     name = tlb.1.a
   }
 }
-country_event = {
+country_event = {  #Proposition from the United States
   id = tlb.2
   title = tlb.2.t
   desc = tlb.2.d
@@ -20,10 +20,10 @@ country_event = {
 
   is_triggered_only = yes
 
-  option = {
+  option = { #Accepted proposition
     name = tlb.2.a
   }
-  option = {
+  option = { #Declined proposition
     name = tlb.2.b
     hidden_effect = {
       create_wargoal = {
@@ -31,5 +31,181 @@ country_event = {
         target = MEX
       }
     }
+  }
+}
+country_event = { #Urge Demand of Belize
+  id = tlb.3
+  title = tlb.3.t
+  desc = tlb.3.d
+  picture = GFX_news_event_017
+
+  is_triggered_only = yes
+
+  option = { #Send diplomat
+    name = tlb.3.a
+    GUA = {
+      country_event = tlb.4
+    }
+  }
+}
+country_event = { #USA Urges the demand of Belize
+  id = tlb.4
+  title = tlb.4.t
+  desc = tlb.4.d
+  picture = GFX_report_event_chinese_soldiers
+
+  mean_time_to_happen = {
+    days = 5
+  }
+
+  option = { #GUA demands it
+    name = tlb.4.a
+    ai_chance = {
+      base = 90
+    }
+    ENG = {
+      country_event = tlb.5
+    }
+  }
+  option = { #GUA decides no
+    name = tlb.4.b
+    ai_chance = {
+      base = 10
+    }
+    USA = {
+      country_event = tlb.7
+    }
+  }
+}
+country_event = { #GUA demands Belize
+  id = tlb.5
+  title = tlb.5.t
+  desc = tlb.5.d
+  picture = GFX_report_event_us_panay_demands
+
+  is_triggered_only = yes
+
+  option = { #Give it up
+    name = tlb.5.a
+    ai_chance = {
+      base = 70
+    }
+    GUA = {
+      transfer_state = 311
+      country_event = tlb.6
+    }
+  }
+  option = { #Go to war
+    name = tlb.5.b
+    ai_chance = {
+      base = 30
+    }
+    GUA = {
+      country_event = tlb.8
+    }
+  }
+}
+country_event = { #ENG gives up Belize
+  id = tlb.6
+  title = tlb.6.t
+  desc = tlb.6.d
+  picture = GFX_report_event_generic_sign_treaty1
+
+  mean_time_to_happen = {
+    days = 10
+  }
+
+  option = { #survey the land
+    name = tlb.6.a
+  }
+}
+country_event = { #GUA does not want to demand
+  id = tlb.7
+  title = tlb.7.t
+  desc = tlb.7.d
+  picture = GFX_report_event_hol_cabinet_de_geer
+
+  mean_time_to_happen = {
+    days = 5
+  }
+
+  option = { #what they wish
+    name = tlb.7.a
+  }
+}
+country_event = { #ENG Denies demands
+  id = tlb.8
+  title = tlb.8.t
+  desc = tlb.8.d
+  picture = GFX_report_event_generic_panzer_attack
+
+  is_triggered_only = yes
+
+  option = { #Don't push the demand
+    name = tlb.8.a
+    ai_chance = {
+      base = 50
+    }
+  }
+  option = { #Ask the US for help
+    name = tlb.8.b
+    ai_chance = {
+      base = 50
+    }
+    USA = {
+      country_event = tlb.9
+    }
+  }
+}
+country_event = { #GUA asks for help
+  id = tlb.9
+  title = tlb.9.t
+  desc = tlb.9.d
+  picture = GFX_report_event_hol_cabinet_de_geer
+
+  mean_time_to_happen = {
+    days = 5
+  }
+
+
+  option = { #join them in their War
+    name = tlb.9.a
+    hidden_effect = {
+      GUA = {
+        declare_war_on = {
+        	target = ENG
+        	type = take_state_focus
+          generator = {
+            311
+          }
+        }
+      }
+      add_to_war = {
+        targeted_alliance = GUA
+        enemy = ENG
+    	}
+    }
+  }
+}
+country_event = { #Honduras Annex El Salvador
+  id = tlb.10
+  title = tlb.10.t
+  desc = tlb.10.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = tlb.10.a
+  }
+}
+country_event = {
+  id = tlb.40
+  title = tlb.40.t
+  desc = tlb.40.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = tlb.40.a
   }
 }

@@ -19,22 +19,33 @@
  tlb.2.d:0 "We have recieved a formal response from the Mexican government. They've refused to open their borders to our influencers in exchange for economic aid. Such poor administration should be removed and replaced with some more... complacent."
  tlb.2.a:0 "We shouldn't press the matter."
  tlb.2.b:0 "Some greater action must be taken."
+ tlb.3.t:0 "Urge Guatemala to Demand Belize"
+ tlb.3.d:0 "In light of the falling Empire of Britain, we can encourage others to take advantage. Guatemala has a small border with the British and they would not fight a war over such a small piece of land. Such as with Canada, they should no longer hold these lands as their colonies break free and they're on the verge of civil war. If we take advantage now, this should be less of a problem later."
+ tlb.3.a:0 "Send the diplomat"
+ tlb.4.t:0 "The United States Urges us to Demand Belize"
+ tlb.4.d:0 "A diplomat from the United States of America has informed us that they would back us in the demand of Belize from the United Kingdom. Their empire is falling apart, their colonies breaking away, and their internal politics are similar to a dumpster fire. If they were to decline, the United States of America will back our demand and threaten war if they refuse."
+ tlb.4.a:0 "Send the demand"
+ tlb.4.b:0 "We'd rather not risk a war"
+ tlb.5.t:0 "Guatemala Demands Belize"
+ tlb.5.d:0 "The Guatemalan people have fabricated a claim on British Honduras. While the land is not historically theirs, they have demanded it anyway, and we have little choice but to accept. If we were to decline, the United States may back them in their demands. If there was a war to break our between us and the United States, the Fascists would no doubt rise up."
+ tlb.5.a:0 "Cede the state"
+ tlb.5.b:0 "A transparent bluff"
+ tlb.6.t:0 "The United Kingdom Cedes Belize"
+ tlb.6.d:0 "The British have weighed their options and have decided to cede Belize to us. They've realized that the crumbling of their empire cannot be stopped, and a war with the United States of America would just quicken the pace. We haven't prospected through the newly attained lands, but it seems to have a lot of potential for development."
+ tlb.6.a:0 "Survey it further"
+ tlb.7.t:0 "Guatemala Decides not to Demand Belize"
+ tlb.7.d:0 "After the our diplomats have offered our backing in a demand of British Honduras. While it was not our choice, we have to accept it. Even in the collapse of their empire, they still strike fear in minor countries across the world. We'll have to see about this another time. Hopefully it won't cause something much worse."
+ tlb.8.t:0 "The British Have Denied Us"
+ tlb.8.d:0 "Despite the evidence of their falling empire, the United Kindom has denied out demands. We have two options. The United States will back us in the event of a war. The Empire could not hold against the great North American power, and we would be able to easily defeat them."
+ tlb.8.a:0 "Don't press the issue"
+ tlb.8.b:0 "They've made their choice"
+ tlb.9.t:0 "The Guatemalans Decide War"
+ tlb.9.d:0 "The Guatemalans have sent their demands to the United Kingdom. For some reason, they still have the idea that they can win a war against us. Now we have to keep true to our promise and back the Guatemalans in their war. The United Kingdom will have to see our military power on the battlefield."
+ tlb.9.a:0 "We did promise backup"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ tlb.40.t:0 "Placeholder"
+ tlb.40.d:0 "Placeholder Event"
+ tlb.40.a:0 "How did I get this event?"
 
 #Focuses
  TLB_The_Last_Bastion:0 "The Last Bastion"
@@ -62,3 +73,33 @@
  TLB_aid_mexico3:0 "Industrialized Heartland"
  TLB_aid_mexico3_desc:0 "To be completed"
  TLB_LAMexicoCityRailroad:0 "Los Angeles-Mexico City Railroad"
+ TLB_aid_mexico4:0 "Prepare Them for War"
+ TLB_aid_mexico4_desc:0 "To be completed"
+ TLB_push_guatemala:0 "Push Guatemala"
+ TLB_push_guatemala_desc:0 "To be completed"
+ TLB_urban_development:0 "Urban Infrastructure Development"
+ TLB_urban_development_desc:0 "To be completed"
+ TLB_economic_dev_gua:0 "Economic Development in Guatemala"
+ TLB_economic_dev_gua_desc:0 "To be completed"
+ TLB_war_economy_gua:0 "Develop the Guatemalan War Economy"
+ TLB_war_economy_gua_desc:0 "To be completed"
+ TLB_honduras_over_ES:0 "Honduras-El Salvador Cooperation"
+ TLB_honduras_over_ES_desc:0 "To be completed"
+ TLB_develop_el_salvador:0 "Infrastructure Development in El Salvador"
+ TLB_develop_el_salvador_desc:0 "To be completed"
+ TLB_civ_industry_ES:0 "Civilian Industry in El Salvador"
+ TLB_civ_industry_ES_desc:0 "To be completed"
+ TLB_naval_union_esho:0 "Naval Cooperation"
+ TLB_naval_union_esho_desc:0 "To be completed"
+ TLB_PAN_protectorate:0 "Establish a Panaman Protectorate"
+ TLB_PAN_protectorate_desc:0 "To be completed"
+ TLB_CRjoinPAN:0 "Expand Our Protectorate"
+ TLB_CRjoinPAN_desc:0 "To be completed"
+ TLB_deal_to_NIC:0 "Nicaraguan Ambassador"
+ TLB_deal_to_NIC_desc:0 "To be completed"
+ TLB_industrialize_NIC:0 "Industrialization in Nicaragua"
+ TLB_industrialize_NIC_desc:0 "To be completed"
+ TLB_infrastructure_NIC:0 "Infrastructure Development in Nicaragua"
+ TLB_infrastructure_NIC_desc:0 "To be completed"
+ TLB_arms_NIC:0 "Military Buildup in Nicaragua"
+ TLB_arms_NIC_desc:0 "To be completed"

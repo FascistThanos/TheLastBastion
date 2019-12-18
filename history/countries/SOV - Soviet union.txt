@@ -265,9 +265,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
+	conservative = 5
+	liberal = 5
 	fascism = 2
-	trotskyism = 88
+	trotskyism = 55
+	maoism = 8
+	communism = 20
+	socialism = 5
 }
 
 create_faction = Comintern
@@ -277,7 +281,7 @@ add_to_faction = TAN
 
 
 add_ideas = {
-	home_of_revolution
+	SOV_stalinthreat
 }
 
 create_country_leader = {

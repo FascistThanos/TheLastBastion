@@ -144,6 +144,7 @@ focus_tree = {
 
 		completion_reward = {
 			277 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -165,6 +166,7 @@ focus_tree = {
 
 		completion_reward = {
 			478 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -172,6 +174,7 @@ focus_tree = {
 				}
 			}
 			485 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -179,6 +182,7 @@ focus_tree = {
 				}
 			}
 			277 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -200,11 +204,37 @@ focus_tree = {
 
 		completion_reward = {
 			277 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+			}
+			483 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_aid_mexico4
+		icon = GFX_Generic_Industry_Tanks
+		cost = 5
+		prerequisite = {
+			focus = TLB_aid_mexico1
+		}
+
+		x = 8
+		y = 5
+
+		completion_reward = {
+			277 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -370,14 +400,372 @@ focus_tree = {
 	}
 	focus = {
 		id = TLB_secure_CA
-		text = TLB_secure_CA
 		icon = GFX_Generic_Central_America
+		prerequisite = {
+			focus = TLB_aid_mexico3
+		}
+		prerequisite = {
+			focus = TLB_aid_mexico2
+		}
+		prerequisite = {
+			focus = TLB_aid_mexico4
+		}
+		prerequisite = {
+			focus = TLB_LAMexicoCityRailroad
+		}
+
 		cost = 10.00
-		x = 15
-		y = 10
+
+		x = 9
+		y = 6
+
 		completion_reward = {
 			add_political_power = 50
 		}
 	}
+	focus = {
+		id = TLB_PAN_protectorate
+		icon = GFX_Focus_TLB_panama_deal
+		prerequisite = {
+			focus = TLB_secure_CA
+		}
 
+		cost = 10
+
+		x = 8
+		y = 7
+
+		completion_reward = {
+			PAN = {
+				country_event = tlb.40
+			}
+		}
+	}
+	focus = {
+		id = TLB_CRjoinPAN
+		icon = GFX_Generic_Chinese_Soldiers
+		available = {
+			PAN = {
+				is_puppet_of = USA
+			}
+		}
+		prerequisite = {
+			focus = TLB_secure_CA
+		}
+
+		cost = 10
+
+		x = 10
+		y = 7
+
+		completion_reward = {
+			COS = {
+				country_event = tlb.40
+			}
+		}
+	}
+	focus = {
+		id = TLB_push_guatemala
+		icon = GFX_focus_attack_britain
+		prerequisite = {
+			focus = TLB_secure_CA
+		}
+
+		cost = 10
+
+		x = 6
+		y = 7
+
+		completion_reward = {
+			country_event = tlb.3
+		}
+	}
+	focus = {
+		id = TLB_urban_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = TLB_push_guatemala
+		}
+
+		cost = 10
+
+		x = 5
+		y = 8
+
+		completion_reward = {
+			if = {
+				limit = {
+					GUA = {
+						NOT = {
+							controls_state = 311
+						}
+					}
+				}
+				313 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					GUA = {
+						controls_state = 311
+					}
+				}
+				313 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				311 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_economic_dev_gua
+		icon = GFX_Generic_Industry02
+		prerequisite = {
+			focus = TLB_push_guatemala
+		}
+
+		cost = 10
+
+		x = 7
+		y = 8
+
+		completion_reward = {
+			313 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_war_economy_gua
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = TLB_economic_dev_gua
+		}
+		prerequisite = {
+			focus = TLB_urban_development
+		}
+
+		cost = 10
+
+		x = 6
+		y = 9
+
+		completion_reward = {
+			313 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_honduras_over_ES
+		icon = GFX_Generic_Chinese_Soldiers
+		prerequisite = {
+			focus = TLB_secure_CA
+		}
+
+		cost = 10
+
+		x = 9
+		y = 8
+
+		completion_reward = {
+			HON = {
+				country_event = tlb.10
+			}
+		}
+	}
+	focus = {
+		id = TLB_develop_el_salvador
+		icon = GFX_Generic_Railroads
+		prerequisite = {
+			focus = TLB_honduras_over_ES
+		}
+
+		cost = 10
+
+		x = 8
+		y = 9
+
+		completion_reward = {
+			314 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_civ_industry_ES
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = TLB_honduras_over_ES
+		}
+
+		cost = 10
+
+		x = 10
+		y = 9
+
+		completion_reward = {
+			314 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_naval_union_esho
+		icon = GFX_Generic_Naval_Industry
+		prerequisite = {
+			focus = TLB_civ_industry_ES
+		}
+		prerequisite = {
+			focus = TLB_develop_el_salvador
+		}
+
+		cost = 10
+
+		x = 9
+		y = 10
+
+		completion_reward = {
+			314 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = naval_dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			312 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = naval_dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_deal_to_NIC
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {
+			focus = TLB_secure_CA
+		}
+
+		cost = 10
+
+		x = 12
+		y = 7
+
+		completion_reward = {
+			NIC = {
+				country_event = tlb.40
+			}
+		}
+	}
+	focus = {
+		id = TLB_industrialize_NIC
+		icon = GFX_Generic_Industry02
+		prerequisite = {
+			focus = TLB_deal_to_NIC
+		}
+
+		cost = 10
+
+		x = 11
+		y = 8
+
+		completion_reward = {
+			317 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_infrastructure_NIC
+		icon = GFX_Generic_Railroads
+		prerequisite = {
+			focus = TLB_deal_to_NIC
+		}
+
+		cost = 10
+
+		x = 13
+		y = 8
+
+		completion_reward = {
+			317 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_arms_NIC
+		icon = GFX_Generic_Industry_Tanks
+		prerequisite = {
+			focus = TLB_industrialize_NIC
+		}
+		prerequisite = {
+			focus = TLB_infrastructure_NIC
+		}
+
+		cost = 10
+
+		x = 12
+		y = 9
+
+		completion_reward = {
+			317 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
 }

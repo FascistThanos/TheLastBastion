@@ -53,13 +53,15 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = trotskyism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
+	communism = 11
+	trotskyism = 64
+	maoism = 25
 }
 
 create_country_leader = {
