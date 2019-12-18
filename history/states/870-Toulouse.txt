@@ -1,0 +1,25 @@
+state = {
+  id = 870
+  name = "Toulouse"
+  state_category = large_city
+  manpower = 1593400
+
+  history = {
+    owner = FRA
+    add_core_of = FRA
+    add_core_of = FPR
+
+		victory_points = {
+			6766 5
+		}
+
+    buildings = {
+      infrastructure = 6
+			air_base = 2
+    }
+  }
+
+  provinces = {
+    929 943 3749 3948 6766 11702
+  }
+}

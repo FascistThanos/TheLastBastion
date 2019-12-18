@@ -1,0 +1,23 @@
+state = {
+  id = 869
+  name = "Savoia Occidentale"
+  state_category = town
+  manpower = 538400
+
+  history = {
+    owner = ITA
+    add_core_of = ITA
+    add_claim_by = FRA
+    add_claim_by = FPR
+
+    buildings = {
+      infrastructure = 4
+      dockyard = 2
+      industrial_complex = 1
+    }
+  }
+
+  provinces = {
+    770 3772 11721 11723 11730 11891
+  }
+}

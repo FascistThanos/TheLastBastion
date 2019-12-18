@@ -1,0 +1,26 @@
+state = {
+  id = 864
+  name = "Gdansk"
+  manpower = 366730
+  state_category = city
+
+  history = {
+    owner = GER
+    add_core_of = GER
+		victory_points = {
+			362 10
+		}
+    buildings = {
+      infrastructure = 7
+      dockyard = 1
+      industrial_complex = 1
+			362 = {
+				naval_base = 5
+			}
+    }
+  }
+
+  provinces = {
+    362 9263
+  }
+}

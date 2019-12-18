@@ -1,0 +1,32 @@
+state = {
+  id = 868
+  name = "Montferatt"
+  state_category = large_town
+  manpower = 2108534
+
+  history = {
+    owner = ITA
+    add_core_of = ITA
+    add_claim_by = FRA
+    add_claim_by = FPR
+
+		victory_points = {
+			6780 5
+		}
+
+    buildings = {
+      infrastructure = 5
+			industrial_complex = 1
+      arms_factory = 2
+    }
+  }
+
+  provinces = {
+    611 776 3782 6635 6780 9738 11570
+  }
+
+  resources = {
+    steel = 23
+    aluminium = 16
+  }
+}
