@@ -189,7 +189,14 @@ UOB = "countries/Union of the Benelux.txt"
 KUR = "countries/Kurdistan.txt"
 SSD = "countries/South Sudan.txt"
 
+##### For Italy breakup #####
 PAP = "countries/Papal States.txt"
 SRD = "countries/Sardinia-Piedmont.txt"
 SIC = "countries/Two-Sicilies.txt"
-VEN = "countries/Venice.txt"
+VIC = "countries/Venice.txt"
+SAV = "countires/Savoy.txt"
+
+##### For soviet breakup #####
+MOW = "countries/Moscow.txt"
+KAE = "countries/KareloSSR.txt"
+YAK = "countries/Yakutia.txt"

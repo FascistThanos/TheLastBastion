@@ -3,7 +3,7 @@ state={
 	id=195
 	name="STATE_195"
 	manpower = 3750158
-	
+
 	state_category = metropolis
 
 	history={
@@ -23,6 +23,7 @@ state={
 			}
 		}
 		add_core_of = SOV
+		add_core_of = KAE
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 7
@@ -31,6 +32,6 @@ state={
 	}
 
 	provinces={
-		79 149 3151 6174 11068 
+		79 149 3151 6174 11068
 	}
 }

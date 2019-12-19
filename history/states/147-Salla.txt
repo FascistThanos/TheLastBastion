@@ -3,15 +3,16 @@ state=
 	id=147
 	name="STATE_147"
 	manpower = 4630
-	
+
 	state_category = enclave
-	
-	history = {	
+
+	history = {
 		owner = FIN
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = FIN
+		add_core_of = KAE
 
 		victory_points = {
 			197 1
@@ -19,6 +20,6 @@ state=
 	}
 
 	provinces={
-		197 9158 11085 	
+		197 9158 11085
 	}
 }
