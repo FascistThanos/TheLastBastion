@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
 	expire = "1953.3.1"
-	ideology = socialism #Marhaenism his own unique mix of stuff
+	ideology = socialism_type #Marhaenism his own unique mix of stuff
 	traits = {
 
 	}
