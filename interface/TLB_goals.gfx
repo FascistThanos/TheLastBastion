@@ -894,6 +894,10 @@ SpriteType = {
   name = "GFX_FRA_CommunistsDeath"
   texturefile = "gfx/interface/goals/GFX_FRA_CommunistsDeath.dds"
 }
+SpriteType = {
+  name = "GFX_FRA_French_USA_Cooperation"
+  texturefile = "gfx/interface/goals/GFX_FRA_French_USA_Cooperation.dds"
+}
 
 
 
