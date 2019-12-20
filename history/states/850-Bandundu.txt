@@ -1,7 +1,7 @@
 state = {
   id = 850
   name = "Bandundu"
-  state_category = pastoral
+  state_category = rural
   manpower = 789600
 
   resources = {
