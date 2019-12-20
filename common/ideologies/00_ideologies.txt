@@ -253,7 +253,7 @@ ideologies = {
 	socialism = {
 
 		types = {
-			socialism = {
+			socialism_type = {
 			}
 		}
 
@@ -300,8 +300,7 @@ ideologies = {
 	}
 	democratic = {
 		types = {
-			democratic = {
-
+			democratic_type = {
 			}
 		}
 

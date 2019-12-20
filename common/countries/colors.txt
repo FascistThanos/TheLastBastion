@@ -1,5 +1,3 @@
-#reload countrycolors
-
 GER = {
 	color = rgb { 56  77  100 }
 	color_ui = rgb { 76  97  121 }
@@ -11,6 +9,18 @@ ENG = {
 SOV = {
 	color = rgb { 133 34 34 }
 	color_ui = rgb { 133 34 34 }
+}
+MOW = {
+	color = rgb { 247 48 48 }
+	color_ui = rgb { 247 48 48 }
+}
+KAE = {
+	color = rgb { 57 114 24 }
+	color_ui = rgb { 57 114 24 }
+}
+YAK = {
+	color = rgb { 127 127 127 }
+	color_ui = rgb { 127 127 127 }
 }
 SWE = {
 	color = rgb { 8 89 189 }
@@ -62,6 +72,26 @@ SPR = {
 ITA = {
 	color = rgb { 94 185 61 }
 	color_ui = rgb { 150 189 60 }
+}
+PAP = {
+	color = rgb { 219 232 40 }
+	color_ui = rgb { 219 232 40 }
+}
+SRD = {
+	color = rgb { 141 194 202 }
+	color_ui = rgb { 141 194 202 }
+}
+SIC = {
+	color = rgb { 153 17 158 }
+	color_ui = rgb { 153 17 158 }
+}
+VIC = {
+	color = rgb { 54 139 60 }
+	color_ui = rgb {54 139 60 }
+}
+SAV = {
+	color = rgb { 162 98 98 }
+	color_ui = rgb { 162 98 98 }
 }
 ROM = {
 	color = rgb { 183 161 17 }

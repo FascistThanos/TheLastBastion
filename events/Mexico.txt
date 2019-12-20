@@ -1514,7 +1514,7 @@ country_event = {
 			desc = "POLITICS_VICENTE_LOMBARDO_DESC"
 			picture = "GFX_portrait_mex_vicente_lombardo"
 			expire = "1965.1.1"
-			ideology = socialism
+			ideology = socialism_type
 			traits = {
 				the_dean_of_mexican_marxism
 			}
@@ -1560,7 +1560,7 @@ country_event = {
 			desc = "POLITICS_FRANCISCO_MUGICA_DESC"
 			picture = "GFX_portrait_mex_francisco_mugica"
 			expire = "1965.1.1"
-			ideology = socialism
+			ideology = socialism_type
 			traits = {
 				revolutionary_general
 			}
@@ -2493,7 +2493,7 @@ country_event = {
 					desc = "POLITICS_LUIS_MARIA_MARTINEZ_DESC"
 					picture = GFX_Portrait_MEX_Luis_Maria_Martinez
 					expire = "1965.1.1"
-					ideology = socialism
+					ideology = socialism_type
 					traits = {
 						primate_of_mexico
 					}

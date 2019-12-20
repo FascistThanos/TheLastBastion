@@ -142,7 +142,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_lat_fricis_menders"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_type
 	traits = {
 		#
 	}

@@ -1,9 +1,9 @@
 focus_tree = {
 	id = china_warlord_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			OR = {
@@ -16,7 +16,7 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1350 }
@@ -28,7 +28,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -39,7 +39,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -107,7 +107,7 @@ focus_tree = {
 						desc = "POLITICS_YAN XISHAN_DESC"
 						picture = "GFX_portrait_shanxi_portrait_yan_xishan"
 						expire = "1965.1.1"
-						ideology = socialism
+						ideology = socialism_type
 						traits = {
 							#
 						}
@@ -142,7 +142,7 @@ focus_tree = {
 						desc = "POLITICS_LI_ZONGREN_DESC"
 						picture = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
 						expire = "1965.1.1"
-						ideology = socialism
+						ideology = socialism_type
 						traits = {
 							#
 						}
@@ -177,7 +177,7 @@ focus_tree = {
 						desc = "POLITICS_LONG_YUN_DESC"
 						picture = "GFX_portrait_yun_long_yun"
 						expire = "1965.1.1"
-						ideology = socialism
+						ideology = socialism_type
 						traits = {
 							#
 						}
@@ -212,7 +212,7 @@ focus_tree = {
 						desc = ""
 						picture = "GFX_portrait_xsm_ma_bufang"
 						expire = "1965.1.1"
-						ideology = socialism
+						ideology = socialism_type
 						traits = {
 							#
 						}
@@ -247,7 +247,7 @@ focus_tree = {
 						desc = "POLITICS_SHENG_SHICAI_DESC"
 						picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
 						expire = "1965.1.1"
-						ideology = socialism
+						ideology = socialism_type
 						traits = {
 							#
 						}
@@ -359,7 +359,7 @@ focus_tree = {
 				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
 			}
 			if = {
-				limit = {			
+				limit = {
 					AND = {
 						has_completed_focus = CHI_cooperation_with_the_communists
 						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
@@ -377,11 +377,11 @@ focus_tree = {
 						has_completed_focus = CHI_cooperation_with_the_nationalists
 						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
 					}
-				} 
+				}
 				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
 			}
 			if = {
-				limit = {			
+				limit = {
 					AND = {
 						has_completed_focus = CHI_cooperation_with_the_communists
 						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
@@ -395,7 +395,7 @@ focus_tree = {
 	focus = {
 		id = CHI_technological_cooperation
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = CHI_cooperation_with_the_nationalists }		
+		prerequisite = { focus = CHI_cooperation_with_the_nationalists }
 		x = -1
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_nationalists
@@ -437,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = CHI_new_model_province
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CHI_cooperation_with_the_nationalists }		
+		prerequisite = { focus = CHI_cooperation_with_the_nationalists }
 		x = 1
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_nationalists
@@ -576,7 +576,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -643,7 +643,7 @@ focus_tree = {
 			NOT = { has_war_with = CHI }
 			if = {
 				limit = {
-					WTT_not_taking_over_national_leadership = no				
+					WTT_not_taking_over_national_leadership = no
 				}
 				WTT_not_taking_over_national_leadership = yes
 			}
@@ -718,7 +718,7 @@ focus_tree = {
 				add_core_of = ROOT
 			}
 		}
-	}	
+	}
 
 	#######################
 	##### Communists ######
@@ -798,7 +798,7 @@ focus_tree = {
 	focus = {
 		id = CHI_land_redistribution
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = CHI_cooperation_with_the_communists }		
+		prerequisite = { focus = CHI_cooperation_with_the_communists }
 		x = 0
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_communists
@@ -830,7 +830,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -1010,10 +1010,10 @@ focus_tree = {
 				any_neighbor_country = {
 					tag = event_target:WTT_communist_china
 				}
-			}			
+			}
 			NOT = { has_war_with = PRC }
 			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }			
+			SOV = { has_government = communism }
 			is_subject = no
 		}
 
@@ -1121,7 +1121,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -1161,7 +1161,7 @@ focus_tree = {
 				}
 			}
 			else_if = {
-				limit = { any_country = { is_in_faction_with = ROOT is_literally_china = yes } }				
+				limit = { any_country = { is_in_faction_with = ROOT is_literally_china = yes } }
 				random_country = {
 					limit = {
 						is_in_faction_with = ROOT
@@ -1170,14 +1170,14 @@ focus_tree = {
 					remove_from_faction = ROOT
 				}
 			}
-					
+
 		}
 	}
 
 	focus = {
 		id = CHI_institute_cross_border_raids
 		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = CHI_opposition }		
+		prerequisite = { focus = CHI_opposition }
 		x = 0
 		y = 1
 		relative_position_id = CHI_opposition
@@ -1428,14 +1428,14 @@ focus_tree = {
 					attack_skill = 2
 					defense_skill = 4
 					planning_skill = 2
-					logistics_skill = 2					
+					logistics_skill = 2
 				}
 			}
 			else_if = {
 				limit = { ROOT = { tag = YUN } }
 				create_field_marshal = {
 					name = "Long Yun"
-					gfx = GFX_portrait_yun_long_yun				
+					gfx = GFX_portrait_yun_long_yun
 					traits = { war_hero } # Fought in the Xinhai Revolution, showed personal bravery fighting Japan
 					skill = 3
 					attack_skill = 3
@@ -1624,7 +1624,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CHI_rapid_mobilization	
+			add_ideas = CHI_rapid_mobilization
 		}
 	}
 
