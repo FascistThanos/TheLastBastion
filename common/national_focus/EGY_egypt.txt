@@ -20,7 +20,7 @@ focus_tree = {
 			focus = EGY_thewafdwins 
 		}
 		mutually_exclusive = { 
-			focus = EGY_muslimbrotherhoodwins 
+			focus = EGY_ 
 		}
 		mutually_exclusive = { 
 			focus = EGY_theroyalpartywins 
@@ -37,49 +37,12 @@ focus_tree = {
 	focus = {
 		id = EGY_thewafdwins
 		icon = GFX_goal_unknown
-		x = 7
+		x = 8
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = EGY_1948elections }
-		mutually_exclusive = { 
-			focus = EGY_muslimbrotherhoodwins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_communistpartywins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_theroyalpartywins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_thefascistpartywins 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Muslim Brotherhood Wins
-	focus = {
-		id = EGY_muslimbrotherhoodwins
-		icon = GFX_goal_unknown
-		x = 2
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = EGY_1948elections }
-		mutually_exclusive = { 
-			focus = EGY_thewafdwins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_communistpartywins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_theroyalpartywins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_thefascistpartywins 
-		}
+		mutually_exclusive = { focus = EGY_theroyalpartywins }
 		ai_will_do = {
 			factor = 1
 		}
@@ -116,7 +79,7 @@ focus_tree = {
 	focus = {
 		id = EGY_americanweapons
 		icon = GFX_goal_unknown
-		x = 7
+		x = 8
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -150,11 +113,11 @@ focus_tree = {
 	focus = {
 		id = EGY_americaninvestments
 		icon = GFX_goal_unknown
-		x = 7
+		x = 8
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = EGY_IZznoibU }
+		prerequisite = { focus = EGY_BhfANtzD }
 		ai_will_do = {
 			factor = 1
 		}
@@ -164,37 +127,12 @@ focus_tree = {
 	focus = {
 		id = EGY_theroyalpartywins
 		icon = GFX_goal_unknown
-		x = 17
+		x = 15
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = EGY_1948elections }
-		mutually_exclusive = { 
-			focus = EGY_communistpartywins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_thewafdwins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_muslimbrotherhoodwins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_thefascistpartywins 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Embassy To Saudi Arabia
-	focus = {
-		id = EGY_embassytosaudiarabia
-		icon = GFX_goal_unknown
-		x = 2
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = EGY_muslimbrotherhoodwins }
+		mutually_exclusive = { focus = EGY_thewafdwins }
 		ai_will_do = {
 			factor = 1
 		}
@@ -204,7 +142,7 @@ focus_tree = {
 	focus = {
 		id = EGY_embassytousa
 		icon = GFX_goal_unknown
-		x = 7
+		x = 8
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -218,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = EGY_embassytoiraq
 		icon = GFX_goal_unknown
-		x = 17
+		x = 15
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -257,39 +195,11 @@ focus_tree = {
 			focus = EGY_thewafdwins 
 		}
 		mutually_exclusive = { 
-			focus = EGY_muslimbrotherhoodwins 
+			focus = EGY_ 
 		}
 		mutually_exclusive = { 
 			focus = EGY_theroyalpartywins 
 		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Embassy To The Soviet Union
-	focus = {
-		id = EGY_embassytothesovietunion
-		icon = GFX_goal_unknown
-		x = 12
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = EGY_communistpartywins }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Embassy To Nazi Germany
-	focus = {
-		id = EGY_embassytonazigermany
-		icon = GFX_goal_unknown
-		x = 21
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = EGY_thefascistpartywins }
 		ai_will_do = {
 			factor = 1
 		}
@@ -330,34 +240,6 @@ focus_tree = {
 		mutually_exclusive = { 
 			focus = EGY_sidewiththerepublic 
 		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Arabian Investments
-	focus = {
-		id = EGY_arabianinvestments
-		icon = GFX_goal_unknown
-		x = 2
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = EGY_embassytosaudiarabia }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Soviet Investments
-	focus = {
-		id = EGY_sovietinvestments
-		icon = GFX_goal_unknown
-		x = 12
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = EGY_embassytothesovietunion }
 		ai_will_do = {
 			factor = 1
 		}
