@@ -3,6 +3,8 @@
   #Tooltips
   FRA_usabackedcivilwar:0 "USA has helped us in the civil war!"
   FRA_NATOfoundation:0 "North Atlantic Treaty Organization"
+  FRA_democratic_party_degaulle_long:0 "Degaulle Party"
+  FRA_democratic_party_degaulle:0 "Degaulle Party"
 
   #Ideas
   FRA_civilwarbuff1:0 "Better Dead Then Red!"
@@ -88,3 +90,5 @@
   FRA_heavy_armor_focus1:0 "Char De Bataille"
   FRA_fighter_focus1:0 "French-Made Fighter Planes"
   FRA_jetfighterrush:0 "France Dominates The Sky"
+  FRA_thereasonwelost:0 "The Reason We Lost"
+  FRA_leadthenextrepublic:0 "Degaulle Leads The Next Republic"
