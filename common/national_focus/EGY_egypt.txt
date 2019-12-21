@@ -16,17 +16,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = EGY_1948elections }
-		mutually_exclusive = { 
-			focus = EGY_thewafdwins 
+		mutually_exclusive = {
+			focus = EGY_thewafdwins
 		}
-		mutually_exclusive = { 
-			focus = EGY_ 
+		mutually_exclusive = {
+			focus = EGY_theroyalpartywins
 		}
-		mutually_exclusive = { 
-			focus = EGY_theroyalpartywins 
-		}
-		mutually_exclusive = { 
-			focus = EGY_thefascistpartywins 
+		mutually_exclusive = {
+			focus = EGY_thefascistpartywins
 		}
 		ai_will_do = {
 			factor = 1
@@ -98,11 +95,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = EGY_thelevantcivilwar }
-		mutually_exclusive = { 
-			focus = EGY_sidewiththelevantkingdom 
+		mutually_exclusive = {
+			focus = EGY_sidewiththelevantkingdom
 		}
-		mutually_exclusive = { 
-			focus = EGY_sidewiththearabs 
+		mutually_exclusive = {
+			focus = EGY_sidewiththearabs
 		}
 		ai_will_do = {
 			factor = 1
@@ -117,7 +114,6 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = EGY_BhfANtzD }
 		ai_will_do = {
 			factor = 1
 		}
@@ -188,17 +184,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = EGY_1948elections }
-		mutually_exclusive = { 
-			focus = EGY_communistpartywins 
+		mutually_exclusive = {
+			focus = EGY_communistpartywins
 		}
-		mutually_exclusive = { 
-			focus = EGY_thewafdwins 
+		mutually_exclusive = {
+			focus = EGY_thewafdwins
 		}
-		mutually_exclusive = { 
-			focus = EGY_ 
-		}
-		mutually_exclusive = { 
-			focus = EGY_theroyalpartywins 
+		mutually_exclusive = {
+			focus = EGY_theroyalpartywins
 		}
 		ai_will_do = {
 			factor = 1
@@ -214,11 +207,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = EGY_thelevantcivilwar }
-		mutually_exclusive = { 
-			focus = EGY_sidewiththearabs 
+		mutually_exclusive = {
+			focus = EGY_sidewiththearabs
 		}
-		mutually_exclusive = { 
-			focus = EGY_sidewiththerepublic 
+		mutually_exclusive = {
+			focus = EGY_sidewiththerepublic
 		}
 		ai_will_do = {
 			factor = 1
@@ -234,16 +227,16 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = EGY_thelevantcivilwar }
-		mutually_exclusive = { 
-			focus = EGY_sidewiththelevantkingdom 
+		mutually_exclusive = {
+			focus = EGY_sidewiththelevantkingdom
 		}
-		mutually_exclusive = { 
-			focus = EGY_sidewiththerepublic 
+		mutually_exclusive = {
+			focus = EGY_sidewiththerepublic
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-#End of focuses 
+#End of focuses
  }

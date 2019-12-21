@@ -131,9 +131,6 @@ give_guarantee = URG
 		USA_war_department
 		USA_intervention_in_europe
 		#laws
-		isolation
-		volunteer_only
-		great_depression_3
 		new_deal
 	}
 	remove_ideas = {
@@ -268,9 +265,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	undisturbed_isolation
-	great_depression
-	disarmed_nation
 	free_trade
 	home_of_the_free
 }
