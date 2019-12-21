@@ -898,7 +898,14 @@ SpriteType = {
   name = "GFX_FRA_French_USA_Cooperation"
   texturefile = "gfx/interface/goals/GFX_FRA_French_USA_Cooperation.dds"
 }
-
+SpriteType = {
+  name = "GFX_FRA_CivilLaw"
+  texturefile = "gfx/interface/goals/GFX_FRA_CivilLaw.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_SyrianIndependence"
+  texturefile = "gfx/interface/goals/GFX_FRA_SyrianIndependence.dds"
+}
 
 
 
