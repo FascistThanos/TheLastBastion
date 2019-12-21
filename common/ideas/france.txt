@@ -45,6 +45,7 @@ ideas = {
 				political_power_cost = 0.8
 				stability_factor = -0.10
 				surrender_limit = -0.5
+				join_faction_tension = +1
 			}
 		}
 
@@ -347,6 +348,152 @@ ideas = {
 				communism_drift = -0.05
 			}
 		}
+
+
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		################
+		#Begin NEW France's Ideas below.
+
+		FRA_civilwarbuff1 = {
+			picture = anti_soviet_pact
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.15 
+				surrender_limit = 0.30
+			}
+		}
+		FRA_usadvisors = {
+			picture = usa_desegregation_1
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.15
+			}
+		}
+		FRA_anticommunistprop = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				enemy_partisan_effect = 0.10
+				army_morale_factor = -0.05 
+			}
+		}
+		FRA_prodemocracyprop = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				socialism_drift = 0.02
+				democratic_drift = 0.03
+				training_time_army_factor = -0.10	
+			}
+		}
+		FRA_stagnation = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1 
+ 				production_speed_buildings_factor = -0.1
+ 				stability_factor = -0.05
+			}
+		}
+		FRA_lawlessness = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+ 				attrition = 0.25
+ 				stability_factor = -0.10
+ 				political_power_gain = -0.15
+			}
+		}
+		FRA_rightwingpoliceforce = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = 0.05
+				fascism_drift = 0.01
+				democratic_drift = 0.01
+			}
+		}
+		FRA_economicrelief = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		FRA_anticommunistideas = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.05 
+			}
+		}
+		FRA_theforeignlegion = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				non_core_manpower = 0.05
+				conscription_factor = 0.05
+				conscription = 0.005
+			}
+		}
+
+
+
+
+
+
+
+
+		################
+		################
+		################
+		################
+		################
+		################
+		################
 
 	}
 
