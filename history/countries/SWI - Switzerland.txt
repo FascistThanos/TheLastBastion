@@ -67,7 +67,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = no
@@ -81,7 +81,7 @@ set_popularities = {
 1939.1.1 = {
 	#next election october 39
 	set_popularities = {
-	communism = 71
+	neutrality = 71
 	socialism = 22
 	fascism = 4
 	democratic = 3
