@@ -11,5 +11,50 @@ focus_tree = {
 	}
 
 	default = no
+	focus = {
+		id = SOV_target_stalin
+		icon = GFX_Focus_Communist_Spy02
+		x = 0
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = {
+        focus = SOV_ignore_stalin
+    }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_ignore_stalin
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 15
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = {
+        focus = SOV_target_stalin
+    }
+		completion_reward = {
+			add_political_power = 75
+			set_global_flag = stalinignored
+		}
+	}
+	focus = {
+		id = SOV_red_wind
+		icon = GFX_focus_ger_great_red_menace
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = SOV_ignore_stalin
+    }
+		completion_reward = {
+			country_event = {
+				id = sov.1
+			}
+		}
+	}
 
 }
