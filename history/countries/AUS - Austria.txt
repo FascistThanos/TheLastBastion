@@ -28,12 +28,6 @@ set_popularities = {
 	communism = 84
 }
 
-create_faction = austrian_remnants
-add_to_faction = CZE
-add_to_faction = HUN
-add_to_faction = SLV
-add_to_faction = CRO
-
 set_stability = 0.50
 
 create_country_leader = {
