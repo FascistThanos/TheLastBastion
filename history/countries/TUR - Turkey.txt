@@ -136,8 +136,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 10
-	communism = 90
+	democratic = 8
+	fascism = 9
+	neutrality = 5
+	communism = 78
 }
 
 set_convoys = 20

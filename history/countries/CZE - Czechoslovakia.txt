@@ -29,10 +29,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 3
-	neutrality = 2
-	fascism = 5
-	communism = 90
+	democratic = 10
+	neutrality = 4
+	fascism = 7
+	communism = 81
 }
 
 create_country_leader = {

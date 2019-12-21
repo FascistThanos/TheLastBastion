@@ -2325,3 +2325,10 @@
  YAK_conservative_ADJ:0 "Siberian"
  TAN_trotskyism:0 "Tuvan SSR"
  TAN_trotskyism_ADJ:0 "Tuvan"
+
+ SYR_socialism:0 "Syrian Republic"
+ SYR_socialism_DEF:0 "the Syrian Republic"
+ SYR_socialism_ADJ:0 "Syrian"
+ LEB_socialism:0 "Lebanon"
+ LEB_socialism_DEF:0 "the Lebanese"
+ LEB_socialism_ADJ:0 "Lebanese"

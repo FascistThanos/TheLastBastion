@@ -131,9 +131,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 11
-	communism = 69
+	democratic = 9
+	neutrality = 4
+	fascism = 13
+	communism = 74
 }
 
 #Start Horty as neutral if DOD

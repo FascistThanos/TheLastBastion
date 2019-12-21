@@ -81,9 +81,10 @@ set_popularities = {
 1939.1.1 = {
 	#next election october 39
 	set_popularities = {
-		democratic = 95
-		fascism = 2
-		communism = 3
+	communism = 71
+	socialism = 22
+	fascism = 4
+	democratic = 3
 	}
 }
 
