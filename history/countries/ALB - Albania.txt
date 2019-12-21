@@ -16,7 +16,10 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 100
+	communism = 71
+	fascism = 12
+	democracy = 10
+	neutral = 7
 }
 
 set_convoys = 5

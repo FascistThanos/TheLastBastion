@@ -22,10 +22,10 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 3
-	fascism = 4
+	neutrality = 9
+	fascism = 6
 	democratic = 1
-	communism = 92
+	communism = 84
 }
 
 create_faction = austrian_remnants
