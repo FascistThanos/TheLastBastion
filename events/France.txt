@@ -1910,9 +1910,7 @@ country_event = {
     desc = france.35.d
     picture = GFX_report_event_german_parade_paris
     is_triggered_only = yes
-    mean_time_to_happen = {
-        days = 7
-    }
+
     option = {
         name = france.35.a
          ai_chance = {
@@ -1949,9 +1947,6 @@ country_event = {
     desc = france.36.d
     picture = GFX_report_event_german_parade_paris
     is_triggered_only = yes
-    mean_time_to_happen = {
-        days = 7
-    }
     option = {
         name = france.36.a
         ai_chance = {
