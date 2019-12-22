@@ -13,8 +13,8 @@ country_event = {
 			base = 90
 		}
 		hidden_effect = {
-			set_country_flag = mexico_accepts
 			USA = {
+				set_country_flag = mexico_accepts
 				country_event = tlb.1
 			}
 		}
