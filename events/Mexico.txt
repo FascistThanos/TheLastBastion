@@ -1606,7 +1606,7 @@ country_event = {
 			desc = "POLITICS_MANUEL_AVILA_DESC"
 			picture = "GFX_portrait_mex_avila_civil"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 				the_gentleman_president
 			}
@@ -1638,30 +1638,6 @@ country_event = {
 			}
 		}
 	}
-
-	#option = { # Far-right candidate: Juan Andreu
-	#	name = mexico.19.h
-	#
-	#	trigger = {
-	#		NOT = {
-	#			has_country_leader = {
-	#				name = "Juan Andreu"
-	#			}
-	#		}
-	#		has_government = democratic
-	#	}
-
-	#	create_country_leader = {
-	#		name = "Juan Andreu"
-	#		desc = "POLITICS_JUAN_ANDREU_DESC"
-	#		picture = "GFX_portrait_mex_juan_andreu"
-	#		expire = "1965.1.1"
-	#		ideology = democratic
-	#		traits = {
-	#			the_silver_president
-	#		}
-	#	}
-	#}
 
 	# Communist
 
@@ -2740,7 +2716,7 @@ country_event = {
 					desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
 					picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
 					expire = "1965.1.1"
-					ideology = democratic
+					ideology = conservative
 					traits = {
 						#
 					}

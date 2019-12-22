@@ -232,7 +232,7 @@ country_event = {
 			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
 			picture = "portrait_eng_fallen_government.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = libertarian
 			traits = {
 				cabinet_crisis
 			}
@@ -1392,7 +1392,7 @@ country_event = {
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 				british_bulldog
 			}

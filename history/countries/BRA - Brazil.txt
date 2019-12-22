@@ -6,14 +6,14 @@ oob = "BRA_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	gwtank = 1
 	early_fighter = 1
 	CAS1 = 1
-	
+
 }
 if = {
 	limit = {
@@ -44,14 +44,14 @@ if = {
 		basic_torpedo = 1
 		mtg_transport = 1
 	}
-	set_naval_oob = "BRA_1936_naval"	
+	set_naval_oob = "BRA_1936_naval"
 }
 set_country_flag = monroe_doctrine
 
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -62,14 +62,14 @@ set_country_flag = monroe_doctrine
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "BRA_1939"
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
-		
+
 
 		#doctrines
 		air_superiority = 1
@@ -165,7 +165,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMANDO_SALES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

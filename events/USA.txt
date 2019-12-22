@@ -298,7 +298,7 @@ country_event = {
 			desc = "POLITICS_ALF_LANDON_DESC"
 			picture = "portrait_USA_alf_landon.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = libertarian
 			traits = {
 				staunch_constitutionalist
 			}
@@ -551,7 +551,7 @@ country_event = {
 			desc = "POLITICS_THOMAS_DEWEY_DESC"
 			picture = "portrait_USA_thomas_dewey.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 
 			}
@@ -718,7 +718,7 @@ country_event = {
 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
 			picture = "Portrait_USA_Douglas_MacArthur.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = economic
 			traits = {
 
 			}

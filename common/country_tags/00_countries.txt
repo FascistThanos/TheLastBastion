@@ -194,7 +194,7 @@ PAP = "countries/Papal States.txt"
 SRD = "countries/Sardinia-Piedmont.txt"
 SIC = "countries/Two-Sicilies.txt"
 VIC = "countries/Venice.txt"
-SAV = "countires/Savoy.txt"
+SAV = "countries/Savoy.txt"
 
 ##### For soviet breakup #####
 MOW = "countries/Moscow.txt"

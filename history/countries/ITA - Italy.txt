@@ -168,7 +168,7 @@ create_country_leader = {
 	desc = "POLITICS_TOGLIATTI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = trotskyism
+	ideology = trotskyism_type
 	traits = {
 
 	}
@@ -179,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_TOGLIATTI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = maoism
+	ideology = maoism_type
 	traits = {
 
 	}
@@ -190,7 +190,7 @@ create_country_leader = {
 	desc = "POLITICS_STURZO_DESC"
 	picture = "Portrait_Italy_Luigi_Sturzo.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

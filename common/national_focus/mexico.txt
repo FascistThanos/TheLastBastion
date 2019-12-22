@@ -2279,7 +2279,7 @@ focus_tree = {
 					desc = "POLITICS_LAZARO_CARDENAS_DESC"
 					picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
 					expire = "1965.1.1"
-					ideology = socialism
+					ideology = socialism_type
 					traits = {
 						refounder_of_mexico
 					}
@@ -2982,7 +2982,7 @@ focus_tree = {
 				desc = "POLITICS_LUIS_MARIA_MARTINEZ_DESC"
 				picture = GFX_Portrait_MEX_Luis_Maria_Martinez
 				expire = "1965.1.1"
-				ideology = socialism
+				ideology = socialism_type
 				traits = {
 					primate_of_mexico
 				}

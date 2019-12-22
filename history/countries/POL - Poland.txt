@@ -234,7 +234,7 @@ create_country_leader = {
 	desc = "POLITICS_WINCENTY_WITOS_DESC"
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

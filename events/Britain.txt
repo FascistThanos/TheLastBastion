@@ -272,7 +272,7 @@ country_event = {
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 				british_bulldog
 			}
@@ -317,7 +317,7 @@ country_event = {
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = conservative
 			traits = {
 				british_bulldog
 			}
@@ -331,7 +331,7 @@ country_event = {
 			desc = "POLITICS_EDWARD_HALIFAX_DESC"
 			picture = "Portrait_Britain_Edward_Halifax.dds"
 			expire = "1965.1.1"
-			ideology = democratic
+			ideology = libertarian
 			traits = {
 
 			}
@@ -834,7 +834,7 @@ country_event = {
         	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
         	picture = "Portrait_Britain_Neville_Chamberlain.dds"
         	expire = "1965.1.1"
-        	ideology = democratic
+        	ideology = economic
         	traits = {
         		chamberlain_appeaser rearmer
         	}

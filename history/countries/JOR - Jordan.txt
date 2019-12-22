@@ -73,7 +73,7 @@ create_country_leader = {
 	name = "Hashim Kheir"
 	desc = ""
 	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_2.dds"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

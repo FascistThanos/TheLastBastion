@@ -89,20 +89,6 @@ set_popularities = {
 	communism = 6
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1939.4.2"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 87
-		fascism = 8
-		communism = 5
-	}
-}
-
 set_convoys = 80
 set_stability = 0.75
 
@@ -111,7 +97,7 @@ create_country_leader = {
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#
 	}

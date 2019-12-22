@@ -333,19 +333,15 @@ add_to_faction = NZL
 add_to_faction = SAF
 
 give_military_access = RAJ
-add_to_faction = RAJ		# Must be after puppet
+add_to_faction = RAJ
 add_to_faction = MAL
-
-#give_guarantee = CZE
-
-# Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
 	name = "Winston Churchill"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 	picture = "Portrait_Britain_Winston_Churchill.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = conservative
 	traits = {
 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
 	}
@@ -362,17 +358,6 @@ create_country_leader = {
 		conservative_grandee
 	}
 }
-
-#create_country_leader = {
-#	name = "Neville Chamberlain"
-#	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-#	picture = "Portrait_Britain_Neville_Chamberlain.dds"
-#	expire = "1965.1.1"
-#	ideology = liberalism
-#	traits = {
-#
-#	}
-#}
 
 create_country_leader = {
 	name = "Oswald Mosley"
@@ -396,17 +381,6 @@ create_country_leader = {
 		staunch_stalinist
 	}
 }
-
-#create_country_leader = {
-#	name = "Rajani Palme Dutt"
-#	desc = "POLITICS_PALME_DUTT_DESC"
-#	picture = "Portrait_Britain_Palme_Dutt.dds"
-#	expire = "1965.1.1"
-#	ideology = leninism
-#	traits = {
-#
-#	}
-#}
 
 create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat

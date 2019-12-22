@@ -186,7 +186,7 @@ focus_tree = {
 			remove_ideas = service_by_requirement
 			remove_ideas = export_focus
 			add_ideas = volunteer_only
-			add_ideas = limited_exports 
+			add_ideas = limited_exports
 			add_ideas = undisturbed_isolation
 			add_ideas = FRA_stagnation
 			add_ideas = FRA_lawlessness
@@ -392,7 +392,7 @@ focus_tree = {
 							value = -100
 							localization = AST_adopt_westminster
 						}
-			}		
+			}
 			554 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -408,7 +408,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}				
+			}
 		}
 	}
 	focus = {
@@ -428,7 +428,7 @@ focus_tree = {
 							value = -100
 							localization = AST_adopt_westminster
 						}
-			}		
+			}
 			554 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -444,7 +444,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}				
+			}
 		}
 	}
 	focus = {
@@ -467,7 +467,7 @@ focus_tree = {
 							value = -100
 							localization = AST_adopt_westminster
 						}
-			}		
+			}
 			554 = {
 				add_extra_state_shared_building_slots = 6
 			}
@@ -506,7 +506,7 @@ focus_tree = {
 							value = -100
 							localization = AST_adopt_westminster
 						}
-			}		
+			}
 			554 = {
 				add_extra_state_shared_building_slots = 3
 					add_building_construction = {
@@ -708,7 +708,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_formNATO}
 
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
@@ -720,7 +720,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_formNATO}
 
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
@@ -733,7 +733,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_invitespaintonato}
 
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -1082,16 +1082,16 @@ focus_tree = {
 		desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 		picture = "Portrait_France_Charles_De_Gaulle.dds"
 		expire = "1965.1.1"
-		ideology = democratic_type
+		ideology = liberalism
 		traits = {
-		
+
 		}
 		}
-		set_party_name = { 
-    		ideology = democratic 
-   	 		long_name = FRA_democratic_party_degaulle_long 
+		set_party_name = {
+    		ideology = democratic
+   	 		long_name = FRA_democratic_party_degaulle_long
     		name = FRA_democratic_party_degaulle
-		}			
+		}
 		add_stability = -0.05
 		set_politics = {
 		ruling_party = democratic
@@ -1107,4 +1107,3 @@ focus_tree = {
 
 
 }
-

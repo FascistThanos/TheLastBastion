@@ -81,7 +81,6 @@ ideologies = {
 		}
 
 		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
 			generate_wargoal_tension = 0.5
 			join_faction_tension = 0.4
 			lend_lease_tension = 0.4
@@ -90,14 +89,13 @@ ideologies = {
 			drift_defence_factor = -0.3
 		}
 
-		faction_modifiers = {
-		}
-
 		can_be_boosted = no
 		can_collaborate = yes
 
 		ai_neutral = yes #
 	}
+
+	# Totalitarian
 	communism = {
 
 		types = {
@@ -149,7 +147,7 @@ ideologies = {
 
 		types = {
 
-			trotskyism = {
+			trotskyism_type = {
 			}
 		}
 
@@ -178,17 +176,14 @@ ideologies = {
 			puppet_cost_factor = -0.3
 			foreign_subversive_activites = -0.25
 		}
-
-		faction_modifiers = {
-
-		}
-
 	}
+
+	# Maoism
 	maoism = {
 
 		types = {
 
-			maoism = {
+			maoism_type = {
 			}
 		}
 
@@ -217,14 +212,16 @@ ideologies = {
 			puppet_cost_factor = -0.3
 			foreign_subversive_activites = -0.25
 		}
-
-		faction_modifiers = {
-
-		}
 	}
+
+	# Monarchist
 	monarchist = {
 		types = {
-			monarchist_subtype = {}
+			monarchist_subtype = {
+			}
+
+			constitutional_monarch = {
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_MONARCHIST_1"
@@ -247,13 +244,18 @@ ideologies = {
 			generate_wargoal_tension = 0.75
 		}
 		ai_neutral = yes
-		can_be_boosted = no
+		can_be_boosted = yes
 	}
 
+	# Social Democracy
 	socialism = {
 
 		types = {
 			socialism_type = {
+			}
+			socialist = {
+			}
+			third_way = {
 			}
 		}
 
@@ -298,9 +300,16 @@ ideologies = {
 		}
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
+
+	# Conservative
 	democratic = {
+
 		types = {
-			democratic_type = {
+			conservative = {
+			}
+			libertarian = {
+			}
+			economic = {
 			}
 		}
 
@@ -345,10 +354,14 @@ ideologies = {
 		}
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
+
+	# Centrism
 	liberal = {
 
 		types = {
 			liberalism = {
+			}
+			radical = {
 			}
 		}
 

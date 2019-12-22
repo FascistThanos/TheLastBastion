@@ -1098,7 +1098,7 @@ country_event = {
 				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 				picture = "Portrait_France_Charles_De_Gaulle.dds"
 				expire = "1965.1.1"
-				ideology = democratic
+				ideology = liberalism
 				traits = {
 
 				}
@@ -2059,5 +2059,3 @@ news_event = {
     trigger = { TAG = FRA }
   }
 }
-
-

@@ -164,7 +164,7 @@ create_country_leader = {
 	desc = "POLITICS_MAO_ZEDONG_DESC"
 	picture = "GFX_portrait_prc_mao_zedong"
 	expire = "1965.1.1"
-	ideology = maoism
+	ideology = maoism_type
 	traits = {
 		cornered_fox
 	}
