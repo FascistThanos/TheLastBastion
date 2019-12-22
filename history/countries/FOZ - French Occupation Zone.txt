@@ -1,17 +1,17 @@
-﻿capital = 19
+capital = 42
 
-oob = "FRA_1936"
+oob = "FOZ_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FRA_1936_naval_mtg"
+		set_naval_oob = "FOZ_1936_naval_mtg"
 	else = {
-		set_naval_oob = "FRA_1936_naval_legacy"
+		set_naval_oob = "FOZ_1936_naval_legacy"
 	}
 }
 
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.30
+set_stability = 0.6
+set_war_support = 0.35
 
 # Starting tech
 set_technology = {
@@ -79,22 +79,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-set_autonomy = {
-	target = CAM
-	autonomous_state = autonomy_colony
-}
-set_autonomy = {
-	target = LAO
-	autonomous_state = autonomy_colony
-}
-set_autonomy = {
-	target = VIN
-	autonomous_state = autonomy_colony
-}
-set_autonomy = {
-	target = FOZ
-	autonomous_state = autonomy_integrated_puppet
-}
 1939.1.1 = {
 
 	add_political_power = 899
@@ -125,7 +109,7 @@ set_autonomy = {
 	complete_national_focus = FRA_colonial_industry
 	complete_national_focus = FRA_colonial_military_factories
 
-	oob = "FRA_1939"
+	oob = "FOZ_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "FRA_1939_naval_mtg"
@@ -215,152 +199,47 @@ set_autonomy = {
 
 set_convoys = 300
 
-declare_war_on = {
-	target = FPR
-	type = civil_war
-}
 
 set_politics = {
-	ruling_party = socialism
-	last_election = "1934.5.1"
-	election_frequency = 47
-	elections_allowed = yes
+	ruling_party = democratic
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 15
-	socialism = 56
-	fascism = 10
-	communism = 6
-	liberal = 13
+	democratic = 60
+	fascism = 6
+	communism = 10
+	liberal = 3
+	socialism = 21
 }
 
-add_ideas = {
-	FRA_disjointed_government
-	service_by_requirement
-	tot_economic_mobilisation
-}
-
-#Order matters here Daladier will start as leaders because added last
-create_country_leader = {
-	name = "Édouard Daladier"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
-	expire = "1965.1.1"
-	ideology = socialism_type
-	traits = {
-		stout_defender
-	}
+declare_war_on = {
+    target = FPR
+    type = topple_government
 }
 
 create_country_leader = {
-	name = "Maurice Thorez"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "GFX_portrait_fra_maurice_thorez"
+	name = "Alphonse Joseph Georges"
+	desc = "POLITICS_ALPHONSE_GEORGES_DESC"
+	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
 	expire = "1965.1.1"
-	ideology = 	leninism
+	ideology = conservative
 	traits = {
-
+		military_governor
+		quartermaster_general
 	}
-}
-
-create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-
-	}
-}
-
-create_field_marshal = {
-	name = "Philippe Leclerc"
-	picture = "portrait_france_philippe_leclerc.dds"
-	traits = {  armor_officer trait_reckless career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
 }
 
 create_corps_commander = {
-	name = "Henri Giraud"
-	picture = "portrait_france_henri_giraud.dds"
-	traits = {  trickster trait_cautious career_officer infantry_officer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Charles Huntziger"
-	picture = "portrait_france_charles_huntziger.dds"
-	traits = { old_guard infantry_officer }
-	skill = 3
+	name = "Charles De Gaulle"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	traits = {  armor_officer harsh_leader media_personality }
+	skill = 4
 	attack_skill = 4
-	defense_skill = 1
+	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 2
-}
-
-
-create_navy_leader = {
-	name = "François Darlan"
-		picture = "Portrait_France_Francois_Darlan.dds"
-	traits = { naval_lineage bold superior_tactician }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Jean-Marie Charles Abrial"
-		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
-	traits = { chief_engineer superior_tactician }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Jean-Pierre Esteva"
-		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
-	traits = { aviation_enthusiast }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "René-Émile Godfroy"
-		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { gentlemanly battleship_adherent old_guard_navy spotter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Jean de Laborde"
-	picture = "Portrait_France_Jean_de_Laborde.dds"
-	traits = { naval_lineage aviation_enthusiast }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
 }
 
 ### VARIANTS ###

@@ -200,3 +200,6 @@ SAV = "countries/Savoy.txt"
 MOW = "countries/Moscow.txt"
 KAE = "countries/KareloSSR.txt"
 YAK = "countries/Yakutia.txt"
+
+###### For France #######
+FOZ = "countries/"French Occupation Zone.txt"

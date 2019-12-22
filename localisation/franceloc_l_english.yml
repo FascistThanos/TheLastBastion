@@ -6,6 +6,7 @@
   FRA_NATOfoundation:0 "North Atlantic Treaty Organization"
   FRA_democratic_party_degaulle_long:0 "Degaulle Party"
   FRA_democratic_party_degaulle:0 "Degaulle Party"
+  military_governor:0 "Military Governor"
 
   #Ideas
   FRA_civilwarbuff1:0 "Better Dead Then Red!"
@@ -38,6 +39,9 @@
   france.39.d:0 "[FRA.GetLeader] earlier in a radio broadcasted to global news stations across the world denounced the [SOV.GetNameDef], [ENG.GetNameDef] and anyone who is a communist ally of them! Large military training from the French Army have been seen on the borders of the [UOB.GetNameDef] and [BAW.GetNameDef] France is steadily alligning the rest of the world against the [SOV.GetNameDef]"
   france.39.a:0 "This is not looking good.."
   france.39.b:0 "France will never be scared of anyone!"
+  france.41.t:0 "The Exiled French Republic gives us back the Rhineland!"
+  france.41.d:0 "Following the exile of the French government to Africa and with the new communist government in Paris, the French government has decided to give us back the Rhineland."
+  france.41.a:0 "How kind!"
   #Focuses
   FRA_thecivilwar:0 "The French Civil War"
   FRA_thecivilwar_desc:0 "Localisation Missing!"
@@ -95,4 +99,4 @@
   FRA_leadthenextrepublic:0 "Degaulle Leads The Next Republic"
   FRA_americantroopsinfrance:0 "American Troops In France"
   FRA_guerillawarfaretactics:0 "Guerilla Warfare Tactics"
-  
+  FRA_givebacktherhineland:0 "Give Up The Rhineland"

@@ -1110,7 +1110,7 @@ focus_tree = {
 
 			add_stability = -0.05
 			add_popularity = {
-   				 ideology = democratic
+   				 ideology = liberal
    				 popularity = 0.10
 			}
 
@@ -1136,18 +1136,45 @@ focus_tree = {
 		}
 		}
 		set_party_name = {
-    		ideology = democratic
+    		ideology = liberal
    	 		long_name = FRA_democratic_party_degaulle_long
     		name = FRA_democratic_party_degaulle
 		}
 		add_stability = -0.05
 		set_politics = {
-		ruling_party = democratic
+		ruling_party = liberal
 		}
 		add_popularity = {
-   			 ideology = democratic
+   			 ideology = liberal
    			 popularity = 0.20
 		}
+
+		}
+	}
+	focus = {
+		id = FRA_givebacktherhineland
+		icon = GFX_focus_generic_treaty
+		x = 25
+		y = 7
+		cost = 3.2
+		available = {
+		OR = {
+			GER = {
+				has_government = liberal
+			}
+		GER = {
+ 			has_government = democratic		
+		}
+		GER = {
+ 			has_government = socialism	
+		}
+		}
+		}
+		prerequisite = { focus = FRA_leadthenextrepublic}
+		completion_reward = {
+			GER = {
+				country_event = france.41
+			}
 
 		}
 	}
