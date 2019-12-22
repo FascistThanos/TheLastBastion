@@ -15,7 +15,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -23,9 +23,9 @@ set_politics = {
 
 set_popularities = {
 	neutrality = 9
-	fascism = 6
+	communism = 6
 	democratic = 1
-	communism = 84
+	fascism = 84
 }
 
 set_stability = 0.50
@@ -53,9 +53,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Arthur Seyss-Inquart"
-	desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	name = "Adolf Hitler"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Germany_Adolf_Hitler.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

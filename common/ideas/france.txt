@@ -479,6 +479,16 @@ ideas = {
 				conscription = 0.005
 			}
 		}
+		FRA_guerillawarfaretactics = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			 	army_speed_factor = 0.1
+			  	no_supply_grace = 64 	
+			}
+		}
 
 
 

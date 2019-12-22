@@ -108,15 +108,6 @@ units = {
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 12
-		}
-		location = 537
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
 	# III. Armeekorps
 	division= {
 		division_name = {
@@ -146,36 +137,6 @@ units = {
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6521
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 6521
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
-	}
-
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 11505
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.3
 	}
 
 	### 3. Armee (Wehrmacht-Gruppenkommando) ###
@@ -208,59 +169,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 	# VIII. Armeekorps
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 8
-		}
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 18
-		}
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# I. Armeekorps
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 6402
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 11
-		}
-		location = 266
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 21
-		}
-		location = 3384
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "Kavallerie-Kommando Insterburg"
-		location = 281
-		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.3
-	}
 
 
 	### 2. Armee (Wehrmacht-Gruppenkommando) ###
@@ -293,34 +201,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	# IX. Armeekorps
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 9
-		}
-		location = 11388
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 15
-		}
-		location = 241
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
 	# X. Armeekorps
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 19
-		}
-		location = 6488
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
 }
 
 #########################

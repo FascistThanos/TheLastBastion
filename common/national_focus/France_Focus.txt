@@ -30,7 +30,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 			idea = FRA_civilwarbuff1
-			days = 65
+			days = 90
 			}
 		}
 	}
@@ -50,7 +50,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = FRA }
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1500 producer = FRA }
 		}
 	}
 	focus = {
@@ -70,6 +70,25 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = france.38
+		}
+	}
+	focus = {
+		id = FRA_guerillawarfaretactics
+		icon = GFX_Generic_Partisan
+		x = 6
+		y = 2
+		cost = 7.2
+		prerequisite = { focus = FRA_wwistockpiles}
+		available = {
+			has_war_with = FPR
+		}
+		bypass = {
+			NOT = {
+			country_exists = FPR
+			}
+		}
+		completion_reward = {
+			add_ideas = FRA_guerillawarfaretactics
 		}
 	}
 	focus = {
@@ -111,6 +130,30 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = FRA_usadvisors
+		}
+	}
+	focus = {
+		id = FRA_americantroopsinfrance
+		icon = GFX_FRA_French_USA_Cooperation
+		x = 14
+		y = 2
+		cost = 7.2
+		prerequisite = { focus = FRA_reachouttotheamericans}
+		available = {
+			has_war_with = FPR
+			has_country_flag = FRA_usabackedcivilwar
+		}
+		bypass = {
+			NOT = {
+			country_exists = FPR
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = americantrooptt
+			army_experience = 20
+			hidden_effect = {
+				load_oob = FRA_AmericanTroops
+			}
 		}
 	}
 	focus = {
@@ -179,17 +222,22 @@ focus_tree = {
 		icon = GFX_FRA_CommunistDefeat
 		x = 10
 		y = 5
-		cost = 10
+		cost = 5.8
 		prerequisite = { focus = FRA_fromtheashes}
 		completion_reward = {
 			remove_ideas = tot_economic_mobilisation
 			remove_ideas = service_by_requirement
 			remove_ideas = export_focus
+			remove_ideas = FRA_guerillawarfaretactics
+			remove_ideas = FRA_prodemocracyprop
 			add_ideas = volunteer_only
 			add_ideas = limited_exports
 			add_ideas = undisturbed_isolation
 			add_ideas = FRA_stagnation
 			add_ideas = FRA_lawlessness
+			delete_unit_template_and_units = {
+    			division_template = "Citoyens armés"
+			}
 		}
 	}
 	focus = {
@@ -197,7 +245,7 @@ focus_tree = {
 		icon = GFX_Generic_Legislation
 		x = 10
 		y = 6
-		cost = 10
+		cost = 5.8
 		prerequisite = { focus = FRA_thereconstructionperiod}
 		completion_reward = {
 			add_political_power = 100
@@ -724,7 +772,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_inviteireland
+		id = FRA_inviteweimar
 		icon = GFX_Focus_NATO
 		x = 11
 		y = 16
@@ -846,7 +894,7 @@ focus_tree = {
 		icon = GFX_FRA_CivilLaw
 		x = 14
 		y = 6
-		cost = 10
+		cost = 5.8
 		prerequisite = { focus = FRA_thereconstructionperiod}
 		completion_reward = {
 			add_political_power = 100

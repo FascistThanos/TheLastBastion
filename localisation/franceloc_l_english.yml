@@ -2,6 +2,7 @@
 
   #Tooltips
   FRA_usabackedcivilwar:0 "USA has helped us in the civil war!"
+  americantrooptt:0 "Gain 3 units in Bordeaux with §Y12 Infantry§! with §YSupport Artillery§! and §YEngineer Company§!\n"
   FRA_NATOfoundation:0 "North Atlantic Treaty Organization"
   FRA_democratic_party_degaulle_long:0 "Degaulle Party"
   FRA_democratic_party_degaulle:0 "Degaulle Party"
@@ -83,7 +84,7 @@
   FRA_thefrencharmy:0 "The French Army"
   FRA_invitespaintonato:0 "Invite Spain To NATO"
   FRA_inviteitaly:0 "Invite Italy To NATO"
-  FRA_inviteireland:0 "Invite Ireland To NATO"
+  FRA_inviteweimar:0 "Invite The Weimar Republic To NATO"
   FRA_extraresearchslot:0 "Fund Researching"
   FRA_reestablishtheforeignlegion:0 "Re-establish The Foreign Legion"
   FRA_artillery_focus1:0 "Grande Batterie"
@@ -92,3 +93,6 @@
   FRA_jetfighterrush:0 "France Dominates The Sky"
   FRA_thereasonwelost:0 "The Reason We Lost"
   FRA_leadthenextrepublic:0 "Degaulle Leads The Next Republic"
+  FRA_americantroopsinfrance:0 "American Troops In France"
+  FRA_guerillawarfaretactics:0 "Guerilla Warfare Tactics"
+  
