@@ -282,59 +282,91 @@ create_import = {
 }
 
 set_politics = {
-	ruling_party = fascism
-	last_election = "1933.3.5"
+	ruling_party = democratic
+	last_election = "1934.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 60
-	communism = 20
+	democratic = 49
+	fascism = 13
+	socialism = 19
+	communism = 7
+	liberal = 9
+	monarchist = 3
+
 }
 
 
 add_ideas = {
-	sour_loser
-	general_staff
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
 }
-add_ideas = GER_mefo_bills_1
-
-activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
-	name = "Adolf Hitler"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
+	name = "Alfred Hugenburg"
+	desc = "POLITICS_ALFRED_HUGENBURG_DESC"
+	picture = "Portrait_Germany_Alfred_Hugenburg.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_ideology
 	traits = {
-		dictator
+
 	}
 }
 
 create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	name = "Ludwig Kaas"
+	desc = "POLITICS_LUDWIG_KAAS_DESC"
+	picture = "Portrait_Germany_Ludwig_Kaas.dds"
 	expire = "1965.1.1"
 	ideology = conservative
 	traits = {
+
 	}
 }
 
 create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
+	name = "Ernest Thallman"
+	desc = "POLITICS_ERNEST_THALLMAN_DESC"
+	picture = "Portrait_Germany_Ernest_Thallman.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = marxism
 	traits = {
-		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
-		exiled # He left in 1933 so he should still be exiled
+
+	}
+}
+
+create_country_leader = {
+	name = "Otto Wels"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "Portrait_Germany_Otto_Wels.dds"
+	expire = "1965.1.1"
+	ideology = third_way
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Waldemar Kock"
+	desc = "POLITICS_WALDEMAR_KOCK_DESC"
+	picture = "Portrait_Germany_Waldemar_Kock.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm II"
+	desc = "POLITICS_WILHELM_II_DESC"
+	picture = "Portrait_Germany_Wilhelm_II.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarch
+	traits = {
+
 	}
 }
 
