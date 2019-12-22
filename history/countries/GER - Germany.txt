@@ -293,9 +293,6 @@ set_popularities = {
 	communism = 20
 }
 
-create_faction = Axis
-add_to_faction = GER
-
 
 add_ideas = {
 	sour_loser
