@@ -299,6 +299,8 @@ set_popularities = {
 
 
 add_ideas = {
+	GER_treaty_of_versailles
+	GER_hyperinflation
 	limited_exports
 	disarmed_nation
 	civilian_economy

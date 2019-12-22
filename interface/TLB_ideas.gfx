@@ -4024,4 +4024,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV_stalin_exiled.dds"
 	}
 
+
+
+
+
+
+
+######################################GERMANY IDEAS################################################
+	SpriteType = {
+		name = "GFX_idea_GER_treaty_of_versailles"
+		texturefile = "gfx/interface/ideas/GER_idea_treaty_of_versailles.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GER_hyperinflation"
+		texturefile = "gfx/interface/ideas/GER_idea_hyperinflation.dds"
+	}
+
+
 }
