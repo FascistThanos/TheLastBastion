@@ -14,6 +14,10 @@ spriteTypes = {
 		name = "GFX_idea_ITA_Mussolini_Jailed"
 		texturefile = "gfx/interface/ideas/idea_ITA_Mussolini_Jailed.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOV_destroyedgeorgia"
+		texturefile = "gfx/interface/ideas/SOV_destroyedgeorgia.dds"
+	}
 
 	#spriteType = {
 	#	name = "GFX_idea_ITA_italia_electorum"

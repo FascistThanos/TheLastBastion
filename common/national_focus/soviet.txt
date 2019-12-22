@@ -56,5 +56,38 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SOV_finland_diplomat
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = SOV_red_wind
+    }
+		completion_reward = {
+			add_threat = 1
+			country_event = {
+				id = sov.2
+			}
+		}
+	}
+	focus = {
+		id = SOV_rebuild_georgia
+		icon = GFX_Generic_Construction
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = SOV_red_wind
+    }
+		completion_reward = {
+			remove_ideas = {
+				SOV_destroyedgeorgia
+			}
+		}
+	}
 
 }

@@ -1,0 +1,129 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = sov
+
+country_event = {
+	id = sov.1
+	title = sov.1.t
+	desc = sov.1.d
+	picture = GFX_report_event_crowd_in_prague
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov.1.a
+		FPR = {
+			add_ideas = FPR_sovietaid
+		}
+	}
+}
+country_event = {
+	id = sov.2
+	title = sov.2.t
+	desc = sov.2.d
+	picture = GFX_report_event_soviet_finnish_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov.2.a
+		FIN = {
+			country_event = {
+				id = sov.3
+			}
+		}
+	}
+}
+country_event = {
+	id = sov.3
+	title = sov.3.t
+	desc = sov.3.d
+	picture = GFX_report_event_soviet_finnish_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov.3.a
+		SOV = {
+			set_state_owner = 147
+			set_state_owner = 722
+			transfer_state = 147
+			transfer_state = 722
+			country_event = {
+				id = sov.4
+			}
+		}
+	}
+	option = {
+		name = sov.3.b
+		SOV = {
+			set_state_owner = 146
+			transfer_state = 146
+			country_event = {
+				id = sov.5
+			}
+		}
+	}
+	option = {
+		name = sov.3.c
+		SOV = {
+			country_event = {
+				id = sov.6
+			}
+		}
+	}
+}
+country_event = {
+	id = sov.4
+	title = sov.4.t
+	desc = sov.4.d
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov.4.a
+		give_guarantee = FIN
+		diplomatic_relation = {
+		   country = FIN
+		   relation = non_aggression_pact
+		   active = yes
+		}
+	}
+}
+country_event = {
+	id = sov.5
+	title = sov.5.t
+	desc = sov.5.d
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov.5.a
+		give_guarantee = FIN
+	}
+}
+country_event = {
+	id = sov.6
+	title = sov.6.t
+	desc = sov.6.d
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov.6.a
+		add_threat = 5
+		create_wargoal = {
+		   type = puppet_wargoal_focus
+		   target = FIN
+		}
+	}
+	option = {
+		name = sov.6.b
+		add_state_claim = 146
+	}
+}

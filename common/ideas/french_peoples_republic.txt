@@ -10,7 +10,7 @@ ideas = {
 				has_government = communism
 			}
 
-			picture = GFX_idea_hol_haven_of_tolerance
+			picture = hol_haven_of_tolerance
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.3
