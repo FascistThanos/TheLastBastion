@@ -910,7 +910,11 @@ SpriteType = {
 #####################GERMANY########################
 SpriteType = {
   name = "GFX_GER_Weimar_Situation"
-  texturefile = "gfx/interface/goals/GFX_GER_Weimar_Situation.dds"
+  texturefile = "gfx/interface/goals/GER_Weimar_Situation.dds"
+}
+SpriteType = {
+  name = "GFX_GER_lower_government_spending"
+  texturefile = "gfx/interface/goals/GER_lower_government_spending.dds"
 }
 
 }
