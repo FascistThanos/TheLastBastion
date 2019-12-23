@@ -1,7 +1,7 @@
 
 state={
 	id=16
-	name="Centre_de_Paris"
+	name="Centre de Paris"
 	manpower = 7038500
 
 	state_category = metropolis
