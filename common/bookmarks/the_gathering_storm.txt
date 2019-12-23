@@ -38,18 +38,16 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				FRA_victors_of_wwi
 				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
-				FRA_revise_versailles
+				FRA_thereconstructionperiod
+				FRA_nomoretrustinthe3rdrepublic
+				FRA_ratifythefrancosyriantreatyofindependence
 			}
 		}
 		"FOZ"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "FOZ_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				#
@@ -64,9 +62,7 @@ bookmarks = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
+				
 			}
 			focuses = {
 				GER_anschluss
