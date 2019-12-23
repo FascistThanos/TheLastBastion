@@ -1,5 +1,5 @@
 focus_tree = {
-	id = United_States
+	id = TLB_United_States_focus
 	country = {
 		factor = 0
 		modifier = {
