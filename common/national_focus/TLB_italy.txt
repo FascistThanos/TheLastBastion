@@ -1,0 +1,30 @@
+focus_tree = {
+  id = TLB_Italy_focus
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = ITA
+    }
+  }
+
+  default = no
+
+  focus = {
+    id = ITA_Pricinipalia_Italia
+    icon = ITA_Pricinipalia_Italia
+    x = 10
+    y = 0
+
+    cost = 10
+
+    available_if_capitulated = yes
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    completion_reward = {
+      add_political_power = 50
+    }
+  }
