@@ -46,8 +46,8 @@ bookmarks = {
 				FRA_ratifythefrancosyriantreatyofindependence
 			}
 		}
-		"FOZ"={
-			history = "FOZ_GATHERING_STORM_DESC"
+		"SPR"={
+			history = "SPR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				#
@@ -82,18 +82,14 @@ bookmarks = {
 
 			}
 		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = communism
+		"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
+				#	
 			}
 			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
+				#
 			}
 		}
 		"---"={
