@@ -1,4 +1,6 @@
-﻿l_english: 
+﻿l_english:
+
+  WAR_NAME_FRA_FPR:0 "The 6th French Civil War"
 
   #Tooltips
   FRA_usabackedcivilwar:0 "USA has helped us in the civil war!"

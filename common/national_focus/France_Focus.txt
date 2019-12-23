@@ -1052,6 +1052,9 @@ focus_tree = {
 		x = 25
 		y = 4
 		cost = 7.2
+
+		available_if_capitulated = yes
+
 		mutually_exclusive = {
 			focus = FRA_fromtheashes
 		}
@@ -1093,7 +1096,6 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			set_capital = 459
 			add_political_power = -250
 			add_stability = -0.1
 			add_war_support = -0.25
@@ -1105,6 +1107,9 @@ focus_tree = {
 		x = 25
 		y = 5
 		cost = 3.2
+
+		available_if_capitulated = yes
+
 		prerequisite = { focus = FRA_justashadow}
 		completion_reward = {
 
@@ -1122,35 +1127,41 @@ focus_tree = {
 		x = 25
 		y = 6
 		cost = 3.6
+
+		available_if_capitulated = yes
+
 		prerequisite = { focus = FRA_thereasonwelost}
 		completion_reward = {
- 		kill_country_leader = yes
- 		create_country_leader = {
-		name = "Charles De Gaulle"
-		desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-		picture = "Portrait_France_Charles_De_Gaulle.dds"
-		expire = "1965.1.1"
-		ideology = liberalism
-		traits = {
+ 			retire_country_leader = yes
+ 			create_country_leader = {
+				name = "Charles De Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					#
+				}
+			}
 
-		}
-		}
-		set_party_name = {
+			set_party_name = {
     		ideology = liberal
    	 		long_name = FRA_democratic_party_degaulle_long
     		name = FRA_democratic_party_degaulle
-		}
-		add_stability = -0.05
-		set_politics = {
-		ruling_party = liberal
-		}
-		add_popularity = {
-   			 ideology = liberal
-   			 popularity = 0.20
-		}
+			}
 
+			add_stability = -0.05
+			set_politics = {
+				ruling_party = liberal
+			}
+
+			add_popularity = {
+   			ideology = liberal
+   			popularity = 0.20
+			}
 		}
 	}
+
 	focus = {
 		id = FRA_givebacktherhineland
 		icon = GFX_focus_generic_treaty
@@ -1158,27 +1169,28 @@ focus_tree = {
 		y = 7
 		cost = 3.2
 		available = {
-		OR = {
-			GER = {
-				has_government = liberal
+			OR = {
+				GER = {
+					has_government = liberal
+				}
+
+				GER = {
+ 					has_government = democratic
+				}
+
+				GER = {
+ 					has_government = socialism
+				}
 			}
-		GER = {
- 			has_government = democratic		
 		}
-		GER = {
- 			has_government = socialism	
-		}
-		}
-		}
+
+		available_if_capitulated = yes
+
 		prerequisite = { focus = FRA_leadthenextrepublic}
 		completion_reward = {
 			GER = {
 				country_event = france.41
 			}
-
 		}
 	}
-
-
-
 }

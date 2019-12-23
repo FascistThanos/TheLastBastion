@@ -217,7 +217,7 @@ set_convoys = 300
 
 declare_war_on = {
 	target = FPR
-	type = civil_war
+	type = annex_everything
 }
 
 set_politics = {
