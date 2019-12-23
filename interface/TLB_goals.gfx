@@ -907,6 +907,10 @@ SpriteType = {
   texturefile = "gfx/interface/goals/GFX_FRA_SyrianIndependence.dds"
 }
 
-
+#####################GERMANY########################
+SpriteType = {
+  name = "GFX_GER_Weimar_Situation"
+  texturefile = "gfx/interface/goals/GFX_GER_Weimar_Situation.dds"
+}
 
 }

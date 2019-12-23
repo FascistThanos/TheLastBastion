@@ -1,0 +1,37 @@
+focus_tree = {
+  id = TLB_germany_focus
+
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = GER
+    }
+  }
+
+  default = no
+
+  continuous_focus_position = { x = 0 y = 2000}
+
+  focus = {
+    id = GER_weimar_situation
+    icon = GFX_GER_Weimar_Situation
+
+    x = 10
+    y = 0
+
+    cost = 1
+
+    ai_will_do = {
+      factor = 100
+    }
+
+    completion_reward = {
+      add_political_power = 50
+    }
+  }
+
+  focus = {
+    id = GER_start_the_reunification_process
+  }
+}

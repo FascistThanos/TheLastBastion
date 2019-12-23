@@ -107,6 +107,7 @@ units = {
 		location = 6334
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	# III. Armeekorps
 	division= {
@@ -117,6 +118,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	division= {
 		division_name = {
@@ -126,6 +128,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	# Panzertruppenkommando
 	division= {
@@ -136,6 +139,7 @@ units = {
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 
@@ -149,6 +153,7 @@ units = {
 		location = 3535
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	division= {
 		division_name = {
@@ -158,6 +163,7 @@ units = {
 		location = 3535
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	division= {
 		division_name = {
@@ -167,6 +173,7 @@ units = {
 		location = 3535
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	# VIII. Armeekorps
 
@@ -180,6 +187,7 @@ units = {
 		location = 6257
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	# VI. Armeekorps
 	division= {
@@ -190,6 +198,7 @@ units = {
 		location = 11264
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	division= {
 		division_name = {
@@ -199,6 +208,7 @@ units = {
 		location = 11264
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	# IX. Armeekorps
 	# X. Armeekorps

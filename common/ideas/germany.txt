@@ -1,6 +1,50 @@
 ideas = {
 
 	country = {
+		GER_treaty_of_versailles = {
+
+			picture = idea_GER_treaty_of_versailles
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -1
+				conscription = -0.04
+				conscription_factor = -0.25
+			}
+		}
+
+		GER_hyperinflation = {
+
+			picture = idea_GER_hyperinflation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.10
+			}
+		}
+
+
+	#########################BASEGAME########################
 		sour_loser = {
 
 			allowed = {
