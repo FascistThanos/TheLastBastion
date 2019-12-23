@@ -164,7 +164,7 @@ units = {
 		location = 11616
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.2
 
 	}
 	division= {	# "43ème Division d'Infanterie"
@@ -206,7 +206,7 @@ units = {
 		location = 11613
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 	division= {	# "2ème Division de Cavalerie"
@@ -243,7 +243,7 @@ units = {
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.1
 
 	}
 	division= {	# "13ème Division d'Infanterie"
@@ -301,7 +301,7 @@ units = {
 		location = 6688
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 
 	}
 	division= {
@@ -339,7 +339,7 @@ units = {
 		location = 9644
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.2
 
 	}
 	division= {	# "18ème Division d'Infanterie"
@@ -427,7 +427,7 @@ units = {
 		location = 11613
 		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.4
 
 	}
 	division= {	# "1ère Div. d'Inf. Nord-Africaine"
@@ -468,7 +468,7 @@ units = {
 		location = 3533
 		division_template = "Division Coloniale"		 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.1
 
 	}
 

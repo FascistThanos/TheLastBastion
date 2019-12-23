@@ -35,6 +35,16 @@ units = {
 		location = 6469
 		division_template = "Division d'Infanterie"
 	}
+	division= {
+		name = "32. Police militaire"
+		location = 11435
+		division_template = "Division d'Infanterie"
+	}
+	division= {
+		name = "1. Police militaire"
+		location = 587
+		division_template = "Division d'Infanterie"
+	}
 
 
 }
