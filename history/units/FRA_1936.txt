@@ -204,6 +204,72 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+	division= {	# "1ère Div. d'Inf. Coloniale"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3552
+		division_template = "Division Coloniale"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	# "1ère Div. d'Inf. Coloniale"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 542
+		division_template = "Division Coloniale"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "1ère Div. d'Inf. Coloniale"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6572
+		division_template = "Division Coloniale"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}
+	division= {	# "1ère Div. d'Inf. Coloniale"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3758
+		division_template = "Division Coloniale"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+
+	}
+	division= {	# "1ère Div. d'Inf. Coloniale"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3758
+		division_template = "Division Coloniale"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+
+	}
+	division= {	# "1ère Div. d'Inf. Coloniale"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6572
+		division_template = "Division Coloniale"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+
+	}
 
 	# XIVe Corps d'Armée (Région Militaire in 1936) -- Lyon
 	division= {	# "27ème Division d'Infanterie Alpine"

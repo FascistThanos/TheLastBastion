@@ -948,4 +948,28 @@ SpriteType = {
   name = "GFX_FRA_Shadow"
   texturefile = "gfx/interface/goals/GFX_FRA_Shadow.dds"
 }
+SpriteType = {
+  name = "GFX_FRA_Army"
+  texturefile = "gfx/interface/goals/GFX_FRA_Army.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Authority"
+  texturefile = "gfx/interface/goals/GFX_Generic_Authority.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Espionage"
+  texturefile = "gfx/interface/goals/GFX_Generic_Espionage.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Government_Control"
+  texturefile = "gfx/interface/goals/GFX_Generic_Government_Control.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Industry"
+  texturefile = "gfx/interface/goals/GFX_Generic_Industry.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Navy"
+  texturefile = "gfx/interface/goals/GFX_Generic_Navy.dds"
+}
 }

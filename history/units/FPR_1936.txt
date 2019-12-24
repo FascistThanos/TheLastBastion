@@ -176,6 +176,56 @@ units = {
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
+	division= {	# "43ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 9525
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division= {	# "43ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 9525
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "43ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 6548
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "43ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 6536
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division= {	# "43ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 6536
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
 
 	# XXe Corps d'Armée (Région Militaire in 1936) -- Nancy
 	division= {	# "2ème Division d'Infanterie"
