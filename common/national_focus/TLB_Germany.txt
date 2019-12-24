@@ -251,7 +251,8 @@ focus_tree = {
 
     completion_reward = {
       remove_ideas = GER_humiliation_from_world_war_i
-      add_war_support = 0.10
+      add_ideas = limited_conscription
+      add_war_support = 0.05
     }
   }
 
@@ -263,7 +264,7 @@ focus_tree = {
     x = 22
     y = 4
 
-    cost = 10
+    cost = 5
 
     available = {
       FRA = {
@@ -319,7 +320,8 @@ focus_tree = {
     }
 
     completion_reward = {
-
+      army_experience = 15
+      add_ideas = GER_the_reichswehr
     }
   }
 
@@ -372,7 +374,7 @@ focus_tree = {
     prerequisite = { focus = GER_learn_from_our_losses }
 
     x = 10
-    y = 5
+    y = 6
 
     cost = 10
 
@@ -393,7 +395,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_declare_the_treaty_of_versailles_dead }
 
     x = 8
-    y = 6
+    y = 7
 
     cost = 10
 
@@ -419,7 +421,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_ask_france_to_lift_the_treaty_of_versailles }
 
     x = 12
-    y = 6
+    y = 7
 
     cost = 10
 
@@ -463,7 +465,7 @@ focus_tree = {
     }
 
     completion_reward = {
-      add_war_support = 0.1
+      add_war_support = 0.05
       add_opinion_modifier = { target = FRA modifier = large_increase }
       FRA = {
         add_war_support = 0.1
@@ -508,7 +510,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_deutschnationale_volkspartei }
 
     x = 10
-    y = 7
+    y = 8
 
     cost = 10
 
@@ -517,7 +519,10 @@ focus_tree = {
     }
 
     completion_reward = {
-
+      add_popularity = {
+        ideology = monarchist
+        popularity = 0.20
+      }
     }
   }
 
@@ -528,8 +533,8 @@ focus_tree = {
     mutually_exclusive = { focus = GER_trust_in_the_monarchy }
     mutually_exclusive = { focus = GER_democracy_is_the_only_way }
 
-    x = 16
-    y = 7
+    x = 18
+    y = 8
 
     cost = 10
 
@@ -538,7 +543,11 @@ focus_tree = {
     }
 
     completion_reward = {
-
+      add_political_power = 75
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.15
+      }
     }
   }
 
@@ -549,8 +558,8 @@ focus_tree = {
     mutually_exclusive = { focus = GER_trust_in_the_monarchy }
     mutually_exclusive = { focus = GER_deutschnationale_volkspartei }
 
-    x = 4
-    y = 7
+    x = 2
+    y = 8
 
     cost = 10
 
@@ -559,7 +568,11 @@ focus_tree = {
     }
 
     completion_reward = {
-
+      add_stability = 0.10
+      add_popularity = {
+        ideology = democratic
+        popularity = 0.1
+      }
     }
   }
 
@@ -672,7 +685,7 @@ focus_tree = {
     completion_reward = {
       add_timed_idea = {
         idea = GER_french_lend_lease_act
-        days = 720
+        days = 365
       }
     }
   }
@@ -693,10 +706,204 @@ focus_tree = {
     }
 
     completion_reward = {
+      set_rule = { can_send_volunteers = yes }
       add_timed_idea = {
         idea = GER_french_volunteers_act
-        days = 720
+        days = 365
       }
+    }
+  }
+
+  focus = {
+    id = GER_open_military_academies
+    icon = GFX_focus_generic_military_academy
+    prerequisite = { focus = GER_evolve_our_military }
+
+    x = 12
+    y = 5
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_military_academies
+
+    }
+  }
+
+  focus = {
+    id = GER_army_of_men
+    icon = GFX_Generic_Coalition_Army
+    prerequisite = { focus = GER_evolve_our_military }
+    mutually_exclusive = { focus = GER_army_of_steel }
+
+    x = 14
+    y = 5
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_tech_bonus = {
+				name = GER_army_of_men_tech
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
+			}
+    }
+  }
+
+  focus = {
+    id = GER_army_of_steel
+    icon = GFX_Generic_Urban_Warfare
+    prerequisite = { focus = GER_evolve_our_military }
+    mutually_exclusive = { focus = GER_army_of_men }
+
+    x = 18
+    y = 5
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_tech_bonus = {
+				name = GER_army_of_steel_tech
+				bonus = 0.75
+				uses = 1
+				category = armor
+			}
+    }
+  }
+
+  focus = {
+    id = GER_military_education_for_all
+    icon = GFX_Generic_Outside_Aid
+    prerequisite = { focus = GER_open_military_academies }
+
+    x = 12
+    y = 6
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_military_education_for_all
+    }
+  }
+
+  focus = {
+    id = GER_military_youth
+    icon = GFX_Generic_Partisan
+    prerequisite = { focus = GER_deutschnationale_volkspartei }
+
+    x = 16
+    y = 9
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_military_youth
+    }
+  }
+
+  focus = {
+    id = GER_military_youth
+    icon = GFX_Generic_Partisan
+    prerequisite = { focus = GER_deutschnationale_volkspartei }
+
+    x = 16
+    y = 9
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_military_youth
+    }
+  }
+
+  focus = {
+    id = GER_persecute_the_socialists
+    icon = GFX_Generic_Arrests
+    prerequisite = { focus = GER_deutschnationale_volkspartei }
+
+    x = 18
+    y = 9
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_political_power = 50
+      add_stability = -0.1
+      add_popularity = {
+        ideology = socialism
+        popularity = -0.12
+      }
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.08
+      }
+    }
+  }
+
+  focus = {
+    id = GER_restore_imperial_borders
+    icon = GFX_GER_imperial_ambitions
+    prerequisite = { focus = GER_trust_in_the_monarchy }
+
+    x = 10
+    y = 12
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_
+    icon = GFX_GER_imperial_ambitions
+    prerequisite = { focus = GER_trust_in_the_monarchy }
+
+    x = 12
+    y = 9
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
     }
   }
 }

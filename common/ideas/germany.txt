@@ -190,6 +190,83 @@ ideas = {
 			}
 		}
 
+		GER_military_academies = {
+
+			picture = GER_french_volunteers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				military_leader_cost_factor = -0.5
+				army_leader_start_planning_level = 1
+			}
+		}
+
+		GER_military_education_for_all = {
+
+			picture = GER_french_volunteers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+
+		GER_military_youth = {
+
+			picture = GER_french_volunteers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		GER_the_reichswehr = {
+
+			picture = GER_french_volunteers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+			}
+		}
+
 
 	#########################BASEGAME########################
 		sour_loser = {

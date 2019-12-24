@@ -973,6 +973,10 @@ SpriteType = {
   name = "GFX_GER_nationalism"
   texturefile = "gfx/interface/goals/GER_nationalism.dds"
 }
+SpriteType = {
+  name = "GFX_GER_imperial_ambitions"
+  texturefile = "gfx/interface/goals/GER_imperial_ambitions.dds"
+}
 #####################################################
 #####################################################
 }
