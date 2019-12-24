@@ -906,7 +906,40 @@ SpriteType = {
   name = "GFX_FRA_SyrianIndependence"
   texturefile = "gfx/interface/goals/GFX_FRA_SyrianIndependence.dds"
 }
+SpriteType = {
+  name = "GFX_FRA_Degaulle"
+  texturefile = "gfx/interface/goals/GFX_FRA_Degaulle.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_Shadow"
+  texturefile = "gfx/interface/goals/GFX_FRA_Shadow.dds"
+}
+SpriteType = {
+  name = "GFX_FRA_Army"
+  texturefile = "gfx/interface/goals/GFX_FRA_Army.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Authority"
+  texturefile = "gfx/interface/goals/GFX_Generic_Authority.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Espionage"
+  texturefile = "gfx/interface/goals/GFX_Generic_Espionage.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Government_Control"
+  texturefile = "gfx/interface/goals/GFX_Generic_Government_Control.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Industry_04"
+  texturefile = "gfx/interface/goals/GFX_Generic_Industry_04.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Navy"
+  texturefile = "gfx/interface/goals/GFX_Generic_Navy.dds"
+}
 
+####################################################
 #####################GERMANY########################
 SpriteType = {
   name = "GFX_GER_Weimar_Situation"
@@ -940,36 +973,6 @@ SpriteType = {
   name = "GFX_GER_nationalism"
   texturefile = "gfx/interface/goals/GER_nationalism.dds"
 }
-SpriteType = {
-  name = "GFX_FRA_Degaulle"
-  texturefile = "gfx/interface/goals/GFX_FRA_Degaulle.dds"
-}
-SpriteType = {
-  name = "GFX_FRA_Shadow"
-  texturefile = "gfx/interface/goals/GFX_FRA_Shadow.dds"
-}
-SpriteType = {
-  name = "GFX_FRA_Army"
-  texturefile = "gfx/interface/goals/GFX_FRA_Army.dds"
-}
-SpriteType = {
-  name = "GFX_Generic_Authority"
-  texturefile = "gfx/interface/goals/GFX_Generic_Authority.dds"
-}
-SpriteType = {
-  name = "GFX_Generic_Espionage"
-  texturefile = "gfx/interface/goals/GFX_Generic_Espionage.dds"
-}
-SpriteType = {
-  name = "GFX_Generic_Government_Control"
-  texturefile = "gfx/interface/goals/GFX_Generic_Government_Control.dds"
-}
-SpriteType = {
-  name = "GFX_Generic_Industry"
-  texturefile = "gfx/interface/goals/GFX_Generic_Industry.dds"
-}
-SpriteType = {
-  name = "GFX_Generic_Navy"
-  texturefile = "gfx/interface/goals/GFX_Generic_Navy.dds"
-}
+#####################################################
+#####################################################
 }

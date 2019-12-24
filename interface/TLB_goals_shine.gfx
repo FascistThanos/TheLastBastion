@@ -7398,11 +7398,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_Generic_Industry_shine"
+		name = "GFX_Generic_Industry_04_shine"
 		texturefile = "gfx/interface/goals/GFX_Generic_Industry.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_Generic_Industry.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_Generic_Industry_04.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -7415,7 +7415,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_Generic_Industry.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_Generic_Industry_04.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
