@@ -679,7 +679,7 @@ focus_tree = {
 
   focus = {
     id = GER_french_volunteers_act
-    icon = GFX_focus_generic_treaty
+    icon = GFX_Generic_German_Volunteers
     prerequisite = { focus = GER_guns_france }
     prerequisite = { focus = GER_french_lend_lease_act }
 
