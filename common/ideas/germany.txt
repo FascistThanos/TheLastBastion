@@ -18,14 +18,37 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.15
 				political_power_gain = -1
-				conscription = -0.04
-				conscription_factor = -0.25
+				conscription = -0.01
+				conscription_factor = -0.15
 			}
 		}
 
-		GER_hyperinflation = {
+		GER_humiliation_from_world_war_i = {
 
-			picture = idea_GER_hyperinflation
+			picture = GER_humiliation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.25
+				military_leader_cost_factor = 0.5
+				surrender_limit = -0.25
+			}
+		}
+
+		GER_hyperinflation_3 = {
+
+			name = GER_hyperinflation
+
+			picture = GER_hyperinflation
 
 			allowed = {
 				always = no
@@ -39,7 +62,90 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.15
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		GER_hyperinflation_2 = {
+
+			name = GER_hyperinflation
+
+			picture = GER_hyperinflation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		GER_hyperinflation_1 = {
+
+			name = GER_hyperinflation
+
+			picture = GER_hyperinflation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		GER_military_reorganization = {
+
+			picture = GER_military_reorganization
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org = 5
+			}
+		}
+
+		GER_minimum_wage = {
+
+			picture = GER_minimum_wage_i
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 

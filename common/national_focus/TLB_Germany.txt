@@ -11,7 +11,7 @@ focus_tree = {
 
   default = no
 
-  continuous_focus_position = { x = 0 y = 2000}
+  continuous_focus_position = { x = 0 y = 5}
 
   focus = {
     id = GER_weimar_situation
@@ -32,6 +32,436 @@ focus_tree = {
   }
 
   focus = {
-    id = GER_start_the_reunification_process
+    id = GER_take_money_out_of_circulation
+    icon = GFX_GER_lower_government_spending
+    prerequisite = { focus = GER_weimar_situation }
+
+    x = 10
+    y = 1
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      GER_hyperinflation_level_down = yes
+      add_stability = -0.05
+    }
   }
+
+  focus = {
+    id = GER_build_up_the_elbe_river
+    icon = GFX_Generic_Industry
+    prerequisite = { focus = GER_weimar_situation }
+
+    x = 8
+    y = 1
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      58 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+      }
+      59 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = GER_german_coast_infrastructure
+    icon = GFX_Generic_Railroads
+    prerequisite = { focus = GER_build_up_the_elbe_river }
+
+    x = 8
+    y = 2
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      56 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      59 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      58 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      61 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      62 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      63 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = GER_coast_line_industry
+    icon = GFX_Generic_Naval_Industry
+    prerequisite = { focus = GER_german_coast_infrastructure }
+
+    x = 8
+    y = 3
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      56 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = dockyard
+          level = 1
+          instant_build = yes
+        }
+      }
+      59 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = dockyard
+          level = 1
+          instant_build = yes
+        }
+      }
+      58 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = dockyard
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = GER_military_recuperation
+    icon = GFX_Generic_Army_Focus_Red02
+    prerequisite = { focus = GER_weimar_situation }
+
+    x = 12
+    y = 1
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_military_reorganization
+      army_experience = 25
+    }
+  }
+
+  focus = {
+    id = GER_field_exercises
+    icon = GFX_Generic_German_Soldiers
+    prerequisite = { focus = GER_military_recuperation }
+
+    x = 12
+    y = 2
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      army_experience = 25
+      air_experience = 25
+      navy_experience = 25
+    }
+  }
+
+  focus = {
+    id = GER_learn_from_our_losses
+    icon = GFX_GER_learn_from_our_losses
+    prerequisite = { focus = GER_field_exercises }
+
+    x = 12
+    y = 3
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      remove_ideas = GER_humiliation_from_world_war_i
+      add_war_support = 0.10
+    }
+  }
+
+  focus = {
+    id = GER_intervene_in_france
+    icon = GFX_Generic_French_Volunteers
+    prerequisite = { focus = GER_learn_from_our_losses }
+
+    x = 22
+    y = 4
+
+    cost = 10
+
+    available = {
+      FRA = {
+        has_war_with = FPR
+      }
+    }
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_expand_our_industry
+    icon = GFX_Generic_Industry02
+    prerequisite = { focus = GER_coast_line_industry }
+
+    x = 0
+    y = 4
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_evolve_our_military
+    icon = GFX_Generic_German_Soldier02
+    prerequisite = { focus = GER_learn_from_our_losses }
+
+    x = 16
+    y = 4
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_introduce_minimum_wage_laws
+    icon = GFX_GER_minimum_wage
+    prerequisite = { focus = GER_take_money_out_of_circulation }
+
+    x = 10
+    y = 2
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_minimum_wage
+    }
+  }
+
+  focus = {
+    id = GER_pay_off_the_versailles_debt
+    icon = GFX_GER_pay_the_debt
+    prerequisite = { focus = GER_introduce_minimum_wage_laws }
+
+    x = 10
+    y = 3
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      GER_hyperinflation_level_down = yes
+    }
+  }
+
+  focus = {
+    id = GER_banks
+    icon = GFX_GER_reichsbank
+    prerequisite = { focus = GER_pay_off_the_versailles_debt }
+    prerequisite = { focus = GER_coast_line_industry }
+    prerequisite = { focus = GER_learn_from_our_losses }
+
+    x = 10
+    y = 4
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      remove_ideas = GER_hyperinflation_1
+    }
+  }
+
+  focus = {
+    id = GER_ask_france_to_lift_the_treaty_of_versailles
+    icon = GFX_GER_french_deal
+    prerequisite = { focus = GER_banks }
+    mutually_exclusive = { focus = GER_declare_the_treaty_of_versailles_dead }
+
+    x = 8
+    y = 5
+
+    cost = 10
+
+    available = {
+      FRA = {
+        exist = yes
+      }
+    }
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_declare_the_treaty_of_versailles_dead
+    icon = GFX_Generic_Ripping_Papers
+    prerequisite = { focus = GER_banks }
+    mutually_exclusive = { focus = GER_ask_france_to_lift_the_treaty_of_versailles }
+
+    x = 12
+    y = 5
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_declare_support_for_the_republic
+    icon = GFX_FRA_FrenchFlag
+    prerequisite = { focus = GER_intervene_in_france }
+
+    x = 22
+    y = 5
+
+    cost = 2.9
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_war_support = 0.1
+      add_opinion_modifier = { target = FRA modifier = large_increase }
+      FRA = {
+        add_war_support = 0.1
+        add_opinion_modifier = { target = GER modifier = large_increase }
+        country_event = tlbgermany.1
+      }
+    }
+  }
+
+  focus = {
+    id = GER_guns_france
+    icon = GFX_Generic_Rearmament
+    prerequisite = { focus = GER_declare_support_for_the_republic }
+
+    x = 21
+    y = 6
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
 }

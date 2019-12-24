@@ -1,0 +1,16 @@
+GER_hyperinflation_level_down = {
+  if = {
+    limit = { has_idea = GER_hyperinflation_3 }
+    swap_ideas = {
+      remove_idea = GER_hyperinflation_3
+      add_idea = GER_hyperinflation_2
+    }
+  }
+  else_if = {
+    limit = { has_idea = GER_hyperinflation_2 }
+    swap_ideas = {
+      remove_idea = GER_hyperinflation_2
+      add_idea = GER_hyperinflation_1
+    }
+  }
+}

@@ -62,12 +62,14 @@ bookmarks = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				
+				GER_treaty_of_versailles
+				GER_hyperinflation_1
+				GER_humiliation_from_world_war_i
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
+				GER_ask_france_to_lift_the_treaty_of_versailles
+				GER_weimar_situation
+				GER_declare_the_treaty_of_versailles_dead
 			}
 		}
 
@@ -86,7 +88,7 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				#	
+				#
 			}
 			focuses = {
 				#

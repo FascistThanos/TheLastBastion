@@ -916,5 +916,24 @@ SpriteType = {
   name = "GFX_GER_lower_government_spending"
   texturefile = "gfx/interface/goals/GER_lower_government_spending.dds"
 }
-
+SpriteType = {
+  name = "GFX_GER_learn_from_our_losses"
+  texturefile = "gfx/interface/goals/GER_learn_from_our_losses.dds"
+}
+SpriteType = {
+  name = "GFX_GER_minimum_wage"
+  texturefile = "gfx/interface/goals/GER_minimum_wage.dds"
+}
+SpriteType = {
+  name = "GFX_GER_reichsbank"
+  texturefile = "gfx/interface/goals/GER_reichsbank.dds"
+}
+SpriteType = {
+  name = "GFX_GER_french_deal"
+  texturefile = "gfx/interface/goals/GER_french_deal.dds"
+}
+SpriteType = {
+  name = "GFX_GER_pay_the_debt"
+  texturefile = "gfx/interface/goals/GER_pay_the_debt.dds"
+}
 }

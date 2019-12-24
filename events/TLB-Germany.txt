@@ -1,0 +1,31 @@
+add_namespace = tlbgermany
+
+country_event = {
+  id = tlbgermany.1
+  title = tlbgermany.1.t
+  desc = tlbgermany.1.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.1.a
+    ai_chance = {
+      base = 100
+    }
+  }
+}
+
+country_event = {
+  id = tlbgermany.2
+  title = tlbgermany.2.t
+  desc = tlbgermany.2.d
+  picture = GFX_GER_weimar_situation_event
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.2.a
+    ai_chance = {
+      base = 100
+    }
+  }
+}

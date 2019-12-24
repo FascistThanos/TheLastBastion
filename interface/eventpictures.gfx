@@ -2100,4 +2100,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/demobilization_event.dds"
 	}
 
+	spriteType = {
+		name = "GFX_GER_weimar_situation_event"
+		texturefile = "gfx/event_pictures/GER_weimar_situation_event.dds"
+	}
+
 }

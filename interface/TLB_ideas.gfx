@@ -4039,6 +4039,18 @@ spriteTypes = {
 		name = "GFX_idea_GER_hyperinflation"
 		texturefile = "gfx/interface/ideas/GER_idea_hyperinflation.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_GER_humiliation"
+		texturefile = "gfx/interface/ideas/GER_Humiliation.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GER_military_reorganization"
+		texturefile = "gfx/interface/ideas/GER_military_reorganization.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GER_minimum_wage_i"
+		texturefile = "gfx/interface/ideas/GER_minimum_wage_i.dds"
+	}
 
 
 }
