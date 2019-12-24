@@ -1,0 +1,93 @@
+focus_tree = {
+	id = tlb_soviet_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 50
+			tag = SOV
+		}
+	}
+
+	default = no
+	focus = {
+		id = SOV_target_stalin
+		icon = GFX_Focus_Communist_Spy02
+		x = 0
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = {
+        focus = SOV_ignore_stalin
+    }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_ignore_stalin
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 15
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = {
+        focus = SOV_target_stalin
+    }
+		completion_reward = {
+			add_political_power = 75
+			set_global_flag = stalinignored
+		}
+	}
+	focus = {
+		id = SOV_red_wind
+		icon = GFX_focus_ger_great_red_menace
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = SOV_ignore_stalin
+    }
+		completion_reward = {
+			country_event = {
+				id = sov.1
+			}
+		}
+	}
+	focus = {
+		id = SOV_finland_diplomat
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = SOV_red_wind
+    }
+		completion_reward = {
+			add_threat = 1
+			country_event = {
+				id = sov.2
+			}
+		}
+	}
+	focus = {
+		id = SOV_rebuild_georgia
+		icon = GFX_Generic_Construction
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = SOV_red_wind
+    }
+		completion_reward = {
+			remove_ideas = {
+				SOV_destroyedgeorgia
+			}
+		}
+	}
+
+}

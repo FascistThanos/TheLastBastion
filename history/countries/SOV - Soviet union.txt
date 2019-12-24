@@ -73,7 +73,8 @@ if = {
 }
 
 add_ideas = {
-	
+	SOV_stalinthreat
+	SOV_destroyedgeorgia
 }
 
 set_convoys = 50
