@@ -1048,7 +1048,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_justashadow
-		icon = GFX_Generic_Low_Morale
+		icon = GFX_FRA_Shadow
 		x = 25
 		y = 4
 		cost = 7.2
@@ -1123,7 +1123,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_leadthenextrepublic
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_FRA_Degaulle
 		x = 25
 		y = 6
 		cost = 3.6
