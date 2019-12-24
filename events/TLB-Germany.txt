@@ -12,6 +12,10 @@ country_event = {
     ai_chance = {
       base = 100
     }
+    add_opinion_modifier = { target = GER modifier = medium_increase }
+    GER = {
+      add_opinion_modifier = { target = GER modifier = medium_increase }
+    }
   }
 }
 
@@ -24,6 +28,115 @@ country_event = {
 
   option = {
     name = tlbgermany.2.a
+    ai_chance = {
+      base = 100
+    }
+    add_political_power = 50
+  }
+}
+
+country_event = {
+  id = tlbgermany.3
+  title = tlbgermany.3.t
+  desc = tlbgermany.3.d
+  picture = GFX_report_event_china_ledo_road
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.3.a
+    ai_chance = {
+      base = 100
+    }
+    add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = 3000
+      producer = GER
+    }
+    GER = {
+      add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = -3000
+        producer = GER
+      }
+    }
+  }
+}
+
+country_event = {
+  id = tlbgermany.4
+  title = tlbgermany.4.t
+  desc = tlbgermany.4.d
+  picture = GFX_report_event_china_ledo_road
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.4.a
+    ai_chance = {
+      base = 90
+    }
+    add_opinion_modifier = { target = GER modifier = huge_increase }
+    GER = {
+      add_opinion_modifier = { target = GER modifier = huge_increase }
+      country_event = tlbgermany.5
+    }
+
+  }
+
+  option = {
+    name = tlbgermany.4.b
+    ai_chance = {
+      base = 10
+    }
+    add_opinion_modifier = { target = GER modifier = large_decrease }
+    GER = {
+      add_opinion_modifier = { target = GER modifier = large_decrease }
+      country_event = tlbgermany.6
+    }
+
+  }
+}
+
+country_event = {
+  id = tlbgermany.5
+  title = tlbgermany.5.t
+  desc = tlbgermany.5.d
+  picture = GFX_report_event_china_ledo_road
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.5.a
+    ai_chance = {
+      base = 100
+    }
+    remove_ideas = GER_treaty_of_versailles
+  }
+}
+
+country_event = {
+  id = tlbgermany.6
+  title = tlbgermany.6.t
+  desc = tlbgermany.6.d
+  picture = GFX_report_event_china_ledo_road
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.6.a
+    ai_chance = {
+      base = 100
+    }
+
+  }
+}
+
+country_event = {
+  id = tlbgermany.7
+  title = tlbgermany.7.t
+  desc = tlbgermany.7.d
+  picture = GFX_report_event_china_ledo_road
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.7.a
     ai_chance = {
       base = 100
     }

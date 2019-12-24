@@ -4051,6 +4051,14 @@ spriteTypes = {
 		name = "GFX_idea_GER_minimum_wage_i"
 		texturefile = "gfx/interface/ideas/GER_minimum_wage_i.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_GER_french_lend_lease_act"
+		texturefile = "gfx/interface/ideas/GER_french_lend_lease_act_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GER_french_volunteers"
+		texturefile = "gfx/interface/ideas/GER_french_volunteers.dds"
+	}
 
 
 }

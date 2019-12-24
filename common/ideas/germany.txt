@@ -145,7 +145,48 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		GER_french_lend_lease_act = {
+
+			picture = GER_french_lend_lease_act
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				lend_lease_tension = -1
+				send_volunteers_tension = -0.35
+			}
+		}
+
+		GER_french_volunteers_act = {
+
+			picture = GER_french_volunteers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteers_tension = -0.25
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 5
 			}
 		}
 

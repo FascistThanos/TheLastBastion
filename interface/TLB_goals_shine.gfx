@@ -7399,7 +7399,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_Generic_Industry_04_shine"
-		texturefile = "gfx/interface/goals/GFX_Generic_Industry.dds"
+		texturefile = "gfx/interface/goals/GFX_Generic_Industry_04.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_Generic_Industry_04.dds"
