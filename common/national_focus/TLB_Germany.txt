@@ -363,7 +363,7 @@ focus_tree = {
     prerequisite = { focus = GER_learn_from_our_losses }
 
     x = 10
-    y = 4
+    y = 5
 
     cost = 10
 
@@ -383,7 +383,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_declare_the_treaty_of_versailles_dead }
 
     x = 8
-    y = 5
+    y = 6
 
     cost = 10
 
@@ -409,7 +409,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_ask_france_to_lift_the_treaty_of_versailles }
 
     x = 12
-    y = 5
+    y = 6
 
     cost = 10
 
@@ -464,4 +464,62 @@ focus_tree = {
     completion_reward = {
 
     }
+  }
+
+  focus = {
+    id = GER_trust_in_the_monarchy
+    icon = GFX_focus_ger_revive_kaiserreich
+    prerequisite = { focus = GER_ask_france_to_lift_the_treaty_of_versailles focus = GER_declare_the_treaty_of_versailles_dead }
+
+    x = 10
+    y = 7
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_deutschnationale_volkspartei
+    icon = GFX_GER_nationalism
+    prerequisite = { focus = GER_declare_the_treaty_of_versailles_dead }
+
+    x = 16
+    y = 7
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = GER_trust_in_the_monarchy
+    icon = GFX_focus_ger_revive_kaiserreich
+    prerequisite = { focus = GER_ask_france_to_lift_the_treaty_of_versailles focus = GER_declare_the_treaty_of_versailles_dead }
+
+    x = 10
+    y = 7
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
 }

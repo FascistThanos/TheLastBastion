@@ -936,4 +936,8 @@ SpriteType = {
   name = "GFX_GER_pay_the_debt"
   texturefile = "gfx/interface/goals/GER_pay_the_debt.dds"
 }
+SpriteType = {
+  name = "GFX_GER_nationalism"
+  texturefile = "gfx/interface/goals/GER_nationalism.dds"
+}
 }
