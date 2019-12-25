@@ -286,7 +286,7 @@ focus_tree = {
     icon = GFX_Generic_Factory_Planning
     prerequisite = { focus = GER_coast_line_industry }
 
-    x = 0
+    x = 2
     y = 4
 
     cost = 5
@@ -374,7 +374,7 @@ focus_tree = {
     prerequisite = { focus = GER_learn_from_our_losses }
 
     x = 10
-    y = 6
+    y = 7
 
     cost = 10
 
@@ -395,7 +395,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_declare_the_treaty_of_versailles_dead }
 
     x = 8
-    y = 7
+    y = 8
 
     cost = 10
 
@@ -421,7 +421,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_ask_france_to_lift_the_treaty_of_versailles }
 
     x = 12
-    y = 7
+    y = 8
 
     cost = 10
 
@@ -510,7 +510,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_deutschnationale_volkspartei }
 
     x = 10
-    y = 8
+    y = 9
 
     cost = 10
 
@@ -534,7 +534,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_democracy_is_the_only_way }
 
     x = 18
-    y = 8
+    y = 9
 
     cost = 10
 
@@ -559,7 +559,7 @@ focus_tree = {
     mutually_exclusive = { focus = GER_deutschnationale_volkspartei }
 
     x = 2
-    y = 8
+    y = 9
 
     cost = 10
 
@@ -581,7 +581,7 @@ focus_tree = {
     icon = GFX_Generic_Industry
     prerequisite = { focus = GER_expand_our_industry }
 
-    x = -2
+    x = 0
     y = 5
 
     cost = 10
@@ -615,7 +615,7 @@ focus_tree = {
     icon = GFX_Generic_Construction
     prerequisite = { focus = GER_expand_our_industry }
 
-    x = 0
+    x = 2
     y = 5
 
     cost = 5
@@ -639,7 +639,7 @@ focus_tree = {
     icon = GFX_Generic_Industry
     prerequisite = { focus = GER_expand_our_industry }
 
-    x = 2
+    x = 4
     y = 5
 
     cost = 10
@@ -809,26 +809,7 @@ focus_tree = {
     prerequisite = { focus = GER_deutschnationale_volkspartei }
 
     x = 16
-    y = 9
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      add_ideas = GER_military_youth
-    }
-  }
-
-  focus = {
-    id = GER_military_youth
-    icon = GFX_Generic_Partisan
-    prerequisite = { focus = GER_deutschnationale_volkspartei }
-
-    x = 16
-    y = 9
+    y = 10
 
     cost = 10
 
@@ -847,7 +828,7 @@ focus_tree = {
     prerequisite = { focus = GER_deutschnationale_volkspartei }
 
     x = 18
-    y = 9
+    y = 10
 
     cost = 10
 
@@ -875,7 +856,7 @@ focus_tree = {
     prerequisite = { focus = GER_trust_in_the_monarchy }
 
     x = 10
-    y = 12
+    y = 13
 
     cost = 10
 
@@ -889,12 +870,12 @@ focus_tree = {
   }
 
   focus = {
-    id = GER_
-    icon = GFX_GER_imperial_ambitions
-    prerequisite = { focus = GER_trust_in_the_monarchy }
+    id = GER_the_kaiserliche_marine
+    icon = GFX_GER_kaiserliche_marine
+    prerequisite = { focus = GER_coast_line_industry }
 
-    x = 12
-    y = 9
+    x = -8
+    y = 4
 
     cost = 10
 
@@ -906,4 +887,24 @@ focus_tree = {
 
     }
   }
+
+  focus = {
+    id = GER_the_luftstreitkrafte
+    icon = GFX_GER_luftstreitkräfte
+    prerequisite = { focus = GER_learn_from_our_losses }
+
+    x = 28
+    y = 4
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+
+    }
+  }
+
 }

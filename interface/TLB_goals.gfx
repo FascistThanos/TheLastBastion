@@ -977,6 +977,18 @@ SpriteType = {
   name = "GFX_GER_imperial_ambitions"
   texturefile = "gfx/interface/goals/GER_imperial_ambitions.dds"
 }
+SpriteType = {
+  name = "GFX_GER_luftstreitkräfte"
+  texturefile = "gfx/interface/goals/GER_luftstreitkräfte.dds"
+}
+SpriteType = {
+  name = "GFX_GER_kaiserliche_marine"
+  texturefile = "gfx/interface/goals/GER_kaiserliche_marine.dds"
+}
+SpriteType = {
+  name = "GFX_GER_weimar_unified"
+  texturefile = "gfx/interface/goals/GER_weimar_unified.dds"
+}
 #####################################################
 #####################################################
 }
