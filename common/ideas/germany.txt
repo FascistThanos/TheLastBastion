@@ -1866,7 +1866,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_west_wall
+
 			}
 
 			traits = { fortification_engineer }
@@ -1894,8 +1894,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan
-				NOT = { has_completed_focus = GER_demand_sudetenland }
+
 			}
 
 			traits = { captain_of_industry }
@@ -1927,7 +1926,6 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { has_dlc = "Man the Guns" }
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1954,12 +1952,7 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { has_dlc = "Man the Guns" }
 					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-				if = {
-					limit = { has_dlc = "Waking the Tiger" }
-					has_completed_focus = GER_reestablish_free_elections
 				}
 			}
 
@@ -1984,9 +1977,7 @@ ideas = {
 			}
 
 			available = {
-				has_government = fascism
 				if = {
-					limit = { has_dlc = "Man the Guns" }
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -2011,11 +2002,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				NOT = { has_country_flag = flight_of_hess }
-				OR = {
-					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
-				}
+				has_government = fascism
 			}
 
 			traits = { silent_workhorse }
@@ -2029,14 +2016,7 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
-				}
-			}
-
-			on_add = {
-				custom_effect_tooltip = GER_SS_himmler_recruit
+				has_government = fascism
 			}
 
 			traits = { prince_of_terror }
@@ -2050,10 +2030,7 @@ ideas = {
 			}
 
 			available = {
-				OR = {
 					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
-				}
 			}
 
 			ai_will_do = {
@@ -2071,10 +2048,7 @@ ideas = {
 			}
 
 			available = {
-				OR = {
 					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
-				}
 			}
 
 			traits = { backroom_backstabber }
@@ -2099,11 +2073,10 @@ ideas = {
 
 			allowed = {
 				original_tag = GER
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
-				has_completed_focus = GER_oppose_hitler
+
 			}
 
 			traits = { anti_fascist_agent }
@@ -2118,11 +2091,10 @@ ideas = {
 
 			allowed = {
 				original_tag = GER
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich
+
 			}
 
 			traits = { monarchist_media_mogul }
@@ -2137,11 +2109,10 @@ ideas = {
 
 			allowed = {
 				original_tag = GER
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich
+
 			}
 
 			traits = { economist }
@@ -2156,11 +2127,10 @@ ideas = {
 
 			allowed = {
 				original_tag = GER
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
-				has_completed_focus = GER_reestablish_free_elections
+
 			}
 
 			traits = { connected_citizen }
@@ -2175,11 +2145,10 @@ ideas = {
 
 			allowed = {
 				original_tag = GER
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
-				has_completed_focus = GER_reestablish_free_elections
+
 			}
 
 			traits = { liberal_journalist }
@@ -2698,7 +2667,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_army_innovation
+
 			}
 
 
@@ -2740,7 +2709,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_air_innovation
+
 			}
 
 			traits = { air_chief_all_weather_2 }
@@ -2819,7 +2788,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-					has_completed_focus = GER_army_innovation
+
 				}
 
 			traits = { army_armored_3 }
@@ -2864,7 +2833,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-					has_completed_focus = GER_air_innovation
+
 			}
 
 			traits = { air_close_air_support_2 }
