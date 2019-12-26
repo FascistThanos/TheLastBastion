@@ -104,7 +104,18 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
+		headstrong
+	}
+}
 
+create_country_leader = {
+	name = "Gabriele D'Annunzio"
+	desc = "POLITICS_ANNUNZIO_DESC"
+	picture = "Portrait_Italy_Gabriele_Annunzio.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
 	}
 }
 
