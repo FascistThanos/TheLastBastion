@@ -1,0 +1,26 @@
+state = {
+  id = 873
+  name = "Downtown Moscow"
+  manpower = 5849600
+  state_category = megalopolis
+
+  history = {
+    owner = SOV
+    add_core_of = SOV
+		victory_points = {
+			6380 50
+		}
+
+    buildings = {
+      infrastructure = 9
+      air_base = 10
+      6380 = {
+        bunker = 2
+      }
+    }
+  }
+
+  provinces = {
+    6380
+  }
+}

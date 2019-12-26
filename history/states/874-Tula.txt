@@ -1,0 +1,25 @@
+state = {
+  id = 874
+  name = "Southern Moskva"
+  manpower = 1853500
+  state_category = city
+
+  resources = {
+    steel = 6
+    oil = 1
+  }
+
+  history = {
+    owner = SOV
+    add_core_of = SOV
+    buildings = {
+      industrial_complex = 2
+      arms_factory = 1
+      infrastructure = 8
+    }
+  }
+
+  provinces = {
+    401 3327 3391 6290 6348 6414 9282 9348
+  }
+}

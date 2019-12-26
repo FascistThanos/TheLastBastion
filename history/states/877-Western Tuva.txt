@@ -1,0 +1,20 @@
+state = {
+  id = 877
+  name = "Western Tuva"
+  manpower = 26400
+  state_category = pastoral
+
+  history = {
+    owner = SOV
+    add_core_of = SOV
+    add_core_of = TUV
+
+    buildings = {
+      infrastructure = 2
+    }
+  }
+
+  provinces = {
+    1676 4711 7804 7819 
+  }
+}
