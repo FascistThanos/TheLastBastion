@@ -1,0 +1,18 @@
+state = {
+  id = 880
+  name = "Khentii"
+  manpower = 59700
+  state_category = pastoral
+
+  history = {
+    owner = MON
+    add_core_of = MON
+    buildings = {
+      infrastructure = 2
+    }
+  }
+
+  provinces = {
+    4792 4862 7823 7885 10708 12533 12665 
+  }
+}

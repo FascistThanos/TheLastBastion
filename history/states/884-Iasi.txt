@@ -1,0 +1,25 @@
+state = {
+  id = 884
+  name = "Iasi"
+  state_category = rural
+  manpower = 1209400
+
+  history = {
+    owner = ROM
+    add_core_of = ROM
+    add_claim_by = SOV
+		victory_points = {
+			9716 1
+		}
+
+    buildings = {
+      air_base = 2
+      industrial_complex = 1
+      infrastructure = 4
+    }
+  }
+
+  provinces = {
+    723 744 3728 3741 6584 6747 6761 9716 11534 11672 11689
+  }
+}

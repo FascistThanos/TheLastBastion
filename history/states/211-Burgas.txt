@@ -2,7 +2,7 @@
 state={
 	id=211
 	name="STATE_211"
-	manpower = 1575499
+	manpower = 695300
 
 
 	state_category = town
@@ -10,17 +10,11 @@ state={
 	history={
 		owner = BUL
 		victory_points = {
-			9783 5
-		}
-		victory_points = {
 			9902 3
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
-			9783 = {
-				naval_base = 3
-			}
 			9902 = {
 				naval_base = 1
 			}
@@ -29,6 +23,6 @@ state={
 	}
 
 	provinces={
-		649 6967 9612 9769 9783 9888 9902 9919 
+		6967 9888 9902
 	}
 }
