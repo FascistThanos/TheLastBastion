@@ -1,0 +1,312 @@
+focus_tree = {
+	id = egypt
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EGY
+		}
+	}
+	#Focus for Arabian Investments
+	focus = {
+		id = EGY_arabianinvestments
+		icon = GFX_goal_unknown
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_embassytosaudiarabia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Building The Egyptian Army
+	focus = {
+		id = EGY_buildingtheegyptianarmy
+		icon = GFX_goal_unknown
+		x = 38
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Army's Weapons
+	focus = {
+		id = EGY_thearmysweapons
+		icon = GFX_goal_unknown
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_buildingtheegyptianarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Foreign Weapons Contracts
+	focus = {
+		id = EGY_foreignweaponscontracts
+		icon = GFX_goal_unknown
+		x = 35
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_thearmysweapons }
+		mutually_exclusive = { focus = EGY_designourownweapons }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Design Our Own Weapons
+	focus = {
+		id = EGY_designourownweapons
+		icon = GFX_goal_unknown
+		x = 37
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_thearmysweapons }
+		mutually_exclusive = { focus = EGY_foreignweaponscontracts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Wafd Wins
+	focus = {
+		id = EGY_thewafdwins
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_1948elections }
+		mutually_exclusive = { 
+			focus = EGY_theroyalpartywins 
+		}
+		mutually_exclusive = { 
+			focus = EGY_themuslimbrotherhoodwins 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Independence at Last
+	focus = {
+		id = EGY_independenceatlast
+		icon = GFX_goal_unknown
+		x = 12
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 1948 Elections
+	focus = {
+		id = EGY_1948elections
+		icon = GFX_goal_unknown
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_independenceatlast }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Side With The Republic
+	focus = {
+		id = EGY_sidewiththerepublic
+		icon = GFX_goal_unknown
+		x = 32
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_thelevantcivilwar }
+		mutually_exclusive = { 
+			focus = EGY_sidewiththelevantkingdom 
+		}
+		mutually_exclusive = { 
+			focus = EGY_sidewiththearabs 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for American Investments
+	focus = {
+		id = EGY_americaninvestments
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_embassytousa }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Royal Party Wins
+	focus = {
+		id = EGY_theroyalpartywins
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_1948elections }
+		mutually_exclusive = { 
+			focus = EGY_thewafdwins 
+		}
+		mutually_exclusive = { 
+			focus = EGY_themuslimbrotherhoodwins 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Embassy To USA
+	focus = {
+		id = EGY_embassytousa
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_thewafdwins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Embassy To Iraq
+	focus = {
+		id = EGY_embassytoiraq
+		icon = GFX_goal_unknown
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_theroyalpartywins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Levant Civil War
+	focus = {
+		id = EGY_thelevantcivilwar
+		icon = GFX_goal_unknown
+		x = 28
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Side With The Levant Kingdom
+	focus = {
+		id = EGY_sidewiththelevantkingdom
+		icon = GFX_goal_unknown
+		x = 24
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_thelevantcivilwar }
+		mutually_exclusive = { 
+			focus = EGY_sidewiththearabs 
+		}
+		mutually_exclusive = { 
+			focus = EGY_sidewiththerepublic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Side With The Arabs
+	focus = {
+		id = EGY_sidewiththearabs
+		icon = GFX_goal_unknown
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_thelevantcivilwar }
+		mutually_exclusive = { 
+			focus = EGY_sidewiththelevantkingdom 
+		}
+		mutually_exclusive = { 
+			focus = EGY_sidewiththerepublic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Muslim Brotherhood Wins
+	focus = {
+		id = EGY_themuslimbrotherhoodwins
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_1948elections }
+		mutually_exclusive = { 
+			focus = EGY_theroyalpartywins 
+		}
+		mutually_exclusive = { 
+			focus = EGY_thewafdwins 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Embassy To Saudi Arabia
+	focus = {
+		id = EGY_embassytosaudiarabia
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_themuslimbrotherhoodwins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Army Training
+	focus = {
+		id = EGY_thearmytraining
+		icon = GFX_goal_unknown
+		x = 41
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = EGY_buildingtheegyptianarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
