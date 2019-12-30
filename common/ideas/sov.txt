@@ -34,5 +34,21 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 			}
 		}
+		SOV_stalinistremoval = {
+			removal_cost = -1
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_stalincrackdown
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
 	}
 }

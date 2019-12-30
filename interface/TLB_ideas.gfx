@@ -4023,6 +4023,10 @@ spriteTypes = {
 		name = "GFX_idea_SOV_stalin_threat"
 		texturefile = "gfx/interface/ideas/SOV_stalin_exiled.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SOV_stalincrackdown"
+		texturefile = "gfx/interface/ideas/SOV_stalincrackdown.dds"
+	}
 
 
 

@@ -79,7 +79,7 @@ country_event = {
 	id = sov.4
 	title = sov.4.t
 	desc = sov.4.d
-	picture = GFX_report_event_canada_treaty
+	picture = GFX_report_event_finnish_letter
 
 	is_triggered_only = yes
 
@@ -125,5 +125,20 @@ country_event = {
 	option = {
 		name = sov.6.b
 		add_state_claim = 146
+	}
+}
+country_event = {
+	id = sov.7
+	title = sov.7.t
+	desc = sov.7.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov.6.a
+		add_ideas ={
+			SOV_stalinistremoval
+		}
 	}
 }
