@@ -1,10 +1,11 @@
-capital = 165
-oob = "SPR_1936"
+capital = 166
+
+oob = "ARA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SPR_1936_naval_mtg"
+		set_naval_oob = "ARA_1936_naval_mtg"
 	else = {
-		set_naval_oob = "SPR_1936_naval_legacy"
+		set_naval_oob = "ARA_1936_naval_legacy"
 	}
 }
 
@@ -24,6 +25,7 @@ set_technology = {
 	naval_bomber1 = 1
 }
 if = {
+
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_submarine = 1
@@ -58,172 +60,44 @@ if = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = monarchist
+	last_election = "1926.4.7"
+	election_frequency = 56
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 23
-	neutrality = 35
-	communism = 22
+	monarchist = 64
+	liberal = 13
+	democratic = 7
+	socialism = 3
+	fascism = 8
+	communism = 5
 }
 
 set_convoys = 150
 set_stability = 0.5
 
-1939.1.1 = {
-
-	add_political_power = 1198
-
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-
-	oob = "SPA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SPA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SPA_1939_naval_legacy"
-		}
-	}
-	load_oob = "unlock_tanks"
-
-	set_technology = {
-		fighter1 = 1
-		CAS1 = 1
-		tactical_bomber1 = 1
-		gwtank = 1
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		motorised_infantry = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-		}
-	}
-
-	set_politics = {
-		ruling_party = fascism
-		last_election = "1934.3.26"
-		election_frequency = 60
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 22
-		fascism = 76
-		communism = 2
-	}
-
-	set_global_flag = scw_over
-	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
-}
-
 create_country_leader = {
-	name = "Manuel Azana"
-	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Spain_Manuel_Azana.dds"
+	name = "Michel Eymar"
+	desc = "POLITICS_EYMAR_DESC"
+	picture = "Portrait_Aragon_Michel_Eymar.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = constitutional_monarch
 	traits = {
-		#
+		weak_controller
 	}
 }
 
 create_country_leader = {
-	name = "José Balasco"
-	desc = "POLITICS_JOSE_DIAZ_DESC"
-	picture = "Portrait_Spain_Jose_Diaz.dds"
+	name = "Eutimio Pedroso"
+	desc = "POLITICS_PEDROSO_DESC"
+	picture = "gfx/leaders/generic/portrait_europe_generic_5.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = libertarian
 	traits = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Santiago Abascal"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "Portrait_Spain_Francisco_Franco.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alejandro Lerroux"
-	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "José Asensio Torrado"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 2
-    attack_skill = 1
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 1
-}
-
 
 ### VARIANTS ###
 # 1936 Start #
