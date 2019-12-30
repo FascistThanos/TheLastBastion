@@ -1,0 +1,38 @@
+ideas = {
+	country = {
+		SOV_stalinthreat = {
+			removal_cost = -1
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_stalin_threat
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		SOV_destroyedgeorgia = {
+			removal_cost = -1
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_destroyedgeorgia
+
+			modifier = {
+				stability_factor = -0.05
+				conscription = -0.01
+				production_speed_buildings_factor = -0.05
+			}
+		}
+	}
+}
