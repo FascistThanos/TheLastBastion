@@ -9,11 +9,10 @@ state = {
     add_core_of = MAD
     buildings = {
       infrastructure = 2
-      industrial_complex = 1
     }
   }
 
   provinces = {
-    2200 8180 8246 10993 12956 
+    2200 8180 8246 10993 12956
   }
 }

@@ -269,6 +269,25 @@ ideas = {
 			}
 		}
 
+		GER_conscription_campaigns = {
+
+			picture = GER_french_volunteers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
 
 	#########################BASEGAME########################
 		sour_loser = {
@@ -1982,7 +2001,7 @@ ideas = {
 				}
 			}
 
-			traits = { fascist_demagogue propaganda_expert}
+			traits = { fascist_demagogue }
 
 			do_effect = {
 				NOT = {

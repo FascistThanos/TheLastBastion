@@ -410,7 +410,9 @@ focus_tree = {
     }
 
     completion_reward = {
-
+      FRA = {
+        country_event = tlbgermany.4
+      }
     }
   }
 
@@ -430,16 +432,49 @@ focus_tree = {
     }
 
     completion_reward = {
-      if = {
-        limit = {
-          country_exists = FRA
-        }
-        remove_ideas = GER_treaty_of_versailles
-        FRA = {
-          country_event = tlbgermany.7
-          create_wargoal = {
-            type = puppet_wargoal_focus
-            target = GER
+      custom_effect_tooltip = GER_tt_dead
+      hidden_effect = {
+        if = {
+          limit = {
+            FRA = {
+              #NOT = { has_war_with = FPR }
+              #French States
+              owns_state = 28
+              owns_state = 17
+              owns_state = 27
+              owns_state = 33
+              owns_state = 23
+              owns_state = 19
+              owns_state = 25
+              owns_state = 26
+              owns_state = 20
+              owns_state = 32
+              owns_state = 867
+              owns_state = 735
+              owns_state = 21
+              owns_state = 22
+              owns_state = 870
+              owns_state = 31
+              #FPR States
+              owns_state = 14
+              owns_state = 30
+              owns_state = 15
+              owns_state = 24
+              owns_state = 866
+              owns_state = 16
+              owns_state = 785
+              owns_state = 29
+              owns_state = 18
+              owns_state = 865
+            }
+          }
+            remove_ideas = GER_treaty_of_versailles
+            FRA = {
+              country_event = tlbgermany.7
+              create_wargoal = {
+                type = puppet_wargoal_focus
+                target = GER
+            }
           }
         }
 
@@ -519,9 +554,21 @@ focus_tree = {
     }
 
     completion_reward = {
-      add_popularity = {
-        ideology = monarchist
-        popularity = 0.20
+      custom_effect_tooltip = GER_tt_monarchy
+      if = {
+        limit = {
+          monarchist > 0.6
+        }
+        add_stability = 0.1
+        set_politics = {
+          ruling_party = monarchist
+        }
+      }
+      else = {
+        add_popularity = {
+          ideology = monarchist
+          popularity = 0.15
+        }
       }
     }
   }
@@ -543,13 +590,25 @@ focus_tree = {
     }
 
     completion_reward = {
-      add_political_power = 75
-      add_popularity = {
-        ideology = fascism
-        popularity = 0.15
+      custom_effect_tooltip = GER_tt_fascism
+      if = {
+        limit = {
+          fascism > 0.6
+        }
+        add_stability = 0.1
+        set_politics = {
+          ruling_party = fascism
+        }
+      }
+      else = {
+        add_popularity = {
+          ideology = fascism
+          popularity = 0.2
+        }
       }
     }
   }
+
 
   focus = {
     id = GER_democracy_is_the_only_way
@@ -568,10 +627,21 @@ focus_tree = {
     }
 
     completion_reward = {
-      add_stability = 0.10
-      add_popularity = {
-        ideology = democratic
-        popularity = 0.1
+      custom_effect_tooltip = GER_tt_democracy
+      if = {
+        limit = {
+          democratic > 0.6
+        }
+        add_stability = 0.1
+        set_politics = {
+          ruling_party = democratic
+        }
+      }
+      else = {
+        add_popularity = {
+          ideology = democratic
+          popularity = 0.1
+        }
       }
     }
   }
@@ -716,7 +786,7 @@ focus_tree = {
 
   focus = {
     id = GER_open_military_academies
-    icon = GFX_focus_generic_military_academy
+    icon = GFX_focus_generic_military_mission
     prerequisite = { focus = GER_evolve_our_military }
 
     x = 12
@@ -786,7 +856,7 @@ focus_tree = {
 
   focus = {
     id = GER_military_education_for_all
-    icon = GFX_Generic_Outside_Aid
+    icon = GFX_focus_generic_military_academy
     prerequisite = { focus = GER_open_military_academies }
 
     x = 12
@@ -965,7 +1035,9 @@ focus_tree = {
     }
 
     completion_reward = {
-
+      FRA = {
+        country_event = tlbgermany.8
+      }
     }
   }
 
@@ -984,8 +1056,16 @@ focus_tree = {
       factor = 50
     }
 
-    completion_reward = {
+    bypass = {
+      owns_state = 42
+      owns_state = 51
+    }
 
+    completion_reward = {
+      annex_country = {
+        target = FOZ
+        transfer_troops = yes
+      }
     }
   }
 
@@ -1005,6 +1085,25 @@ focus_tree = {
 
     completion_reward = {
 
+    }
+  }
+
+  focus = {
+    id = GER_conscription_campaigns
+    icon = GFX_Generic_Outside_Aid
+    prerequisite = { focus = GER_army_of_men }
+
+    x = 16
+    y = 6
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_conscription_campaigns
     }
   }
 }

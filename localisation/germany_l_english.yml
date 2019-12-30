@@ -40,6 +40,8 @@
  GER_request_the_return_of_the_rhineland:0 "Request The Return Of The Rhineland"
  GER_annex_the_rhineland:0 "Annex The Rhineland"
  GER_expand_panzer_production:0 "Expand Panzer Production"
+ GER_conscription_campaigns:0 "Conscription Campaigns"
+ #Preußische Staatseisenbahnen
 #Ideas
  GER_treaty_of_versailles:0 "Treaty Of Versailles"
  GER_hyperinflation:0 "Hyperinflation"
@@ -73,3 +75,15 @@
  tlbgermany.7.t:0 "The Weimar Republic Declares The Treaty Of Versailles Dead"
  tlbgermany.7.d:0 "The Weimar Republic Declares The Treaty Of Versailles Dead(Placeholder)"
  tlbgermany.7.a:0 "Damn fools."
+ tlbgermany.8.t:0 "Weimar Requests The Return Of The Rhineland"
+ tlbgermany.8.d:0 "Placeholder"
+ tlbgermany.8.a:0 "Give them back the Rhineland"
+ tlbgermany.8.b:0 "The Rhineland will remain under our supervision."
+ tlbgermany.9.t:0 "French Republic Has Agreed To Return The Rhineland"
+ tlbgermany.9.d:0 "Placeholder"
+ tlbgermany.9.a:0 "Exellent!"
+#Tooltips
+ GER_tt_dead:0 "§R  If the French Republic is at war with FPR or Owns all core states The Treaty of Versailles will be removed, but the French Republic gets a puppet wargoal against you.§! \n-----------------------------------------------------------------\n§G  If the FPR wins the French civil war and the French Republic is put into exile then you can remove The Treaty of Versailles without any consequences.§!"
+ GER_tt_monarchy:0 "§GIf popularity for the Monarchist party is more than 60% you government will switch to Monarchy.§! \n"
+ GER_tt_fascism:0 "§GIf popularity for the Fascist party is more than 60% you government will switch to Fascism.§! \n"
+ GER_tt_democracy:0 "§GIf popularity for the Democratic party is more than 60% you government will switch to Democracy.§! \n"
