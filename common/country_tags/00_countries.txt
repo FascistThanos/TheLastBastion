@@ -189,6 +189,10 @@ UOB = "countries/Union of the Benelux.txt"
 KUR = "countries/Kurdistan.txt"
 SSD = "countries/South Sudan.txt"
 
+##### For Spain Breakup #####
+
+ARA = "countries/Aragon.txt"
+
 ##### For Italy breakup #####
 PAP = "countries/Papal States.txt"
 SRD = "countries/Sardinia-Piedmont.txt"
