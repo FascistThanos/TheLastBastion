@@ -1,24 +1,26 @@
 ﻿l_english:
 
+  ### Country Names ###
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  BAV_democratic:0 "Bavaria"
+  BAV_fascism:0 "Free Empire of Bavaria"
+  BAV_communism:0 "Bavarian Union"
+  BAV_communism_DEF:0 "the Bavarian Union"
+  BAV_communism_ADJ:0 "Bavarian"
+  BAV_democratic_DEF:0 "Bavaria"
+  BAV_democratic_ADJ:0 "Bavarian"
+  BAV_fascism_DEF:0 "the Free Empire of Bavaria"
+  BAV_fascism_ADJ:0 "Bavarian"
+  BAW_democratic:0 "Bade-Wurtemberg"
+  BAW_democratic_DEF:0 "Bade-Wurtemberg"
+  BAW_democratic_ADJ:0 "Wurtembergian"
+  BAW_communism:0 "Bade-Wurtembergian Union"
+  BAW_communism_DEF:0 "the Bade-Wurtembergian Union"
+  BAW_communism_ADJ:0 "Wurtembergian"
+  BAW_fascism:0 "Bade-Wurtembergian Kingdom"
+  BAW_fascism_DEF:0 "the Bade-Wurtembergian Kingdom"
+  BAW_fascism_ADJ:0 "Wurtembergian"
 
 
 
