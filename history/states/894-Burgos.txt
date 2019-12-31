@@ -1,0 +1,19 @@
+state = {
+  id = 894
+  name = "Burgos"
+  state_category = town
+  manpower = 105490
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+    buildings = {
+      infrastructure = 5
+      arms_factory = 1
+    }
+  }
+
+  provinces = {
+     884 3887 3902 6903 11852
+  }
+}

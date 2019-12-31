@@ -1,0 +1,23 @@
+state = {
+  id = 896
+  name = "Almeria"
+  state_category = town
+  manpower = 785400
+
+  resources = {
+    steel = 3
+  }
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+    buildings = {
+      infrastructure = 4
+      industrial_complex = 1
+    }
+  }
+
+  provinces = {
+    1192 4065 4095 7196 11956 12038 12083 
+  }
+}

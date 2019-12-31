@@ -1,0 +1,23 @@
+state = {
+  id = 889
+  name = "Navarre"
+  state_category = town
+  manpower = 206400
+
+  resources = {
+    steel = 6
+  }
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+    buildings = {
+      infrastructure = 4
+      industrial_complex = 1
+    }
+  }
+
+  provinces = {
+    932 3737 3931 3933 9857
+  }
+}

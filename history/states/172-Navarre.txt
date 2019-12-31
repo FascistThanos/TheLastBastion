@@ -1,24 +1,23 @@
+state = {
+	id = 172
+	name = "Euskadi"
+	manpower = 1494600
 
-state={
-	id=172
-	name="STATE_172"
-	manpower = 1794880
-	
 	state_category = city
-	
-	resources={
-		steel=8 # was: 12
+
+	resources = {
+		steel = 2
 	}
 
-	history={
+	history = {
 		owner = SPR
 		victory_points = {
-			740 3 
+			740 3
 		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
 			air_base = 1
 			740 = {
 				naval_base = 1
@@ -27,7 +26,7 @@ state={
 		add_core_of = SPR
 	}
 
-	provinces={
-		738 740 932 3735 3737 3931 3933 6756 9703 9857 11688 
+	provinces = {
+		738 740 3735 6756 9703 11688 
 	}
 }

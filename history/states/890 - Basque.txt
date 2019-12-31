@@ -1,0 +1,21 @@
+state = {
+  id = 890
+  name = "Basque Country"
+  state_category = town
+  manpower = 794600
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+    buildings = {
+      infrastructure = 4
+			11707 = {
+				naval_base = 2
+			}
+    }
+  }
+
+  provinces = {
+    3729 3744 6749 9699 9719 11707
+  }
+}

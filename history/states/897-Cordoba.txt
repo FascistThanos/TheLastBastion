@@ -1,0 +1,23 @@
+state = {
+  id = 897
+  name = "Cordoba"
+  manpower = 1067450
+  state_category = town
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+		victory_points = {
+			875 1
+		}
+    buildings = {
+      infrastructure = 5
+			arms_factory = 1
+      industrial_complex = 1
+    }
+  }
+
+  provinces = {
+    875 879 950 3810 3871 6744 10111
+  }
+}

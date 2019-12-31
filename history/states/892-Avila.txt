@@ -1,0 +1,18 @@
+state = {
+  id = 892
+  name = "Avila"
+  state_category = rural
+  manpower = 58600
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+    buildings = {
+      infrastructure = 4
+    }
+  }
+
+  provinces = {
+    3820 9800 9827 9846 11809 
+  }
+}

@@ -1,0 +1,18 @@
+state = {
+  id = 898
+  name = "Badajoz"
+  state_category = rural
+  manpower = 768400
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+    buildings = {
+      infrastructure = 4
+    }
+  }
+
+  provinces = {
+    809 931 3930 6948 6954 11798 11851 
+  }
+}

@@ -1,0 +1,19 @@
+state = {
+  id = 893
+  name = "Segovila"
+  state_category = rural
+  manpower = 49640
+
+  history = {
+    owner = SPR
+    add_core_of = SPR
+    buildings = {
+      infrastructure = 4
+      industrial_complex = 1
+    }
+  }
+
+  provinces = {
+     857 3859 9870 11766 11806
+  }
+}
