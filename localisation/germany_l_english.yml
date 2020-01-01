@@ -1,7 +1,6 @@
 ﻿l_english:
 
 # Country Names
-
  GER_fascism:0 "North German Reich"
  GER_fascism_DEF:0 "the North German Empire"
  GER_democratic:0 "Weimar Republic"
@@ -35,7 +34,6 @@
  FGE_democratic_ADJ:0 "German"
  FGE_neutrality_ADJ:0 "German"
  FGE_communism_ADJ:0 "German"
- 
  SGF_democratic:0 "South German Federation"
  SGF_democratic_DEF:0 "the South German Federation"
  SGF_democratic_ADJ:0 "German"
@@ -45,7 +43,6 @@
  SGF_communism:0 "South German Union"
  SGF_communism_DEF:0 "the South German Union"
  SGF_communism_ADJ:0 "German"
-
 #Focuses
  GER_weimar_situation:0 "Weimar Situation"
  GER_take_money_out_of_circulation:0 "Take Money Out Of Circulation"
@@ -87,6 +84,14 @@
  GER_annex_the_rhineland:0 "Annex The Rhineland"
  GER_expand_panzer_production:0 "Expand Panzer Production"
  GER_conscription_campaigns:0 "Conscription Campaigns"
+ GER_improve_synthetic_refineries:0 "Improve Synthetic Refineries"
+ GER_civilian_industry_in_berlin:0 "Civilian Industry In Berlin"
+ GER_military_industry_in_berlin:0 "Military Industry In Berlin"
+ GER_expand_the_autobahn:0 "Expand The Autobahn"
+ GER_military_industry_in_frankfurt:0 "Arms Factories In Frankfurt"
+ GER_civilian_industry_in_frankfurt:0 "Consumer Industry In Frankfurt"
+ GER_research_effort:0 "Research Effort"
+ GER_thuringen_chromium_excavation:0 "Expand Excavation Of Thüringen Chromium"
  #Preußische Staatseisenbahnen
 #Ideas
  GER_treaty_of_versailles:0 "Treaty Of Versailles"
@@ -98,6 +103,7 @@
  GER_french_volunteers_act:0 "French Volunteers Act"
  GER_military_academies:0 "Military Academies"
  GER_the_reichswehr:0 "The Reichswehr"
+ GER_improved_synthetic_refineries:0 "Improved Synthetic Refineries"
 #Events
  tlbgermany.1.t:0 "Weimar Declares Support For The French Republic"
  tlbgermany.1.d:0 "Earlier this morning, in a public speach the Weimar President [GER.GetLeader] announced support for the French Republic, stating it is the rightful government in Paris. This will surely bolster our soldiers morale."

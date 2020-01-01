@@ -288,6 +288,25 @@ ideas = {
 			}
 		}
 
+		GER_improved_synthetic_refineries = {
+
+			picture = GER_french_volunteers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = 0.1
+			}
+		}
+
 
 	#########################BASEGAME########################
 		sour_loser = {
