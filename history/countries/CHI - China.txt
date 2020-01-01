@@ -80,39 +80,7 @@ set_convoys = 40
 	set_stability = 0.5
 	set_war_support = 0.7
 
-	if = {
-		limit = { has_dlc = "Waking the Tiger" }
-		complete_national_focus = CHI_unified_industrial_planning
-		complete_national_focus = CHI_mission_to_germany
-		complete_national_focus = CHI_rural_reconstruction_movement
-		complete_national_focus = CHI_british_cooperation
-		unlock_national_focus = CHI_fighter_purchases
-		complete_national_focus = CHI_mission_to_the_us
-		complete_national_focus = CHI_mission_to_the_soviet_union
-		complete_national_focus = CHI_hire_chennault
-		complete_national_focus = CHI_rapprochement_with_soviet_union
-		complete_national_focus = CHI_invite_soviet_advisers
-		complete_national_focus = CHI_military_affairs_commission
-		complete_national_focus = CHI_burma_road
-		unlock_national_focus = CHI_the_soviet_volunteer_group
-		complete_national_focus = CHI_bureau_of_investigation_and_statistics
-		complete_national_focus = CHI_camco
-		complete_national_focus = CHI_three_principles_of_the_people
-		complete_national_focus = CHI_army_reform
-		complete_national_focus = CHI_nationalism
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = flexible_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
+
 
 	add_ideas = {
 		#laws

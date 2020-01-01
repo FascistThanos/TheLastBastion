@@ -91,7 +91,9 @@ bookmarks = {
 				#
 			}
 			focuses = {
-				#
+				CHI_northern_war
+				CHI_cleanse_red
+				CHI_anti_soviet_pact
 			}
 		}
 		"---"={
@@ -238,21 +240,6 @@ bookmarks = {
 				YUG_western_focus
 				YUG_abolish_the_monarchy
 				YUG_establish_the_banovina_of_croatia
-			}
-		}
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_1
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_united_front
-				CHI_army_reform
-				CHI_invite_the_flying_tigers
 			}
 		}
 		"PRC"={

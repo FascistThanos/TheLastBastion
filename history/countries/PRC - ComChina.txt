@@ -129,6 +129,12 @@ save_global_event_target_as = WTT_communist_china
 	}
 }
 
+declare_war_on = {
+	target = CHI
+	type = annex_everything
+}
+
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
