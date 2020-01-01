@@ -3,11 +3,11 @@ state=
 	id=524
 	name="STATE_524"
 	manpower = 4592537
-	
+
 	state_category = large_town
 	history=
 	{
-		owner = JAP
+		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
@@ -19,10 +19,10 @@ state=
 			}
 		}
 		victory_points = {
-			7186 5 
+			7186 5
 		}
 		victory_points = {
-			12068 1 
+			12068 1
 		}
 
 	}
