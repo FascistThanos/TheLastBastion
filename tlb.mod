@@ -1,5 +1,5 @@
 name="The Last Bastion"
-path="C:/Users/Greenbueller/Documents/Paradox Interactive/Hearts of Iron IV/mod/thelastbastion-wdfd"
+path="mod/thelastbastion-wdfd"
 tags={
 	"Alternative History"
 	"Map"
