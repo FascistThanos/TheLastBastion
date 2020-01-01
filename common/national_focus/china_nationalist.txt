@@ -343,7 +343,7 @@ focus = {
 focus = {
 	id = CHI_post_war_politics
 	icon = GFX_
-	prerequisite = { focus = CHI_post_war_rehabilitation focus = CHI_great_asian_war focus = CHI_anti_soviet_pact }
+	prerequisite = { focus = CHI_post_war_rehabilitation focus = CHI_rebuild_japan focus = CHI_anti_soviet_pact }
 	x = 2
 	y = 1
 	relative_position_id = CHI_post_war_rehabilitation
@@ -987,11 +987,10 @@ focus = {
 focus = {
 	id = CHI_great_asian_war
 	icon = GFX_
-	prerequisite = { focus = CHI_strike_manchu}
-	prerequisite = { focus = CHI_japan_enemy}
-	x = -1
+	prerequisite = { focus = CHI_manchu_league}
+	x = 0
 	y = 1
-	relative_position_id = CHI_strike_manchu
+	relative_position_id = CHI_manchu_league
 
 	cost = 10
 
@@ -1896,7 +1895,7 @@ focus = {
 }
 
 focus = {
-	id = CHI_pacfic_navy 
+	id = CHI_pacfic_navy
 	icon = GFX_goal_generic_navy_battleship
 	prerequisite = { focus = CHI_strike_force focus = CHI_coastal_defense }
 
@@ -1984,11 +1983,10 @@ focus = {
 focus = {
 	id = CHI_rebuild_japan
 	icon = GFX_
-	prerequisite = { focus = CHI_great_asian_war}
-	prerequisite = { focus = CHI_expand_central_industrial_region}
-	x = -1
-	y = 2
-	relative_position_id = CHI_expand_central_industrial_region
+	prerequisite = { focus = CHI_japan_enemy}
+	x = 0
+	y = 1
+	relative_position_id = CHI_japan_enemy
 
 	cost = 10
 
@@ -2134,6 +2132,37 @@ focus = {
 	x = 1
 	y = 1
 	relative_position_id =   CHI_mobile_tanks
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+
+#########################
+
+focus = {
+	id = CHI_manchu_league
+	icon = GFX_
+	prerequisite = { focus =  CHI_strike_manchu focus = CHI_manchu_diplo}
+	x = 1
+	y = 1
+	relative_position_id =   CHI_strike_manchu
 
 	cost = 10
 
