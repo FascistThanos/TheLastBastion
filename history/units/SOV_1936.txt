@@ -1854,14 +1854,11 @@ air_wings = {
 	}
 
 	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock
-	408 = {
-		# 12ya Istrebitel'nye Aviabrigada
-		# 20ya Istrebitel'nye Aviabrigada
+	878 = {
 		fighter_equipment_0 = {
 			owner = "SOV"
 			amount = 188
 		}
-		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
 		strat_bomber_equipment_1 =  {
 			owner = "SOV"
 			amount = 24

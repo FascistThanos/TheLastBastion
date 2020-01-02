@@ -286,7 +286,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 30
 		}
-		location = 11569
+		location = 680
 		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
