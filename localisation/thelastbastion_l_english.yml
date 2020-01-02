@@ -45,13 +45,13 @@
 
  tlb.40.t:0 "Placeholder"
  tlb.40.d:0 "Placeholder Event"
- tlb.40.a:0 "How did I get this event?"
+ tlb.40.a:0 "How did I get this event? (please notify the developers)"
 
 #Focuses
  TLB_The_Last_Bastion:0 "The Last Bastion"
- TLB_The_Last_Bastion_desc:0 "The many powers of this world have fallen. Our only hope is ourselves. The world has betrayed us, but that does not mean we have given up on them. We are The Last Bastion."
+ TLB_The_Last_Bastion_desc:0 "The many powers of this world have fallen. Our only hope is ourselves. The world, by intention or not, has betrayed us, but that does not mean we have given up on them. There's not much hope left in the world. We are The Last Bastion."
  TLB_canadian_question:0 "The Canadian Question"
- TLB_canadian_question_desc:0 "Our neighbor in the north has fallen to communism. We need to choke the communism out of the Americas if we want to survive. We can support Canada's independence, or we can leave them to spread the influence of their overlord."
+ TLB_canadian_question_desc:0 "Our neighbor in the north has fallen under the overlordship of a communist nation. We need to choke the communism out of the Americas if we want to survive. We can support Canada's independence, or we can leave them to spread the influence of their overlord."
  TLB_Intervensionism_america:0 "Americas First"
  TLB_Intervensionism_america_desc:0 "While we have one ally in Asia, Japan, they must wait for our foreign aid. The Americas are our first priority. It will allow us to allocate more to Asia, and when the time comes, we'll put forth the most help we can to secure democracy anywhere we can."
  TLB_Intervensionism_asia:0 "Intervensionism in Asia"
@@ -63,7 +63,7 @@
  TLB_secure_mexico:0 "Secure Mexico"
  TLB_secure_mexico_desc:0 "Our Southern border has a country that will, undoubtably, be a battle ground for the ideologies. While non-aligned, they have the potential to fall to communism. If we can secure Mexico and Canada, we should be able to secure the rest of America fairly easily."
  TLB_secure_CA:0 "Secure Central America"
- TLB_secure_CA_desc:0 "While Mexico is important, we should focus on Central America. The area has many small countries, but if we offer them a union, it would be easier for them to conscript and build industry."
+ TLB_secure_CA_desc:0 "While Mexico could always be further developed, we should begin to shift our focus onto Central America. The area has many small countries, but if we offer them a union, it would be easier for them to conscript and build industry."
  TLB_aid_mexico1:0 "Begin Construction in Mexico City"
  TLB_aid_mexico1_desc:0 "To be completed"
  TLB_DCMexicoCity_railway:0 "Washington DC-Mexico City Railway"

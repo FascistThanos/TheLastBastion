@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GER
 		victory_points = {
-			3522 5 
+			3522 5
 		}
 		buildings = {
 			infrastructure = 7
@@ -31,7 +31,7 @@ state={
 	}
 
 	provinces={
-		375 478 3367 3499 3522 6487 9428 9456 9496 9560 11219 11359 11415 11444 11505 
+		375 478 3367 3499 3522 6487 6521 9428 9456 9496 9560 11219 11359 11415 11444 11505 13218 13219 13220 13221
 	}
 	manpower=6265029
 	buildings_max_level_factor=1.000
