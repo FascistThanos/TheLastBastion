@@ -381,8 +381,10 @@ ideas = {
 
 			modifier = {
 				army_org_factor = 0.10
-				army_morale_factor = 0.15 
+				army_morale_factor = 0.15
 				surrender_limit = 0.30
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
 			}
 		}
 		FRA_usadvisors = {
@@ -403,7 +405,8 @@ ideas = {
 
 			modifier = {
 				enemy_partisan_effect = 0.10
-				army_morale_factor = -0.05 
+				army_morale_factor = -0.05
+				army_core_defence_factor = -0.1
 			}
 		}
 		FRA_prodemocracyprop = {
@@ -414,7 +417,7 @@ ideas = {
 			modifier = {
 				socialism_drift = 0.02
 				democratic_drift = 0.03
-				training_time_army_factor = -0.10	
+				training_time_army_factor = -0.10
 			}
 		}
 		FRA_stagnation = {
@@ -423,7 +426,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_max_efficiency_factor = -0.1 
+				production_factory_max_efficiency_factor = -0.1
  				production_speed_buildings_factor = -0.1
  				stability_factor = -0.05
 			}
@@ -465,7 +468,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_core_defence_factor = 0.05 
+				army_core_defence_factor = 0.05
 			}
 		}
 		FRA_theforeignlegion = {
@@ -486,7 +489,7 @@ ideas = {
 
 			modifier = {
 			 	army_speed_factor = 0.1
-			  	no_supply_grace = 64 	
+			  	no_supply_grace = 64
 			}
 		}
 
