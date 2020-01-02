@@ -80,7 +80,7 @@ focus = {
 
 focus = {
 	id = CHI_war_propaganda
-	icon = GFX_
+	icon = GFX_goal_generic_propaganda
 	prerequisite = { focus = CHI_northern_war }
 	x = -2
 	y = 1
@@ -109,7 +109,7 @@ focus = {
 
 focus = {
 	id = CHI_quick_defense
-	icon = GFX_
+	icon = GFX_Generic_Soldiers_Defense
 	prerequisite = { focus = CHI_northern_war }
 	x = 0
 	y = 1
@@ -167,7 +167,7 @@ focus = {
 
 focus = {
 	id = CHI_uncertain_future
-	icon = GFX_
+	icon = GFX_Generic_Draw_Up_Plans
 	prerequisite = { focus = CHI_war_propaganda focus = CHI_quick_defense }
 	x = -1
 	y = 1
@@ -284,7 +284,7 @@ focus = {
 
 focus = {
 	id = CHI_cleanse_red
-	icon = GFX_
+	icon = GFX_Generic_Communist_Propaganda
 	prerequisite = { focus = CHI_uncertain_future }
 	x = 0
 	y = 1
@@ -313,7 +313,7 @@ focus = {
 
 focus = {
 	id = CHI_post_war_rehabilitation
-	icon = GFX_
+	icon = GFX_Generic_Command_Power
 	prerequisite = { focus = CHI_cleanse_red }
 	x = 0
 	y = 1
@@ -342,7 +342,7 @@ focus = {
 
 focus = {
 	id = CHI_post_war_politics
-	icon = GFX_
+	icon = GFX_Generic_Mutual_Cooperation
 	prerequisite = { focus = CHI_post_war_rehabilitation focus = CHI_rebuild_japan focus = CHI_anti_soviet_pact }
 	x = 2
 	y = 1
@@ -400,7 +400,7 @@ focus = {
 
 focus = {
 	id = CHI_japan_friend
-	icon = GFX_
+	icon = GFX_focus_chi_collaboration_with_the_japanese
 	prerequisite = { focus = CHI_defend_beijing }
 mutually_exclusive = {focus = CHI_japan_enemy}
 	x = -1
@@ -430,7 +430,7 @@ mutually_exclusive = {focus = CHI_japan_enemy}
 
 focus = {
 	id = CHI_japan_enemy
-	icon = GFX_
+	icon = GFX_focus_AST_war_japan
 	prerequisite = { focus = CHI_defend_beijing }
 	mutually_exclusive = {focus = CHI_japan_friend}
 	x = 1
@@ -489,7 +489,7 @@ focus = {
 
 focus = {
 	id = CHI_nationalism_focus
-	icon = GFX_
+	icon = GFX_Generic_Ultranationalist_Government
 	prerequisite = { focus = CHI_post_war_politics}
 	x = -2
 	y = 1
@@ -576,7 +576,7 @@ focus = {
 
 focus = {
 	id = CHI_op_rinpoche
-	icon = GFX_
+	icon = GFX_Generic_Espionage
 	prerequisite = { focus = CHI_expand_chi}
 	x = -2
 	y = 1
@@ -605,7 +605,7 @@ focus = {
 
 focus = {
 	id = CHI_op_trot
-	icon = GFX_
+	icon = GFX_Generic_Espionage
 	prerequisite = { focus = CHI_expand_chi}
 	x = 0
 	y = 1
@@ -634,7 +634,7 @@ focus = {
 
 focus = {
 	id = CHI_op_man
-	icon = GFX_
+	icon = GFX_Generic_Espionage
 	prerequisite = { focus = CHI_expand_chi}
 	x = 2
 	y = 1
@@ -663,7 +663,7 @@ focus = {
 
 focus = {
 	id = CHI_democracy_focus
-	icon = GFX_
+	icon = GFX_Generic_Blue_Democracy
 	prerequisite = { focus = CHI_post_war_politics}
 	x = 2
 	y = 1
@@ -692,7 +692,7 @@ focus = {
 
 focus = {
 	id = CHI_current_land
-	icon = GFX_
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = CHI_democracy_focus}
   mutually_exclusive = {focus = CHI_invite_neighbors}
 	x = -1
@@ -722,7 +722,7 @@ focus = {
 
 focus = {
 	id = CHI_invite_neighbors
-	icon = GFX_
+	icon = GFX_GER_french_deal
 	prerequisite = { focus = CHI_democracy_focus}
   mutually_exclusive = {focus = CHI_current_land}
 	x = 1
@@ -752,7 +752,7 @@ focus = {
 
 focus = {
 	id = CHI_aisan_bastion
-	icon = GFX_
+	icon = GFX_focus_generic_china1
 	prerequisite = { focus = CHI_invite_neighbors focus = CHI_current_land}
 	x = -1
 	y = 1
@@ -781,7 +781,7 @@ focus = {
 
 focus = {
 	id = CHI_reapproach_us
-	icon = GFX_
+	icon = GFX_focus_usa_guarantee_the_american_dream
 	prerequisite = { focus = CHI_aisan_bastion}
 	x = 0
 	y = 1
@@ -810,7 +810,7 @@ focus = {
 
 focus = {
 	id = CHI_us_research
-	icon = GFX_
+	icon = GFX_focus_research
 	prerequisite = { focus = CHI_reapproach_us}
 	x = 0
 	y = 1
@@ -840,7 +840,7 @@ focus = {
 
 focus = {
 	id = CHI_manchu_question
-	icon = GFX_
+	icon = GFX_goal_generic_propaganda
 	x = 10
 	y = 0
 
@@ -867,7 +867,7 @@ focus = {
 
 focus = {
 	id = CHI_send_agents
-	icon = GFX_
+	icon = GFX_Generic_Espionage04
 	prerequisite = { focus = CHI_manchu_question}
 	x = 0
 	y = 1
@@ -897,7 +897,7 @@ focus = {
 
 focus = {
 	id = CHI_open_border
-	icon = GFX_
+	icon = GFX_goal_foreign_policy
 	prerequisite = { focus = CHI_send_agents}
   mutually_exclusive = {focus = CHI_close_border}
 	x = 1
@@ -927,7 +927,7 @@ focus = {
 
 focus = {
 	id = CHI_close_border
-	icon = GFX_
+	icon = GFX_goal_generic_military_sphere
 	prerequisite = { focus = CHI_send_agents}
 	mutually_exclusive = {focus = CHI_open_border}
 	x = -1
@@ -1982,7 +1982,7 @@ focus = {
 
 focus = {
 	id = CHI_rebuild_japan
-	icon = GFX_
+	icon = GFX_goal_generic_construct_civilian
 	prerequisite = { focus = CHI_japan_enemy}
 	x = 0
 	y = 1
@@ -2013,7 +2013,7 @@ focus = {
 
 focus = {
 	id = CHI_reorganize_military
-	icon = GFX_
+	icon = GFX_focus_chi_army_reform
 	x = 17
 	y = 0
 
@@ -2040,7 +2040,7 @@ focus = {
 
 focus = {
 	id = CHI_new_guns
-	icon = GFX_
+	icon = GFX_Generic_Machine_Gun
 	prerequisite = { focus = CHI_reorganize_military}
 	x = 0
 	y = 1
@@ -2069,7 +2069,7 @@ focus = {
 
 focus = {
 	id = CHI_mobile_tanks
-	icon = GFX_
+	icon = GFX_Generic_Industry_Tanks
 	prerequisite = { focus =  CHI_new_guns}
 	x = 0
 	y = 1
@@ -2098,7 +2098,7 @@ focus = {
 
 focus = {
 	id = CHI_amry_research
-	icon = GFX_
+	icon = GFX_focus_CZE_military_research_institute
 	prerequisite = { focus =   CHI_mobile_tanks}
 	x = -1
 	y = 1
@@ -2127,7 +2127,7 @@ focus = {
 
 focus = {
 	id = CHI_future_of_army
-	icon = GFX_
+	icon = GFX_Generic_Coalition_Army
 	prerequisite = { focus =  CHI_mobile_tanks}
 	x = 1
 	y = 1
