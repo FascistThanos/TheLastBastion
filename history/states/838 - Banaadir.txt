@@ -1,6 +1,6 @@
 state = {
   id = 838
-  name = "Banaadir"
+  name = "STATE_838"
   manpower = 138900
   state_category = pastoral
 

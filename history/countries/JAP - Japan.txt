@@ -2,8 +2,8 @@
 
 oob = "JAP_1936"
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
-set_war_support = 0.8
+set_stability = 0.54
+set_war_support = 0.38
 
 set_research_slots = 4
 set_fuel_ratio = 1.0
@@ -11,7 +11,6 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-
 	JAP_militarism
 }
 
@@ -111,150 +110,7 @@ create_import = {
 		exporter = USA
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-
-
-	#adding ministers
-	add_ideas = {
-		JAP_mitsumasa_yonai
-		minoru_genda
-		hajime_sugiyama
-		soemu_toyoda
-		fushimi_hiroyasu
-		kawasaki
-
-		#laws
-		tot_economic_mobilisation
-		service_by_requirement
-		closed_economy
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-	}
-	oob = "JAP_1939"
-	set_technology = {
-
-		#PLACEHOLDERS for vehicles
-
-		cv_fighter1 = 1
-		fighter1 = 1
-		tactical_bomber1 = 1
-
-		#doctrines
-		#air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
-		grand_battle_plan = 1
-		prepared_defense = 1
-		grand_assault = 1
-		carrier_primacy = 1
-		carrier_task_forces = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_ship_hull_submarine = 1
-			basic_ship_hull_light = 1
-			improved_ship_hull_light = 1
-			improved_ship_hull_cruiser = 1
-			improved_ship_hull_carrier = 1
-			ship_hull_super_heavy = 1
-		}
-		set_naval_oob = "JAP_1939_naval"
-	}
-	if = {
-		limit = {
-			not = { has_dlc = "Man the Guns" }
-		}
-		set_technology = {
-			improved_submarine = 1
-			basic_destroyer = 1
-			improved_destroyer = 1
-			improved_heavy_cruiser = 1
-			improved_carrier = 1
-			heavy_battleship = 1
-		}
-		set_naval_oob = "JAP_1939_naval_legacy"
-	}
-}
-
 set_convoys = 400
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
-	}
-	set_autonomy = {
-		target = KOR
-		autonomous_state = supervised_state
-	}
-	set_autonomy = {
-		target = MAN
-		autonomous_state = supervised_state
-	}
-}
-if = {
-	limit = {
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = KOR
-		autonomous_state = autonomy_puppet
-	}
-	set_autonomy = {
-		target = MAN
-		autonomous_state = autonomy_puppet
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-	set_autonomy = {
-		target = MAN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-}
 
 set_politics = {
 	ruling_party = democratic

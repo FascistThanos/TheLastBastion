@@ -1,6 +1,6 @@
 state = {
   id = 878
-  name = "Vladivostok Metro Area"
+  name = "STATE_878"
   manpower = 508700
   state_category = large_town
 
@@ -25,6 +25,6 @@ state = {
   }
 
   provinces = {
-    957 3787 3977 6684 6838 6961 6989 9762 9895 9926 11750 11879 
+    957 3787 3977 6684 6838 6961 6989 9762 9895 9926 11750 11879
   }
 }

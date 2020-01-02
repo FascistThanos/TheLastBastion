@@ -1,6 +1,6 @@
 state = {
   id = 876
-  name = "Northern Tuva"
+  name = "STATE_876"
   manpower = 35400
   state_category = rural
 
@@ -16,6 +16,6 @@ state = {
   }
 
   provinces = {
-    4680 7703 7731 10646 12610 12625 
+    4680 7703 7731 10646 12610 12625
   }
 }

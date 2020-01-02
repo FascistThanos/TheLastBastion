@@ -1,6 +1,6 @@
 state = {
 	id = 461
-	name = "Anfa-Settat"
+	name = "STATE_461"
 	manpower = 2863059
 
 	state_category = rural

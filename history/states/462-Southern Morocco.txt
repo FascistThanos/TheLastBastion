@@ -1,6 +1,6 @@
 state = {
 	id = 462
-	name = "Merrakec-Asfi"
+	name = "STATE_462"
 	manpower = 1865552
 
 	state_category = pastoral
@@ -11,7 +11,7 @@ state = {
 		victory_points = {
 			4108 1
 		}
-		
+
 		buildings = {
 			infrastructure = 3
 		}

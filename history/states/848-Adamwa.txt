@@ -1,6 +1,6 @@
 state = {
   id = 848
-  name = "Adamwa"
+  name = "STATE_848"
   state_category = pastoral
   manpower = 742300
 

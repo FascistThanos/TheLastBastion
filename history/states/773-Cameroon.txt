@@ -1,6 +1,6 @@
 state = {
 	id = 773
-	name = "Littoral" # Cameroon
+	name = "STATE_773" # Cameroon
 	manpower = 2352430
 
 	state_category = rural

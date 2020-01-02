@@ -1,6 +1,6 @@
 state = {
   id = 805
-  name = "Chiang Mai"
+  name = "STATE_805"
   manpower = 223400
   state_category = town
 

@@ -1,6 +1,6 @@
 state = {
 	id = 44
-	name = "Tirana"
+	name = "STATE_44"
 	manpower = 697400
 	resources = {
 		aluminium=2 # was: 3

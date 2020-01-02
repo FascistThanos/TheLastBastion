@@ -1,6 +1,6 @@
 state = {
   id = 852
-  name = "Upper Niger"
+  name = "STATE_852"
   state_category = pastoral
   manpower = 1378400
 

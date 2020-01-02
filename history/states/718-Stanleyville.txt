@@ -1,6 +1,6 @@
 state = {
 	id = 718
-	name = "Orientale"
+	name = "STATE_718"
 
 	state_category = pastoral
 

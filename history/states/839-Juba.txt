@@ -1,6 +1,6 @@
 state = {
   id = 839
-  name = "Juba"
+  name = "STATE_839"
   state_category = rural
   manpower = 432600
 
@@ -15,7 +15,7 @@ state = {
       }
       infrastructure = 3
     }
-    
+
     owner = ITA
     add_core_of = SOM
   }

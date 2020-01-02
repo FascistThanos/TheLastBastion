@@ -1,6 +1,6 @@
 state = {
   id = 874
-  name = "Southern Moskva"
+  name = "STATE_874"
   manpower = 1853500
   state_category = city
 

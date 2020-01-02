@@ -1,6 +1,6 @@
 state = {
 	id = 107
-	name="Belgrade"
+	name="STATE_107"
 
 	history={
 		owner = SER
@@ -19,7 +19,7 @@ state = {
 	}
 
 	provinces={
-		9599 11583 11586 
+		9599 11583 11586
 	}
 	manpower=1279121
 	buildings_max_level_factor=1.000

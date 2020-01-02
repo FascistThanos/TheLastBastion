@@ -1,6 +1,6 @@
 state = {
 	id = 271
-	name = "Addis Ababa"
+	name = "STATE_271"
 	manpower = 10000000
 	resources = {
 		rubber=6 # was: 2

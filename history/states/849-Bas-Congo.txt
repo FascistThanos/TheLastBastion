@@ -1,6 +1,6 @@
 state = {
   id = 849
-  name = "Bas-Congo"
+  name = "STATE_849"
   state_category = town
   manpower = 1063400
 
@@ -15,7 +15,7 @@ state = {
     victory_points = {
       5117 3
     }
-    
+
     buildings = {
       infrastructure = 4
 			10968 = {

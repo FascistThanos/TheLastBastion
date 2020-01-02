@@ -1,6 +1,6 @@
 state={
 	id=357
-	name="Massachusetts"
+	name="STATE_357"
 	resources={
 		steel=7 # was: 20.000
 	}

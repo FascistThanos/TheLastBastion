@@ -1,6 +1,6 @@
 state = {
   id = 869
-  name = "Savoia Occidentale"
+  name = "STATE_869"
   state_category = town
   manpower = 538400
 

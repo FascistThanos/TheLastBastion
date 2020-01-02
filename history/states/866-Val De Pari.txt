@@ -1,6 +1,6 @@
 state = {
   id = 866
-  name = "Val De Pari"
+  name = "STATE_866"
   state_category = large_city
   manpower = 2094734
 

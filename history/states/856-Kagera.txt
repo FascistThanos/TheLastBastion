@@ -1,6 +1,6 @@
 state = {
   id = 856
-  name = "Kagera"
+  name = "STATE_856"
   state_category = pastoral
   manpower = 784900
 

@@ -1,6 +1,6 @@
 state={
 	id=105
-	name="Berane"
+	name="STATE_105"
 	resources={
 		chromium=20.000
 		aluminium=16

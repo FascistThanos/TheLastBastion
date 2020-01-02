@@ -1,6 +1,6 @@
 state={
 	id=286
-	name="Hanoi"
+	name="STATE_286"
 	resources={
 		rubber=34 # was: 94.000
 	}

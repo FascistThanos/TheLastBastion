@@ -1,6 +1,6 @@
 state = {
   id = 879
-  name = "Jewish Oblast"
+  name = "STATE_879"
   manpower = 185900
   state_category = rural
 
@@ -14,6 +14,6 @@ state = {
   }
 
   provinces = {
-    664 681 6686 9639 11624 11629 11643 
+    664 681 6686 9639 11624 11629 11643
   }
 }

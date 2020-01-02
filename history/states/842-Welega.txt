@@ -1,6 +1,6 @@
 state = {
   id = 842
-  name = "Welega"
+  name = "STATE_842"
   state_category = town
   manpower = 108350
 

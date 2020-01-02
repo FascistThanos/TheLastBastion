@@ -1,6 +1,6 @@
 state = {
   id = 834
-  name = "Pelagonia"
+  name = "STATE_834"
   manpower = 463600
   resources={
 		chromium=50

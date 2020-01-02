@@ -1,6 +1,6 @@
 state={
 	id=811
-	name="Kratie"
+	name="STATE_811"
 	history = {
 		add_core_of = CAM
 		owner = CAM

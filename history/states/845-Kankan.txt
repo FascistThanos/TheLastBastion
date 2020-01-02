@@ -1,6 +1,6 @@
 state = {
   id = 845
-  name = "Kankan"
+  name = "STATE_845"
   state_category = pastoral
   manpower = 48600
 
@@ -13,6 +13,6 @@ state = {
   }
 
   provinces = {
-    4957 5039 8008 
+    4957 5039 8008
   }
 }

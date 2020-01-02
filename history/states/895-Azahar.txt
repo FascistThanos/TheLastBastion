@@ -1,6 +1,6 @@
 state = {
   id = 895
-  name = "Azahar"
+  name = "STATE_895"
   state_category = large_town
   manpower = 476500
 
@@ -15,6 +15,6 @@ state = {
   }
 
   provinces = {
-    798 871 3873 3909 3954 6817 6966 9896 
+    798 871 3873 3909 3954 6817 6966 9896
   }
 }

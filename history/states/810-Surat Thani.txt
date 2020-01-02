@@ -1,6 +1,6 @@
 state={
 	id=810
-	name="Surat Thani"
+	name="STATE_810"
 	manpower = 1386500
 
 	state_category = town

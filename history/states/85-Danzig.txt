@@ -1,6 +1,6 @@
 state = {
 	id = 85
-	name = "Pomorskie"
+	name = "STATE_85"
 
 	history = {
 		owner = POL

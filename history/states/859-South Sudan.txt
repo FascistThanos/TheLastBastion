@@ -1,6 +1,6 @@
 state = {
   id = 859
-  name = "South Sudan"
+  name = "STATE_859"
   state_category = rural
   manpower = 947305
 

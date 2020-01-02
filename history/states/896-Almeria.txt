@@ -1,6 +1,6 @@
 state = {
   id = 896
-  name = "Almeria"
+  name = "STATE_896"
   state_category = town
   manpower = 785400
 
@@ -18,6 +18,6 @@ state = {
   }
 
   provinces = {
-    1192 4065 4095 7196 11956 12038 12083 
+    1192 4065 4095 7196 11956 12038 12083
   }
 }

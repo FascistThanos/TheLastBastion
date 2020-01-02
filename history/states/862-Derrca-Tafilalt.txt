@@ -1,6 +1,6 @@
 state = {
   id = 862
-  name = "Derrca-Tafilalt"
+  name = "STATE_862"
   state_category = wasteland
   manpower = 48605
 

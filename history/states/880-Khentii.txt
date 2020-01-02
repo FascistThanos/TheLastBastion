@@ -1,6 +1,6 @@
 state = {
   id = 880
-  name = "Khentii"
+  name = "STATE_880"
   manpower = 59700
   state_category = pastoral
 
@@ -13,6 +13,6 @@ state = {
   }
 
   provinces = {
-    4792 4862 7823 7885 10708 12533 12665 
+    4792 4862 7823 7885 10708 12533 12665
   }
 }

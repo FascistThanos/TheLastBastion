@@ -1,6 +1,6 @@
 state = {
 	id = 295
-	name = "Katanga" # Leopoldville
+	name = "STATE_295" # Leopoldville
 	manpower = 3540948
 
 	state_category = rural

@@ -1,6 +1,6 @@
 state = {
 	id = 828
-	name = "New Hampshire"
+	name = "STATE_828"
 	manpower = 1680942
 	state_category = town
 	resources={

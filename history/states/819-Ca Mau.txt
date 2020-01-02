@@ -1,6 +1,6 @@
 state = {
   id = 819
-  name = "Ca Mau"
+  name = "STATE_819"
   manpower = 2437890
   state_category = town
   resources = {

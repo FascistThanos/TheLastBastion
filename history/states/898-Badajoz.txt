@@ -1,6 +1,6 @@
 state = {
   id = 898
-  name = "Badajoz"
+  name = "STATE_898"
   state_category = rural
   manpower = 768400
 
@@ -13,6 +13,6 @@ state = {
   }
 
   provinces = {
-    809 931 3930 6948 6954 11798 11851 
+    809 931 3930 6948 6954 11798 11851
   }
 }

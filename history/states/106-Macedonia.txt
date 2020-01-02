@@ -1,6 +1,6 @@
 state={
 	id = 106
-	name = "Skopje"
+	name = "STATE_106"
 	resources = {
 		chromium = 20
 		aluminium = 5

@@ -1,6 +1,6 @@
 state={
 	id=821
-	name="West Camboida"
+	name="STATE_821"
 	history = {
 		add_core_of = CAM
 		add_core_of = SIA

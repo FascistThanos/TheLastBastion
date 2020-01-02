@@ -1,6 +1,6 @@
 state = {
   id = 857
-  name = "Tanga"
+  name = "STATE_857"
   state_category = town
   manpower = 1817495
 

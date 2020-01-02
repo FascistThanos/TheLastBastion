@@ -1,7 +1,7 @@
 
 state={
 	id=671
-	name="Saigon"
+	name="STATE_671"
 	manpower = 985230
 
 	state_category = town

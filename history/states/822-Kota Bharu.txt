@@ -1,6 +1,6 @@
 state = {
   id = 822
-  name = "Kota Bharu"
+  name = "STATE_822"
   manpower = 468300
   state_category = town
 
