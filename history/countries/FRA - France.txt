@@ -248,25 +248,14 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism_type
 	traits = {
-		stout_defender
-	}
-}
-
-create_country_leader = {
-	name = "Maurice Thorez"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "GFX_portrait_fra_maurice_thorez"
-	expire = "1965.1.1"
-	ideology = 	leninism
-	traits = {
 
 	}
 }
 
 create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
+	name = "Jacques Doriot"
+	desc = "POLITICS_JACQUES_DORIOT_DESC"
+	picture = "FRA_Jacques_Doriot.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
