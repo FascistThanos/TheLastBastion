@@ -189,7 +189,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fromtheashes
-		icon = GFX_FRA_CommunistsDeath
+		icon = GFX_Focus_France
 		x = 10
 		y = 4
 		cost = 7.2
@@ -642,7 +642,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_heavy_armor_focus1
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_Generic_French_Tanks
 		x = 9
 		y = 14
 		cost = 7.2
@@ -964,7 +964,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_moveawayfromsocialism
-		icon = GFX_Generic_Enough
+		icon = GFX_Generic_Purge_Social_Democracy
 		x = 15
 		y = 8
 		cost = 7.2
