@@ -1,0 +1,30 @@
+state = {
+	id=900
+	name="STATE_900"
+	manpower = 1589245
+
+	state_category = city
+
+	resources={
+		steel=3 # was: 8
+	}
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		victory_points = {
+			688 10
+		}
+		victory_points = {
+			3673 3
+		}
+		add_core_of = AUS
+	}
+
+	provinces={
+		688 3673 3674 3684 6687 6691 9650
+	}
+}

@@ -105,7 +105,7 @@
   FRA_jointusfrenchmilitary_desc:0 "Localisation Missing!"
   FRA_anticommunistpropaganda:0 "Anti-Communist Propaganda"
   FRA_everycitizenoffrance:0 "Every Citizen of France"
-  FRA_fromtheashes:0 "From The Ashes"
+  FRA_fromtheashes:0 "A United France, From The Ashes"
   FRA_thereconstructionperiod:0 "The Reconstruction Period"
   FRA_thereconstructionperiod_desc:0 "We have won the war of freedom, we almost lost it all. After the immense fighting and the shattered economy from this almost 2 year long civil war we must isolate ourselves and rebuild the once great French Empire."
   FRA_revisetheconsitution:0 "Revise The Constitution"
@@ -160,3 +160,4 @@
   FRA_antimarxismideals:0 "Anti-Marxism Laws"
   FRA_standardizedpartyuniforms:0 "Standardized Party Uniforms"
   FRA_securethenewstate:0 "Secure The New French Republic"
+  FRA_nationalizewarindustry:0 "Nationalize The War Industry"
