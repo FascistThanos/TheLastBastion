@@ -1,0 +1,25 @@
+state = {
+	id = 899
+	name = "STATE_899"
+	manpower = 943000
+
+	state_category = town
+
+	resources = {
+		steel = 1
+	}
+
+	provinces = {
+		543 557 5283 7857 11525
+	}
+
+	history = {
+		owner = AUS
+		add_core_of = AUS
+
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+		}
+	}
+}
