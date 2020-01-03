@@ -52,7 +52,7 @@ focus_tree = {
 
 focus = {
 	id = CHI_northern_war
-	icon = GFX_
+	icon = GFX_goal_generic_major_war
 	x = 4
 	y = 0
 
@@ -63,10 +63,11 @@ focus = {
 	}
 
 	available = {
+
 	}
 
 	bypass = {
-
+has_war = no
 	}
 
 	cancel_if_invalid = yes
@@ -74,7 +75,9 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+army_experience = 35
+add_command_power = 35
+add_political_power = 35
 	}
 }
 
@@ -93,6 +96,7 @@ focus = {
 	}
 
 	available = {
+has_war = yes
 	}
 
 	bypass = {
@@ -104,6 +108,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_stability = 0.20
+add_war_support = 0.05
 	}
 }
 
@@ -196,7 +202,7 @@ focus = {
 
 focus = {
 	id = CHI_demand_vietnam
-	icon = GFX_
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = CHI_uncertain_future }
 	x = -2
 	y = 1
@@ -225,7 +231,7 @@ focus = {
 
 focus = {
 	id = CHI_demand_laos
-	icon = GFX_
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = CHI_demand_vietnam }
 	x = 0
 	y = 1
@@ -254,7 +260,7 @@ focus = {
 
 focus = {
 	id = CHI_expel_democracy
-	icon = GFX_
+	icon = GFX_focus_generic_strike_at_democracy2
 	prerequisite = { focus = CHI_demand_laos }
  prerequisite = { focus = CHI_nationalism_focus }
 	x = 0
@@ -460,7 +466,7 @@ focus = {
 
 focus = {
 	id = CHI_anti_soviet_pact
-	icon = GFX_
+	icon = GFX_focus_attack_soviet
 	prerequisite = { focus = CHI_japan_friend }
 	x = 0
 	y = 1
@@ -519,7 +525,7 @@ focus = {
 
 focus = {
 	id = CHI_paint_black
-	icon = GFX_
+	icon = GFX_Focus_TLB_secure_china
 	prerequisite = { focus = CHI_nationalism_focus}
 	x = 0
 	y = 1
@@ -548,7 +554,7 @@ focus = {
 
 focus = {
 	id = CHI_expand_chi
-	icon = GFX_
+	icon = GFX_goal_generic_more_territorial_claims
 	prerequisite = { focus = CHI_paint_black}
 	x = 0
 	y = 1
@@ -1896,7 +1902,7 @@ focus = {
 ###################################
 focus = {
 	id = CHI_manchu_diplo
-	icon = GFX_
+	icon = GFX_focus_generic_treaty
 	prerequisite = { focus = CHI_open_border}
 	x = 0
 	y = 1
@@ -1925,7 +1931,7 @@ focus = {
 
 focus = {
 	id = CHI_manchu_railway
-	icon = GFX_
+	icon = GFX_Generic_Railroads
 	prerequisite = { focus = CHI_manchu_diplo}
 	prerequisite = { focus = CHI_expand_central_industrial_region}
 	x = 1
@@ -2160,7 +2166,7 @@ focus = {
 
 focus = {
 	id = CHI_great_asian_war
-	icon = GFX_
+	icon = GFX_goal_generic_major_war
 	prerequisite = { focus = CHI_manchu_league}
 	x = 0
 	y = 1
