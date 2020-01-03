@@ -946,7 +946,9 @@ focus_tree = {
 		prerequisite = { focus = FRA_reestablishcivillaw}
 		available = {
 			NOT = {
-				has_completed_focus = FRA_ratifythefrancosyriantreatyofindependence
+				has_completed_focus = FRA_firststepstowardsrebuildingtheeconomy
+				has_completed_focus = FRA_revisetheconsitution
+				has_completed_focus = FRA_bancommunism
 			}
 		}
 		mutually_exclusive = { focus = FRA_bancommunism}
@@ -967,7 +969,7 @@ focus_tree = {
 		icon = GFX_Generic_Purge_Social_Democracy
 		x = 15
 		y = 8
-		cost = 7.2
+		cost = 5.1
 		prerequisite = { focus = FRA_communismistreason}
 		completion_reward = {
 			add_stability = -0.05
@@ -1048,7 +1050,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_standardizedpartyuniforms
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_Generic_Female_Commander
 		x = 16
 		y = 12
 		cost = 3.7
@@ -1059,7 +1061,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_compulsorypartymembership
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_Generic_Family
 		x = 18
 		y = 12
 		cost = 3.7
@@ -1070,7 +1072,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_antimarxismideals
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_Generic_Tear_Paper
 		x = 20
 		y = 12
 		cost = 3.7
@@ -1090,6 +1092,40 @@ focus_tree = {
 		prerequisite = { focus = FRA_antimarxismideals}
 		completion_reward = {
 			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = FRA_nationalizewarindustry
+		icon = GFX_Generic_Factory_Complex
+		x = 15
+		y = 14
+		cost = 10
+		prerequisite = { focus = FRA_securethenewstate}
+		completion_reward = {
+		18 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		24 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		27 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 		}
 	}
 	focus = {
