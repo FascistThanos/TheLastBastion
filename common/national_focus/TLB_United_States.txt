@@ -73,7 +73,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TLB_chinese_intervention
-		icon = GFX_Focus_TLB_secure_china
+		icon = GFX_TLB_Secure_China
 		prerequisite = {
 			focus = TLB_Intervensionism_asia
 		}
@@ -110,7 +110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TLB_secure_mexico
-		icon = GFX_Focus_TLB_Secure_Mexico
+		icon = GFX_focus_TLB_secure_mexico
 		cost = 10.00
 		prerequisite = {
 			focus = TLB_Intervensionism_america
@@ -425,7 +425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TLB_PAN_protectorate
-		icon = GFX_Focus_TLB_panama_deal
+		icon = GFX_deal_panama
 		prerequisite = {
 			focus = TLB_secure_CA
 		}
