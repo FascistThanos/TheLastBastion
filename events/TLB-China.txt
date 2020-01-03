@@ -1,0 +1,20 @@
+add_namespace = tlbchina
+
+country_event = {
+  id = tlbgermany.1
+  title = tlbgermany.1.t
+  desc = tlbgermany.1.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermany.1.a
+    ai_chance = {
+      base = 100
+    }
+    add_opinion_modifier = { target = GER modifier = medium_increase }
+    GER = {
+      add_opinion_modifier = { target = GER modifier = medium_increase }
+    }
+  }
+}

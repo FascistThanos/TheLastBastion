@@ -249,6 +249,28 @@ economy_decisions = {
 
 war_measures = {
 
+     defend_beijing = {
+          allowed = { tag = CHI }
+          available = {
+              PRC = {controls_state = 608}
+          }
+          activation = {
+               has_war_with = PRC
+          }
+          is_good = yes
+          days_mission_timeout = 360
+          timeout_effect = {
+					add_political_power = 100
+					add_stability = 0.2
+					add_war_support = 0.15
+          }
+          complete_effect = {
+               add_political_power = -200
+							 add_stability = -0.2
+							 add_war_support = -0.15
+          }
+     }
+#
 	CHI_scorched_earth_tactics = {
 		icon = generic_scorched_earth
 		available = {

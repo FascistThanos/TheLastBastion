@@ -139,12 +139,13 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_ideas = CHI_quick_forts
 	}
 }
 
 focus = {
 	id = CHI_beijing
-	icon = GFX_
+	icon = GFX_goal_beijing1
 	prerequisite = { focus = CHI_northern_war }
 	x = 2
 	y = 1
@@ -168,6 +169,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+
+
 	}
 }
 
@@ -377,7 +380,7 @@ focus = {
 
 focus = {
 	id = CHI_defend_beijing
-	icon = GFX_
+	icon = GFX_goal_beijing2
 	prerequisite = { focus = CHI_beijing }
 	x = 0
 	y = 1
@@ -525,7 +528,7 @@ focus = {
 
 focus = {
 	id = CHI_paint_black
-	icon = GFX_Focus_TLB_secure_china
+	icon = GFX_Generic_Chinese_Soldiers
 	prerequisite = { focus = CHI_nationalism_focus}
 	x = 0
 	y = 1
@@ -965,7 +968,7 @@ focus = {
 
 focus = {
 	id = CHI_strike_manchu
-	icon = GFX_
+	icon = GFX_goal_manchu_flames
 	prerequisite = { focus = CHI_close_border}
 	x = 0
 	y = 1
@@ -2137,7 +2140,7 @@ focus = {
 
 focus = {
 	id = CHI_manchu_league
-	icon = GFX_
+	icon = GFX_goal_manchu_league
 	prerequisite = { focus =  CHI_strike_manchu focus = CHI_manchu_diplo}
 	x = 1
 	y = 1

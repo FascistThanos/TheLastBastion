@@ -2020,4 +2020,13 @@ spriteType = {
 	name = "GFX_WAW_jet_engine"
 	texturefile = "gfx/interface/goals/WAW_jet_engine.dds"
 }
+
+SpriteType = { name = "GFX_goal_beijing1"       texturefile = "gfx/interface/goals/goal_beijing1.dds" }
+SpriteType = { name = "GFX_goal_beijing2"       texturefile = "gfx/interface/goals/goal_beijing2.dds" }
+SpriteType = { name = "GFX_goal_manchu_flames"       texturefile = "gfx/interface/goals/goal_manchu_flames.dds" }
+SpriteType = { name = "GFX_goal_manchu_league"      texturefile = "gfx/interface/goals/goal_manchu_league.dds" }
+
+
+
+#
 }
