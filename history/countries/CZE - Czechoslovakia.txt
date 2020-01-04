@@ -1,22 +1,24 @@
-﻿capital = 9
+﻿capital = 70
 
-oob = "CZE_1936"
+oob = "SLO_1936"
 
 set_technology = {
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	support_weapons = 1
 	tech_support = 1
 	tech_recon = 1
 	tech_mountaineers = 1
-	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
-	interwar_antiair = 1
+	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
-	fuel_silos = 1
 }
 
 set_research_slots = 3
@@ -110,25 +112,4 @@ create_corps_commander = {
     defense_skill = 3
     planning_skill = 2
     logistics_skill = 1
-}
-
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		CZE_skoda_works
-		CZE_divided_nation
-}
-	give_guarantee = YUG
-	give_guarantee = ROM
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "Death or Dishonor" }
-	}
-	add_ideas = {
-		CZE_fortification_focus
-	}
 }

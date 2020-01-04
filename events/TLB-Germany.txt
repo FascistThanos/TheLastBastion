@@ -125,7 +125,7 @@ country_event = {
       base = 100
     }
     create_wargoal = {
-      type = annex_wargoal
+      type = annex_everything
       target = FRA
     }
   }

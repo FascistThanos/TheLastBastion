@@ -1,9 +1,8 @@
 ﻿capital = 102
+oob = "SLV_1936"
 
 set_research_slots = 3
 
-# Starting tech
-# clone of Yugoslavia
 set_technology = {
 	tech_support = 1
 	tech_engineers = 1
@@ -17,16 +16,20 @@ set_technology = {
 	early_light_cruiser = 1
 	early_submarine = 1
 }
+
 set_politics = {
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {
 
-	fascism = 13
-	neutrality = 6
-    socialism = 14
-	communism = 67
+set_popularities = {
+	fascism = 56
+	communism = 12
+	trotskyism = 3
+	monarchist = 14
+	socialism = 8
+	democratic = 3
+	liberal = 4
 }

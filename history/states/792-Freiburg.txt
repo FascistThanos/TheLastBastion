@@ -8,7 +8,7 @@ state={
 	history={
 		owner = BAW
 		victory_points = {
-			3692 25 
+			3692 10
 		}
 		buildings = {
 			infrastructure = 7
@@ -18,7 +18,7 @@ state={
 		add_core_of = BAW
 	}
 	provinces={
-		694 3679 3692 6542 6712 11640 
+		694 3679 3692 6542 6712 11640
 	}
 	state_category = town
 	manpower=598623

@@ -1,0 +1,114 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = SIA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 1
+    }
+
+    location = 1592
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 2
+    }
+
+    location = 4539
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 3
+    }
+
+    location = 7426
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 4
+    }
+
+    location = 10326
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 5
+    }
+
+    location = 1464
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 6
+    }
+
+    location = 10456
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 7
+    }
+
+    location = 12392
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 8
+    }
+
+    location = 1362
+    division_template = "Infantry Division"
+    start_experience_factor = 0.14
+    start_equipment_factor = 0.19
+  }

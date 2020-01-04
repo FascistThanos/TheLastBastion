@@ -437,6 +437,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ideology_trotskyism_group"
+		texturefile = "gfx/interface/ideologies/trotskyism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_liberal_group"
+		texturefile = "gfx/interface/ideologies/liberal_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_monarchist_group"
+		texturefile = "gfx/interface/ideologies/monarchist_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_socialism_group"
+		texturefile = "gfx/interface/ideologies/socialism_group.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no
@@ -616,29 +636,5 @@ spriteTypes = {
 		pause_on_loop = 0.0
 		allwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}
-		spriteType = {
-		name = "GFX_ideology_monarchy_group"
-		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_theocratic_group"
-		textureFile = "gfx/interface/ideologies/theocratic_group.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_socialism_group"
-		textureFile = "gfx/interface/ideologies/socialism_group.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_ITA_socialism_group"
-		textureFile = "gfx/interface/ideologies/Italian_Action_Party.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_communism_group"
-		textureFile = "gfx/interface/ideologies/communism_group.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_democratic_group"
-		textureFile = "gfx/interface/ideologies/democratic_group.dds"
 	}
 }

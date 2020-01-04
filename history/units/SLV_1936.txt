@@ -1,0 +1,114 @@
+division_template = {
+  name = "Drzavljanski Oddelek"
+  division_names_group = CRO_INF_01
+
+  regiments = {
+    infantry = { x = 0 y = 0 }
+    infantry = { x = 0 y = 1 }
+    infantry = { x = 1 y = 0 }
+    infantry = { x = 1 y = 1 }
+    infantry = { x = 2 y = 0 }
+    infantry = { x = 2 y = 1 }
+    cavalry  = { x = 0 y = 2 }
+  }
+}
+
+division_template = {
+  name = "Sile Civilne Poslusnosti"
+  division_names_group = CRO_INF_01
+
+  regiments = {
+    infantry = { x = 0 y = 0 }
+    infantry = { x = 0 y = 1 }
+    infantry = { x = 1 y = 0 }
+    infantry = { x = 1 y = 1 }
+    cavalry = { x = 2 y = 0 }
+    cavalry = { x = 2 y = 1 }
+    mountaineers = { x = 0 y = 2 }
+  }
+
+  support = {
+    engineer = { x = 0 y = 0 }
+  }
+}
+
+units = {
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 1
+    }
+    location = 9627
+    division_template = "Drzavljanski Oddelek"
+    start_experience_factor = 0.1
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 2
+    }
+    location = 9627
+    division_template = "Drzavljanski Oddelek"
+    start_experience_factor = 0.1
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 3
+    }
+    location = 11612
+    division_template = "Drzavljanski Oddelek"
+    start_experience_factor = 0.1
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 4
+    }
+    location = 6672
+    division_template = "Drzavljanski Oddelek"
+    start_experience_factor = 0.1
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 5
+    }
+    location = 596
+    division_template = "Drzavljanski Oddelek"
+    start_experience_factor = 0.1
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 1
+    }
+    location = 6650
+    division_template = "Sile Civilne Poslusnosti"
+    start_experience_factor = 0.1
+    start_equipment_factor = 0.3
+  }
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SLV"
+		}
+
+    progress = 0.74
+		requested_factories = 1
+		efficiency = 93
+	}
+}

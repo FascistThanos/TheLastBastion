@@ -1,4 +1,4 @@
-﻿capital = 419
+﻿capital = 266
 
 oob = "PER_1936"
 

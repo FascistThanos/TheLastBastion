@@ -6,13 +6,13 @@ state={
 	resources={
 		aluminium=18 # was: 30
 	}
-	
+
 	state_category = metropolis
 
 	history={
 		owner = BAV
 		victory_points = {
-			692 50
+			692 30
 		}
 		buildings = {
 			infrastructure = 7
@@ -31,6 +31,6 @@ state={
 	}
 
 	provinces={
-		692 707 3688 3705 6540 9652 11653 
+		692 707 3688 3705 6540 9652 11653
 	}
 }
