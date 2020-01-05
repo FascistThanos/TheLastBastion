@@ -158,8 +158,8 @@ CHI_unknown_bandits = {
 	removal_cost = -1
 
 modifier = {
-stability_weekly = -0.25
-weekly_manpower = -50
+stability_factor = -0.25
+weekly_manpower = -500
 	industry_air_damage_factor = 0.1
 }
 }
