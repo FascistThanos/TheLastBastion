@@ -48,7 +48,7 @@
  CHI_post_war_rehabilitation_desc:0 ""
  CHI_post_war_politics:0 "Post-War Politics"
  CHI_post_war_politics_desc:0 ""
- CHI_expel_democracy:0 "Expel the Democrats"
+ CHI_expel_democracy:0 "Take Back the Coast"
  CHI_expel_democracy_desc:0 ""
  CHI_nationalism_focus:0 "Nationalism"
  CHI_nationalism_focus_desc:0 ""
@@ -64,6 +64,7 @@
  CHI_op_man_desc:0 ""
  CHI_beijing:0 "Beijing Must Not Fall"
  CHI_beijing_desc:0 ""
+ CHI_beijing_tt:0 "§YMission "Defense of Beijing" will start."
  CHI_defend_beijing:0 "The Defense of Beijing"
  CHI_defend_beijing_desc:0 ""
  CHI_japan_friend:0 "Japanese Friendship"
@@ -166,6 +167,20 @@
  CHI_rocket_development_desc:0 ""
  CHI_manchu_league:0 "The Manchu League"
  CHI_manchu_league_desc:0 ""
+
+#Events
+tlbchina.1.t:0 "China proposes the Anti-Soviet Pact"
+tlbchina.1.d:0 ""
+tlbchina.1.a:0 "Sign the Treaty"
+tlbchina.1.b:0 "We should decline..."
+
+
+ #IDEAS
+
+ CHI_quick_forts:0 "Quick Defense Measures"
+
+
+
 
 #################################
 

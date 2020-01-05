@@ -169,7 +169,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+custom_effect_tooltip = CHI_beijing_tt
 
 	}
 }
@@ -229,6 +229,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+	    type = annex_everything
+	    target = VIN
+	}
 	}
 }
 
@@ -258,6 +262,11 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+			type = annex_everything
+			target = LAO
+	}
+
 	}
 }
 
@@ -288,6 +297,15 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+			type = annex_everything
+			target = POR
+	}
+	create_wargoal = {
+			type = annex_everything
+			target = ENG
+	}
+
 	}
 }
 
@@ -375,6 +393,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_political_power = 400
 	}
 }
 
@@ -404,6 +423,16 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+608	= { add_building_construction = {
+	    type = bunker
+	    level = 5
+	    instant_build = yes
+	    province = {
+	        all_provinces = yes
+	        limit_to_border = yes
+	    }
+	}
+}
 	}
 }
 
@@ -434,6 +463,7 @@ mutually_exclusive = {focus = CHI_japan_enemy}
 	available_if_capitulated = no
 
 	completion_reward = {
+JAP = {add_opinion_modifier = { target = CHI modifier = large_increase }}
 	}
 }
 
@@ -464,6 +494,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+	    type = puppet_wargoal_focus
+	    target = JAP
+	}
 	}
 }
 
@@ -493,6 +527,13 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+create_faction = "Anti-Soviet Pact"
+
+	JAP = { country_event = {
+	    id = tlbchina.1
+	    hours = 1
+	}
+}
 	}
 }
 
@@ -523,6 +564,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_ideas = Nationalism
+CHI = { dismantle_faction = yes }
 	}
 }
 
@@ -552,6 +595,9 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+create_faction = "Unified Republic of China"
+add_war_support = 0.4
+add_stability = -0.02
 	}
 }
 
@@ -581,6 +627,18 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+			type = annex_everything
+			target = RAJ
+	}
+	create_wargoal = {
+			type = annex_everything
+			target = KOR
+	}
+	create_wargoal = {
+			type = annex_everything
+			target = JAP
+	}
 	}
 }
 
@@ -610,6 +668,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+	    type = puppet_wargoal_focus
+	    target = TIB
+	}
 	}
 }
 
@@ -639,6 +701,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SOV
+	}
 	}
 }
 
@@ -668,6 +734,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+			type = puppet_wargoal_focus
+			target = MON
+	}
 	}
 }
 
@@ -698,6 +768,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_ideas = democractic
 	}
 }
 
@@ -1988,6 +2059,25 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	528 = {add_building_construction = {
+	    type = infrastructure
+	    level = 5
+	    instant_build = yes
+	}
+}
+529 = {add_building_construction = {
+		type = infrastructure
+		level = 5
+		instant_build = yes
+}
+}
+530 = {add_building_construction = {
+		type = infrastructure
+		level = 5
+		instant_build = yes
+}
+}
+#
 	}
 }
 

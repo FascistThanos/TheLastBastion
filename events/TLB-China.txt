@@ -1,20 +1,25 @@
 add_namespace = tlbchina
 
+#This event does nothing just a placeholder example
 country_event = {
-  id = tlbgermany.1
-  title = tlbgermany.1.t
-  desc = tlbgermany.1.d
+  id = tlbchina.1
+  title = tlbchina.1.t
+  desc = tlbchina.1.d
   picture = GFX_report_event_generic_rally
   is_triggered_only = yes
 
   option = {
-    name = tlbgermany.1.a
+    name = tlbchina.1.a
     ai_chance = {
       base = 100
     }
-    add_opinion_modifier = { target = GER modifier = medium_increase }
-    GER = {
-      add_opinion_modifier = { target = GER modifier = medium_increase }
-    }
-  }
+CHI = {add_to_faction = JAP }
+}
+  option = {
+    name = tlbchina.1.b
+    ai_chance = {
+      base = 50
+      }
+add_stability = 0.1
+}
 }

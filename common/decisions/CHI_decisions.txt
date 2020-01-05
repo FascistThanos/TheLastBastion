@@ -255,7 +255,7 @@ war_measures = {
               PRC = {controls_state = 608}
           }
           activation = {
-               has_war_with = PRC
+            CHI =  {has_completed_focus = CHI_beijing}
           }
           is_good = yes
           days_mission_timeout = 360
