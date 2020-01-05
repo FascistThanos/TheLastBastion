@@ -1,6 +1,6 @@
 add_namespace = tlbchina
 
-#This event does nothing just a placeholder example
+#Anti-Soviet Pact
 country_event = {
   id = tlbchina.1
   title = tlbchina.1.t
@@ -21,5 +21,32 @@ CHI = {add_to_faction = JAP }
       base = 50
       }
 add_stability = 0.1
+}
+}
+
+country_event = {
+  id = tlbchina.2
+  title = tlbchina.2.t
+  desc = tlbchina.2.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbchina.2.a
+    ai_chance = {
+      base = 100
+    }
+    declare_war_on = {
+        target = CHI
+        type = annex_everything
+    }
+CHI = {remove_ideas = CHI_unknown_bandits}
+}
+  option = {
+    name = tlbchina.2.b
+    ai_chance = {
+      base = 50
+      }
+CHI = {remove_ideas = CHI_unknown_bandits}
 }
 }
