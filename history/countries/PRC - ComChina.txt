@@ -18,13 +18,13 @@ declare_war_on = {
 }
 
 set_politics = {
-	ruling_party = maoism
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	maoism = 100
+	communism = 100
 }
 
 add_ideas = {
@@ -53,6 +53,17 @@ create_country_leader = {
 	picture = "GFX_portrait_prc_mao_zedong"
 	expire = "1965.1.1"
 	ideology = maoism_type
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Mao Zedong"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "GFX_portrait_prc_mao_zedong"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 		cornered_fox
 	}
