@@ -73,8 +73,6 @@
  CHI_anti_soviet_pact_desc:0 ""
  CHI_japan_enemy:0 "Our Enemy is Japan"
  CHI_japan_enemy_desc:0 ""
- CHI_great_asian_war:0 "The Great Asian War"
- CHI_great_asian_war_desc:0 ""
  CHI_rebuild_japan:0 "Rebuild Japan"
  CHI_rebuild_japan_desc:0 ""
  CHI_democracy_focus:0 "Democracy"
@@ -93,9 +91,10 @@
  CHI_manchu_question_desc:0 ""
  CHI_send_agents:0 "Send Our Agents"
  CHI_send_agents_desc:0 ""
+CHI_send_agents_tt:0 "§YWe will send our agents to investigate..."
  CHI_close_border:0 "Close the Border"
  CHI_close_border_desc:0 ""
- CHI_strike_manchu:0 "Strike Manchu"
+ CHI_strike_manchu:0 "Blame Manchu"
  CHI_strike_manchu_desc:0 ""
  CHI_open_border:0 "Open the Border"
  CHI_open_border_desc:0 ""
@@ -173,12 +172,23 @@ tlbchina.1.t:0 "China proposes the Anti-Soviet Pact"
 tlbchina.1.d:0 ""
 tlbchina.1.a:0 "Sign the Treaty"
 tlbchina.1.b:0 "We should decline..."
+tlbchina.2.t:0 "Start the Revolution in China"
+tlbchina.2.d:0 ""
+tlbchina.2.a:0 "We shall start the revolution..."
+tlbchina.2.b:0 "Withdraw our rebels for now..."
 
 
  #IDEAS
-
+ CHI_anti_manchu:0 "Manchu Suspicion"
  CHI_quick_forts:0 "Quick Defense Measures"
-
+ CHI_rebuild_china:0 "Post-War Rehabilitation Act"
+ CHI_unknown_bandits:0 "Unknown Bandits"
+ CHI_economic_debuff:0 "Economic Crisis"
+ CHI_broken_army:0 "A Faulty Army"
+ CHI_open_border_idea:0 "Open Borders"
+ CHI_closed_border_idea:0 "Closed Borders"
+ CHI_democratic:0 "Democratic Influence"
+ CHI_anti_communism:0 "Anti-Communism"
 
 
 

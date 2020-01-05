@@ -2,6 +2,45 @@ ideas = {
 	country = {
 ##########################
 
+CHI_anti_manchu = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+justify_war_goal_time = -0.25
+}
+}
+
+CHI_anti_communism = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+communism_drift = -0.1
+	drift_defence_factor = 0.35
+}
+}
+
 CHI_quick_forts = {
 
 	allowed = {
@@ -22,13 +61,148 @@ production_speed_coastal_bunker_factor = 0.3
 }
 }
 
+CHI_broken_army = {
 
+	allowed = {
+		always = no
+	}
 
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
 
+	removal_cost = -1
 
+modifier = {
+amphibious_invasion = -0.20
+army_speed_factor = -0.05
+planning_speed = -0.30
+}
+}
 
+CHI_economic_debuff = {
 
+	allowed = {
+		always = no
+	}
 
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+production_speed_arms_factory_factor = -0.15
+production_speed_industrial_complex_factor = -0.15
+
+}
+}
+
+CHI_open_border_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+	stability_weekly = 0.01
+	political_power_factor = 0.25
+}
+}
+
+CHI_closed_border_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+	drift_defence_factor = 0.25
+		trade_opinion_factor = -0.15
+}
+}
+
+CHI_unknown_bandits = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+stability_weekly = -0.25
+weekly_manpower = -50
+	industry_air_damage_factor = 0.1
+}
+}
+
+CHI_rebuild_china = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+production_speed_buildings_factor = 0.1
+stability_weekly_factor = 0.01
+}
+}
+
+CHI_democratic = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	removal_cost = -1
+
+modifier = {
+	democratic_drift = 0.10
+stability_weekly_factor = 0.01
+}
+}
 ##########################
 		german_advisors = {
 

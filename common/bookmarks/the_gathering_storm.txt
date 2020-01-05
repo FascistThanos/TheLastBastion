@@ -88,7 +88,9 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				#
+				CHI_broken_army
+				CHI_unknown_bandits
+				CHI_economic_debuff
 			}
 			focuses = {
 				CHI_northern_war
