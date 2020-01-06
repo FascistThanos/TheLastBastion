@@ -89,6 +89,7 @@
  CHI_us_research_desc:0 ""
  CHI_manchu_question:0 "The Manchu Question"
  CHI_manchu_question_desc:0 ""
+ CHI_manchu_question_tt:0 "§RThis is a WIP branch of this tree. Stay tuned..."
  CHI_send_agents:0 "Send Our Agents"
  CHI_send_agents_desc:0 ""
 CHI_send_agents_tt:0 "§YWe will send our agents to investigate..."

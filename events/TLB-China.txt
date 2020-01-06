@@ -24,6 +24,7 @@ add_stability = 0.1
 }
 }
 
+#MAN revolution
 country_event = {
   id = tlbchina.2
   title = tlbchina.2.t
@@ -48,5 +49,28 @@ CHI = {remove_ideas = CHI_unknown_bandits}
       base = 50
       }
 CHI = {remove_ideas = CHI_unknown_bandits}
+}
+}
+
+#invite our Neighbors, not yet implemented
+country_event = {
+  id = tlbchina.3
+  title = tlbchina.3.t
+  desc = tlbchina.3.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbchina.3.a
+    ai_chance = {
+      base = 50
+    }
+    CHI = {add_to_faction = ROOT }
+}
+  option = {
+    name = tlbchina.3.b
+    ai_chance = {
+      base = 50
+      }
 }
 }

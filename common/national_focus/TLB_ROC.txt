@@ -63,7 +63,7 @@ focus = {
 	}
 
 	available = {
-
+has_war = yes
 	}
 
 	bypass = {
@@ -128,6 +128,7 @@ focus = {
 	}
 
 	available = {
+at_war = yes
 	}
 
 	bypass = {
@@ -158,6 +159,7 @@ focus = {
 	}
 
 	available = {
+has_war = yes
 	}
 
 	bypass = {
@@ -189,6 +191,7 @@ focus = {
 	}
 
 	available = {
+has_war = yes
 	}
 
 	bypass = {
@@ -221,6 +224,7 @@ focus = {
 	}
 
 	available = {
+VIN = {exists = yes}
 	}
 
 	bypass = {
@@ -254,6 +258,7 @@ focus = {
 	}
 
 	available = {
+LAO = {exists = yes}
 	}
 
 	bypass = {
@@ -357,6 +362,7 @@ focus = {
 	}
 
 	available = {
+has_war = no
 	}
 
 	bypass = {
@@ -390,6 +396,7 @@ focus = {
 	}
 
 	available = {
+has_war = no
 	}
 
 	bypass = {
@@ -807,6 +814,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+create_faction = "The Asian Bastion"
 	}
 }
 
@@ -837,6 +845,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+create_faction = "The Asian Bastion"
 	}
 }
 
@@ -866,6 +875,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_ideas = CHI_anti_manchu
 	}
 }
 
@@ -884,6 +894,7 @@ focus = {
 	}
 
 	available = {
+USA = {exists = yes}
 	}
 
 	bypass = {
@@ -895,6 +906,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+USA = {add_opinion_modifier = { target = CHI modifier = huge_increase }}
 	}
 }
 
@@ -924,6 +936,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_research_slot = 1
 	}
 }
 #######################################
@@ -941,6 +954,7 @@ focus = {
 	}
 
 	available = {
+tag = USA
 	}
 
 	bypass = {
@@ -952,8 +966,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_stability = 0.1
-add_political_power = 75
+custom_effect_tooltip = CHI_manchu_question_tt
 	}
 }
 
@@ -2075,6 +2088,7 @@ focus = {
 	}
 
 	available = {
+JAP = { has_war = no }
 	}
 
 	bypass = {

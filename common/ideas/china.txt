@@ -84,6 +84,8 @@ planning_speed = -0.30
 
 CHI_economic_debuff = {
 
+picture = GFX_idea_FRA_factory_strikes
+
 	allowed = {
 		always = no
 	}
@@ -104,6 +106,8 @@ production_speed_industrial_complex_factor = -0.15
 }
 
 CHI_open_border_idea = {
+
+picture = GFX_idea_FRA_national_mobilization_focus
 
 	allowed = {
 		always = no
@@ -144,6 +148,8 @@ modifier = {
 }
 
 CHI_unknown_bandits = {
+
+picture = GFX_idea_generic_spy_coup
 
 	allowed = {
 		always = no
