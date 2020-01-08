@@ -1,5 +1,125 @@
 spriteTypes = {
 
+spriteType = { 
+ 	name = "GFX_thevenicedebates"
+ 	texturefile = "gfx/interface/goals/GFX_thevenicedebates.tga"
+}
+
+spriteType = {
+ 	name = "GFX_pricinipaliaitalia"
+ 	texturefile = "gfx/interface/goals/GFX_pricinipaliaitalia.tga"
+}
+
+spriteType = {
+ 	name = "GFX_theitalianflotilla"
+ 	texturefile = "gfx/interface/goals/GFX_theitalianflotilla.tga"
+}
+
+spriteType = {
+ 	name = "GFX_thesicilydebates"
+ 	texturefile = "gfx/interface/goals/GFX_thesicilydebates.tga"
+}
+
+spriteType = {
+ 	name = "GFX_lendweaponstofrance"
+ 	texturefile = "gfx/interface/goals/GFX_lendweaponstofrance.tga"
+}
+
+spriteType = {
+ 	name = "GFX_thenewromanarmy"
+ 	texturefile = "gfx/interface/goals/GFX_thenewromanarmy.tga"
+}
+
+spriteType = {
+ 	name = "GFX_grazianisplanningprogram"
+ 	texturefile = "gfx/interface/goals/GFX_grazianisplanningprogram.tga"
+}
+
+spriteType = {
+ 	name = "GFX_theromedebate"
+ 	texturefile = "gfx/interface/goals/GFX_theromedebate.tga"
+}
+
+spriteType = {
+ 	name = "GFX_theelectionof1936"
+ 	texturefile = "gfx/interface/goals/GFX_theelectionof1936.tga"
+}
+
+spriteType = {
+ 	name = "GFX_theparriprogram"
+ 	texturefile = "gfx/interface/goals/GFX_theparriprogram.tga"
+}
+
+spriteType = {
+ 	name = "GFX_supportingartillery"
+ 	texturefile = "gfx/interface/goals/GFX_supportingartillery.tga"
+}
+
+spriteType = {
+ 	name = "GFX_expandtheregiaaeronautica"
+ 	texturefile = "gfx/interface/goals/GFX_expandtheregiaaeronautica.tga"
+}
+
+spriteType = {
+ 	name = "GFX_navaldeterrent"
+ 	texturefile = "gfx/interface/goals/GFX_navaldeterrent.tga"
+}
+
+spriteType = {
+ 	name = "GFX_parrisgovernment"
+ 	texturefile = "gfx/interface/goals/GFX_parrisgovernment.tga"
+}
+
+spriteType = {
+ 	name = "GFX_thepnfcoup"
+ 	texturefile = "gfx/interface/goals/GFX_thepnfcoup.tga"
+}
+
+spriteType = {
+ 	name = "GFX_formthemarenostrum"
+ 	texturefile = "gfx/interface/goals/GFX_formthemarenostrum.tga"
+}
+
+spriteType = {
+ 	name = "GFX_joinnato"
+ 	texturefile = "gfx/interface/goals/GFX_joinnato.tga"
+}
+
+spriteType = {
+ 	name = "GFX_bidforafricanfreedom"
+ 	texturefile = "gfx/interface/goals/GFX_bidforafricanfreedom.tga"
+}
+
+spriteType = {
+ 	name = "GFX_theswissmenace"
+ 	texturefile = "gfx/interface/goals/GFX_theswissmenace.tga"
+}
+
+spriteType = {
+ 	name = "GFX_spreadtherevolutiontoiberia"
+ 	texturefile = "gfx/interface/goals/GFX_spreadtherevolutiontoiberia.tga"
+}
+
+spriteType = {
+ 	name = "GFX_thekingdecision"
+ 	texturefile = "gfx/interface/goals/GFX_thekingdecision.tga"
+}
+
+spriteType = {
+ 	name = "GFX_thepsicouncil"
+ 	texturefile = "gfx/interface/goals/GFX_thepsicouncil.tga"
+}
+
+spriteType = {
+  name = "GFX_theredguard"
+  texturefile = "gfx/interface/goals/GFX_theredguard.tga"
+}
+
+spriteType = {
+ 	name = "GFX_acominterneconomicsystem"
+	texturefile = "gfx/interface/goals/GFX_acominterneconomicsystem.tga"
+}
+
 spriteType = {
 	name = "GFX_Authoritarian_Democracy"
 	texturefile = "gfx/interface/goals/Authoritarian_Democracy.dds"

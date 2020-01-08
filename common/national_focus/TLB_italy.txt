@@ -1,30 +1,1586 @@
 focus_tree = {
-  id = TLB_Italy_focus
-  country = {
-    factor = 0
-    modifier = {
-      add = 10
-      tag = ITA
-    }
-  }
+	id = TLB_Italy_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
 
-  default = no
+	focus = {
+		id = ITA_lightarmor
+		icon = GFX_goal_poland_goal
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_anarmoredbasedarmy }
+		mutually_exclusive = { focus = ITA_heavyarmor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-  focus = {
-    id = ITA_Pricinipalia_Italia
-    icon = ITA_Pricinipalia_Italia
-    x = 10
-    y = 0
+	focus = {
+		id = ITA_heavyarmor
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_anarmoredbasedarmy }
+		mutually_exclusive = { focus = ITA_lightarmor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-    cost = 10
+	focus = {
+		id = ITA_thevenicedebates
+		icon = GFX_thevenicedebates
+		x = 37
+		y = 1
+		cost = 1.5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_pricinipaliaitalia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-    available_if_capitulated = yes
+	focus = {
+		id = ITA_pricinipaliaitalia
+		icon = GFX_pricinipaliaitalia
+		x = 38
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-    ai_will_do = {
-      factor = 1
-    }
+	focus = {
+		id = ITA_theitalianflotilla
+		icon = GFX_theitalianflotilla
+		x = 19
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_grazianisplanningprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-    completion_reward = {
-      add_political_power = 50
-    }
-  }
+	focus = {
+		id = ITA_thesicilydebates
+		icon = GFX_thesicilydebates
+		x = 39
+		y = 1
+		cost = 1.5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_pricinipaliaitalia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_mondastankfactory
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_montellasmotorizedmill
+			focus = ITA_ferroyssardiniandevelopment
+		}
+		mutually_exclusive = {
+			focus = ITA_romesraildevelopment
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_industrialresearchprogram
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 1
+		y = 4
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_romesraildevelopment
+			focus = ITA_mondastankfactory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_lendweaponstofrance
+		icon = GFX_lendweaponstofrance
+		x = 1
+		y = 5
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_industrialresearchprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_naplesromehighway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_northernrailroad }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_nuclearweaponinvestments
+		icon = GFX_goal_generic_scientific_exchange
+		x = 5
+		y = 5
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_universityofrome }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thenewromanarmy
+		icon = GFX_thenewromanarmy
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_grazianisplanningprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_grazianisplanningprogram
+		icon = GFX_grazianisplanningprogram
+		x = 19
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_armamentprogram
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theparriprogram }
+		mutually_exclusive = { focus = ITA_savoyindustrialsubsidies }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_romesraildevelopment
+		icon = GFX_goal_generic_production2
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_montellasmotorizedmill
+			focus = ITA_ferroyssardiniandevelopment
+		}
+		mutually_exclusive = { focus = ITA_mondastankfactory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theromedebate
+		icon = GFX_theromedebate
+		x = 38
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_thevenicedebates
+		}
+		prerequisite = {
+			focus = ITA_thesicilydebates
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theelectionof1936
+		icon = GFX_theelectionof1936
+		x = 38
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theromedebate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theparriprogram
+		icon = GFX_theparriprogram
+		x = 3
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_savoyindustrialsubsidies
+		icon = GFX_goal_generic_production2
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theparriprogram }
+		mutually_exclusive = { focus = ITA_armamentprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_ferroyssardiniandevelopment
+		icon = GFX_goal_generic_production2
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_savoyindustrialsubsidies
+			focus = ITA_armamentprogram
+		}
+		mutually_exclusive = { focus = ITA_montellasmotorizedmill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_montellasmotorizedmill
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_savoyindustrialsubsidies
+			focus = ITA_armamentprogram
+		}
+		mutually_exclusive = {
+			focus = ITA_ferroyssardiniandevelopment
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_fighterinitiative
+		icon = GFX_goal_generic_air_fighter2
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_expandtheregiaaeronautica }
+		mutually_exclusive = { focus = ITA_bomberinitiative }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_bomberinitiative
+		icon = GFX_goal_generic_air_bomber
+		x = 29
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_expandtheregiaaeronautica }
+		mutually_exclusive = { focus = ITA_fighterinitiative }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thesubmarinebase
+		icon = GFX_goal_generic_navy_submarine
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theitalianflotilla }
+		mutually_exclusive = { focus = ITA_capitalshipprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_capitalshipprogram
+		icon = GFX_goal_generic_navy_battleship
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theitalianflotilla }
+		mutually_exclusive = { focus = ITA_thesubmarinebase }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_menalongsidetanks
+		icon = GFX_focus_generic_military_academy
+		x = 12
+		y = 6
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_driveoverthetrenches
+			focus = ITA_runthemountainsred
+		}
+		mutually_exclusive = { focus = ITA_atankonlyarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thel6
+		icon = GFX_goal_generic_production2
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_lightarmor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thep75
+		icon = GFX_goal_generic_production2
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_heavyarmor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_runthemountainsred
+		icon = GFX_goal_poland_goal
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thel6 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_driveoverthetrenches
+		icon = GFX_goal_poland_goal
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thep75 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_nomoretrenches
+		icon = GFX_goal_poland_goal
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_supportingartillery }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thenewarmy
+		icon = GFX_goal_generic_major_war
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_riflesoverknives
+		}
+		prerequisite = {
+			focus = ITA_nomoretrenches
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_supportingartillery
+		icon = GFX_supportingartillery
+		x = 10
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_ainfantrybasedarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_riflesoverknives
+		icon = GFX_goal_generic_production
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thearmamentprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_ainfantrybasedarmy
+		icon = GFX_goal_rhineland
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thenewromanarmy }
+		mutually_exclusive = { focus = ITA_anarmoredbasedarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_anarmoredbasedarmy
+		icon = GFX_goal_generic_production2
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thenewromanarmy }
+		mutually_exclusive = { focus = ITA_ainfantrybasedarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_northernrailroad
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_romesraildevelopment
+			focus = ITA_mondastankfactory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_universityofrome
+		icon = GFX_focus_research2
+		x = 5
+		y = 4
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_mondastankfactory
+			focus = ITA_romesraildevelopment
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_expandtheregiaaeronautica
+		icon = GFX_expandtheregiaaeronautica
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_grazianisplanningprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thearmamentprogram
+		icon = GFX_goal_generic_defence
+		x = 8
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_ainfantrybasedarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_atankonlyarmy
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_driveoverthetrenches
+			focus = ITA_runthemountainsred
+		}
+		mutually_exclusive = {
+			focus = ITA_menalongsidetanks
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_lessonsfromengland
+		icon = GFX_focus_chi_british_cooperation
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_capitalshipprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_southerndockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_libyannavalacademy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_lessonsfromamerica
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 16
+		y = 3
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thesubmarinebase }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_libyannavalacademy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 19
+		y = 3
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_thesubmarinebase
+			focus = ITA_capitalshipprogram
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_lazionavalfortifications
+		icon = GFX_goal_generic_construct_military
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_libyannavalacademy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_marinedevelopment
+		icon = GFX_goal_generic_build_navy
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_lessonsfromamerica }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_navaldeterrent
+		icon = GFX_navaldeterrent
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_lessonsfromengland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_fleetinbeing
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 18
+		y = 5
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_lazionavalfortifications
+		}
+		prerequisite = {
+			focus = ITA_southerndockyards
+		}
+		mutually_exclusive = { focus = ITA_tradeinterception }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_tradeinterception
+		icon = GFX_goal_generic_navy_cruiser
+		x = 20
+		y = 5
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_lazionavalfortifications
+		}
+		prerequisite = {
+			focus = ITA_southerndockyards
+		}
+		mutually_exclusive = {
+			focus = ITA_fleetinbeing
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_lessonsfromtheussr
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_fighterinitiative }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_lessonsfromjapan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_bomberinitiative }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_genuaairofficeracademy
+		icon = GFX_goal_generic_build_airforce
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_bomberinitiative
+			focus = ITA_fighterinitiative
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_formationflights
+		icon = GFX_goal_generic_army_doctrines
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_genuaairofficeracademy }
+		mutually_exclusive = { focus = ITA_airsuperiority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_airsuperiority
+		icon = GFX_goal_generic_air_doctrine
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_genuaairofficeracademy }
+		mutually_exclusive = { focus = ITA_formationflights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_dobbiamogovernareicieli
+		icon = GFX_goal_generic_wolf_pack
+		x = 27
+		y = 5
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_formationflights
+			focus = ITA_airsuperiority
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_parrisgovernment
+		icon = GFX_parrisgovernment
+		x = 37
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = ITA_thepnfcoup }
+    prerequisite = { focus = ITA_thefundingbill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theacerbolaw
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 38
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theelectionof1936 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thefundingbill
+		icon = GFX_goal_generic_national_unity
+		x = 38
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theacerbolaw }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thepeoplesparty
+		icon = GFX_goal_generic_war_with_comintern
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thefundingbill }
+		mutually_exclusive = { focus = ITA_thepnfcoup }
+    mutually_exclusive = { focus = ITA_parrisgovernment }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thepnfcoup
+		icon = GFX_thepnfcoup
+		x = 45
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thefundingbill }
+		mutually_exclusive = {
+			focus = ITA_thepeoplesparty
+		}
+		mutually_exclusive = {
+			focus = ITA_parrisgovernment
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theromeviennarailway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 46
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_befriendaustria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theitalianempire
+		icon = GFX_goal_poland_goal
+		x = 44
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theswissmenace }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thetyrolplan
+		icon = GFX_goal_rhineland
+		x = 44
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_thepnfconstitution
+		}
+		prerequisite = {
+			focus = ITA_thefascistleague
+		}
+		mutually_exclusive = {
+			focus = ITA_befriendaustria
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_befriendaustria
+		icon = GFX_goal_generic_improve_relations
+		x = 46
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_thepnfconstitution
+		}
+		prerequisite = {
+			focus = ITA_thefascistleague
+		}
+		mutually_exclusive = { focus = ITA_thetyrolplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thefascistleague
+		icon = GFX_goal_generic_territory_or_war
+		x = 47
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thepnfcoup }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thepnfconstitution
+		icon = GFX_goal_generic_forceful_treaty
+		x = 43
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thepnfcoup }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_invitegreece
+		icon = GFX_goal_generic_military_deal
+		x = 37
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_formthemarenostrum }
+		mutually_exclusive = { focus = ITA_inviteturkey }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_formthemarenostrum
+		icon = GFX_formthemarenostrum
+		x = 38
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_amediterraneanalliance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_joinnato
+		icon = GFX_joinnato
+		x = 36
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_ademocraticalliance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_amediterraneanalliance
+		icon = GFX_goal_generic_military_sphere
+		x = 38
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+    prerequisite = { focus = ITA_thevolontariofrancese }
+    prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
+		mutually_exclusive = { focus = ITA_ademocraticalliance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_ademocraticalliance
+		icon = GFX_goal_support_democracy
+		x = 36
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+    prerequisite = { focus = ITA_thevolontariofrancese }
+    prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
+		mutually_exclusive = { focus = ITA_amediterraneanalliance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theeritreanrefugeprogram
+		icon = GFX_goal_generic_national_unity
+		x = 40
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thenorthafricanprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_bidforafricanfreedom
+		icon = GFX_bidforafricanfreedom
+		x = 38
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_freedomforafrica }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theswissmenace
+		icon = GFX_theswissmenace
+		x = 44
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thetyrolplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_reinstatetheprovinceofdalmatia
+		icon = GFX_goal_generic_position_armies
+		x = 46
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theromeviennarailway }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ITA_freemussolinifromprison
+		icon = GFX_goal_tripartite_pact
+		x = 45
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_theitalianempire
+			focus = ITA_reinstatetheprovinceofdalmatia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_eliminatethebureaucracy
+		icon = GFX_goal_generic_major_war
+		x = 44
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_freemussolinifromprison }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theeaglefront
+		icon = GFX_goal_support_fascism
+		x = 43
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_eliminatethebureaucracy }
+		mutually_exclusive = { focus = ITA_theoilfront }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thenewsocialrepublic
+		icon = GFX_goal_support_communism
+		x = 27
+		y = 9
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thekingdecision }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thesocialcreditprogramme
+		icon = GFX_goal_generic_demand_territory
+		x = 31
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theworkersrightscommitte }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_jointhesovietunion
+		icon = GFX_goal_support_fourth_int
+		x = 28
+		y = 10
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_communistdiplomacy }
+    mutually_exclusive = { focus = ITA_anitalianunion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_supportthefrenchpeoplesrepublic
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 27
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_jointhesovietunion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_analliancewithbavariaandbadewurtemburg
+		icon = GFX_goal_poland_goal
+		x = 31
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_anitalianunion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_spreadtherevolutiontoiberia
+		icon = GFX_spreadtherevolutiontoiberia
+		x = 25
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_supportthefrenchpeoplesrepublic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thekingdecision
+		icon = GFX_thekingdecision
+		x = 27
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theredguard }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_communistdiplomacy
+		icon = GFX_goal_tripartite_pact
+		x = 29
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_thepsicouncil
+		}
+		prerequisite = {
+			focus = ITA_theredguard
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thepsicouncil
+		icon = GFX_thepsicouncil
+		x = 31
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thepeoplesparty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theredguard
+		icon = GFX_theredguard
+		x = 27
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thepeoplesparty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_invitethecroatianpeoplesrepublic
+		icon = GFX_goal_generic_war_with_comintern
+		x = 31
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_analliancewithbavariaandbadewurtemburg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_austriansocialconversion
+		icon = GFX_goal_poland_goal
+		x = 33
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_analliancewithbavariaandbadewurtemburg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_acominterneconomicsystem
+		icon = GFX_acominterneconomicsystem
+		x = 27
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_supportthefrenchpeoplesrepublic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thevolontariofrancese
+		icon = GFX_focus_generic_military_mission
+		x = 35
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_aidtothefrenchrepublic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theworkersrightscommitte
+		icon = GFX_goal_generic_national_unity
+		x = 31
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thepsicouncil }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_anitalianunion
+		icon = GFX_goal_generic_war_with_comintern
+		x = 30
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_communistdiplomacy }
+		mutually_exclusive = {
+			focus = ITA_jointhesovietunion
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thesoutherndeal
+		icon = GFX_goal_tripartite_pact
+		x = 39
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_therepubliclives }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_freedomforafrica
+		icon = GFX_goal_generic_improve_relations
+		x = 38
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thesoutherndeal }
+		mutually_exclusive = { focus = ITA_thenorthafricanprogram }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thenorthafricanprogram
+		icon = GFX_goal_generic_dangerous_deal
+		x = 40
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thesoutherndeal }
+		mutually_exclusive = { focus = ITA_freedomforafrica }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_strikeintosaudiarabia
+		icon = GFX_goal_generic_oil_refinery
+		x = 47
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_omaniitaliancooperationleague }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_invitegreecefascism
+		icon = GFX_goal_poland_goal
+		x = 43
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_fascismingreece }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_fascismingreece
+		icon = GFX_goal_generic_major_war
+		x = 43
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theeaglefront }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_omaniitaliancooperationleague
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 47
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theoilfront }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_anticommunistrhetoric
+		icon = GFX_goal_generic_propaganda
+		x = 45
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_eliminatethebureaucracy
+		}
+		prerequisite = {
+			focus = ITA_theafricancorp
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_aidtothefrenchrepublic
+		icon = GFX_goal_rhineland
+		x = 35
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thebonomiplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_thebonomiplan
+		icon = GFX_goal_generic_production2
+		x = 35
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_therepubliclives }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_therepubliclives
+		icon = GFX_goal_generic_defence
+		x = 37
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_parrisgovernment }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_anamericantradedeal
+		icon = GFX_focus_mex_privatisation
+		x = 36
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_joinnato }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_inviteturkey
+		icon = GFX_goal_generic_military_deal
+		x = 39
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_formthemarenostrum }
+		mutually_exclusive = { focus = ITA_invitegreece }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_districtofalbania
+		icon = GFX_goal_rhineland
+		x = 38
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_invitegreece
+			focus = ITA_inviteturkey
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theafricancorp
+		icon = GFX_goal_generic_political_pressure
+		x = 46
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_freemussolinifromprison }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_theoilfront
+		icon = GFX_goal_generic_position_armies
+		x = 47
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theafricancorp }
+		mutually_exclusive = { focus = ITA_theeaglefront }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
