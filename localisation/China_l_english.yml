@@ -167,6 +167,10 @@ CHI_send_agents_tt:0 "§YWe will send our agents to investigate..."
  CHI_rocket_development_desc:0 ""
  CHI_manchu_league:0 "The Manchu League"
  CHI_manchu_league_desc:0 ""
+ CHI_expand_industry:0 "Expand Our Industry"
+ CHI_expand_industry_desc:0 ""
+ CHI_industrial_boom:0 "Industrial Boom"
+ CHI_industrial_boom_desc:0 ""
 
 #Events
 tlbchina.1.t:0 "China proposes the Anti-Soviet Pact"
