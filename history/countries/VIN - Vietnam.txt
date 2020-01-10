@@ -72,10 +72,11 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 35
-	fascism = 15
-	communism = 15
-	neutrality = 35
+	democratic = 64
+	liberal = 11
+	communism = 14
+	neutrality = 7
+	socialism = 4
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
@@ -105,7 +106,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ngô Đình Diêm"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+	picture = "Portrait_Vietnam_Ngo_Dinh_Diem.dds"
 	expire = "1953.3.1"
 	ideology = conservative
 	traits = {
@@ -118,7 +119,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = radical
 	traits = {
 
 	}

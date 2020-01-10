@@ -33,3 +33,14 @@ set_popularities = {
 	democratic = 3
 	liberal = 4
 }
+
+create_country_leader = {
+	name = "Ernest Peterlin"
+	desc = "POLITICS_PETERLIN_DESC"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

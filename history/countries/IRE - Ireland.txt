@@ -72,14 +72,6 @@ set_popularities = {
 	communism = 1
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.6.17"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 create_country_leader = {
 	name = "Éamon de Valera"
 	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
@@ -118,7 +110,7 @@ create_country_leader = {
 	desc = "POLITICS_JAMES_LARKIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = liberalism
 	traits = {
 		#
 	}

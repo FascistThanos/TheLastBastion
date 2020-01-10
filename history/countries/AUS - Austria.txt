@@ -22,10 +22,29 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 9
-	communism = 6
-	democratic = 1
-	fascism = 84
+	fascism = 67
+	communism = 12
+	democratic = 6
+	liberal = 8
+	neutrality = 7
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		OR = {
+			has_dlc = "Man the Guns"
+		}
+	}
+
+	set_autonomy = {
+		target = SLV
+		autonomous_state = autonomy_reichskommissariat
+	}
+
+	else = {
+		puppet = SLV
+	}
 }
 
 set_stability = 0.50

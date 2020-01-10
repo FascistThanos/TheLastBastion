@@ -54,9 +54,6 @@ ideologies = {
 			oligarchism  = {
 			}
 
-			moderatism = {
-			}
-
 			centrism = {
 			}
 		}
@@ -87,11 +84,7 @@ ideologies = {
 			lend_lease_tension = 0.4
 			send_volunteers_tension = 0.4
 			guarantee_tension = 0.4
-			drift_defence_factor = -0.3
 		}
-
-		can_be_boosted = no
-		can_collaborate = yes
 
 		ai_neutral = yes #
 	}
@@ -111,6 +104,9 @@ ideologies = {
 			}
 
 			anarchist_communism = {
+			}
+
+			stalinism = {
 			}
 		}
 

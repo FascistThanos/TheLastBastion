@@ -1375,7 +1375,7 @@ country_event = {
 			desc = "POLITICS_FRANCISCO_MUGICA_DESC"
 			picture = "GFX_portrait_mex_francisco_mugica"
 			expire = "1965.1.1"
-			ideology = moderatism
+			ideology = despotism
 			traits = {
 				revolutionary_general
 			}

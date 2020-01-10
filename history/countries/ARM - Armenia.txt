@@ -61,9 +61,18 @@ if = {
 	}
 }
 
-set_popularities = {	fascism = 34
-	democratic = 30
-	communism = 36
+set_politics = {
+	ruling_party = trotskyism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	trotskyism = 42
+	communism = 16
+	fascism = 19
+	neutrality = 23
 }
 
 create_country_leader = {
@@ -96,5 +105,16 @@ create_country_leader = {
 	ideology = leninism
 	traits = {
 
+	}
+}
+
+create_country_leader = {
+	name = "Kuzma Galitsky"
+	desc = "POLITICS_GALITSKY_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Kuzma_Galitsky.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_type
+	traits = {
+		#
 	}
 }

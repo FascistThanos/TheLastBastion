@@ -5223,14 +5223,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }
+			set_politics = { ruling_party = monarchist elections_allowed = no }
 			remove_ideas = HOL_wilhelmina
 			create_country_leader = {
 				name = "Wilhelmina"
 				desc = "POLITICS_WILHELMINA_DESC"
 				picture = "portrait_hol_wilhelmina.dds"
 				expire = "1965.1.1"
-				ideology = centrism
+				ideology = constitutional_monarch
 				traits = {
 					wilhelmina
 					disdain_for_politicians_1

@@ -76,8 +76,28 @@ if = {
 	}
 }
 
-set_popularities = {	democratic = 25
-	communism = 35	neutrality = 40
+set_politics = {
+	ruling_party = fascism
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 86
+	neutrality = 11
+	communism = 3
+}
+
+create_country_leader = {
+	name = "Kaili Phankham"
+	desc = "POLITICS_PHANKHAM_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -112,5 +132,3 @@ create_country_leader = {
 
 	}
 }
-
-#couldnt find historical fascists

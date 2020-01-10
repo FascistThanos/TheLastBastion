@@ -10,7 +10,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -22,7 +22,7 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "TIB_1939"
 	set_technology = {
 		#doctrines
@@ -54,7 +54,11 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	neutrality = 64
+	communism = 4
+	fascism = 9
+	liberal = 16
+	monarchist = 7
 }
 
 create_country_leader = {
@@ -62,7 +66,7 @@ create_country_leader = {
 	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
 	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = oligarchism
 	traits = {
 		#
 	}

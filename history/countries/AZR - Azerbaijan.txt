@@ -60,7 +60,19 @@ if = {
 	}
 }
 
-set_popularities = {	democratic = 30	communism = 40	neutrality = 30
+set_politics = {
+	ruling_party = liberal
+	last_election = "1933.7.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	liberal = 31
+	democratic = 13
+	fascism = 24
+	communism = 18
+	neutrality = 9
+	monarchist = 5
 }
 
 create_country_leader = {
@@ -79,9 +91,9 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservative
+	ideology = liberalism
 	traits = {
-
+		#
 	}
 }
 

@@ -9,17 +9,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = monarchist
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	communism = 71
-	fascism = 12
-	democratic = 10
-	neutrality = 7
+	neutrality = 23
+	monarchist = 76
+	communism = 1
 }
 
 set_convoys = 5
@@ -44,6 +43,17 @@ create_country_leader = {
 	ideology = leninism
 	traits = {
 		staunch_stalinist
+	}
+}
+
+create_country_leader = {
+	name = "Xhemal Aranitasi"
+	desc = "POLITICS_ARANITASI_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
 	}
 }
 
