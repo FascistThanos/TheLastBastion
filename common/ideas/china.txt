@@ -2,173 +2,174 @@ ideas = {
 	country = {
 ##########################
 
-CHI_anti_manchu = {
+	CHI_anti_manchu = {
 
-	allowed = {
-		always = no
-	}
+		allowed = {
+			always = no
+		}
 
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			justify_war_goal_time = -0.25
 		}
 	}
 
-	removal_cost = -1
+	CHI_anti_communism = {
 
-modifier = {
-justify_war_goal_time = -0.25
-}
-}
+		allowed = {
+			always = no
+		}
 
-CHI_anti_communism = {
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
 
-	allowed = {
-		always = no
-	}
+		removal_cost = -1
 
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
+		modifier = {
+			communism_drift = -0.1
+			drift_defence_factor = 0.35
 		}
 	}
 
-	removal_cost = -1
+	CHI_quick_forts = {
 
-modifier = {
-communism_drift = -0.1
-	drift_defence_factor = 0.35
-}
-}
+		allowed = {
+			always = no
+		}
 
-CHI_quick_forts = {
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
 
-	allowed = {
-		always = no
-	}
+		removal_cost = -1
 
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
+		modifier = {
+			production_speed_bunker_factor = 0.3
+			production_speed_coastal_bunker_factor = 0.3
 		}
 	}
 
-	removal_cost = -1
+	CHI_broken_army = {
 
-modifier = {
-production_speed_bunker_factor = 0.3
-production_speed_coastal_bunker_factor = 0.3
-}
-}
+		allowed = {
+			always = no
+		}
 
-CHI_broken_army = {
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
 
-	allowed = {
-		always = no
-	}
+		picture = chi_army_corruption
 
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
+		removal_cost = -1
+
+		modifier = {
+			amphibious_invasion = -0.20
+			army_speed_factor = -0.05
+			planning_speed = -0.30
 		}
 	}
 
-	removal_cost = -1
+	CHI_economic_debuff = {
 
-modifier = {
-amphibious_invasion = -0.20
-army_speed_factor = -0.05
-planning_speed = -0.30
-}
-}
+		picture = generic_production_bonus
 
-CHI_economic_debuff = {
+		allowed = {
+			always = no
+		}
 
-picture = GFX_idea_FRA_factory_strikes
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
 
-	allowed = {
-		always = no
-	}
+		removal_cost = -1
 
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
+		modifier = {
+			production_speed_arms_factory_factor = -0.15
+			production_speed_industrial_complex_factor = -0.15
 		}
 	}
 
-	removal_cost = -1
+	CHI_open_border_idea = {
 
-modifier = {
-production_speed_arms_factory_factor = -0.15
-production_speed_industrial_complex_factor = -0.15
+		picture = GFX_idea_FRA_national_mobilization_focus
 
-}
-}
+		allowed = {
+			always = no
+		}
 
-CHI_open_border_idea = {
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
 
-picture = GFX_idea_FRA_national_mobilization_focus
+		removal_cost = -1
 
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
+		modifier = {
+			stability_weekly = 0.01
+			political_power_factor = 0.25
 		}
 	}
 
-	removal_cost = -1
+	CHI_closed_border_idea = {
 
-modifier = {
-	stability_weekly = 0.01
-	political_power_factor = 0.25
-}
-}
+		allowed = {
+			always = no
+			}
 
-CHI_closed_border_idea = {
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
 
-	allowed = {
-		always = no
-	}
+			removal_cost = -1
 
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
+			modifier = {
+				drift_defence_factor = 0.25
+				trade_opinion_factor = -0.15
+			}
+		}
+
+	CHI_unknown_bandits = {
+
+		picture = generic_spy_coup
+
+		allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = -0.25
+			weekly_manpower = -500
+			industry_air_damage_factor = 0.1
 		}
 	}
-
-	removal_cost = -1
-
-modifier = {
-	drift_defence_factor = 0.25
-		trade_opinion_factor = -0.15
-}
-}
-
-CHI_unknown_bandits = {
-
-picture = GFX_idea_generic_spy_coup
-
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		NOT = {
-			has_government = communism
-		}
-	}
-
-	removal_cost = -1
-
-modifier = {
-stability_factor = -0.25
-weekly_manpower = -500
-	industry_air_damage_factor = 0.1
-}
-}
 
 CHI_rebuild_china = {
 
