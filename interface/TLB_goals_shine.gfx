@@ -7,7 +7,7 @@ spriteTypes = {
 	#########################################
 
 	SpriteType = {
-		name = "GFX_GFX_pricinipaliaitalia_shine"
+		name = "GFX_pricinipaliaitalia_shine"
 		texturefile = "gfx/interface/goals/GFX_pricinipaliaitalia.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -39,7 +39,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_joinnato_shine"
+		name = "GFX_joinnato_shine"
 		texturefile = "gfx/interface/goals/GFX_joinnato.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13543,7 +13543,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_Army_shine"
+		name = "GFX_FRA_Army_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_Army.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13575,7 +13575,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_CivilLaw_shine"
+		name = "GFX_FRA_CivilLaw_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_CivilLaw.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13607,7 +13607,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_CommunistDefeat_shine"
+		name = "GFX_FRA_CommunistDefeat_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_CommunistDefeat.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13639,7 +13639,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_CommunistsDeath_shine"
+		name = "GFX_FRA_CommunistsDeath_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_CommunistsDeath.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13671,7 +13671,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_CrushCommunists_shine"
+		name = "GFX_FRA_CrushCommunists_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_CrushCommunists.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13703,7 +13703,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_CyprusDeal_shine"
+		name = "GFX_FRA_CyprusDeal_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_CyprusDeal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13735,7 +13735,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_Degaulle_shine"
+		name = "GFX_FRA_Degaulle_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_Degaulle.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13767,7 +13767,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_French_USA_Cooperation_shine"
+		name = "GFX_FRA_French_USA_Cooperation_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_French_USA_Cooperation.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13799,7 +13799,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_FrenchFlag_shine"
+		name = "GFX_FRA_FrenchFlag_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_FrenchFlag.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13831,7 +13831,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_FrenchSoldiers_shine"
+		name = "GFX_FRA_FrenchSoldiers_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_FrenchSoldiers.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13863,7 +13863,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_JetFighter_shine"
+		name = "GFX_FRA_JetFighter_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_JetFighter.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13895,7 +13895,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_MilitaryLoyalty_shine"
+		name = "GFX_FRA_MilitaryLoyalty_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_MilitaryLoyalty.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13927,7 +13927,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_Shadow_shine"
+		name = "GFX_FRA_Shadow_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_Shadow.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13959,7 +13959,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_ShieldGuns_shine"
+		name = "GFX_FRA_ShieldGuns_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_ShieldGuns.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13991,7 +13991,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_SoldiersFlag_shine"
+		name = "GFX_FRA_SoldiersFlag_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_SoldiersFlag.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -14023,7 +14023,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_SyrianIndependence_shine"
+		name = "GFX_FRA_SyrianIndependence_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_SyrianIndependence.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -14055,7 +14055,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_FRA_Wargoal_shine"
+		name = "GFX_FRA_Wargoal_shine"
 		texturefile = "gfx/interface/goals/GFX_FRA_Wargoal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -14087,7 +14087,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_Generic_Authority_shine"
+		name = "GFX_Generic_Authority_shine"
 		texturefile = "gfx/interface/goals/GFX_Generic_Authority.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -14119,7 +14119,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_Generic_Espionage_shine"
+		name = "GFX_Generic_Espionage_shine"
 		texturefile = "gfx/interface/goals/GFX_Generic_Espionage.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -14151,7 +14151,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_Generic_Government_Control_shine"
+		name = "GFX_Generic_Government_Control_shine"
 		texturefile = "gfx/interface/goals/GFX_Generic_Government_Control.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -14183,7 +14183,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_Generic_Industry_04_shine"
+		name = "GFX_Generic_Industry_04_shine"
 		texturefile = "gfx/interface/goals/GFX_Generic_Industry_04.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -14215,7 +14215,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GFX_Generic_Navy_shine"
+		name = "GFX_Generic_Navy_shine"
 		texturefile = "gfx/interface/goals/GFX_Generic_Navy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
