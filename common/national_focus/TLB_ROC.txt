@@ -308,16 +308,9 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	create_wargoal = {
-			type = annex_everything
-			target = POR
-	}
-	create_wargoal = {
-			type = annex_everything
-			target = ENG
-	}
-
-	}
+	ENG = { country_event = { id = tlbchina.7 hours = 1} }
+		POR = { country_event = { id = tlbchina.6 hours = 1} }
+}
 }
 
 focus = {
@@ -488,7 +481,7 @@ JAP = {add_opinion_modifier = { target = CHI modifier = large_increase }}
 focus = {
 	id = CHI_japan_enemy
 	icon = GFX_focus_AST_war_japan
-	prerequisite = { focus = CHI_defend_beijing }
+	prerequisite = { focus = CHI_defend_beijing focus = CHI_close_border }
 	mutually_exclusive = {focus = CHI_japan_friend}
 	x = 1
 	y = 1
@@ -664,7 +657,8 @@ focus = {
 	y = 1
 	relative_position_id = CHI_expand_chi
 
-	cost = 10
+	cost = 15
+
 
 	ai_will_do = {
 		factor = 1
@@ -697,7 +691,7 @@ focus = {
 	y = 1
 	relative_position_id = CHI_expand_chi
 
-	cost = 10
+	cost = 15
 
 	ai_will_do = {
 		factor = 1
@@ -730,7 +724,7 @@ focus = {
 	y = 1
 	relative_position_id = CHI_expand_chi
 
-	cost = 10
+	cost = 15
 
 	ai_will_do = {
 		factor = 1
@@ -795,7 +789,7 @@ focus = {
 	y = 1
 	relative_position_id = CHI_democracy_focus
 
-	cost = 10
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
@@ -814,6 +808,11 @@ focus = {
 
 	completion_reward = {
 create_faction = "The Asian Bastion"
+
+
+
+
+
 	}
 }
 
@@ -845,6 +844,11 @@ focus = {
 
 	completion_reward = {
 create_faction = "The Asian Bastion"
+TIB = { country_event = {
+		id = tlbchina.3
+		hours = 1
+}
+}
 	}
 }
 

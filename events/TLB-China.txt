@@ -74,3 +74,107 @@ country_event = {
       }
 }
 }
+
+#Vietnam
+country_event = {
+  id = tlbchina.4
+  title = tlbchina.4.t
+  desc = tlbchina.4.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbchina.4.a
+    ai_chance = {
+      base = 50
+    }
+    CHI = {add_to_faction = ROOT }
+}
+  option = {
+    name = tlbchina.4.b
+    ai_chance = {
+      base = 50
+      }
+}
+}
+
+#Laos
+country_event = {
+  id = tlbchina.5
+  title = tlbchina.5.t
+  desc = tlbchina.5.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbchina.5.a
+    ai_chance = {
+      base = 50
+    }
+    CHI = {add_to_faction = ROOT }
+}
+  option = {
+    name = tlbchina.5.b
+    ai_chance = {
+      base = 50
+      }
+}
+}
+
+#Coast Portugal
+country_event = {
+  id = tlbchina.6
+  title = tlbchina.6.t
+  desc = tlbchina.6.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbchina.6.a
+    ai_chance = {
+      base = 50
+    }
+CHI =  { create_wargoal = {
+        type = annex_everything
+        target = POR
+    }
+}
+}
+  option = {
+    name = tlbchina.6.b
+    ai_chance = {
+      base = 50
+      }
+CHI = {transfer_state = 729 }
+
+}
+}
+
+#Coast Britain
+country_event = {
+  id = tlbchina.7
+  title = tlbchina.7.t
+  desc = tlbchina.7.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbchina.7.a
+    ai_chance = {
+      base = 50
+    }
+CHI =  { create_wargoal = {
+        type = annex_everything
+        target = ENG
+    }
+}
+}
+  option = {
+    name = tlbchina.7.b
+    ai_chance = {
+      base = 50
+      }
+CHI = {transfer_state = 326 }
+
+}
+}
