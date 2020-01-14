@@ -14,9 +14,6 @@ country_event = {
 
 	option = {
 		name = sov.1.a
-		FPR = {
-			add_ideas = FPR_sovietaid
-		}
 	}
 }
 country_event = {
