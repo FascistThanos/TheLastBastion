@@ -383,6 +383,23 @@ units = {
 		start_equipment_factor = 0.2
 
 	}
+	###Malaya
+	division= {
+		name = "Singapore Fortress"
+		location = 12299
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		name = "Penang Fortress"
+		location = 12215
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
 	###Ceylon
 	division= {
 		name = "Ceylon Defense Force"
