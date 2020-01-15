@@ -4,7 +4,7 @@ ideas = {
 
 
 			allowed = {
-				original_tag = "ITA"
+				original_tag = ITA
 			}
 
 			allowed_civil_war = {
@@ -66,6 +66,45 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.35
 				political_advisor_cost_factor = 0.20
+			}
+		}
+
+		ITA_grazianis_plan = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = ITA_Grazianis_Plan
+
+			removal_cost = -1
+
+			modifier = {
+				max_planning = 0.10
+				planning_speed = 0.10
+			}
+		}
+
+		ITA_armament_program = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
 			}
 		}
 
@@ -133,6 +172,154 @@ ideas = {
 			}
 			research_bonus = {
 				air_doctrine = 0.05
+			}
+		}
+	}
+
+	hidden_ideas = {
+		ITA_new_army = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				command_power_gain_mult = 0.3
+			}
+		}
+
+		ITA_us_navy = {
+
+				allowed = {
+					original_tag = ITA
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				removal_cost = -1
+
+				modifier = {
+					industrial_capacity_dockyard = 0.05
+				}
+		}
+
+		ITA_uk_navy = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				bc_tech = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+
+				bb_tech = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+
+		ITA_sov_air = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				light_fighter = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+
+	     	cat_heavy_fighter = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+
+		ITA_jap_air = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				tactical_bomber = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+
+				cat_strategic_bomber = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+
+				naval_bomber = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+
+		ITA_libyan_academy = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_navy_factor = 0.15
+			}
+		}
+
+		ITA_genua_academy = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air_factor = 0.15
 			}
 		}
 	}

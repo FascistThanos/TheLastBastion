@@ -20,6 +20,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_light_armor
+				bonus = 0.5
+				uses = 2
+			}
+		}
 	}
 
 	focus = {
@@ -33,6 +41,14 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_lightarmor }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_heavy_armor
+				bonus = 0.5
+				uses = 2
+			}
 		}
 	}
 
@@ -59,6 +75,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	focus = {
@@ -71,6 +91,10 @@ focus_tree = {
 		prerequisite = { focus = ITA_grazianisplanningprogram }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			navy_experience = 25
 		}
 	}
 
@@ -104,6 +128,61 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -120,6 +199,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
 	}
 
 	focus = {
@@ -132,6 +219,39 @@ focus_tree = {
 		prerequisite = { focus = ITA_industrialresearchprogram }
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+      FRA = {
+        has_war_with = FPR
+      }
+    }
+
+		bypass = {
+			ITA = {
+				OR = {
+					has_war_with = FRA
+					has_war_with = FPR
+				}
+			}
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+			custom_effect_tooltip = TT_ITALIAN_FRENCH_INTERVENTION_GUNS
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -10000
+					producer = ITA
+				}
+
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = FRA
+				}
+			}
 		}
 	}
 
@@ -146,6 +266,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			117 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			156 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -158,6 +304,15 @@ focus_tree = {
 		prerequisite = { focus = ITA_universityofrome }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+				category = rocketry
+			}
 		}
 	}
 
@@ -172,6 +327,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			army_experience = 25
+		}
 	}
 
 	focus = {
@@ -183,6 +342,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = ITA_grazianis_plan
 		}
 	}
 
@@ -197,6 +360,61 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_savoyindustrialsubsidies }
 		ai_will_do = {
 			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -215,7 +433,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				2 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = TT_ROME_RAIL
+			hidden_effect = {
+				2 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+  }
 
 	focus = {
 		id = ITA_theromedebate
@@ -258,6 +501,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
 	}
 
 	focus = {
@@ -271,6 +522,61 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_armamentprogram }
 		ai_will_do = {
 			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -288,6 +594,61 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_montellasmotorizedmill }
 		ai_will_do = {
 			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -308,6 +669,61 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -321,6 +737,15 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_bomberinitiative }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = light_fighter
+				category = cat_heavy_fighter
+				bonus = 0.5
+				uses = 2
+			}
 		}
 	}
 
@@ -336,6 +761,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = tactical_bomber
+				category = cat_strategic_bomber
+				category = naval_bomber
+				bonus = 0.5
+				uses = 2
+			}
+		}
 	}
 
 	focus = {
@@ -350,6 +785,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = ss_tech
+				bonus = 0.5
+				uses = 2
+			}
+		}
 	}
 
 	focus = {
@@ -363,6 +806,15 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_thesubmarinebase }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = bc_tech
+				category = bb_tech
+				bonus = 0.5
+				uses = 2
+			}
 		}
 	}
 
@@ -381,6 +833,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				category = infantry_equipment
+				uses = 2
+				bonus = 0.5
+			}
+		}
 	}
 
 	focus = {
@@ -393,6 +854,15 @@ focus_tree = {
 		prerequisite = { focus = ITA_lightarmor }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_light_armor
+				category = cat_medium_armor
+				bonus = 1
+				uses = 1
+			}
 		}
 	}
 
@@ -407,7 +877,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_heavy_armor
+				category = cat_medium_armor
+				bonus = 1
+				uses = 1
+			}
+		}
+  }
 
 	focus = {
 		id = ITA_runthemountainsred
@@ -419,6 +898,14 @@ focus_tree = {
 		prerequisite = { focus = ITA_thel6 }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_mass_assault
+				bonus = 1
+				uses = 1
+			}
 		}
 	}
 
@@ -433,6 +920,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_mobile_warfare
+				bonus = 1
+				uses = 1
+			}
+		}
 	}
 
 	focus = {
@@ -445,6 +940,14 @@ focus_tree = {
 		prerequisite = { focus = ITA_supportingartillery }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = cat_superior_firepower
+			}
 		}
 	}
 
@@ -464,6 +967,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			army_experience = 50
+			add_ideas = ITA_new_army
+		}
 	}
 
 	focus = {
@@ -477,6 +985,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		}
 	}
 
 	focus = {
@@ -489,6 +1005,14 @@ focus_tree = {
 		prerequisite = { focus = ITA_thearmamentprogram }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -504,6 +1028,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			hidden_effect = {
+				army_experience = 10
+			}
+
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+				category = infantry_weapons
+			}
+		}
 	}
 
 	focus = {
@@ -517,6 +1054,20 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_ainfantrybasedarmy }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				army_experience = 10
+			}
+
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+				category = cat_mechanized_equipment
+				category = armor
+			}
 		}
 	}
 
@@ -534,6 +1085,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			869 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			161 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -550,6 +1127,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	focus = {
@@ -563,6 +1144,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			air_experience = 25
+		}
 	}
 
 	focus = {
@@ -575,6 +1160,10 @@ focus_tree = {
 		prerequisite = { focus = ITA_ainfantrybasedarmy }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = ITA_armament_program
 		}
 	}
 
@@ -595,6 +1184,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				uses = 2
+				bonus = 0.5
+			}
+		}
 	}
 
 	focus = {
@@ -607,6 +1204,24 @@ focus_tree = {
 		prerequisite = { focus = ITA_capitalshipprogram }
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			ITA = {
+			has_opinion = {
+				target = ENG
+				value > 69
+				}
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = UK_SHIP
+			}
+
+			add_ideas = ITA_uk_navy
 		}
 	}
 
@@ -621,6 +1236,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -633,6 +1259,24 @@ focus_tree = {
 		prerequisite = { focus = ITA_thesubmarinebase }
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			ITA = {
+			has_opinion = {
+				target = USA
+				value > 69
+				}
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = US_SHIP
+			}
+
+			add_ideas = ITA_us_navy
 		}
 	}
 
@@ -650,6 +1294,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_ideas = ITA_libyan_academy
+		}
 	}
 
 	focus = {
@@ -662,6 +1310,20 @@ focus_tree = {
 		prerequisite = { focus = ITA_libyannavalacademy }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -676,6 +1338,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = marine_tech
+				bonus = 1
+				uses = 1
+			}
+		}
 	}
 
 	focus = {
@@ -688,6 +1358,25 @@ focus_tree = {
 		prerequisite = { focus = ITA_lessonsfromengland }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+
+				add_tech_bonus = {
+					category = naval_minelaying
+					category = naval_minesweeping
+					bonus = 1
+					uses = 1
+				}
+			}
+
+			else = {
+				navy_experience = 15
+			}
 		}
 	}
 
@@ -707,6 +1396,14 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_tradeinterception }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_fleet_in_being
+				bonus = 1
+				uses = 1
+			}
 		}
 	}
 
@@ -729,6 +1426,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_trade_interdiction
+				bonus = 1
+				uses = 1
+			}
+		}
 	}
 
 	focus = {
@@ -742,6 +1447,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			ITA = {
+			has_opinion = {
+				target = SOV
+				value > 69
+				}
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_AIR
+			}
+
+			add_ideas = ITA_sov_air
+		}
 	}
 
 	focus = {
@@ -754,6 +1477,24 @@ focus_tree = {
 		prerequisite = { focus = ITA_bomberinitiative }
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			ITA = {
+			has_opinion = {
+				target = JAP
+				value > 69
+				}
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = JAP_AIR
+			}
+
+			add_ideas = ITA_jap_air
 		}
 	}
 
@@ -771,6 +1512,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_ideas = ITA_genua_academy
+		}
 	}
 
 	focus = {
@@ -785,6 +1530,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_battlefield_support
+				bonus = 1
+				uses = 1
+			}
+		}
 	}
 
 	focus = {
@@ -798,6 +1551,14 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_formationflights }
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_strategic_destruction
+				bonus = 1
+				uses = 1
+			}
 		}
 	}
 
@@ -814,6 +1575,17 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			air_experience = 30
+			add_ace = {
+    		name = "Muruta"
+    		surname = "Aloisio"
+    		callsign = "Righello"
+    		type = fighter_genius
+    		is_female = yes
+			}
 		}
 	}
 
