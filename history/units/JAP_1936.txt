@@ -442,33 +442,6 @@ units = {
 
 	### Kita-Shina Ichigun - North China Army ###
 	#Independents
-	division = { # "5 'Koi' Hohei Shidan"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 3955 #East Hebei Autonomous Council
-		division_template = "Jidousha Shidan"
-		start_experience_factor = 0.3
-	}
-	division = { # "1 Dokuritsu Konsei Ryodan"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3900 #East Hebei Autonomous Council
-		division_template = "Dokuritsu Konsei Ryodan"
-		start_experience_factor = 0.3
-	}
-	division = { # "11 Dokuritsu Konsei Ryodan"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 11
-		}
-		location = 11822 #East Hebei Autonomous Council
-		division_template = "Dokuritsu Konsei Ryodan"
-		start_experience_factor = 0.3
-	}
 
 	#2 Homengun - 2nd Field Army
 
@@ -481,15 +454,7 @@ units = {
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
-	division = { # "16 'Kaki' Hohei Shidan"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 16
-		}
-		location = 9768
-		division_template = "Hohei Shidan"
-		start_experience_factor = 0.3
-	}
+
 }
 
 
