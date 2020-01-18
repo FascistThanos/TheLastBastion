@@ -1,0 +1,55 @@
+add_namespace = TLB_Italy
+
+country_event = {
+  id = TLB_Italy.1 # Debates - Venice
+  title = TLB_Italy.1.t
+  desc = TLB_Italy.1.d
+  picture = GFX_news_event_election_vote
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.1.a # Fascists
+    ai_chance = {
+      factor = 1
+    }
+
+    hidden_effect = {
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.1
+      }
+    }
+  }
+
+  option = {
+    name = TLB_italy.1.b # Communists
+    ai_chance = {
+      factor = 1
+    }
+    hidden_effect = {
+      add_popularity = {
+        ideology = communism
+        popularity = 0.1
+      }
+    }
+  }
+
+  option = {
+    name = TLB_italy.1.c # Social Dems
+    ai_chance = {
+      factor = 10
+    }
+    hidden_effect = {
+      add_popularity = {
+        ideology = fascism
+        popularity = -0.1
+      }
+
+      add_popularity = {
+        ideology = communism
+        popularity = -0.1
+      }
+    }
+  }
+}
