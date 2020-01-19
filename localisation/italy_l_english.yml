@@ -40,6 +40,12 @@
  ITA_jap_air:0 "Japanese Bomber Development"
  ITA_genua_academy:0 "Genua Aeronautic Academy"
 
+ TLB_Italy.1.t:0 "The Venetian Debates"
+ TLB_Italy.1.d:0 "On this night in the Hall of the Great Council, in Venice, Gabriele D'Annunzio, Candidate for the PNF, Incumbent Ferruccio Parri, Candidate for the PdA, and Palmiro Togliatti, Candidate for the PST, met to sway the voters of Venice to their side. \n\nOpening the night, Annunzio said \"Welcome all. I come to introduce you to the PNF. The current government is in a failing wreck, and we need a stronger government to replace this catastrophy if we wish to remain a united nation any longer.\" \n\nNext came Togliatti, speaking \"Great Workers of Venice, the PSI comes to bring you fair treatment. The overlords who rule this nation treat you like the cattle you work, and take away your rightfully earned freedoms. With the PSI in control, we can give you the rights you are ought to have as the hard working proletariat you are.\" \n\nAnd finally, Incumbent Parri approaches the podium, \"Ladies and Gentleman of Italy, You all know that this last term of mine may not have been the greatest. But if I were to be re-elected, I will fulfill my promises to the great nation we reside in. The land of Italy shall become greater then it has under either of these radicalists. Vote PdA to maintain the security and safety of Italy.\""
+ TLB_italy.1.a:0 "The PNF have won this debate."
+ TLB_italy.1.b:0 "The PSI have won this debate."
+ TLB_italy.1.c:0 "The PdA have won this debate."
+
  ITA_socialism:0 "Italian Republic"
  ITA_socialism_DEF:0 "the Italian Republic"
  ITA_socialism_ADJ:0 "Italian"
