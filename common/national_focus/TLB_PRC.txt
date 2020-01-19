@@ -1,11 +1,11 @@
 focus_tree = {
-	id = ROC_focus
+	id = PRC_focus
 
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = CHI
+			tag = PRC
 		}
 	}
 
@@ -15,7 +15,7 @@ focus_tree = {
 	continuous_focus_position = { x = 1000 y = 1200 }
 
 #	focus = {
-#		id = CHI_
+#		id = PRC_
 #		icon = GFX_
 #		prerequisite = { focus = }
 #		mutually_exclusive = { focus =  }
@@ -51,7 +51,7 @@ focus_tree = {
 #	}
 
 focus = {
-	id = CHI_northern_war
+	id = PRC_northern_war
 	icon = GFX_goal_generic_major_war
 	x = 4
 	y = 0
@@ -82,12 +82,12 @@ add_political_power = 35
 }
 
 focus = {
-	id = CHI_war_propaganda
+	id = PRC_war_propaganda
 	icon = GFX_goal_generic_propaganda
-	prerequisite = { focus = CHI_northern_war }
+	prerequisite = { focus = PRC_northern_war }
 	x = -2
 	y = 1
-	relative_position_id = CHI_northern_war
+	relative_position_id = PRC_northern_war
 
 	cost = 10
 
@@ -96,6 +96,7 @@ focus = {
 	}
 
 	available = {
+has_war = yes
 	}
 
 	bypass = {
@@ -113,12 +114,12 @@ add_war_support = 0.05
 }
 
 focus = {
-	id = CHI_quick_defense
+	id = PRC_quick_defense
 	icon = GFX_Generic_Soldiers_Defense
-	prerequisite = { focus = CHI_northern_war }
+	prerequisite = { focus = PRC_northern_war }
 	x = 0
 	y = 1
-	relative_position_id = CHI_northern_war
+	relative_position_id = PRC_northern_war
 
 	cost = 10
 
@@ -140,19 +141,19 @@ has_war = no
 
 	completion_reward = {
 	add_timed_idea = {
-			idea = CHI_quick_forts
+			idea = PRC_quick_defense
 			days = 200
 	}
 	}
 }
 
 focus = {
-	id = CHI_beijing
+	id = PRC_beijing
 	icon = GFX_goal_beijing1
-	prerequisite = { focus = CHI_northern_war }
+	prerequisite = { focus = PRC_northern_war }
 	x = 2
 	y = 1
-	relative_position_id = CHI_northern_war
+	relative_position_id = PRC_northern_war
 
 	cost = 10
 
@@ -173,18 +174,18 @@ has_war = yes
 	available_if_capitulated = no
 
 	completion_reward = {
-custom_effect_tooltip = CHI_beijing_tt
+custom_effect_tooltip = PRC_beijing_tt
 
 	}
 }
 
 focus = {
-	id = CHI_uncertain_future
+	id = PRC_uncertain_future
 	icon = GFX_Generic_Draw_Up_Plans
-	prerequisite = { focus = CHI_war_propaganda focus = CHI_quick_defense }
+	prerequisite = { focus = PRC_war_propaganda focus = PRC_quick_defense }
 	x = -1
 	y = 1
-	relative_position_id = CHI_quick_defense
+	relative_position_id = PRC_quick_defense
 
 	cost = 10
 
@@ -193,6 +194,7 @@ focus = {
 	}
 
 	available = {
+has_war = yes
 	}
 
 	bypass = {
@@ -210,114 +212,15 @@ add_political_power = 100
 	}
 }
 
-focus = {
-	id = CHI_demand_vietnam
-	icon = GFX_goal_generic_political_pressure
-	prerequisite = { focus = CHI_post_war_rehabilitation }
-	x = -2
-	y = 1
-	relative_position_id = CHI_post_war_rehabilitation
 
-	cost = 12
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-VIN = {exists = yes}
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	create_wargoal = {
-	    type = annex_everything
-	    target = VIN
-	}
-	}
-}
 
 focus = {
-	id = CHI_demand_laos
-	icon = GFX_goal_generic_political_pressure
-	prerequisite = { focus = CHI_demand_vietnam }
-	x = 0
-	y = 1
-	relative_position_id = CHI_demand_vietnam
-
-	cost = 12
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-LAO = {exists = yes}
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	create_wargoal = {
-			type = annex_everything
-			target = LAO
-	}
-
-	}
-}
-
-focus = {
-	id = CHI_expel_democracy
-	icon = GFX_focus_generic_strike_at_democracy2
-	prerequisite = { focus = CHI_demand_laos }
- prerequisite = { focus = CHI_nationalism_focus }
-	x = 0
-	y = 1
-	relative_position_id = CHI_demand_laos
-
-	cost = 12
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	ENG = { country_event = { id = tlbchina.7 hours = 1} }
-		POR = { country_event = { id = tlbchina.6 hours = 1} }
-}
-}
-
-focus = {
-	id = CHI_cleanse_red
+	id = PRC_cleanse_red
 	icon = GFX_Generic_Communist_Propaganda
-	prerequisite = { focus = CHI_uncertain_future }
+	prerequisite = { focus = PRC_uncertain_future }
 	x = 0
 	y = 1
-	relative_position_id = CHI_uncertain_future
+	relative_position_id = PRC_uncertain_future
 
 	cost = 10
 
@@ -337,17 +240,17 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_ideas = CHI_anti_communism
+add_ideas = PRC_anti_communism
 	}
 }
 
 focus = {
-	id = CHI_post_war_rehabilitation
+	id = PRC_post_war_rehabilitation
 	icon = GFX_Generic_Command_Power
-	prerequisite = { focus = CHI_cleanse_red }
+	prerequisite = { focus = PRC_cleanse_red }
 	x = 0
 	y = 1
-	relative_position_id = CHI_cleanse_red
+	relative_position_id = PRC_cleanse_red
 
 	cost = 10
 
@@ -369,19 +272,19 @@ has_war = no
 
 	completion_reward = {
 	add_timed_idea = {
-	    idea = CHI_rebuild_china
+	    idea = PRC_rebuild_china
 	    days = 180
 	}
 	}
 }
 
 focus = {
-	id = CHI_post_war_politics
+	id = PRC_post_war_politics
 	icon = GFX_Generic_Mutual_Cooperation
-	prerequisite = { focus = CHI_post_war_rehabilitation focus = CHI_rebuild_japan focus = CHI_anti_soviet_pact }
+	prerequisite = { focus = PRC_post_war_rehabilitation focus = PRC_rebuild_japan focus = PRC_anti_soviet_pact }
 	x = 2
 	y = 1
-	relative_position_id = CHI_post_war_rehabilitation
+	relative_position_id = PRC_post_war_rehabilitation
 
 	cost = 10
 
@@ -407,12 +310,12 @@ add_political_power = 400
 }
 
 focus = {
-	id = CHI_defend_beijing
+	id = PRC_defend_beijing
 	icon = GFX_goal_beijing2
-	prerequisite = { focus = CHI_beijing }
+	prerequisite = { focus = PRC_beijing }
 	x = 0
 	y = 1
-	relative_position_id = CHI_beijing
+	relative_position_id = PRC_beijing
 
 	cost = 10
 
@@ -446,13 +349,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_japan_friend
+	id = PRC_japan_friend
 	icon = GFX_focus_chi_collaboration_with_the_japanese
-	prerequisite = { focus = CHI_defend_beijing }
-mutually_exclusive = {focus = CHI_japan_enemy}
+	prerequisite = { focus = PRC_defend_beijing }
+mutually_exclusive = {focus = PRC_japan_enemy}
 	x = -1
 	y = 1
-	relative_position_id = CHI_defend_beijing
+	relative_position_id = PRC_defend_beijing
 
 	cost = 10
 
@@ -472,18 +375,18 @@ mutually_exclusive = {focus = CHI_japan_enemy}
 	available_if_capitulated = no
 
 	completion_reward = {
-JAP = {add_opinion_modifier = { target = CHI modifier = large_increase }}
+JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
 	}
 }
 
 focus = {
-	id = CHI_japan_enemy
+	id = PRC_japan_enemy
 	icon = GFX_focus_AST_war_japan
-	prerequisite = { focus = CHI_defend_beijing focus = CHI_close_border }
-	mutually_exclusive = {focus = CHI_japan_friend}
+	prerequisite = { focus = PRC_defend_beijing focus = PRC_close_border }
+	mutually_exclusive = {focus = PRC_japan_friend}
 	x = 1
 	y = 1
-	relative_position_id = CHI_defend_beijing
+	relative_position_id = PRC_defend_beijing
 
 	cost = 10
 
@@ -511,12 +414,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_anti_soviet_pact
+	id = PRC_anti_soviet_pact
 	icon = GFX_focus_attack_soviet
-	prerequisite = { focus = CHI_japan_friend }
+	prerequisite = { focus = PRC_japan_friend }
 	x = 0
 	y = 1
-	relative_position_id = CHI_japan_friend
+	relative_position_id = PRC_japan_friend
 
 	cost = 10
 
@@ -547,13 +450,13 @@ create_faction = "Anti-Soviet Pact"
 }
 
 focus = {
-	id = CHI_nationalism_focus
+	id = PRC_communism_focus
 	icon = GFX_Generic_Ultranationalist_Government
-	prerequisite = { focus = CHI_post_war_politics}
-	mutually_exclusive = { focus = CHI_democracy_focus }
-	x = -2
+	prerequisite = { focus = PRC_post_war_politics}
+	mutually_exclusive = { focus = PRC_democracy_focus }
+	x = 0
 	y = 1
-	relative_position_id = CHI_post_war_politics
+	relative_position_id = PRC_post_war_politics
 
 	cost = 10
 
@@ -574,17 +477,17 @@ focus = {
 
 	completion_reward = {
 add_ideas = Nationalism
-CHI = { dismantle_faction = yes }
+PRC = { dismantle_faction = yes }
 	}
 }
 
 focus = {
-	id = CHI_paint_black
+	id = PRC_paint_black
 	icon = GFX_Generic_Chinese_Soldiers
-	prerequisite = { focus = CHI_nationalism_focus}
+	prerequisite = { focus = PRC_communism_focus}
 	x = 0
 	y = 1
-	relative_position_id = CHI_nationalism_focus
+	relative_position_id = PRC_communism_focus
 
 	cost = 10
 
@@ -611,12 +514,12 @@ add_stability = -0.02
 }
 
 focus = {
-	id = CHI_expand_chi
+	id = PRC_expand_chi
 	icon = GFX_goal_generic_more_territorial_claims
-	prerequisite = { focus = CHI_paint_black}
+	prerequisite = { focus = PRC_paint_black}
 	x = 0
 	y = 1
-	relative_position_id = CHI_paint_black
+	relative_position_id = PRC_paint_black
 
 	cost = 15
 
@@ -630,39 +533,24 @@ focus = {
 	bypass = {
 
 	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	create_wargoal = {
-			type = annex_everything
-			target = RAJ
-	}
-	create_wargoal = {
-			type = annex_everything
-			target = KOR
-	}
-	}
 }
 
 focus = {
-	id = CHI_op_rinpoche
-	icon = GFX_Generic_Espionage
-	prerequisite = { focus = CHI_expand_chi}
+	id = PRC_demand_vietnam
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = { focus = PRC_expand_chi }
 	x = -2
 	y = 1
-	relative_position_id = CHI_expand_chi
+	relative_position_id = PRC_expand_chi
 
-	cost = 15
-
+	cost = 12
 
 	ai_will_do = {
 		factor = 1
 	}
 
 	available = {
+VIN = {exists = yes}
 	}
 
 	bypass = {
@@ -675,227 +563,28 @@ focus = {
 
 	completion_reward = {
 	create_wargoal = {
-	    type = puppet_wargoal_focus
-	    target = TIB
+	    type = annex_everything
+	    target = VIN
 	}
 	}
 }
 
 focus = {
-	id = CHI_op_trot
-	icon = GFX_Generic_Espionage
-	prerequisite = { focus = CHI_expand_chi}
-	x = 0
-	y = 1
-	relative_position_id = CHI_expand_chi
-
-	cost = 15
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	create_wargoal = {
-			type = puppet_wargoal_focus
-			target = SOV
-	}
-	}
-}
-
-focus = {
-	id = CHI_op_man
-	icon = GFX_Generic_Espionage
-	prerequisite = { focus = CHI_expand_chi}
-	x = 2
-	y = 1
-	relative_position_id = CHI_expand_chi
-
-	cost = 15
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	create_wargoal = {
-			type = puppet_wargoal_focus
-			target = MON
-	}
-	}
-}
-
-focus = {
-	id = CHI_democracy_focus
-	icon = GFX_Generic_Blue_Democracy
-	prerequisite = { focus = CHI_post_war_politics}
-	mutually_exclusive = { focus = CHI_nationalism_focus }
-	x = 2
-	y = 1
-	relative_position_id = CHI_post_war_politics
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_ideas = CHI_democratic
-	}
-}
-
-focus = {
-	id = CHI_current_land
+	id = PRC_demand_laos
 	icon = GFX_goal_generic_political_pressure
-	prerequisite = { focus = CHI_democracy_focus}
-  mutually_exclusive = {focus = CHI_invite_neighbors}
-	x = -1
-	y = 1
-	relative_position_id = CHI_democracy_focus
-
-	cost = 3
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-create_faction = "The Asian Bastion"
-
-
-
-
-
-	}
-}
-
-focus = {
-	id = CHI_invite_neighbors
-	icon = GFX_GER_french_deal
-	prerequisite = { focus = CHI_democracy_focus}
-  mutually_exclusive = {focus = CHI_current_land}
-	x = 1
-	y = 1
-	relative_position_id = CHI_democracy_focus
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-create_faction = "The Asian Bastion"
-TIB = { country_event = {
-		id = tlbchina.3
-		hours = 1
-}
-}
-	}
-}
-
-focus = {
-	id = CHI_aisan_bastion
-	icon = GFX_focus_generic_china1
-	prerequisite = { focus = CHI_invite_neighbors focus = CHI_current_land}
-	x = -1
-	y = 1
-	relative_position_id = CHI_invite_neighbors
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_ideas = CHI_anti_manchu
-	}
-}
-
-focus = {
-	id = CHI_reapproach_us
-	icon = GFX_focus_usa_guarantee_the_american_dream
-	prerequisite = { focus = CHI_aisan_bastion}
+	prerequisite = { focus = PRC_demand_vietnam }
 	x = 0
 	y = 1
-	relative_position_id = CHI_aisan_bastion
+	relative_position_id = PRC_demand_vietnam
 
-	cost = 10
+	cost = 12
 
 	ai_will_do = {
 		factor = 1
 	}
 
 	available = {
-USA = {exists = yes}
+LAO = {exists = yes}
 	}
 
 	bypass = {
@@ -907,19 +596,23 @@ USA = {exists = yes}
 	available_if_capitulated = no
 
 	completion_reward = {
-USA = {add_opinion_modifier = { target = CHI modifier = huge_increase }}
+	create_wargoal = {
+			type = annex_everything
+			target = LAO
+	}
+
 	}
 }
 
 focus = {
-	id = CHI_us_research
-	icon = GFX_focus_research
-	prerequisite = { focus = CHI_reapproach_us}
+	id = PRC_expel_democracy
+	icon = GFX_focus_generic_strike_at_democracy2
+	prerequisite = { focus = PRC_demand_laos }
 	x = 0
 	y = 1
-	relative_position_id = CHI_reapproach_us
+	relative_position_id = PRC_demand_laos
 
-	cost = 10
+	cost = 12
 
 	ai_will_do = {
 		factor = 1
@@ -937,13 +630,14 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_research_slot = 1
-	}
+	ENG = { country_event = { id = tlbchina.7 hours = 1} }
+		POR = { country_event = { id = tlbchina.6 hours = 1} }
+}
 }
 #######################################
 
 focus = {
-	id = CHI_manchu_question
+	id = PRC_manchu_question
 	icon = GFX_goal_generic_propaganda
 	x = 10
 	y = 0
@@ -967,17 +661,17 @@ tag = USA
 	available_if_capitulated = no
 
 	completion_reward = {
-custom_effect_tooltip = CHI_manchu_question_tt
+custom_effect_tooltip = PRC_manchu_question_tt
 	}
 }
 
 focus = {
-	id = CHI_send_agents
+	id = PRC_send_agents
 	icon = GFX_Generic_Espionage04
-	prerequisite = { focus = CHI_manchu_question}
+	prerequisite = { focus = PRC_manchu_question}
 	x = 0
 	y = 1
-	relative_position_id = CHI_manchu_question
+	relative_position_id = PRC_manchu_question
 
 	cost = 2
 
@@ -997,19 +691,19 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-custom_effect_tooltip = CHI_send_agents_tt
+custom_effect_tooltip = PRC_send_agents_tt
 	}
 }
 
 
 focus = {
-	id = CHI_open_border
+	id = PRC_open_border
 	icon = GFX_goal_foreign_policy
-	prerequisite = { focus = CHI_send_agents}
-  mutually_exclusive = {focus = CHI_close_border}
+	prerequisite = { focus = PRC_send_agents}
+  mutually_exclusive = {focus = PRC_close_border}
 	x = 1
 	y = 1
-	relative_position_id = CHI_send_agents
+	relative_position_id = PRC_send_agents
 
 	cost = 10
 
@@ -1029,18 +723,18 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_ideas = CHI_open_border_idea
+add_ideas = PRC_open_border_idea
 	}
 }
 
 focus = {
-	id = CHI_close_border
+	id = PRC_close_border
 	icon = GFX_goal_generic_military_sphere
-	prerequisite = { focus = CHI_send_agents}
-	mutually_exclusive = {focus = CHI_open_border}
+	prerequisite = { focus = PRC_send_agents}
+	mutually_exclusive = {focus = PRC_open_border}
 	x = -1
 	y = 1
-	relative_position_id = CHI_send_agents
+	relative_position_id = PRC_send_agents
 
 	cost = 10
 
@@ -1060,17 +754,17 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_ideas = CHI_closed_border_idea
+add_ideas = PRC_closed_border_idea
 	}
 }
 
 focus = {
-	id = CHI_strike_manchu
+	id = PRC_strike_manchu
 	icon = GFX_goal_manchu_flames
-	prerequisite = { focus = CHI_close_border}
+	prerequisite = { focus = PRC_close_border}
 	x = 0
 	y = 1
-	relative_position_id = CHI_close_border
+	relative_position_id = PRC_close_border
 
 	cost = 10
 
@@ -1090,7 +784,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_ideas = CHI_anti_manchu
+add_ideas = PRC_anti_manchu
 	}
 }
 
@@ -1099,7 +793,7 @@ add_ideas = CHI_anti_manchu
 ###############################
 
 focus = {
-	id = CHI_mainland_development
+	id = PRC_mainland_development
 	icon = GFX_goal_generic_construction
 	x = 14
 	y = 0
@@ -1113,7 +807,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_mainland_development
+			name = PRC_mainland_development
 			bonus = 1.0
 			uses = 1
 			category = industry
@@ -1122,12 +816,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_expansion_of_coastal_towns
+	id = PRC_expansion_of_coastal_towns
 	icon = GFX_goal_generic_construct_civ_factory
-	prerequisite = { focus = CHI_mainland_development }
+	prerequisite = { focus = PRC_mainland_development }
 	x = 0
 	y = 1
-	relative_position_id = CHI_mainland_development
+	relative_position_id = PRC_mainland_development
 	cost = 10
 
 	ai_will_do = {
@@ -1138,7 +832,7 @@ focus = {
 
 	complete_tooltip = {
 		random_state = {
-			limit = { has_state_flag = CHI_expansion_of_coastal_towns_1 }
+			limit = { has_state_flag = PRC_expansion_of_coastal_towns_1 }
 			add_building_construction = {
 				type = industrial_complex
 				level = 1
@@ -1164,18 +858,18 @@ focus = {
 				level = 1
 				instant_build = yes
 			}
-			set_state_flag = CHI_expansion_of_coastal_towns_1
+			set_state_flag = PRC_expansion_of_coastal_towns_1
 		}
 	}
 }
 
 focus = {
-	id = CHI_fill_the_railways_gaps
+	id = PRC_fill_the_railways_gaps
 	icon = GFX_goal_generic_construct_infrastructure
-	prerequisite = { focus = CHI_expansion_of_coastal_towns }
+	prerequisite = { focus = PRC_expansion_of_coastal_towns }
 	x = 1
 	y = 1
-	relative_position_id = CHI_expansion_of_coastal_towns
+	relative_position_id = PRC_expansion_of_coastal_towns
 	cost = 10
 
 	ai_will_do = {
@@ -1198,7 +892,7 @@ focus = {
 
 	complete_tooltip = {
 		random_state = {
-			limit = { has_state_flag = CHI_fill_the_railways_gaps_1 }
+			limit = { has_state_flag = PRC_fill_the_railways_gaps_1 }
 			add_building_construction = {
 				type = infrastructure
 				level = 1
@@ -1206,7 +900,7 @@ focus = {
 			}
 		}
 		random_state = {
-			limit = { has_state_flag = CHI_fill_the_railways_gaps_2 }
+			limit = { has_state_flag = PRC_fill_the_railways_gaps_2 }
 			add_building_construction = {
 				type = infrastructure
 				level = 1
@@ -1242,7 +936,7 @@ focus = {
 				level = 1
 				instant_build = yes
 			}
-			set_state_flag = CHI_fill_the_railways_gaps_1
+			set_state_flag = PRC_fill_the_railways_gaps_1
 		}
 		random_owned_controlled_state = {
 			limit = {
@@ -1270,18 +964,18 @@ focus = {
 				level = 1
 				instant_build = yes
 			}
-			set_state_flag = CHI_fill_the_railways_gaps_2
+			set_state_flag = PRC_fill_the_railways_gaps_2
 		}
 	}
 }
 
 focus = {
-	id = CHI_start_central_industrial_region
+	id = PRC_start_central_industrial_region
 	icon = GFX_goal_generic_construct_mil_factory
-	prerequisite = { focus = CHI_expansion_of_coastal_towns }
+	prerequisite = { focus = PRC_expansion_of_coastal_towns }
 	x = -1
 	y = 1
-	relative_position_id = CHI_expansion_of_coastal_towns
+	relative_position_id = PRC_expansion_of_coastal_towns
 	cost = 10
 
 	ai_will_do = {
@@ -1289,7 +983,7 @@ focus = {
 	}
 	complete_tooltip = {
 		random_state = {
-			limit = { has_state_flag = CHI_start_central_industrial_region_1 }
+			limit = { has_state_flag = PRC_start_central_industrial_region_1 }
 			add_building_construction = {
 				type = arms_factory
 				level = 1
@@ -1314,20 +1008,20 @@ focus = {
 				level = 1
 				instant_build = yes
 			}
-			set_state_flag = CHI_start_central_industrial_region_1
+			set_state_flag = PRC_start_central_industrial_region_1
 		}
 	}
 
 }
 
 focus = {
-	id = CHI_expand_central_industrial_region
+	id = PRC_expand_central_industrial_region
 	icon = GFX_goal_generic_build_tank
-	prerequisite = { focus = CHI_start_central_industrial_region }
-	prerequisite = { focus = CHI_fill_the_railways_gaps }
+	prerequisite = { focus = PRC_start_central_industrial_region }
+	prerequisite = { focus = PRC_fill_the_railways_gaps }
 	x = 1
 	y = 1
-	relative_position_id = CHI_start_central_industrial_region
+	relative_position_id = PRC_start_central_industrial_region
 	cost = 10
 
 	ai_will_do = {
@@ -1335,7 +1029,7 @@ focus = {
 	}
 	complete_tooltip = {
 		random_state = {
-			limit = { has_state_flag = CHI_start_central_industrial_region_1 }
+			limit = { has_state_flag = PRC_start_central_industrial_region_1 }
 			add_building_construction = {
 				type = arms_factory
 				level = 1
@@ -1360,7 +1054,7 @@ focus = {
 				level = 1
 				instant_build = yes
 			}
-			set_state_flag = CHI_start_central_industrial_region_1
+			set_state_flag = PRC_start_central_industrial_region_1
 		}
 	}
 }
@@ -1368,12 +1062,12 @@ focus = {
 
 
 focus = {
-	id = CHI_decryption
+	id = PRC_decryption
 	icon = GFX_goal_generic_production2
-	prerequisite = { focus = CHI_expand_central_industrial_region focus = CHI_amry_research }
+	prerequisite = { focus = PRC_expand_central_industrial_region focus = PRC_amry_research }
 	x = 2
 	y = 1
-	relative_position_id = CHI_expand_central_industrial_region
+	relative_position_id = PRC_expand_central_industrial_region
 	cost = 10
 
 	ai_will_do = {
@@ -1384,7 +1078,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_decryption
+			name = PRC_decryption
 			bonus = 1.0
 			uses = 1
 			category = encryption_tech
@@ -1394,12 +1088,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_atomic_physics_institute
+	id = PRC_atomic_physics_institute
 	icon = GFX_focus_wonderweapons
-	prerequisite = { focus = CHI_decryption }
+	prerequisite = { focus = PRC_decryption }
 	x = 0
 	y = 1
-	relative_position_id = CHI_decryption
+	relative_position_id = PRC_decryption
 	cost = 10
 
 	ai_will_do = {
@@ -1410,7 +1104,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_atomic_physics_institute
+			name = PRC_atomic_physics_institute
 			bonus = 1.0
 			uses = 1
 			category = nuclear
@@ -1419,9 +1113,9 @@ focus = {
 }
 
 focus = {
-	id = CHI_additional_research_slot2
+	id = PRC_additional_research_slot2
 	icon = GFX_focus_research
-	prerequisite = { focus = CHI_atomic_physics_institute }
+	prerequisite = { focus = PRC_atomic_physics_institute }
 
 	available = {
 		num_of_factories > 50
@@ -1431,7 +1125,7 @@ focus = {
 
 	x = 0
 	y = 1
-	relative_position_id = CHI_atomic_physics_institute
+	relative_position_id = PRC_atomic_physics_institute
 	cost = 10
 
 	ai_will_do = {
@@ -1456,7 +1150,7 @@ focus = {
 
 
 focus = {
-	id = CHI_air_base_expansion
+	id = PRC_air_base_expansion
 	icon = GFX_goal_generic_air_production
 
 	x = 27
@@ -1471,7 +1165,7 @@ focus = {
 
 	complete_tooltip = {
 		random_state = {
-			limit = { has_state_flag = CHI_air_base_expansion_1 }
+			limit = { has_state_flag = PRC_air_base_expansion_1 }
 			add_building_construction = {
 				type = air_base
 				level = 2
@@ -1494,7 +1188,7 @@ focus = {
 				level = 2
 				instant_build = yes
 			}
-			set_state_flag = CHI_air_base_expansion_1
+			set_state_flag = PRC_air_base_expansion_1
 		}
 		#Add 2 Airbases in Warsaw
 
@@ -1502,13 +1196,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_fighter_modernisation
+	id = PRC_fighter_modernisation
 	icon = GFX_goal_generic_air_fighter
-	prerequisite = { focus = CHI_air_base_expansion }
+	prerequisite = { focus = PRC_air_base_expansion }
 
 	x = 1
 	y = 1
-	relative_position_id = CHI_air_base_expansion
+	relative_position_id = PRC_air_base_expansion
 	cost = 10
 
 	ai_will_do = {
@@ -1519,7 +1213,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_fighter_modernisation
+			name = PRC_fighter_modernisation
 			bonus = 1.0
 			uses = 1
 			category = light_fighter
@@ -1531,13 +1225,13 @@ focus = {
 
 
 focus = {
-	id = CHI_air_innovations
+	id = PRC_air_innovations
 	icon = GFX_goal_generic_build_airforce
-	prerequisite = { focus = CHI_air_base_expansion }
+	prerequisite = { focus = PRC_air_base_expansion }
 
 	x = -1
 	y = 1
-	relative_position_id = CHI_air_base_expansion
+	relative_position_id = PRC_air_base_expansion
 	cost = 10
 
 	ai_will_do = {
@@ -1548,7 +1242,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_air_innovations
+			name = PRC_air_innovations
 			bonus = 1.0
 			uses = 1
 			category = air_doctrine
@@ -1558,13 +1252,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_heavy_fighter_concept
+	id = PRC_heavy_fighter_concept
 	icon = GFX_goal_generic_air_fighter2
-	prerequisite = { focus = CHI_air_innovations focus = CHI_fighter_modernisation }
+	prerequisite = { focus = PRC_air_innovations focus = PRC_fighter_modernisation }
 
 	x = 1
 	y = 1
-	relative_position_id = CHI_air_innovations
+	relative_position_id = PRC_air_innovations
 	cost = 10
 
 	ai_will_do = {
@@ -1575,7 +1269,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_heavy_fighter_concept
+			name = PRC_heavy_fighter_concept
 			bonus = 1.0
 			uses = 1
 			category = cat_heavy_fighter
@@ -1585,13 +1279,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_naval_bomber_experiments
+	id = PRC_naval_bomber_experiments
 	icon = GFX_goal_generic_air_naval_bomber
-	prerequisite = { focus = CHI_air_innovations }
+	prerequisite = { focus = PRC_air_innovations }
 
 	x = -1
 	y = 1
-	relative_position_id = CHI_air_innovations
+	relative_position_id = PRC_air_innovations
 	cost = 10
 
 	ai_will_do = {
@@ -1602,7 +1296,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_naval_bomber_experiments
+			name = PRC_naval_bomber_experiments
 			bonus = 1.0
 			uses = 1
 			category = naval_bomber
@@ -1612,14 +1306,14 @@ focus = {
 }
 
 focus = {
-	id = CHI_medium_bomber_focus
+	id = PRC_medium_bomber_focus
 	icon = GFX_goal_generic_occupy_start_war
-	prerequisite = { focus = CHI_heavy_fighter_concept focus = CHI_air_innovations }
-	mutually_exclusive = { focus = CHI_light_bomber_focus }
+	prerequisite = { focus = PRC_heavy_fighter_concept focus = PRC_air_innovations }
+	mutually_exclusive = { focus = PRC_light_bomber_focus }
 
 	x = -1
 	y = 1
-	relative_position_id = CHI_heavy_fighter_concept
+	relative_position_id = PRC_heavy_fighter_concept
 	cost = 10
 
 	ai_will_do = {
@@ -1630,7 +1324,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_medium_bomber_focus
+			name = PRC_medium_bomber_focus
 			bonus = 1.0
 			uses = 1
 			category = tactical_bomber
@@ -1640,14 +1334,14 @@ focus = {
 }
 
 focus = {
-	id = CHI_light_bomber_focus
+	id = PRC_light_bomber_focus
 	icon = GFX_goal_generic_CAS
-	prerequisite = { focus = CHI_heavy_fighter_concept focus = CHI_fighter_modernisation }
-	mutually_exclusive = { focus = CHI_medium_bomber_focus }
+	prerequisite = { focus = PRC_heavy_fighter_concept focus = PRC_fighter_modernisation }
+	mutually_exclusive = { focus = PRC_medium_bomber_focus }
 
 	x = 1
 	y = 1
-	relative_position_id = CHI_heavy_fighter_concept
+	relative_position_id = PRC_heavy_fighter_concept
 	cost = 10
 
 	ai_will_do = {
@@ -1658,7 +1352,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_light_bomber_focus
+			name = PRC_light_bomber_focus
 			bonus = 1.0
 			uses = 1
 			category = cas_bomber
@@ -1668,13 +1362,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_air_modernisations_programme
+	id = PRC_air_modernisations_programme
 	icon = GFX_goal_generic_air_doctrine
-	prerequisite = { focus = CHI_light_bomber_focus focus = CHI_medium_bomber_focus }
+	prerequisite = { focus = PRC_light_bomber_focus focus = PRC_medium_bomber_focus }
 
 	x = -1
 	y = 1
-	relative_position_id = CHI_light_bomber_focus
+	relative_position_id = PRC_light_bomber_focus
 	cost = 10
 
 	ai_will_do = {
@@ -1685,7 +1379,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_air_modernisations_programme
+			name = PRC_air_modernisations_programme
 			bonus = 1.0
 			uses = 1
 			category = air_doctrine
@@ -1696,13 +1390,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_rocket_development
+	id = PRC_rocket_development
 	icon = GFX_focus_rocketry
-	prerequisite = { focus = CHI_air_modernisations_programme }
+	prerequisite = { focus = PRC_air_modernisations_programme }
 
 	x = 0
 	y = 1
-	relative_position_id = CHI_air_modernisations_programme
+	relative_position_id = PRC_air_modernisations_programme
 	cost = 10
 
 	ai_will_do = {
@@ -1713,7 +1407,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_rocket_development
+			name = PRC_rocket_development
 			bonus = 1.0
 			uses = 2
 			category = jet_technology
@@ -1730,7 +1424,7 @@ focus = {
 
 
 focus = {
-	id = CHI_develop_chinese_ship_building
+	id = PRC_develop_chinese_ship_building
 	icon = GFX_goal_generic_construct_naval_dockyard
 
 	x = 21
@@ -1745,7 +1439,7 @@ focus = {
 
 	complete_tooltip = {
 		random_state = {
-			limit = { has_state_flag = CHI_develop_chinese_ship_building_1 }
+			limit = { has_state_flag = PRC_develop_chinese_ship_building_1 }
 			add_building_construction = {
 				type = dockyard
 				level = 3
@@ -1769,20 +1463,20 @@ focus = {
 				level = 3
 				instant_build = yes
 			}
-			set_state_flag = CHI_develop_chinese_ship_building_1
+			set_state_flag = PRC_develop_chinese_ship_building_1
 		}
 		#Add 3 Dockyards at Gdansk
 	}
 }
 
 focus = {
-	id = CHI_study_foreign_built_ships
+	id = PRC_study_foreign_built_ships
 	icon = GFX_goal_generic_production
-	prerequisite = { focus = CHI_develop_chinese_ship_building }
+	prerequisite = { focus = PRC_develop_chinese_ship_building }
 
 	x = 1
 	y = 1
-	relative_position_id = CHI_develop_chinese_ship_building
+	relative_position_id = PRC_develop_chinese_ship_building
 	cost = 10
 
 	ai_will_do = {
@@ -1793,7 +1487,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_study_foreign_built_ships
+			name = PRC_study_foreign_built_ships
 			bonus = 1.0
 			uses = 1
 			category = dd_tech
@@ -1803,13 +1497,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_a_cruiser_navy
+	id = PRC_a_cruiser_navy
 	icon = GFX_goal_generic_navy_anti_submarine
-	prerequisite = { focus = CHI_study_foreign_built_ships }
+	prerequisite = { focus = PRC_study_foreign_built_ships }
 
 	x = 1
 	y = 1
-	relative_position_id = CHI_study_foreign_built_ships
+	relative_position_id = PRC_study_foreign_built_ships
 	cost = 10
 
 	ai_will_do = {
@@ -1820,7 +1514,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_a_cruiser_navy
+			name = PRC_a_cruiser_navy
 			bonus = 1.0
 			uses = 1
 			category = cl_tech
@@ -1830,13 +1524,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_import_submarine_technology
+	id = PRC_import_submarine_technology
 	icon = GFX_goal_generic_production2
-	prerequisite = { focus = CHI_develop_chinese_ship_building }
+	prerequisite = { focus = PRC_develop_chinese_ship_building }
 
 	x = -1
 	y = 1
-	relative_position_id = CHI_develop_chinese_ship_building
+	relative_position_id = PRC_develop_chinese_ship_building
 	cost = 10
 
 	ai_will_do = {
@@ -1847,7 +1541,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_import_submarine_technology
+			name = PRC_import_submarine_technology
 			bonus = 1.0
 			uses = 1
 			category = ss_tech
@@ -1857,12 +1551,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_commerce_attack
+	id = PRC_commerce_attack
 	icon = GFX_goal_generic_navy_submarine
-	prerequisite = { focus = CHI_import_submarine_technology }
+	prerequisite = { focus = PRC_import_submarine_technology }
 	x = -1
 	y = 1
-	relative_position_id = CHI_import_submarine_technology
+	relative_position_id = PRC_import_submarine_technology
 	cost = 10
 
 	ai_will_do = {
@@ -1873,7 +1567,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_commerce_attack
+			name = PRC_commerce_attack
 			bonus = 1.0
 			uses = 1
 			category = submarine_doctrine
@@ -1883,13 +1577,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_the_twin_threats
+	id = PRC_the_twin_threats
 	icon = GFX_goal_generic_navy_doctrines_tactics
-	prerequisite = { focus = CHI_import_submarine_technology focus = CHI_study_foreign_built_ships }
+	prerequisite = { focus = PRC_import_submarine_technology focus = PRC_study_foreign_built_ships }
 
 	x = 1
 	y = 1
-	relative_position_id = CHI_import_submarine_technology
+	relative_position_id = PRC_import_submarine_technology
 	cost = 10
 
 	ai_will_do = {
@@ -1900,7 +1594,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_the_twin_threats
+			name = PRC_the_twin_threats
 			bonus = 1.0
 			uses = 1
 			category = naval_doctrine
@@ -1910,13 +1604,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_coastal_defense
+	id = PRC_coastal_defense
 	icon = GFX_goal_generic_navy_cruiser
-	prerequisite = { focus = CHI_the_twin_threats }
-	mutually_exclusive = { focus = CHI_strike_force }
+	prerequisite = { focus = PRC_the_twin_threats }
+	mutually_exclusive = { focus = PRC_strike_force }
 	x = 1
 	y = 1
-	relative_position_id = CHI_the_twin_threats
+	relative_position_id = PRC_the_twin_threats
 	cost = 10
 
 	ai_will_do = {
@@ -1927,13 +1621,13 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_coastal_defense
+			name = PRC_coastal_defense
 			bonus = 1.0
 			uses = 1
 			category = ss_tech
 		}
 		add_tech_bonus = {
-			name = CHI_coastal_defense
+			name = PRC_coastal_defense
 			bonus = 1.0
 			uses = 1
 			category = dd_tech
@@ -1943,13 +1637,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_strike_force
+	id = PRC_strike_force
 	icon = GFX_goal_generic_occupy_states_coastal
-	prerequisite = { focus = CHI_the_twin_threats }
-	mutually_exclusive = { focus = CHI_coastal_defense }
+	prerequisite = { focus = PRC_the_twin_threats }
+	mutually_exclusive = { focus = PRC_coastal_defense }
 	x = -1
 	y = 1
-	relative_position_id = CHI_the_twin_threats
+	relative_position_id = PRC_the_twin_threats
 	cost = 10
 
 	ai_will_do = {
@@ -1960,13 +1654,13 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_strike_force
+			name = PRC_strike_force
 			bonus = 1.0
 			uses = 1
 			category = cl_tech
 		}
 		add_tech_bonus = {
-			name = CHI_strike_force
+			name = PRC_strike_force
 			bonus = 1.0
 			uses = 1
 			category = ca_tech
@@ -1976,13 +1670,13 @@ focus = {
 }
 
 focus = {
-	id = CHI_pacfic_navy
+	id = PRC_pacfic_navy
 	icon = GFX_goal_generic_navy_battleship
-	prerequisite = { focus = CHI_strike_force focus = CHI_coastal_defense }
+	prerequisite = { focus = PRC_strike_force focus = PRC_coastal_defense }
 
 	x = 1
 	y = 1
-	relative_position_id = CHI_strike_force
+	relative_position_id = PRC_strike_force
 	cost = 10
 
 	ai_will_do = {
@@ -1993,7 +1687,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_pacfic_navy
+			name = PRC_pacfic_navy
 			bonus = 1.0
 			uses = 1
 			category = naval_doctrine
@@ -2003,12 +1697,12 @@ focus = {
 }
 ###################################
 focus = {
-	id = CHI_manchu_diplo
+	id = PRC_manchu_diplo
 	icon = GFX_focus_generic_treaty
-	prerequisite = { focus = CHI_open_border}
+	prerequisite = { focus = PRC_open_border}
 	x = 0
 	y = 1
-	relative_position_id = CHI_open_border
+	relative_position_id = PRC_open_border
 
 	cost = 10
 
@@ -2028,18 +1722,18 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-MAN = {add_opinion_modifier = { target = CHI modifier = huge_increase }}
+MAN = {add_opinion_modifier = { target = PRC modifier = huge_increase }}
 	}
 }
 
 focus = {
-	id = CHI_manchu_railway
+	id = PRC_manchu_railway
 	icon = GFX_Generic_Railroads
-	prerequisite = { focus = CHI_manchu_diplo}
-	prerequisite = { focus = CHI_expand_central_industrial_region}
+	prerequisite = { focus = PRC_manchu_diplo}
+	prerequisite = { focus = PRC_expand_central_industrial_region}
 	x = 1
 	y = 1
-	relative_position_id = CHI_manchu_diplo
+	relative_position_id = PRC_manchu_diplo
 
 	cost = 10
 
@@ -2075,12 +1769,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_rebuild_japan
+	id = PRC_rebuild_japan
 	icon = GFX_goal_generic_construct_civilian
-	prerequisite = { focus = CHI_japan_enemy}
+	prerequisite = { focus = PRC_japan_enemy}
 	x = 0
 	y = 1
-	relative_position_id = CHI_japan_enemy
+	relative_position_id = PRC_japan_enemy
 
 	cost = 10
 
@@ -2126,7 +1820,7 @@ JAP = { has_war = no }
 ################################
 
 focus = {
-	id = CHI_reorganize_military
+	id = PRC_reorganize_military
 	icon = GFX_focus_chi_army_reform
 	x = 17
 	y = 0
@@ -2149,17 +1843,17 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-remove_ideas = CHI_broken_army
+remove_ideas = PRC_broken_army
 	}
 }
 
 focus = {
-	id = CHI_new_guns
+	id = PRC_new_guns
 	icon = GFX_Generic_Machine_Gun
-	prerequisite = { focus = CHI_reorganize_military}
+	prerequisite = { focus = PRC_reorganize_military}
 	x = 0
 	y = 1
-	relative_position_id = CHI_reorganize_military
+	relative_position_id = PRC_reorganize_military
 
 	cost = 10
 
@@ -2190,12 +1884,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_mobile_tanks
+	id = PRC_mobile_tanks
 	icon = GFX_Generic_Industry_Tanks
-	prerequisite = { focus =  CHI_new_guns}
+	prerequisite = { focus =  PRC_new_guns}
 	x = 0
 	y = 1
-	relative_position_id =  CHI_new_guns
+	relative_position_id =  PRC_new_guns
 
 	cost = 10
 
@@ -2225,12 +1919,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_amry_research
+	id = PRC_amry_research
 	icon = GFX_focus_CZE_military_research_institute
-	prerequisite = { focus =   CHI_mobile_tanks}
+	prerequisite = { focus =   PRC_mobile_tanks}
 	x = -1
 	y = 1
-	relative_position_id =   CHI_mobile_tanks
+	relative_position_id =   PRC_mobile_tanks
 
 	cost = 10
 
@@ -2266,12 +1960,12 @@ focus = {
 }
 
 focus = {
-	id = CHI_future_of_army
+	id = PRC_future_of_army
 	icon = GFX_Generic_Coalition_Army
-	prerequisite = { focus =  CHI_mobile_tanks}
+	prerequisite = { focus =  PRC_mobile_tanks}
 	x = 1
 	y = 1
-	relative_position_id =   CHI_mobile_tanks
+	relative_position_id =   PRC_mobile_tanks
 
 	cost = 10
 
@@ -2303,12 +1997,12 @@ focus = {
 #########################
 
 focus = {
-	id = CHI_manchu_league
+	id = PRC_manchu_league
 	icon = GFX_goal_manchu_league
-	prerequisite = { focus =  CHI_strike_manchu focus = CHI_manchu_diplo}
+	prerequisite = { focus =  PRC_strike_manchu focus = PRC_manchu_diplo}
 	x = 1
 	y = 1
-	relative_position_id =   CHI_strike_manchu
+	relative_position_id =   PRC_strike_manchu
 
 	cost = 10
 
@@ -2338,12 +2032,12 @@ focus = {
 ################
 
 focus = {
-	id = CHI_expand_industry
+	id = PRC_expand_industry
 	icon = GFX_goal_generic_construct_civ_factory
-	prerequisite = { focus =  CHI_expand_central_industrial_region}
+	prerequisite = { focus =  PRC_expand_central_industrial_region}
 	x = 0
 	y = 1
-	relative_position_id =   CHI_expand_central_industrial_region
+	relative_position_id =   PRC_expand_central_industrial_region
 
 	cost = 10
 
@@ -2371,12 +2065,12 @@ add_offsite_building = { type = industrial_complex level = 1 }
 }
 
 focus = {
-	id = CHI_industrial_boom
+	id = PRC_industrial_boom
 	icon = GFX_Generic_Factory_Planning
-	prerequisite = { focus = CHI_expand_industry}
+	prerequisite = { focus = PRC_expand_industry}
 	x = 0
 	y = 1
-	relative_position_id =   CHI_expand_industry
+	relative_position_id =   PRC_expand_industry
 
 	cost = 10
 
@@ -2396,6 +2090,6 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-remove_ideas = CHI_economic_debuff
+remove_ideas = PRC_economic_debuff
 	}
 }
