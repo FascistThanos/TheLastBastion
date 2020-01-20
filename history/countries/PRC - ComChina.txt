@@ -30,22 +30,12 @@ set_popularities = {
 }
 
 add_ideas = {
-	closed_economy
-	service_by_requirement
-	partial_economic_mobilisation
+	PRC_unknown_bandits
+	PRC_broken_army
+	PRC_economic_debuff
+
 }
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_the_long_march_1
-		PRC_low_popular_support_3
-		PRC_power_struggles
-		PRC_red_army_weakened
-	}
-}
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 

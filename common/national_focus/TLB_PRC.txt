@@ -141,7 +141,7 @@ has_war = no
 
 	completion_reward = {
 	add_timed_idea = {
-			idea = PRC_quick_defense
+			idea = PRC_quick_forts
 			days = 200
 	}
 	}
@@ -215,7 +215,7 @@ add_political_power = 100
 
 
 focus = {
-	id = PRC_cleanse_red
+	id = PRC_spread_revolution
 	icon = GFX_Generic_Communist_Propaganda
 	prerequisite = { focus = PRC_uncertain_future }
 	x = 0
@@ -247,10 +247,10 @@ add_ideas = PRC_anti_communism
 focus = {
 	id = PRC_post_war_rehabilitation
 	icon = GFX_Generic_Command_Power
-	prerequisite = { focus = PRC_cleanse_red }
+	prerequisite = { focus = PRC_spread_revolution }
 	x = 0
 	y = 1
-	relative_position_id = PRC_cleanse_red
+	relative_position_id = PRC_spread_revolution
 
 	cost = 10
 
@@ -281,10 +281,10 @@ has_war = no
 focus = {
 	id = PRC_post_war_politics
 	icon = GFX_Generic_Mutual_Cooperation
-	prerequisite = { focus = PRC_post_war_rehabilitation focus = PRC_rebuild_japan focus = PRC_anti_soviet_pact }
-	x = 2
+	prerequisite = { focus = PRC_spread_revolution }
+	x = -2
 	y = 1
-	relative_position_id = PRC_post_war_rehabilitation
+	relative_position_id = PRC_spread_revolution
 
 	cost = 10
 
@@ -310,7 +310,7 @@ add_political_power = 400
 }
 
 focus = {
-	id = PRC_defend_beijing
+	id = PRC_attack_beijing
 	icon = GFX_goal_beijing2
 	prerequisite = { focus = PRC_beijing }
 	x = 0
@@ -351,11 +351,11 @@ focus = {
 focus = {
 	id = PRC_japan_friend
 	icon = GFX_focus_chi_collaboration_with_the_japanese
-	prerequisite = { focus = PRC_defend_beijing }
+	prerequisite = { focus = PRC_attack_beijing }
 mutually_exclusive = {focus = PRC_japan_enemy}
 	x = -1
 	y = 1
-	relative_position_id = PRC_defend_beijing
+	relative_position_id = PRC_attack_beijing
 
 	cost = 10
 
@@ -382,11 +382,11 @@ JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
 focus = {
 	id = PRC_japan_enemy
 	icon = GFX_focus_AST_war_japan
-	prerequisite = { focus = PRC_defend_beijing focus = PRC_close_border }
+	prerequisite = { focus = PRC_attack_beijing}
 	mutually_exclusive = {focus = PRC_japan_friend}
 	x = 1
 	y = 1
-	relative_position_id = PRC_defend_beijing
+	relative_position_id = PRC_attack_beijing
 
 	cost = 10
 
@@ -414,7 +414,7 @@ focus = {
 }
 
 focus = {
-	id = PRC_anti_soviet_pact
+	id = PRC_red_japan
 	icon = GFX_focus_attack_soviet
 	prerequisite = { focus = PRC_japan_friend }
 	x = 0
@@ -482,7 +482,7 @@ PRC = { dismantle_faction = yes }
 }
 
 focus = {
-	id = PRC_paint_black
+	id = PRC_paint_red
 	icon = GFX_Generic_Chinese_Soldiers
 	prerequisite = { focus = PRC_communism_focus}
 	x = 0
@@ -516,10 +516,10 @@ add_stability = -0.02
 focus = {
 	id = PRC_expand_chi
 	icon = GFX_goal_generic_more_territorial_claims
-	prerequisite = { focus = PRC_paint_black}
+	prerequisite = { focus = PRC_paint_red}
 	x = 0
 	y = 1
-	relative_position_id = PRC_paint_black
+	relative_position_id = PRC_paint_red
 
 	cost = 15
 
@@ -634,159 +634,7 @@ focus = {
 		POR = { country_event = { id = tlbchina.6 hours = 1} }
 }
 }
-#######################################
-
-focus = {
-	id = PRC_manchu_question
-	icon = GFX_goal_generic_propaganda
-	x = 10
-	y = 0
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-tag = USA
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-custom_effect_tooltip = PRC_manchu_question_tt
-	}
-}
-
-focus = {
-	id = PRC_send_agents
-	icon = GFX_Generic_Espionage04
-	prerequisite = { focus = PRC_manchu_question}
-	x = 0
-	y = 1
-	relative_position_id = PRC_manchu_question
-
-	cost = 2
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-custom_effect_tooltip = PRC_send_agents_tt
-	}
-}
-
-
-focus = {
-	id = PRC_open_border
-	icon = GFX_goal_foreign_policy
-	prerequisite = { focus = PRC_send_agents}
-  mutually_exclusive = {focus = PRC_close_border}
-	x = 1
-	y = 1
-	relative_position_id = PRC_send_agents
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_ideas = PRC_open_border_idea
-	}
-}
-
-focus = {
-	id = PRC_close_border
-	icon = GFX_goal_generic_military_sphere
-	prerequisite = { focus = PRC_send_agents}
-	mutually_exclusive = {focus = PRC_open_border}
-	x = -1
-	y = 1
-	relative_position_id = PRC_send_agents
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_ideas = PRC_closed_border_idea
-	}
-}
-
-focus = {
-	id = PRC_strike_manchu
-	icon = GFX_goal_manchu_flames
-	prerequisite = { focus = PRC_close_border}
-	x = 0
-	y = 1
-	relative_position_id = PRC_close_border
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_ideas = PRC_anti_manchu
-	}
-}
+######################################
 
 ###############################
 ###############################
@@ -1696,126 +1544,6 @@ focus = {
 	}
 }
 ###################################
-focus = {
-	id = PRC_manchu_diplo
-	icon = GFX_focus_generic_treaty
-	prerequisite = { focus = PRC_open_border}
-	x = 0
-	y = 1
-	relative_position_id = PRC_open_border
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-MAN = {add_opinion_modifier = { target = PRC modifier = huge_increase }}
-	}
-}
-
-focus = {
-	id = PRC_manchu_railway
-	icon = GFX_Generic_Railroads
-	prerequisite = { focus = PRC_manchu_diplo}
-	prerequisite = { focus = PRC_expand_central_industrial_region}
-	x = 1
-	y = 1
-	relative_position_id = PRC_manchu_diplo
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-610  =  {add_building_construction = {
-		type = infrastructure
-		level = 3
-		instant_build = yes
-	}
-}
-609  =  {add_building_construction = {
-		type = infrastructure
-		level = 3
-		instant_build = yes
-	}
-}
-	}
-}
-
-focus = {
-	id = PRC_rebuild_japan
-	icon = GFX_goal_generic_construct_civilian
-	prerequisite = { focus = PRC_japan_enemy}
-	x = 0
-	y = 1
-	relative_position_id = PRC_japan_enemy
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-JAP = { has_war = no }
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	528 = {add_building_construction = {
-	    type = infrastructure
-	    level = 5
-	    instant_build = yes
-	}
-}
-529 = {add_building_construction = {
-		type = infrastructure
-		level = 5
-		instant_build = yes
-}
-}
-530 = {add_building_construction = {
-		type = infrastructure
-		level = 5
-		instant_build = yes
-}
-}
-#
-	}
-}
 
 ################################
 
@@ -1996,39 +1724,7 @@ focus = {
 
 #########################
 
-focus = {
-	id = PRC_manchu_league
-	icon = GFX_goal_manchu_league
-	prerequisite = { focus =  PRC_strike_manchu focus = PRC_manchu_diplo}
-	x = 1
-	y = 1
-	relative_position_id =   PRC_strike_manchu
 
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	MAN = { country_event = {
-			id = tlbchina.2
-			hours = 1
-	}
-	}
-	}
-}
 ################
 
 focus = {
