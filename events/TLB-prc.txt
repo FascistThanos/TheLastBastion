@@ -1,0 +1,180 @@
+add_namespace = tlbprc
+
+#Anti-Soviet Pact
+country_event = {
+  id = tlbprc.1
+  title = tlbprc.1.t
+  desc = tlbprc.1.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.1.a
+    ai_chance = {
+      base = 100
+    }
+CHI = {add_to_faction = JAP }
+}
+  option = {
+    name = tlbprc.1.b
+    ai_chance = {
+      base = 50
+      }
+add_stability = 0.1
+}
+}
+
+#MAN revolution
+country_event = {
+  id = tlbprc.2
+  title = tlbprc.2.t
+  desc = tlbprc.2.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.2.a
+    ai_chance = {
+      base = 100
+    }
+    declare_war_on = {
+        target = CHI
+        type = annex_everything
+    }
+CHI = {remove_ideas = CHI_unknown_bandits}
+}
+  option = {
+    name = tlbprc.2.b
+    ai_chance = {
+      base = 50
+      }
+CHI = {remove_ideas = CHI_unknown_bandits}
+}
+}
+
+#invite our Neighbors, not yet implemented
+country_event = {
+  id = tlbprc.3
+  title = tlbprc.3.t
+  desc = tlbprc.3.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.3.a
+    ai_chance = {
+      base = 50
+    }
+    CHI = {add_to_faction = ROOT }
+}
+  option = {
+    name = tlbprc.3.b
+    ai_chance = {
+      base = 50
+      }
+}
+}
+
+#Vietnam
+country_event = {
+  id = tlbprc.4
+  title = tlbprc.4.t
+  desc = tlbprc.4.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.4.a
+    ai_chance = {
+      base = 50
+    }
+    CHI = {add_to_faction = ROOT }
+}
+  option = {
+    name = tlbprc.4.b
+    ai_chance = {
+      base = 50
+      }
+}
+}
+
+#Laos
+country_event = {
+  id = tlbprc.5
+  title = tlbprc.5.t
+  desc = tlbprc.5.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.5.a
+    ai_chance = {
+      base = 50
+    }
+    CHI = {add_to_faction = ROOT }
+}
+  option = {
+    name = tlbprc.5.b
+    ai_chance = {
+      base = 50
+      }
+}
+}
+
+#Coast Portugal
+country_event = {
+  id = tlbprc.6
+  title = tlbprc.6.t
+  desc = tlbprc.6.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.6.a
+    ai_chance = {
+      base = 50
+    }
+CHI =  { create_wargoal = {
+        type = annex_everything
+        target = POR
+    }
+}
+}
+  option = {
+    name = tlbprc.6.b
+    ai_chance = {
+      base = 50
+      }
+CHI = {transfer_state = 729 }
+
+}
+}
+
+#Coast Britain
+country_event = {
+  id = tlbprc.7
+  title = tlbprc.7.t
+  desc = tlbprc.7.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.7.a
+    ai_chance = {
+      base = 50
+    }
+CHI =  { create_wargoal = {
+        type = annex_everything
+        target = ENG
+    }
+}
+}
+  option = {
+    name = tlbprc.7.b
+    ai_chance = {
+      base = 50
+      }
+CHI = {transfer_state = 326 }
+
+}
+}

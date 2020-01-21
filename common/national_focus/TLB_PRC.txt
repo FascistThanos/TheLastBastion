@@ -53,7 +53,7 @@ focus_tree = {
 focus = {
 	id = PRC_northern_war
 	icon = GFX_goal_generic_major_war
-	x = 4
+	x = 3
 	y = 0
 
 	cost = 10
@@ -148,8 +148,8 @@ has_war = no
 }
 
 focus = {
-	id = PRC_beijing
-	icon = GFX_goal_beijing1
+	id = PRC_offense
+	icon = GFX_
 	prerequisite = { focus = PRC_northern_war }
 	x = 2
 	y = 1
@@ -240,7 +240,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_ideas = PRC_anti_communism
+add_ideas =
 	}
 }
 
@@ -248,7 +248,7 @@ focus = {
 	id = PRC_post_war_rehabilitation
 	icon = GFX_Generic_Command_Power
 	prerequisite = { focus = PRC_spread_revolution }
-	x = 0
+	x = -2
 	y = 1
 	relative_position_id = PRC_spread_revolution
 
@@ -279,10 +279,70 @@ has_war = no
 }
 
 focus = {
+	id = PRC_rebuild_china_war
+	icon = GFX_Generic_Construction
+	prerequisite = { focus = PRC_post_war_rehabilitation }
+	x = 0
+	y = 1
+	relative_position_id = PRC_post_war_rehabilitation
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PRC_rebuild_china_war
+	icon = GFX_Generic_Construction
+	prerequisite = { focus = PRC_post_war_rehabilitation }
+	x = 0
+	y = 1
+	relative_position_id = PRC_post_war_rehabilitation
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
 	id = PRC_post_war_politics
 	icon = GFX_Generic_Mutual_Cooperation
 	prerequisite = { focus = PRC_spread_revolution }
-	x = -2
+	x = 0
 	y = 1
 	relative_position_id = PRC_spread_revolution
 
@@ -310,12 +370,12 @@ add_political_power = 400
 }
 
 focus = {
-	id = PRC_attack_beijing
-	icon = GFX_goal_beijing2
-	prerequisite = { focus = PRC_beijing }
-	x = 0
+	id = PRC_internal_control
+	icon = GFX_
+	prerequisite = { focus = PRC_spread_revolution }
+	x = 2
 	y = 1
-	relative_position_id = PRC_beijing
+	relative_position_id = PRC_spread_revolution
 
 	cost = 10
 
@@ -335,27 +395,112 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-608	= { add_building_construction = {
-	    type = bunker
-	    level = 5
-	    instant_build = yes
-	    province = {
-	        all_provinces = yes
-	        limit_to_border = yes
-	    }
-	}
+
+
 }
-	}
 }
 
 focus = {
-	id = PRC_japan_friend
-	icon = GFX_focus_chi_collaboration_with_the_japanese
-	prerequisite = { focus = PRC_attack_beijing }
-mutually_exclusive = {focus = PRC_japan_enemy}
+	id = PRC_mao_cult
+	icon = GFX_
+	prerequisite = { focus = PRC_internal_control }
+	x = 0
+	y = 1
+	relative_position_id = PRC_internal_control
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+
+focus = {
+	id = PRC_deep_battles
+	icon = GFX_
+	prerequisite = { focus = PRC_offense }
+	x = 0
+	y = 1
+	relative_position_id = PRC_offense
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+focus = {
+	id = PRC_strike_island
+	icon = GFX_
+	prerequisite = {focus = PRC_marines}
+	x = 2
+	y = 1
+	relative_position_id = PRC_deep_battles
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+focus = {
+	id = PRC_korean_flames
+	icon = GFX_
+	prerequisite = { focus = PRC_deep_battles focus = PRC_strike_island }
 	x = -1
 	y = 1
-	relative_position_id = PRC_attack_beijing
+	relative_position_id = PRC_strike_island
 
 	cost = 10
 
@@ -375,18 +520,80 @@ mutually_exclusive = {focus = PRC_japan_enemy}
 	available_if_capitulated = no
 
 	completion_reward = {
-JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
-	}
+
+
+}
 }
 
 focus = {
-	id = PRC_japan_enemy
-	icon = GFX_focus_AST_war_japan
-	prerequisite = { focus = PRC_attack_beijing}
-	mutually_exclusive = {focus = PRC_japan_friend}
-	x = 1
+	id = PRC_tibet
+	icon = GFX_
+	prerequisite = { focus = PRC_korean_flames focus = PRC_northern_steppe }
+	x = 0
+	y = 2
+	relative_position_id = PRC_korean_flames
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+focus = {
+	id = PRC_southern_thrust
+	icon = GFX_
+	prerequisite = { focus = PRC_red_japan }
+	x = 0
+	y = 3
+	relative_position_id = PRC_red_japan
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+focus = {
+	id = PRC_dutch_east
+	icon = GFX_
+	prerequisite = { focus = PRC_southern_thrust }
+	x = -1
 	y = 1
-	relative_position_id = PRC_attack_beijing
+	relative_position_id = PRC_southern_thrust
 
 	cost = 10
 
@@ -406,20 +613,19 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	create_wargoal = {
-	    type = puppet_wargoal_focus
-	    target = JAP
-	}
-	}
+
+
+}
 }
 
+
 focus = {
-	id = PRC_red_japan
-	icon = GFX_focus_attack_soviet
-	prerequisite = { focus = PRC_japan_friend }
+	id = PRC_deep_battles
+	icon = GFX_
+	prerequisite = { focus = PRC_offense }
 	x = 0
 	y = 1
-	relative_position_id = PRC_japan_friend
+	relative_position_id = PRC_offense
 
 	cost = 10
 
@@ -439,14 +645,135 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-create_faction = "Anti-Soviet Pact"
 
-	JAP = { country_event = {
-	    id = tlbchina.1
-	    hours = 1
-	}
+
 }
+}
+
+
+focus = {
+	id = PRC_phili
+	icon = GFX_
+	prerequisite = { focus = PRC_southern_thrust }
+	x = 1
+	y = 1
+	relative_position_id = PRC_southern_thrust
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
 	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+focus = {
+	id = PRC_us_peace_deal
+	icon = GFX_
+	prerequisite = { focus = PRC_phili }
+	x = 0
+	y = 1
+	relative_position_id = PRC_phili
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+focus = {
+	id = PRC_benelux_partition
+	icon = GFX_
+	prerequisite = { focus = PRC_dutch_east }
+	x = 0
+	y = 1
+	relative_position_id = PRC_dutch_east
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+
+}
+}
+
+focus = {
+	id = PRC_new_resources
+	icon = GFX_
+	prerequisite = { focus = PRC_benelux_partition }
+	prerequisite = {focus = PRC_us_peace_deal}
+	x = 1
+	y = 1
+	relative_position_id = PRC_benelux_partition
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+#timed idea
+
+}
 }
 
 focus = {
@@ -517,7 +844,8 @@ focus = {
 	id = PRC_expand_chi
 	icon = GFX_goal_generic_more_territorial_claims
 	prerequisite = { focus = PRC_paint_red}
-	x = 0
+		prerequisite = { focus = PRC_tibet}
+	x = 2
 	y = 1
 	relative_position_id = PRC_paint_red
 
@@ -539,7 +867,7 @@ focus = {
 	id = PRC_demand_vietnam
 	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = PRC_expand_chi }
-	x = -2
+	x = 0
 	y = 1
 	relative_position_id = PRC_expand_chi
 
@@ -630,8 +958,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	ENG = { country_event = { id = tlbchina.7 hours = 1} }
-		POR = { country_event = { id = tlbchina.6 hours = 1} }
+	ENG = { country_event = { id = tlbprc.7 hours = 1} }
+		POR = { country_event = { id = tlbprc.6 hours = 1} }
 }
 }
 ######################################
@@ -643,7 +971,7 @@ focus = {
 focus = {
 	id = PRC_mainland_development
 	icon = GFX_goal_generic_construction
-	x = 14
+	x = 16
 	y = 0
 	cost = 10
 
@@ -1001,7 +1329,7 @@ focus = {
 	id = PRC_air_base_expansion
 	icon = GFX_goal_generic_air_production
 
-	x = 27
+	x = 29
 	y = 0
 	cost = 10
 
@@ -1275,7 +1603,7 @@ focus = {
 	id = PRC_develop_chinese_ship_building
 	icon = GFX_goal_generic_construct_naval_dockyard
 
-	x = 21
+	x = 23
 	y = 0
 	cost = 10
 
@@ -1284,6 +1612,15 @@ focus = {
 	}
 
 	available_if_capitulated = yes
+
+available = {
+any_state = {
+    is_controlled_by = PRC
+    is_coastal = yes
+}
+
+}
+
 
 	complete_tooltip = {
 		random_state = {
@@ -1550,7 +1887,7 @@ focus = {
 focus = {
 	id = PRC_reorganize_military
 	icon = GFX_focus_chi_army_reform
-	x = 17
+	x = 19
 	y = 0
 
 	cost = 10
@@ -1760,13 +2097,15 @@ add_offsite_building = { type = industrial_complex level = 1 }
 	}
 }
 
+#################################
+
 focus = {
-	id = PRC_industrial_boom
-	icon = GFX_Generic_Factory_Planning
+	id = PRC_foreign_affairs
+	icon =
 	prerequisite = { focus = PRC_expand_industry}
-	x = 0
-	y = 1
-	relative_position_id =   PRC_expand_industry
+	x = 10
+	y = 0
+
 
 	cost = 10
 
@@ -1786,6 +2125,387 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-remove_ideas = PRC_economic_debuff
 	}
+}
+###########
+focus = {
+	id = PRC_soviet_friend
+	icon = GFX_
+	prerequisite = { focus = PRC_foreign_affairs }
+	mutually_exclusive = {focus = PRC_soviet_enemy}
+	x = 3
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = PRC_soviet_enemy
+	icon = GFX_
+	prerequisite = { focus = PRC_foreign_affairs }
+mutually_exclusive = {focus = PRC_soviet_friend}
+	x = 1
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = PRC_continue_mao
+	icon = GFX_
+	prerequisite = { focus = PRC_soviet_enemy }
+	x = 0
+	y = 1
+	relative_position_id = PRC_soviet_enemy
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = PRC_strike_soviet
+	icon = GFX_
+	prerequisite = { focus = PRC_continue_mao }
+	x = 0
+	y = 1
+	relative_position_id = PRC_continue_mao
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+focus = {
+	id = PRC_join_comintern
+	icon = GFX_
+	prerequisite = { focus = PRC_soviet_friend }
+	x = 0
+	y = 1
+	relative_position_id = PRC_soviet_friend
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = PRC_five_year_plan
+	icon = GFX_
+	prerequisite = { focus = PRC_join_comintern }
+	x = 1
+	y = 1
+	relative_position_id = PRC_join_comintern
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+focus = {
+	id = PRC_central_farming
+	icon = GFX_
+	prerequisite = { focus = PRC_five_year_plan }
+	x = 0
+	y = 1
+	relative_position_id = PRC_five_year_plan
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+focus = {
+	id = PRC_industry_superpower
+	icon = GFX_
+	prerequisite = { focus = PRC_central_farming }
+		prerequisite = { focus = PRC_expand_industry }
+	x = 1
+	y = 1
+	relative_position_id = PRC_central_farming
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = PRC_northern_steppe
+	icon = GFX_
+	prerequisite = { focus = PRC_strike_soviet focus= PRC_join_comintern }
+	x = 1
+	y = 1
+	relative_position_id = PRC_strike_soviet
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	}
+}
+
+############
+focus = {
+	id = PRC_japan_friend
+	icon = GFX_focus_chi_collaboration_with_the_japanese
+	prerequisite = { focus = PRC_foreign_affairs }
+mutually_exclusive = {focus = PRC_japan_enemy}
+	x = -1
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
+	}
+}
+
+focus = {
+	id = PRC_japan_enemy
+	icon = GFX_focus_AST_war_japan
+	prerequisite = { focus = PRC_foreign_affairs}
+	mutually_exclusive = {focus = PRC_japan_friend}
+	x = -3
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PRC_marines
+	icon = GFX_
+	prerequisite = { focus = PRC_japan_enemy}
+	x = 0
+	y = 1
+	relative_position_id = PRC_japan_enemy
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PRC_red_japan
+	icon = GFX_focus_attack_soviet
+	prerequisite = { focus = PRC_japan_friend }
+	x = 0
+	y = 1
+	relative_position_id = PRC_japan_friend
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+}
 }
