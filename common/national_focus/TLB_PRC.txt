@@ -96,7 +96,6 @@ focus = {
 	}
 
 	available = {
-has_war = yes
 	}
 
 	bypass = {
@@ -174,7 +173,6 @@ has_war = yes
 	available_if_capitulated = no
 
 	completion_reward = {
-custom_effect_tooltip = PRC_beijing_tt
 
 	}
 }
@@ -194,7 +192,6 @@ focus = {
 	}
 
 	available = {
-has_war = yes
 	}
 
 	bypass = {
@@ -271,70 +268,71 @@ has_war = no
 	available_if_capitulated = no
 
 	completion_reward = {
+	add_stability = 0.2
+	add_political_power = 100
+	}
+}
+
+focus = {
+	id = PRC_rebuild_china_war
+	icon = GFX_Generic_Construction
+	prerequisite = { focus = PRC_post_war_rehabilitation }
+	x = 0
+	y = 1
+	relative_position_id = PRC_post_war_rehabilitation
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PRC_rebuild_china_war
+	icon = GFX_Generic_Construction
+	prerequisite = { focus = PRC_post_war_rehabilitation }
+	x = 0
+	y = 1
+	relative_position_id = PRC_post_war_rehabilitation
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
 	add_timed_idea = {
-	    idea = PRC_rebuild_china
-	    days = 180
+			idea = PRC_rebuild_china
+			days = 180
 	}
-	}
-}
-
-focus = {
-	id = PRC_rebuild_china_war
-	icon = GFX_Generic_Construction
-	prerequisite = { focus = PRC_post_war_rehabilitation }
-	x = 0
-	y = 1
-	relative_position_id = PRC_post_war_rehabilitation
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-
-	}
-}
-
-focus = {
-	id = PRC_rebuild_china_war
-	icon = GFX_Generic_Construction
-	prerequisite = { focus = PRC_post_war_rehabilitation }
-	x = 0
-	y = 1
-	relative_position_id = PRC_post_war_rehabilitation
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-
 	}
 }
 
@@ -365,7 +363,7 @@ has_war = no
 	available_if_capitulated = no
 
 	completion_reward = {
-add_political_power = 400
+add_political_power = 200
 	}
 }
 
@@ -489,7 +487,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+	create_wargoal = {
+	    type = annex_everything
+	    target = JAP
+	}
 
 }
 }
@@ -527,10 +528,10 @@ focus = {
 
 focus = {
 	id = PRC_tibet
-	icon = GFX_
-	prerequisite = { focus = PRC_korean_flames focus = PRC_northern_steppe }
+	icon = GFX_Focus_Chinese_Communist
+	prerequisite = { focus = PRC_korean_flames focus = PRC_northern_steppe focus = PRC_expand_chi }
 	x = 0
-	y = 2
+	y = 3
 	relative_position_id = PRC_korean_flames
 
 	cost = 10
@@ -617,39 +618,6 @@ focus = {
 
 }
 }
-
-
-focus = {
-	id = PRC_deep_battles
-	icon = GFX_
-	prerequisite = { focus = PRC_offense }
-	x = 0
-	y = 1
-	relative_position_id = PRC_offense
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-
-
-}
-}
-
 
 focus = {
 	id = PRC_phili
@@ -778,7 +746,7 @@ focus = {
 
 focus = {
 	id = PRC_communism_focus
-	icon = GFX_Generic_Ultranationalist_Government
+	icon = GFX_Generic_Communist_Propaganda02
 	prerequisite = { focus = PRC_post_war_politics}
 	mutually_exclusive = { focus = PRC_democracy_focus }
 	x = 0
@@ -810,7 +778,7 @@ PRC = { dismantle_faction = yes }
 
 focus = {
 	id = PRC_paint_red
-	icon = GFX_Generic_Chinese_Soldiers
+	icon = GFX_goal_support_communism
 	prerequisite = { focus = PRC_communism_focus}
 	x = 0
 	y = 1
@@ -834,20 +802,50 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-create_faction = "Unified Republic of China"
-add_war_support = 0.4
-add_stability = -0.02
+create_faction = "People's Front"
 	}
 }
 
 focus = {
+	id = PRC_strike_manchu
+	icon = GFX_goal_manchu_flames
+		prerequisite = { focus = PRC_expand_chi}
+	x = 0
+	y = 1
+	relative_position_id = PRC_expand_chi
+
+	cost = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+completion_reward = {
+create_wargoal = {
+		type = annex_everything
+		target = MAN
+}
+}
+
+
+}
+
+
+
+
+focus = {
 	id = PRC_expand_chi
 	icon = GFX_goal_generic_more_territorial_claims
-	prerequisite = { focus = PRC_paint_red}
-		prerequisite = { focus = PRC_tibet}
-	x = 2
+	prerequisite = { focus = PRC_mao_cult}
+	x = 0
 	y = 1
-	relative_position_id = PRC_paint_red
+	relative_position_id = PRC_mao_cult
 
 	cost = 15
 
@@ -867,7 +865,7 @@ focus = {
 	id = PRC_demand_vietnam
 	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = PRC_expand_chi }
-	x = 0
+	x = -2
 	y = 1
 	relative_position_id = PRC_expand_chi
 
@@ -1010,7 +1008,7 @@ focus = {
 		random_state = {
 			limit = { has_state_flag = PRC_expansion_of_coastal_towns_1 }
 			add_building_construction = {
-				type = industrial_complex
+				type = arms_factory
 				level = 1
 				instant_build = yes
 			}
@@ -1023,7 +1021,7 @@ focus = {
 			prioritize = { 10 }
 			limit = {
 				free_building_slots = {
-					building = industrial_complex
+					building = arms_factory
 					size > 0
 					include_locked = yes
 				}
@@ -1878,6 +1876,21 @@ focus = {
 			category = naval_doctrine
 		}
 		#1x50% bonus to Naval Doctrine research
+		random_owned_controlled_state = {
+			prioritize = { 85 }
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+			}
 	}
 }
 ###################################
@@ -1908,7 +1921,12 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-remove_ideas = PRC_broken_army
+add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
 	}
 }
 
@@ -2050,12 +2068,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	add_tech_bonus = {
-					name = land_doc_bonus
-					bonus = 1.0
-					uses = 3
-					category = land_doctrine
-				}
+remove_ideas = PRC_broken_army
 	}
 }
 
@@ -2090,10 +2103,87 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_offsite_building = { type = arms_factory level = 1 }
-add_offsite_building = { type = arms_factory level = 1 }
-add_offsite_building = { type = industrial_complex level = 1 }
-add_offsite_building = { type = industrial_complex level = 1 }
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+
 	}
 }
 
@@ -2101,7 +2191,7 @@ add_offsite_building = { type = industrial_complex level = 1 }
 
 focus = {
 	id = PRC_foreign_affairs
-	icon =
+	icon = GFX_goal_generic_propaganda
 	prerequisite = { focus = PRC_expand_industry}
 	x = 10
 	y = 0
@@ -2243,6 +2333,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+	    type = annex_everything
+	    target = SOV
+	}
 	}
 }
 focus = {
@@ -2332,14 +2426,14 @@ focus = {
 }
 focus = {
 	id = PRC_industry_superpower
-	icon = GFX_
+	icon = GFX_focus_generic_industry_3
 	prerequisite = { focus = PRC_central_farming }
 		prerequisite = { focus = PRC_expand_industry }
 	x = 1
 	y = 1
 	relative_position_id = PRC_central_farming
 
-	cost = 10
+	cost = 15
 
 	ai_will_do = {
 		factor = 1
@@ -2357,6 +2451,168 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+
 	}
 }
 
@@ -2482,7 +2738,7 @@ focus = {
 
 focus = {
 	id = PRC_red_japan
-	icon = GFX_focus_attack_soviet
+	icon = GFX_
 	prerequisite = { focus = PRC_japan_friend }
 	x = 0
 	y = 1

@@ -251,7 +251,8 @@ war_measures = {
 
      defend_beijing = {
           allowed = { tag = CHI }
-          available = {
+fire_only_once = yes
+				  available = {
               PRC = {controls_state = 608}
           }
           activation = {

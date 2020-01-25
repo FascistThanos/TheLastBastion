@@ -2,6 +2,24 @@ ideas = {
 	country = {
 ##########################
 
+PRC_spread_rev = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		justify_war_goal_time = -0.25
+	}
+}
+
+
 	PRC_anti_manchu = {
 
 		allowed = {

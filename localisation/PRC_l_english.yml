@@ -113,7 +113,7 @@
  PRC_send_agents_tt:0 "§YWe will send our agents to investigate..."
   PRC_close_border:0 "Close the Border"
   PRC_close_border_desc:0 ""
-  PRC_strike_manchu:0 "Blame Manchu"
+  PRC_strike_manchu:0 "Strike the North"
   PRC_strike_manchu_desc:0 ""
   PRC_open_border:0 "Open the Border"
   PRC_open_border_desc:0 ""
@@ -189,10 +189,21 @@
   PRC_expand_industry_desc:0 ""
   PRC_industrial_boom:0 "Industrial Boom"
   PRC_industrial_boom_desc:0 ""
+  PRC_rebuild_china_war:0 "Rebuild War-Torn China"
+  PRC_rebuild_china_war_desc:0 ""
+  PRC_spread_revolution:0 "Spread the Revolution"
+  PRC_spread_revolution_desc:0 ""
 
 
   #Events
-
+tlbprc.6.t:0 "China demands Macu"
+tlbprc.6.d:0 ""
+tlbprc.6.a:0 "Not today..."
+tlbprc.6.b:0 "We must maintain peace..."
+tlbprc.7.t:0 "China demands Hong Kong"
+tlbprc.7.d:0 ""
+tlbprc.7.a:0 "They will have to take it from us..."
+tlbprc.7.b:0 "Give them Hong Kong..."
 
   #IDEAS
  PRC_anti_manchu:0 "Manchu Suspicion"
@@ -205,3 +216,5 @@
  PRC_closed_border_idea:0 "Closed Borders"
  PRC_democratic:0 "Democratic Influence"
  PRC_anti_communism:0 "Anti-Communism"
+ PRC_spread_rev:0 "Spread the Revolution"
+ PRC_spread_rev_desc:0 ""

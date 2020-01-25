@@ -402,7 +402,7 @@ has_war = no
 	available_if_capitulated = no
 
 	completion_reward = {
-add_political_power = 400
+add_political_power = 200
 	}
 }
 
@@ -1164,7 +1164,6 @@ focus = {
 				level = 1
 				instant_build = yes
 			}
-			set_state_flag = CHI_expansion_of_coastal_towns_1
 		}
 	}
 }
@@ -1769,7 +1768,6 @@ focus = {
 				level = 3
 				instant_build = yes
 			}
-			set_state_flag = CHI_develop_chinese_ship_building_1
 		}
 		#Add 3 Dockyards at Gdansk
 	}
@@ -1999,6 +1997,22 @@ focus = {
 			category = naval_doctrine
 		}
 		#1x50% bonus to Naval Doctrine research
+		random_owned_controlled_state = {
+			prioritize = { 85 }
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+}
+
 	}
 }
 ###################################
@@ -2149,7 +2163,12 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-remove_ideas = CHI_broken_army
+add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
 	}
 }
 
@@ -2291,12 +2310,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	add_tech_bonus = {
-					name = land_doc_bonus
-					bonus = 1.0
-					uses = 3
-					category = land_doctrine
-				}
+remove_ideas = PRC_broken_army
 	}
 }
 
@@ -2363,10 +2377,87 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_offsite_building = { type = arms_factory level = 1 }
-add_offsite_building = { type = arms_factory level = 1 }
-add_offsite_building = { type = industrial_complex level = 1 }
-add_offsite_building = { type = industrial_complex level = 1 }
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+
 	}
 }
 
