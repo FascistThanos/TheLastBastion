@@ -193,6 +193,10 @@
   PRC_rebuild_china_war_desc:0 ""
   PRC_spread_revolution:0 "Spread the Revolution"
   PRC_spread_revolution_desc:0 ""
+  PRC_communism_focus:0 "Communism Focus"
+  PRC_communism_focus_desc:0 ""
+  PRC_paint_red:0 "Paint It Red"
+  PRC_paint_red_desc:0 ""
 
 
   #Events
