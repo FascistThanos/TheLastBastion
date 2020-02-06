@@ -145,7 +145,7 @@ CHI =  { create_wargoal = {
     ai_chance = {
       base = 50
       }
-CHI = {transfer_state = 729 }
+CHI = {transfer_state = 929 }
 
 }
 }
@@ -176,5 +176,55 @@ CHI =  { create_wargoal = {
       }
 CHI = {transfer_state = 326 }
 
+}
+}
+
+#Ben Partition
+country_event = {
+  id = tlbprc.8
+  title = tlbprc.8.t
+  desc = tlbprc.8.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.8.a
+    ai_chance = {
+      base = 50
+    }
+add_stability = 0.2
+white_peace = PRC
+}
+  option = {
+    name = tlbprc.8.b
+    ai_chance = {
+      base = 50
+      }
+add_war_support = 0.1
+}
+}
+
+#US Peace Deal
+country_event = {
+  id = tlbprc.9
+  title = tlbprc.9.t
+  desc = tlbprc.9.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.9.a
+    ai_chance = {
+      base = 50
+    }
+    add_stability = 0.2
+    white_peace = PRC
+}
+  option = {
+    name = tlbprc.9.b
+    ai_chance = {
+      base = 50
+      }
+add_war_support = 0.1
 }
 }

@@ -148,7 +148,7 @@ has_war = no
 
 focus = {
 	id = PRC_offense
-	icon = GFX_
+	icon = GFX_Generic_Urban_Warfare
 	prerequisite = { focus = PRC_northern_war }
 	x = 2
 	y = 1
@@ -173,7 +173,7 @@ has_war = yes
 	available_if_capitulated = no
 
 	completion_reward = {
-
+add_ideas = PRC_offensive_idea
 	}
 }
 
@@ -369,7 +369,7 @@ add_political_power = 200
 
 focus = {
 	id = PRC_internal_control
-	icon = GFX_
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = PRC_spread_revolution }
 	x = 2
 	y = 1
@@ -393,14 +393,14 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
-
+add_command_power = 100
+add_stability = -0.05
 }
 }
 
 focus = {
 	id = PRC_mao_cult
-	icon = GFX_
+	icon = GFX_Generic_Maoism
 	prerequisite = { focus = PRC_internal_control }
 	x = 0
 	y = 1
@@ -424,7 +424,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+add_ideas = PRC_maoism_idea
 
 }
 }
@@ -432,7 +432,7 @@ focus = {
 
 focus = {
 	id = PRC_deep_battles
-	icon = GFX_
+	icon = GFX_Generic_Mountain_Warfare
 	prerequisite = { focus = PRC_offense }
 	x = 0
 	y = 1
@@ -456,14 +456,13 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
-
+add_war_support = 0.05
 }
 }
 
 focus = {
 	id = PRC_strike_island
-	icon = GFX_
+	icon = GFX_Generic_Invasion
 	prerequisite = {focus = PRC_marines}
 	x = 2
 	y = 1
@@ -497,7 +496,7 @@ focus = {
 
 focus = {
 	id = PRC_korean_flames
-	icon = GFX_
+	icon = GFX_Focus_Down_in_Flames
 	prerequisite = { focus = PRC_deep_battles focus = PRC_strike_island }
 	x = -1
 	y = 1
@@ -521,6 +520,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	create_wargoal = {
+			type = annex_everything
+			target = KOR
+	}
 
 
 }
@@ -552,14 +555,16 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
-
+	create_wargoal = {
+			type = annex_everything
+			target = TIB
+	}
 }
 }
 
 focus = {
 	id = PRC_southern_thrust
-	icon = GFX_
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = PRC_red_japan }
 	x = 0
 	y = 3
@@ -583,14 +588,16 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
-
+	create_wargoal = {
+			type = annex_everything
+			target = MAL
+	}
 }
 }
 
 focus = {
 	id = PRC_dutch_east
-	icon = GFX_
+	icon = GFX_focus_jap_strike_south
 	prerequisite = { focus = PRC_southern_thrust }
 	x = -1
 	y = 1
@@ -614,14 +621,16 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
-
+	create_wargoal = {
+			type = annex_everything
+			target = INS
+	}
 }
 }
 
 focus = {
 	id = PRC_phili
-	icon = GFX_
+	icon = GFX_goal_generic_amphibious_assault
 	prerequisite = { focus = PRC_southern_thrust }
 	x = 1
 	y = 1
@@ -645,14 +654,16 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
-
+	create_wargoal = {
+			type = annex_everything
+			target = PHI
+	}
 }
 }
 
 focus = {
 	id = PRC_us_peace_deal
-	icon = GFX_
+	icon = GFX_goal_generic_dangerous_deal
 	prerequisite = { focus = PRC_phili }
 	x = 0
 	y = 1
@@ -665,10 +676,11 @@ focus = {
 	}
 
 	available = {
+ = { is_puppet_of = UOB }
 	}
 
 	bypass = {
-
+PHI = { exists = no }
 	}
 
 	cancel_if_invalid = yes
@@ -677,13 +689,13 @@ focus = {
 
 	completion_reward = {
 
-
+	USA = { country_event = { id = tlbprc.9 hours = 1} }
 }
 }
 
 focus = {
 	id = PRC_benelux_partition
-	icon = GFX_
+	icon = GFX_focus_generic_provoke_border_clashes
 	prerequisite = { focus = PRC_dutch_east }
 	x = 0
 	y = 1
@@ -696,10 +708,11 @@ focus = {
 	}
 
 	available = {
+INS = { is_puppet_of = UOB }
 	}
 
 	bypass = {
-
+INS = { exists = no }
 	}
 
 	cancel_if_invalid = yes
@@ -707,16 +720,14 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
-
+	UOB = { country_event = { id = tlbprc.8 hours = 1} }
 }
 }
 
 focus = {
 	id = PRC_new_resources
-	icon = GFX_
-	prerequisite = { focus = PRC_benelux_partition }
-	prerequisite = {focus = PRC_us_peace_deal}
+	icon = GFX_goal_generic_oil_refinery
+	prerequisite = { focus = PRC_benelux_partition focus = PRC_us_peace_deal}
 	x = 1
 	y = 1
 	relative_position_id = PRC_benelux_partition
@@ -728,6 +739,7 @@ focus = {
 	}
 
 	available = {
+
 	}
 
 	bypass = {
@@ -739,8 +751,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-#timed idea
-
+	add_timed_idea = {
+				idea = PRC_new_resources_idea
+				days = 100
+		}
 }
 }
 
@@ -771,7 +785,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-add_ideas = Nationalism
+add_ideas = PRC_communism_idea
 PRC = { dismantle_faction = yes }
 	}
 }
@@ -2197,7 +2211,6 @@ focus = {
 focus = {
 	id = PRC_foreign_affairs
 	icon = GFX_goal_generic_propaganda
-	prerequisite = { focus = PRC_expand_industry}
 	x = 10
 	y = 0
 
@@ -2225,7 +2238,7 @@ focus = {
 ###########
 focus = {
 	id = PRC_soviet_friend
-	icon = GFX_
+	icon = GFX_goal_soviet_flag
 	prerequisite = { focus = PRC_foreign_affairs }
 	mutually_exclusive = {focus = PRC_soviet_enemy}
 	x = 3
@@ -2255,7 +2268,7 @@ focus = {
 
 focus = {
 	id = PRC_soviet_enemy
-	icon = GFX_
+	icon = GFX_focus_attack_soviet
 	prerequisite = { focus = PRC_foreign_affairs }
 mutually_exclusive = {focus = PRC_soviet_friend}
 	x = 1
@@ -2285,7 +2298,7 @@ mutually_exclusive = {focus = PRC_soviet_friend}
 
 focus = {
 	id = PRC_continue_mao
-	icon = GFX_
+	icon = GFX_focus_prc_maoism
 	prerequisite = { focus = PRC_soviet_enemy }
 	x = 0
 	y = 1
@@ -2346,7 +2359,7 @@ focus = {
 }
 focus = {
 	id = PRC_join_comintern
-	icon = GFX_
+	icon = GFX_focus_generic_join_comintern
 	prerequisite = { focus = PRC_soviet_friend }
 	x = 0
 	y = 1
@@ -2708,13 +2721,13 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+JAP = {add_opinion_modifier = { target = PRC modifier = medium_decrease }}
 	}
 }
 
 focus = {
 	id = PRC_marines
-	icon = GFX_
+	icon = GFX_goal_generic_special_forces
 	prerequisite = { focus = PRC_japan_enemy}
 	x = 0
 	y = 1
@@ -2737,13 +2750,19 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+	add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 2.0
+					uses = 1
+					technology = marines
+					technology = marines2
+				}
 	}
 }
 
 focus = {
 	id = PRC_red_japan
-	icon = GFX_
+	icon = GFX_Generic_Secret_Meeting
 	prerequisite = { focus = PRC_japan_friend }
 	x = 0
 	y = 1
@@ -2767,6 +2786,9 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+JAP = {	add_timed_idea = {
+			idea = PRC_japan_idea
+			days = 100
+	}}
 }
 }

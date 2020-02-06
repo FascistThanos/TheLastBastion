@@ -1,6 +1,96 @@
 ideas = {
 	country = {
 ##########################
+PRC_new_resources_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		production_speed_buildings_factor = 0.2
+	}
+}
+
+PRC_japan_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+			communism_drift = 0.1
+	}
+}
+
+
+PRC_offensive_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+	offence = 0.1
+		army_speed_factor = 0.05
+	}
+}
+
+
+PRC_maoism_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+	communism_drift = 0.20
+	production_speed_buildings_factor = 0.1
+		stability_factor = 0.01
+	}
+}
+
+PRC_communism_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+	communism_drift = 0.20
+	}
+}
+
 
 PRC_spread_rev = {
 
