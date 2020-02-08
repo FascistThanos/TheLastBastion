@@ -9,6 +9,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_pricinipaliaitalia
+		icon = GFX_pricinipaliaitalia
+		x = 38
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
 		id = ITA_lightarmor
 		icon = GFX_goal_poland_goal
 		x = 12
@@ -55,7 +71,7 @@ focus_tree = {
 	focus = {
 		id = ITA_thevenicedebates
 		icon = GFX_thevenicedebates
-		x = 37
+		x = -1
 		y = 1
 		cost = 1.5
 		available_if_capitulated = yes
@@ -64,24 +80,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		relative_position_id = ITA_pricinipaliaitalia
+
 		completion_reward = {
 			country_event = TLB_Italy.1
-		}
-	}
-
-	focus = {
-		id = ITA_pricinipaliaitalia
-		icon = GFX_pricinipaliaitalia
-		x = 38
-		y = 0
-		cost = 8
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			add_political_power = 100
 		}
 	}
 
@@ -105,13 +107,19 @@ focus_tree = {
 	focus = {
 		id = ITA_thesicilydebates
 		icon = GFX_thesicilydebates
-		x = 39
+		x = 1
 		y = 1
 		cost = 1.5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_pricinipaliaitalia }
 		ai_will_do = {
 			factor = 1
+		}
+
+		relative_position_id = ITA_pricinipaliaitalia
+
+		completion_reward = {
+			country_event = TLB_Italy.2
 		}
 	}
 
@@ -229,6 +237,10 @@ focus_tree = {
       FRA = {
         has_war_with = FPR
       }
+
+			NOT = {
+				has_government = communism
+			}
     }
 
 		bypass = {
@@ -467,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = ITA_theromedebate
 		icon = GFX_theromedebate
-		x = 38
+		x = 0
 		y = 2
 		cost = 2
 		available_if_capitulated = yes
@@ -480,12 +492,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_pricinipaliaitalia
+
+		completion_reward = {
+			country_event = TLB_Italy.3
+		}
 	}
 
 	focus = {
 		id = ITA_theelectionof1936
 		icon = GFX_theelectionof1936
-		x = 38
+		x = 0
 		y = 3
 		cost = 4
 		available_if_capitulated = yes
@@ -493,6 +511,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			country_event = TLB_Italy.4
+		}
+
+		relative_position_id = ITA_pricinipaliaitalia
 	}
 
 	focus = {
@@ -841,7 +865,6 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = infantry_weapons
-				category = infantry_equipment
 				uses = 2
 				bonus = 0.5
 			}
@@ -948,8 +971,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				uses = 2
-				bonus = 0.5
+				uses = 1
+				bonus = 1.0
 				category = cat_superior_firepower
 			}
 		}
@@ -1212,9 +1235,16 @@ focus_tree = {
 
 		available = {
 			ITA = {
-			has_opinion = {
-				target = ENG
-				value > 69
+				has_opinion = {
+					target = ENG
+					value > 49
+				}
+			}
+
+			ENG = {
+				has_opinion = {
+					target = ITA
+					value > 49
 				}
 			}
 		}
@@ -1267,9 +1297,16 @@ focus_tree = {
 
 		available = {
 			ITA = {
-			has_opinion = {
-				target = USA
-				value > 69
+				has_opinion = {
+					target = USA
+					value > 49
+				}
+			}
+
+			USA = {
+				has_opinion = {
+					target = ITA
+					value > 49
 				}
 			}
 		}
@@ -1454,9 +1491,16 @@ focus_tree = {
 
 		available = {
 			ITA = {
-			has_opinion = {
-				target = SOV
-				value > 69
+				has_opinion = {
+					target = SOV
+					value > 49
+				}
+			}
+
+			SOV = {
+				has_opinion = {
+					target = ITA
+					value > 49
 				}
 			}
 		}
@@ -1485,9 +1529,16 @@ focus_tree = {
 
 		available = {
 			ITA = {
-			has_opinion = {
-				target = JAP
-				value > 69
+				has_opinion = {
+					target = JAP
+					value > 49
+				}
+			}
+
+			JAP = {
+				has_opinion = {
+					target = ITA
+					value > 49
 				}
 			}
 		}
@@ -1596,21 +1647,38 @@ focus_tree = {
 	focus = {
 		id = ITA_parrisgovernment
 		icon = GFX_parrisgovernment
-		x = 37
-		y = 6
+		x = 0
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = ITA_thepnfcoup }
+		mutually_exclusive = { focus = ITA_thepeoplesparty }
     prerequisite = { focus = ITA_thefundingbill }
 		ai_will_do = {
 			factor = 1
+		}
+
+		relative_position_id = ITA_thefundingbill
+
+		available = {
+			has_government = socialism
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.10
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ITA_theacerbolaw
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 38
+		x = 0
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -1618,12 +1686,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			country_event = TLB_Italy.5
+		}
+
+		relative_position_id = ITA_pricinipaliaitalia
 	}
 
 	focus = {
 		id = ITA_thefundingbill
 		icon = GFX_goal_generic_national_unity
-		x = 38
+		x = 0
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -1631,13 +1705,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_pricinipaliaitalia
+
+		completion_reward = {
+			country_event = TLB_Italy.6
+		}
 	}
 
 	focus = {
 		id = ITA_thepeoplesparty
 		icon = GFX_goal_generic_war_with_comintern
-		x = 29
-		y = 6
+		x = -9
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_thefundingbill }
@@ -1646,13 +1726,29 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			has_government = communism
+		}
+
+		relative_position_id = ITA_thefundingbill
+
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+			}
+		}
 	}
 
 	focus = {
 		id = ITA_thepnfcoup
 		icon = GFX_thepnfcoup
-		x = 45
-		y = 6
+		x = 7
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_thefundingbill }
@@ -1665,6 +1761,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thefundingbill
 	}
 
 	focus = {
@@ -1926,100 +2024,221 @@ focus_tree = {
 	focus = {
 		id = ITA_thenewsocialrepublic
 		icon = GFX_goal_support_communism
-		x = 27
-		y = 9
+		x = -2
+		y = 3
 		cost = 12
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_thekingdecision }
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			set_cosmetic_tag = ITA_social_republic
+			add_ideas = ITA_social_republic_idea
+		}
 	}
 
 	focus = {
 		id = ITA_thesocialcreditprogramme
 		icon = GFX_goal_generic_demand_territory
-		x = 31
-		y = 9
+		x = 2
+		y = 3
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_theworkersrightscommitte }
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			add_ideas = ITA_socialcredit
+		}
 	}
 
 	focus = {
 		id = ITA_jointhesovietunion
 		icon = GFX_goal_support_fourth_int
-		x = 28
-		y = 10
+		x = -1
+		y = 4
 		cost = 12
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_communistdiplomacy }
     mutually_exclusive = { focus = ITA_anitalianunion }
+
+		available = {
+			SOV = {
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+		}
+
 		ai_will_do = {
 			factor = 1
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			SOV = {
+				add_to_faction = ITA
+			}
 		}
 	}
 
 	focus = {
-		id = ITA_supportthefrenchpeoplesrepublic
+		id = ITA_supportthepeoplesrepublic
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 27
-		y = 11
+		x = -2
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_jointhesovietunion }
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			country_exists = FPR
+		}
+
+		bypass = {
+			NOT = {
+				country_exists = FPR
+			}
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				producer = ITA
+			}
+
+			FPR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1500
+					producer = ITA
+				}
+			}
+		}
 	}
 
 	focus = {
 		id = ITA_analliancewithbavariaandbadewurtemburg
 		icon = GFX_goal_poland_goal
-		x = 31
-		y = 11
+		x = 2
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_anitalianunion }
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			BAW = {
+				OR = {
+					has_government = communism
+					has_government = trotskyism
+				}
+			}
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			ITA = {
+				add_to_faction = BAW
+			}
+		}
 	}
 
 	focus = {
 		id = ITA_spreadtherevolutiontoiberia
 		icon = GFX_spreadtherevolutiontoiberia
-		x = 25
-		y = 12
+		x = -4
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportthefrenchpeoplesrepublic }
+		prerequisite = { focus = ITA_supportthepeoplesrepublic }
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			SPR = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = trotskyism
+					}
+				}
+			}
+		}
+
+		bypass = {
+			SPR = {
+				OR = {
+					has_government = communism
+					has_government = trotskyism
+				}
+			}
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			SPR = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.40
+				}
+				start_civil_war = {
+					ruling_party = communism
+					ideology = ROOT
+					size = 0.7
+					only_own_territory = no
+					capital = 166
+					states = {
+						165 166 167 168 169 173 290 871 889 895 896 897 898
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ITA_thekingdecision
 		icon = GFX_thekingdecision
-		x = 27
-		y = 8
+		x = -2
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_theredguard }
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			country_event = TLB_Italy.7
+		}
 	}
 
 	focus = {
 		id = ITA_communistdiplomacy
 		icon = GFX_goal_tripartite_pact
-		x = 29
-		y = 8
+		x = 0
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = {
@@ -2031,70 +2250,157 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						has_government = communism
+						has_government = trotskyism
+					}
+				}
+
+				add_opinion_modifier = { target = ITA modifier = ITA_communist_diplomacy }
+			}
+		}
 	}
 
 	focus = {
 		id = ITA_thepsicouncil
 		icon = GFX_thepsicouncil
-		x = 31
-		y = 7
+		x = 2
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_thepeoplesparty }
 		ai_will_do = {
 			factor = 1
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			add_ideas = ITA_psi_council
 		}
 	}
 
 	focus = {
 		id = ITA_theredguard
 		icon = GFX_theredguard
-		x = 27
-		y = 7
+		x = -2
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_thepeoplesparty }
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			army_experience = 10
+			hidden_effect = {
+				division_template = {
+    			name = "Red Guard"
+    			regiments = {
+        		infantry = { x = 0 y = 0 }
+        		infantry = { x = 0 y = 1 }
+        		infantry = { x = 1 y = 0 }
+        		infantry = { x = 1 y = 1 }
+    			}
+				}
+			}
+		}
 	}
 
 	focus = {
 		id = ITA_invitethecroatianpeoplesrepublic
 		icon = GFX_goal_generic_war_with_comintern
-		x = 31
-		y = 12
+		x = 2
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_analliancewithbavariaandbadewurtemburg }
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			CRO = {
+				OR = {
+					has_government = communism
+					has_government = trotskyism
+				}
+			}
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			ITA = {
+				add_to_faction = CRO
+			}
 		}
 	}
 
 	focus = {
 		id = ITA_austriansocialconversion
 		icon = GFX_goal_poland_goal
-		x = 33
-		y = 12
+		x = 4
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_analliancewithbavariaandbadewurtemburg }
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		available = {
+			AUS = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = trotskyism
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			AUS = {
+				add_timed_idea = { idea = ITA_social_conversion days = 365 }
+			}
+		}
+
 	}
 
 	focus = {
 		id = ITA_acominterneconomicsystem
 		icon = GFX_acominterneconomicsystem
-		x = 27
-		y = 12
+		x = -2
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportthefrenchpeoplesrepublic }
+		prerequisite = { focus = ITA_supportthepeoplesrepublic }
 		ai_will_do = {
 			factor = 1
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = SOV
+				}
+
+				add_to_tech_sharing_group = comintern_research
+			}
 		}
 	}
 
@@ -2114,21 +2420,27 @@ focus_tree = {
 	focus = {
 		id = ITA_theworkersrightscommitte
 		icon = GFX_goal_generic_national_unity
-		x = 31
-		y = 8
+		x = 2
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_thepsicouncil }
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			add_ideas = ITA_workersrights
+		}
 	}
 
 	focus = {
 		id = ITA_anitalianunion
 		icon = GFX_goal_generic_war_with_comintern
-		x = 30
-		y = 10
+		x = 1
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_communistdiplomacy }
@@ -2137,6 +2449,19 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+
+		relative_position_id = ITA_thepeoplesparty
+
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+
+			ITA = {
+				create_faction = ITA_communist
+				add_to_faction = ITA
+			}
 		}
 	}
 
@@ -2280,13 +2605,19 @@ focus_tree = {
 	focus = {
 		id = ITA_therepubliclives
 		icon = GFX_goal_generic_defence
-		x = 37
-		y = 7
+		x = 0
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_parrisgovernment }
 		ai_will_do = {
 			factor = 1
+		}
+
+		relative_position_id = ITA_parrisgovernment
+
+		completion_reward = {
+			add_ideas = ITA_republic_lives
 		}
 	}
 

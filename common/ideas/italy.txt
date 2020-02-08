@@ -322,7 +322,135 @@ ideas = {
 				experience_gain_air_factor = 0.15
 			}
 		}
+
+		ITA_land_funding = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		ITA_psi_council = {
+			allowed = {
+				original_tag = ITA
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+			}
+		}
+
+		ITA_workersrights = {
+			allowed = {
+				original_tag = ITA
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.02
+				conscription_factor = 0.02
+				local_resources_factor = 0.05
+			}
+		}
+
+		ITA_socialcredit = {
+			allowed = {
+				original_tag = ITA
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		ITA_social_republic_idea = {
+			allowed = {
+				original_tag = ITA
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.15
+				surrender_limit = 0.20
+			}
+		}
+
+		ITA_social_conversion = {
+			allowed = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.02
+			}
+		}
+
+		ITA_republic_lives = {
+			allowed = {
+				has_government = socialism
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
 	}
+
 
 	political_advisor = {
 		amadeo_bordiga = {

@@ -1,17 +1,17 @@
-state= {
-	id=120
-	name="STATE_120"
-	manpower = 265873
-	
+state = {
+	id = 120
+	name = "STATE_120"
+	manpower = 104360
+
 	state_category = rural
 
-	resources={
-		chromium=1 # was: 2
-		tungsten=16 # was: 22
-		aluminium=9 # was: 12
+	resources = {
+		chromium = 2 # was: 2
+		tungsten = 4 # was: 22
+		aluminium = 5 # was: 12
 	}
 
-	history= {
+	history = {
 		add_core_of = SCO
 		owner = ENG
 		victory_points = { 11064 1 }
@@ -21,16 +21,16 @@ state= {
 			industrial_complex = 1
 			air_base = 1
 			11064 = {
-				naval_base = 8	
+				naval_base = 8
 			}
 			6196 = {
-				naval_base = 1	
+				naval_base = 1
 			}
 		}
 		add_core_of = ENG
 	}
 
-	provinces=
-	{
-131 284 3159 3178 3373 6046 6062 6104 6196 6205 9075 9090 11064 11161 11266 	}
+	provinces = {
+		131 3159 6062 6104 6196 6205 9090 11064
+	}
 }

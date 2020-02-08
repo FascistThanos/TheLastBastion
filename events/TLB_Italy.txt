@@ -14,12 +14,10 @@ country_event = {
       factor = 1
     }
 
-    hidden_effect = {
       add_popularity = {
         ideology = fascism
         popularity = 0.1
       }
-    }
   }
 
   option = {
@@ -27,12 +25,11 @@ country_event = {
     ai_chance = {
       factor = 1
     }
-    hidden_effect = {
+
       add_popularity = {
         ideology = communism
         popularity = 0.1
       }
-    }
   }
 
   option = {
@@ -40,7 +37,7 @@ country_event = {
     ai_chance = {
       factor = 10
     }
-    hidden_effect = {
+
       add_popularity = {
         ideology = fascism
         popularity = -0.1
@@ -50,6 +47,319 @@ country_event = {
         ideology = communism
         popularity = -0.1
       }
+  }
+}
+
+country_event = {
+  id = TLB_Italy.2 # Debates - Sicily
+  title = TLB_Italy.2.t
+  desc = TLB_Italy.2.d
+  picture = GFX_news_event_election_vote
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.2.a # Fascists
+    ai_chance = {
+      factor = 1
     }
+
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.2
+      }
+  }
+
+  option = {
+    name = TLB_italy.2.b # Communists
+    ai_chance = {
+      factor = 1
+    }
+
+      add_popularity = {
+        ideology = communism
+        popularity = 0.2
+      }
+  }
+
+  option = {
+    name = TLB_italy.2.c # Social Dems
+    ai_chance = {
+      factor = 10
+    }
+
+      add_popularity = {
+        ideology = fascism
+        popularity = -0.05
+      }
+
+      add_popularity = {
+        ideology = communism
+        popularity = -0.05
+      }
+  }
+}
+
+country_event = {
+  id = TLB_Italy.3 # Debates - Rome
+  title = TLB_Italy.3.t
+  desc = TLB_Italy.3.d
+  picture = GFX_news_event_election_vote
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.3.a # Fascists
+    ai_chance = {
+      factor = 1
+    }
+
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.3
+      }
+  }
+
+  option = {
+    name = TLB_italy.3.b # Communists
+    ai_chance = {
+      factor = 1
+    }
+
+      add_popularity = {
+        ideology = communism
+        popularity = 0.3
+      }
+  }
+
+  option = {
+    name = TLB_italy.3.c # Social Dems
+    ai_chance = {
+      factor = 10
+    }
+
+      add_popularity = {
+        ideology = socialism
+        popularity = 0.25
+      }
+  }
+}
+
+country_event = {
+  id = TLB_Italy.4 # The Election
+  title = TLB_Italy.4.t
+  desc = TLB_Italy.4.d
+  picture = GFX_news_event_election_vote
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.4.a # The PNF shall safeguard the nation's safety!
+    ai_chance = {
+      factor = 10
+    }
+
+    trigger = {
+      fascism > 0.35
+    }
+
+    hidden_effect = {
+      set_politics = {
+        ruling_party = fascism
+        elections_allowed = no
+      }
+
+      add_stability = -0.05
+    }
+  }
+
+  option = {
+    name = TLB_italy.4.b # The PSI shall save the Worker's!
+    ai_chance = {
+      factor = 20
+    }
+
+    trigger = {
+      communism > 0.35
+    }
+
+    hidden_effect = {
+      set_politics = {
+        ruling_party = communism
+        elections_allowed = no
+      }
+
+      add_war_support = -0.10
+      add_stability = -0.05
+    }
+  }
+
+  option = {
+    name = TLB_italy.4.c # Four more years of the PdA!
+    ai_chance = {
+      factor = 40
+    }
+
+    trigger = {
+      socialism > 0.35
+    }
+
+    hidden_effect = {
+      add_stability = 0.05
+      add_political_power = 20
+    }
+  }
+}
+
+country_event = {
+  id = TLB_Italy.5
+  title = TLB_Italy.5.t
+  desc = TLB_Italy.5.d
+  picture = GFX_report_event_second_vienna_award_pact
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.5.a
+
+    trigger = {
+      has_government = communism
+    }
+
+    ai_chance = {
+      factor = 10
+    }
+
+    add_stability = 0.05
+    add_political_power = 120
+  }
+
+  option = {
+    name = TLB_italy.5.b
+
+    trigger = {
+      has_government = fascism
+    }
+
+    ai_chance = {
+      factor = 10
+    }
+
+    add_stability = 0.05
+    add_political_power = 120
+  }
+
+  option = {
+    name = TLB_italy.5.c
+
+    trigger = {
+      has_government = socialism
+    }
+
+    ai_chance = {
+      factor = 10
+    }
+
+    add_stability = 0.05
+    add_political_power = 120
+  }
+
+  option = {
+    name = TLB_italy.5.d
+
+    ai_chance = {
+      factor = 5
+    }
+
+    add_war_support = 0.05
+    add_political_power = -200
+  }
+}
+
+country_event = {
+  id = TLB_Italy.6
+  title = TLB_Italy.6.t
+  desc = TLB_Italy.6.d
+  picture = GFX_report_event_generic_parliament
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.6.a
+
+    ai_chance = {
+      factor = 10
+      modifier = {
+        has_government = fascism
+        add = 60
+      }
+    }
+
+    swap_ideas = {
+      remove_idea = limited_conscription
+      add_idea = extensive_conscription
+    }
+
+    army_experience = 20
+  }
+
+  option = {
+    name = TLB_italy.6.b
+
+    ai_chance = {
+      factor = 10
+      modifier = {
+        has_government = communism
+        add = 60
+      }
+    }
+
+    add_political_power = 20
+    add_stability = 0.1
+  }
+
+  option = {
+    name = TLB_italy.6.c
+
+    ai_chance = {
+      factor = 10
+      modifier = {
+        has_government = socialism
+        add = 60
+      }
+    }
+
+    add_ideas = ITA_land_funding
+  }
+}
+
+country_event = {
+  id = TLB_Italy.7 # Fate of Emmanuel
+  title = TLB_italy.7.t
+  desc = TLB_italy.7.d
+  picture = GFX_news_event_king_speech
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.7.a # Exile
+    ai_chance = {
+      factor = 80
+    }
+
+    remove_ideas = victor_emmanuel
+    add_threat = 15
+    add_war_support = -0.10
+  }
+
+  option = {
+    name = TLB_italy.7.b # Death
+    ai_chance = {
+      factor = 20
+    }
+
+    remove_ideas = victor_emmanuel
+    add_threat = 15
+    add_stability = -0.05
   }
 }

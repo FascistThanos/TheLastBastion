@@ -1,0 +1,26 @@
+state = {
+	id = 905
+	name = "STATE_905"
+	manpower = 168433
+
+	state_category = rural
+
+	resources = {
+		tungsten = 12 # was: 22
+		aluminium = 4 # was: 12
+	}
+
+	history = {
+		add_core_of = SCO
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = ENG
+	}
+
+	provinces = {
+		284 3178 3373 6046 9075 11161 11266
+	}
+}

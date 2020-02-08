@@ -30,6 +30,10 @@ opinion_modifiers = {
 		value = 10
 	}
 
+	ITA_communist_diplomacy = {
+		value = 25
+	}
+
 	unstable_alliance = {
 		value = -10
 	}

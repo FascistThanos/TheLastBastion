@@ -1,0 +1,23 @@
+state = {
+	id = 906
+	name = "STATE_906"
+	manpower = 89427
+	resources = {
+		aluminium=18 # was: 28
+	}
+
+	state_category = town
+
+	history = {
+		owner = SWI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = SWI
+	}
+
+	provinces = {
+		13124 11590 9618 636 9587 3612
+	}
+}

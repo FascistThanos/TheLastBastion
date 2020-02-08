@@ -1,0 +1,26 @@
+state = {
+	id = 908
+	name = "STATE_908" # Transdanubia
+	manpower = 1097400
+
+	state_category = city
+	resources = {
+		oil = 1 # was: 1
+	}
+	history = {
+		owner = HUN
+		victory_points = {
+			11610 5
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			air_base = 3
+		}
+		add_core_of = HUN
+	}
+
+	provinces = {
+		 682 3670 3680 6685 9608 9624 9643 11610
+	}
+}
