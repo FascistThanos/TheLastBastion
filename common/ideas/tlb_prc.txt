@@ -1,6 +1,42 @@
 ideas = {
 	country = {
 ##########################
+PRC_fiveyear_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		equipment_conversion_speed = 0.05
+		local_resources_factor = 0.10
+		industrial_capacity_factory = 0.1
+		production_factory_max_efficiency_factor = 0.1
+	}
+}
+PRC_farming_idea = {
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		production_speed_buildings_factor = 0.4
+			consumer_goods_factor = 0.05
+	}
+}
 PRC_new_resources_idea = {
 
 	allowed = {

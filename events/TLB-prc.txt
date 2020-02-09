@@ -228,3 +228,28 @@ country_event = {
 add_war_support = 0.1
 }
 }
+
+#Join Comintern
+country_event = {
+  id = tlbprc.10
+  title = tlbprc.10.t
+  desc = tlbprc.10.d
+  picture = GFX_report_event_generic_rally
+  is_triggered_only = yes
+
+  option = {
+    name = tlbprc.10.a
+    ai_chance = {
+      base = 50
+    }
+SOV = {add_to_faction = PRC}
+}
+  option = {
+    name = tlbprc.10.b
+    ai_chance = {
+      base = 50
+      }
+PRC = {add_opinion_modifier = { target = SOV modifier = medium_decrease }}
+add_war_support = 0.05
+}
+}

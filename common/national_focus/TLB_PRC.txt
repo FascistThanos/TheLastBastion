@@ -2233,6 +2233,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_political_power = 150
 	}
 }
 ###########
@@ -2263,6 +2264,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+SOV = {add_opinion_modifier = { target = PRC modifier = large_increase }}
 	}
 }
 
@@ -2293,6 +2295,7 @@ mutually_exclusive = {focus = PRC_soviet_friend}
 	available_if_capitulated = no
 
 	completion_reward = {
+SOV = {add_opinion_modifier = { target = PRC modifier = medium_decrease }}
 	}
 }
 
@@ -2322,12 +2325,14 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	add_stability = 0.1
+	add_war_support = 0.2
 	}
 }
 
 focus = {
 	id = PRC_strike_soviet
-	icon = GFX_
+	icon = GFX_goal_generic_war_with_comintern
 	prerequisite = { focus = PRC_continue_mao }
 	x = 0
 	y = 1
@@ -2372,6 +2377,7 @@ focus = {
 	}
 
 	available = {
+SOV = {is_faction_leader = yes}
 	}
 
 	bypass = {
@@ -2383,12 +2389,13 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	SOV = { country_event = { id = tlbprc.10 hours = 24 }}
 	}
 }
 
 focus = {
 	id = PRC_five_year_plan
-	icon = GFX_
+	icon = GFX_Generic_Industry02
 	prerequisite = { focus = PRC_join_comintern }
 	x = 1
 	y = 1
@@ -2412,11 +2419,15 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	add_timed_idea = {
+			idea = PRC_fiveyear_idea
+			days = 365
+	}
 	}
 }
 focus = {
 	id = PRC_central_farming
-	icon = GFX_
+	icon = GFX_Generic_Farming
 	prerequisite = { focus = PRC_five_year_plan }
 	x = 0
 	y = 1
@@ -2440,6 +2451,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+	add_timed_idea = {
+			idea = PRC_farming_idea
+			days = 100
+	}
 	}
 }
 focus = {
@@ -2636,7 +2651,7 @@ focus = {
 
 focus = {
 	id = PRC_northern_steppe
-	icon = GFX_
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = PRC_strike_soviet focus= PRC_join_comintern }
 	x = 1
 	y = 1
@@ -2660,6 +2675,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+add_state_claim = 853
+add_state_claim = 882
+add_state_claim = 880
+add_state_claim = 881
 	}
 }
 
