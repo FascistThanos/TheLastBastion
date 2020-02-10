@@ -503,10 +503,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	create_wargoal = {
+		create_wargoal = {
 	    type = puppet_wargoal_focus
 	    target = JAP
-	}
+		}
 	}
 }
 
