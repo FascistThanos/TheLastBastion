@@ -1,28 +1,29 @@
-state={
-	id=788
-	name="STATE_788"
-	resources={
-		aluminium=18 # was: 30
-	}
 
-	state_category = town
+state={
+	id=906
+	name="STATE_791"
+
+	resources={
+		steel=10
+	}
 
 	history={
 		owner = BAV
 		victory_points = {
-			9557 10
+			3299 15
 		}
 		buildings = {
-			infrastructure = 8
-			arms_factory = 3
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
 		}
 		add_core_of = GER
 		add_core_of = BAV
 	}
 	provinces={
-		3574 6421 6594 9557 9572 11417 13116
+		586 3299 3541 3571 11497 
 	}
 	state_category = town
-	manpower=2354864
+	manpower=2135487
 	buildings_max_level_factor=1.000
 }

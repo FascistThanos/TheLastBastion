@@ -1,0 +1,28 @@
+state={
+	id=912
+	name="STATE_788"
+	resources={
+		aluminium=18 # was: 30
+	}
+
+	state_category = town
+
+	history={
+		owner = BAV
+		victory_points = {
+			9557 10
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+		}
+		add_core_of = GER
+		add_core_of = BAV
+	}
+	provinces={
+		3574 6421 6594 9557 9572 11417 13116
+	}
+	state_category = town
+	manpower=2354864
+	buildings_max_level_factor=1.000
+}
