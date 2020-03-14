@@ -19,6 +19,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV_destroyedgeorgia.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ITA_Med_Alliance"
+		texturefile = "gfx/interface/ideas/idea_ITA_med_alliance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ITA_democratic_alliance"
+		texturefile = "gfx/interface/ideas/idea_ITA_democratic_alliance.dds"
+	}
+
 	#spriteType = {
 	#	name = "GFX_idea_ITA_italia_electorum"
 	#	texturefile = "gfx/interface/ideas/idea_ITA_Italia_Electorum.dds"

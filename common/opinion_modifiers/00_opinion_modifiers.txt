@@ -30,6 +30,10 @@ opinion_modifiers = {
 		value = 10
 	}
 
+	ITA_rejected_mare_nostrum = {
+		value = -30
+	}
+
 	ITA_communist_diplomacy = {
 		value = 25
 	}

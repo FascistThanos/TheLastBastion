@@ -363,3 +363,371 @@ country_event = {
     add_stability = -0.05
   }
 }
+
+country_event = {
+  id = TLB_Italy.8 # Italy demands independence for African colonies.
+  title = TLB_italy.8.t
+  desc = TLB_italy.8.d
+  picture = GFX_news_event_ast_parliament_house
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.8.a # Let them be free.
+    ai_chance = {
+      factor = 60
+    }
+
+    if = {
+      limit = {
+        original_tag = ENG
+      }
+
+      ENG = {
+        release = EGY
+        release = SUD
+        release = SSD
+        release = UGA
+        release = KEN
+        release = TZN
+        release = ZAM
+        release = MLW
+        release = ZIM
+        release = BOT
+        release = NGA
+        release = GHA
+        release = GAM
+        release = SIE
+      }
+    }
+
+    if = {
+      limit = {
+        original_tag = FRA
+        original_tag = FPR
+      }
+
+      FRA = {
+        release = MLI
+        release = MRT
+        release = SEN
+        release = GNA
+        release = VOL
+        release = NGR
+        release = CHA
+        release = CAR
+        release = CMR
+        release = RCG
+        release = GAB
+        release = MAD
+      }
+
+      FPR = {
+        release = MLI
+        release = MRT
+        release = SEN
+        release = GNA
+        release = VOL
+        release = NGR
+        release = CHA
+        release = CAR
+        release = CMR
+        release = RCG
+        release = GAB
+        release = MAD
+
+      }
+    }
+  }
+
+  option = {
+    name = TLB_italy.8.b # Only some will be free
+    ai_chance = {
+      factor = 25
+    }
+
+    if = {
+      limit = {
+        original_tag = ENG
+      }
+
+      ENG = {
+        release = EGY
+        release = SUD
+        release = SSD
+        release = UGA
+        release = KEN
+        release = TZN
+        release = ZAM
+        release = MLW
+        release = ZIM
+        release = BOT
+      }
+    }
+
+    if = {
+      limit = {
+        original_tag = FRA
+        exists = yes
+        owns_state = 16
+      }
+
+      FRA = {
+        release = CHA
+        release = CAR
+        release = CMR
+        release = RCG
+        release = GAB
+        release = MAD
+      }
+    }
+
+    if = {
+      limit = {
+        original_tag = FPR
+        has_peace_with = FRA
+        exists = yes
+        owns_state = 16
+      }
+
+      FPR = {
+        release = CHA
+        release = CAR
+        release = CMR
+        release = RCG
+        release = GAB
+        release = MAD
+      }
+    }
+  }
+
+  option = {
+    name = TLB_italy.8.c # None shall be freed.
+    ai_factor = {
+      factor = 15
+    }
+
+    ITA = {
+      country_event = TLB_Italy.9
+    }
+  }
+}
+
+country_event = {
+  id = TLB_Italy.9 # The freedom has been denied.
+  title = TLB_italy.9.t
+  desc = TLB_italy.9.d
+  picture = GFX_news_event_ast_parliament_house
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_italy.9.a # Allow them to be subjugated.
+    ai_factor = {
+      factor = 99
+    }
+
+    add_stability = 0.05
+    add_political_power = -100
+    add_war_support = -0.05
+  }
+
+  option = {
+    name = TLB_italy.9.b # We will free them ourselves!
+    ai_factor = {
+      factor = 1
+    }
+
+    add_political_power = -150
+    add_stability = -0.05
+    add_war_support = -0.05
+
+    if = {
+      limit = {
+        ENG = { 
+          exists = yes
+          owns_state = 542
+        }
+      }
+
+      create_wargoal = {
+        type = liberate_wargoal
+        target = ENG
+      }
+    }
+
+    if = {
+      limit = {
+        FRA = {
+          exists = yes
+          owns_state = 16
+          owns_state = 772
+        }
+      }
+
+      create_wargoal = {
+        type = liberate_wargoal
+        target = FRA
+      }
+    }
+
+     if = {
+      limit = {
+        FPR = {
+          exists = yes
+          owns_state = 16
+          NOT = {
+            has_war_with = FRA
+          }
+        }
+      }
+
+      create_wargoal = {
+        type = liberate_wargoal
+        target = FPR
+      }
+    }   
+  }
+}
+
+country_event = {
+  id = TLB_Italy.10 # Italy invites us to Mare Nostrum
+  title = TLB_italy.10.t
+  desc = TLB_italy.10.d
+
+  picture = news_event_generic_usa_treaty
+
+  option = {
+    name = TLB_italy.10.a
+
+    if = {
+      limit = {
+        original_tag = GRE
+      }
+
+      ITA = {
+        add_to_faction = GRE 
+      }
+    }
+
+    if = {
+      limit = {
+        original_tag = TUR
+      }
+
+      ITA = {
+        add_to_faction = TUR
+      }
+    }
+  }
+
+  option = {
+    name = TLB_italy.10.b
+
+    add_opinion_modifier = {
+      target = ITA
+      modifier = ITA_rejected_mare_nostrum
+    }
+
+    if = {
+      limit = {
+        original_tag = GRE
+      }
+
+      ITA = {
+        add_opinion_modifier = {
+          target = GRE
+          modifier = ITA_rejected_mare_nostrum
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        original_tag = TUR
+      }
+
+      ITA = {
+        add_opinion_modifier = {
+          target = TUR
+          modifier = ITA_rejected_mare_nostrum
+        }
+      }
+    }
+  }
+}
+
+country_event = {
+  id = TLB_Italy.11
+  title = TLB_italy.11.t
+  desc = TLB_italy.11.d
+
+  picture = news_event_generic_strike
+
+  option = { # Yield
+    name = TLB_italy.11.a
+    ai_chance = {
+      base = 40
+      modifier = {
+        factor = 0        
+        any_other_country = {
+          OR = {
+            is_major = yes
+            tag = YUG
+          }
+          NOT = { tag = ITA }
+          OR = {
+            has_guaranteed = ALB
+            is_in_faction_with = ALB
+          }
+        }
+      }
+      modifier = {
+        factor = 0.5
+        OR = {
+          has_government = communism
+          has_government = fascism #glorious Albania will never yield!
+        }
+      }
+    }
+    ITA = {
+      country_event = { id = italy.1 }
+    }
+    custom_effect_tooltip = GAME_OVER_TT
+  }
+  option = { # Resist
+    name = TLB_italy.11.b
+    ai_chance = {
+      factor = 20 
+      modifier = {
+        factor = 0
+        OR = {
+          AND = {
+            is_in_faction_with = ITA
+            ITA = { is_faction_leader = yes }
+          }
+          is_historical_focus_on = yes
+          AND = {
+            is_in_faction = no 
+            NOT = {
+              any_other_country = {
+                NOT = { tag = ITA }
+                has_guaranteed = ALB
+              } 
+            }
+          }
+        }
+      }
+    }
+    ITA = {
+      effect_tooltip = {
+        create_wargoal = {
+          type = take_state_focus
+          target = ALB
+          generator = { 44 }
+        }
+      }
+      country_event = { id = italy.2 }
+    }
+  }
+}

@@ -174,9 +174,84 @@ ideas = {
 				air_doctrine = 0.05
 			}
 		}
+
+		ITA_mediterranean_alliance = {
+
+			picture = ITA_Med_Alliance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			rule = {
+				can_create_factions = yes
+			}			
+		}
+
+		ITA_democratic_alliance = {
+
+			picture = ITA_democratic_alliance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			rule = {
+				can_create_factions = yes
+			}			
+		}
 	}
 
 	hidden_ideas = {
+
+		ITA_fascism_in_greece = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = 0.01
+			}
+		}
+
+		ITA_anti_communist_rhetoric = {
+
+			allowed = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = -0.01
+			}
+		}
+
 		ITA_new_army = {
 
 			allowed = {
@@ -449,6 +524,45 @@ ideas = {
 				political_power_gain = 0.05
 			}
 		}
+
+		#ITA_pnf_constitution = {
+		#	allowed = {
+		#		original_tag = ITA
+		#		has_government = fascism
+		#	}
+		#
+		#	allowed_civil_war = {
+		#		has_government = fascism
+		#	}
+		#
+		#	removal_cost = -1
+		#
+		#	modifier = {
+		#		stability_factor = 0.05
+		#		war_support_factor = 0.15
+		#		non_core_manpower = 0.03
+		#	}
+		#}	
+
+		#ITA_fascist_league = {
+		#	allowed = {
+		#		original_tag = ITA
+		#		has_government = fascism
+		#	}
+		#
+		#	allowed_civil_war = {
+		#		has_government = fascism
+		#	}
+		#
+		#	removal_cost = -1
+		#
+		#	modifier = {
+		#		conscription = 0.05
+		#		training_time_factor = -0.5
+		#		attrition = 0.5
+		#		military_leader_cost_factor = -0.15
+		#	}
+		#}	
 	}
 
 
