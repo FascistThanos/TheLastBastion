@@ -26,7 +26,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_lightarmor
-		icon = GFX_goal_poland_goal
+		icon = GFX_lighttanks
 		x = 12
 		y = 3
 		cost = 10
@@ -48,7 +48,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_heavyarmor
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_generic_army_tanks
 		x = 14
 		y = 3
 		cost = 10
@@ -959,7 +959,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_nomoretrenches
-		icon = GFX_goal_poland_goal
+		icon = GFX_goal_ITA_nomoretrenches
 		x = 10
 		y = 4
 		cost = 10
@@ -1072,7 +1072,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_anarmoredbasedarmy
-		icon = GFX_goal_generic_production2
+		icon = GFX_Generic_Italian_Tanks
 		x = 13
 		y = 2
 		cost = 10

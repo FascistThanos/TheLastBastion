@@ -596,6 +596,7 @@ country_event = {
   desc = TLB_italy.10.d
 
   picture = news_event_generic_usa_treaty
+  is_triggered_only = yes
 
   option = {
     name = TLB_italy.10.a
@@ -661,6 +662,8 @@ country_event = {
   id = TLB_Italy.11
   title = TLB_italy.11.t
   desc = TLB_italy.11.d
+
+  is_triggered_only = yes
 
   picture = news_event_generic_strike
 

@@ -6,8 +6,18 @@ spriteType = {
 }
 
 spriteType = {
+	name = "GFX_ITA_nomoretrenches"
+	texturefile = "gfx/interface/goals/Focus_ITA_No_More_Trenches.dds"
+}
+
+spriteType = {
  	name = "GFX_pricinipaliaitalia"
  	texturefile = "gfx/interface/goals/GFX_pricinipaliaitalia.tga"
+}
+
+spriteType = {
+	name = "GFX_lighttanks"
+	texturefile = "gfx/interface/goals/Focus_ITA_Light_Tanks.dds"
 }
 
 spriteType = {
