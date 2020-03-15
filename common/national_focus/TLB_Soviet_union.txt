@@ -121,12 +121,12 @@ relative_position_id = SOV_red_wind
 		id = SOV_finish_five_year_plan
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 1
-		y = 3
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
-
+prerequisite = {focus = SOV_stalin_back}
 		available_if_capitulated = yes
 
 		bypass = {
@@ -650,12 +650,12 @@ relative_position_id = SOV_red_wind
 		id = SOV_stalin_constitution
 		icon = GFX_goal_support_communism
 		x = 6
-		y = 3
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
-
+prerequisite = {focus = SOV_stalin_back}
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -927,7 +927,7 @@ relative_position_id = SOV_red_wind
 		id = SOV_anti_fascist_diplomacy
 		icon = GFX_goal_generic_military_deal
 		x = 11
-		y = 3
+		y = 4
 
 		cost = 30
 		ai_will_do = {
@@ -952,7 +952,7 @@ relative_position_id = SOV_red_wind
 				ai_irrationality > 40
 			}
 		}
-
+prerequisite = {focus = SOV_stalin_back}
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1972,9 +1972,90 @@ relative_position_id = SOV_red_wind
 		}
 	}
 
+	focus = {
+		id = SOV_search_party
+		icon =
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = SOV_target_stalin
+prerequisite = {focus = SOV_target_stalin}
+		completion_reward = {
+			add_political_power = 75
+			set_global_flag = stalinignored
+		}
+	}
 
+	focus = {
+		id = SOV_search_party
+		icon =
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = SOV_target_stalin
+prerequisite = {focus = SOV_target_stalin}
+		completion_reward = {
+#custom tooltips
+		}
+	}
 
+	focus = {
+		id = SOV_search_europe
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = SOV_search_party
+		cost = 10
+		available_if_capitulated = yes
+prerequisite = {focus = SOV_search_party}
+		completion_reward = {
+#custom tooltips
+		}
+	}
 
+	focus = {
+		id = SOV_search_asia
+		icon = GFX_
+		x = 2
+		y = 1
+	relative_position_id = SOV_search_party
+		cost = 10
+		available_if_capitulated = yes
+prerequisite = {focus = SOV_search_party}
+		completion_reward = {
+#custom tooltips
+		}
+	}
+
+	focus = {
+		id = SOV_search_africa
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_search_party
+		available_if_capitulated = yes
+prerequisite = {focus = SOV_search_party}
+		completion_reward = {
+#custom tooltips
+		}
+	}
+
+	focus = {
+		id = SOV_stalin_back
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SOV_search_africa
+prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_europe }
+		available_if_capitulated = yes
+		completion_reward = {
+#custom tooltips
+		}
+	}
 
 #
 }
