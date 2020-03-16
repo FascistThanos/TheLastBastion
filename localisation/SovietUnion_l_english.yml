@@ -186,6 +186,11 @@
  SOV_research_city_experiment_desc:0 "One of our foremost scientists, Kurchatov, has noted that when breaking up of kernels in a kilogram of uranium, the energy released must be equal to the explosion of 20,000 tons of trotyl. We need to harness this power before our enemies to ensure the survival of the Motherland."
  SOV_closed_city_network:0 "Closed City Network"
  SOV_closed_city_network_desc:0 "We should set up closed cities for research that require more space than we have available in our military bases. Restricting access to the cities ensures that our research remains secret, while giving our scientists plenty of space for large scale experiments."
+
+
+
+
+################
   sov.1.t:0 "Spreading the Revolution"
   sov.1.d:0 "Trotsky's most recent course of action is to supply the civil conflicts within France, as well as the communist parties in countries near our borders with weapons."
   sov.1.a:0 "Send supplies to our comrades."
@@ -210,3 +215,20 @@
   sov.7.t:0 "Stalinists in the Government"
   sov.7.d:0 "Our government has some filthy followers of Stalin still remaining. Trotsky has arranged for their removal from powerful political ranks immediatley."
   sov.7.a:0 "Why not just purge them?"
+  tlbsoviet.1.t:0 ""
+  tlbsoviet.1.d:0 ""
+  tlbsoviet.1.a:0 ""
+  tlbsoviet.2.t:0 ""
+  tlbsoviet.2.d:0 ""
+  tlbsoviet.2.a:0 ""
+  tlbsoviet.3.t:0 ""
+  tlbsoviet.3.d:0 ""
+  tlbsoviet.3.a:0 ""
+  tlbsoviet.4.t:0 ""
+  tlbsoviet.4.d:0 ""
+  tlbsoviet.4.a:0 ""
+  ##############
+  stalin_found:0 "Stalin Has Been Found"
+  stalin_not_found1:0 "Stalin was not found in Europe"
+  stalin_not_found2:0 "Stalin was not found in Asia"
+  stalin_not_found3:0 "Stalin was not found in Africa"

@@ -30,7 +30,7 @@ continuous_focus_position = { x = 50 y = 1200 }
 	focus = {
 		id = SOV_ignore_stalin
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		x = 25
+		x = 23
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -42,6 +42,19 @@ continuous_focus_position = { x = 50 y = 1200 }
 			set_global_flag = stalinignored
 		}
 	}
+
+	focus = {
+		id = SOV_stalin_not_found
+		icon = GFX_
+		x = 25
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+
 	focus = {
 		id = SOV_red_wind
 		icon = GFX_focus_ger_great_red_menace
@@ -51,6 +64,7 @@ continuous_focus_position = { x = 50 y = 1200 }
 		available_if_capitulated = yes
 		prerequisite = {
         focus = SOV_ignore_stalin
+				focus = SOV_stalin_not_found
     }
 		completion_reward = {
 			country_event = {
@@ -2010,6 +2024,12 @@ prerequisite = {focus = SOV_target_stalin}
 		cost = 10
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_search_party}
+available = {
+NOT = {
+has_global_flag = stalin_found
+}
+}
+
 		completion_reward = {
 #custom tooltips
 		}
@@ -2024,6 +2044,11 @@ prerequisite = {focus = SOV_search_party}
 		cost = 10
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_search_party}
+available = {
+NOT = {
+has_global_flag = stalin_found
+}
+}
 		completion_reward = {
 #custom tooltips
 		}
@@ -2038,6 +2063,11 @@ prerequisite = {focus = SOV_search_party}
 relative_position_id = SOV_search_party
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_search_party}
+available = {
+NOT = {
+has_global_flag = stalin_found
+}
+}
 		completion_reward = {
 #custom tooltips
 		}
@@ -2052,6 +2082,10 @@ prerequisite = {focus = SOV_search_party}
 		relative_position_id = SOV_search_africa
 prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_europe }
 		available_if_capitulated = yes
+
+available = {
+has_global_flag = stalin_found
+}
 		completion_reward = {
 #custom tooltips
 		}

@@ -1,0 +1,58 @@
+add_namespace = tlbsoviet
+
+
+#Stalin Europe Not Found
+country_event = {
+  id = tlbsoviet.1
+  title = tlbsoviet.1.t
+  desc = tlbsoviet.1.d
+
+  is_triggered_only = yes
+
+  option = {
+    	name = tlbsoviet.1.a
+set_global_flag = stalin_not_found1
+  }
+}
+
+#Stalin Asia Not Found
+country_event = {
+  id = tlbsoviet.2
+  title = tlbsoviet.2.t
+  desc = tlbsoviet.2.d
+
+  is_triggered_only = yes
+
+  option = {
+    	name = tlbsoviet.2.a
+set_global_flag = stalin_not_found2
+  }
+}
+
+#Stalin  Not Found
+country_event = {
+  id = tlbsoviet.3
+  title = tlbsoviet.3.t
+  desc = tlbsoviet.3.d
+
+  is_triggered_only = yes
+
+  option = {
+    	name = tlbsoviet.3.a
+set_global_flag = stalin_not_found3
+  }
+}
+
+#Stalin Found
+country_event = {
+  id = tlbsoviet.4
+  title = tlbsoviet.4.t
+  desc = tlbsoviet.4.d
+
+  is_triggered_only = yes
+
+  option = {
+    	name = tlbsoviet.4.a
+set_global_flag = stalin_found
+  }
+}
