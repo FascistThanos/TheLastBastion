@@ -75,13 +75,15 @@ bookmarks = {
 
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = socialism
 			ideas = {
-				vittoria_mutilata
+				ITA_mussolini_detained
 				victor_emmanuel
 			}
 			focuses = {
-
+				ITA_anitalianunion
+				ITA_bidforafricanfreedom
+				ITA_freemussolinifromprison
 			}
 		}
 		"CHI"={
