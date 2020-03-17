@@ -52,10 +52,18 @@
   SOV_stalinthreat:0 "Stalin in Exile"
   SOV_stalinthreat_desc:0 "When Stalin fled to Siberian wilderness when Trotsky took power, a decent amount of his most loyal supporters objected. We may need to track down and dispose of him if we want to remain stable."
   SOV_target_stalin:0 "Track Down Stalin"
+  SOV_target_stalin_desc:0 ""
   SOV_ignore_stalin:0 "Focus on More Important Matters"
+  SOV_ignore_stalin_desc:0 ""
   SOV_red_wind:0 "Spread the Revolution"
+  SOV_red_wind_desc:0 ""
   SOV_finland_diplomat:0 "Send Demands to Finland"
+  SOV_finland_diplomat_desc:0 ""
   SOV_rebuild_georgia:0 "Finish Reconstruction of Georgia"
+  SOV_rebuild_georgia_desc:0 ""
+
+
+  #############3
   SOV_finish_five_year_plan:0 "Finish the Five Year Plan"
  SOV_finish_five_year_plan_desc:0 "The second Five Year Plan prioritizes the development of heavy industry. The Soviet Union must develop quickly in order to match the Capitalist and Fascist powers of the West."
  SOV_move_industry_to_urals:0 "Move Industry To the Urals"
@@ -187,7 +195,7 @@
  SOV_closed_city_network:0 "Closed City Network"
  SOV_closed_city_network_desc:0 "We should set up closed cities for research that require more space than we have available in our military bases. Restricting access to the cities ensures that our research remains secret, while giving our scientists plenty of space for large scale experiments."
 
-
+ kamikaze_focus_tooltip:0 "§YThe Soviet Airforce will use Kamikaze Pilots"
 
 
 ################
