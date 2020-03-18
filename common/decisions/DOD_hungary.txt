@@ -1,11 +1,11 @@
 political_actions = {
-
+	
 	HUN_closer_ties_to_CZE = {
 		allowed = {
 			original_tag = HUN
 		}
 		available = {
-
+			
 		}
 		visible = {
 			has_completed_focus = HUN_protect_czechoslovakia
@@ -38,30 +38,30 @@ political_actions = {
 
 economy_decisions = {
 
-
+	
 }
 
 
 
 
 operations = {
-
-
+	
+	
 }
 
 
 
 war_measures = {
-
-
+	
+	
 }
 
 foreign_politics = {
-
+	
 }
 
 economy_decisions = {
-
+	
 }
 
 foreign_support = {

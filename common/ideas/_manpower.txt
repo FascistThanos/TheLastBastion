@@ -105,6 +105,13 @@ ideas = {
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
 
 			modifier = {
@@ -187,8 +194,14 @@ ideas = {
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
-
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -285,6 +298,13 @@ ideas = {
 						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 			}
 
@@ -404,6 +424,13 @@ ideas = {
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
 
 			ai_will_do = {
@@ -513,6 +540,13 @@ ideas = {
 						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 			}
 

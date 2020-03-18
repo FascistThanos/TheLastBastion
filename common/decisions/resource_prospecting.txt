@@ -1533,13 +1533,14 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_arkansas_aluminium_duration
+		days_remove = USA_arkansas_aluminium_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_arkansas_aluminium_duration value = 30 }
 			372 = {
 				if = {
@@ -1616,7 +1617,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_new_york_aluminium_duration
+		days_remove = USA_new_york_aluminium_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -1631,6 +1632,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_new_york_aluminium_duration value = 30 }
 			358 = {
 				if = {
@@ -1701,7 +1703,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_tennessee_aluminium_duration
+		days_remove = USA_tennessee_aluminium_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -1716,6 +1718,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_tennessee_aluminium_duration value = 30 }
 			368 = {
 				if = {
@@ -1786,7 +1789,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_washington_aluminium_duration
+		days_remove = USA_washington_aluminium_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -1801,6 +1804,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_washington_aluminium_duration value = 30 }
 			386 = {
 				if = {
@@ -1871,7 +1875,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_idaho_tungsten_duration
+		days_remove = USA_idaho_tungsten_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -1886,6 +1890,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_idaho_tungsten_duration value = 30 }
 			387 = {
 				if = {
@@ -1956,7 +1961,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_california_tungsten_duration
+		days_remove = USA_california_tungsten_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -1971,6 +1976,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_california_tungsten_duration value = 30 }
 			378 = {
 				if = {
@@ -2041,7 +2047,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_minnesota_steel_duration
+		days_remove = USA_minnesota_steel_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -2056,6 +2062,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_minnesota_steel_duration value = 30 }
 			391 = {
 				if = {
@@ -2126,7 +2133,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_pennsylvania_steel_duration
+		days_remove = USA_pennsylvania_steel_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -2141,6 +2148,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_pennsylvania_steel_duration value = 30 }
 			360 = {
 				if = {
@@ -2212,7 +2220,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_ohio_steel_duration
+		days_remove = USA_ohio_steel_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -2227,6 +2235,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_ohio_steel_duration value = 30 }
 			261 = {
 				if = {
@@ -2297,7 +2306,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_indiana_steel_duration
+		days_remove = USA_indiana_steel_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -2312,6 +2321,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_indiana_steel_duration value = 30 }
 			396 = {
 				if = {
@@ -2384,7 +2394,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_montana_chromium_duration
+		days_remove = USA_montana_chromium_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -2399,6 +2409,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_montana_chromium_duration value = 30 }
 			388 = {
 				if = {
@@ -2471,7 +2482,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_california_chromium_duration
+		days_remove = USA_california_chromium_duration?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -2486,6 +2497,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_california_chromium_duration value = 30 }
 			378 = {
 				if = {
@@ -3278,7 +3290,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_kursk_steel_duration
+		days_remove = SOV_kursk_steel_duration?30
 
 		modifier = {
 			civilian_factory_use = 9
@@ -3369,7 +3381,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_kursk_steel_duration_2
+		days_remove = SOV_kursk_steel_duration_2?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -3460,7 +3472,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_kursk_steel_duration_3
+		days_remove = SOV_kursk_steel_duration_3?30
 
 		modifier = {
 			civilian_factory_use = 15
@@ -3547,7 +3559,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_Belgorod_steel_duration
+		days_remove = SOV_Belgorod_steel_duration?30
 
 		modifier = {
 			civilian_factory_use = 9
@@ -3638,7 +3650,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_Belgorod_steel_duration_2
+		days_remove = SOV_Belgorod_steel_duration_2?30
 
 		modifier = {
 			civilian_factory_use = 12
@@ -3729,7 +3741,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_Belgorod_steel_duration_3
+		days_remove = SOV_Belgorod_steel_duration_3?30
 
 		modifier = {
 			civilian_factory_use = 15
@@ -3987,7 +3999,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = chosin_tungsten_duration
+		days_remove = chosin_tungsten_duration?30
 
 		modifier = {
 			civilian_factory_use = 5
@@ -4125,7 +4137,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = kuwait_oil_duration
+		days_remove = kuwait_oil_duration?30
 		modifier = {
 			civilian_factory_use = 12
 		}
@@ -4425,7 +4437,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = nejd_oil_duration
+		days_remove = nejd_oil_duration?30
 		modifier = {
 			civilian_factory_use = 15
 		}

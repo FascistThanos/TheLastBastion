@@ -2,7 +2,7 @@
 
 #Category only allowed for CHI
 CHI_anti_imperialism = {
-
+	
 	CHI_release_korea = {
 
 		icon = generic_nationalism
@@ -14,7 +14,7 @@ CHI_anti_imperialism = {
 		days_mission_timeout = 180
 
 		fire_only_once = yes
-		activation = {
+		activation = {			
 			owns_state = 525
 			owns_state = 527
 			KOR = {
@@ -88,8 +88,8 @@ CHI_army_reform = {
 			}
 		}
 		complete_effect = {
-			army_experience = -100
-		}
+			army_experience = -100						
+		}		
 	}
 
 	CHI_lessons_of_war = {
@@ -137,7 +137,7 @@ CHI_army_reform = {
 			army_experience = -200
 			remove_ideas = CHI_incompetent_officers
 			set_country_flag = CHI_lessons_of_war_completed
-		}
+		}		
 	}
 
 	#Activates when the player picks CHI_60_divisions_plan decision
@@ -151,7 +151,7 @@ CHI_army_reform = {
 		}
 
 		fire_only_once = yes
-
+		
 		days_mission_timeout = 180
 
 		is_good = no
@@ -174,7 +174,7 @@ CHI_army_reform = {
 		icon = generic_operation
 
 		available = {
-
+			
 		}
 
 		cost = 90
@@ -195,7 +195,7 @@ CHI_army_reform = {
 
 		complete_effect = {
 			activate_mission = CHI_bolster_our_ranks
-		}
+		}		
 	}
 
 }
@@ -243,35 +243,12 @@ economy_decisions = {
 			CHI_hyper_inflation_level_down = yes
 			add_stability = -0.03
 			add_war_support = -0.03
-		}
+		}		
 	}
 }
 
 war_measures = {
 
-     defend_beijing = {
-          allowed = { tag = CHI }
-fire_only_once = yes
-				  available = {
-              PRC = {controls_state = 608}
-          }
-          activation = {
-            CHI =  {has_completed_focus = CHI_beijing}
-          }
-          is_good = yes
-          days_mission_timeout = 360
-          timeout_effect = {
-					add_political_power = 100
-					add_stability = 0.2
-					add_war_support = 0.15
-          }
-          complete_effect = {
-               add_political_power = -200
-							 add_stability = -0.2
-							 add_war_support = -0.15
-          }
-     }
-#
 	CHI_scorched_earth_tactics = {
 		icon = generic_scorched_earth
 		available = {
@@ -291,7 +268,7 @@ fire_only_once = yes
 			factor = 1
 		}
 
-		visible = {
+		visible = {			
 			has_completed_focus = CHI_scorched_earth_tactics
 		}
 
@@ -318,7 +295,7 @@ fire_only_once = yes
 				}
 
 				PRC_low_popular_support_level_down = yes
-			}
+			}			
 		}
 	}
 }
@@ -350,7 +327,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			283 = { #283 #gansu
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -378,7 +355,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -391,10 +368,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -404,7 +381,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -420,8 +397,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -432,14 +409,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -462,8 +439,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -475,8 +452,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -491,7 +468,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -503,14 +480,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -533,7 +510,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -546,7 +523,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -573,7 +550,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			591 = { #591 #hainan
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -602,7 +579,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -615,10 +592,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -628,7 +605,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -644,8 +621,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -656,14 +633,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -686,8 +663,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -699,8 +676,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -715,7 +692,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -727,14 +704,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -757,7 +734,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -770,7 +747,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -798,7 +775,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			592 = { #592 #guangzhou
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -827,7 +804,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -840,10 +817,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -853,7 +830,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -869,8 +846,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -881,14 +858,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -911,8 +888,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -924,8 +901,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -940,7 +917,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -952,14 +929,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -982,7 +959,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -995,7 +972,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -1023,7 +1000,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			593 = { #593 #guangdong
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -1052,7 +1029,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -1065,10 +1042,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -1078,7 +1055,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -1094,8 +1071,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -1106,14 +1083,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1136,8 +1113,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -1149,8 +1126,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -1165,7 +1142,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -1177,14 +1154,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1207,7 +1184,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -1220,7 +1197,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -1248,7 +1225,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			594 = { #594 #nanning
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -1277,7 +1254,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -1290,10 +1267,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -1303,7 +1280,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -1319,8 +1296,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -1331,14 +1308,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1361,8 +1338,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -1374,8 +1351,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -1390,7 +1367,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -1402,14 +1379,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1432,7 +1409,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -1445,7 +1422,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -1473,7 +1450,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			595 = { #595 #fujian
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -1502,7 +1479,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -1515,10 +1492,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -1528,7 +1505,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -1544,8 +1521,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -1556,14 +1533,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1586,8 +1563,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -1599,8 +1576,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -1615,7 +1592,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -1627,14 +1604,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1657,7 +1634,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -1670,7 +1647,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -1698,7 +1675,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			596 = { #596 #zhejiang
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -1727,7 +1704,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -1740,10 +1717,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -1753,7 +1730,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -1769,8 +1746,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -1781,14 +1758,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1811,8 +1788,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -1824,8 +1801,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -1840,7 +1817,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -1852,14 +1829,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1882,7 +1859,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -1895,7 +1872,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -1923,7 +1900,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			597 = { #597 #shandong
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -1952,7 +1929,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -1965,10 +1942,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -1978,7 +1955,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -1994,8 +1971,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -2006,14 +1983,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2036,8 +2013,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -2049,8 +2026,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -2065,7 +2042,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -2077,14 +2054,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2107,7 +2084,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -2120,7 +2097,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -2147,7 +2124,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			598 = { #598 #jiangsu
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -2176,7 +2153,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -2189,10 +2166,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -2202,7 +2179,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -2218,8 +2195,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -2230,14 +2207,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2260,8 +2237,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -2273,8 +2250,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -2289,7 +2266,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -2301,14 +2278,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2331,7 +2308,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -2344,7 +2321,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -2372,7 +2349,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			599 = { #599 #guangxi
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -2401,7 +2378,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -2414,10 +2391,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -2427,7 +2404,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -2443,8 +2420,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -2455,14 +2432,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2485,8 +2462,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -2498,8 +2475,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -2514,7 +2491,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -2526,14 +2503,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2556,7 +2533,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -2569,7 +2546,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -2597,7 +2574,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			600 = { #600 #jiangxi
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -2626,7 +2603,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -2639,10 +2616,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -2652,7 +2629,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -2668,8 +2645,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -2680,14 +2657,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2710,8 +2687,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -2723,8 +2700,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -2739,7 +2716,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -2751,14 +2728,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2781,7 +2758,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -2794,7 +2771,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -2813,7 +2790,7 @@ CHI_industrial_evacuations = {
 					industrial_complex > 0
 				}
 			}
-		}
+		}	
 		highlight_states = {
 			state = 602
 		}
@@ -2821,7 +2798,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			602 = { #602 #hunan
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -2850,7 +2827,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -2863,10 +2840,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -2876,7 +2853,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -2892,8 +2869,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -2904,14 +2881,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2934,8 +2911,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -2947,8 +2924,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -2963,7 +2940,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -2975,14 +2952,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3005,7 +2982,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -3018,7 +2995,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -3043,7 +3020,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			606 = { #606 #anhui
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 		highlight_states = {
 			state = 606
@@ -3075,7 +3052,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -3088,10 +3065,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -3101,7 +3078,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -3117,8 +3094,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -3129,14 +3106,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3159,8 +3136,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -3172,8 +3149,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -3188,7 +3165,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -3200,14 +3177,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3230,7 +3207,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -3243,7 +3220,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -3270,7 +3247,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			607 = { #607 #henan
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -3299,7 +3276,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -3312,10 +3289,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -3325,7 +3302,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -3341,8 +3318,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -3353,14 +3330,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3383,8 +3360,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -3396,8 +3373,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -3412,7 +3389,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -3424,14 +3401,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3454,7 +3431,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -3467,7 +3444,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -3495,7 +3472,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			608 = { #608 #beijing
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -3524,7 +3501,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -3537,10 +3514,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -3550,7 +3527,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -3566,8 +3543,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -3578,14 +3555,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3608,8 +3585,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -3621,8 +3598,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -3637,7 +3614,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -3649,14 +3626,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3679,7 +3656,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -3692,7 +3669,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -3719,7 +3696,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			613 = { #613 #shanghai
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -3748,7 +3725,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -3761,10 +3738,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -3774,7 +3751,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -3790,8 +3767,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -3802,14 +3779,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3832,8 +3809,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -3845,8 +3822,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -3861,7 +3838,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -3873,14 +3850,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3903,7 +3880,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -3916,7 +3893,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -3943,7 +3920,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			614 = { #614 #hebei
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -3972,7 +3949,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -3985,10 +3962,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -3998,7 +3975,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -4014,8 +3991,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -4026,14 +4003,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4056,8 +4033,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -4069,8 +4046,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -4085,7 +4062,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -4097,14 +4074,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4127,7 +4104,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -4140,7 +4117,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -4167,7 +4144,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			616 = { #616 #ningxia
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -4196,7 +4173,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -4209,10 +4186,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -4222,7 +4199,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -4238,8 +4215,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -4250,14 +4227,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4280,8 +4257,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -4293,8 +4270,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -4309,7 +4286,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -4321,14 +4298,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4351,7 +4328,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -4364,7 +4341,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -4391,7 +4368,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			620 = { #620 #hubei
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -4420,7 +4397,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -4433,10 +4410,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -4446,7 +4423,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -4462,8 +4439,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -4474,14 +4451,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4504,8 +4481,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -4517,8 +4494,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -4533,7 +4510,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -4545,14 +4522,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4575,7 +4552,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -4588,7 +4565,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -4615,7 +4592,7 @@ CHI_industrial_evacuations = {
 			has_completed_focus = CHI_industrial_evacuations
 			743 = { #743 #qingdao
 				is_controlled_by = ROOT
-			}
+			}			
 		}
 
 		fire_only_once = yes
@@ -4644,7 +4621,7 @@ CHI_industrial_evacuations = {
 						var = af_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					set_variable = {
 						var = ic_level
 						value = industrial_complex_level
@@ -4657,10 +4634,10 @@ CHI_industrial_evacuations = {
 						var = ic_to_move
 						value = global.CHI_industrial_evacuations_amount_factor
 					}
-
+	
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_AF
 					custom_effect_tooltip = CHI_industrial_evacuations_remove_IC
-					hidden_effect = {
+					hidden_effect = {				
 						remove_building = {
 							type = arms_factory
 							level = af_level
@@ -4670,7 +4647,7 @@ CHI_industrial_evacuations = {
 							level = ic_level
 						}
 					}
-
+	
 					#Move AF
 					CONTROLLER = {
 						random_owned_controlled_state = {
@@ -4686,8 +4663,8 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
-							custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+							custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 							hidden_effect = {
 								add_extra_state_shared_building_slots = af_to_move
 								add_building_construction = {
@@ -4698,14 +4675,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_AF }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4728,8 +4705,8 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
-								custom_effect_tooltip = CHI_industrial_evacuations_add_AF
+	
+								custom_effect_tooltip = CHI_industrial_evacuations_add_AF						
 								hidden_effect = {
 									add_extra_state_shared_building_slots = af_to_move
 									add_building_construction = {
@@ -4741,8 +4718,8 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_AF
-
-
+	
+	
 						#Move IC
 						random_owned_controlled_state = {
 							prioritize = { 605 603 601 }
@@ -4757,7 +4734,7 @@ CHI_industrial_evacuations = {
 									include_locked = yes
 								}
 							}
-
+							
 							custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 							hidden_effect = {
 								add_extra_state_shared_building_slots = ic_to_move
@@ -4769,14 +4746,14 @@ CHI_industrial_evacuations = {
 								CONTROLLER = { set_country_flag = CHI_industrial_evacuations_moved_IC }
 							}
 						}
-
+	
 						#If no states are really safe or all safe are filled
 						#Move to random controlled state
 						if = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4799,7 +4776,7 @@ CHI_industrial_evacuations = {
 										include_locked = yes
 									}
 								}
-
+	
 								custom_effect_tooltip = CHI_industrial_evacuations_add_IC
 								hidden_effect = {
 									add_extra_state_shared_building_slots = ic_to_move
@@ -4812,7 +4789,7 @@ CHI_industrial_evacuations = {
 							}
 						}
 						clr_country_flag = CHI_industrial_evacuations_moved_IC
-					}
+					}			
 				}
 			}
 		}
@@ -4826,7 +4803,7 @@ CHI_industrial_evacuations = {
 #Category allowed for all potential nationalist china
 #Visible for nationalist china if has warlords as subjects
 CHI_integrate_the_warlords = {
-
+	
 	CHI_integrate_the_army = {
 		icon = generic_prepare_civil_war
 		available = {
@@ -4876,7 +4853,7 @@ CHI_integrate_the_warlords = {
 					has_idea = CHI_warlord_integration_5
 				}
 				factor = 0
-				#TODO_WTT_CODE need a trigger for daily increase of PP to see if it's okay to reduce
+				#TODO_WTT_CODE need a trigger for daily increase of PP to see if it's okay to reduce	
 			}
 		}
 
@@ -4922,7 +4899,7 @@ CHI_integrate_the_warlords = {
 					}
 					create_corps_commander = {
 						name = "Long Yun"
-						gfx = GFX_portrait_yun_long_yun
+						gfx = GFX_portrait_yun_long_yun				
 						skill = 3
 						attack_skill = 2
 						defense_skill = 3
@@ -5015,19 +4992,19 @@ CHI_integrate_the_warlords = {
 				}
 			}
 		}
-	}
+	}	
 
 	CHI_integrate_the_administration = {
 		icon = generic_political_discourse
 		available = {
-			FROM = {
-				compare_autonomy_state < autonomy_colony
+			FROM = { 
+				compare_autonomy_state < autonomy_colony 
 			}
 		}
 
 		visible = {
-			FROM = {
-				is_subject_of = ROOT
+			FROM = { 
+				is_subject_of = ROOT 
 				has_country_flag = CHI_integrate_the_army
 				NOT = { has_country_flag = CHI_integrate_the_administration}
 			}
@@ -5129,7 +5106,7 @@ CHI_integrate_the_warlords = {
 		}
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 10
+			factor = 10			
 		}
 	}
 }
@@ -5150,14 +5127,14 @@ CHI_communist_infiltration = {
 		icon = oppression
 		available = {
 
-		}
+		}	
 
 
 		days_remove = 0
 		days_re_enable = 30
 
 		fixed_random_seed = no
-
+	
 		cost = 100
 
 		ai_will_do = {
@@ -5186,25 +5163,22 @@ CHI_communist_infiltration = {
 			modifier = {
 				add = 85
 				NOT = {
-					any_state = {
-						OR = {
-							state = 283
-							state = 597
-							state = 598
-							state = 607
-							state = 608
-							state = 614
-							state = 615
-							state = 621
-							state = 744
-							state = 746
-						}
-						has_state_flag = discovered_infiltration
+					OR = {
+						283 = { has_state_flag = discovered_infiltration }
+						597 = { has_state_flag = discovered_infiltration }
+						598 = { has_state_flag = discovered_infiltration }
+						607 = { has_state_flag = discovered_infiltration }
+						608 = { has_state_flag = discovered_infiltration }
+						614 = { has_state_flag = discovered_infiltration }
+						615 = { has_state_flag = discovered_infiltration }
+						621 = { has_state_flag = discovered_infiltration }
+						744 = { has_state_flag = discovered_infiltration }
+						746 = { has_state_flag = discovered_infiltration }
 					}
 				}
 			}
 		}
-
+	
 		complete_effect = {
 			custom_effect_tooltip = CHI_detect_infiltration_tooltip
 			hidden_effect = {
@@ -5228,7 +5202,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 283
 		}
-
+		
 		visible = {
 			283 = {
 				is_controlled_by = ROOT
@@ -5239,14 +5213,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 
 		ai_will_do = {
 			base = 100
@@ -5258,7 +5232,7 @@ CHI_communist_infiltration = {
 		}
 
 		cost = @REMOVE_INFILTRATION_PP_COST
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5272,7 +5246,7 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
 	}
 
@@ -5290,7 +5264,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 597
 		}
-
+		
 		visible = {
 			597 = {
 				is_controlled_by = ROOT
@@ -5301,14 +5275,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5319,7 +5293,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5333,7 +5307,7 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
 	}
 
@@ -5352,7 +5326,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 598
 		}
-
+		
 		visible = {
 			598 = {
 				is_controlled_by = ROOT
@@ -5363,14 +5337,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 
 		ai_will_do = {
 			base = 100
@@ -5381,7 +5355,7 @@ CHI_communist_infiltration = {
 			}
 		}
 		cost = @REMOVE_INFILTRATION_PP_COST
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5395,7 +5369,7 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
 	}
 
@@ -5410,7 +5384,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-
+		
 		visible = {
 			607 = {
 				is_controlled_by = ROOT
@@ -5424,14 +5398,14 @@ CHI_communist_infiltration = {
 			state = 607
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5442,7 +5416,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5456,7 +5430,7 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
 	}
 
@@ -5474,7 +5448,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 608
 		}
-
+		
 		visible = {
 			608 = {
 				is_controlled_by = ROOT
@@ -5485,14 +5459,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5503,7 +5477,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5517,7 +5491,7 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
 	}
 
@@ -5535,7 +5509,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 614
 		}
-
+		
 		visible = {
 			614 = {
 				is_controlled_by = ROOT
@@ -5546,14 +5520,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5564,7 +5538,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5578,7 +5552,7 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
 	}
 
@@ -5596,7 +5570,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 615
 		}
-
+		
 		visible = {
 			615 = {
 				is_controlled_by = ROOT
@@ -5607,14 +5581,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5625,7 +5599,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5639,7 +5613,7 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
 	}
 
@@ -5657,7 +5631,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 621
 		}
-
+		
 		visible = {
 			621 = {
 				is_controlled_by = ROOT
@@ -5668,14 +5642,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5686,7 +5660,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5700,9 +5674,9 @@ CHI_communist_infiltration = {
 				save_event_target_as = infiltrated_state
 				CHI_infiltration_flag_down_2 = yes
 			}
-			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 }
+			event_target:WTT_communist_china = { country_event = wtt_infiltration.6 } 
 		}
-	}
+	}	
 
 	CHI_communist_infiltration_in_xian = {
 		icon = infiltrate_state
@@ -5718,7 +5692,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 744
 		}
-
+		
 		visible = {
 			744 = {
 				is_controlled_by = ROOT
@@ -5729,14 +5703,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5747,7 +5721,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5779,7 +5753,7 @@ CHI_communist_infiltration = {
 		highlight_states = {
 			state = 746
 		}
-
+		
 		visible = {
 			746 = {
 				is_controlled_by = ROOT
@@ -5790,14 +5764,14 @@ CHI_communist_infiltration = {
 			}
 		}
 
-
+		
 		modifier = {
 			command_power_gain = -0.1
 		}
-
+		
 		days_remove = 30
 		days_re_enable = 0
-
+		
 		cost = @REMOVE_INFILTRATION_PP_COST
 
 		ai_will_do = {
@@ -5808,7 +5782,7 @@ CHI_communist_infiltration = {
 				always = yes
 			}
 		}
-
+		
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -5828,11 +5802,11 @@ CHI_communist_infiltration = {
 }
 
 
-###  ##  ###  ### ###  ##  #  #      ## #  # ###  ###   ##  ###  ###
-#   #  # #  # #    #  #    ## #     #   #  # #  # #  # #  # #  #  #
-##  #  # ###  ##   #  # ## # ##      #  #  # ###  ###  #  # ###   #
-#   #  # #  # #    #  #  # #  #       # #  # #    #    #  # #  #  #
-#    ##  #  # ### ###  ##  #  #     ##   ##  #    #     ##  #  #  #
+###  ##  ###  ### ###  ##  #  #      ## #  # ###  ###   ##  ###  ### 
+#   #  # #  # #    #  #    ## #     #   #  # #  # #  # #  # #  #  #  
+##  #  # ###  ##   #  # ## # ##      #  #  # ###  ###  #  # ###   #  
+#   #  # #  # #    #  #  # #  #       # #  # #    #    #  # #  #  #  
+#    ##  #  # ### ###  ##  #  #     ##   ##  #    #     ##  #  #  #  
 
 foreign_support = {
 	CHI_flying_tigers = {
@@ -5910,7 +5884,7 @@ foreign_support = {
 					}
 				}
 			}
-			add_war_support = 0.05
+			add_war_support = 0.05	
 		}
 		modifier = {
 			air_volunteer_cap = 100
@@ -5926,12 +5900,12 @@ foreign_support = {
 			}
 		}
 
-		available = { #WTT_TODO_CD: Make this tooltip not look like complete garbage
+		available = {
 			if = {
 				limit = {
 					OR = {
 						has_focus_tree = china_nationalist_focus
-						has_focus_tree = china_communist_focus
+						has_focus_tree = china_communist_focus 
 					}
 				}
 				has_completed_focus = CHI_burma_road
@@ -5942,36 +5916,6 @@ foreign_support = {
 				}
 				has_completed_focus = uk_burma_focus
 			}
-
-			288 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			640 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			325 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			747 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-
 			any_state = {
 				OR = {
 					state = 288
@@ -5980,22 +5924,22 @@ foreign_support = {
 					state = 747
 				}
 				CONTROLLER = {
-					OR = {
-						has_completed_focus = uk_burma_focus
-						has_completed_focus = CHI_burma_road
-						AND = {
-							is_in_faction_with = ROOT
+					NOT = { has_War_with = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = burma_road_expansion_tt
+						OR = {
 							has_completed_focus = uk_burma_focus
 							has_completed_focus = CHI_burma_road
-						}
-						if = {
-							limit = {
-								is_subject = yes
-							}
-							OVERLORD = {
+							AND = {
 								OR = {
-									has_completed_focus = uk_burma_focus
-									has_completed_focus = CHI_burma_road
+									is_in_faction_with = ROOT
+									is_subject_of = ROOT
+								}
+								ROOT = {
+									OR = {
+										has_completed_focus = uk_burma_focus
+										has_completed_focus = CHI_burma_road
+									}
 								}
 							}
 						}
@@ -6007,20 +5951,16 @@ foreign_support = {
 			NOT = { has_global_flag = CHI_burma_3 }
 			OR = {
 				has_focus_tree = china_nationalist_focus
-				has_focus_tree = china_communist_focus
+				has_focus_tree = china_communist_focus 
 				has_focus_tree = british_focus
 			}
 			OR = {
-				AND = {
-					OR = {
-						controls_state = 325
-						325 = {
-							CONTROLLER = {
-								OR = {
-									is_subject_of = ROOT
-									is_in_faction_with = ROOT
-								}
-							}
+				325 = {
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+							is_in_faction_with = ROOT
 						}
 					}
 				}
@@ -6084,11 +6024,11 @@ foreign_support = {
 			}
 			if = {
 				limit = {
-					NOT = { has_global_flag = CHI_burma_2} #
+					NOT = { has_global_flag = CHI_burma_2} # 
 				}
 				set_global_flag = CHI_burma_2
 			}
-
+			
 			random_country = {
 				limit = { check_variable = { CHI_burma_road > 0 } }
 				add_to_variable = { var = CHI_burma_road value = 1 }
@@ -6168,7 +6108,7 @@ foreign_support = {
 			}
 			if = {
 				limit = {
-					NOT = { has_global_flag = CHI_ledo_2} #
+					NOT = { has_global_flag = CHI_ledo_2} # 
 				}
 				set_global_flag = CHI_ledo_2
 			}
@@ -6184,7 +6124,7 @@ foreign_support = {
 	}
 	CHI_expand_the_airlift = {
 		icon = generic_construction
-		available = {
+		available = {	
 			OR = {
 				434 = {
 					CONTROLLER = {
@@ -6205,7 +6145,7 @@ foreign_support = {
 			}
 		}
 		visible = {
-			OR = {
+			OR = { 
 				AND = {
 					has_completed_focus = CHI_the_hump
 					OR = {
@@ -6466,7 +6406,7 @@ political_actions = {
 CHI_xian_incident = {
 	CHI_instigate_xian_incident = {
 		icon = generic_political_discourse
-		available = {
+		available = {			
 			NOT = {
 				has_global_flag = CHI_xian_fired
 			}
@@ -6530,7 +6470,7 @@ CHI_xian_incident = {
 				factor = 2
 			}
 			modifier = {
-				NOT = {
+				NOT = { 	
 					JAP = {
 						has_completed_focus = JAP_greater_east_asian_co_prosperity_sphere
 					}
@@ -6557,7 +6497,7 @@ CHI_xian_incident = {
 }
 
 operations = {
-
+	
 	CHI_overlordship_over_indochina = {
 		icon = generic_operation
 
@@ -6570,7 +6510,7 @@ operations = {
 			controls_state = 670
 			controls_state = 286
 			controls_state = 741
-		}
+		} 
 
 		days_mission_timeout = 360
 
@@ -6579,7 +6519,7 @@ operations = {
 		activation = {
 			has_completed_focus = CHI_overlordship_over_indochina
 		}
-
+		
 		complete_effect = {
 			add_political_power = 50
 			add_war_support = 0.05
@@ -6609,7 +6549,7 @@ prestigious_projects = {
 		activation = {
 			has_completed_focus = CHI_naval_aviation
 		}
-
+		
 		complete_effect = {
 			add_political_power = 100
 			navy_experience = 30
@@ -6617,7 +6557,7 @@ prestigious_projects = {
 		}
 
 		timeout_effect = {
-
+		
 		}
 	}
 }

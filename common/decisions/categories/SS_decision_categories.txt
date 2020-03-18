@@ -1,15 +1,15 @@
-SS_demands = {
+SS_demands = { 
 	allowed = {
-		original_tag = AAA
+		original_tag = GER
 	}
 
 	visible = {
 		has_idea = heinrich_himmler
 	}
 }
-SS_recruitment = {
+SS_recruitment = { 
 	allowed = {
-		original_tag = AAA
+		original_tag = GER
 	}
 
 	available = {
@@ -22,6 +22,6 @@ SS_recruitment = {
 }
 wehrmacht_demands = {
 	allowed = {
-		original_tag = AAA
+		original_tag = GER
 	}
 }
