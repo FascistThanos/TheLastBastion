@@ -1,4 +1,37 @@
 ﻿l_english:
+
+  MEX_fascism:0 "Empire of Mexico"
+  MEX_fascism_DEF:0 "the Empire of Mexico"
+  MEX_democratic:0 "Mexican Republic"
+  MEX_democratic_DEF:0 "the Mexican Republic"
+  MEX_neutrality:0 "Mexico"
+  MEX_neutrality_DEF:0 "Mexico"
+  MEX_communism:0 "Mexican Soviet Republic"
+  MEX_communism_DEF:0 "the Mexican Soviet Republic"
+  MEX_trotskyism:0 "Trotskyist Mexican Union"
+  MEX_trotskyism_DEF:0 "the Trotskyist Mexican Union"
+  #_maoism:0 ""
+  #_maoism_DEF:0 ""
+  MEX_monarchist:0 "Kingdom of Mexico"
+  MEX_monarchist_DEF:0 "the Kingdom of Mexico"
+  MEX_socialism:0 "Mexican Republic"
+  MEX_socialism_DEF:0 "the Mexican Republic"
+  MEX_liberal:0 "Mexican Republic"
+  MEX_liberal_DEF:0 "the Mexican Republic"
+  MEX_fascism_ADJ:0 "Mexican"
+  MEX_democratic_ADJ:0 "Mexican"
+  MEX_neutrality_ADJ:0 "Mexican"
+  MEX_communism_ADJ:0 "Mexican"
+  MEX_trotskyism_ADJ:0 "Mexican"
+  #_maoism_ADJ:0 ""
+  MEX_monarchist_ADJ:0 "Mexican"
+  MEX_socialism_ADJ:0 "Mexican"
+  MEX_liberal_ADJ:0 "Mexican"
+
+  MEX_neutrality_party:0 "PNR"
+  MEX_neutrality_party_long:0 "Partido Nacional Revolucionario"
+
+
   #Events
   mex.1.t:0 "A Proposition From the United States of America"
   mex.1.d:0 "We've recently recieved a diplomatic envoy from the United States of America. They've given us a chance to let their influencers into our country in return for economic aid. The proposition could potentially be dangerous for us with the communist powers in Europe. After much of the world has succumbed to the revoliution, we may be next. We should give capitalism a shot and keep democracy prevalent in America, if not the world."
