@@ -56,6 +56,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Myo Gun"
+	desc = ""
+	picture = "Portrait_Korea_Myo_Gun.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Yi Un"
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"

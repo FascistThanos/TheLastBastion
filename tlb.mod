@@ -8,3 +8,4 @@ tags={
 }
 
 supported_version="1.9.*"
+replace_path = "history/states"
