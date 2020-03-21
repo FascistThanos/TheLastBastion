@@ -94,6 +94,7 @@ prerequisite = {focus = SOV_red_wind}
 relative_position_id = SOV_com_neighbor
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_com_neighbor}
+mutually_exclusive = {focus = SOV_finland_diplomat}
 				completion_reward = {
 			add_political_power = 75
 		}
@@ -109,6 +110,7 @@ relative_position_id = SOV_com_neighbor
 		prerequisite = {
         focus = SOV_com_neighbor
     }
+		mutually_exclusive = {focus = SOV_fin_bad}
 		completion_reward = {
 			add_threat = 1
 			country_event = {
@@ -184,6 +186,412 @@ prerequisite = {focus = SOV_rebuild_georgia}
 		cost = 10
 relative_position_id = SOV_georgia_reeducation
 prerequisite = {focus = SOV_georgia_reeducation}
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_establish_nkvd
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_stalinist_crackdown
+prerequisite = {focus = SOV_stalinist_crackdown }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = SOV_political_prisons
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_establish_nkvd
+prerequisite = {focus = SOV_establish_nkvd }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_show_trials
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 10
+relative_position_id = SOV_political_prisons
+prerequisite = {focus = SOV_political_prisons}
+mutually_exclusive = {focus = SOV_no_trials}
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_no_trials
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 10
+relative_position_id = SOV_political_prisons
+prerequisite = {focus = SOV_political_prisons }
+mutually_exclusive = {focus = sovsh}
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_final_destalin
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 10
+relative_position_id = SOV_show_trials
+prerequisite = {focus = SOV_show_trials focus = SOV_no_trials}
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_trotsky_cult
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_final_destalin
+prerequisite = {focus = SOV_final_destalin }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_expand_comintern
+		icon = GFX_
+		x = 8
+		y = 2
+		cost = 10
+relative_position_id = SOV_ignore_stalin
+prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_influence_mon
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 10
+relative_position_id = SOV_expand_comintern
+prerequisite = {focus = SOV_expand_comintern }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_invite_mon
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_influence_mon
+prerequisite = {focus = SOV_influence_mon }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_invite_baltics
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 10
+relative_position_id = SOV_expand_comintern
+prerequisite = {focus = SOV_expand_comintern }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_send_diplo
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_invite_baltics
+prerequisite = {focus = SOV_invite_baltics }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_secret_deals
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_send_diplo
+prerequisite = {focus = SOV_send_diplo }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_great_comintern
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_secret_deals
+prerequisite = {focus = SOV_secret_deals }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_moscow_to_cape
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 10
+relative_position_id = SOV_great_comintern
+prerequisite = {focus = SOV_great_comintern }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_trotsky_plan
+		icon = GFX_
+		x = 12
+		y = 2
+		relative_position_id = SOV_ignore_stalin
+		cost = 10
+prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found}
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_communism_abroad
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = SOV_trotsky_plan
+		cost = 10
+prerequisite = {focus = SOV_trotsky_plan }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_distribute_leaflets
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = SOV_communism_abroad
+		cost = 10
+prerequisite = {focus = SOV_communism_abroad }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_new_research
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = SOV_distribute_leaflets
+		cost = 10
+prerequisite = {focus = SOV_distribute_leaflets }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_old_ways
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = SOV_distribute_leaflets
+		cost = 10
+prerequisite = {focus = SOV_distribute_leaflets }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_research_foundation
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = SOV_new_research
+		cost = 10
+prerequisite = {focus = SOV_new_research focus = SOV_old_ways }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_nuclear
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = SOV_research_foundation
+		cost = 10
+prerequisite = {focus = SOV_research_foundation }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_communist_collaboration
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = SOV_nuclear
+		cost = 10
+prerequisite = {focus = SOV_nuclear }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_intervene_civil_war
+		icon = GFX_
+		x = 16
+		y = 2
+		relative_position_id = SOV_ignore_stalin
+		cost = 10
+prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_fra_cw
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = SOV_intervene_civil_war
+		cost = 10
+prerequisite = {focus = SOV_intervene_civil_war }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_chi_cw
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = SOV_intervene_civil_war
+		cost = 10
+prerequisite = {focus = SOV_intervene_civil_war }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_invite_fra
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = SOV_fra_cw
+		cost = 10
+prerequisite = {focus = SOV_fra_cw }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_invite_prc
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = SOV_chi_cw
+		cost = 10
+prerequisite = {focus = SOV_chi_cw }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_prepare_marines
+		icon = GFX_
+		x = 2
+		y = 1
+		relative_position_id = SOV_trotsky_cult
+		cost = 10
+prerequisite = {focus = SOV_trotsky_cult focus = SOV_great_comintern }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_strike_canal
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = SOV_prepare_marines
+		cost = 10
+prerequisite = {focus = SOV_prepare_marines }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_invite_benelux
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = SOV_prepare_marines
+		cost = 10
+prerequisite = {focus = SOV_prepare_marines }
+		available_if_capitulated = yes
+				completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SOV_strike_the_bastion
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = SOV_strike_canal
+		cost = 10
+prerequisite = {focus = SOV_strike_canal focus = SOV_invite_benelux }
 		available_if_capitulated = yes
 				completion_reward = {
 			add_political_power = 75
@@ -2438,7 +2846,7 @@ focus = {
 	id = SOV_air_base_expansion
 	icon = GFX_goal_generic_air_production
 
-	x = 41
+	x = 49
 	y = 2
 	cost = 10
 	prerequisite = {
@@ -2715,7 +3123,7 @@ focus = {
 	id = SOV_develop_soviet_ship_building
 	icon = GFX_goal_generic_construct_naval_dockyard
 
-	x = 35
+	x = 43
 	y = 2
 	cost = 10
 	prerequisite = {
