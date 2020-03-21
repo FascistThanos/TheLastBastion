@@ -1,25 +1,26 @@
 state={
-	id=913
-	name="STATE_789"
+	id=790
+	name="STATE_790"
+	resources = {
+		steel = 5
+	}
 	history={
 		owner = BAV
 		victory_points = {
-			9416 10
-		}
-		victory_points = {
-			11404 5
+			11544 25
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
+			arms_factory = 1
 			industrial_complex = 1
 		}
 		add_core_of = GER
 		add_core_of = BAV
 	}
 	provinces={
-		3474 9416 11404 
+		561 571 11529 11544 
 	}
-	state_category = town
-	manpower=2316475
+	state_category = city
+	manpower=2135489
 	buildings_max_level_factor=1.000
 }
