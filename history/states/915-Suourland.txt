@@ -1,0 +1,20 @@
+state = {
+	id = 915
+	name = "STATE_915"
+	manpower = 115870
+
+	state_category = rural
+
+	history = {
+		owner = DEN
+		victory_points = { 15343 3 }
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = DEN
+		add_core_of = ICE
+	}
+	provinces = {
+		15362 15343 15390 15344 15409 15376 15444 15391 15400 15434 15461
+	}
+}

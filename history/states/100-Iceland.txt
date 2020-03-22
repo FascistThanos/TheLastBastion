@@ -1,26 +1,20 @@
-state=
-{
-	id=100
-	name="STATE_100"
+state = {
+	id = 100
+	name = "STATE_100"
 	manpower = 115870
-	
+
 	state_category = rural
-	
-	
-	history=
-	{
+
+	history = {
 		owner = DEN
-		victory_points = { 12674 1 }
+		victory_points = { 15426 5 }
 		buildings = {
 			infrastructure = 2
-			12674 ={
-				naval_base = 1
-			}
 		}
 		add_core_of = DEN
 		add_core_of = ICE
 	}
-	provinces=
-	{
-4861 12674 12689 	}
+	provinces = {
+		15433 15414 15393 15426 15454 15519 15489 15510 15557 15631 15613
+	}
 }
