@@ -118,19 +118,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 15
+	communism = 89
 	neutrality = 5
-	communism = 60
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.2.25"
-		election_frequency = 48
-		elections_allowed = no
-	}
+	socialism = 3
+	liberalism = 3
 }
 
 create_country_leader = {
@@ -139,6 +130,17 @@ create_country_leader = {
 	picture = "GFX_Portrait_estonia_konstantin_pats"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Karl Sare"
+	desc = "POLITICS_SARE_DESC"
+	picture = "Portrait_Estonia_Karl_Sare.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
 	traits = {
 		#
 	}
