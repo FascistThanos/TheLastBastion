@@ -1,0 +1,18 @@
+state = {
+	id = 924
+	name = "STATE_924"
+
+	history = {
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+	}
+
+	provinces = {
+		15676 7884 15675 15598 15560 15512 15446 10694 13090 1135
+	}
+	manpower = 2064
+	state_category = rural
+}

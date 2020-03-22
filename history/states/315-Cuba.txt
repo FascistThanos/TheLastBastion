@@ -6,7 +6,7 @@ state= {
 		steel=3 # was: 4
 		chromium=90 # was: 160
 	}
-	
+
 	state_category = town
 
 	history= {
@@ -25,7 +25,7 @@ state= {
 		}
 		add_core_of = CUB
 		victory_points = {
-			7622 5 
+			7622 5
 		}
 		victory_points = {
 			7590 1
@@ -33,6 +33,6 @@ state= {
 
 	}
 	provinces={
-		1550 4476 4600 7451 7546 7590 7622 10374 10498 12347
+		1550 4476 4600 7451 7546 7590 7622 10374 10498 12347 13879 13881 13884 13888 13892 13895 13894 13896 13898 13897
 	}
 }

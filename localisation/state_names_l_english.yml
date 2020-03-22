@@ -461,7 +461,7 @@
  STATE_460:0 "Constantine"
  STATE_461:0 "Anfa-Settat"
  STATE_462:0 "Merrakec-Asfi"
- STATE_463:0 "Alaska"
+ STATE_463:0 "Alaskan Wasteland"
  STATE_464:0 "Nova Scotia"
  STATE_465:0 "New Brunswick"
  STATE_466:0 "Quebec"
@@ -919,6 +919,9 @@
  STATE_919:0 "Rhode Island"
  STATE_920:0 "Bas-Saint-Laurent"
  STATE_921:0 "Montérégie"
+ STATE_922:0 "Inside Passage"
+ STATE_923:0 "Anchorage"
+ STATE_924:0 "Aleutian Islands"
 
  STRATEGIC_REGION_213:0 "Central France"
  STRATEGIC_REGION_214:0 "Pyrenees"
