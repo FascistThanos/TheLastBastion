@@ -922,6 +922,9 @@
  STATE_922:0 "Inside Passage"
  STATE_923:0 "Anchorage"
  STATE_924:0 "Aleutian Islands"
+ STATE_925:0 "Jefferson"
+ STATE_926:0 "Bay Area"
+ STATE_927:0 "Mojave"
 
  STRATEGIC_REGION_213:0 "Central France"
  STRATEGIC_REGION_214:0 "Pyrenees"
