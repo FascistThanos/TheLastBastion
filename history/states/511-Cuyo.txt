@@ -1,10 +1,7 @@
 
 state={
 	id=511
-	name="STATE_511" # Mendoza
-	manpower = 1090274
-	
-	state_category = rural
+	name="STATE_511"
 
 	history={
 		owner = ARG
@@ -12,6 +9,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
+
 		}
 		add_core_of = ARG
 		victory_points = {
@@ -21,6 +19,9 @@ state={
 	}
 
 	provinces={
-		2158 2179 2215 5152 5184 5219 7550 8215 10964 10992 11021 11022 12942 12970 
+		2158 2179 2215 5152 5184 5219 7550 8215 10964 10992 11021 11022 12942 12970 13378 13379 13380 13381 13388 13389 13401 13406 13407 13410 13411 13420 13425 13438 13439 13442 13443 13449 13450 13459 13461 13463 13465 13467 13472 
 	}
+	manpower=1090274
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -928,6 +928,13 @@
  STATE_928:0 "Nord-du-Québec"
  STATE_929:0 "Côte-Nord"
  STATE_930:0 "Saguenay–Lac-Saint-Jean"
+ STATE_931:0 "Amazon River"
+ STATE_932:0 "Araguaia River"
+ STATE_933:0 "Purus River"
+ STATE_934:0 "Japura River"
+ STATE_935:0 "Jurua River"
+ STATE_936:0 "Maranon River"
+ STATE_937:0 "Putumayo River"
 
  STRATEGIC_REGION_213:0 "Central France"
  STRATEGIC_REGION_214:0 "Pyrenees"

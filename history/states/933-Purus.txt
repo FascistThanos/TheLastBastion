@@ -1,0 +1,18 @@
+state={
+	id=933
+	name="STATE_933"
+	provinces={
+		13609 13610 13618 13633 13636 13646 13653
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BRA
+	}
+
+	manpower = 7470
+	state_category=pastoral
+}

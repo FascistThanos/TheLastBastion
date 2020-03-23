@@ -1,23 +1,26 @@
-state = {
-	id = 541
-	name = "STATE_541"
-	manpower = 314800
 
-	state_category = wasteland
+state={
+	id=541
+	name="STATE_541"
 
-	history = {
+	history={
 		owner = SAF
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			4879 1
+			4879 1 
 		}
 		add_core_of = SAF
 		add_core_of = NMB
+
 	}
 
-	provinces = {
-		2207 2229 4879 5154 5189 7605 10963
+	provinces={
+		2207 2229 4879 5154 5189 7605 10963 13324 13325 13339 13351 13357 13369 13371 13382 
 	}
+	manpower=314800
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }
