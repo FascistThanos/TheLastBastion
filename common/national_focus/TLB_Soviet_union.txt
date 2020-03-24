@@ -49,9 +49,16 @@ continuous_focus_position = { x = 50 y = 1200 }
 		x = 24
 		y = 0
 		cost = 10
+		available ={
+has_global_flag = stalin_not_found1
+has_global_flag = stalin_not_found2
+has_global_flag = stalin_not_found3
+
+		}
 		available_if_capitulated = yes
 				completion_reward = {
 			add_political_power = 75
+			add_stability = 0.05
 		}
 	}
 
@@ -2458,7 +2465,7 @@ prerequisite = {focus = SOV_stalin_back}
 
 	focus = {
 		id = SOV_search_party
-		icon =
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 1
 		cost = 10
@@ -2466,28 +2473,15 @@ prerequisite = {focus = SOV_stalin_back}
 		relative_position_id = SOV_target_stalin
 prerequisite = {focus = SOV_target_stalin}
 		completion_reward = {
-			add_political_power = 75
-			set_global_flag = stalinignored
+			add_manpower = -500
 		}
 	}
 
-	focus = {
-		id = SOV_search_party
-		icon =
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		relative_position_id = SOV_target_stalin
-prerequisite = {focus = SOV_target_stalin}
-		completion_reward = {
-#custom tooltips
-		}
-	}
+
 
 	focus = {
 		id = SOV_search_europe
-		icon = GFX_
+		icon = GFX_Generic_Intelligence_Gathering
 		x = -2
 		y = 1
 		relative_position_id = SOV_search_party
@@ -2501,13 +2495,24 @@ has_global_flag = stalin_found
 }
 
 		completion_reward = {
-#custom tooltips
+custom_effect_tooltip = SOV_search_europe_tt
+hidden_effect = {
+random_list = {
+50 = {
+country_event = {id = tlbsoviet.1 days = 5}
+}
+50 = {
+country_event = {id = tlbsoviet.4 days = 5}
+}
+}
+
+}
 		}
 	}
 
 	focus = {
 		id = SOV_search_asia
-		icon = GFX_
+		icon = GFX_Generic_Intelligence_Gathering
 		x = 2
 		y = 1
 	relative_position_id = SOV_search_party
@@ -2520,13 +2525,24 @@ has_global_flag = stalin_found
 }
 }
 		completion_reward = {
-#custom tooltips
+custom_effect_tooltip = SOV_search_asia_tt
+hidden_effect = {
+random_list = {
+50 = {
+country_event = {id = tlbsoviet.2 days = 5}
+}
+50 = {
+country_event = {id = tlbsoviet.4 days = 5}
+}
+}
+
+}
 		}
 	}
 
 	focus = {
 		id = SOV_search_africa
-		icon = GFX_
+		icon = GFX_Generic_Intelligence_Gathering
 		x = 0
 		y = 1
 		cost = 10
@@ -2539,13 +2555,24 @@ has_global_flag = stalin_found
 }
 }
 		completion_reward = {
-#custom tooltips
+custom_effect_tooltip = SOV_search_africa_tt
+hidden_effect = {
+random_list = {
+50 = {
+country_event = {id = tlbsoviet.3 days = 5}
+}
+50 = {
+country_event = {id = tlbsoviet.4 days = 5}
+}
+}
+
+}
 		}
 	}
 
 	focus = {
 		id = SOV_stalin_back
-		icon = GFX_
+		icon = GFX_focus_fra_loyalty_stalin
 		x = 0
 		y = 1
 		cost = 10

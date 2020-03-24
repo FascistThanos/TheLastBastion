@@ -29,7 +29,7 @@ set_global_flag = stalin_not_found2
   }
 }
 
-#Stalin  Not Found
+#Stalin  Not Found in Africa
 country_event = {
   id = tlbsoviet.3
   title = tlbsoviet.3.t
