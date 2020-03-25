@@ -1762,6 +1762,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		available = {
+			has_government = fascism
+		}
+
 		relative_position_id = ITA_thefundingbill
 
 		completion_reward = {
@@ -2080,7 +2084,7 @@ focus_tree = {
 		completion_reward = {
 			GRE = {
 				country_event = TLB_Italy.10
-			}			
+			}
 		}
 	}
 
@@ -2234,7 +2238,7 @@ focus_tree = {
    				type = annex_everything
     			target = SWI
 			}
-		}		
+		}
 	}
 
 	focus = {
@@ -2288,7 +2292,7 @@ focus_tree = {
 			}
 
 			remove_ideas = ITA_mussolini_detained
-		} 
+		}
 	}
 
 	focus = {
@@ -2947,7 +2951,7 @@ focus_tree = {
 			create_wargoal = {
    				type = annex_everything
     			target = SAU
-			}			
+			}
 		}
 	}
 
