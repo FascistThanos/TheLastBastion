@@ -28,7 +28,7 @@ focus_tree = {
 		icon = GFX_Generic_Blue_Democracy
 		prerequisite = { focus = GEN_our_place_in_the_world }
 		mutually_exclusive = { focus = GEN_trust_in_the_state focus = GEN_liberate_the_masses }
-		x = -4
+		x = -6
 		y = 1
 		relative_position_id = GEN_our_place_in_the_world
 		cost = 10
@@ -45,7 +45,7 @@ focus_tree = {
 		id = GEN_elections
 		icon = GFX_Generic_Elections
 		prerequisite = { focus = GEN_liberty_for_all }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = GEN_liberty_for_all
 		cost = 10
@@ -228,6 +228,7 @@ focus_tree = {
 		id = GEN_consolidate_the_government
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GEN_trust_in_the_state }
+		mutually_exclusive = { focus = GEN_new_nobility }
 		x = -1
 		y = 1
 		relative_position_id = GEN_trust_in_the_state
@@ -347,6 +348,7 @@ focus_tree = {
 		id = GEN_new_nobility
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = GEN_trust_in_the_state }
+		mutually_exclusive = { focus = GEN_consolidate_the_government }
 		x = 2
 		y = 1
 		relative_position_id = GEN_trust_in_the_state
@@ -379,7 +381,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_divine_right_to_rule
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_Generic_Divine_Right
 		prerequisite = { focus = GEN_stratify_the_social_classes }
 		x = 0
 		y = 1
@@ -591,6 +593,620 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GEN_peasant_markets
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_economic_growth
+		icon = GFX_Generic_Industry
+		x = 19
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_market_projections
+		icon = GFX_GER_pay_the_debt
+		prerequisite = { focus = GEN_economic_growth }
+		x = 0
+		y = 1
+		relative_position_id = GEN_economic_growth
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_domestic_industry_1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GEN_market_projections }
+		x = -2
+		y = 1
+		relative_position_id = GEN_market_projections
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_domestic_industry_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GEN_domestic_industry_1 }
+		x = 0
+		y = 1
+		relative_position_id = GEN_domestic_industry_1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_new_universities
+		icon = GFX_Focus_Examine_Foreign_Science
+		prerequisite = { focus = GEN_domestic_industry_2 }
+		x = 1
+		y = 1
+		relative_position_id = GEN_domestic_industry_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_government_sponsored_laboratories
+		icon = GFX_focus_research
+		prerequisite = { focus = GEN_new_universities }
+		x = 0
+		y = 1
+		relative_position_id = GEN_new_universities
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_civillian_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GEN_domestic_industry_2 }
+		x = -1
+		y = 1
+		relative_position_id = GEN_domestic_industry_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_domestic_industry_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GEN_civillian_infrastructure }
+		x = 0
+		y = 1
+		relative_position_id = GEN_civillian_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_wartime_industry_1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GEN_market_projections }
+		x = 2
+		y = 1
+		relative_position_id = GEN_market_projections
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_wartime_industry_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GEN_wartime_industry_1 }
+		x = 0
+		y = 1
+		relative_position_id = GEN_wartime_industry_1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_mobilization
+		icon = GFX_Generic_Coalition_Army
+		prerequisite = { focus = GEN_wartime_industry_2 }
+		x = -1
+		y = 1
+		relative_position_id = GEN_wartime_industry_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_military_infrastructure
+		icon = GFX_Generic_Railroads
+		prerequisite = { focus = GEN_wartime_industry_2 }
+		x = 1
+		y = 1
+		relative_position_id = GEN_wartime_industry_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_wartime_industry_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GEN_military_infrastructure }
+		x = 0
+		y = 2
+		relative_position_id = GEN_military_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_nuclear_test_sites
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = GEN_military_infrastructure }
+		x = -1
+		y = 1
+		relative_position_id = GEN_military_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_technologic_innovation
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = GEN_military_infrastructure }
+		x = 1
+		y = 1
+		relative_position_id = GEN_military_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_army_innovations
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 33
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_centralized_staff_planning
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = GEN_army_innovations }
+		x = -2
+		y = 1
+		relative_position_id = GEN_army_innovations
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_land_doctrine_1
+		icon = GFX_Generic_Army_Focus_Red02
+		prerequisite = { focus = GEN_centralized_staff_planning }
+		x = 0
+		y = 1
+		relative_position_id = GEN_centralized_staff_planning
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_land_doctrine_2
+		icon = GFX_Generic_Army_Focus_Red02
+		prerequisite = { focus = GEN_land_doctrine_1 }
+		x = 0
+		y = 1
+		relative_position_id = GEN_land_doctrine_1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_small_arms
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = GEN_army_innovations }
+		x = 0
+		y = 1
+		relative_position_id = GEN_army_innovations
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_artillery_effort
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = GEN_small_arms }
+		x = 0
+		y = 1
+		relative_position_id = GEN_small_arms
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_special_forces_program
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = GEN_land_doctrine_2 }
+		prerequisite = { focus = GEN_artillery_effort }
+		x = 0
+		y = 2
+		relative_position_id = GEN_artillery_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_motorization_advances
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = GEN_army_innovations }
+		x = 2
+		y = 1
+		relative_position_id = GEN_army_innovations
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GEN_motorization_advances }
+		prerequisite = { focus = GEN_artillery_effort }
+		x = 0
+		y = 2
+		relative_position_id = GEN_motorization_advances
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_mechanized_transport
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = GEN_motorization_advances }
+		x = 1
+		y = 1
+		relative_position_id = GEN_motorization_advances
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_technologic_innovation
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = GEN_military_infrastructure }
+		x = 1
+		y = 1
+		relative_position_id = GEN_military_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_expand_the_airforce
+		icon = GFX_goal_generic_build_airforce
+		x = 24
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_fighter_squadrons
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = GEN_expand_the_airforce }
+		mutually_exclusive = { focus = GEN_bombing_runs }
+		x = 1
+		y = 1
+		relative_position_id = GEN_expand_the_airforce
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_bombing_runs
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = GEN_expand_the_airforce }
+		mutually_exclusive = { focus = GEN_fighter_squadrons }
+		x = -1
+		y = 1
+		relative_position_id = GEN_expand_the_airforce
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_naval_strike
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = GEN_bombing_runs }
+		x = 0
+		y = 1
+		relative_position_id = GEN_bombing_runs
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_CAS_program
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GEN_fighter_squadrons }
+		x = 0
+		y = 1
+		relative_position_id = GEN_fighter_squadrons
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_planning_for_the_air_war
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = GEN_CAS_program focus = GEN_naval_strike }
+		x = -1
+		y = 1
+		relative_position_id = GEN_CAS_program
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_rocketry
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GEN_planning_for_the_air_war }
+		prerequisite = { focus = GEN_technologic_innovation }
+		x = 0
+		y = 3
+		relative_position_id = GEN_planning_for_the_air_war
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_air_defense
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = GEN_expand_the_airforce }
+		x = 4
+		y = 1
+		relative_position_id = GEN_expand_the_airforce
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_interception
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = GEN_air_defense }
+		prerequisite = { focus = GEN_fighter_squadrons }
+		mutually_exclusive = { focus = GEN_anti-air_construction }
+		x = -1
+		y = 1
+		relative_position_id = GEN_air_defense
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_anti-air_construction
+		icon = GFX_Generic_Air_Defense
+		prerequisite = { focus = GEN_air_defense }
+		mutually_exclusive = { focus = GEN_interception }
+		x = 1
+		y = 1
+		relative_position_id = GEN_air_defense
 		cost = 10
 
 		available_if_capitulated = yes
