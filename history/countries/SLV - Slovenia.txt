@@ -39,7 +39,7 @@ create_country_leader = {
 	desc = "POLITICS_PETERLIN_DESC"
 	picture = "Portrait_Slovenia_Anton_Korosec.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_ideology 
 	traits = {
 		#
 	}
