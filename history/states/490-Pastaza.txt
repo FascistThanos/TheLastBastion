@@ -4,19 +4,19 @@ state={
 	name="STATE_490"
 
 	history={
-		owner = PRU
+		owner = ECU
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
 
 		}
-		add_core_of = PRU
+		add_core_of = ECU
 
 	}
 
 	provinces={
-		8149 10942 13652 13665 
+		8149 10942 13652 13665
 	}
 	manpower=70020
 	buildings_max_level_factor=1.000
