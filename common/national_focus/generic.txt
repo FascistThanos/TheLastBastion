@@ -380,7 +380,7 @@ focus_tree = {
 	focus = {
 		id = GEN_divine_right_to_rule
 		icon = GFX
-		prerequisite = { focus = GEN_stratify_the_social_classese }
+		prerequisite = { focus = GEN_stratify_the_social_classes }
 		x = 0
 		y = 1
 		relative_position_id = GEN_stratify_the_social_classes
@@ -418,6 +418,193 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GEN_royal_parades
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_liberate_the_masses
+		icon = GFX
+		prerequisite = { focus = GEN_our_place_in_the_world }
+		x = 5
+		y = 1
+		relative_position_id = GEN_our_place_in_the_world
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_further_the_revolution
+		icon = GFX
+		prerequisite = { focus = GEN_liberate_the_masses }
+		x = -1
+		y = 1
+		relative_position_id = GEN_liberate_the_masses
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_communist_constitution
+		icon = GFX
+		prerequisite = { focus = GEN_liberate_the_masses }
+		x = 1
+		y = 1
+		relative_position_id = GEN_liberate_the_masses
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_join_the_soviets
+		icon = GFX
+		prerequisite = { focus = GEN_further_the_revolution focus = GEN_communist_constitution }
+		x = -1
+		y = 1
+		relative_position_id = GEN_communist_constitution
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_establish_communes
+		icon = GFX
+		prerequisite = { focus = GEN_further_the_revolution }
+		x = 0
+		y = 2
+		relative_position_id = GEN_further_the_revolution
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_wealth_redistribution
+		icon = GFX
+		prerequisite = { focus = GEN_establish_communes }
+		x = 0
+		y = 1
+		relative_position_id = GEN_establish_communes
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_trotskyist_world
+		icon = GFX
+		prerequisite = { focus = GEN_wealth_redistribution }
+		x = 0
+		y = 1
+		relative_position_id = GEN_wealth_redistribution
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_sieze_the_means_of_production
+		icon = GFX
+		prerequisite = { focus = GEN_communist_constitution }
+		x = 0
+		y = 2
+		relative_position_id = GEN_communist_constitution
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_peasant_markets
+		icon = GFX
+		prerequisite = { focus = GEN_sieze_the_means_of_production }
+		x = 0
+		y = 1
+		relative_position_id = GEN_sieze_the_means_of_production
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_form_the_general_assembly
+		icon = GFX
+		prerequisite = { focus = GEN_peasant_markets }
+		x = 0
+		y = 1
+		relative_position_id = GEN_peasant_markets
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_harbor_stalin
+		icon = GFX
+		prerequisite = { focus = GEN_communist_constitution }
+		x = 1
+		y = 1
+		relative_position_id = GEN_communist_constitution
 		cost = 10
 
 		available_if_capitulated = yes
