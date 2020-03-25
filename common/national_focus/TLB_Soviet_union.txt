@@ -45,7 +45,7 @@ continuous_focus_position = { x = 50 y = 1200 }
 
 	focus = {
 		id = SOV_stalin_not_found
-		icon = GFX_
+		icon = GFX_goal_generic_political_pressure
 		x = 24
 		y = 0
 		cost = 10
@@ -81,7 +81,7 @@ has_global_flag = stalin_not_found3
 	}
 	focus = {
 		id = SOV_com_neighbor
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		x = -2
 		y = 1
 		cost = 10
@@ -94,7 +94,7 @@ prerequisite = {focus = SOV_red_wind}
 	}
 	focus = {
 		id = SOV_fin_bad
-		icon = GFX_
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 1
 		y = 1
 		cost = 10
@@ -103,7 +103,7 @@ relative_position_id = SOV_com_neighbor
 prerequisite = {focus = SOV_com_neighbor}
 mutually_exclusive = {focus = SOV_finland_diplomat}
 				completion_reward = {
-			add_political_power = 75
+		add_opinion_modifier = { target = FIN modifier = medium_decrease }
 		}
 	}
 	focus = {
@@ -127,7 +127,7 @@ relative_position_id = SOV_com_neighbor
 	}
 	focus = {
 		id = SOV_nordic
-		icon = GFX_
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 1
 		y = 1
 		cost = 10
@@ -136,6 +136,8 @@ prerequisite = {focus = SOV_finland_diplomat focus = SOV_fin_bad}
 		available_if_capitulated = yes
 				completion_reward = {
 			add_political_power = 75
+			add_opinion_modifier = { target = SWE modifier = medium_decrease }
+			add_opinion_modifier = { target = NOR modifier = medium_decrease }
 		}
 	}
 	focus = {
@@ -2584,7 +2586,21 @@ available = {
 has_global_flag = stalin_found
 }
 		completion_reward = {
-#custom tooltips
+	kill_country_leader = yes
+	create_country_leader = {
+	name = "Joseph Stalin"
+	desc = "POLITICS_JOSEPH_STALIN_DESC"
+	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+
+	}
+}
+set_politics = {
+ruling_party = communism
+elections_allowed = no
+}
 		}
 	}
 ###############
@@ -3623,7 +3639,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-remove_ideas = SOV_broken_army
+add_ideas = rehabilitated_military_focus
 	}
 }
 
