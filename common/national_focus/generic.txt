@@ -343,6 +343,91 @@ focus_tree = {
 		
 	}
 
+	focus = {
+		id = GEN_new_nobility
+		icon = GFX
+		prerequisite = { focus = GEN_trust_in_the_state }
+		x = 2
+		y = 1
+		relative_position_id = GEN_trust_in_the_state
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_stratify_the_social_classes
+		icon = GFX
+		prerequisite = { focus = GEN_new_nobility }
+		x = 0
+		y = 1
+		relative_position_id = GEN_new_nobility
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_divine_right_to_rule
+		icon = GFX
+		prerequisite = { focus = GEN_stratify_the_social_classese }
+		x = 0
+		y = 1
+		relative_position_id = GEN_stratify_the_social_classes
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_royal_parades
+		icon = GFX
+		prerequisite = { focus = GEN_divine_right_to_rule }
+		x = 0
+		y = 1
+		relative_position_id = GEN_divine_right_to_rule
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_birth_of_an_empire
+		icon = GFX
+		prerequisite = { focus = GEN_royal_parades }
+		x = 0
+		y = 1
+		relative_position_id = GEN_royal_parades
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
 	
 
 }
