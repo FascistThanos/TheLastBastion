@@ -10,7 +10,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_our_place_in_the_world
-		icon = GFX
+		icon = GFX_Generic_Global_Hegemony
 		x = 8
 		y = 0
 		cost = 10
@@ -25,9 +25,9 @@ focus_tree = {
 
 	focus = {
 		id = GEN_liberty_for_all
-		icon = GFX
+		icon = GFX_Generic_Blue_Democracy
 		prerequisite = { focus = GEN_our_place_in_the_world }
-		mutually_exclusive = { focus = GEN_trust_in_the_state }
+		mutually_exclusive = { focus = GEN_trust_in_the_state focus = GEN_liberate_the_masses }
 		x = -4
 		y = 1
 		relative_position_id = GEN_our_place_in_the_world
@@ -43,7 +43,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_elections
-		icon = GFX
+		icon = GFX_Generic_Elections
 		prerequisite = { focus = GEN_liberty_for_all }
 		x = -2
 		y = 1
@@ -60,7 +60,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_traditional_values
-		icon = GFX
+		icon = GFX_Generic_Working_Class_Family
 		prerequisite = { focus = GEN_elections }
 		mutually_exclusive = { focus = GEN_neo-liberalism focus = GEN_people's_socialism }
 		x = -2
@@ -78,7 +78,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_back_big_business
-		icon = GFX
+		icon = GFX_Generic_Industrialization
 		prerequisite = { focus = GEN_traditional_values }
 		x = 0
 		y = 1
@@ -94,7 +94,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_neo-liberalism
-		icon = GFX
+		icon = GFX_Generic_Legislation
 		prerequisite = { focus = GEN_elections }
 		mutually_exclusive = { focus = GEN_traditional_values focus = GEN_people's_socialism }
 		x = 0
@@ -111,7 +111,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_further_regulatory_measures
-		icon = GFX
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = GEN_neo-liberalism }
 		x = 0
 		y = 1
@@ -127,7 +127,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_people's_socialism
-		icon = GFX
+		icon = GFX_Generic_Social_Democracy
 		prerequisite = { focus = GEN_elections }
 		mutually_exclusive = { focus = GEN_traditional_values  focus = GEN_neo-liberalism }
 		x = 2
@@ -144,7 +144,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_welfare_state
-		icon = GFX
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = GEN_people's_socialism }
 		x = 0
 		y = 1
@@ -160,7 +160,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_freedom_of_the_press
-		icon = GFX
+		icon = GFX_GER_french_deal
 		prerequisite = { focus = GEN_back_big_business focus = GEN_further_regulatory_measures focus = GEN_welfare_state }
 		x = -3
 		y = 1
@@ -176,7 +176,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_sufferage
-		icon = GFX
+		icon = GFX_Generic_Democracy
 		prerequisite = { focus = GEN_back_big_business focus = GEN_further_regulatory_measures focus = GEN_welfare_state }
 		x = -1
 		y = 1
@@ -192,7 +192,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_democratic_beacon
-		icon = GFX
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GEN_freedom_of_the_press }
 		prerequisite = { focus = GEN_sufferage }
 		x = -1
@@ -209,9 +209,9 @@ focus_tree = {
 
 	focus = {
 		id = GEN_trust_in_the_state
-		icon = GFX
+		icon = GFX_Generic_Government_Control
 		prerequisite = { focus = GEN_our_place_in_the_world }
-		mutually_exclusive = { focus = GEN_liberty_for_all }
+		mutually_exclusive = { focus = GEN_liberty_for_all focus = GEN_liberate_the_masses }
 		x = 0
 		y = 1
 		relative_position_id = GEN_our_place_in_the_world
@@ -226,7 +226,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_consolidate_the_government
-		icon = GFX
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GEN_trust_in_the_state }
 		x = -1
 		y = 1
@@ -242,7 +242,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_ultranationalism
-		icon = GFX
+		icon = GFX_Generic_Ultranationalist_Government
 		prerequisite = { focus = GEN_consolidate_the_government }
 		mutually_exclusive = { focus = GEN_authoritarian_crackdown }
 		x = -1
@@ -259,7 +259,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_enemies_of_the_state
-		icon = GFX
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = GEN_ultranationalism }
 		x = 0
 		y = 1
@@ -276,7 +276,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_authoritarian_crackdown
-		icon = GFXGFX
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = GEN_consolidate_the_government }
 		mutually_exclusive = { focus = GEN_ultranationalism }
 		x = 1
@@ -294,7 +294,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_mythos_of_the_strongman
-		icon = GFX
+		icon = GFX_Paternal_Autocrat
 		prerequisite = { focus = GEN_authoritarian_crackdown }
 		x = 0
 		y = 1
@@ -311,7 +311,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_propaganda_campaign
-		icon = GFX
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GEN_mythos_of_the_strongman focus = GEN_enemies_of_the_state }
 		x = -1
 		y = 1
@@ -328,7 +328,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_expand_the_nation_state
-		icon = GFX
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = GEN_propaganda_campaign }
 		x = 0
 		y = 1
@@ -345,7 +345,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_new_nobility
-		icon = GFX
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = GEN_trust_in_the_state }
 		x = 2
 		y = 1
@@ -362,7 +362,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_stratify_the_social_classes
-		icon = GFX
+		icon = GFX_Generic_Hedonism
 		prerequisite = { focus = GEN_new_nobility }
 		x = 0
 		y = 1
@@ -379,7 +379,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_divine_right_to_rule
-		icon = GFX
+		icon = GFX_focus_generic_monarchy_1
 		prerequisite = { focus = GEN_stratify_the_social_classes }
 		x = 0
 		y = 1
@@ -396,7 +396,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_royal_parades
-		icon = GFX
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = GEN_divine_right_to_rule }
 		x = 0
 		y = 1
@@ -413,7 +413,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_birth_of_an_empire
-		icon = GFX
+		icon = GFX_Generic_Castle
 		prerequisite = { focus = GEN_royal_parades }
 		x = 0
 		y = 1
@@ -430,8 +430,9 @@ focus_tree = {
 
 	focus = {
 		id = GEN_liberate_the_masses
-		icon = GFX
+		icon = GFX_focus_YUG_pan_slavic_congress
 		prerequisite = { focus = GEN_our_place_in_the_world }
+		mutually_exclusive = { focus = GEN_liberty_for_all focus = GEN_trust_in_the_state }
 		x = 5
 		y = 1
 		relative_position_id = GEN_our_place_in_the_world
@@ -447,8 +448,9 @@ focus_tree = {
 
 	focus = {
 		id = GEN_further_the_revolution
-		icon = GFX
+		icon = GFX_focus_fra_loyalty_trotzky
 		prerequisite = { focus = GEN_liberate_the_masses }
+		mutually_exclusive = { focus = GEN_communist_constitution }
 		x = -1
 		y = 1
 		relative_position_id = GEN_liberate_the_masses
@@ -464,8 +466,9 @@ focus_tree = {
 
 	focus = {
 		id = GEN_communist_constitution
-		icon = GFX
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = GEN_liberate_the_masses }
+		mutually_exclusive = { focus = GEN_further_the_revolution }
 		x = 1
 		y = 1
 		relative_position_id = GEN_liberate_the_masses
@@ -481,7 +484,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_join_the_soviets
-		icon = GFX
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = GEN_further_the_revolution focus = GEN_communist_constitution }
 		x = -1
 		y = 1
@@ -498,7 +501,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_establish_communes
-		icon = GFX
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = GEN_further_the_revolution }
 		x = 0
 		y = 2
@@ -515,7 +518,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_wealth_redistribution
-		icon = GFX
+		icon = GFX_GER_minimum_wage
 		prerequisite = { focus = GEN_establish_communes }
 		x = 0
 		y = 1
@@ -531,8 +534,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEN_trotskyist_world
-		icon = GFX
+		id = GEN_trotzkyist_world
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = GEN_wealth_redistribution }
 		x = 0
 		y = 1
@@ -549,7 +552,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_sieze_the_means_of_production
-		icon = GFX
+		icon = GFX_Generic_Spy_Communist
 		prerequisite = { focus = GEN_communist_constitution }
 		x = 0
 		y = 2
@@ -566,7 +569,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_peasant_markets
-		icon = GFX
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = GEN_sieze_the_means_of_production }
 		x = 0
 		y = 1
@@ -583,7 +586,7 @@ focus_tree = {
 
 	focus = {
 		id = GEN_form_the_general_assembly
-		icon = GFX
+		icon = GFX_Generic_Meeting
 		prerequisite = { focus = GEN_peasant_markets }
 		x = 0
 		y = 1
@@ -597,24 +600,4 @@ focus_tree = {
 			}
 		
 	}
-
-	focus = {
-		id = GEN_harbor_stalin
-		icon = GFX
-		prerequisite = { focus = GEN_communist_constitution }
-		x = 1
-		y = 1
-		relative_position_id = GEN_communist_constitution
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			}
-		
-	}
-
-	
-
 }
