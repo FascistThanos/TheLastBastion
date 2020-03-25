@@ -9,23 +9,338 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	focus = {
-		id = army_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		id = GEN_our_place_in_the_world
+		icon = GFX
+		x = 8
 		y = 0
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
+			add_political_power = 120
 			}
-		}
+		
+	}
+
+	focus = {
+		id = GEN_liberty_for_all
+		icon = GFX
+		prerequisite = { focus = GEN_our_place_in_the_world }
+		mutually_exclusive = { focus = GEN_trust_in_the_state }
+		x = -4
+		y = 1
+		relative_position_id = GEN_our_place_in_the_world
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	
+	}
+
+	focus = {
+		id = GEN_elections
+		icon = GFX
+		prerequisite = { focus = GEN_liberty_for_all }
+		x = -2
+		y = 1
+		relative_position_id = GEN_liberty_for_all
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+
+	focus = {
+		id = GEN_traditional_values
+		icon = GFX
+		prerequisite = { focus = GEN_elections }
+		mutually_exclusive = { focus = GEN_neo-liberalism focus = GEN_people's_socialism }
+		x = -2
+		y = 1
+		relative_position_id = GEN_elections
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_back_big_business
+		icon = GFX
+		prerequisite = { focus = GEN_traditional_values }
+		x = 0
+		y = 1
+		relative_position_id = GEN_traditional_values
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_neo-liberalism
+		icon = GFX
+		prerequisite = { focus = GEN_elections }
+		mutually_exclusive = { focus = GEN_traditional_values focus = GEN_people's_socialism }
+		x = 0
+		y = 1
+		relative_position_id = GEN_elections
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_further_regulatory_measures
+		icon = GFX
+		prerequisite = { focus = GEN_neo-liberalism }
+		x = 0
+		y = 1
+		relative_position_id = GEN_neo-liberalism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_people's_socialism
+		icon = GFX
+		prerequisite = { focus = GEN_elections }
+		mutually_exclusive = { focus = GEN_traditional_values  focus = GEN_neo-liberalism }
+		x = 2
+		y = 1
+		relative_position_id = GEN_elections
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_welfare_state
+		icon = GFX
+		prerequisite = { focus = GEN_people's_socialism }
+		x = 0
+		y = 1
+		relative_position_id = GEN_people's_socialism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_freedom_of_the_press
+		icon = GFX
+		prerequisite = { focus = GEN_back_big_business focus = GEN_further_regulatory_measures focus = GEN_welfare_state }
+		x = -3
+		y = 1
+		relative_position_id = GEN_welfare_state
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_sufferage
+		icon = GFX
+		prerequisite = { focus = GEN_back_big_business focus = GEN_further_regulatory_measures focus = GEN_welfare_state }
+		x = -1
+		y = 1
+		relative_position_id = GEN_welfare_state
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_democratic_beacon
+		icon = GFX
+		prerequisite = { focus = GEN_freedom_of_the_press }
+		prerequisite = { focus = GEN_sufferage }
+		x = -1
+		y = 1
+		relative_position_id = GEN_sufferage
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_trust_in_the_state
+		icon = GFX
+		prerequisite = { focus = GEN_our_place_in_the_world }
+		mutually_exclusive = { focus = GEN_liberty_for_all }
+		x = 0
+		y = 1
+		relative_position_id = GEN_our_place_in_the_world
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_consolidate_the_government
+		icon = GFX
+		prerequisite = { focus = GEN_trust_in_the_state }
+		x = -1
+		y = 1
+		relative_position_id = GEN_trust_in_the_state
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_ultranationalism
+		icon = GFX
+		prerequisite = { focus = GEN_consolidate_the_government }
+		mutually_exclusive = { focus = GEN_authoritarian_crackdown }
+		x = -1
+		y = 1
+		relative_position_id = GEN_consolidate_the_government
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+	}
+
+	focus = {
+		id = GEN_enemies_of_the_state
+		icon = GFX
+		prerequisite = { focus = GEN_ultranationalism }
+		x = 0
+		y = 1
+		relative_position_id = GEN_ultranationalism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_authoritarian_crackdown
+		icon = GFXGFX
+		prerequisite = { focus = GEN_consolidate_the_government }
+		mutually_exclusive = { focus = GEN_ultranationalism }
+		x = 1
+		y = 1
+		relative_position_id = GEN_consolidate_the_government
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_mythos_of_the_strongman
+		icon = GFX
+		prerequisite = { focus = GEN_authoritarian_crackdown }
+		x = 0
+		y = 1
+		relative_position_id = GEN_authoritarian_crackdown
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_propaganda_campaign
+		icon = GFX
+		prerequisite = { focus = GEN_mythos_of_the_strongman focus = GEN_enemies_of_the_state }
+		x = -1
+		y = 1
+		relative_position_id = GEN_mythos_of_the_strongman
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_expand_the_nation_state
+		icon = GFX
+		prerequisite = { focus = GEN_propaganda_campaign }
+		x = 0
+		y = 1
+		relative_position_id = GEN_propaganda_campaign
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
 	}
 
 	
