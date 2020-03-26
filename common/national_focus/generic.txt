@@ -452,7 +452,7 @@ focus_tree = {
 		id = GEN_further_the_revolution
 		icon = GFX_focus_fra_loyalty_trotzky
 		prerequisite = { focus = GEN_liberate_the_masses }
-		mutually_exclusive = { focus = GEN_communist_constitution }
+		mutually_exclusive = { focus = GEN_totalist_constitution }
 		x = -1
 		y = 1
 		relative_position_id = GEN_liberate_the_masses
@@ -467,7 +467,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEN_communist_constitution
+		id = GEN_totalist_constitution
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = GEN_liberate_the_masses }
 		mutually_exclusive = { focus = GEN_further_the_revolution }
@@ -487,10 +487,10 @@ focus_tree = {
 	focus = {
 		id = GEN_join_the_soviets
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = { focus = GEN_further_the_revolution focus = GEN_communist_constitution }
+		prerequisite = { focus = GEN_further_the_revolution focus = GEN_totalist_constitution }
 		x = -1
 		y = 1
-		relative_position_id = GEN_communist_constitution
+		relative_position_id = GEN_totalist_constitution
 		cost = 10
 
 		available_if_capitulated = yes
@@ -555,10 +555,10 @@ focus_tree = {
 	focus = {
 		id = GEN_sieze_the_means_of_production
 		icon = GFX_Generic_Spy_Communist
-		prerequisite = { focus = GEN_communist_constitution }
+		prerequisite = { focus = GEN_totalist_constitution }
 		x = 0
 		y = 2
-		relative_position_id = GEN_communist_constitution
+		relative_position_id = GEN_totalist_constitution
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1027,23 +1027,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEN_technologic_innovation
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = GEN_military_infrastructure }
-		x = 1
-		y = 1
-		relative_position_id = GEN_military_infrastructure
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			}
-		
-	}
-
-	focus = {
 		id = GEN_expand_the_airforce
 		icon = GFX_goal_generic_build_airforce
 		x = 24
@@ -1207,6 +1190,127 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GEN_air_defense
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_dockyard_construction
+		icon = GFX_Generic_Naval_Industry
+		x = 38
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_carrier_fleet
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = GEN_dockyard_construction }
+		mutually_exclusive = { focus = GEN_battleship_fleet }
+		x = -1
+		y = 1
+		relative_position_id = GEN_dockyard_construction
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_battleship_fleet
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = GEN_dockyard_construction }
+		mutually_exclusive = { focus = GEN_carrier_fleet }
+		x = 1
+		y = 1
+		relative_position_id = GEN_dockyard_construction
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+focus = {
+		id = GEN_new_crusier_designs
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = { focus = GEN_battleship_fleet focus = GEN_carrier_fleet }
+		x = -1
+		y = 1
+		relative_position_id = GEN_battleship_fleet
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_escort_stratgems
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = GEN_battleship_fleet focus = GEN_carrier_fleet }
+		mutually_exclusive = { focus = GEN_underseas_combat }
+		x = 0
+		y = 2
+		relative_position_id = GEN_carrier_fleet
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_underseas_combat
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = GEN_battleship_fleet focus = GEN_carrier_fleet }
+		mutually_exclusive = { focus = GEN_escort_stratagems }
+		x = 0
+		y = 2
+		relative_position_id = GEN_battleship_fleet
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		
+	}
+
+	focus = {
+		id = GEN_naval_tactics_committee
+		icon = GFX_Generic_Navy
+		prerequisite = { focus = GEN_escort_stratgems focus = GEN_underseas_combat }
+		x = -1
+		y = 1
+		relative_position_id = GEN_underseas_combat
 		cost = 10
 
 		available_if_capitulated = yes
