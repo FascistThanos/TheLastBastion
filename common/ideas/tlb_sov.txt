@@ -1,5 +1,32 @@
 ideas = {
 	country = {
+
+
+	SOV_trotsky = {
+		removal_cost = -1
+
+		allowed = {
+		}
+
+		allowed_civil_war = {
+			has_government = communism
+		}
+
+		picture = GFX_idea_trotskyite_plot
+
+		modifier = {
+			stability_factor = 0.1
+			trotskyism_drift = 0.1
+		}
+	}
+
+
+
+
+
+
+
+
 		SOV_stalinthreat = {
 			removal_cost = -1
 

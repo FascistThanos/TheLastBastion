@@ -136,8 +136,8 @@ prerequisite = {focus = SOV_finland_diplomat focus = SOV_fin_bad}
 		available_if_capitulated = yes
 				completion_reward = {
 			add_political_power = 75
-			add_opinion_modifier = { target = SWE modifier = medium_decrease }
-			add_opinion_modifier = { target = NOR modifier = medium_decrease }
+			add_opinion_modifier = { target = SWE modifier = medium_increase }
+			add_opinion_modifier = { target = NOR modifier = medium_increase }
 		}
 	}
 	focus = {
@@ -176,7 +176,7 @@ relative_position_id = SOV_red_wind
 	}
 	focus = {
 		id = SOV_georgia_reeducation
-		icon = GFX_
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		cost = 10
@@ -184,12 +184,12 @@ relative_position_id = SOV_rebuild_georgia
 prerequisite = {focus = SOV_rebuild_georgia}
 		available_if_capitulated = yes
 				completion_reward = {
-			add_political_power = 75
+	231 = {	add_core_of = SOV}
 		}
 	}
 	focus = {
 		id = SOV_total_intergration
-		icon = GFX_
+		icon = GFX_goal_generic_occupy_start_war
 		x = 0
 		y = 1
 		cost = 10
@@ -197,12 +197,12 @@ relative_position_id = SOV_georgia_reeducation
 prerequisite = {focus = SOV_georgia_reeducation}
 		available_if_capitulated = yes
 				completion_reward = {
-			add_political_power = 75
+remove_ideas = {SOV_destroyedgeorgia}
 		}
 	}
 	focus = {
 		id = SOV_establish_nkvd
-		icon = GFX_
+		icon = GFX_Generic_Espionage
 		x = 0
 		y = 1
 		cost = 10
@@ -210,13 +210,13 @@ relative_position_id = SOV_stalinist_crackdown
 prerequisite = {focus = SOV_stalinist_crackdown }
 		available_if_capitulated = yes
 				completion_reward = {
-			add_political_power = 75
+		add_ideas = {nkvd}
 		}
 	}
 
 	focus = {
 		id = SOV_political_prisons
-		icon = GFX_
+		icon = GFX_focus_mex_arrest_general_cedillo
 		x = 0
 		y = 1
 		cost = 10
@@ -229,7 +229,7 @@ prerequisite = {focus = SOV_establish_nkvd }
 	}
 	focus = {
 		id = SOV_show_trials
-		icon = GFX_
+		icon = GFX_Generic_Womens_Suffrage
 		x = -1
 		y = 1
 		cost = 10
@@ -238,12 +238,14 @@ prerequisite = {focus = SOV_political_prisons}
 mutually_exclusive = {focus = SOV_no_trials}
 		available_if_capitulated = yes
 				completion_reward = {
-			add_political_power = 75
+			add_political_power = -100
+			add_stability = 0.1
+			add_war_support = 0.5
 		}
 	}
 	focus = {
 		id = SOV_no_trials
-		icon = GFX_
+		icon =  GFX_Generic_Socialist_Soldier
 		x = 1
 		y = 1
 		cost = 10
@@ -252,12 +254,15 @@ prerequisite = {focus = SOV_political_prisons }
 mutually_exclusive = {focus = sovsh}
 		available_if_capitulated = yes
 				completion_reward = {
-			add_political_power = 75
+				add_political_power = 200
+				add_stability = -0.10
+				add_manpower = -1000
+				add_war_support = -0.20
 		}
 	}
 	focus = {
 		id = SOV_final_destalin
-		icon = GFX_
+		icon = GFX_Focus_Stalin
 		x = 1
 		y = 1
 		cost = 10
@@ -265,12 +270,12 @@ relative_position_id = SOV_show_trials
 prerequisite = {focus = SOV_show_trials focus = SOV_no_trials}
 		available_if_capitulated = yes
 				completion_reward = {
-			add_political_power = 75
+			remove_ideas = {SOV_stalinthreat}
 		}
 	}
 	focus = {
 		id = SOV_trotsky_cult
-		icon = GFX_
+		icon = GFX_Generic_Trotsky
 		x = 0
 		y = 1
 		cost = 10
@@ -278,7 +283,7 @@ relative_position_id = SOV_final_destalin
 prerequisite = {focus = SOV_final_destalin }
 		available_if_capitulated = yes
 				completion_reward = {
-			add_political_power = 75
+			add_ideas = SOV_trotsky
 		}
 	}
 	focus = {
