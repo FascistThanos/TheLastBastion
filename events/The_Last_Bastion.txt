@@ -22,9 +22,22 @@ country_event = {  #Proposition from the United States
 
   option = { #Accepted proposition
     name = tlb.2.a
+    ai_chance = {
+      base = 20
+    }
+
   }
   option = { #Declined proposition
     name = tlb.2.b
+    ai_chance = {
+      base = 10
+      modifier = {
+        factor = 20
+        USA = {
+          is_ai = no
+        }
+      }
+    }
     hidden_effect = {
       create_wargoal = {
         type = puppet_wargoal_focus
@@ -139,13 +152,13 @@ country_event = { #ENG Denies demands
   option = { #Don't push the demand
     name = tlb.8.a
     ai_chance = {
-      base = 50
+      base = 20
     }
   }
   option = { #Ask the US for help
     name = tlb.8.b
     ai_chance = {
-      base = 50
+      base = 80
     }
     USA = {
       country_event = tlb.9
@@ -199,5 +212,42 @@ country_event = {
 
   option = {
     name = tlb.40.a
+  }
+}
+
+######## War Peace Events
+country_event = {
+  id = usapeace.1
+  title = usapeace.1.t
+  desc = usapeace.1.d
+  fire_only_once = yes
+
+  trigger = {
+    GUA = {
+      controls_state = 311
+    }
+    original_tag = ENG
+  }
+
+  option = {
+    name = usapeace.1.a
+    ai_chance = {
+      base = 90
+    }
+    GUA = {
+      transfer_state = 311
+    }
+    USA = {
+      white_peace = ENG
+    }
+    GUA = {
+      white_peace = ENG
+    }
+  }
+  option = {
+    name = usapeace.1.b
+    ai_chance = {
+      base = 10
+    }
   }
 }
