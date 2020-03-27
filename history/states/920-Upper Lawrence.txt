@@ -1,0 +1,24 @@
+state = {
+	id = 920
+	name = "STATE_920" # Saint Lawrence
+	manpower = 586400
+
+	state_category = town
+
+	resources={
+		aluminium=3 # was: 4
+	}
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = CAN
+	}
+
+	provinces={
+		  14390 1284 14424 14416 14443 12291 14450 14468 14464 14496 14491 14505 14514 4305 14524 14492 14483 14520 14546 14506 14547 14497 4422 14558 14529 14501 14538 14567 14568 14530
+	}
+}

@@ -1,0 +1,29 @@
+state = {
+	id = 925
+	name = "STATE_925"
+	manpower = 754600
+
+	state_category = city
+
+	resources={
+		oil=180 # was: 350
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			610 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		6757 6772 768 6745 6681 9697 766 11698 9730 610 781 3588 10159 4331 6665 6482 3644
+	}
+}
+
+# 6757 6772 768 6745 6681 9697 766 11698 9730 610 781 3588 10159 4331 6665 6482 3644

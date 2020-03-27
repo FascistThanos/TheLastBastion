@@ -1,20 +1,23 @@
-state = {
-  id = 854
-  name = "STATE_854"
-  state_category = pastoral
-  manpower = 189400
 
-  history = {
-    owner = SAF
-    add_claim_by = SAF
-    add_core_of = NMB
+state={
+	id=854
+	name="STATE_854"
 
-    buildings = {
-      infrastructure = 2
-    }
-  }
+	history={
+		owner = SAF
+		add_claim_by = SAF
+		add_core_of = NMB
+		buildings = {
+			infrastructure = 2
 
-  provinces = {
-    7770 8136 10957 10978 12519 12921 13217
-  }
+		}
+
+	}
+
+	provinces={
+		7770 8136 10957 10978 12519 12921 13217 13414 13415 13433 13441 13458 
+	}
+	manpower=189400
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

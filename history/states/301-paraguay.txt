@@ -2,10 +2,7 @@
 state={
 	id=301
 	name="STATE_301"
-	manpower = 890100
-	
-	state_category = town
-	
+
 	history={
 		owner = PAR
 		buildings = {
@@ -13,6 +10,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
+
 		}
 		add_core_of = PAR
 		victory_points = {
@@ -22,7 +20,9 @@ state={
 	}
 
 	provinces={
-		2152 2173 2194 11023 12901 
+		2152 2173 2194 11023 12901 13499 13501 13503 13510 13513 13518 13519 13521 13530 13535 13541 13545 
 	}
-	
+	manpower=890100
+	buildings_max_level_factor=1.000
+	state_category=town
 }

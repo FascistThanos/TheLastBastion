@@ -2,12 +2,8 @@
 state={
 	id=477
 	name="STATE_477"
-	manpower = 1951460
-	
-	state_category = town
-	
 	resources={
-		oil=9
+		oil=9.000
 	}
 
 	history={
@@ -17,19 +13,24 @@ state={
 			dockyard = 1
 			12810 = {
 				naval_base = 3
+
 			}
+
 		}
 		add_core_of = MEX
 		victory_points = {
-			12810 5
+			12810 5 
 		}
 		victory_points = {
-			8089 10
+			8089 10 
 		}
+
 	}
 
 	provinces={
-		8079 8089 10732 12810 
+		8079 8089 10732 12810 13864 13875 13889 
 	}
-	
+	manpower=1951460
+	buildings_max_level_factor=1.000
+	state_category=town
 }
