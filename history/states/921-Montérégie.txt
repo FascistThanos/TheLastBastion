@@ -1,0 +1,21 @@
+state = {
+	id = 921
+	name = "STATE_921" # Saint Lawrence
+	manpower = 2432754
+
+	state_category = city
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = CAN
+	}
+
+	provinces={
+		7433 14368 14341 14304 10174 14351 14381 14358 14350 14336 4417 14301 14295 7345 14282 14303 14299 10320 14337 14331 10230 14290 14302 14285 14267 7289 14281 14266
+	}
+}

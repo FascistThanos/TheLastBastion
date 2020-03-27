@@ -1,0 +1,19 @@
+state = {
+	id = 916
+	name = "STATE_916"
+	manpower = 115870
+
+	state_category = rural
+
+	history = {
+		owner = DEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = DEN
+		add_core_of = ICE
+	}
+	provinces = {
+		15638 15495 15477 15421 15445 15502 15511 15462 15483 15520 15542 15548 15547 15663 15639 15595 15606 15626 15688 15585 15590 15521 15552 15549 15592 15559 15591 12689 15671
+	}
+}

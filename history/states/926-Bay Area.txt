@@ -1,0 +1,30 @@
+state = {
+	id = 926
+	name = "STATE_926"
+	manpower = 1597500
+
+	state_category = metropolis
+
+	history = {
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			dockyard = 2
+			air_base = 3
+			9671 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			9671 25
+		}
+		victory_points = {
+			9713 1
+		}
+	}
+
+	provinces = {
+		710 14090 9713 11658 677 1601 6699 3678 1432 14063 6876 6694 3677 9671
+	}
+}

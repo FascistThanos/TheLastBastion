@@ -1,11 +1,10 @@
+
 state={
 	id=492
 	name="STATE_492"
 	resources={
-		tungsten=2 # was: 2.000
+		tungsten=2.000
 	}
-	
-	state_category = rural
 
 	history={
 		owner = PRU
@@ -23,8 +22,9 @@ state={
 	}
 
 	provinces={
-		2182 2210 2225 5202 12953 13086 13175 
+		2182 2210 2225 5202 12953 13086 13175 13578 13579 13581 13582 13585 13587 13588 13589 13590 13592 
 	}
 	manpower=1601278
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

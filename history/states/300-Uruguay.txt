@@ -2,14 +2,11 @@
 state={
 	id=300
 	name="STATE_300"
-	manpower = 1734000
-	
-	state_category = large_city
-	
 	resources={
-		oil=1 # was: 2
-		steel=1 # was: 2
+		oil=1.000
+		steel=1.000
 	}
+
 	history={
 		owner = URG
 		buildings = {
@@ -22,16 +19,21 @@ state={
 				naval_base = 6
 				bunker = 1
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = URG
 		victory_points = {
-			10362 5
+			10362 5 
 		}
 
 	}
 
 	provinces={
-		1613 1626 1641 1654 4457 10347 10362 10502 12336 12440 12468 12481 12496 
+		1613 1626 1641 1654 4457 10347 10362 10502 12336 12440 12468 12481 12496 13393 13396 13397 13398 13402 13403 13404 13405 13417 13419 13421 13423 13424 13426 13430 13431 13432 13437 13440 13445 13447 13453 
 	}
+	manpower=1734000
+	buildings_max_level_factor=1.000
+	state_category=large_city
 }

@@ -7,18 +7,17 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 2
-			12207 = {
+			4728 = {
 				naval_base = 1
-
 			}
-
 		}
 		add_core_of = SOV
-
 	}
 
+	impassable = yes
+
 	provinces={
-		1823 1839 1863 4728 7878 12207 12522 
+		1823 1839 1863 4728 7878 12207 12522 14810 14757 14507 14413 14376 14398 14321 14359 14316 14272 14249 14222 14256 14218 14202 14186 14216 14197 14162 14140 14141 14122 14119 14219 14178
 	}
 	manpower=48831
 	buildings_max_level_factor=1

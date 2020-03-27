@@ -1,16 +1,14 @@
 
 state={
 	id=508
-	name="STATE_508" # Tucuman
-	manpower = 781311
-	
-	state_category = rural
+	name="STATE_508"
 
 	history={
 		owner = ARG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+
 		}
 		add_core_of = ARG
 		victory_points = {
@@ -20,6 +18,9 @@ state={
 	}
 
 	provinces={
-		2136 2224 8195 8216 8253 11001 12928 12978 
+		2136 2224 8195 8216 8253 11001 12928 12978 13474 13475 13478 13482 13484 13492 13495 13508 13511 13526 13527 13540 13542 13548 
 	}
+	manpower=781311
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

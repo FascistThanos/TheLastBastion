@@ -1,0 +1,21 @@
+state = {
+	id = 923
+	name = "STATE_923"
+
+	history = {
+		owner = USA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = USA
+		victory_points = {
+			4833 5
+		}
+	}
+
+	provinces = {
+		15804 15891 15803 15890 4848 15844 15897 13091 4833 15947 15911 15915 10679 12661
+	}
+	manpower = 17540
+	state_category = rural
+}

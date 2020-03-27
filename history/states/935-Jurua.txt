@@ -1,0 +1,18 @@
+state={
+	id=935
+	name="STATE_935"
+	provinces={
+		13603 13604 13607 13608 13612 13613 13616 13617 13621 13624 13632 13639 13640 13644 13645 13654 13655 13658
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BRA
+	}
+
+	manpower = 14274
+	state_category=pastoral
+}

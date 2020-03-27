@@ -1,12 +1,9 @@
-state=
-{
+
+state={
 	id=311
 	name="STATE_311"
-	manpower = 51000
-	
-	state_category = pastoral
-	history=
-	{
+
+	history={
 		add_core_of = BLZ
 		owner = ENG
 		victory_points = {
@@ -16,8 +13,17 @@ state=
 			infrastructure = 4
 			2077 = {
 				naval_base = 1
+
 			}
+
 		}
+
 	}
-	provinces= { 2077 }
+
+	provinces={
+		2077 13843 13849 
+	}
+	manpower=51000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }
