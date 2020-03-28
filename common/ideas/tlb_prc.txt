@@ -355,24 +355,6 @@ stability_weekly_factor = 0.01
 }
 }
 ##########################
-		german_advisors = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-		}
 
 		PRC_civil_war_deserters = {
 
@@ -1121,17 +1103,6 @@ stability_weekly_factor = 0.01
 			traits = { captain_of_industry }
 		}
 
-		PRC_chen_yi = {
-
-			picture = chi_chen_yi
-
-			allowed = {
-				original_tag = PRC
-			}
-
-			traits = { compassionate_gentleman }
-		}
-
 		PRC_kwong_jiang = {
 
 			name = PRC_generic_democratic_reformer
@@ -1234,21 +1205,6 @@ stability_weekly_factor = 0.01
 	army_chief = {
 
 		#Communist
-
-		PRC_zhu_de = {
-
-			picture = generic_army_asia_4
-
-			allowed = {
-				original_tag = PRC
-			}
-
-			traits = { army_chief_offensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		#Clique
 
@@ -1409,28 +1365,6 @@ stability_weekly_factor = 0.01
 	aircraft_manufacturer = { #
 
 		designer = yes
-
-		camco = {
-
-			picture = generic_air_manufacturer_3
-
-			allowed = {
-				NOT = { has_dlc = "Waking the Tiger" }
-				original_tag = PRC
-			}
-
-			research_bonus = {
-				air_equipment = 0.15
-			}
-
-			traits = { medium_aircraft_manufacturer }
-
-			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 
 
@@ -1448,21 +1382,6 @@ stability_weekly_factor = 0.01
 			}
 
 			traits = { military_theorist }
-		}
-
-		PRC_fang_zeyi = {
-
-			picture = generic_air_asia_2
-
-			allowed = {
-				original_tag = PRC
-			}
-
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-
-			traits = { air_warfare_theorist }
 		}
 
 		PRC_huang_shen = {
