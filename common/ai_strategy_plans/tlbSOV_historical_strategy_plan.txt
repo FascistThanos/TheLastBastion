@@ -1,0 +1,85 @@
+tlbSOV_historical_plan = {
+    name = "Soviet Lore-Based Plan"
+    desc = "This plan follows the lore."
+
+    # When this plan is enabled.
+    enable = {
+      is_historical_focus_on = yes
+      tag = SOV
+    }
+
+    #When this plan is aborted.
+
+    # Defines which national focuses the AI picks first during this plan.
+    ai_national_focuses = {
+SOV_ignore_stalin
+SOV_red_wind
+SOV_reorganize_military
+SOV_mainland_development
+SOV_stalinist_crackdown
+SOV_expand_comintern
+SOV_invite_baltics
+SOV_trotsky_plan
+SOV_intervene_civil_war
+SOV_fra_cw
+SOV_chi_cw
+SOV_develop_soviet_ship_building
+SOV_air_base_expansion
+SOV_influence_mon
+SOV_invite_mon
+SOV_rebuild_georgia
+SOV_georgia_reeducation
+SOV_total_intergration
+SOV_com_neighbor
+SOV_finland_diplomat
+SOV_invite_fra
+SOV_invite_prc
+SOV_import_submarine_technology
+SOV_air_innovations
+SOV_establish_nkvd
+SOV_political_prisons
+SOV_show_trials
+SOV_final_destalin
+SOV_trotsky_cult
+SOV_send_diplo
+SOV_secret_deals
+SOV_great_comintern
+SOV_moscow_to_cape
+SOV_strike_the_bastion
+SOV_new_guns
+SOV_mobile_tanks
+SOV_prepare_marines
+SOV_strike_canal
+SOV_invite_benelux
+SOV_strike_the_bastion
+
+
+    }
+
+    # Defines which technology categories the AI has weighting towards/against during this plan.
+
+
+    # Defines which ideas the AI has weighting towards/against during this plan.
+
+
+    # Defines which traits the AI has weighting towards/against during this plan.
+
+
+    # Defines AI strategies to apply during this plan.
+
+
+    # Defines pick weights for specific focuses during this plan.
+focus_factors = {
+
+SOV_strike_the_bastion = 50
+}
+
+    # Keep small, as it is used as a factor for some things (such as research needs)
+    # Recommended around 1.0. Useful for relation between plans
+    weight = {
+        factor = 1.0
+        modifier = {
+            factor = 1.0
+        }
+    }
+}
