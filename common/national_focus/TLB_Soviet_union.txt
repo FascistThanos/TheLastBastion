@@ -294,6 +294,7 @@ prerequisite = {focus = SOV_final_destalin }
 		cost = 10
 relative_position_id = SOV_ignore_stalin
 prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found }
+available = { is_faction_leader = yes  }
 		available_if_capitulated = yes
 				completion_reward = {
 			add_political_power = 100
@@ -321,6 +322,7 @@ prerequisite = {focus = SOV_expand_comintern }
 		cost = 10
 relative_position_id = SOV_influence_mon
 prerequisite = {focus = SOV_influence_mon }
+available = { is_faction_leader = yes  }
 		available_if_capitulated = yes
 				completion_reward = {
 			MON = {	country_event = { id = tlbsoviet.5 } }
@@ -334,6 +336,7 @@ prerequisite = {focus = SOV_influence_mon }
 		cost = 10
 relative_position_id = SOV_expand_comintern
 prerequisite = {focus = SOV_expand_comintern }
+available = { is_faction_leader = yes  }
 		available_if_capitulated = yes
 				completion_reward = {
 	EST = {	country_event = { id = tlbsoviet.5 } }
@@ -363,6 +366,7 @@ prerequisite = {focus = SOV_invite_baltics }
 		cost = 10
 relative_position_id = SOV_send_diplo
 prerequisite = {focus = SOV_send_diplo }
+available = { is_faction_leader = yes  }
 		available_if_capitulated = yes
 				completion_reward = {
 		ENG = {	country_event = { id = tlbsoviet.5 } }
@@ -526,6 +530,7 @@ prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found }
 		relative_position_id = SOV_intervene_civil_war
 		cost = 10
 prerequisite = {focus = SOV_intervene_civil_war }
+available = { FPR = { has_war = yes } }
 		available_if_capitulated = yes
 				completion_reward = {
 FPR = { add_timed_idea = {idea = SOV_mil_aid days = 180} }
@@ -539,6 +544,7 @@ FPR = { add_timed_idea = {idea = SOV_mil_aid days = 180} }
 		relative_position_id = SOV_intervene_civil_war
 		cost = 10
 prerequisite = {focus = SOV_intervene_civil_war }
+available = { PRC = { has_war = yes } }
 		available_if_capitulated = yes
 				completion_reward = {
 	PRC = { add_timed_idea = {idea = SOV_mil_aid days = 180} }
@@ -552,6 +558,7 @@ prerequisite = {focus = SOV_intervene_civil_war }
 		relative_position_id = SOV_fra_cw
 		cost = 10
 prerequisite = {focus = SOV_fra_cw }
+available = { is_faction_leader = yes FPR = { has_war = no }  }
 		available_if_capitulated = yes
 				completion_reward = {
 		FPR = {	country_event = { id = tlbsoviet.5 } }
@@ -565,6 +572,7 @@ prerequisite = {focus = SOV_fra_cw }
 		relative_position_id = SOV_chi_cw
 		cost = 10
 prerequisite = {focus = SOV_chi_cw }
+available = { is_faction_leader = yes PRC = { has_war = no }  }
 		available_if_capitulated = yes
 				completion_reward = {
 			PRC = {	country_event = { id = tlbsoviet.5 } }
@@ -610,6 +618,7 @@ prerequisite = {focus = SOV_prepare_marines }
 		relative_position_id = SOV_prepare_marines
 		cost = 10
 prerequisite = {focus = SOV_prepare_marines }
+available = { is_faction_leader = yes  }
 		available_if_capitulated = yes
 				completion_reward = {
 		UOB = { country_event = { id = tlbsoviet.6 days = 7 } }
