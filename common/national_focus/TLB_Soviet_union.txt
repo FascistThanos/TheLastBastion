@@ -403,7 +403,7 @@ prerequisite = {focus = SOV_great_comintern }
 				}
 				create_wargoal = {
 						type = puppet_wargoal_focus
-						target = IRA
+						target = PER
 				}
 		}
 	}
@@ -2612,7 +2612,7 @@ hidden_effect = {
 		y = 1
 		cost = 10
 		relative_position_id = SOV_search_africa
-prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_europe }
+prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
 		available_if_capitulated = yes
 
 available = {

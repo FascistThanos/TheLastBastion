@@ -52,7 +52,7 @@
   SOV_stalinthreat:0 "Stalin in Exile"
   SOV_stalinthreat_desc:0 "When Stalin fled to Siberian wilderness when Trotsky took power, a decent amount of his most loyal supporters objected. We may need to track down and dispose of him if we want to remain stable."
   SOV_target_stalin:0 "Track Down Stalin"
-  SOV_target_stalin_desc:0 ""
+  SOV_target_stalin_desc:0 "With the escape of Stalin back in 1924, the Soviet Union under Trotsky has feared his return. Some members of the Communist Party fear Trotsky will eliminate them, and now send off teams to search for Stalin across the world."
   SOV_ignore_stalin:0 "Focus on More Important Matters"
   SOV_ignore_stalin_desc:0 ""
   SOV_red_wind:0 "Spread the Revolution"
