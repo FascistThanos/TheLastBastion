@@ -166,7 +166,6 @@ set_stability = 0.5
 	}
 
 	set_global_flag = scw_over
-	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
 }
 
 create_country_leader = {

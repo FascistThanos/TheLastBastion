@@ -24,12 +24,6 @@ ideas = {
 					}
 				}
 
-				do_effect = {
-					NOT = {
-						has_government = communism
-					}
-				}
-
 				traits = { communist_revolutionary }
 			}
 
@@ -97,12 +91,6 @@ ideas = {
 
 				traits = { democratic_reformer }
 
-				do_effect = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-
 				name = POR_augusto_de_vasconcelos
 
 				ai_will_do = {
@@ -127,12 +115,6 @@ ideas = {
 
 				traits = { fascist_demagogue }
 
-				do_effect = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-
 				ai_will_do = {
 					factor = 0
 				}
@@ -148,12 +130,6 @@ ideas = {
 				picture = generic_fascist_demagogue_western_european_2d
 
 				traits = { fascist_demagogue }
-
-				do_effect = {
-					NOT = {
-						has_government = fascism
-					}
-				}
 
 				ai_will_do = {
 					factor = 0
@@ -190,7 +166,7 @@ ideas = {
 				}
 
 				available = {
-				
+
 				}
 
 				traits = { silent_workhorse }

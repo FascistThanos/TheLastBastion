@@ -2517,6 +2517,7 @@ ideas = {
 
 	theorist = {
 		von_braun = {
+			ledger = air
 
 			allowed = {
 				original_tag = GER
@@ -2530,6 +2531,7 @@ ideas = {
 		}
 
 		heisenberg = {
+			ledger = army
 
 
 			allowed = {
@@ -2544,6 +2546,7 @@ ideas = {
 		}
 
 		heinz_guderian = {
+			ledger = army
 
 
 			allowed = {
@@ -2559,6 +2562,7 @@ ideas = {
 		}
 
 		manstein = {
+			ledger = army
 
 
 			allowed = {
@@ -2576,6 +2580,7 @@ ideas = {
 		}
 
 		wolfram_von_richthofen = {
+			ledger = air
 
 
 			allowed = {
@@ -2592,6 +2597,7 @@ ideas = {
 		}
 
 		walther_wever = {
+			ledger = air
 
 
 			allowed = {
@@ -2606,6 +2612,7 @@ ideas = {
 		}
 
 		ernst_udet = {
+			ledger = air
 
 
 			allowed = {
@@ -2620,6 +2627,7 @@ ideas = {
 		}
 
 		alfred_saalwachter = {
+			ledger = navy
 
 
 			allowed = {
@@ -2636,6 +2644,7 @@ ideas = {
 		}
 
 		otto_ciliax = {
+			ledger = navy
 
 
 			allowed = {
@@ -2806,6 +2815,7 @@ ideas = {
 	high_command = {
 
 		ferdinand_schorner = {
+			ledger = army
 
 
 			allowed = {
@@ -2820,13 +2830,14 @@ ideas = {
 		}
 
 		erwin_rommel = {
+			ledger = army
 
 
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-
+					has_completed_focus = GER_army_innovation
 				}
 
 			traits = { army_armored_3 }
@@ -2837,6 +2848,7 @@ ideas = {
 		}
 
 		gerd_von_rundstedt = {
+			ledger = army
 
 
 			allowed = {
@@ -2851,6 +2863,7 @@ ideas = {
 		}
 
 		werner_von_fritsch = {
+			ledger = army
 
 
 			allowed = {
@@ -2865,13 +2878,14 @@ ideas = {
 		}
 
 		hugo_sperrle = {
+			ledger = air
 
 
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-
+					has_completed_focus = GER_air_innovation
 			}
 
 			traits = { air_close_air_support_2 }
@@ -2882,6 +2896,7 @@ ideas = {
 		}
 
 		erhard_milch = {
+			ledger = air
 
 
 			allowed = {
@@ -2896,6 +2911,7 @@ ideas = {
 		}
 
 		kurt_student = {
+			ledger = air
 
 
 			allowed = {
@@ -2910,6 +2926,7 @@ ideas = {
 		}
 
 		erich_bey = {
+			ledger = navy
 
 
 			allowed = {
@@ -2924,6 +2941,7 @@ ideas = {
 		}
 
 		gunther_lutjens = {
+			ledger = navy
 
 
 			allowed = {
@@ -2938,6 +2956,7 @@ ideas = {
 		}
 
 		viktor_schutze = {
+			ledger = navy
 
 
 			allowed = {

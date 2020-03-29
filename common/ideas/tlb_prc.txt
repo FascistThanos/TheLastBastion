@@ -1370,6 +1370,7 @@ stability_weekly_factor = 0.01
 
 	theorist = {
 		PRC_bo_yibo = {
+			ledger = army
 
 			picture = generic_army_asia_2
 
@@ -1385,6 +1386,7 @@ stability_weekly_factor = 0.01
 		}
 
 		PRC_huang_shen = {
+			ledger = navy
 
 			picture = generic_navy_asia_2
 
@@ -1405,6 +1407,7 @@ stability_weekly_factor = 0.01
 	high_command = {
 
 		PRC_gao_zhihang = {
+			ledger = air
 
 			picture = PRC_gao_zihang
 
@@ -1420,6 +1423,7 @@ stability_weekly_factor = 0.01
 		}
 
 		PRC_xiao_yisu = {
+			ledger = army
 
 			picture = generic_army_asia_2
 
@@ -1435,6 +1439,7 @@ stability_weekly_factor = 0.01
 		}
 
 		PRC_chen_cheng = {
+			ledger = army
 
 			picture = generic_army_asia_3
 
@@ -1450,6 +1455,7 @@ stability_weekly_factor = 0.01
 		}
 
 		PRC_yu_hanmou = {
+			ledger = army
 
 			picture = generic_army_asia_1
 

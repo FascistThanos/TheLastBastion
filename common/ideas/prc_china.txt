@@ -1292,6 +1292,7 @@ stability_weekly_factor = 0.01
 
 	theorist = {
 		CHI_bo_yibo = {
+			ledger = army
 
 			picture = generic_army_asia_2
 
@@ -1307,6 +1308,7 @@ stability_weekly_factor = 0.01
 		}
 
 		CHI_fang_zeyi = {
+			ledger = air
 
 			picture = generic_air_asia_2
 
@@ -1322,6 +1324,7 @@ stability_weekly_factor = 0.01
 		}
 
 		CHI_huang_shen = {
+			ledger = navy
 
 			picture = generic_navy_asia_2
 
@@ -1342,6 +1345,7 @@ stability_weekly_factor = 0.01
 	high_command = {
 
 		CHI_gao_zhihang = {
+			ledger = air
 
 			picture = CHI_gao_zihang
 
@@ -1357,6 +1361,7 @@ stability_weekly_factor = 0.01
 		}
 
 		CHI_xiao_yisu = {
+			ledger = army
 
 			picture = generic_army_asia_2
 
@@ -1372,6 +1377,7 @@ stability_weekly_factor = 0.01
 		}
 
 		CHI_chen_cheng = {
+			ledger = army
 
 			picture = generic_army_asia_3
 
@@ -1387,6 +1393,7 @@ stability_weekly_factor = 0.01
 		}
 
 		CHI_yu_hanmou = {
+			ledger = army
 
 			picture = generic_army_asia_1
 
@@ -1401,7 +1408,6 @@ stability_weekly_factor = 0.01
 			}
 		}
 	}
-
 	industrial_concern = {
 
 		CHI_mining_commission = {
