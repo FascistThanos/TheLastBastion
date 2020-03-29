@@ -1,0 +1,59 @@
+CHI_nationalist_historical_plan = {
+	name = "Nationalist China historical plan"
+	desc = "Essentially historical behavior for Nationalist China"
+
+	enable = {
+		original_tag = CHI
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = CHI_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = CHI_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = CHI_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		JAP = {
+			OR = {
+				is_in_faction_with = ENG
+				is_in_faction_with = USA
+			}
+		}
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = ALTERNATE
+		}
+		MAN = {
+			is_subject = no
+		}
+	}
+
+	ai_national_focuses = {
+	
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		CHI_soong_mei_ling = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

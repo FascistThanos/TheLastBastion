@@ -14,31 +14,11 @@ HUN_alternate_AH = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		HUN_balanced_budget
-		HUN_strengthen_the_monarchists
-		HUN_elect_a_king
-		HUN_invite_the_habsburg_prince
-		HUN_industrial_revitalization
-		HUN_reintegrate_the_railroads
-		HUN_demand_a_referendum
-		HUN_proclaim_the_restoration_of_austria_hungary
-		HUN_protect_czechoslovakia
-		HUN_support_domestic_industry
-		HUN_support_urbanization
-		HUN_institute_for_industrial_techniques
-		HUN_secret_rearmament
-		HUN_war_games
-		HUN_theoretical_air_efforts
-		HUN_bled_agreement
-		HUN_announce_the_gyor_program
-		HUN_domestic_arms_industry
-		HUN_army_maneuvers
-		HUN_mobile_focus
-		HUN_aeronautic_technology_institute
+
 	}
 
 	research = {
@@ -50,7 +30,7 @@ HUN_alternate_AH = {
 	}
 
 	ideas = {
-		
+
 	}
 	ai_strategy = {
 		type = befriend
@@ -72,9 +52,6 @@ HUN_alternate_AH = {
 	}
 
 	focus_factors = {
-		HUN_boost_hungarian_aviation_industry = 10
-		HUN_claim_transylvania = 5
-		HUN_march_to_the_shore = 5
 	}
 
 }
@@ -95,29 +72,11 @@ HUN_alternate_DEM = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		HUN_balanced_budget
-		HUN_strengthen_the_monarchists
-		HUN_elect_a_king
-		HUN_elect_a_democratic_king
-		HUN_industrial_revitalization
-		HUN_reintegrate_the_railroads
-		HUN_support_domestic_industry
-		HUN_support_urbanization
-		HUN_institute_for_industrial_techniques
-		HUN_announce_the_gyor_program
-		HUN_civilian_industry
-		HUN_responsible_government
-		HUN_rapproachement_with_little_entente
-		HUN_secret_rearmament
-		HUN_war_games
-		HUN_theoretical_air_efforts
-		HUN_bled_agreement
-		HUN_join_allies
-		HUN_joint_oil_exploitation_company
+
 	}
 
 	research = {
@@ -128,9 +87,9 @@ HUN_alternate_DEM = {
 	}
 
 	ideas = {
-		
+
 	}
-	
+
 	traits = {
 		captain_of_industry = 5
 	}
@@ -145,12 +104,6 @@ HUN_alternate_DEM = {
 	}
 
 	focus_factors = {
-		HUN_army_maneuvers = 5
-		HUN_home_defense = 10
-		HUN_assault_gun_focus = 5
-		HUN_establish_the_airforce = 10
-		HUN_invite_foreign_investors = 8
-		HUN_expand_the_manfred_weiss_steel_works = 10
 	}
 
 }
@@ -171,32 +124,11 @@ HUN_alternate_FAS = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		HUN_economic_intervention
-		HUN_strengthen_fascists
-		HUN_renew_the_rome_protocols
-		HUN_industrial_revitalization
-		HUN_reintegrate_the_railroads
-		HUN_protect_austria
-		HUN_support_domestic_industry
-		HUN_support_urbanization
-		HUN_institute_for_industrial_techniques
-		HUN_alliance_with_italy
-		HUN_announce_the_gyor_program
-		HUN_domestic_arms_industry
-		HUN_aeronautic_technology_institute
-		HUN_secret_rearmament
-		HUN_war_games
-		HUN_theoretical_air_efforts
-		HUN_bled_agreement
-		HUN_army_maneuvers
-		HUN_renounce_the_treaty_of_trianon
-		HUN_reaffirm_territorial_claims
-		HUN_boost_hungarian_aviation_industry
-		HUN_demand_transylvania
+
 	}
 
 	research = {
@@ -207,9 +139,9 @@ HUN_alternate_FAS = {
 	}
 
 	ideas = {
-		
+
 	}
-	
+
 	traits = {
 		captain_of_industry = 5
 	}
@@ -224,12 +156,6 @@ HUN_alternate_FAS = {
 	}
 
 	focus_factors = {
-		HUN_army_maneuvers = 5
-		HUN_home_defense = 10
-		HUN_assault_gun_focus = 5
-		HUN_establish_the_airforce = 10
-		HUN_claim_overlordship_over_slovakia = 8
-		HUN_demand_southern_slovakia = 10
 	}
 
 }
@@ -250,32 +176,11 @@ HUN_alternate_COM = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		HUN_economic_intervention
-		HUN_industrial_revitalization
-		HUN_reintegrate_the_railroads
-		HUN_council_of_peoples_commissars
-		HUN_support_domestic_industry
-		HUN_support_urbanization
-		HUN_institute_for_industrial_techniques
-		HUN_assassinate_horthy
-		HUN_announce_the_gyor_program
-		HUN_domestic_arms_industry
-		HUN_aeronautic_technology_institute
-		HUN_the_hungarian_red_army
-		HUN_secret_rearmament
-		HUN_war_games
-		HUN_theoretical_air_efforts
-		HUN_bled_agreement
-		HUN_join_comintern
-		HUN_army_maneuvers
-		HUN_renounce_the_treaty_of_trianon
-		HUN_reaffirm_territorial_claims
-		HUN_boost_hungarian_aviation_industry
-		HUN_pressure_romania
+
 	}
 
 	research = {
@@ -286,9 +191,9 @@ HUN_alternate_COM = {
 	}
 
 	ideas = {
-		
+
 	}
-	
+
 	traits = {
 		captain_of_industry = 5
 	}
@@ -303,12 +208,6 @@ HUN_alternate_COM = {
 	}
 
 	focus_factors = {
-		HUN_army_maneuvers = 5
-		HUN_home_defense = 10
-		HUN_assault_gun_focus = 5
-		HUN_establish_the_airforce = 10
-		HUN_intervene_in_czechoslovakia = 8
-		HUN_soviet_hungarian_military_academy = 10
 	}
 
 }

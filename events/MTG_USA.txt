@@ -624,59 +624,6 @@ country_event = {
 				}
 				every_other_country = {
 					limit = {
-						OR = {
-							has_government = fascism
-							has_completed_focus = ENG_organize_the_blackshirts
-							has_completed_focus = FRA_support_the_right
-						}
-						is_major = yes
-						has_war = no
-					}
-					add_ai_strategy = {
-						type = support
-						id = CSA
-						value = 400
-					}
-					add_ai_strategy = {
-						type = protect
-						id = CSA
-						value = 400
-					}
-					add_ai_strategy = {
-						type = send_volunteers_desire
-						id = CSA
-						value = 400
-					}
-				}
-				every_other_country = {
-					limit = {
-						has_government = democratic
-						not = {
-							OR = {
-								has_completed_focus = ENG_organize_the_blackshirts
-								has_completed_focus = FRA_support_the_right
-							}
-						}
-						is_major = yes
-					}
-					add_ai_strategy = {
-						type = alliance
-						id = CSA
-						value =-200
-					}
-					if = {
-						limit = {
-							USA = { not = { has_government = communism } }
-						}
-						add_ai_strategy = {
-							type = support
-							id = USA
-							value = 100
-						}
-					}
-				}
-				every_other_country = {
-					limit = {
 						has_government = communism
 						is_major = yes
 						has_war = no

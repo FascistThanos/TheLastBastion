@@ -9,7 +9,7 @@ foreign_influence = {
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -51,144 +51,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
-	socialist_education = {
 
-		icon = eng_propaganda_campaigns
-
-		days_remove = 120
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				communism < 0.9
-			}
-			OR = {
-				political_power_daily > 0.5
-				has_political_power > 60
-			}
-		}
-
-		visible = {
-			has_government = communism
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_concessions_to_the_trade_unions
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-						has_government = communism
-					}
-				}
-			}
-			FROM = {
-				is_puppet_of = ROOT
-				communism < 0.99
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = {
-				add_timed_idea = { idea = socialist_education days = 120 }
-			}
-		}
-		modifier = {
-			political_power_cost = 0.5
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	paramilitary_training = {
-
-		icon = eng_propaganda_campaigns
-
-		days_remove = 120
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				fascism < 0.9
-			}
-			OR = {
-				political_power_daily > 0.5
-				has_political_power > 60
-			}
-		}
-
-		visible = {
-			has_government = fascism
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_organize_the_blackshirts
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-						has_government = fascism
-					}
-				}
-			}
-			FROM = {
-				is_puppet_of = ROOT
-				fascism < 0.99
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = {
-				add_timed_idea = { idea = paramilitary_training days = 120 }
-			}
-		}
-
-		modifier = {
-			political_power_cost = 0.5
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
 	military_parade = {
 
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -230,13 +99,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	police_action = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -280,158 +149,18 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
-	fraternal_republic = {
 
-		icon = generic_prepare_civil_war
-		
-		cost = 50
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				communism > 0.6
-			}
-			FROM = {
-				NOT = { has_government = communism }
-			}
-		}
-
-		visible = {
-			has_government = communism
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = communism }
-			}
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_concessions_to_the_trade_unions
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-					}
-				}
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = { country_event = { id = mtg_generic.1 } }
-			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
-				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	ultranationalist_coup = {
-
-		icon = generic_prepare_civil_war
-		
-		cost = 50
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				fascism > 0.6
-			}
-			FROM = {
-				NOT = { has_government = fascism }
-			}
-		}
-
-		visible = {
-			has_government = fascism
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = fascism }
-			}
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_organize_the_blackshirts
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-					}
-				}
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = { country_event = { id = mtg_generic.1 } }
-			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
-				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
 	military_dictatorship = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -475,15 +204,15 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	instantiate_collaboration = {
 		icon = generic_prepare_civil_war
-		
+
 		cost = 0
 
 		available = {
@@ -505,11 +234,11 @@ foreign_influence = {
 			set_temp_variable = { country_to_initiate = FROM }
 			instantiate_collaboration_government = yes
 		}
-		
+
 		target_non_existing = yes
 		target_array = occupied_countries
-		
-		
+
+
 		ai_will_do = {
 			base = 10
 			# priotize larger countries

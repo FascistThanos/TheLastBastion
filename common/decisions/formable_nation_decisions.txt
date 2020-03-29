@@ -1,5 +1,5 @@
 form_scandinavia_category = {
-	
+
 	form_scandinavia = {
 
 		icon = generic_form_nation
@@ -287,7 +287,7 @@ form_gran_colombia_category = {
 			hidden_effect = {
 				305 = { add_core_of = ROOT }
 				649 = { add_core_of = ROOT }
-			}	
+			}
 			# Colombia
 			custom_effect_tooltip = form_country_colombia_coring_states_tt
 			hidden_effect = {
@@ -475,7 +475,6 @@ form_austria_hungary_category = {
 
 		visible = {
 			tag = HUN
-			has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary
 			NOT = { has_global_flag = reintegrate_the_empire_flag }
 		}
 
@@ -962,238 +961,6 @@ form_ottoman_empire_category = {
 			hidden_effect = {
 				news_event = { id = wtt_news.61 hours = 6 }
 				set_global_flag = form_ottoman_empire_flag
-			}
-		}
-
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
-}
-
-form_european_union_category = {
-
-	form_european_union = {
-
-		icon = generic_form_nation
-
-		allowed = {
-			OR = {
-				original_tag = HOL
-				original_tag = BEL
-				original_tag = LUX
-				original_tag = FRA
-				original_tag = ITA
-				original_tag = GER
-				original_tag = WGR
-				original_tag = ENG
-			}
-			OR = {
-				has_dlc = "Waking the Tiger"
-				has_dlc = "Man the Guns"
-			}
-		}
-
-		available = {
-			is_subject = no
-			controls_state = 8
-			# Netherlands
-			custom_trigger_tooltip = {
-				tooltip = form_eu_netherlands_required_states_tt
-				controls_state = 7
-				controls_state = 35
-				controls_state = 36
-			}
-			# Belgium
-			custom_trigger_tooltip = {
-				tooltip = form_eu_belgium_required_states_tt
-				controls_state = 6
-				controls_state = 34
-			}
-			# France
-			custom_trigger_tooltip = {
-				tooltip = form_eu_france_required_states_tt
-				controls_state = 29
-				controls_state = 18
-				controls_state = 17
-				controls_state = 28
-				controls_state = 15
-				controls_state = 16
-				controls_state = 27
-				controls_state = 14
-				controls_state = 30
-				controls_state = 24
-				controls_state = 23
-				controls_state = 33
-				controls_state = 26
-				controls_state = 20
-				controls_state = 32
-				controls_state = 735
-				controls_state = 25
-				controls_state = 22
-				controls_state = 21
-				controls_state = 19
-				controls_state = 20
-				controls_state = 1
-			}
-			# Italy
-			custom_trigger_tooltip = {
-				tooltip = form_eu_italy_required_states_tt
-				controls_state = 158
-				controls_state = 159
-				controls_state = 39
-				controls_state = 160
-				controls_state = 161
-				controls_state = 162
-				controls_state = 157
-				controls_state = 2
-				controls_state = 117
-				controls_state = 156
-				controls_state = 115
-				controls_state = 114
-				controls_state = 736
-				controls_state = 163
-			}
-			# Germany
-			custom_trigger_tooltip = {
-				tooltip = form_country_germany_required_states_tt
-				controls_state = 51
-				controls_state = 42
-				controls_state = 56
-				controls_state = 57
-				controls_state = 55
-				controls_state = 50
-				controls_state = 59
-				controls_state = 58
-				controls_state = 60
-				controls_state = 54
-				controls_state = 52
-				controls_state = 53
-				controls_state = 61
-				controls_state = 64
-				controls_state = 65
-				controls_state = 62
-				controls_state = 68
-				controls_state = 66
-				controls_state = 67
-				controls_state = 63
-				controls_state = 5
-			}
-		}
-
-		visible = {
-			OR = { 
-				AND = {
-					OR = {
-						original_tag = HOL
-						original_tag = BEL
-						original_tag = LUX
-						original_tag = FRA
-						original_tag = ITA
-						original_tag = GER
-					}
-					has_government = democratic
-				}
-				AND = {
-					original_tag = ENG
-					has_country_leader = {
-						name = "Oswald Mosley"
-						ruling_only = yes
-					}
-					has_completed_focus = ENG_imperial_federation
-				}
-			}
-			NOT = { has_global_flag = form_european_union_flag }
-			is_major = yes
-		}
-
-		complete_effect = {
-			if = {
-				limit = {
-					NOT = { original_tag = ENG }
-				}
-				set_cosmetic_tag = EUR_UNIFIED
-			}
-			else = {
-				set_cosmetic_tag = ENG_imperial_federation_unified #Europe-a-Nation
-			}
-			8 = { add_core_of = ROOT }
-			# France
-			custom_effect_tooltip = form_eu_france_coring_states_tt
-			hidden_effect = {
-				29 = { add_core_of = ROOT }
-				18 = { add_core_of = ROOT }
-				17 = { add_core_of = ROOT }
-				28 = { add_core_of = ROOT }
-				15 = { add_core_of = ROOT }
-				16 = { add_core_of = ROOT }
-				27 = { add_core_of = ROOT }
-				14 = { add_core_of = ROOT }
-				30 = { add_core_of = ROOT }
-				24 = { add_core_of = ROOT }
-				23 = { add_core_of = ROOT }
-				33 = { add_core_of = ROOT }
-				26 = { add_core_of = ROOT }
-				20 = { add_core_of = ROOT }
-				32 = { add_core_of = ROOT }
-				735 = { add_core_of = ROOT }
-				25 = { add_core_of = ROOT }
-				22 = { add_core_of = ROOT }
-				21 = { add_core_of = ROOT }
-				19 = { add_core_of = ROOT }
-				20 = { add_core_of = ROOT }
-				1 = { add_core_of = ROOT }
-			}
-			# Italy
-			custom_effect_tooltip = form_eu_italy_coring_states_tt
-			hidden_effect = {
-				158 = { add_core_of = ROOT }
-				159 = { add_core_of = ROOT }
-				39 = { add_core_of = ROOT }
-				160 = { add_core_of = ROOT }
-				161 = { add_core_of = ROOT }
-				162 = { add_core_of = ROOT }
-				157 = { add_core_of = ROOT }
-				2 = { add_core_of = ROOT }
-				117 = { add_core_of = ROOT }
-				156 = { add_core_of = ROOT }
-				115 = { add_core_of = ROOT }
-				114 = { add_core_of = ROOT }
-				736 = { add_core_of = ROOT }
-				163 = { add_core_of = ROOT }
-			}
-			# Germany
-			custom_effect_tooltip = form_country_germany_coring_states_tt
-			hidden_effect = {
-				51 = { add_core_of = ROOT }
-				42 = { add_core_of = ROOT }
-				56 = { add_core_of = ROOT }
-				57 = { add_core_of = ROOT }
-				55 = { add_core_of = ROOT }
-				50 = { add_core_of = ROOT }
-				59 = { add_core_of = ROOT }
-				58 = { add_core_of = ROOT }
-				60 = { add_core_of = ROOT }
-				54 = { add_core_of = ROOT }
-				52 = { add_core_of = ROOT }
-				53 = { add_core_of = ROOT }
-				61 = { add_core_of = ROOT }
-				64 = { add_core_of = ROOT }
-				65 = { add_core_of = ROOT }
-				62 = { add_core_of = ROOT }
-				68 = { add_core_of = ROOT }
-				66 = { add_core_of = ROOT }
-				67 = { add_core_of = ROOT }
-				63 = { add_core_of = ROOT }
-				5 = { add_core_of = ROOT }
-			}
-			hidden_effect = {
-				news_event = { id = wtt_news.62 hours = 6 }
-				set_global_flag = form_european_union_flag
 			}
 		}
 
@@ -1709,7 +1476,7 @@ form_roman_empire_category = {
 						expire = "1965.1.1"
 						ideology = fascism_ideology
 						traits = {
-							
+
 						}
 					}
 				}
@@ -2195,7 +1962,7 @@ form_byzantine_empire_category = {
 		complete_effect = {
 			677 = { add_core_of = ROOT }
 			680 = { add_core_of = ROOT }
-			553 = { add_core_of = ROOT } 
+			553 = { add_core_of = ROOT }
 			554 = { add_core_of = ROOT }
 			164 = { add_core_of = ROOT }
 			453 = { add_core_of = ROOT }
@@ -2790,7 +2557,7 @@ form_greater_german_reich_category = {
 }
 
 form_andalusia_category = {
-	
+
 	form_andalusia = {
 
 		icon = generic_form_nation
@@ -2884,7 +2651,7 @@ form_andalusia_category = {
 			}
 		}
 	}
-	
+
 	adu_restore_sultanate_of_africa = {
 
 		icon = generic_form_nation
@@ -2968,7 +2735,7 @@ form_andalusia_category = {
 			}
 		}
 	}
-	
+
 	adu_mediterrenean_emirates = {
 
 		icon = generic_form_nation
@@ -3013,7 +2780,7 @@ form_andalusia_category = {
 				#Sardinia and Corsica
 				114 = { add_core_of = ROOT }
 				1 = { add_core_of = ROOT }
-				
+
 				hidden_effect = { set_global_flag = emirate_of_sicily_flag }
 		}
 
@@ -3025,7 +2792,7 @@ form_andalusia_category = {
 			}
 		}
 	}
-	
+
 	adu_restore_umayyad_caliphate = {
 
 		icon = generic_form_nation
@@ -3129,7 +2896,7 @@ form_andalusia_category = {
 			}
 		}
 	}
-	
+
 	adu_recreate_rashid_expansion = {
 
 		icon = generic_form_nation
@@ -3172,7 +2939,7 @@ form_andalusia_category = {
 				controls_state = 440
 				controls_state = 443
 			}
-			
+
 		}
 
 		visible = {
@@ -3227,7 +2994,7 @@ form_andalusia_category = {
 			}
 		}
 	}
-	
+
 	adu_northern_expansion = {
 
 		icon = generic_form_nation
@@ -3290,7 +3057,7 @@ form_andalusia_category = {
 }
 
 form_polynesia_category = {
-	
+
 	form_polynesia = {
 
 		icon = generic_form_nation
@@ -3383,176 +3150,3 @@ form_polynesia_category = {
 			}
 		}
 	}
-	
-	NZL_demand_islands = {
-
-		icon = generic_form_nation
-
-		allowed = {
-			original_tag = NZL
-		}
-
-		available = {
-			OR = {
-				is_subject = no
-				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
-			}
-			has_completed_focus = NZL_maori_volunteers
-			hidden_trigger = {
-				NOT = { has_country_flag = is_demanding_flag }
-				any_country = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
-					NOT = {
-						OR = {
-							original_tag = HAW
-							original_tag = TAH
-							original_tag = GUM
-							original_tag = FSM
-							original_tag = SAM
-							original_tag = SOL
-							original_tag = FIJ
-							original_tag = NZL
-						}
-					}
-					OR = {
-						controls_state = 284
-						controls_state = 629
-						controls_state = 630
-						controls_state = 631
-						controls_state = 632
-						controls_state = 633
-						controls_state = 634
-						controls_state = 635
-						controls_state = 636
-						controls_state = 638
-						controls_state = 639
-						controls_state = 641
-						controls_state = 642
-						controls_state = 643
-						controls_state = 645 #Iwo Jima
-						controls_state = 646
-						controls_state = 647
-						controls_state = 648
-						controls_state = 684
-						controls_state = 723
-						controls_state = 725
-						controls_state = 726
-						controls_state = 727
-						controls_state = 734
-					}
-					NOT = { has_country_flag = has_been_asked_for_islands_flag }
-				}
-			}
-		}
-
-		visible = {
-			original_tag = NZL
-			NOT = { has_global_flag = form_polynesia_flag }
-			has_completed_focus = NZL_maori_volunteers
-			hidden_trigger = {
-				NOT = { has_country_flag = is_demanding_flag }
-				any_country = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
-					NOT = {
-						OR = {
-							original_tag = HAW
-							original_tag = TAH
-							original_tag = GUM
-							original_tag = FSM
-							original_tag = SAM
-							original_tag = SOL
-							original_tag = FIJ
-							original_tag = NZL
-						}
-					}
-					OR = {
-						controls_state = 284
-						controls_state = 629
-						controls_state = 630
-						controls_state = 631
-						controls_state = 632
-						controls_state = 633
-						controls_state = 634
-						controls_state = 635
-						controls_state = 636
-						controls_state = 638
-						controls_state = 639
-						controls_state = 641
-						controls_state = 642
-						controls_state = 643
-						controls_state = 645 #Iwo Jima
-						controls_state = 646
-						controls_state = 647
-						controls_state = 648
-						controls_state = 684
-						controls_state = 723
-						controls_state = 725
-						controls_state = 726
-						controls_state = 727
-						controls_state = 734
-					}
-					NOT = { has_country_flag = has_been_asked_for_islands_flag }
-				}
-			}
-		}
-
-		complete_effect = {
-			random_country = {
-				limit = {
-					NOT = { tag = ROOT }
-					is_in_faction_with = ROOT
-					NOT = {
-						OR = {
-							original_tag = HAW
-							original_tag = TAH
-							original_tag = GUM
-							original_tag = FSM
-							original_tag = SAM
-							original_tag = SOL
-							original_tag = FIJ
-							original_tag = NZL
-						}
-					}
-					OR = {
-						controls_state = 284
-						controls_state = 629
-						controls_state = 630
-						controls_state = 631
-						controls_state = 632
-						controls_state = 633
-						controls_state = 634
-						controls_state = 635
-						controls_state = 636
-						controls_state = 638
-						controls_state = 639
-						controls_state = 641
-						controls_state = 642
-						controls_state = 643
-						controls_state = 645 #Iwo Jima
-						controls_state = 646
-						controls_state = 647
-						controls_state = 648
-						controls_state = 684
-						controls_state = 723
-						controls_state = 725
-						controls_state = 726
-						controls_state = 727
-						controls_state = 734
-					}
-					hidden_trigger = { NOT = { has_country_flag = has_been_asked_for_islands_flag } }
-				}
-				save_event_target_as = new_zealand_island_demand_target
-			}
-			event_target:new_zealand_island_demand_target = {
-				country_event = { id = tfv_new_zealand.9 days = 3 }
-				set_country_flag = has_been_asked_for_islands_flag
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-}

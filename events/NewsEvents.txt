@@ -1885,57 +1885,6 @@ news_event = {
 	}
 }
 
-# Anglo-Polish Alliance
-news_event = {
-	id = news.55
-	title = news.55.t
-	desc = news.55.d
-	picture = GFX_news_event_021
-
-	major = yes
-	fire_only_once = yes
-
-	trigger = {
-		POL = {
-			is_in_faction_with = ENG
-			is_in_faction_with = FRA
-			NOT = { is_in_faction_with = GER }
-		}
-		GER = {
-			has_completed_focus = GER_demand_memel
-			NOT = { has_completed_focus = GER_poland_friend }
-		}
-	}
-
-	option = {
-		name = news.55.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = ENG
-				TAG = POL
-				TAG = FRA
-			}
-		}
-	}
-	option = {
-		name = news.55.b
-		trigger = { TAG = GER }
-	}
-	option = {
-		name = news.55.c
-		trigger = { TAG = ENG }
-	}
-	option = {
-		name = news.55.e
-		trigger = { TAG = POL }
-	}
-	option = {
-		name = news.55.f
-		trigger = { TAG = FRA }
-	}
-}
-
 # Munich Agreement
 news_event = {
 	id = news.56
@@ -5053,48 +5002,6 @@ news_event = {
 	}
 }
 
-# Germany declares war without having remilitarized Rhineland. Which then happens.
-news_event = {
-	id = news.155
-	title = news.155.t
-	desc = news.155.d
-	picture = GFX_news_event_german_soldiers
-
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = rhineland_militarized_war }
-		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-				NOT = { has_completed_focus = GER_rhineland }
-			}
-			has_offensive_war = yes
-		}
-		42 = {
-			is_demilitarized_zone = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = rhineland_militarized_war
-	}
-
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	option = {
-		trigger = { NOT = { tag = GER } }
-		name = news.155.a
-	}
-	option = {
-		trigger = { tag = GER }
-		name = news.155.b
-	}
-}
-
 # Komet Sighted
 news_event = {
 	id = news.156
@@ -5225,49 +5132,6 @@ news_event = {
 			is_in_faction_with = FROM
 		}
 		name = news.159.c
-	}
-}
-
-# Germany has defensive war without having remilitarized Rhineland. Which then happens.
-news_event = {
-	id = news.160
-	title = news.160.t
-	desc = news.160.d
-	picture = GFX_news_event_german_soldiers
-
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = rhineland_militarized_war }
-		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-				NOT = { has_completed_focus = GER_rhineland }
-			}
-			has_defensive_war = yes
-			NOT = { has_civil_war = yes }
-		}
-		42 = {
-			is_demilitarized_zone = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = rhineland_militarized_war
-	}
-
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	option = {
-		trigger = { NOT = { tag = GER } }
-		name = news.160.a
-	}
-	option = {
-		trigger = { tag = GER }
-		name = news.160.b
 	}
 }
 

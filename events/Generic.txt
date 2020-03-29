@@ -574,22 +574,6 @@ country_event = {
 			id = FROM
 			value = 200
 		}
-		hidden_effect = {
-			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
-			if = {
-				limit = {
-					FROM = {
-						original_tag = GER
-						has_government = democratic
-						has_completed_focus = GER_pool_technical_know_how
-					}
-					NOT = { has_idea = GER_pool_technical_know_how }
-				}
-				add_ideas = GER_pool_technical_know_how
-			}
-		}
 	}
 	option = { #Agree / Both Fascist
 		name = generic.5.b
@@ -714,22 +698,6 @@ country_event = {
 			type = alliance
 			id = FROM
 			value = 200
-		}
-		hidden_effect = {
-			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
-			if = {
-				limit = {
-					FROM = {
-						original_tag = GER
-						has_government = democratic
-						has_completed_focus = GER_pool_technical_know_how
-					}
-					NOT = { has_idea = GER_pool_technical_know_how }
-				}
-				add_ideas = GER_pool_technical_know_how
-			}
 		}
 	}
 

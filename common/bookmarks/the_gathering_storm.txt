@@ -9,15 +9,12 @@ bookmarks = {
 
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = trotskyism
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
+				#
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_claims_on_baltic
-				SOV_war_with_uk
+				#
 			}
 		}
 		"USA"={

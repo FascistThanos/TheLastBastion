@@ -3,7 +3,7 @@ CZE_alternate_strategy_plan_entente = {
 	desc = "Let's fight good and die well!"
 
 	enable = {
-		original_tag = CZE	
+		original_tag = CZE
 		OR = {
 			has_country_flag = CZE_AI_RANDOM_DEMOCRATIC_ALTERNATE
 			has_game_rule = {
@@ -13,29 +13,11 @@ CZE_alternate_strategy_plan_entente = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		CZE_industrial_legacy
-		CZE_strategy_decisions
-		CZE_political_direction
-		CZE_democratic_bastion
-		CZE_balanced_1
-		CZE_balanced_2
-		CZE_an_entente_of_our_own
-		CZE_invite_yugoslavia
-		CZE_balanced_3
-		CZE_beacon_of_liberty
-		CZE_united_population
-		CZE_fortification_studies
-		CZE_sudeten_1
-		CZE_sudeten_2
-		CZE_fallback_line
-		CZE_defensive_preparations
-		CZE_bonus_research_slot_1
-		CZE_invite_romania
-		CZE_faction_tech_sharing
+
 	}
 
 	research = {
@@ -47,7 +29,7 @@ CZE_alternate_strategy_plan_entente = {
 	}
 
 	ideas = {
-		
+
 	}
 	ai_strategy = {
 		type = alliance
@@ -58,7 +40,7 @@ CZE_alternate_strategy_plan_entente = {
 		type = added_military_to_civilian_factory_ratio
 		value = 15
 	}
-	
+
 
 	traits = {
 		captain_of_industry = 5
@@ -77,12 +59,6 @@ CZE_alternate_strategy_plan_entente = {
 	}
 
 	focus_factors = {
-		CZE_military_research_institute = 10
-		CZE_military_aeronautical_institute = 5
-		CZE_mountain_troops = 8
-		CZE_infantry_advancement = 10
-		CZE_artillery_advancement = 5
-		CZE_import_foreign_bombers = 5
 	}
 
 }
@@ -92,7 +68,7 @@ CZE_alternate_strategy_plan_communist = {
 	desc = "Let's all be comrades!"
 
 	enable = {
-		original_tag = CZE	
+		original_tag = CZE
 		OR = {
 			has_country_flag = CZE_AI_RANDOM_COMMUNIST
 			has_game_rule = {
@@ -102,28 +78,11 @@ CZE_alternate_strategy_plan_communist = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		CZE_industrial_legacy
-		CZE_strategy_decisions
-		CZE_political_direction
-		CZE_balanced_1
-		CZE_balanced_2
-		CZE_go_left
-		CZE_balanced_3
-		CZE_united_population
-		CZE_military_research_institute
-		CZE_communist_support
-		CZE_arms_exports_1
-		CZE_czech_socialism
-		CZE_arms_exports_2
-		CZE_arms_exports_3
-		CZE_join_comintern
-		CZE_communism_with_a_human_face
-		CZE_the_romanian_question
-		CZE_bonus_research_slot_1
+
 	}
 
 	research = {
@@ -134,11 +93,11 @@ CZE_alternate_strategy_plan_communist = {
 	}
 
 	ideas = {
-		
+
 	}
-	
-	
-	
+
+
+
 
 	traits = {
 		captain_of_industry = 5
@@ -157,13 +116,6 @@ CZE_alternate_strategy_plan_communist = {
 	}
 
 	focus_factors = {
-		CZE_military_research_institute = 10
-		CZE_military_aeronautical_institute = 5
-		CZE_motorization_scheme = 8
-		CZE_armour_bonus_1 = 10
-		CZE_armour_bonus_ii = 10
-		CZE_import_foreign_bombers = 5
-		CZE_air_is_our_sea = 5
 	}
 
 }
@@ -174,7 +126,7 @@ CZE_alternate_strategy_plan_fascist = {
 	desc = "DEATH OR GLORY!"
 
 	enable = {
-		original_tag = CZE	
+		original_tag = CZE
 		OR = {
 			has_country_flag = CZE_AI_RANDOM_FASCIST
 			has_game_rule = {
@@ -184,30 +136,11 @@ CZE_alternate_strategy_plan_fascist = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		CZE_industrial_legacy
-		CZE_strategy_decisions
-		CZE_political_direction
-		CZE_favor_czechs_1
-		CZE_favor_czechs_2
-		CZE_go_right
-		CZE_german_leanings
-		CZE_favor_czechs_3
-		CZE_deliver_sudetenland
-		CZE_czech_fascism
-		CZE_military_research_institute
-		CZE_exclude_the_slovaks
-		CZE_arms_exports_1
-		CZE_german_minor_ally
-		CZE_arms_exports_2
-		CZE_arms_exports_3
-		CZE_aggressive_wars
-		CZE_the_polish_question
-		CZE_hungarian_situation
-		CZE_bonus_research_slot_1
+
 	}
 
 	research = {
@@ -218,11 +151,11 @@ CZE_alternate_strategy_plan_fascist = {
 	}
 
 	ideas = {
-		
+
 	}
-	
-	
-	
+
+
+
 
 	traits = {
 		captain_of_industry = 5
@@ -241,13 +174,6 @@ CZE_alternate_strategy_plan_fascist = {
 	}
 
 	focus_factors = {
-		CZE_military_research_institute = 10
-		CZE_military_aeronautical_institute = 5
-		CZE_motorization_scheme = 8
-		CZE_armour_bonus_1 = 10
-		CZE_armour_bonus_ii = 10
-		CZE_import_foreign_bombers = 5
-		CZE_air_is_our_sea = 5
 	}
 
 }
@@ -256,7 +182,7 @@ CZE_alternate_strategy_plan_democratic = {
 	desc = "Let's all be friends!"
 
 	enable = {
-		original_tag = CZE	
+		original_tag = CZE
 		OR = {
 			has_country_flag = CZE_AI_RANDOM_DEMOCRATIC
 			has_game_rule = {
@@ -266,25 +192,11 @@ CZE_alternate_strategy_plan_democratic = {
 		}
 	}
 	abort = {
-		
+
 	}
 
 	ai_national_focuses = {
-		CZE_industrial_legacy
-		CZE_strategy_decisions
-		CZE_democratic_bastion
-		CZE_balanced_1
-		CZE_balanced_2
-		CZE_trust_in_the_west
-		CZE_balanced_3
-		CZE_beacon_of_liberty
-		CZE_united_population
-		CZE_doctrinal_innovation
-		CZE_bonus_research_slot_2
-		CZE_arms_exports_1
-		CZE_bonus_research_slot_1
-		CZE_arms_exports_2
-		CZE_arms_exports_3
+
 	}
 
 	research = {
@@ -296,11 +208,11 @@ CZE_alternate_strategy_plan_democratic = {
 	}
 
 	ideas = {
-		
+
 	}
-	
-	
-	
+
+
+
 
 	traits = {
 		captain_of_industry = 5
@@ -319,14 +231,6 @@ CZE_alternate_strategy_plan_democratic = {
 	}
 
 	focus_factors = {
-		CZE_military_research_institute = 10
-		CZE_military_aeronautical_institute = 5
-		CZE_motorization_scheme = 8
-		CZE_armour_bonus_1 = 10
-		CZE_armour_bonus_ii = 10
-		CZE_import_foreign_bombers = 5
-		CZE_air_is_our_sea = 5
 	}
 
 }
-
