@@ -56,3 +56,47 @@ country_event = {
 set_global_flag = stalin_found
   }
 }
+
+#Invite to Comintern Generic
+country_event = {
+  id = tlbsoviet.5
+  title = tlbsoviet.5.t
+  desc = tlbsoviet.5.d
+
+  picture = GFX_report_event_soviet_army_greeted
+
+  is_triggered_only = yes
+
+  option = {
+    	name = tlbsoviet.5.a
+      SOV = { add_to_faction = ROOT }
+  }
+  option = {
+      name = tlbsoviet.5.b
+    SOV = {  add_opinion_modifier = { target = ROOT modifier = medium_decrease } }
+  }
+}
+
+#Panama and Benelux Choice
+country_event = {
+  id = tlbsoviet.6
+  title = tlbsoviet.6.t
+  desc = tlbsoviet.6.d
+
+  picture = GFX_report_event_soviet_army_greeted
+
+  is_triggered_only = yes
+
+  option = {
+    	name = tlbsoviet.6.a
+      SOV = { add_to_faction = ROOT }
+  }
+  option = {
+      name = tlbsoviet.6.b
+give_military_access = SOV
+  }
+  option = {
+      name = tlbsoviet.6.c
+    SOV = {  create_wargoal = {  type = puppet_wargoal_focus    target = ROOT  } }
+  }
+}
