@@ -159,3 +159,22 @@
  GEN_underseas_combat_desc:0 ""
  GEN_naval_tactics_committee:0 "Naval Tactics Committee"
  GEN_naval_tactics_committee_desc:0 ""
+
+ #Generic Ideas
+ GEN_big_business_supporters:0 "Big Business Supporters"
+ GEN_big_business_supporters_desc:0 ""
+ GEN_land_of_the_free:0 "Land of the Free"
+ GEN_land_of_the_free_desc:0 ""
+ GEN_regulations:0 "Regulations"
+ GEN_regulations_desc:0 ""
+ GEN_welfare_supported_society:0 "Welfare Supported Society"
+ GEN_welfare_supported_society_desc:0 ""
+ GEN_will_of_the_people:0 "Will of the People"
+ GEN_will_of_the_people_desc:0 ""
+
+ #Generic Events
+ generic2.1.t:0 "Elections"
+ generic2.1.desc:0 "One of the defining aspects of a democracy is that the masses control the running of the nation. The time for the people to decide the fate of our nation has come, and they have come out in droves to cast their vote. With the ballots counted the nation waits, each person hoping the ideals that they believe in will be represented in the new government. The question now is, what ideology truimphed?"
+ generic2.1.a:0 "A return to traditional values is needed."
+ generic2.1.b:0 "A new form of liberalism is required."
+ generic2.1.c:0 "The people have spoken for socialism."

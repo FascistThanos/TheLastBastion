@@ -4079,5 +4079,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER_french_volunteers.dds"
 	}
 
+### Generic Ideas ###
+	spriteType = {
+		name = "GFX_idea_GEN_big_business_supporters"
+		texturefile = "gfx/interface/ideas/generic_economic_increase.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_GEN_regulations"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_welfare_supported_society"
+		texturefile = "gfx/interface/ideas/idea_generic_central_management.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_land_of_the_free"
+		texturefile = "gfx/interface/ideas/generic_volunteer_expedition_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_will_of_the_people"
+		texturefile = "gfx/interface/ideas/idea_prc_low_popular_support3.dds"
+	}
 }

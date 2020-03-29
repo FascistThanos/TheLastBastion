@@ -1,0 +1,90 @@
+ideas = {
+	country = {
+		GEN_big_business_supporters = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		GEN_land_of_the_free = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteers_tension = -0.3
+				send_volunteer_divisions_required = -0.15
+			}
+		}
+
+		GEN_regulations = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+
+		GEN_welfare_supported_society = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		GEN_will_of_the_people = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+		}
+	}
+}

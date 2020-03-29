@@ -36,7 +36,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_stability = 0.15
 			}
 	
 	}
@@ -53,7 +53,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = { id = generic2.1 hours = 1}
 			}
 	}
 
@@ -63,10 +63,11 @@ focus_tree = {
 		icon = GFX_Generic_Working_Class_Family
 		prerequisite = { focus = GEN_elections }
 		mutually_exclusive = { focus = GEN_neo-liberalism focus = GEN_people's_socialism }
+		available = { always = no }
 		x = -2
 		y = 1
 		relative_position_id = GEN_elections
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -88,7 +89,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_big_business_supporters
 			}
 	}
 
@@ -97,10 +98,11 @@ focus_tree = {
 		icon = GFX_Generic_Legislation
 		prerequisite = { focus = GEN_elections }
 		mutually_exclusive = { focus = GEN_traditional_values focus = GEN_people's_socialism }
+		available = { always = no }
 		x = 0
 		y = 1
 		relative_position_id = GEN_elections
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -121,7 +123,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_regulations
 			}
 	}
 
@@ -130,10 +132,11 @@ focus_tree = {
 		icon = GFX_Generic_Social_Democracy
 		prerequisite = { focus = GEN_elections }
 		mutually_exclusive = { focus = GEN_traditional_values  focus = GEN_neo-liberalism }
+		available = { always = no }
 		x = 2
 		y = 1
 		relative_position_id = GEN_elections
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -154,7 +157,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_welfare_supported_society
 			}
 	}
 
@@ -170,7 +173,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_political_power = 120
 			}
 	}
 
@@ -186,7 +189,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_will_of_the_people
 			}
 	}
 
@@ -203,7 +206,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_land_of_the_free
 			}
 	}
 
