@@ -604,7 +604,7 @@ prerequisite = {focus = SOV_trotsky_cult focus = SOV_great_comintern }
 		y = 1
 		relative_position_id = SOV_prepare_marines
 		cost = 10
-prerequisite = {focus = SOV_prepare_marines }
+		prerequisite = {focus = SOV_prepare_marines }
 		available_if_capitulated = yes
 				completion_reward = {
 			PAN = { country_event = { id = tlbsoviet.6 days = 7 } }
