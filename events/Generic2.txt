@@ -34,7 +34,6 @@ country_event = {
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = liberal popularity = 0.5 }
 		add_popularity = { ideology = socialism popularity = 0.1 }
-		set_ruling_party = liberal
 		hidden_effect = {
 			complete_national_focus = GEN_neo-liberalism
 		}
