@@ -87,8 +87,6 @@ ideas = {
 			}
 		}
 
-		#####
-
 		GEN_unitary_government = {
 
 			allowed = {
@@ -154,7 +152,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				war_support_weekly = 0.05
+				war_support_weekly = 0.001
 				conscription = 0.03
 			}
 		}

@@ -370,8 +370,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_popularity = { monarchist = neutrality popularity = 0.75 }
-			set_ruling_party = monarchist
+			add_popularity = { ideology = monarchist popularity = 0.75 }
+			set_politics = {
+				ruling_party = monarchist
+				elections_allowed = no
+			}
 			}
 		
 	}
@@ -388,7 +391,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_strict_social_hierarchy
 			}
 		
 	}
@@ -405,7 +408,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_divine_right
 			}
 		
 	}
@@ -422,7 +425,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_war_support = 0.1
 			}
 		
 	}
@@ -439,7 +443,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_policy_of_imperialsm
 			}
 		
 	}
