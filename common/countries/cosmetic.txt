@@ -234,3 +234,7 @@ SGF = {
 	color = rgb { 53 98 196 }
 	color_ui = rgb { 53 98 196 }
 }
+UCA = {
+  color = rgb { 34 225 242 }
+  color_ui = rgb { 34 225 242 }
+}

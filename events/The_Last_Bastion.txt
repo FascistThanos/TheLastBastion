@@ -1,4 +1,5 @@
 add_namespace = tlb
+add_namespace = usapeace
 
 country_event = {
   id = tlb.1
@@ -234,6 +235,26 @@ country_event = {
     ai_chance = {
       base = 90
     }
+    USA = {
+      country_event = usapeace.2
+    }
+  }
+  option = {
+    name = usapeace.1.b
+  }
+}
+country_event = {
+  id = usapeace.2
+  title = usapeace.2.t
+  desc = usapeace.2.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = usapeace.2.a
+    ai_chance = {
+      base = 90
+    }
     GUA = {
       transfer_state = 311
     }
@@ -245,9 +266,6 @@ country_event = {
     }
   }
   option = {
-    name = usapeace.1.b
-    ai_chance = {
-      base = 10
-    }
+    name = usapeace.2.b
   }
 }

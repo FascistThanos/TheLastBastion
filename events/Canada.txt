@@ -8,6 +8,6 @@ country_event = {
   is_triggered_only = yes
 
   option = {
-    add_ideas = US_intervension
+    add_ideas = US_intervension_CAN
   }
 }

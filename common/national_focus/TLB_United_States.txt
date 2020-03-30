@@ -410,7 +410,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TLB_aid_mexico4
 		}
-		
+
 
 		cost = 10.00
 
@@ -763,6 +763,68 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_USCA_realized
+		icon = GFX_Generic_Social_Democracy
+		prerequisite = {
+			focus = TLB_war_economy_gua
+		}
+		prerequisite = {
+			focus = TLB_arms_NIC
+		}
+		prerequisite = {
+			focus = TLB_naval_union_esho
+		}
+
+		cost = 10
+
+		x = 9
+		y = 11
+
+		completion_reward = {
+			GUA = {
+				annex_country = {
+					target = HON
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ELS
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = NIC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = COS
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = PAN
+					transfer_troops = yes
+				}
+				set_cosmetic_tag = UCA
+			}
+			311 = {
+				add_core_of = GUA
+			}
+			314 = {
+				add_core_of = GUA
+			}
+			312 = {
+				add_core_of = GUA
+			}
+			317 = {
+				add_core_of = GUA
+			}
+			316 = {
+				add_core_of = GUA
+			}
+			304 = {
+				add_core_of = GUA
 			}
 		}
 	}

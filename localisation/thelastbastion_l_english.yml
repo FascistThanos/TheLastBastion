@@ -10,6 +10,9 @@
 
 
 
+#Ideas
+US_intervension_CAN:0 "American Intervention"
+US_intervension_CAN_desc:0 "Ever since the United Kindgom has fallen to the external pressures of communism, the United States congress has passed a bill that allows US intervetion in the Canadian government. This means that they're influincing the people of Canada to seek more independence from the crumbling empire and it will influence the call for referendum to become independent."
 
 #Events
  tlb.1.t:0 "Mexico has Accepted Our Offer"
@@ -46,6 +49,12 @@
  #Peace Events
  usapeace.1.t:0 "The Guatemalans have Taken Their Claim"
  usapeace.1.d:0 "While we have faught valliantly, the Guatamalans with the help of the Americans have been able to take control of British Honduras. We could continue the war, it would cause mass instability withing our nation and it's been proven that we don't have the military power to compete with the Americans. The best option would be to surrender the territory and not risk any more bloodshed."
+ usapeace.1.a:0 "The land was almost valueless anyway"
+ usapeace.1.b:0 "We will fight to the last man"
+ usapeace.2.t:0 "The British offer peace"
+ usapeace.2.d:0 "We have proven that the United States is superior on the battlefield to the British. They have offered peace and have agreed to surrender the lands of Belize to the Guatemalan Government. While the land doesn't hold much value in money, it could be a very important strategic location if the communists were to stage an invasion into the homeland. There is still much to be done to secure democracy, but we've made a step towards it."
+ usapeace.2.a:0 "We've done what we came to do."
+ usapeace.2.b:0 "Only a total victory will suffice!"
 
  tlb.40.t:0 "Placeholder"
  tlb.40.d:0 "Placeholder Event"
@@ -65,7 +74,7 @@
  TLB_chinese_intervention:0 "Chinese Intervention"
  TLB_chinese_intervention_desc:0 "China has always been fractured, making this time unsuprising. Following much of Europe, they have succumb to the revolution. While underdeveloped, China could easily be exploited by the communists for their natural recources and manpower. We can stop that from happening by offering support in return for safe desinations for diplomats and influencers."
  TLB_secure_mexico:0 "Secure Mexico"
- TLB_secure_mexico_desc:0 "Our Southern border has a country that will, undoubtably, be a battle ground for the ideologies. While non-aligned, they have the potential to fall to communism. If we can secure Mexico and Canada, we should be able to secure the rest of America fairly easily."
+ TLB_secure_mexico_desc:0 "Our southern neighbor, Mexico, has always been a land of instability and major political influence. We need to have a secure southern border in order to create a staging ground into central America. The country has constantly been plagued by civil war and ideological battles, hopefully we can slow the process to a halt and install a stable and working democracy in Mexico."
  TLB_secure_CA:0 "Secure Central America"
  TLB_secure_CA_desc:0 "While Mexico could always be further developed, we should begin to shift our focus onto Central America. The area has many small countries, but if we offer them a union, it would be easier for them to conscript and build industry."
  TLB_aid_mexico1:0 "Begin Construction in Mexico City"
@@ -73,9 +82,9 @@
  TLB_DCMexicoCity_railway:0 "Washington DC-Mexico City Railway"
  TLB_DCMexicoCity_railway_desc:0 "To streamline the travel from Washington, District Columbia to Mexico City, we need to set up a railway system. This will improve supply lines in case of conflict in south or central America and will also create a quick way for diplomats to travel."
  TLB_aid_mexico2:0 "Rural Infrastructure Development"
- TLB_aid_mexico2_desc:0 "To be completed"
+ TLB_aid_mexico2_desc:0 "In order to create a more centralized beurocracy, Mexico needs to have a large and efficient transport system all across the country. Streamlining supplies needed for construction and in the worst of circumstances, war. Infrastructure is always a need to create a strong industry, which is what we need."
  TLB_aid_mexico3:0 "Industrialized Heartland"
- TLB_aid_mexico3_desc:0 "To be completed"
+ TLB_aid_mexico3_desc:0 "To create a stronger and wealthier Mexico City, we should increase the industrial power there. More jobs would create a larger population population growth and increase government spending in the city and increase it's budget. Creating a large industry in Mexico City is the first step to making a fully developed country."
  TLB_LAMexicoCityRailroad:0 "Los Angeles-Mexico City Railroad"
  TLB_aid_mexico4:0 "Prepare Them for War"
  TLB_aid_mexico4_desc:0 "To be completed"
@@ -107,3 +116,6 @@
  TLB_infrastructure_NIC_desc:0 "To be completed"
  TLB_arms_NIC:0 "Military Buildup in Nicaragua"
  TLB_arms_NIC_desc:0 "To be completed"
+ TLB_USCA_realized:0 "Reunification of the USCA"
+ TLB_USCA_realized_desc:0 "The preparations have been complete and the time is right. Our preparations have been meticulous and calculated. The reunification may prove difficult as the separation was not a simple and diplomatic one, but we hope that with the intervention of the United States the country may prosper again and keep stability in Central America."
+ 
