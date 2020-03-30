@@ -1,5 +1,4 @@
 name="The Last Bastion"
-path="mod/thelastbastion-wdfd"
 tags={
 	"Alternative History"
 	"Map"
