@@ -171,6 +171,16 @@
  GEN_welfare_supported_society_desc:0 ""
  GEN_will_of_the_people:0 "Will of the People"
  GEN_will_of_the_people_desc:0 ""
+ GEN_unitary_government:0 "Unitary Government"
+ GEN_unitary_government_desc:0 ""
+ GEN_secret_police:0 "Secret Police"
+ GEN_secret_police_desc:0 ""
+ GEN_never_surrender:0 "Never Surrender"
+ GEN_never_surrender_desc:0 ""
+ GEN_nationwide_propaganda:0 "Nationwide Propaganda"
+ GEN_nationwide_propaganda_desc:0 ""
+ GEN_outwards_expansion:0 "Outwards Expansion"
+ GEN_outwards_expansion_desc:0 ""
 
  #Generic Events
  generic2.1.t:0 "Elections"

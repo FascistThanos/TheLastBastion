@@ -17,6 +17,10 @@ country_event = {
 		add_popularity = { ideology = democratic popularity = 0.5 }
 		add_popularity = { ideology = liberal popularity = 0.1 }
 		add_popularity = { ideology = socialism popularity = 0.1 }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
 		hidden_effect = {
 			complete_national_focus = GEN_traditional_values
 		}
@@ -30,8 +34,13 @@ country_event = {
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = liberal popularity = 0.5 }
 		add_popularity = { ideology = socialism popularity = 0.1 }
+		set_ruling_party = liberal
 		hidden_effect = {
 			complete_national_focus = GEN_neo-liberalism
+		}
+		set_politics = {
+			ruling_party = liberal
+			elections_allowed = yes
 		}
 		
 	}
@@ -44,8 +53,13 @@ country_event = {
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = liberal popularity = 0.1 }
 		add_popularity = { ideology = socialism popularity = 0.5 }
+		set_ruling_party = socialism
 		hidden_effect = {
 			complete_national_focus = GEN_people's_socialism
+		}
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
 		}
 	}
 }

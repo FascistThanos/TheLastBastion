@@ -240,7 +240,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_unitary_government
 			}
 	}
 
@@ -257,7 +257,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = { ideology = fascism popularity = 0.75 }
+			add_stability = -0.25
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 			}
 	}
 
@@ -273,7 +278,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_secret_police
 			}
 		
 	}
@@ -291,7 +296,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = { ideology = neutrality popularity = 0.75 }
+			add_stability = -0.25
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
 			}
 		
 	}
@@ -308,7 +318,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_never_surrender
 			}
 		
 	}
@@ -325,7 +335,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_nationwide_propaganda
 			}
 		
 	}
@@ -342,7 +352,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_outwards_expansion
 			}
 		
 	}
@@ -360,7 +370,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = { monarchist = neutrality popularity = 0.75 }
+			set_ruling_party = monarchist
 			}
 		
 	}

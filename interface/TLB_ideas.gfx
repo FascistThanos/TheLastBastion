@@ -4104,4 +4104,29 @@ spriteTypes = {
 		name = "GFX_idea_GEN_will_of_the_people"
 		texturefile = "gfx/interface/ideas/idea_prc_low_popular_support3.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_secret_police"
+		texturefile = "gfx/interface/ideas/generic_spy_coup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_outwards_expansion"
+		texturefile = "gfx/interface/ideas/idea_CZE_planning_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_nationwide_propaganda"
+		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_never_surrender"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_unitary_government"
+		texturefile = "gfx/interface/ideas/idea_hol_de_vaarplicht.dds"
+	}
 }
