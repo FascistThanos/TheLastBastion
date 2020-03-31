@@ -52,24 +52,6 @@ ideas = {
 			}
 		}
 
-		GEN_totalist_legislature = {
-
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_weekly = 0.001
-				war_support_weekly = 0.001
-			}
-		}
-
 		GEN_welfare_supported_society = {
 
 			allowed = {

@@ -88,15 +88,15 @@ if = {
 }
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = communism
 	last_election = "1933.4.26"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 15
-	socialism = 20
-	trotskyism = 65
+	democratic = 4
+	fascism = 4
+	communism = 92
 }
 
 set_convoys = 150
@@ -129,7 +129,7 @@ create_country_leader = {
 	desc = "POLITICS_LOU_DE_VISSER_DESC"
 	picture = "GFX_portrait_HOL_lou_de_visser"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = leninism
 	traits = {
 		veteran_communist
 	}

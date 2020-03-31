@@ -175,19 +175,17 @@ if = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = communism
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
 	democratic = 18
+	fascism = 15
 	neutrality = 2
-	communism = 15
-	trotskyism = 65
+	communism = 65
 }
-
-SOV = { add_to_faction = POL }
 
 1939.1.1 = {
 	set_popularities = {
@@ -225,7 +223,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = leninism
 	traits = {
 		#
 	}

@@ -53,20 +53,18 @@ give_guarantee = GRE
 set_convoys = 10
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = communism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	trotskyism = 54
-	socialism = 2
-	fascism = 20
-	communism = 20
-	neutrality = 4
+	communism = 66
+	socialism = 3
+	fascism = 26
+	neutrality = 5
 }
 
-SOV = { add_to_faction = ROM}
 create_country_leader = {
 	name = "Gheorghe Tatarescu"
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
@@ -83,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
 	picture = "Portrait_Romania_Constantin_Parhon.dds"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = anti_revisionism
 	traits = {
 		#
 	}

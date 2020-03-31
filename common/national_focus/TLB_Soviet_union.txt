@@ -1783,6 +1783,7 @@ prerequisite = {focus = SOV_stalin_back}
 				CHI = {
 					add_opinion_modifier = { target = SOV modifier = operation_zet_chi }
 				}
+				JAP = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
 				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
 			}
 			else_if = {
@@ -1794,6 +1795,7 @@ prerequisite = {focus = SOV_stalin_back}
 				CHI = {
 					add_opinion_modifier = { target = SOV modifier = operation_zet_jap }
 				}
+				JAP = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
 				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_chi } }
 			}
 		}
@@ -3215,7 +3217,7 @@ focus = {
 
 available = {
 any_state = {
-    is_controlled_by = SOV
+    is_controlled_by = PRC
     is_coastal = yes
 }
 

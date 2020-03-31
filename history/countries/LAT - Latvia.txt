@@ -99,17 +99,16 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = communism
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
 }
 set_popularities = {
 	democratic = 30
-	liberal = 15
-	neutrality = 10
-	communism = 5
-	trotskyism = 40
+	fascism = 15
+	neutrality = 15
+	communism = 40
 }
 
 # probably needs some adjustment before nazi occupation in 1940
@@ -153,7 +152,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_lat_vilis_lacis"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = marxism
 	traits = {
 		#
 	}

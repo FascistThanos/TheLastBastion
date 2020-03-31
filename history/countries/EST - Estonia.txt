@@ -36,13 +36,13 @@ if = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = communism
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	trotskyism = 89
+	communism = 89
 	neutrality = 5
 	socialism = 3
 	liberal = 3
@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_SARE_DESC"
 	picture = "Portrait_Estonia_Karl_Sare.dds"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = anarchist_communism
 	traits = {
 		#
 	}

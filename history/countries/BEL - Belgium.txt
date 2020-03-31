@@ -77,15 +77,15 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	trotskyism = 83
-	socialism = 11
+	democratic = 83
+	fascism = 11
 	communism = 6
 }
 
@@ -108,7 +108,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = anarchist_communism
 	traits = {
 		#
 	}
