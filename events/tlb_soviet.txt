@@ -70,12 +70,12 @@ country_event = {
   option = {
     	name = tlbsoviet.5.a
       SOV = { add_to_faction = ROOT }
-      ai_chance = { base = 10 }
+      ai_chance = { base = 40 }
   }
   option = {
       name = tlbsoviet.5.b
     SOV = {  add_opinion_modifier = { target = ROOT modifier = medium_decrease } }
-      ai_chance = { base = 5 }
+      ai_chance = { base = 20 }
   }
 }
 
@@ -92,16 +92,16 @@ country_event = {
   option = {
     	name = tlbsoviet.6.a
       SOV = { add_to_faction = ROOT }
-        ai_chance = { base = 10 }
+        ai_chance = { base = 40 }
   }
   option = {
       name = tlbsoviet.6.b
 give_military_access = SOV
-  ai_chance = { base = 10 }
+  ai_chance = { base = 35 }
   }
   option = {
       name = tlbsoviet.6.c
     SOV = {  create_wargoal = {  type = puppet_wargoal_focus    target = ROOT  } }
-      ai_chance = { base = 5 }
+      ai_chance = { base = 20 }
   }
 }
