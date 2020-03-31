@@ -69,7 +69,7 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = trotskyism
 	last_election = "1926.5.8"
 	election_frequency = 120
 	elections_allowed = no
@@ -77,8 +77,9 @@ set_politics = {
 set_popularities = {
 	democratic = 20
 	fascism = 15
-	neutrality = 15
-	communism = 50
+	neutrality = 5
+	trotskyism = 45
+	communism = 15
 }
 
 1939.1.1 = {

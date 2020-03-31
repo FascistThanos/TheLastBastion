@@ -19,17 +19,20 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = trotskyism
 	last_election = "1931.6.21"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+SOV = { add_to_faction = BUL }
+
 set_popularities = {
-	communism = 63
+	trotskyism = 57
+	communism = 15
 	neutrality = 9
 	fascism = 13
-	monarchist = 15
+	monarchist = 6
 }
 
 create_country_leader = {
