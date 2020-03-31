@@ -76,17 +76,15 @@ if = {
 set_convoys = 300
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = communism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	liberal = 5
-	socialism = 2
-	trotskyism = 85
-	communism = 5
-	democratic = 3
+	democratic = 5
+	fascism = 2
+	communism = 93
 }
 
 create_country_leader = {

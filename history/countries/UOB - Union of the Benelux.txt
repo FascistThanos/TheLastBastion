@@ -88,15 +88,15 @@ if = {
 }
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = communism
 	last_election = "1933.4.26"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 15
-	socialism = 20
-	trotskyism = 65
+	democratic = 4
+	fascism = 4
+	communism = 92
 }
 
 set_convoys = 150

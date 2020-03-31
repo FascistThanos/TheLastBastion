@@ -77,15 +77,15 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	trotskyism = 83
-	socialism = 11
+	democratic = 83
+	fascism = 11
 	communism = 6
 }
 
