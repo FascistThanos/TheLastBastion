@@ -176,40 +176,40 @@ ideologies = {
 	}
 
 	# Maoism
-	maoism = {
+	#maoism = {
+  #
+	#	types = {
+  #
+	#		maoism_type = {
+	#		}
+	#	}
 
-		types = {
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_COMMUNIST_1"
+	#		"FACTION_NAME_COMMUNIST_2"
+	#		"FACTION_NAME_COMMUNIST_3"
+	#		"FACTION_NAME_COMMUNIST_4"
+	#		"FACTION_NAME_COMMUNIST_5"
+	#	}
 
-			maoism_type = {
-			}
-		}
+	#	color = { 242 70 44 }
 
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
+	#	war_impact_on_world_tension = 0.75		#Commie less threatening
+	#	faction_impact_on_world_tension = 0.5
 
-		color = { 242 70 44 }
+	#	ai_communist = yes # uses the commie AI behaviour
 
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
+	#	rules = {
+	#		can_force_government = yes
+	#		can_send_volunteers = yes
+	#		can_puppet = yes
+	#	}
 
-		ai_communist = yes # uses the commie AI behaviour
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-
-		modifiers = {
-			puppet_cost_factor = -0.3
-			foreign_subversive_activites = -0.25
-		}
-	}
+	#	modifiers = {
+	#		puppet_cost_factor = -0.3
+	#		foreign_subversive_activites = -0.25
+	#	}
+	#}
 
 	# Monarchist
 	monarchist = {
