@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_SARE_DESC"
 	picture = "Portrait_Estonia_Karl_Sare.dds"
 	expire = "1965.1.1"
-	ideology = anarchist_communism
+	ideology = trotskyism_type
 	traits = {
 		#
 	}

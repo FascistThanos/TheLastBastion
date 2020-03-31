@@ -129,7 +129,7 @@ create_country_leader = {
 	desc = "POLITICS_LOU_DE_VISSER_DESC"
 	picture = "GFX_portrait_HOL_lou_de_visser"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = trotskyism_type
 	traits = {
 		veteran_communist
 	}
