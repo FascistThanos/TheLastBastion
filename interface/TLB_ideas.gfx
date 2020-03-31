@@ -4129,4 +4129,44 @@ spriteTypes = {
 		name = "GFX_idea_GEN_unitary_government"
 		texturefile = "gfx/interface/ideas/idea_hol_de_vaarplicht.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_strict_social_hierarchy"
+		texturefile = "gfx/interface/ideas/idea_generic_oppression.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_divine_right"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GEN_policy_of_imperialism"
+		texturefile = "gfx/interface/ideas/idea_generic_monarchist_uprising.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_world_revolution"
+		texturefile = "gfx/interface/ideas/home_of_the_revolution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_communal_society"
+		texturefile = "gfx/interface/ideas/spr_collectivized_society.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_strong_markets"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_organized_army_command"
+		texturefile = "gfx/interface/ideas/idea_generic_reserve_divisions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GEN_industrial_mobilization"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+	}
 }

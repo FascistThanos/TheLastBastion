@@ -461,7 +461,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_stability = 0.075
+			add_war_support = 0.075
 			}
 		
 	}
@@ -479,7 +480,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = { ideology = trotskyism popularity = 0.5 }
+			add_popularity = { ideology = communism popularity = 0.2 }
+			set_politics = {
+				ruling_party = trotskyism
+				elections_allowed = no
+			}
 			}
 		
 	}
@@ -497,15 +503,42 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = { ideology = communism popularity = 0.5 }
+			add_popularity = { ideology = trotskyism popularity = 0.2 }
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
 			}
-		
+			}
+					
 	}
 
 	focus = {
 		id = GEN_join_the_soviets
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = GEN_further_the_revolution focus = GEN_totalist_constitution }
+		available = { 
+			NOT = {
+				is_in_faction = yes
+			}
+			OR = {
+				AND = {
+					has_government = trotskyism
+					SOV = {
+						has_government = trotskyism
+					}
+				}
+				AND = {
+					has_government = communism
+					SOV = {
+						has_government = communism
+					}
+				}
+			}
+		}
+		bypass = {
+			is_in_faction_with = SOV
+		}
 		x = -1
 		y = 1
 		relative_position_id = GEN_totalist_constitution
@@ -514,7 +547,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			SOV = {
+				country_event = { id = generic2.2 hours = 1 }
+			}
 			}
 		
 	}
@@ -531,7 +566,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_communal_society
 			}
 		
 	}
@@ -548,13 +583,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_wealth_redistribution_scheme
 			}
 		
 	}
 
 	focus = {
-		id = GEN_trotzkyist_world
+		id = GEN_trotskyist_world
 		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = GEN_wealth_redistribution }
 		x = 0
@@ -565,7 +600,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_world_revolution
 			}
 		
 	}
@@ -582,7 +617,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_publicly_owned_factories
 			}
 		
 	}
@@ -599,7 +634,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_small-scale_economies
 			}
 		
 	}
@@ -616,7 +651,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_totalist_legislature
 			}
 		
 	}
@@ -631,7 +666,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.75
+				uses = 2
+				category = industry
+			}
 			}
 		
 	}
@@ -648,7 +688,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_strong_markets
 			}
 		
 	}
@@ -665,7 +705,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -682,7 +751,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -699,7 +797,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_research_slot = 1
 			}
 		
 	}
@@ -708,6 +806,9 @@ focus_tree = {
 		id = GEN_government_sponsored_laboratories
 		icon = GFX_focus_research
 		prerequisite = { focus = GEN_new_universities }
+		available = {
+			num_of_factories > 50
+		}
 		x = 0
 		y = 1
 		relative_position_id = GEN_new_universities
@@ -716,7 +817,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_research_slot = 1
 			}
 		
 	}
@@ -733,7 +834,60 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -750,7 +904,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -767,7 +950,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -784,7 +996,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -793,6 +1034,12 @@ focus_tree = {
 		id = GEN_mobilization
 		icon = GFX_Generic_Coalition_Army
 		prerequisite = { focus = GEN_wartime_industry_2 }
+		available = {
+			OR = {
+				has_war = yes
+				has_war_support > 0.75
+			}
+		}
 		x = -1
 		y = 1
 		relative_position_id = GEN_wartime_industry_2
@@ -801,7 +1048,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_industrial_mobilization
 			}
 		
 	}
@@ -818,7 +1065,60 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -835,7 +1135,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		
 	}
@@ -852,7 +1181,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
 			}
 		
 	}
@@ -869,9 +1203,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.75
+				uses = 2
+				category = electronics
 			}
-		
+		}
 	}
 
 	focus = {
@@ -884,7 +1222,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			army_experience = 25
 			}
 		
 	}
@@ -901,7 +1239,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = GEN_organized_army_command
 			}
 		
 	}
@@ -918,7 +1256,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 			}
 		
 	}
@@ -935,7 +1278,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 			}
 		
 	}
@@ -952,9 +1300,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_bonus
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
 			}
-		
+		}
 	}
 
 	focus = {
@@ -969,7 +1321,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
 			}
 		
 	}
@@ -987,7 +1344,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
 			}
 		
 	}
@@ -1004,7 +1371,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 1
+				technology = motorised_infantry
+			}
 			}
 		
 	}
@@ -1022,7 +1394,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
 			}
 		
 	}
@@ -1039,7 +1416,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
 			}
 		
 	}
@@ -1054,7 +1436,52 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
 			}
 		
 	}
@@ -1072,7 +1499,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
 			}
 		
 	}
@@ -1090,7 +1528,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
 			}
 		
 	}
@@ -1107,7 +1553,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+			}
 			}
 		
 	}
@@ -1124,7 +1575,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
 			}
 		
 	}
@@ -1141,9 +1597,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
 			}
-		
+		}
 	}
 
 	focus = {
@@ -1159,7 +1619,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = rocketry_bonus
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
 			}
 		
 	}
@@ -1176,7 +1641,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = anti-air_bonus
+				bonus = 1.0
+				uses = 1
+				technology = interwar_antiair
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = antiair4
+				technology = antiair5
+			}
 			}
 		
 	}
@@ -1195,7 +1670,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
 			}
 		
 	}
@@ -1213,9 +1699,33 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
-		
 	}
 
 	focus = {
@@ -1228,9 +1738,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
 			}
-		
+			}
 	}
 
 	focus = {
@@ -1246,7 +1771,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
 			}
 		
 	}
@@ -1264,7 +1794,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = battleship_bonus
+				bonus = 1.0
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+			}
 			}
 		
 	}
@@ -1281,7 +1817,13 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
 			}
 		
 	}
@@ -1299,7 +1841,12 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
 			}
 		
 	}
@@ -1317,7 +1864,12 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
 			}
 		
 	}
@@ -1334,8 +1886,12 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
 			}
 		
-	}
 }
