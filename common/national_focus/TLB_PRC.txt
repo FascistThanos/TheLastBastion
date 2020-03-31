@@ -273,35 +273,6 @@ has_war = no
 	}
 }
 
-focus = {
-	id = PRC_rebuild_china_war
-	icon = GFX_Generic_Construction
-	prerequisite = { focus = PRC_post_war_rehabilitation }
-	x = 0
-	y = 1
-	relative_position_id = PRC_post_war_rehabilitation
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-
-	}
-}
 
 focus = {
 	id = PRC_rebuild_china_war
@@ -563,6 +534,39 @@ focus = {
 }
 
 focus = {
+	id = PRC_red_japan
+	icon = GFX_Generic_Secret_Meeting
+	prerequisite = { focus = PRC_japan_friend }
+	x = 0
+	y = 1
+	relative_position_id = PRC_japan_friend
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+JAP = {	add_timed_idea = {
+			idea = PRC_japan_idea
+			days = 100
+	}}
+}
+}
+
+focus = {
 	id = PRC_southern_thrust
 	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = PRC_red_japan }
@@ -676,7 +680,7 @@ focus = {
 	}
 
 	available = {
- = { is_puppet_of = UOB }
+
 	}
 
 	bypass = {
@@ -820,35 +824,7 @@ create_faction = "People's Front"
 	}
 }
 
-focus = {
-	id = PRC_strike_manchu
-	icon = GFX_goal_manchu_flames
-		prerequisite = { focus = PRC_expand_chi}
-	x = 0
-	y = 1
-	relative_position_id = PRC_expand_chi
 
-	cost = 15
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-completion_reward = {
-create_wargoal = {
-		type = annex_everything
-		target = MAN
-}
-}
-
-
-}
 
 
 
@@ -878,6 +854,36 @@ add_stability = 0.1
 add_war_support = 0.2
 add_manpower = 1000
 }
+}
+
+focus = {
+	id = PRC_strike_manchu
+	icon = GFX_goal_manchu_flames
+		prerequisite = { focus = PRC_expand_chi}
+	x = 0
+	y = 1
+	relative_position_id = PRC_expand_chi
+
+	cost = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+completion_reward = {
+create_wargoal = {
+		type = annex_everything
+		target = MAN
+}
+}
+
+
 }
 
 focus = {
@@ -2779,35 +2785,5 @@ focus = {
 	}
 }
 
-focus = {
-	id = PRC_red_japan
-	icon = GFX_Generic_Secret_Meeting
-	prerequisite = { focus = PRC_japan_friend }
-	x = 0
-	y = 1
-	relative_position_id = PRC_japan_friend
 
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-JAP = {	add_timed_idea = {
-			idea = PRC_japan_idea
-			days = 100
-	}}
-}
 }

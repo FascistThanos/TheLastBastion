@@ -1644,6 +1644,49 @@ focus_tree = {
 		}
 	}
 
+
+
+	focus = {
+		id = ITA_theacerbolaw
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theelectionof1936 }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			country_event = TLB_Italy.5
+		}
+
+		relative_position_id = ITA_pricinipaliaitalia
+	}
+
+
+
+
+	focus = {
+		id = ITA_thefundingbill
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theacerbolaw }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_pricinipaliaitalia
+
+		completion_reward = {
+			country_event = TLB_Italy.6
+		}
+	}
+
 	focus = {
 		id = ITA_parrisgovernment
 		icon = GFX_parrisgovernment
@@ -1675,43 +1718,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_theacerbolaw
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 0
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theelectionof1936 }
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			country_event = TLB_Italy.5
-		}
-
-		relative_position_id = ITA_pricinipaliaitalia
-	}
-
-	focus = {
-		id = ITA_thefundingbill
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theacerbolaw }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_pricinipaliaitalia
-
-		completion_reward = {
-			country_event = TLB_Italy.6
-		}
-	}
 
 	focus = {
 		id = ITA_thepeoplesparty
@@ -1779,105 +1785,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_theromeviennarailway
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_befriendaustria }
-		ai_will_do = {
-			factor = 1
-		}
 
-		relative_position_id = ITA_befriendaustria
 
-		completion_reward = {
-			2 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
 
-			162 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			161 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			160 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			153 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			900 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			901 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			4 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_theitalianempire
-		icon = GFX_goal_poland_goal
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theswissmenace }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_theswissmenace
-
-		completion_reward = {
-			set_cosmetic_tag = ITA_italian_empire
-		}
-	}
 
 	focus = {
 		id = ITA_thefascistleague
@@ -1987,26 +1897,87 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_amediterraneanalliance
-		icon = GFX_goal_generic_military_sphere
-		x = -1
+		id = ITA_theromeviennarailway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-    	prerequisite = { focus = ITA_thevolontariofrancese }
-    	prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
-		mutually_exclusive = { focus = ITA_ademocraticalliance }
-
-		relative_position_id = ITA_bidforafricanfreedom
-
-		completion_reward = {
-			add_ideas = ITA_mediterranean_alliance
-		}
-
+		prerequisite = { focus = ITA_befriendaustria }
 		ai_will_do = {
 			factor = 1
 		}
+
+		relative_position_id = ITA_befriendaustria
+
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			162 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			161 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			160 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			153 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			900 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			901 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			4 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
 	}
+
+
 
 	focus = {
 		id = ITA_ademocraticalliance
@@ -2134,38 +2105,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_theeritreanrefugeprogram
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_thenorthafricanprogram }
-		ai_will_do = {
-			factor = 1
-		}
 
-		relative_position_id = ITA_thenorthafricanprogram
-
-		completion_reward = {
-			hidden_effect = {
-				550 = {
-					add_manpower = -30000
-				}
-
-				156 = {
-					add_manpower = 20000
-				}
-
-				182 = {
-					add_manpower = 10000
-				}
-			}
-
-			custom_effect_tooltip = TT_Eritrean_Refugees
-		}
-	}
 
 	focus = {
 		id = ITA_bidforafricanfreedom
@@ -2220,6 +2160,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_amediterraneanalliance
+		icon = GFX_goal_generic_military_sphere
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+    	prerequisite = { focus = ITA_thevolontariofrancese }
+    	prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
+		mutually_exclusive = { focus = ITA_ademocraticalliance }
+
+		relative_position_id = ITA_bidforafricanfreedom
+
+		completion_reward = {
+			add_ideas = ITA_mediterranean_alliance
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
 		id = ITA_theswissmenace
 		icon = GFX_theswissmenace
 		x = 0
@@ -2238,6 +2200,25 @@ focus_tree = {
    				type = annex_everything
     			target = SWI
 			}
+		}
+	}
+
+	focus = {
+		id = ITA_theitalianempire
+		icon = GFX_goal_poland_goal
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theswissmenace }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_theswissmenace
+
+		completion_reward = {
+			set_cosmetic_tag = ITA_italian_empire
 		}
 	}
 
@@ -2930,6 +2911,39 @@ focus_tree = {
 					add_stability = -0.05
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = ITA_theeritreanrefugeprogram
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_thenorthafricanprogram }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_thenorthafricanprogram
+
+		completion_reward = {
+			hidden_effect = {
+				550 = {
+					add_manpower = -30000
+				}
+
+				156 = {
+					add_manpower = 20000
+				}
+
+				182 = {
+					add_manpower = 10000
+				}
+			}
+
+			custom_effect_tooltip = TT_Eritrean_Refugees
 		}
 	}
 
