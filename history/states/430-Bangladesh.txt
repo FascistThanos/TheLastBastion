@@ -6,7 +6,7 @@ state={
 		add_core_of = BAN
 		owner = RAJ
 		victory_points = {
-			11929 1
+			11929 1 
 		}
 		buildings = {
 			infrastructure = 5
@@ -17,6 +17,7 @@ state={
 			}
 
 		}
+		add_core_of = PAK
 		add_core_of = RAJ
 
 	}
