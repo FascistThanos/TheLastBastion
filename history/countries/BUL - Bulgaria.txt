@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = "POLITICS_GEORGI_DIMITROV_DESC"
 	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = marxism
 	traits = {
 		#
 	}

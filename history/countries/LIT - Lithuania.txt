@@ -107,7 +107,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
 	picture = "Portrait_Lithuania_Antanas_Snieškus.dds"
 	expire = "1965.1.1"
-	ideology = trotskyism_type
+	ideology = leninism
 	traits = {
 		#
 	}
