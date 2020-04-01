@@ -185,15 +185,7 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Palmiro Togliatti"
-	desc = "POLITICS_TOGLIATTI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
-	expire = "1965.1.1"
-	ideology = maoism_type
-	traits = {
 
-	}
 }
 
 create_country_leader = {

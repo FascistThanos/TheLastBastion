@@ -349,14 +349,12 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = ENG
-			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		localization_key = ENG_LIMITED_REARMAMENT_HISTORICAL
 	}
 	text = {
 		trigger = {
 			original_tag = ENG
-			has_completed_focus = ENG_a_change_in_course
 		}
 		localization_key = ENG_LIMITED_REARMAMENT_AHISTORICAL
 	}
@@ -477,14 +475,14 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = ENG
-			NOT = { has_completed_focus = ENG_a_change_in_course }
+
 		}
 		localization_key = ENG_GENERAL_REARMAMENT_DESC_HISTORICAL
 	}
 	text = {
 		trigger = {
 			original_tag = ENG
-			has_completed_focus = ENG_a_change_in_course
+
 		}
 		localization_key = ENG_GENERAL_REARMAMENT_DESC_AHISTORICAL
 	}
@@ -631,18 +629,7 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Country
-	name = GetCandidatesFascism2
-	text = {
-		trigger = {
-			has_completed_focus = USA_send_lindbergh_to_germany
-		}
-		localization_key = USA_lindbergh_candidate
-	}
-	text = {
-		localization_key = ""
-	}
-}
+
 
 defined_text = { # Country
 	name = GetStrengthRatioBritain
