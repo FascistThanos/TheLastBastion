@@ -65,7 +65,7 @@ division = {
 }
 division = {
 	name = "Sugi-Hidan"
-	location = 199
+	location = 1047
 	division_template = "Sugi-Hidan Divisions"
 	start_experience_factor = 0.3
 	start_equipment_factor = 0.8
@@ -361,7 +361,7 @@ division = {
 }
 division = {
 	name = "Sugi-Hidan"
-	location = 199
+	location = 1047
 	division_template = "Sugi-Hidan Divisions"
 	start_experience_factor = 0.3
 	start_equipment_factor = 0.8
@@ -649,7 +649,7 @@ division = {
 }
 division = {
 	name = "Sugi-Hidan"
-	location = 3924
+	location = 1047
 	division_template = "Sugi-Hidan Divisions"
 	start_experience_factor = 0.3
 	start_equipment_factor = 0.8
