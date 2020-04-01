@@ -80,7 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "Portrait_Finland_Aimo_Aaltonen.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = trotskyism_type
 	traits = {
 		#
 	}
