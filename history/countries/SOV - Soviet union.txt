@@ -88,11 +88,10 @@ set_politics = {
 set_popularities = {
 	democratic = 5
 	liberal = 5
-	fascism = 2
-	trotskyism = 55
-	maoism = 8
+	fascism = 5
+	trotskyism = 50
 	communism = 20
-	socialism = 5
+	socialism = 15
 }
 
 create_faction = Comintern
