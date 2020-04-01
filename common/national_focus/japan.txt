@@ -1136,7 +1136,7 @@ focus_tree = {
 			}
 			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
 			add_ideas = JAP_intervene_in_china_5
-			unlock_decision_tooltip = JAP_china_step_up_war_effort
+			#unlock_decision_tooltip = JAP_china_step_up_war_effort
 		}
 	}
 
@@ -1180,7 +1180,7 @@ focus_tree = {
 			JAP_intervene_in_china_remove = yes
 			add_named_threat = { threat = 15 name = JAP_secure_china }
 			USA = { add_war_support = 0.05 }
-			unlock_decision_tooltip = JAP_ichi_go
+			#unlock_decision_tooltip = JAP_ichi_go
 		}
 	}
 
@@ -1226,7 +1226,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_dlc = "Waking the Tiger" }
-				unlock_decision_category_tooltip = prospect_for_resources
+				##unlock_decision_category_tooltip prospect_for_resources
 			}
 		}
 	}
@@ -1269,7 +1269,7 @@ focus_tree = {
 				uses = 2
 				category = naval_doctrine
 			}
-			unlock_decision_tooltip = JAP_pressure_france
+			#unlock_decision_tooltip = JAP_pressure_france
 		}
 	}
 
@@ -1739,7 +1739,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_dlc = "Waking the Tiger" }
-				unlock_decision_category_tooltip = prospect_for_resources
+				##unlock_decision_category_tooltip prospect_for_resources
 			}
 		}
 	}
@@ -2697,7 +2697,7 @@ focus_tree = {
 			if = {
 				limit = { not = { has_dlc = "Man the Guns" } }
 				add_ideas = JAP_the_london_naval_treaty
-				unlock_decision_tooltip = { decision = JAP_break_the_london_naval_treaty show_effect_tooltip = yes }
+				#unlock_decision_tooltip = { decision = JAP_break_the_london_naval_treaty show_effect_tooltip = yes }
 			}
 			else = {
 				add_ideas = MTG_naval_treaty_adherent
@@ -3071,7 +3071,7 @@ focus_tree = {
 				target = SOV
 				type = annex_everything
 			}
-			unlock_decision_tooltip = JAP_war_with_soviet_union
+			#unlock_decision_tooltip = JAP_war_with_soviet_union
 			if = {
 				limit = {
 					has_country_leader = { id = 700 ruling_only = yes }
@@ -3158,7 +3158,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_dlc = "Waking the Tiger" }
-				unlock_decision_category_tooltip = prospect_for_resources
+				##unlock_decision_category_tooltip prospect_for_resources
 			}
 		}
 	}
@@ -3682,7 +3682,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_category_tooltip = JAP_pacific_guardian
+			##unlock_decision_category_tooltip JAP_pacific_guardian
 		}
 	}
 
@@ -3895,7 +3895,7 @@ focus_tree = {
 					generator = { 610 716 328 715 714 717 }
 				}
 			}
-			unlock_decision_tooltip = JAP_return_manchuria
+			#unlock_decision_tooltip = JAP_return_manchuria
 			custom_effect_tooltip = JAP_liberate_manchuria_tt
 		}
 	}

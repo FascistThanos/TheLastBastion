@@ -534,6 +534,38 @@ focus = {
 }
 
 focus = {
+	id = PRC_japan_friend
+	icon = GFX_focus_chi_collaboration_with_the_japanese
+	prerequisite = { focus = PRC_foreign_affairs }
+mutually_exclusive = {focus = PRC_japan_enemy}
+	x = -1
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
+	}
+}
+
+
+focus = {
 	id = PRC_red_japan
 	icon = GFX_Generic_Secret_Meeting
 	prerequisite = { focus = PRC_japan_friend }
@@ -2689,36 +2721,7 @@ add_state_claim = 881
 }
 
 ############
-focus = {
-	id = PRC_japan_friend
-	icon = GFX_focus_chi_collaboration_with_the_japanese
-	prerequisite = { focus = PRC_foreign_affairs }
-mutually_exclusive = {focus = PRC_japan_enemy}
-	x = -1
-	y = 1
-	relative_position_id = PRC_foreign_affairs
 
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
-	}
-}
 
 focus = {
 	id = PRC_japan_enemy
