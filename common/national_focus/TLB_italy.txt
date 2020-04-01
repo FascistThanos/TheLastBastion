@@ -3045,6 +3045,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ITA_anti_communist_rhetoric
 		}
+}
 
 	focus = {
 		id = ITA_theoilfront
@@ -3109,11 +3110,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
-	}
-
-
 
 	focus = {
 		id = ITA_therepubliclives
