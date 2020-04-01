@@ -50,15 +50,15 @@ if = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = trotskyism
 	last_election = "1935.10.22"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 32
-	fascism = 12
-	communism = 56
+	socialism = 32
+	communism = 12
+	trotskyism = 56
 }
 
 set_convoys = 40
@@ -68,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
 	expire = "1965.1.1"
-	ideology = socialism_type
+	ideology = trotskyism_type
 	traits = {
 		#
 	}
