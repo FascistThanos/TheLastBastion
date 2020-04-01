@@ -32,7 +32,7 @@ bookmarks = {
 			}
 		}
 		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				FRA_disjointed_government
@@ -44,7 +44,7 @@ bookmarks = {
 			}
 		}
 		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
 				#
@@ -56,7 +56,7 @@ bookmarks = {
 
 
 		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				GER_treaty_of_versailles
@@ -105,7 +105,7 @@ bookmarks = {
 		# minors from DLC ####
 		"SPR"={
 			minor = yes
-			history = "SPR_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				#
@@ -116,7 +116,7 @@ bookmarks = {
 		}
 		"CAN"={
 			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = monarchist
 			ideas = {
 				#
@@ -127,7 +127,7 @@ bookmarks = {
 		}
 		"MEX"={
 			minor = yes
-			history = "MEX_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				#
@@ -138,7 +138,7 @@ bookmarks = {
 		}
 		"RAJ"={
 			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = socialism
 			ideas = {
 				#
@@ -160,7 +160,7 @@ bookmarks = {
 		}
 		"FPR"={
 			minor = yes
-			history = "FPR_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
 				#
@@ -171,7 +171,7 @@ bookmarks = {
 		}
 		"AUS"={
 			minor = yes
-			history = "AUS_GATHERING_STORM_DESC"
+			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				#
