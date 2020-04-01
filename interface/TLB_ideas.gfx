@@ -4169,4 +4169,8 @@ spriteTypes = {
 		name = "GFX_idea_GEN_industrial_mobilization"
 		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_TLB_Homeland_department"
+		texturefile = "gfx/interface/ideas/Homeland_Departmnet.dds"
+	}
 }

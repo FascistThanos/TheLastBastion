@@ -14,10 +14,175 @@ focus_tree = {
 	}
 
 	default = no
+	####Political
+	focus = {
+		id = TLB_lowden_doctrine
+		icon = GFX_lowden
+		cost = 5
+		x = 30
+		y = 0
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = TLB_focus_containment
+		icon = GFX_Generic_Liberty_Calling
+		prerequisite = {
+			focus = TLB_lowden_doctrine
+		}
+		cost = 1
+		x = 30
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = unlock_TLB
+		}
+	}
+	focus = {
+		id = TLB_expand_crypt
+		icon = GFX_TLB_decryption
+		prerequisite = {
+			focus = TLB_focus_containment
+		}
+		cost = 10
+		x = 28
+		y = 2
+		completion_reward = {
+			add_ideas = TLB_expand_crypt
+		}
+	}
+	focus = {
+		id = TLB_homeland_defence
+		icon = GFX_TLB_Homeland_Departmnet
+		prerequisite = {
+			focus = TLB_focus_containment
+		}
+		cost = 10
+		x = 32
+		y = 2
+		completion_reward = {
+			add_ideas = TLB_homeland_def_agency
+		}
+	}
+	focus = {
+		id = TLb_american_foothold
+		icon = GFX_TLB_usaflagguns
+		prerequisite = {
+			focus = TLB_expand_crypt
+		}
+		prerequisite = {
+			focus = TLB_homeland_defence
+		}
+
+		cost = 10
+		x = 30
+		y = 3
+		completion_reward = {
+			PAN = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.15
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_political_interventionPAN
+		icon = GFX_GER_french_deal
+		prerequisite = {
+			focus = TLb_american_foothold
+		}
+		mutually_exclusive = {
+			focus = TLB_prepare_intervention
+		}
+
+		cost = 10
+
+		x = 28
+		y = 4
+
+		completion_reward = {
+			PAN = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.15
+				}
+			}
+		}
+	}
+	focus = {
+		id = TLB_civilwar_PAN
+		icon = GFX_Generic_Machine_Gun
+		prerequisite = {
+			focus = TLB_political_interventionPAN
+		}
+
+		cost = 10
+
+		x = 28
+		y = 5
+
+		completion_reward = {
+			PAN = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = communism
+					size = 0.5
+				}
+			}
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
+	}
+	focus = {
+		id = TLB_prepare_intervention
+		icon = GFX_Generic_Invasion2
+		prerequisite = {
+			focus = TLb_american_foothold
+		}
+		mutually_exclusive = {
+			focus = TLB_political_interventionPAN
+		}
+		cost = 10
+
+		x = 32
+		y = 4
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = TLB_panama_intervention
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = TLB_invade_panama
+		icon = GFX_TLB_panamaflame
+		prerequisite = {
+			focus = TLB_prepare_intervention
+		}
+		cost = 10
+
+		x = 32
+		y = 5
+
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = PAN
+			}
+		}
+	}
+
+	##########Intervention
 	focus = {
 		id = TLB_The_Last_Bastion
 		icon = GFX_Generic_Blue_Democracy
 		cost = 3.00
+		available = {
+			has_completed_focus = TLB_focus_containment
+		}
 		x = 15
 		y = 0
 		completion_reward = {
@@ -426,6 +591,11 @@ focus_tree = {
 		icon = GFX_deal_panama
 		prerequisite = {
 			focus = TLB_secure_CA
+		}
+		available = {
+			PAN = {
+				has_government = democratic
+			}
 		}
 
 		cost = 10
