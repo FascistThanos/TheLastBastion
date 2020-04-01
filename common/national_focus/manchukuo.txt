@@ -1,6 +1,6 @@
 focus_tree = {
 	id = manchukuo_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 
 	default = no
 
@@ -22,7 +22,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -80,7 +80,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = MAN_banditry_category
+			##unlock_decision_category_tooltip MAN_banditry_category
 			set_variable = { MAN_maintain_control_timer = 180 }
 			custom_effect_tooltip = MAN_pacify_the_countryside_effect_tooltip
 		}
@@ -137,7 +137,7 @@ focus_tree = {
 
 		available = {
 
-		}	
+		}
 
 		bypass = {
 
@@ -341,7 +341,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1			
+			add_research_slot = 1
 		}
 	}
 
@@ -639,10 +639,10 @@ focus_tree = {
 				}
 				328 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				610 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				717 = {
 					is_fully_controlled_by = ROOT
 				}
@@ -680,7 +680,7 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				} 
+				}
 			}
 			if = {
 				limit = { 610 = { is_fully_controlled_by = ROOT } }
@@ -690,7 +690,7 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				} 
+				}
 			}
 			if = {
 				limit = { 717 = { is_fully_controlled_by = ROOT } }
@@ -748,7 +748,7 @@ focus_tree = {
 			else = {
 				set_technology = { excavation1 = 1 }
 			}
-			unlock_decision_tooltip = MAN_develop_kirin_aluminium_deposits
+			#unlock_decision_tooltip = MAN_develop_kirin_aluminium_deposits
 		}
 	}
 
@@ -791,7 +791,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = MAN_develop_liaotung_iron_ore_deposits
+			#unlock_decision_tooltip = MAN_develop_liaotung_iron_ore_deposits
 		}
 	}
 
@@ -1173,8 +1173,8 @@ focus_tree = {
 
 		available = {
 			is_subject_of = JAP
-			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
-			MAN = { 
+			compare_autonomy_state > autonomy_wtt_imperial_protectorate
+			MAN = {
 				ic_ratio = {
 					tag = JAP
 					ratio > 0.2
@@ -1236,12 +1236,12 @@ focus_tree = {
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 			set_country_flag = MAN_assertiveness
-			JAP = { 
+			JAP = {
 				set_autonomy = {
 					target = MAN
 					autonomy_state = autonomy_wtt_imperial_subject
 				}
-			}			
+			}
 		}
 	}
 
@@ -1280,7 +1280,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = MAN_divert_machine_tools
+			#unlock_decision_tooltip = MAN_divert_machine_tools
 			if = {
 				limit = { 716 = { is_fully_controlled_by = ROOT } }
 				716 = {
@@ -1323,7 +1323,7 @@ focus_tree = {
 						instant_build = yes
 					}
 					add_extra_state_shared_building_slots = 1
-				} 
+				}
 			}
 		}
 	}
@@ -1399,11 +1399,11 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-			
+
 	    	   		 	infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
-			
+
 	    	   		 	infantry = { x = 2 y = 0 }
 						artillery_brigade = { x = 2 y = 1 }
 						artillery_brigade = { x = 2 y = 2 }
@@ -1413,23 +1413,23 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 328 }
 					create_unit = {
-						division = "name = \"1. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"1. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"2. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"2. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"3. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"3. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"4. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"4. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
-				}			
-			}			
+				}
+			}
 		}
 	}
 
@@ -1460,7 +1460,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			unlock_decision_tooltip = MAN_fund_underground_gun_shops
+			#unlock_decision_tooltip = MAN_fund_underground_gun_shops
 			every_state = {
 				limit = {
 					has_state_flag = MAN_local_arms_procurement_AF
@@ -1475,10 +1475,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_tooltip = MAN_fund_underground_gun_shops
+			#unlock_decision_tooltip = MAN_fund_underground_gun_shops
 			random_owned_controlled_state = {
 				limit = {
-					is_core_of = ROOT 	
+					is_core_of = ROOT
 					is_fully_controlled_by = ROOT
 					free_building_slots = {
 						building = arms_factory
@@ -1496,7 +1496,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					is_core_of = ROOT 	
+					is_core_of = ROOT
 					is_fully_controlled_by = ROOT
 					free_building_slots = {
 						building = arms_factory
@@ -1545,7 +1545,7 @@ focus_tree = {
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 			add_ideas = MAN_bolster_nationalism
-			unlock_decision_tooltip = MAN_recruit_bandits_generic
+			#unlock_decision_tooltip = MAN_recruit_bandits_generic
 		}
 	}
 
@@ -1680,7 +1680,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = MAN_five_people_armies
-			unlock_decision_tooltip = MAN_raise_manchu_banner
+			#unlock_decision_tooltip = MAN_raise_manchu_banner
 			custom_effect_tooltip = MAN_five_people_armies_tt
 			hidden_effect = {
 				division_template = {
@@ -1697,34 +1697,34 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 328 }
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
-				}			
+				}
 			}
 		}
 	}
@@ -1735,7 +1735,7 @@ focus_tree = {
 		prerequisite = { focus = MAN_bolster_nationalism  }
 		x = 0
 		y = 1
-		relative_position_id = MAN_bolster_nationalism 
+		relative_position_id = MAN_bolster_nationalism
 
 		cost = 10
 
@@ -1757,7 +1757,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
-			unlock_decision_tooltip = MAN_prepare_to_seize_arms
+			#unlock_decision_tooltip = MAN_prepare_to_seize_arms
 			if = {
 				limit = {
 					has_idea = MAN_kwantung_veto
@@ -1818,11 +1818,11 @@ focus_tree = {
 				strength_ratio = { tag = JAP ratio < 0.3 }
 				factor = 0
 			}
-			
+
 		}
 
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -1836,7 +1836,7 @@ focus_tree = {
 		will_lead_to_war_with = JAP
 
 		completion_reward = {
-			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }			
+			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
 			if = {
 				limit = {
 					is_in_faction_with = JAP
@@ -1850,7 +1850,7 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = wtt_news.48 days = 2 }
 			}
-			
+
 			add_country_leader_trait = nationalist_symbol
 		}
 	}
@@ -1977,7 +1977,7 @@ focus_tree = {
 		}
 
 		available = {
-			all_state = { 
+			all_state = {
 				OR = {
 					NOT = { is_core_of = ROOT }
 					state = 729
@@ -1986,7 +1986,7 @@ focus_tree = {
 					state = 524
 					is_controlled_by = ROOT
 				}
-				
+
 			}
 		}
 
@@ -2003,11 +2003,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			MAN_low_legitimacy_clear_all = yes	
+			MAN_low_legitimacy_clear_all = yes
 			set_cosmetic_tag = MAN_restored
 			hidden_effect = {
 				news_event = { id = wtt_news.44 days = 2 }
-				kill_country_leader = yes 
+				kill_country_leader = yes
 				if = {
 					limit = {
 						has_government = fascism

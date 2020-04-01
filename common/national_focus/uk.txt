@@ -4822,7 +4822,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Waking the Tiger"
 				}
-				unlock_decision_tooltip = CHI_expand_the_burma_road
+				#unlock_decision_tooltip = CHI_expand_the_burma_road
 			}
 			CHI = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good }
@@ -7528,7 +7528,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = ENG_enforce_the_naval_treaties
+			##unlock_decision_category_tooltip ENG_enforce_the_naval_treaties
 			custom_effect_tooltip = ENG_enforce_the_naval_treaties_tt
 			hidden_effect = { news_event = { id = mtg_news.17 days = 1 } }
 		}

@@ -1,6 +1,6 @@
 focus_tree = {
 	id = china_nationalist_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 
 	default = no
 
@@ -22,7 +22,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -65,7 +65,7 @@ focus_tree = {
 		}
 
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -192,7 +192,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			CHI_hyper_inflation_level_down = yes 
+			CHI_hyper_inflation_level_down = yes
 		}
 	}
 
@@ -263,7 +263,7 @@ focus_tree = {
 
 		}
 
-		completion_reward = {			
+		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
 		}
@@ -854,7 +854,7 @@ focus_tree = {
 					create_wargoal = {
 						type = annex_everything
 						target = JAP
-					}	
+					}
 				}
 			}
 			hidden_effect = {
@@ -896,7 +896,7 @@ focus_tree = {
 		bypass = {
 			OR = {
 				is_in_faction_with = PRC
-				NOT = { 
+				NOT = {
 					any_country = {
 						OR = {
 							tag = YUN
@@ -922,7 +922,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {		
+			if = {
 				limit = {
 					SIK = {
 						has_government = communism
@@ -933,7 +933,7 @@ focus_tree = {
 					target = SIK
 				}
 			}
-			if = {		
+			if = {
 				limit = {
 					TIB = {
 						has_government = communism
@@ -1089,7 +1089,7 @@ focus_tree = {
 				}
 				country_event = { id = wtt_china.1 }
 			}
-			unlock_decision_category_tooltip = CHI_integrate_the_warlords
+			##unlock_decision_category_tooltip CHI_integrate_the_warlords
 		}
 	}
 
@@ -1110,7 +1110,7 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_idea = CHI_army_corruption_1
-			}		
+			}
 		}
 
 		bypass = {
@@ -1153,7 +1153,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = CHI_industrial_evacuations			
+			##unlock_decision_category_tooltip CHI_industrial_evacuations
 			set_variable = { var = CHI_industrial_evacuations_amount_factor value = 0.75 } #Ratio for how many building are moved. Change CHI_industrial_evacuations_add_AF and CHI_industrial_evacuations_add_IC if you change the value
 		}
 	}
@@ -1230,7 +1230,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = CHI_scorched_earth_tactics
+			#unlock_decision_tooltip = CHI_scorched_earth_tactics
 		}
 	}
 
@@ -1454,7 +1454,7 @@ focus_tree = {
 							level = 2
 							instant_build = yes
 						}
-					}					
+					}
 				}
 
 				#If not full control, only add forts in provinces bordering the enemy
@@ -1571,7 +1571,7 @@ focus_tree = {
 							level = 3
 							instant_build = yes
 						}
-					}					
+					}
 				}
 
 				#If not full control, only add forts in provinces bordering the enemy
@@ -1604,7 +1604,7 @@ focus_tree = {
 						}
 						level = 2
 						instant_build = yes
-					}								
+					}
 				}
 
 				#If not full control, only add forts in provinces bordering the enemy
@@ -1634,7 +1634,7 @@ focus_tree = {
 						}
 						level = 2
 						instant_build = yes
-					}								
+					}
 				}
 			}
 		}
@@ -1667,7 +1667,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = CHI_army_reform
+			##unlock_decision_category_tooltip CHI_army_reform
 		}
 	}
 
@@ -1731,7 +1731,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = CHI_60_divisions_plan
+			#unlock_decision_tooltip = CHI_60_divisions_plan
 		}
 	}
 
@@ -1819,7 +1819,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {			
+			OR = {
 				has_war = no
 				has_stability > 0.7
 			}
@@ -1865,7 +1865,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 			add_research_slot = 1
 		}
 	}
@@ -1955,7 +1955,7 @@ focus_tree = {
 		completion_reward = {
 			CHI_hyper_inflation_level_up = yes
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = CHI_mining_commission			
+			show_ideas_tooltip = CHI_mining_commission
 		}
 	}
 
@@ -1996,7 +1996,7 @@ focus_tree = {
 					type = arms_factory
 					level = 3
 					instant_build = yes
-				}			
+				}
 			}
 		}
 	}
@@ -2219,7 +2219,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = CHI_forced_loans
+			#unlock_decision_tooltip = CHI_forced_loans
 		}
 	}
 

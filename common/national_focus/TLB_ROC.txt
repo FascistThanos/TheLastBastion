@@ -211,6 +211,40 @@ add_political_power = 100
 }
 
 focus = {
+	id = CHI_post_war_rehabilitation
+	icon = GFX_Generic_Command_Power
+	prerequisite = { focus = CHI_cleanse_red }
+	x = 0
+	y = 1
+	relative_position_id = CHI_cleanse_red
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+has_war = no
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	add_timed_idea = {
+	    idea = CHI_rebuild_china
+	    days = 180
+	}
+	}
+}
+
+focus = {
 	id = CHI_demand_vietnam
 	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = CHI_post_war_rehabilitation }
@@ -341,39 +375,7 @@ add_ideas = CHI_anti_communism
 	}
 }
 
-focus = {
-	id = CHI_post_war_rehabilitation
-	icon = GFX_Generic_Command_Power
-	prerequisite = { focus = CHI_cleanse_red }
-	x = 0
-	y = 1
-	relative_position_id = CHI_cleanse_red
 
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-has_war = no
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	add_timed_idea = {
-	    idea = CHI_rebuild_china
-	    days = 180
-	}
-	}
-}
 
 focus = {
 	id = CHI_post_war_politics

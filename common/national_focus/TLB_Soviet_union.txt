@@ -753,9 +753,9 @@ prerequisite = {focus = SOV_stalin_back}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			unlock_decision_tooltip = SOV_relocate_industry_from_moscow
-			unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
-			unlock_decision_tooltip = SOV_relocate_industry_from_smolensk
+			#unlock_decision_tooltip = SOV_relocate_industry_from_moscow
+			#unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
+			#unlock_decision_tooltip = SOV_relocate_industry_from_smolensk
 		}
 	}
 
