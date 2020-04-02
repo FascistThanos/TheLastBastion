@@ -1,17 +1,15 @@
 capital = 331
 
-set_oob = "ENG_1936"
+set_oob = "BRI_1936"
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "ENG_1936_Naval"
+	set_naval_oob = "BRI_1936_Naval"
 	else = {
-		set_naval_oob = "ENG_1936_Naval_Legacy"
+		set_naval_oob = "BRI_1936_Naval_Legacy"
 	}
 }
-
-#load_oob = "ENG_Motorized"
 
 set_research_slots = 4
 
@@ -30,19 +28,13 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
-
 	trench_warfare = 1
-
-
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -114,19 +106,17 @@ set_popularities = {
 
 create_faction = Commonwealth
 add_to_faction = BGE
-BGE = {
-	add_to_faction = CAN
-	add_to_faction = AST
-	add_to_faction = NZL
-	add_to_faction = ISR
-	add_to_faction = EGY
-	add_to_faction = MAL
-}
+add_to_faction = CAN
+add_to_faction = AST
+add_to_faction = NZL
+add_to_faction = ISR
+add_to_faction = EGY
+add_to_faction = MAL
 
 create_country_leader = {
 	name = "Winston Churchill"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_Britain_Winston_Churchill.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Winston_Churchill.dds"
 	expire = "1965.1.1"
 	ideology = conservative
 	traits = {
@@ -138,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Stanley Baldwin"
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Stanley_Baldwin.dds"
 	expire = "1938.1.1"
 	ideology = liberalism
 	traits = {
