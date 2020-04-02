@@ -8,6 +8,8 @@ focus_tree = {
 		}
 	}
 
+	default = no
+
 	focus = {
 		id = ITA_pricinipaliaitalia
 		icon = GFX_pricinipaliaitalia
@@ -3135,6 +3137,11 @@ focus_tree = {
 	}
 
 	focus = {
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 		id = ITA_thevolontariofrancese
 		icon = GFX_focus_generic_military_mission
 		x = 0
@@ -3221,9 +3228,16 @@ focus_tree = {
 				add_to_faction = ITA
 			}
 		}
+<<<<<<< Updated upstream
 	}	
 
 	focus = {
+=======
+	}
+
+	focus = {
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 		id = ITA_anamericantradedeal
 		icon = GFX_focus_mex_privatisation
 		x = 0
