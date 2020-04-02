@@ -5,7 +5,7 @@ state = {
   manpower = 2094580
 
   history = {
-    owner = ENG
+    owner = TZN
     add_core_of = TZN
     buildings = {
       infrastructure = 5

@@ -208,6 +208,7 @@ BAW = "countries/Bade-Wurtemberg.txt"
 UOB = "countries/Union of the Benelux.txt"
 KUR = "countries/Kurdistan.txt"
 SSD = "countries/South Sudan.txt"
+BGE = "countries/British Government in Exile"
 
 ##### For Spain Breakup #####
 

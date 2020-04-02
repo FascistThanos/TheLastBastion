@@ -59,8 +59,19 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+	democratic = 15
+	liberal = 10
+	fascism = 5
+	communism = 10
+	neutrality = 60
+}
+
+create_country_leader = {
+	name = "Ibrahim Abboud"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Africa_Generic_3.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
 }

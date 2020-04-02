@@ -66,27 +66,16 @@ if = {
 }
 
 set_politics = {
-	ruling_party = monarchist
+	ruling_party = liberal
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = no
 }
 
 set_popularities = {
-	monarchist = 86
-	liberal = 12
-	fascism = 2
-}
-
-create_country_leader = {
-	name = "Edward VIII"
-	desc = "POLITICS_UKMONARCH_DESC"
-	picture = "Portrait_Britain_Edward_VIII.dds"
-	expire = "1965.1.1"
-	ideology = constitutional_monarch
-	traits = {
-		inexperienced_imperialist
-	}
+	democratic = 30
+	liberal = 40
+	socialism = 30
 }
 
 create_country_leader = {

@@ -4,7 +4,7 @@ state={
 	name="STATE_299"
 
 	history={
-		owner = ENG
+		owner = ARG
 		buildings = {
 			infrastructure = 2
 			12960 = {
@@ -13,7 +13,6 @@ state={
 			}
 
 		}
-		add_claim_by = ARG
 
 	}
 

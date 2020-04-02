@@ -5,7 +5,7 @@ state = {
   manpower = 1817495
 
   history = {
-    owner = ENG
+    owner = TZN
     add_core_of = TZN
 		victory_points = {
 			2196 1

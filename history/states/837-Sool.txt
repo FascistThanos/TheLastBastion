@@ -9,8 +9,8 @@ state = {
   }
 
   history = {
-    owner = ENG
-    add_core_of = SOM
+    owner = FRA
+    add_core_of = FRA
     buildings = {
       infrastructure = 2
     }

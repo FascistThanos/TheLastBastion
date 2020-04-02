@@ -1,4 +1,4 @@
-capital = 126
+capital = 331
 
 set_oob = "ENG_1936"
 if = {
@@ -101,17 +101,26 @@ if = {
 set_convoys = 800
 
 set_politics = {
-	ruling_party = communism
-	last_election = "1935.11.14"
+	ruling_party = democratic
+	last_election = "1929.10.17"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
+
 set_popularities = {
-	communism = 43
-	trotskyism = 27
-	socialism = 17
-	liberal = 6
-	democratic = 7
+	democratic = 78
+	liberal = 22
+}
+
+create_faction = Commonwealth
+add_to_faction = BGE
+BGE = {
+	add_to_faction = CAN
+	add_to_faction = AST
+	add_to_faction = NZL
+	add_to_faction = ISR
+	add_to_faction = EGY
+	add_to_faction = MAL
 }
 
 create_country_leader = {
@@ -134,29 +143,6 @@ create_country_leader = {
 	ideology = liberalism
 	traits = {
 		conservative_grandee
-	}
-}
-
-create_country_leader = {
-	name = "Oswald Mosley"
-	desc = "POLITICS_OSWALD_MOSLEY_DESC"
-	picture = "Portrait_Britain_Oswald_Mosley.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		champion_of_peace_1
-		economic_reformer
-	}
-}
-
-create_country_leader = {
-	name = "Harry Pollitt"
-	desc = "POLITICS_HARRY_POLLITT_DESC"
-	picture = "portrait_eng_harry_pollitt.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		staunch_stalinist
 	}
 }
 

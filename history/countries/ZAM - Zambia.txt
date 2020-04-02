@@ -60,7 +60,17 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 55
-	fascism = 15
+	liberal = 15
 	communism = 5
 	neutrality = 25
+}
+
+create_country_leader = {
+	name = "Godfrey Huggins"
+		picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
+		expire = "1965.1.1"
+		ideology = conservative
+		traits = {
+			#
+		}
 }

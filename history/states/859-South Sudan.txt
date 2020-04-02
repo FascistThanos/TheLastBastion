@@ -5,9 +5,8 @@ state = {
   manpower = 947305
 
   history = {
-    owner = ENG
-    add_core_of = SSD
-    add_claim_by = SUD
+    owner = SUD
+    add_core_of = SUD
     buildings = {
       infrastructure = 3
     }

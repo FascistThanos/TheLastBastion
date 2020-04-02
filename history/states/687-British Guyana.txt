@@ -7,8 +7,7 @@ state={
 	}
 
 	history={
-		add_core_of = GYA
-		owner = ENG
+		owner = BGE
 		victory_points = {
 			4982 1 
 		}
