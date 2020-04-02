@@ -5,16 +5,10 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 10
+			add = 0
 			tag = CAN
 			has_dlc = "Together for Victory"
 		}
-
-		#modifier = {
-		#	add = 10
-		#	original_tag = CAN
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 
 	default = no
