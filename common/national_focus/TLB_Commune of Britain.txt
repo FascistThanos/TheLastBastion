@@ -1,0 +1,625 @@
+focus_tree = {
+	id = british_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = {
+		x = 50
+		y = 1500
+	}
+
+	focus = {
+		id = ENG_anniversery_of_the_birmingham_march
+		available = {
+			always = no
+			}
+		icon = GFX
+		x = 7
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_wilkins_debates
+		prerequisite = { focus = ENG_anniversery_of_the_birmingham_march }
+		relative_position_id = ENG_anniversery_of_the_birmingham_march
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_extend_the_campbell_act
+		prerequisite = { focus = ENG_wilkins_debates }
+		mutually_exclusive = { focus = ENG_reformation_of_parliament }
+		relative_position_id = ENG_wilkins_debates
+		icon = GFX
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_reformation_of_parliament
+		prerequisite = { focus = ENG_wilkins_debates }
+		mutually_exclusive = { focus = ENG_extend_the_campbell_act }
+		relative_position_id = ENG_wilkins_debates
+		icon = GFX
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_increase_secretarial_powers
+		prerequisite = { focus = ENG_extend_the_campbell_act }
+		relative_position_id = ENG_extend_the_campbell_act
+		icon = GFX
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_national_security_comittee
+		prerequisite = { focus = ENG_increase_secretarial_powers }
+		mutually_exclusive = { focus = ENG_scarlet_circle }
+		relative_position_id = ENG_increase_secretarial_powers
+		icon = GFX
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_secret_courts
+		prerequisite = { focus = ENG_national_security_comittee }
+		relative_position_id = ENG_national_security_comittee
+		icon = GFX
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_implicate_the_congress
+		prerequisite = { focus = ENG_national_security_comittee }
+		relative_position_id = ENG_national_security_comittee
+		icon = GFX
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_anti-trotskyist_raids
+		prerequisite = { focus = ENG_secret_courts }
+		prerequisite = { focus = ENG_implicate_the_congress }
+		relative_position_id = ENG_implicate_the_congress
+		icon = GFX
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_expand_comittee_influence
+		prerequisite = { focus = ENG_anti-trotskyist_raids }
+		mutually_exclusive = { focus = ENG_14th_congress }
+		relative_position_id = ENG_anti-trotskyist_raids
+		icon = GFX
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_14th_congress
+		prerequisite = { focus = ENG_anti-trotskyist_raids }
+		mutually_exclusive = { focus = expand_comittee_influence }
+		relative_position_id = ENG_anti-trotskyist_raids
+		icon = GFX
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_pollit's_folly
+		prerequisite = { focus = ENG_expand_comittee_influence }
+		relative_position_id = ENG_expand_comittee_influence
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_dismiss_the_NSC
+		prerequisite = { focus = ENG_14th_congress }
+		relative_position_id = ENG_14th_congress
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_downing_act
+		prerequisite = { focus = ENG_dismiss_the_NSC focus = ENG_pollit's_folly }
+		relative_position_id = ENG_dismiss_the_NSC
+		icon = GFX
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_scarlet_circle
+		prerequisite = { focus = ENG_increase_secretarial_powers }
+		mutually_exclusive = { focus = ENG_national_security_comittee }
+		relative_position_id = ENG_increase_secretarial_powers
+		icon = GFX
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_infiltrate_the_pollit_administration
+		prerequisite = { focus = ENG_scarlet_circle }
+		relative_position_id = ENG_scarlet_circle
+		icon = GFX
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_talks_with_congressmen
+		prerequisite = { focus = ENG_infiltrate_the_pollit_administration }
+		relative_position_id = ENG_infiltrate_the_pollit_administration
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_request_international_support
+		prerequisite = { focus = ENG_scarlet_circle }
+		relative_position_id = ENG_scarlet_circle
+		icon = GFX
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_countercoup
+		prerequisite = { focus = ENG_talks_with_congressmen }
+		prerequisite = { focus = ENG_request_international_support }
+		relative_position_id = ENG_request_international_support
+		icon = GFX
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = ENG_purge_totalists
+		prerequisite = { focus = ENG_countercoup }
+		relative_position_id = ENG_countercoup
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_trotskyist_leadership
+		prerequisite = { focus = ENG_purge_totalists }
+		relative_position_id = ENG_purge_totalists
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_1st_session
+		prerequisite = { focus = ENG_reformation_of_parliament }
+		relative_position_id = ENG_reformation_of_parliament
+		icon = GFX
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_socialist_majority
+		prerequisite = { focus = ENG_1st_session }
+		mutually_exclusive = { focus = ENG_unsung_victory }
+		relative_position_id = ENG_1st_session
+		icon = GFX
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_coalition_with_trotskyists
+		prerequisite = { focus = ENG_socialist_majority }
+		relative_position_id = ENG_socialist_majority
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_repeal_the_campbell_act
+		prerequisite = { focus = ENG_coalition_with_trotskyists }
+		relative_position_id = ENG_coalition_with_trotskyists
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_reconcile_with_the_BGE
+		prerequisite = { focus = ENG_repeal_the_campbell_act }
+		relative_position_id = ENG_repeal_the_campbell_act
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_pardon_the_parmoor_government
+		prerequisite = { focus = ENG_reconcile_with_the_BGE }
+		relative_position_id = ENG_reconcile_with_the_BGE
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_disband_the_general_union
+		prerequisite = { focus = ENG_repeal_the_campbell_act }
+		relative_position_id = ENG_repeal_the_campbell_act
+		icon = GFX
+		x = -2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_worker's_rights_act
+		prerequisite = { focus = ENG_repeal_the_campbell_act }
+		relative_position_id = ENG_repeal_the_campbell_act
+		icon = GFX
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_2nd_session
+		prerequisite = { focus = ENG_worker's_rights_act focus = ENG_disband_the_general_union focus = ENG_pardon_the_parmoor_government }
+		relative_position_id = ENG_worker's_rights_act
+		icon = GFX
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_unsung_victory
+		prerequisite = { focus = ENG_1st_session }
+		relative_position_id = ENG_1st_session
+		icon = GFX
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_talks_with_the_BGE
+		prerequisite = { focus = ENG_unsung_victory }
+		relative_position_id = ENG_unsung_victory
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_operation_sunset
+		prerequisite = { focus = ENG_talks_with_the_BGE }
+		relative_position_id = ENG_talks_with_the_BGE
+		icon = GFX
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			load_focus_tree = united_kingdom_focus
+		}
+	}
+}
