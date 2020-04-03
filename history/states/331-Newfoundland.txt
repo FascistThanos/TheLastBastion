@@ -2,31 +2,26 @@
 state={
 	id=331
 	name="STATE_331"
-	manpower = 255060
-
-	state_category = rural
 
 	history={
 		owner = BGE
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			12505 = {
-				naval_base = 1
-			}
-		}
+			industrial_complex = 2
 
-		victory_points = {
-			14425 10
 		}
-
 		victory_points = {
 			14577 5
 		}
 		add_core_of = BGE
+		add_claim_by = CAN
+
 	}
 
 	provinces={
-		7758 7788 12505 12680 12698 14406 14404 14392 14425 14423 14428 14502 14478 14462 14453 14456 14461 14460 14477 14521 14577 14638 14665 14706 14750 14777 14608 14604 14560 14543 14556 14525 14498 14522 14535 14494 14484 14493 14531 14559 14542 14573
+		7788 12698 14460 14461 14477 14484 14493 14521 14531 14542 14559 14573 14577 14608 14638 14665 14706 14750 14777
 	}
+	manpower=102400
+	buildings_max_level_factor=1.000
+	state_category=town
 }

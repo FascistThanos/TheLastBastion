@@ -1,11 +1,11 @@
-capital = 331
+capital = 938
 
 set_oob = "BRI_1936"
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "BRI_1936_Naval"
+	set_naval_oob = "BRI_1936_naval"
 	else = {
 		set_naval_oob = "BRI_1936_Naval_Legacy"
 	}
@@ -232,6 +232,11 @@ MAL = {
 	}
 }
 
+add_ideas = {
+	limited_conscription
+
+}
+
 set_politics = {
 	ruling_party = monarchist
 	last_election = "1929.10.17"
@@ -261,6 +266,17 @@ create_country_leader = {
 	picture = "gfx/leaders/ENG/Portrait_Britain_Edward_VIII.dds"
 	expire = "1965.1.1"
 	ideology = constitutional_monarch
+	traits = {
+			#
+	}
+}
+
+create_country_leader = {
+	name = "Edward VIII"
+	desc = "POLITICS_EDWARD_EDWARD_DESC"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Edward_VIII.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 			#
 	}
@@ -300,10 +316,21 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Clement Attlee"
+	desc = "POLITICS_ATTLEE_DESC"
+	picture = "gfx/leaders/ENG/Portrait_England_Clement_Attlee.dds"
+	expire = "1965.1.1"
+	ideology = socialism_type
+	traits = {
+		#
+	}
+}
+
 create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat
 	id = 997
-	picture = "Portrait_Britain_Alan_Brooke.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Alan_Brooke.dds"
 	traits = { defensive_doctrine trait_cautious career_officer }
 	skill = 5
 	attack_skill = 3
@@ -315,7 +342,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Bernard Montgomery" # Aristocrat
 	id = 996
-	picture = "Portrait_Britain_Bernard_Montgomery.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Bernard_Montgomery.dds"
 	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
 	skill = 4
 	attack_skill = 2
@@ -327,7 +354,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Harold Alexander" # Aristocrat
 	id = 995
-	picture = "Portrait_Britain_Harold_Alexander.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
 	traits = { politically_connected }
 	skill = 5
 	attack_skill = 4
@@ -339,7 +366,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "John Vereker Lord Gort" # Aristocrat
 	id = 994
-	picture = "Portrait_Britain_John_Vereker.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_John_Vereker.dds"
 	traits = { politically_connected trait_cautious }
 	skill = 4
 	attack_skill = 3
@@ -351,7 +378,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Oliver Leese" # Aristocrat
 	id = 993
-	picture = "Portrait_Britain_Oliver_Leese.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Oliver_Leese.dds"
 	traits = {  armor_officer harsh_leader politically_connected }
 	skill = 4
 	attack_skill = 4
@@ -363,7 +390,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Archibald Wavell" # Aristocrat
 	id = 998
-	picture = "Portrait_Britain_Archibald_Wavell.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Archibald_Wavell.dds"
 	traits = { career_officer }
 	skill = 4
 	attack_skill = 4
@@ -375,7 +402,7 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "James Fownes Somerville" # Aristocrat
 	id = 983
-		picture = "Portrait_Britain_James_Fownes_Somerville.dds"
+		picture = "gfx/leaders/ENG/Portrait_Britain_James_Fownes_Somerville.dds"
 	traits = { superior_tactician aviation_enthusiast navy_career_officer }
 	skill = 5
 	attack_skill = 4
@@ -387,7 +414,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Henry Harwood" # Aristocrat
 	id = 984
-		picture = "Portrait_Britain_Henry_Harwood.dds"
+		picture = "gfx/leaders/ENG/Portrait_Britain_Henry_Harwood.dds"
 	traits = { old_guard_navy bold }
 	skill = 3
 	attack_skill = 3
@@ -399,7 +426,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "John Tovey" # Aristocrat
 	id = 987
-		picture = "Portrait_Britain_John_Tovey.dds"
+		picture = "gfx/leaders/ENG/Portrait_Britain_John_Tovey.dds"
 	traits = { gentlemanly naval_lineage superior_tactician }
 	skill = 4
 	attack_skill = 3
@@ -411,7 +438,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Bernard Rawlings" # Aristocrat
 	id = 988
-		picture = "Portrait_Britain_Bernard_Rawlings.dds"
+		picture = "gfx/leaders/ENG/Portrait_Britain_Bernard_Rawlings.dds"
 	traits = { gentlemanly }
 	skill = 3
 	attack_skill = 3

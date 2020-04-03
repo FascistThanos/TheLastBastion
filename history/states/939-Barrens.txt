@@ -1,0 +1,24 @@
+
+state={
+	id=939
+	name="STATE_939"
+
+	history={
+		owner = BGE
+		add_core_of = BGE
+		add_claim_by = CAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+		}
+
+	}
+
+	provinces={
+		7758 12680 14406 14453 14456 14462 14478 14494 14498 14502 14522 14525 14535 14543 14556 14560 14604
+	}
+	manpower=41500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

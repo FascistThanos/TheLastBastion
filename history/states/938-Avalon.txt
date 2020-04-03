@@ -1,0 +1,27 @@
+state = {
+  id = 938
+  name = "STATE_938"
+  state_category = large_town
+  manpower = 107500
+
+  history = {
+    owner = BGE
+    add_core_of = BGE
+    add_claim_by = CAN
+    victory_points = {
+			14425 10
+		}
+
+    buildings = {
+      infrastructure = 6
+      arms_factory = 1
+			12505 = {
+				naval_base = 1
+			}
+    }
+  }
+
+  provinces = {
+    12505 14392 14404 14423 14425 14428
+  }
+}

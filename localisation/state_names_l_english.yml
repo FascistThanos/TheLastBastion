@@ -329,7 +329,7 @@
  STATE_328:0 "Kirin"
  STATE_329:0 "Tuva"
  STATE_330:0 "Ulaanbatar"
- STATE_331:0 "Newfoundland"
+ STATE_331:0 "Belle Isle"
  STATE_332:0 "Labrador"
  STATE_333:1 "North Borneo"
  STATE_334:1 "Kalimantan"
@@ -935,6 +935,9 @@
  STATE_935:0 "Jurua River"
  STATE_936:0 "Maranon River"
  STATE_937:0 "Putumayo River"
+ STATE_938:0 "Avalon"
+ STATE_939:0 "Barrens"
+ STATE_940:0 "Georgetown"
 
  STRATEGIC_REGION_213:0 "Central France"
  STRATEGIC_REGION_214:0 "Pyrenees"
