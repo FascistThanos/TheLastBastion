@@ -1,0 +1,26 @@
+stay_in_commonwealth = {
+	enable = {
+		any_country = {
+			is_in_faction_with = BGE
+			original_tag = BGE
+		}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "BGE"
+		value = 200
+	}
+
+	ai_strategy = {
+		type = protect
+		id = "BGE"
+		value = 50
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "ENG"
+		value = 200
+	}
+}
