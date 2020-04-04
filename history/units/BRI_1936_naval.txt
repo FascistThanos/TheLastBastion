@@ -1,0 +1,14 @@
+units = {
+  fleet = {
+    name = "Loyalist Fleet"
+    naval_base = 12505
+    task_force = {
+      name = "Acadian Fleet"
+      location = 12505
+      ship = { name = "HMS Nelson" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = BGE version_name = "Nelson Class" } } }
+      ship = { name = "HMS Rodney" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = BGE version_name = "Nelson Class" } } }
+      ship = { name = "HMS Viscount" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = BGE version_name = "V/W Class" } } }
+			ship = { name = "HMS Queen Elizabeth" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BGE version_name = "Queen Elizabeth Class" } } }
+    }
+  }
+}

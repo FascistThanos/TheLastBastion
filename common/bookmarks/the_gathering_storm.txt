@@ -114,7 +114,7 @@ bookmarks = {
 				#
 			}
 		}
-		"CAN"={
+		"BGE"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
 			ideology = monarchist

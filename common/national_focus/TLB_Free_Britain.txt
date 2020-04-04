@@ -1,0 +1,17 @@
+focus_tree = {
+	id = TLB_french_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = BGE
+		}
+	}
+
+	default = no
+
+  focus = {
+    
+  }
