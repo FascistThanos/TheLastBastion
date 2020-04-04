@@ -5,7 +5,7 @@
 
 #Custom Tooltips
  mexico_accepts:0 "Mexico has accepted the offer"
-
+ unlock_TLB:0 "Unlocks 'The Last Bastion' section of the focus tree"
 
 
 
@@ -13,7 +13,11 @@
 #Ideas
 US_intervension_CAN:0 "American Intervention"
 US_intervension_CAN_desc:0 "Ever since the United Kindgom has fallen to the external pressures of communism, the United States congress has passed a bill that allows US intervetion in the Canadian government. This means that they're influincing the people of Canada to seek more independence from the crumbling empire and it will influence the call for referendum to become independent."
-
+TLB_homeland_def_agency:0 "Department of Homeland Security"
+TLB_homeland_def_agency_desc:0 "The United States of America has created the Department of Homeland Security. The department's main purpose is to defend United States intelligence from other nations and organisations that seek to gain the information for themselves. The agency has defended many attacks so far and should continue to serve the country for years to come."
+ TLB_expand_crypt_dep:0 "Expanded Cryptology Department"
+ TLB_expand_crypt_dep_desc:0 "A critical part of keeping countries out of the hands of communism is to know the in and outs of the country and understand their politics. Funneling more funding to the cryptology department will undoubtably increase their performance and we will get more information then we have before. With our new information we can pinpoint the weak spots of foreign governments and instill instability can fill the cracks with democracy."
+ TLB_panama_intervention:0 "Preparation for Panama Intervention"
 #Events
  tlb.1.t:0 "Mexico has Accepted Our Offer"
  tlb.1.d:0 "The Mexican government has put out a public statement of approval of our work. In echange for economic help, we have received official approval of our influencers to enter their country. Hopefully, with this development, there will be call for govenrmental reform and democracy will be implemented. For now, we just have to wait and see how this unfolds."
@@ -45,6 +49,20 @@ US_intervension_CAN_desc:0 "Ever since the United Kindgom has fallen to the exte
  tlb.9.t:0 "The Guatemalan Demands have been Ignored"
  tlb.9.d:0 "The Guatemalans have sent their demands to the United Kingdom to no avail. The British, always stubborn have refused our demand and must be forced to hand over the land. Just as we promised, we will enter the war against the ailing kingdom on the side of Guatemala to achieve the removal of the empire in the western hemisphere. Unfortunately, we will have to take our diplomacy to the battlefield to determine who shall control the territory."
  tlb.9.a:0 "Their claims will be backed by America"
+ tlb.10.t:0 "United States Proposes Cooperation with El Salvador"
+ tlb.10.d:0 "Placeholder"
+ tlb.10.a:0 "We will support this"
+ tlb.11.t:0 "The United States offers Protection"
+ tlb.11.d:0 "Placeholder"
+ tlb.11.a:0 "We need the help"
+ tlb.11.b:0 "We'll never submit"
+ tlb.12.t:0 "The United States Offers Unification with Panama"
+ tlb.12.d:0 "Placeholder"
+ tlb.12.a:0 "We will become brothers"
+ tlb.12.b:0 "Our sovereignty will remain."
+ tlb.13.t:0 "The Reunification of the USCA"
+ tlb.13.d:0 "Placeholder"
+ tlb.13.a:0 "Brothers United Again"
 
  #Peace Events
  usapeace.1.t:0 "The Guatemalans have Taken Their Claim"
@@ -60,7 +78,28 @@ US_intervension_CAN_desc:0 "Ever since the United Kindgom has fallen to the exte
  tlb.40.d:0 "Placeholder Event"
  tlb.40.a:0 "How did I get this event? (please notify the developers)"
 
-#Focuses
+###########Focuses
+#Political
+ TLB_lowden_doctrine:0 "The Lowden Doctrine"
+ TLB_lowden_doctrine_desc:0 "Frank Lowden, our current president is the head of freedom in the world. We believe that his doctrine may bring our country prosperity and help us to contain communism. While his ideals may seem radical and reckless, we need to have someone take the helm and steer the ship with certainty and strength. His doctrine will lead us to a better future and help us liberate countries across the globe."
+ TLB_focus_containment:0 "Focus on Containment"
+ TLB_focus_containment_desc:0 "While there are internal political issues present in the United States, they pale in comparison to the problems we will face in the event of a call for revolution. Much as we've seen in eastern Europe and France, we need to contain the spread of communism to avoid a domino effect that will cascade all across the world and into the Americas. Domestic issues must be put aside for the sake of the world's future."
+ TLB_expand_crypt:0 "Expand the Cryptology Department"
+ TLB_expand_crypt_desc:0 "A critical part of keeping countries out of the hands of communism is to know the in and outs of the country and understand their politics. Funneling more funding to the cryptology department will undoubtably increase their performance and we will get more information then we have before. With our new information we can pinpoint the weak spots of foreign governments and instill instability can fill the cracks with democracy."
+ TLB_homeland_defence:0 "Department of Homeland Security"
+ TLB_homeland_defence_desc:0 "The United States of America has created the Department of Homeland Security. The department's main purpose is to defend United States intelligence from other nations and organisations that seek to gain the information for themselves. The agency has defended many attacks so far and should continue to serve the country for years to come."
+ TLb_american_foothold:0 "The American Foothold"
+ TLb_american_foothold_desc:0 "Panama was once in the sphere of the United States and it's economy was kickstarted by the building of the Panama Canal. Sadly, they've fallen to communism and now they may serve as a foothold for communism in America. If we do not act quickly, they could very well create a larger issue in the Central America. The best way to deal with this is to create a new regime and get the public to support to it."
+ TLB_political_interventionPAN:0 "Intervene in Panaman Politics"
+ TLB_political_interventionPAN_desc:0 "Panama is the only nation in the Americas that has fallen to the ideals of communism. To combat this, we have sent spies to infiltrate the Panaman government and engrain political ideas to the people and their fellow politicians. Once this is done, we can create a regime that will have support by officials and the public. Though it may lead to a civil war, we have to make a very quick regime change."
+ TLB_civilwar_PAN:0 "Put the Regime in Power"
+ TLB_civilwar_PAN_desc:0 "After preparations, we have sucessfully infiltrated the Panaman government and have harbored enough support to contest the government politically. The communists will not go down easily and there will likely be a civil war following the demands of the people. If a war is to break out, the American people will support the democracy both militarily and ecomomically to secure the state."
+ TLB_prepare_intervention:0 "Prepare Military Intervention"
+ TLB_prepare_intervention_desc:0 "Though we have already begun regime building in Panama, we have decided that our best option here is to make a military excursion into Panama. It's the quickest way to switch the government and if we decided to diplomatically pressure the standing government, we would not have had a peaceful transition in any circumstance. We'll cut our losses and prepare an invasion now."
+ TLB_invade_panama:0 "Eradicate the Communism"
+ TLB_invade_panama_desc:0 "The time has come for us to invade Panama. It may come at the expense of American men, but they are willing to lay down their lives in the name of freedom. Brave men of America, we call upon you to create a better world for the people of the future. Your lives will not be lost in vain and we will create a better world for your family and their future generations. We want you!"
+
+#intervention
  TLB_The_Last_Bastion:0 "The Last Bastion"
  TLB_The_Last_Bastion_desc:0 "The many powers of this world have fallen. Our only hope is ourselves. The world, by intention or not, has betrayed us, but that does not mean we have given up on them. There's not much hope left in the world. We are The Last Bastion."
  TLB_canadian_question:0 "The Canadian Question"
@@ -68,7 +107,7 @@ US_intervension_CAN_desc:0 "Ever since the United Kindgom has fallen to the exte
  TLB_Intervensionism_america:0 "Americas First"
  TLB_Intervensionism_america_desc:0 "While we have one ally in Asia, Japan, they must wait for our foreign aid. The Americas are our first priority. It will allow us to allocate more to Asia, and when the time comes, we'll put forth the most help we can to secure democracy anywhere we can."
  TLB_Intervensionism_asia:0 "Intervensionism in Asia"
- TLB_Intervensionism_asia_desc:0 "While the Americas are the closest to us, we need to influence Asia. Asia is the only place in the old world that hasn't fallen. The only nation that has a strong prescence in Asia is Japan, and they should be willing to cooperate. China's civil war is a crucial point in the sucess of our Asian operations, if we fail, we may not succeed."
+ TLB_Intervensionism_asia_desc:0 "While the Americas are the closest to us, we need to influence Asia. Asia is the only place in the old world that hasn't fallen. The only nation that has a strong prescence in Asia is Japan, and they should be willing to cooperate. China's civil war is a crucial point in the sucess of our Asian operations, if we fail, the rest of our influence in asia could be in jeopardy."
  TLB_japanese_proposition:0 "Proposition to Japan"
  TLB_japanese_proposition_desc:0 "Japan is a nation that has great potential in Asia. With their cooperation, we could stage a great intervention in Asia. From there, we could help support democratic upheval throughout Asia and Asia minor. The high population might be difficult to persuade, but with enough effort, we may just be able to do it well."
  TLB_chinese_intervention:0 "Chinese Intervention"
@@ -118,4 +157,3 @@ US_intervension_CAN_desc:0 "Ever since the United Kindgom has fallen to the exte
  TLB_arms_NIC_desc:0 "To be completed"
  TLB_USCA_realized:0 "Reunification of the USCA"
  TLB_USCA_realized_desc:0 "The preparations have been complete and the time is right. Our preparations have been meticulous and calculated. The reunification may prove difficult as the separation was not a simple and diplomatic one, but we hope that with the intervention of the United States the country may prosper again and keep stability in Central America."
- 

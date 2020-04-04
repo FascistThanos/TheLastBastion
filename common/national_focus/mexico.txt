@@ -1885,7 +1885,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			unlock_decision_tooltip = MEX_decision_interior_defence_plan
+			#unlock_decision_tooltip = MEX_decision_interior_defence_plan
 
 			483 = {
 				add_building_construction = { type = bunker province = 8033 level = 1 instant_build = yes }
@@ -2844,7 +2844,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_transfer_lands_to_church
+			#unlock_decision_tooltip = MEX_decision_transfer_lands_to_church
 			if = {
 				limit = {
 					NOT = {
@@ -2886,8 +2886,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_pardon_cristero_fighter
-			unlock_decision_tooltip = MEX_decision_attend_public_mass
+			#unlock_decision_tooltip = MEX_decision_pardon_cristero_fighter
+			#unlock_decision_tooltip = MEX_decision_attend_public_mass
 		}
 	}
 
@@ -4180,7 +4180,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_support_spanish_fascists
+			#unlock_decision_tooltip = MEX_decision_support_spanish_fascists
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
@@ -4267,7 +4267,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_support_spanish_loyalists
+			#unlock_decision_tooltip = MEX_decision_support_spanish_loyalists
 
 			add_popularity = {
 				ideology = communism
@@ -4368,7 +4368,7 @@ focus_tree = {
 				}
 			}
 
-			unlock_decision_category_tooltip = MEX_category_hispanic_solidarity
+			##unlock_decision_category_tooltip MEX_category_hispanic_solidarity
 
 			MEX_increase_church_power = yes
 
@@ -4500,7 +4500,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = MEX_category_hispanic_solidarity
+			##unlock_decision_category_tooltip MEX_category_hispanic_solidarity
 			if = {
 				limit = {
 					has_government = fascism
@@ -4633,7 +4633,7 @@ focus_tree = {
 				}
 			}
 
-			unlock_decision_category_tooltip = MEX_category_hispanic_solidarity
+			##unlock_decision_category_tooltip MEX_category_hispanic_solidarity
 
 			MEX_decrease_church_power = yes
 
@@ -5017,7 +5017,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			unlock_decision_tooltip = MEX_decision_coastal_defence_plan
+			#unlock_decision_tooltip = MEX_decision_coastal_defence_plan
 
 			481 = {
 				add_building_construction = { type = coastal_bunker province = 8057 level = 1 instant_build = yes }
@@ -5505,9 +5505,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_integrate_cuba
-			unlock_decision_tooltip = MEX_decision_integrate_haiti
-			unlock_decision_tooltip = MEX_decision_integrate_the_dominican_republic
+			#unlock_decision_tooltip = MEX_decision_integrate_cuba
+			#unlock_decision_tooltip = MEX_decision_integrate_haiti
+			#unlock_decision_tooltip = MEX_decision_integrate_the_dominican_republic
 		}
 	}
 
@@ -5806,7 +5806,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_operation_just_cause
+			#unlock_decision_tooltip = MEX_decision_operation_just_cause
 		}
 		will_lead_to_war_with = USA
 	}
@@ -5847,14 +5847,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_integrate_guatamala
-			unlock_decision_tooltip = MEX_decision_integrate_honduras
-			unlock_decision_tooltip = MEX_decision_integrate_el_salvador
-			unlock_decision_tooltip = MEX_decision_integrate_nicaragua
-			unlock_decision_tooltip = MEX_decision_integrate_costa_rica
-			unlock_decision_tooltip = MEX_decision_integrate_panama
-			unlock_decision_tooltip = MEX_decision_integrate_panama_canal
-			unlock_decision_tooltip = MEX_decision_integrate_belize
+			#unlock_decision_tooltip = MEX_decision_integrate_guatamala
+			#unlock_decision_tooltip = MEX_decision_integrate_honduras
+			#unlock_decision_tooltip = MEX_decision_integrate_el_salvador
+			#unlock_decision_tooltip = MEX_decision_integrate_nicaragua
+			#unlock_decision_tooltip = MEX_decision_integrate_costa_rica
+			#unlock_decision_tooltip = MEX_decision_integrate_panama
+			#unlock_decision_tooltip = MEX_decision_integrate_panama_canal
+			#unlock_decision_tooltip = MEX_decision_integrate_belize
 		}
 	}
 

@@ -145,6 +145,16 @@ set_autonomy = {
 }
 
 create_country_leader = {
+	name = "Frank Lowden"
+	desc = "POLITICS_LOWDEN_DESC"
+	picture = "Portrait_USA_Frank_Lowden.dds"
+	expire = "1943.3.20"
+	ideology = libertarian
+	traits = {
+		headstrong
+	}
+}
+create_country_leader = {
 	name = "Franklin Delano Roosevelt"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_USA_Franklin_Roosevelt.dds"
@@ -160,7 +170,6 @@ create_country_leader = {
 	desc = "POLITICS_ALF_LANDON_DESC"
 	picture = "Portrait_USA_Alf_Landon.dds"
 	expire = "1965.1.1"
-	ideology = libertarian
 	traits = {
 		staunch_constitutionalist
 	}

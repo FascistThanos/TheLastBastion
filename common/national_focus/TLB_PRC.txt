@@ -273,35 +273,6 @@ has_war = no
 	}
 }
 
-focus = {
-	id = PRC_rebuild_china_war
-	icon = GFX_Generic_Construction
-	prerequisite = { focus = PRC_post_war_rehabilitation }
-	x = 0
-	y = 1
-	relative_position_id = PRC_post_war_rehabilitation
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-
-	}
-}
 
 focus = {
 	id = PRC_rebuild_china_war
@@ -563,6 +534,71 @@ focus = {
 }
 
 focus = {
+	id = PRC_japan_friend
+	icon = GFX_focus_chi_collaboration_with_the_japanese
+	prerequisite = { focus = PRC_foreign_affairs }
+mutually_exclusive = {focus = PRC_japan_enemy}
+	x = -1
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
+	}
+}
+
+
+focus = {
+	id = PRC_red_japan
+	icon = GFX_Generic_Secret_Meeting
+	prerequisite = { focus = PRC_japan_friend }
+	x = 0
+	y = 1
+	relative_position_id = PRC_japan_friend
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+JAP = {	add_timed_idea = {
+			idea = PRC_japan_idea
+			days = 100
+	}}
+}
+}
+
+focus = {
 	id = PRC_southern_thrust
 	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = PRC_red_japan }
@@ -676,7 +712,7 @@ focus = {
 	}
 
 	available = {
- = { is_puppet_of = UOB }
+
 	}
 
 	bypass = {
@@ -762,7 +798,6 @@ focus = {
 	id = PRC_communism_focus
 	icon = GFX_Generic_Communist_Propaganda02
 	prerequisite = { focus = PRC_post_war_politics}
-	mutually_exclusive = { focus = PRC_democracy_focus }
 	x = 0
 	y = 1
 	relative_position_id = PRC_post_war_politics
@@ -820,35 +855,7 @@ create_faction = "People's Front"
 	}
 }
 
-focus = {
-	id = PRC_strike_manchu
-	icon = GFX_goal_manchu_flames
-		prerequisite = { focus = PRC_expand_chi}
-	x = 0
-	y = 1
-	relative_position_id = PRC_expand_chi
 
-	cost = 15
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-completion_reward = {
-create_wargoal = {
-		type = annex_everything
-		target = MAN
-}
-}
-
-
-}
 
 
 
@@ -878,6 +885,36 @@ add_stability = 0.1
 add_war_support = 0.2
 add_manpower = 1000
 }
+}
+
+focus = {
+	id = PRC_strike_manchu
+	icon = GFX_goal_manchu_flames
+		prerequisite = { focus = PRC_expand_chi}
+	x = 0
+	y = 1
+	relative_position_id = PRC_expand_chi
+
+	cost = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+completion_reward = {
+create_wargoal = {
+		type = annex_everything
+		target = MAN
+}
+}
+
+
 }
 
 focus = {
@@ -2683,36 +2720,7 @@ add_state_claim = 881
 }
 
 ############
-focus = {
-	id = PRC_japan_friend
-	icon = GFX_focus_chi_collaboration_with_the_japanese
-	prerequisite = { focus = PRC_foreign_affairs }
-mutually_exclusive = {focus = PRC_japan_enemy}
-	x = -1
-	y = 1
-	relative_position_id = PRC_foreign_affairs
 
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-JAP = {add_opinion_modifier = { target = PRC modifier = large_increase }}
-	}
-}
 
 focus = {
 	id = PRC_japan_enemy
@@ -2779,35 +2787,5 @@ focus = {
 	}
 }
 
-focus = {
-	id = PRC_red_japan
-	icon = GFX_Generic_Secret_Meeting
-	prerequisite = { focus = PRC_japan_friend }
-	x = 0
-	y = 1
-	relative_position_id = PRC_japan_friend
 
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-JAP = {	add_timed_idea = {
-			idea = PRC_japan_idea
-			days = 100
-	}}
-}
 }

@@ -8,6 +8,8 @@ focus_tree = {
 		}
 	}
 
+	default = no
+
 	focus = {
 		id = ITA_pricinipaliaitalia
 		icon = GFX_pricinipaliaitalia
@@ -1644,6 +1646,49 @@ focus_tree = {
 		}
 	}
 
+
+
+	focus = {
+		id = ITA_theacerbolaw
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theelectionof1936 }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			country_event = TLB_Italy.5
+		}
+
+		relative_position_id = ITA_pricinipaliaitalia
+	}
+
+
+
+
+	focus = {
+		id = ITA_thefundingbill
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theacerbolaw }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_pricinipaliaitalia
+
+		completion_reward = {
+			country_event = TLB_Italy.6
+		}
+	}
+
 	focus = {
 		id = ITA_parrisgovernment
 		icon = GFX_parrisgovernment
@@ -1675,43 +1720,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_theacerbolaw
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 0
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theelectionof1936 }
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			country_event = TLB_Italy.5
-		}
-
-		relative_position_id = ITA_pricinipaliaitalia
-	}
-
-	focus = {
-		id = ITA_thefundingbill
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theacerbolaw }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_pricinipaliaitalia
-
-		completion_reward = {
-			country_event = TLB_Italy.6
-		}
-	}
 
 	focus = {
 		id = ITA_thepeoplesparty
@@ -1779,105 +1787,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_theromeviennarailway
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_befriendaustria }
-		ai_will_do = {
-			factor = 1
-		}
 
-		relative_position_id = ITA_befriendaustria
 
-		completion_reward = {
-			2 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
 
-			162 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			161 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			160 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			153 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			900 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			901 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-
-			4 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-    				instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_theitalianempire
-		icon = GFX_goal_poland_goal
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theswissmenace }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_theswissmenace
-
-		completion_reward = {
-			set_cosmetic_tag = ITA_italian_empire
-		}
-	}
 
 	focus = {
 		id = ITA_thefascistleague
@@ -1987,234 +1899,82 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_amediterraneanalliance
-		icon = GFX_goal_generic_military_sphere
-		x = -1
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-    	prerequisite = { focus = ITA_thevolontariofrancese }
-    	prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
-		mutually_exclusive = { focus = ITA_ademocraticalliance }
-
-		relative_position_id = ITA_bidforafricanfreedom
-
-		completion_reward = {
-			add_ideas = ITA_mediterranean_alliance
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = ITA_ademocraticalliance
-		icon = GFX_goal_support_democracy
-		x = 1
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-    	prerequisite = { focus = ITA_thevolontariofrancese }
-    	prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
-		mutually_exclusive = { focus = ITA_amediterraneanalliance }
-
-		relative_position_id = ITA_thevolontariofrancese
-
-		completion_reward = {
-			add_ideas = ITA_democratic_alliance
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = ITA_formthemarenostrum
-		icon = GFX_formthemarenostrum
+		id = ITA_theromeviennarailway
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_amediterraneanalliance }
+		prerequisite = { focus = ITA_befriendaustria }
 		ai_will_do = {
 			factor = 1
 		}
 
-		relative_position_id = ITA_amediterraneanalliance
+		relative_position_id = ITA_befriendaustria
 
 		completion_reward = {
-			if = {
-				limit = {
-					ITA = {
-						is_in_faction = yes
-					}
-				}
-
-				ITA = {
-					leave_faction = yes
+			2 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
 				}
 			}
 
-			else = {
-				ITA = {
-					create_faction = "Mare Nostrum"
-					add_to_faction = ITA
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_invitegreece
-		icon = GFX_goal_generic_military_deal
-		x = -1
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_formthemarenostrum }
-		mutually_exclusive = { focus = ITA_inviteturkey }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_formthemarenostrum
-
-		completion_reward = {
-			GRE = {
-				country_event = TLB_Italy.10
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_joinnato
-		icon = GFX_joinnato
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_ademocraticalliance }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_ademocraticalliance
-
-		completion_reward = {
-			if = {
-				limit = {
-					OR = {
-						USA = {
-							is_in_faction = yes
-							is_faction_leader = yes
-						}
-
-						FRA = {
-							is_in_faction = yes
-							is_faction_leader = yes
-						}
-					}
-				}
-
-				USA = {
-					add_to_faction = ITA
-				}
-
-				FRA = {
-					add_to_faction = ITA
+			162 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
 				}
 			}
 
-			else = {
-				create_faction = "Nato"
-				add_to_faction = ITA
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_theeritreanrefugeprogram
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_thenorthafricanprogram }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_thenorthafricanprogram
-
-		completion_reward = {
-			hidden_effect = {
-				550 = {
-					add_manpower = -30000
-				}
-
-				156 = {
-					add_manpower = 20000
-				}
-
-				182 = {
-					add_manpower = 10000
+			161 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
 				}
 			}
 
-			custom_effect_tooltip = TT_Eritrean_Refugees
-		}
-	}
-
-	focus = {
-		id = ITA_bidforafricanfreedom
-		icon = GFX_bidforafricanfreedom
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_freedomforafrica }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_freedomforafrica
-
-		completion_reward = {
-			ENG = {
-				country_event = TLB_Italy.8
+			160 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
 			}
 
-			if = {
-     			limit = {
-        			FRA = {
-          				exists = yes
-          				owns_state = 16
-        			}
-      			}
-
-      			country_event = TLB_Italy.8
-    		}
-
-			else = {
+			153 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
 			}
 
-     		if = {
-      			limit = {
-        			FPR = {
-          				exists = yes
-          				owns_state = 16
-          				NOT = {
-            				has_war_with = FRA
-          				}
-        			}
-      			}
-
-      			country_event = TLB_Italy.8
+			900 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
 			}
 
-			else = {
+			901 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+			4 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
 			}
 		}
 	}
@@ -2238,6 +1998,25 @@ focus_tree = {
    				type = annex_everything
     			target = SWI
 			}
+		}
+	}
+
+	focus = {
+		id = ITA_theitalianempire
+		icon = GFX_goal_poland_goal
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theswissmenace }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_theswissmenace
+
+		completion_reward = {
+			set_cosmetic_tag = ITA_italian_empire
 		}
 	}
 
@@ -2531,7 +2310,6 @@ focus_tree = {
 					ruling_party = communism
 					ideology = ROOT
 					size = 0.7
-					only_own_territory = no
 					capital = 166
 					states = {
 						165 166 167 168 169 173 290 871 889 895 896 897 898
@@ -2730,26 +2508,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_thevolontariofrancese
-		icon = GFX_focus_generic_military_mission
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_aidtothefrenchrepublic }
-		ai_will_do = {
-			factor = 1
-		}
 
-		relative_position_id = ITA_aidtothefrenchrepublic
-
-		completion_reward = {
-			set_rule = {
-				can_send_volunteers = yes
-			}
-		}
-	}
 
 	focus = {
 		id = ITA_theworkersrightscommitte
@@ -2796,6 +2555,206 @@ focus_tree = {
 				create_faction = ITA_communist
 				add_to_faction = ITA
 			}
+		}
+	}
+
+	focus = {
+		id = ITA_fascismingreece
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theeaglefront }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_theeaglefront
+
+		completion_reward = {
+			add_timed_idea = {
+				days = 180
+				idea = ITA_fascism_in_greece
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_invitegreecefascism
+		icon = GFX_goal_poland_goal
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_fascismingreece }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_fascismingreece
+
+		completion_reward = {
+			ITA = {
+				add_to_faction = GRE
+			}
+
+			add_political_power = 150
+
+			GRE = {
+				add_political_power = 150
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_theafricancorp
+		icon = GFX_goal_generic_political_pressure
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_freemussolinifromprison }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_freemussolinifromprison
+
+		completion_reward = {
+			hidden_effect = {
+				set_division_template_lock = {
+    				division_template = "Africa Corp"
+    				is_locked = yes
+				}
+
+				division_template = {
+    				name = "Africa Corp"
+    				regiments = {
+        				infantry = { x = 0 y = 0 }
+        				infantry = { x = 0 y = 1 }
+        				infantry = { x = 0 y = 2 }
+        				infantry = { x = 0 y = 3 }
+    				}
+    			}
+			}
+
+			450 = {
+				create_unit = {
+   					division = "name = \"1st Africa Corp\" division_template = \"Africa Corp\" start_experience_factor = 1.0 start_equipment_factor = 0.75" owner = ITA
+				}
+
+				create_unit = {
+   					division = "name = \"2nd Africa Corp\" division_template = \"Africa Corp\" start_experience_factor = 1.0 start_equipment_factor = 0.75" owner = ITA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_anticommunistrhetoric
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ITA_eliminatethebureaucracy
+		}
+		prerequisite = {
+			focus = ITA_theafricancorp
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_theafricancorp
+
+		completion_reward = {
+			add_ideas = ITA_anti_communist_rhetoric
+		}
+	}
+
+	focus = {
+		id = ITA_theoilfront
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theafricancorp }
+		mutually_exclusive = { focus = ITA_theeaglefront }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_theafricancorp
+
+		completion_reward = {
+			army_experience = 20
+			create_faction = "The Greater Eurasian League"
+			add_to_faction = ITA
+		}
+	}
+
+
+	focus = {
+		id = ITA_omaniitaliancooperationleague
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_theoilfront }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_theoilfront
+
+		completion_reward = {
+			add_to_faction = OMA
+		}
+	}
+
+	focus = {
+		id = ITA_strikeintosaudiarabia
+		icon = GFX_goal_generic_oil_refinery
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_omaniitaliancooperationleague }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_omaniitaliancooperationleague
+
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = SAU
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_therepubliclives
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_parrisgovernment }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_parrisgovernment
+
+		completion_reward = {
+			add_ideas = ITA_republic_lives
 		}
 	}
 
@@ -2901,6 +2860,58 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_bidforafricanfreedom
+		icon = GFX_bidforafricanfreedom
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_freedomforafrica }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_freedomforafrica
+
+		completion_reward = {
+			ENG = {
+				country_event = TLB_Italy.8
+			}
+
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+						owns_state = 16
+					}
+				}
+
+				country_event = TLB_Italy.8
+			}
+
+			else = {
+			}
+
+			if = {
+				limit = {
+					FPR = {
+						exists = yes
+						owns_state = 16
+						NOT = {
+							has_war_with = FRA
+						}
+					}
+				}
+
+				country_event = TLB_Italy.8
+			}
+
+			else = {
+			}
+		}
+	}
+
+	focus = {
 		id = ITA_thenorthafricanprogram
 		icon = GFX_goal_generic_dangerous_deal
 		x = -1
@@ -2933,136 +2944,118 @@ focus_tree = {
 		}
 	}
 
+
+
 	focus = {
-		id = ITA_strikeintosaudiarabia
-		icon = GFX_goal_generic_oil_refinery
+		id = ITA_theeritreanrefugeprogram
+		icon = GFX_goal_generic_national_unity
 		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_omaniitaliancooperationleague }
+		prerequisite = { focus = ITA_thenorthafricanprogram }
 		ai_will_do = {
 			factor = 1
 		}
 
-		relative_position_id = ITA_omaniitaliancooperationleague
+		relative_position_id = ITA_thenorthafricanprogram
 
 		completion_reward = {
-			create_wargoal = {
-   				type = annex_everything
-    			target = SAU
+			hidden_effect = {
+				550 = {
+					add_manpower = -30000
+				}
+
+				156 = {
+					add_manpower = 20000
+				}
+
+				182 = {
+					add_manpower = 10000
+				}
 			}
+
+			custom_effect_tooltip = TT_Eritrean_Refugees
 		}
 	}
 
 	focus = {
-		id = ITA_fascismingreece
-		icon = GFX_goal_generic_major_war
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theeaglefront }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_theeaglefront
-
-		completion_reward = {
-			add_timed_idea = {
-				days = 180
-				idea = ITA_fascism_in_greece
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_invitegreecefascism
-		icon = GFX_goal_poland_goal
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_fascismingreece }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_fascismingreece
-
-		completion_reward = {
-			ITA = {
-				add_to_faction = GRE
-			}
-
-			add_political_power = 150
-
-			GRE = {
-				add_political_power = 150
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_omaniitaliancooperationleague
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theoilfront }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_theoilfront
-
-		completion_reward = {
-			add_to_faction = OMA
-		}
-	}
-
-	focus = {
-		id = ITA_anticommunistrhetoric
-		icon = GFX_goal_generic_propaganda
+		id = ITA_amediterraneanalliance
+		icon = GFX_goal_generic_military_sphere
 		x = -1
-		y = 2
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = {
-			focus = ITA_eliminatethebureaucracy
-		}
-		prerequisite = {
-			focus = ITA_theafricancorp
-		}
-		ai_will_do = {
-			factor = 1
-		}
+    	prerequisite = { focus = ITA_thevolontariofrancese }
+    	prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
+		mutually_exclusive = { focus = ITA_ademocraticalliance }
 
-		relative_position_id = ITA_theafricancorp
+		relative_position_id = ITA_bidforafricanfreedom
 
 		completion_reward = {
-			add_ideas = ITA_anti_communist_rhetoric
+			add_ideas = ITA_mediterranean_alliance
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
 	focus = {
-		id = ITA_therepubliclives
-		icon = GFX_goal_generic_defence
+		id = ITA_formthemarenostrum
+		icon = GFX_formthemarenostrum
 		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_parrisgovernment }
+		prerequisite = { focus = ITA_amediterraneanalliance }
 		ai_will_do = {
 			factor = 1
 		}
 
-		relative_position_id = ITA_parrisgovernment
+		relative_position_id = ITA_amediterraneanalliance
 
 		completion_reward = {
-			add_ideas = ITA_republic_lives
+			if = {
+				limit = {
+					ITA = {
+						is_in_faction = yes
+					}
+				}
+
+				ITA = {
+					leave_faction = yes
+				}
+			}
+
+			else = {
+				ITA = {
+					create_faction = "Mare Nostrum"
+					add_to_faction = ITA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_invitegreece
+		icon = GFX_goal_generic_military_deal
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_formthemarenostrum }
+		mutually_exclusive = { focus = ITA_inviteturkey }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_formthemarenostrum
+
+		completion_reward = {
+			GRE = {
+				country_event = TLB_Italy.10
+			}
 		}
 	}
 
@@ -3106,14 +3099,14 @@ focus_tree = {
 		relative_position_id = ITA_thebonomiplan
 
 		available = {
-      		FRA = {
-        		has_war_with = FPR
-      		}
+					FRA = {
+						has_war_with = FPR
+					}
 
 			NOT = {
 				has_government = communism
 			}
-    	}
+			}
 
 		bypass = {
 			ITA = {
@@ -3139,6 +3132,95 @@ focus_tree = {
 					amount = 10000
 					producer = FRA
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_thevolontariofrancese
+		icon = GFX_focus_generic_military_mission
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_aidtothefrenchrepublic }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_aidtothefrenchrepublic
+
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_ademocraticalliance
+		icon = GFX_goal_support_democracy
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+    	prerequisite = { focus = ITA_thevolontariofrancese }
+    	prerequisite = { focus = ITA_bidforafricanfreedom focus = ITA_theeritreanrefugeprogram }
+		mutually_exclusive = { focus = ITA_amediterraneanalliance }
+
+		relative_position_id = ITA_thevolontariofrancese
+
+		completion_reward = {
+			add_ideas = ITA_democratic_alliance
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = ITA_joinnato
+		icon = GFX_joinnato
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_ademocraticalliance }
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = ITA_ademocraticalliance
+
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						USA = {
+							is_in_faction = yes
+							is_faction_leader = yes
+						}
+
+						FRA = {
+							is_in_faction = yes
+							is_faction_leader = yes
+						}
+					}
+				}
+
+				USA = {
+					add_to_faction = ITA
+				}
+
+				FRA = {
+					add_to_faction = ITA
+				}
+			}
+
+			else = {
+				create_faction = "Nato"
+				add_to_faction = ITA
 			}
 		}
 	}
@@ -3216,72 +3298,6 @@ focus_tree = {
 			ALB = {
 				country_event = TLB_Italy.11
 			}
-		}
-	}
-
-	focus = {
-		id = ITA_theafricancorp
-		icon = GFX_goal_generic_political_pressure
-		x = 1
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_freemussolinifromprison }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_freemussolinifromprison
-
-		completion_reward = {
-			hidden_effect = {
-				set_division_template_lock = {
-    				division_template = "Africa Corp"
-    				is_locked = yes
-				}
-
-				division_template = {
-    				name = "Africa Corp"
-    				regiments = {
-        				infantry = { x = 0 y = 0 }
-        				infantry = { x = 0 y = 1 }
-        				infantry = { x = 0 y = 2 }
-        				infantry = { x = 0 y = 3 }
-    				}
-				}
-			}
-
-			450 = {
-				create_unit = {
-    				division = "name = "Africa Corp" division_template = "Africa Corp" start_experience_factor = 1.0 start_equipment_factor = 0.75" owner = ITA
-				}
-
-				create_unit = {
-    				division = "name = "Africa Corp" division_template = "Africa Corp" start_experience_factor = 1.0 start_equipment_factor = 0.75" owner = ITA
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_theoilfront
-		icon = GFX_goal_generic_position_armies
-		x = 1
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ITA_theafricancorp }
-		mutually_exclusive = { focus = ITA_theeaglefront }
-		ai_will_do = {
-			factor = 1
-		}
-
-		relative_position_id = ITA_theafricancorp
-
-		completion_reward = {
-			army_experience = 20
-			create_faction = "The Greater Eurasian League"
-			add_to_faction = ITA
 		}
 	}
 }
