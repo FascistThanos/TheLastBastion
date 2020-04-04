@@ -18,7 +18,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_anniversery_of_the_birmingham_march
+		id = ENG_anniversery_of_the_birmingham_strike
 		available = {
 			always = no
 			}
@@ -38,8 +38,8 @@ focus_tree = {
 
 	focus = {
 		id = ENG_wilkins_debates
-		prerequisite = { focus = ENG_anniversery_of_the_birmingham_march }
-		relative_position_id = ENG_anniversery_of_the_birmingham_march
+		prerequisite = { focus = ENG_anniversery_of_the_birmingham_strike }
+		relative_position_id = ENG_anniversery_of_the_birmingham_strike
 		icon = GFX
 		x = 0
 		y = 1
@@ -497,7 +497,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_pardon_the_parmoor_government
+		id = ENG_pardon_the_eden_government
 		prerequisite = { focus = ENG_reconcile_with_the_BGE }
 		relative_position_id = ENG_reconcile_with_the_BGE
 		icon = GFX
@@ -552,7 +552,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_2nd_session
-		prerequisite = { focus = ENG_worker's_rights_act focus = ENG_disband_the_general_union focus = ENG_pardon_the_parmoor_government }
+		prerequisite = { focus = ENG_worker's_rights_act focus = ENG_disband_the_general_union focus = ENG_pardon_the_eden_government }
 		relative_position_id = ENG_worker's_rights_act
 		icon = GFX
 		x = -2
