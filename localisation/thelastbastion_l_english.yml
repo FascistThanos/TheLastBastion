@@ -49,6 +49,20 @@ TLB_homeland_def_agency_desc:0 "The United States of America has created the Dep
  tlb.9.t:0 "The Guatemalan Demands have been Ignored"
  tlb.9.d:0 "The Guatemalans have sent their demands to the United Kingdom to no avail. The British, always stubborn have refused our demand and must be forced to hand over the land. Just as we promised, we will enter the war against the ailing kingdom on the side of Guatemala to achieve the removal of the empire in the western hemisphere. Unfortunately, we will have to take our diplomacy to the battlefield to determine who shall control the territory."
  tlb.9.a:0 "Their claims will be backed by America"
+ tlb.10.t:0 "United States Proposes Cooperation with El Salvador"
+ tlb.10.d:0 "Placeholder"
+ tlb.10.a:0 "We will support this"
+ tlb.11.t:0 "The United States offers Protection"
+ tlb.11.d:0 "Placeholder"
+ tlb.11.a:0 "We need the help"
+ tlb.11.b:0 "We'll never submit"
+ tlb.12.t:0 "The United States Offers Unification with Panama"
+ tlb.12.d:0 "Placeholder"
+ tlb.12.a:0 "We will become brothers"
+ tlb.12.b:0 "Our sovereignty will remain."
+ tlb.13.t:0 "The Reunification of the USCA"
+ tlb.13.d:0 "Placeholder"
+ tlb.13.a:0 "Brothers United Again"
 
  #Peace Events
  usapeace.1.t:0 "The Guatemalans have Taken Their Claim"
@@ -84,7 +98,7 @@ TLB_homeland_def_agency_desc:0 "The United States of America has created the Dep
  TLB_prepare_intervention_desc:0 "Though we have already begun regime building in Panama, we have decided that our best option here is to make a military excursion into Panama. It's the quickest way to switch the government and if we decided to diplomatically pressure the standing government, we would not have had a peaceful transition in any circumstance. We'll cut our losses and prepare an invasion now."
  TLB_invade_panama:0 "Eradicate the Communism"
  TLB_invade_panama_desc:0 "The time has come for us to invade Panama. It may come at the expense of American men, but they are willing to lay down their lives in the name of freedom. Brave men of America, we call upon you to create a better world for the people of the future. Your lives will not be lost in vain and we will create a better world for your family and their future generations. We want you!"
- 
+
 #intervention
  TLB_The_Last_Bastion:0 "The Last Bastion"
  TLB_The_Last_Bastion_desc:0 "The many powers of this world have fallen. Our only hope is ourselves. The world, by intention or not, has betrayed us, but that does not mean we have given up on them. There's not much hope left in the world. We are The Last Bastion."

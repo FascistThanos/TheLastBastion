@@ -2163,12 +2163,16 @@ spriteType = {
 	texturefile = "gfx/interface/goals/lowden.dds"
 }
 spriteType = {
-	name = "GFX_TLB_Homeland_Departmnet"
+	name = "GFX_Homeland_Departmnet"
 	texturefile = "gfx/interface/goals/Homeland_Departmnet.dds"
 }
 spriteType = {
-	name = "GFX_TLB_decryption"
+	name = "GFX_decryption"
 	texturefile = "gfx/interface/goals/decryption.dds"
+}
+spriteType = {
+	name = "GFX_Belize3"
+	texturefile = "gfx/interface/goals/Belize3.dds"
 }
 SpriteType = { name = "GFX_goal_beijing1"       texturefile = "gfx/interface/goals/goal_beijing1.dds" }
 SpriteType = { name = "GFX_goal_beijing2"       texturefile = "gfx/interface/goals/goal_beijing2.dds" }

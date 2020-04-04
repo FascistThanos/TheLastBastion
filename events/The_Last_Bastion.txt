@@ -26,7 +26,12 @@ country_event = {  #Proposition from the United States
     ai_chance = {
       base = 20
     }
-
+    USA = {
+      add_country_flag = mexico_accepts
+    }
+    MEX = {
+      give_military_access = USA
+    }
   }
   option = { #Declined proposition
     name = tlb.2.b
@@ -202,8 +207,116 @@ country_event = { #Honduras Annex El Salvador
 
   option = {
     name = tlb.10.a
+    HON = {
+      annex_country = {
+        target = ELS
+        transfer_troops = yes
+      }
+    }
   }
 }
+country_event = {
+  id = tlb.11
+  title = tlb.11.t
+  desc = tlb.11.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = tlb.11.a
+    USA = {
+      puppet = PAN
+    }
+  }
+  option = {
+    name = tlb.11.b
+    USA = {
+      create_wargoal = {
+        type = puppet
+        target = PAN
+      }
+    }
+  }
+}
+country_event = {
+  id = tlb.12
+  title = tlb.12.t
+  desc = tlb.12.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = tlb.12.a
+    PAN = {
+      annex_country = {
+        target = COS
+        transfer_troops = yes
+      }
+    }
+  }
+  option = {
+    name = tlb.12.b
+    PAN = {
+      create_wargoal = {
+        type = puppet_wargoal_focus
+        target = COS
+      }
+    }
+  }
+}
+country_event = {
+  id = tlb.13
+  title = tlb.13.t
+  desc = tlb.13.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = tlb.13.a
+    GUA = {
+      annex_country = {
+        target = HON
+        transfer_troops = yes
+      }
+      annex_country = {
+        target = ELS
+        transfer_troops = yes
+      }
+      annex_country = {
+        target = NIC
+        transfer_troops = yes
+      }
+      annex_country = {
+        target = COS
+        transfer_troops = yes
+      }
+      annex_country = {
+        target = PAN
+        transfer_troops = yes
+      }
+      set_cosmetic_tag = UCA
+    }
+    311 = {
+      add_core_of = GUA
+    }
+    314 = {
+      add_core_of = GUA
+    }
+    312 = {
+      add_core_of = GUA
+    }
+    317 = {
+      add_core_of = GUA
+    }
+    316 = {
+      add_core_of = GUA
+    }
+    304 = {
+      add_core_of = GUA
+    }
+  }
+}
+
 
 country_event = {
   id = tlb.40
