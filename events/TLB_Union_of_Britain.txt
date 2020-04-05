@@ -1,0 +1,23 @@
+#Union of Britain Events
+
+add_namespace = tlbbritain
+
+# Wilkins Debates 1
+country_event = {
+	id = tlbbritain.1
+	title = tlbbritain.1.t
+	desc = tlbbritain.1.d
+	picture = GFX
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tlbbritain.1.a
+		ai_chance = { factor = 70 }
+	}
+
+	option = {
+		name = tlbpoland.1.b
+		ai_chance = { factor = 30 }
+	}
+}
