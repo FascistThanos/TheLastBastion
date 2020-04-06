@@ -1,31 +1,6 @@
 on_actions = {
 	# country
-	on_new_term_election = {
-		random_events = {
-			100 = usa.6
-			100 = usa.7
-			100 = usa.8
-			100 = usa.9
-			100 = usa.10
-			100 = usa.11
-			100 = usa.12
-		}
-		random_events = {
-			100 = spain.9
-		}
-		random_events = {
-			100 = election.2
-			100 = election.3
-			100 = election.4
-			100 = election.5
-			100 = election.6
-			100 = election.11
-			100 = election.12
-			100 = election.13
-			100 = election.14
-			100 = election.15
-		}
-	}
+
 
 	# Ace pilots
 	# country, FROM = ace
@@ -722,44 +697,10 @@ on_actions = {
 		effect = {
 
 			#End of SCW
-			if = {
-				limit = {
-					FROM = {
-						original_tag = SPR
-					}
-					ROOT = {
-						original_tag = SPR
-						has_government = fascism
-					}
-				}
-				if = {
-					limit = { is_historical_focus_on = no }
-					add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
-				}
-				if = {
-					limit = { is_historical_focus_on = yes }
-					add_ideas = SPA_recovering_from_civil_war #keep the spirit on historical mode, keeping them out of the war
-				}
-			}
+
 			#End of SCW
-			if = {
-				limit = {
-					FROM = {
-						original_tag = SPR
-					}
-				}
-				ROOT = {
-					set_country_flag = achievement_won_spanish_civil_war
-				}
-			}
-			if = {
-				limit = {
-					has_government = democratic
-				}
-				set_politics = {
-					elections_allowed = yes
-				}
-			}
+
+
 			#End of German Civil War
 			if = {
 				limit = {

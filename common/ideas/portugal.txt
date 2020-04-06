@@ -75,7 +75,7 @@ ideas = {
 				}
 
 				available = {
-					#has_completed_focus = POR_allow_free_elections
+					##has_completed_focus = POR_allow_free_elections
 				}
 
 				name = POR_jose_manuel_sarmento_de_beires
@@ -175,8 +175,8 @@ ideas = {
 				available = {
 					NOT = {
 						OR = {
-							#has_completed_focus = POR_popular_front
-							#has_completed_focus = POR_strengthen_the_regime
+							##has_completed_focus = POR_popular_front
+							##has_completed_focus = POR_strengthen_the_regime
 						}
 					}
 				}
@@ -230,7 +230,7 @@ ideas = {
 				}
 
 				available = {
-					#has_completed_focus = POR_estado_novo
+					##has_completed_focus = POR_estado_novo
 				}
 
 				traits = { army_chief_reform_2 }
@@ -492,7 +492,7 @@ ideas = {
 
 
 				available = {
-					#has_completed_focus = POR_ogma
+					##has_completed_focus = POR_ogma
 				}
 
 
@@ -598,7 +598,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 				available = {
-					#has_completed_focus = POR_ogme
+					##has_completed_focus = POR_ogme
 				}
 
 				research_bonus = {
@@ -625,7 +625,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 				available = {
-					#has_completed_focus = POR_portuguese_artillery
+					##has_completed_focus = POR_portuguese_artillery
 				}
 
 				research_bonus = {

@@ -584,7 +584,7 @@ ideas = {
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = CAN_swastika_clubs
+					#has_completed_focus = CAN_swastika_clubs
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }
@@ -618,8 +618,8 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					OR = {
-						has_completed_focus = CAN_strengthen_the_commonwealth_ties
-						has_completed_focus = CAN_permanent_joint_defense_board
+						#has_completed_focus = CAN_strengthen_the_commonwealth_ties
+						#has_completed_focus = CAN_permanent_joint_defense_board
 					}
 				}
 				if = {
@@ -653,7 +653,7 @@ ideas = {
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = CAN_burn_the_royal_portraits
+					#has_completed_focus = CAN_burn_the_royal_portraits
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }
@@ -744,7 +744,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = CAN_forced_quebec_conscription
+				#has_completed_focus = CAN_forced_quebec_conscription
 			}
 
 			traits = { compassionate_gentleman }
@@ -762,7 +762,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = CAN_crown_corporations
+				#has_completed_focus = CAN_crown_corporations
 			}
 
 			traits = { captain_of_industry }
@@ -1268,7 +1268,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = CAN_fund_fairchilds_development
+				#has_completed_focus = CAN_fund_fairchilds_development
 			}
 
 			research_bonus = {
@@ -1295,7 +1295,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = CAN_cookie_carriers
+				#has_completed_focus = CAN_cookie_carriers
 			}
 
 			research_bonus = {

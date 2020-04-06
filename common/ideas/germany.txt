@@ -2837,7 +2837,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-					has_completed_focus = GER_army_innovation
+					#has_completed_focus = GER_army_innovation
 				}
 
 			traits = { army_armored_3 }
@@ -2885,7 +2885,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-					has_completed_focus = GER_air_innovation
+					#has_completed_focus = GER_air_innovation
 			}
 
 			traits = { air_close_air_support_2 }

@@ -2774,6 +2774,7 @@ focus_tree = {
 
 		completion_reward = {
 			448 = {
+			if = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2785,10 +2786,12 @@ focus_tree = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
+				}
 				}
 			}
 
 			449 = {
+			if = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2800,10 +2803,12 @@ focus_tree = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
+				}
 				}
 			}
 
 			450 = {
+			if = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2817,8 +2822,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
 
 			451 = {
+			if = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2830,6 +2837,7 @@ focus_tree = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
+					}
 				}
 			}
 		}

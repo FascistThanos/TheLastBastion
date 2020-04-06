@@ -339,7 +339,7 @@ ideas = {
 			picture = generic_political_advisor_asia_2
 
 			available = {
-				has_completed_focus = PRC_socialist_market_economy
+				#has_completed_focus = PRC_socialist_market_economy
 			}
 						
 			allowed = {
@@ -378,7 +378,7 @@ ideas = {
 			picture = generic_political_advisor_asia_2
 
 			available = {
-				has_completed_focus = PRC_military_intelligence_department
+				#has_completed_focus = PRC_military_intelligence_department
 			}
 			
 			allowed = {
