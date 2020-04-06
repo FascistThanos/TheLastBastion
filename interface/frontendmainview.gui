@@ -265,7 +265,7 @@ guiTypes = {
 			name = "discord_button"
 			position = { x = 16 y = 178 }
 			quadTextureSprite = "GFX_main_lobby_button"
-			buttonText = "Discord"
+			buttonText = "Join the Discord"
 			buttonFont = "hoi_24header"
 			web_link = "https://discord.gg/baXJhtr"
 		}
