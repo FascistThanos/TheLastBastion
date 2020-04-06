@@ -211,6 +211,36 @@ add_political_power = 100
 }
 
 focus = {
+	id = CHI_cleanse_red
+	icon = GFX_Generic_Communist_Propaganda
+	prerequisite = { focus = CHI_uncertain_future }
+	x = 0
+	y = 1
+	relative_position_id = CHI_uncertain_future
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+add_ideas = CHI_anti_communism
+	}
+}
+
+focus = {
 	id = CHI_post_war_rehabilitation
 	icon = GFX_Generic_Command_Power
 	prerequisite = { focus = CHI_cleanse_red }
@@ -345,35 +375,7 @@ focus = {
 }
 }
 
-focus = {
-	id = CHI_cleanse_red
-	icon = GFX_Generic_Communist_Propaganda
-	prerequisite = { focus = CHI_uncertain_future }
-	x = 0
-	y = 1
-	relative_position_id = CHI_uncertain_future
 
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_ideas = CHI_anti_communism
-	}
-}
 
 
 

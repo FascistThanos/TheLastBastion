@@ -534,6 +534,480 @@ focus = {
 }
 
 focus = {
+	id = PRC_foreign_affairs
+	icon = GFX_goal_generic_propaganda
+	x = 10
+	y = 0
+
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+add_political_power = 150
+	}
+}
+###########
+focus = {
+	id = PRC_soviet_friend
+	icon = GFX_goal_soviet_flag
+	prerequisite = { focus = PRC_foreign_affairs }
+	mutually_exclusive = {focus = PRC_soviet_enemy}
+	x = 3
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+SOV = {add_opinion_modifier = { target = PRC modifier = large_increase }}
+	}
+}
+
+focus = {
+	id = PRC_soviet_enemy
+	icon = GFX_focus_attack_soviet
+	prerequisite = { focus = PRC_foreign_affairs }
+mutually_exclusive = {focus = PRC_soviet_friend}
+	x = 1
+	y = 1
+	relative_position_id = PRC_foreign_affairs
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+SOV = {add_opinion_modifier = { target = PRC modifier = medium_decrease }}
+	}
+}
+
+focus = {
+	id = PRC_continue_mao
+	icon = GFX_focus_prc_maoism
+	prerequisite = { focus = PRC_soviet_enemy }
+	x = 0
+	y = 1
+	relative_position_id = PRC_soviet_enemy
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	add_stability = 0.1
+	add_war_support = 0.2
+	}
+}
+
+focus = {
+	id = PRC_strike_soviet
+	icon = GFX_goal_generic_war_with_comintern
+	prerequisite = { focus = PRC_continue_mao }
+	x = 0
+	y = 1
+	relative_position_id = PRC_continue_mao
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	create_wargoal = {
+	    type = annex_everything
+	    target = SOV
+	}
+	}
+}
+focus = {
+	id = PRC_join_comintern
+	icon = GFX_focus_generic_join_comintern
+	prerequisite = { focus = PRC_soviet_friend }
+	x = 0
+	y = 1
+	relative_position_id = PRC_soviet_friend
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+SOV = {is_faction_leader = yes}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	SOV = { country_event = { id = tlbprc.10 hours = 24 }}
+	}
+}
+
+focus = {
+	id = PRC_five_year_plan
+	icon = GFX_Generic_Industry02
+	prerequisite = { focus = PRC_join_comintern }
+	x = 1
+	y = 1
+	relative_position_id = PRC_join_comintern
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	add_timed_idea = {
+			idea = PRC_fiveyear_idea
+			days = 365
+	}
+	}
+}
+focus = {
+	id = PRC_central_farming
+	icon = GFX_Generic_Farming
+	prerequisite = { focus = PRC_five_year_plan }
+	x = 0
+	y = 1
+	relative_position_id = PRC_five_year_plan
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	add_timed_idea = {
+			idea = PRC_farming_idea
+			days = 100
+	}
+	}
+}
+focus = {
+	id = PRC_industry_superpower
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = PRC_central_farming }
+		prerequisite = { focus = PRC_expand_industry }
+	x = 1
+	y = 1
+	relative_position_id = PRC_central_farming
+
+	cost = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 10 }
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	}
+}
+
+focus = {
+	id = PRC_northern_steppe
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = PRC_strike_soviet focus= PRC_join_comintern }
+	x = 1
+	y = 1
+	relative_position_id = PRC_strike_soviet
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+add_state_claim = 853
+add_state_claim = 882
+add_state_claim = 880
+add_state_claim = 881
+	}
+}
+
+focus = {
 	id = PRC_japan_friend
 	icon = GFX_focus_chi_collaboration_with_the_japanese
 	prerequisite = { focus = PRC_foreign_affairs }
@@ -2215,479 +2689,7 @@ focus = {
 
 #################################
 
-focus = {
-	id = PRC_foreign_affairs
-	icon = GFX_goal_generic_propaganda
-	x = 10
-	y = 0
 
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_political_power = 150
-	}
-}
-###########
-focus = {
-	id = PRC_soviet_friend
-	icon = GFX_goal_soviet_flag
-	prerequisite = { focus = PRC_foreign_affairs }
-	mutually_exclusive = {focus = PRC_soviet_enemy}
-	x = 3
-	y = 1
-	relative_position_id = PRC_foreign_affairs
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-SOV = {add_opinion_modifier = { target = PRC modifier = large_increase }}
-	}
-}
-
-focus = {
-	id = PRC_soviet_enemy
-	icon = GFX_focus_attack_soviet
-	prerequisite = { focus = PRC_foreign_affairs }
-mutually_exclusive = {focus = PRC_soviet_friend}
-	x = 1
-	y = 1
-	relative_position_id = PRC_foreign_affairs
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-SOV = {add_opinion_modifier = { target = PRC modifier = medium_decrease }}
-	}
-}
-
-focus = {
-	id = PRC_continue_mao
-	icon = GFX_focus_prc_maoism
-	prerequisite = { focus = PRC_soviet_enemy }
-	x = 0
-	y = 1
-	relative_position_id = PRC_soviet_enemy
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	add_stability = 0.1
-	add_war_support = 0.2
-	}
-}
-
-focus = {
-	id = PRC_strike_soviet
-	icon = GFX_goal_generic_war_with_comintern
-	prerequisite = { focus = PRC_continue_mao }
-	x = 0
-	y = 1
-	relative_position_id = PRC_continue_mao
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	create_wargoal = {
-	    type = annex_everything
-	    target = SOV
-	}
-	}
-}
-focus = {
-	id = PRC_join_comintern
-	icon = GFX_focus_generic_join_comintern
-	prerequisite = { focus = PRC_soviet_friend }
-	x = 0
-	y = 1
-	relative_position_id = PRC_soviet_friend
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-SOV = {is_faction_leader = yes}
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	SOV = { country_event = { id = tlbprc.10 hours = 24 }}
-	}
-}
-
-focus = {
-	id = PRC_five_year_plan
-	icon = GFX_Generic_Industry02
-	prerequisite = { focus = PRC_join_comintern }
-	x = 1
-	y = 1
-	relative_position_id = PRC_join_comintern
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	add_timed_idea = {
-			idea = PRC_fiveyear_idea
-			days = 365
-	}
-	}
-}
-focus = {
-	id = PRC_central_farming
-	icon = GFX_Generic_Farming
-	prerequisite = { focus = PRC_five_year_plan }
-	x = 0
-	y = 1
-	relative_position_id = PRC_five_year_plan
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	add_timed_idea = {
-			idea = PRC_farming_idea
-			days = 100
-	}
-	}
-}
-focus = {
-	id = PRC_industry_superpower
-	icon = GFX_focus_generic_industry_3
-	prerequisite = { focus = PRC_central_farming }
-		prerequisite = { focus = PRC_expand_industry }
-	x = 1
-	y = 1
-	relative_position_id = PRC_central_farming
-
-	cost = 15
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = industrial_complex
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = industrial_complex
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = industrial_complex
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = industrial_complex
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = industrial_complex
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = industrial_complex
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = industrial_complex
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = arms_factory
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = arms_factory
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = arms_factory
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = arms_factory
-			level = 1
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 10 }
-		limit = {
-			free_building_slots = {
-				building = arms_factory
-				size > 0
-				include_locked = yes
-			}
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = arms_factory
-			level = 1
-			instant_build = yes
-		}
-	}
-
-	}
-}
-
-focus = {
-	id = PRC_northern_steppe
-	icon = GFX_goal_generic_forceful_treaty
-	prerequisite = { focus = PRC_strike_soviet focus= PRC_join_comintern }
-	x = 1
-	y = 1
-	relative_position_id = PRC_strike_soviet
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-add_state_claim = 853
-add_state_claim = 882
-add_state_claim = 880
-add_state_claim = 881
-	}
-}
 
 ############
 

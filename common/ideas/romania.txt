@@ -743,7 +743,7 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus = ROM_appoint_soviet_friendly_government
+					#has_completed_focus = ROM_appoint_soviet_friendly_government
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
@@ -815,7 +815,7 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus = ROM_appoint_german_friendly_government
+					#has_completed_focus = ROM_appoint_german_friendly_government
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
@@ -1092,7 +1092,7 @@ ideas = {
 			cost = 50
 
 			available = {
-				has_completed_focus = ROM_mobile_tank_destroyers
+				#has_completed_focus = ROM_mobile_tank_destroyers
 			}
 			
 			allowed = {
@@ -1191,7 +1191,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_coastal_defense_navy
+				#has_completed_focus = ROM_coastal_defense_navy
 			}
 			
 			research_bonus = {
@@ -1228,7 +1228,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_black_sea_dominance
+				#has_completed_focus = ROM_black_sea_dominance
 			}
 			
 			research_bonus = {
@@ -1452,7 +1452,7 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus = ROM_invest_in_the_iar
+					#has_completed_focus = ROM_invest_in_the_iar
 				}
 			}
 
