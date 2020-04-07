@@ -1,0 +1,50 @@
+add_namespace = tlbbritain
+
+# Test Election Event
+country_event = {
+	id = tlbbritain.1
+	title = tlbbritain.1.t
+	desc = tlbbritain.1.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.1.a
+		set_country_flag = { flag = ENG_campbell_act_extension days = 50 }
+		add_stability = -0.05
+	}
+
+	option = {
+		name = tlbbritain.1.b
+		set_country_flag = { flag = ENG_restoration_of_parliament days = 50 }
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = tlbbritain.2
+	title = tlbbritain.2.t
+	desc = tlbbritain.2.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.2.a
+		add_stability = 0.05
+		add_popularity = { ideology = socialism popularity = 0.05 }
+		add_political_power = 20
+	}
+
+	option = {
+		name = tlbbritain.2.b
+		add_popularity = { ideology = communism popularity = 0.5 }
+		add_stability = -0.1
+	}
+
+	option = {
+		name = tlbbritain.2.c
+		set_country_flag = { flag = ENG_democratic_ministers_in_government}
+	}
+}
