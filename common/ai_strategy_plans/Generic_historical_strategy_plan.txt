@@ -1,0 +1,149 @@
+Democratic_Generics = {
+    name = "Democratic Generics"
+    desc = "Democratic generics stay democratic"
+
+    enable = {
+        OR = {
+            has_government = socialism
+            has_government = democratic
+            has_government = liberal
+        }
+        NOT = {
+        	tag = PRC
+        	tag = CHI
+        	tag = ITA
+        	tag = SOV
+        	tag = USA
+        	tag = FRA
+        	tag = GER
+        }
+    }
+
+    ai_national_focuses = {
+    	GEN_our_place_in_the_world
+    	GEN_liberty_for_all
+    	GEN_elections
+    }
+}
+
+Fascist_Generics = {
+    name = "Fascist Generics"
+    desc = "Fascist generics stay fascist"
+
+    enable = {
+        has_government = fascism
+        NOT = {
+        	tag = PRC
+        	tag = CHI
+        	tag = ITA
+        	tag = SOV
+        	tag = USA
+        	tag = FRA
+        	tag = GER
+        }
+    }
+
+    ai_national_focuses = {
+    	GEN_our_place_in_the_world
+    	GEN_trust_in_the_state
+    	GEN_consolidate_the_government
+    	GEN_ultranationalism
+    }
+}
+
+Authoritarian_Generics = {
+    name = "Authoritarian Generics"
+    desc = "Authoritarian generics stay authoritarian"
+
+    enable = {
+        has_government = neutrality
+        NOT = {
+        	tag = PRC
+        	tag = CHI
+        	tag = ITA
+        	tag = SOV
+        	tag = USA
+        	tag = FRA
+        	tag = GER
+        }
+    }
+
+    ai_national_focuses = {
+    	GEN_our_place_in_the_world
+    	GEN_trust_in_the_state
+    	GEN_consolidate_the_government
+    	GEN_authoritarian_crackdown
+    }
+}
+
+Monarchist_Generics = {
+    name = "Monarchist Generics"
+    desc = "Monarchist generics stay monarchist"
+
+    enable = {
+        has_government = monarchist
+        NOT = {
+        	tag = PRC
+        	tag = CHI
+        	tag = ITA
+        	tag = SOV
+        	tag = USA
+        	tag = FRA
+        	tag = GER
+        }
+    }
+
+    ai_national_focuses = {
+    	GEN_our_place_in_the_world
+    	GEN_trust_in_the_state
+    	GEN_new_nobility
+    }
+}
+
+Trotskyist_Generics = {
+    name = "Trotskyist Generics"
+    desc = "Trotskyist generics stay trotskyist"
+
+    enable = {
+        has_government = trotskyism
+        NOT = {
+        	tag = PRC
+        	tag = CHI
+        	tag = ITA
+        	tag = SOV
+        	tag = USA
+        	tag = FRA
+        	tag = GER
+        }
+    }
+
+    ai_national_focuses = {
+    	GEN_our_place_in_the_world
+    	GEN_liberate_the_masses
+    	GEN_further_the_revolution
+    }
+}
+
+Communist_Generics = {
+    name = "Communist Generics"
+    desc = "Communist generics stay communist"
+
+    enable = {
+        has_government = communism
+        NOT = {
+        	tag = PRC
+        	tag = CHI
+        	tag = ITA
+        	tag = SOV
+        	tag = USA
+        	tag = FRA
+        	tag = GER
+        }
+    }
+
+    ai_national_focuses = {
+    	GEN_our_place_in_the_world
+    	GEN_liberate_the_masses
+    	GEN_totalist_constitution
+    }
+}

@@ -32,15 +32,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_our_place_in_the_world
 		cost = 10
-		ai_chance = {
-      	modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = socialism
-                  has_government = liberal
-                  has_government = democratic
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -58,14 +49,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_liberty_for_all
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = socialism
-                  has_government = liberal
-                  has_government = democratic
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -236,14 +219,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_our_place_in_the_world
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = monarchist
-                  has_government = fascism
-                  has_government = neutrality
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -261,13 +236,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_trust_in_the_state
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = fascism
-                  has_government = neutrality
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -285,12 +253,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_consolidate_the_government
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = fascism
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -330,12 +292,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_consolidate_the_government
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = neutrality
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -410,12 +366,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_trust_in_the_state
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = monarchist
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -507,13 +457,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_our_place_in_the_world
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = communism
-                  has_government = trotskyist
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -533,12 +476,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_liberate_the_masses
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = trotskyist
-              }
-   		}
 
 		available_if_capitulated = yes
 
@@ -562,12 +499,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEN_liberate_the_masses
 		cost = 10
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = communism
-              }
-   		}
 
 		available_if_capitulated = yes
 

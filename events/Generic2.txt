@@ -10,12 +10,9 @@ country_event = {
 
 	option = {
 		name = generic2.1.a
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = democratic
-              }
-   		}
+		ai_chance = {
+			factor = 33
+		}
 		add_popularity = { ideology = democratic popularity = 0.5 }
 		add_popularity = { ideology = liberal popularity = 0.1 }
 		add_popularity = { ideology = socialism popularity = 0.1 }
@@ -32,12 +29,9 @@ country_event = {
 
 	option = {
 		name = generic2.1.b
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = liberal
-              }
-   		}
+		ai_chance = {
+			factor = 33
+		}
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = liberal popularity = 0.5 }
 		add_popularity = { ideology = socialism popularity = 0.1 }
@@ -54,12 +48,9 @@ country_event = {
 
 	option = {
 		name = generic2.1.c
-		modifier = {
-          factor = 100
-              ROOT = {
-                  has_government = socialism
-              }
-   		}
+		ai_chance = {
+			factor = 33
+		}
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = socialism popularity = 0.5 }
 		add_popularity = { ideology = liberal popularity = 0.1 }
