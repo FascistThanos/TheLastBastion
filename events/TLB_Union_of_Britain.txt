@@ -364,6 +364,94 @@ country_event = {
 }
 
 country_event = {
+	id = tlbbritain.13
+	title = tlbbritain.13.t
+	desc = tlbbritain.13.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.13.a
+		hidden_effect = {
+			PCW = {
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+				transfer_state = 123
+				transfer_state = 122
+				transfer_state = 904
+				transfer_state = 338
+				transfer_state = 121
+				transfer_state = 133
+				transfer_state = 136
+				transfer_state = 905
+				transfer_state = 120
+				transfer_state = 132
+				transfer_state = 128
+				add_state_core = 123
+				add_state_core = 122
+				add_state_core = 904
+				add_state_core = 338
+				add_state_core = 121
+				add_state_core = 133
+				add_state_core = 136
+				add_state_core = 905
+				add_state_core = 120
+				add_state_core = 132
+				add_state_core = 128
+				add_state_core = 131
+				add_state_core = 130
+				add_state_core = 129
+				add_state_core = 125
+				add_state_core = 126
+				add_state_core = 507
+			}
+		}
+
+		declare_war_on = {
+			target = PCW
+			type = annex_everything
+		}
+
+	}
+}
+
+country_event = {
+	id = tlbbritain.14
+	title = tlbbritain.14.t
+	desc = tlbbritain.14.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.14.a
+
+		hidden_effect = {
+			remove_state_core = 123
+			remove_state_core = 122
+			remove_state_core = 904
+			remove_state_core = 338
+			remove_state_core = 121
+			remove_state_core = 133
+			remove_state_core = 136
+			remove_state_core = 905
+			remove_state_core = 120
+			remove_state_core = 132
+			remove_state_core = 128
+			remove_state_core = 131
+			remove_state_core = 130
+			remove_state_core = 129
+			remove_state_core = 125
+			remove_state_core = 126
+			remove_state_core = 507
+		}
+	}
+}
+
+country_event = {
 	id = tlbbritain.15
 	title = tlbbritain.15.t
 	desc = tlbbritain.15.desc
