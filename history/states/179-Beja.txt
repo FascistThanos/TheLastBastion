@@ -2,34 +2,35 @@
 state={
 	id=179
 	name="STATE_179"
-	manpower = 1122200
-	
-	state_category = town
 
 	history={
 		owner = POR
 		victory_points = {
-			3790 1
+			3790 1 
 		}
 		victory_points = {
-			6880 1
+			6880 1 
 		}
 		victory_points = {
-			9869 1
+			9869 1 
 		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
 			3790 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = POR
+
 	}
 
 	provinces={
-		980 3790 3866 6880 6884 6933 9765 9819 
+		980 3790 3866 6880 6933 9765 
 	}
+	manpower=1122200
+	buildings_max_level_factor=1.000
+	state_category=town
 }
-
-# 844 924 3846 3886 3926 6986 9869 11768 970

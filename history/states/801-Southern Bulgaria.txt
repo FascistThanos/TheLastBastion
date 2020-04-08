@@ -2,7 +2,7 @@ state={
 	id=801
 	name="STATE_801"
 	history={
-		owner = TUR
+		owner = BUL
 		buildings = {
 			infrastructure = 6
 			arms_factory = 3
@@ -11,10 +11,10 @@ state={
 
 		}
 		add_core_of = BUL
-		add_core_of = TUR
+		add_claim_by = TUR
 	}
 	provinces={
-		878 893 3937 6857 6923 9818 9862 11813 
+		878 893 3937 6857 6923 9818 9862 11813
 	}
 	state_category = city
 	manpower=213054

@@ -1,27 +1,31 @@
+
 state={
 	id=794
 	name="STATE_794"
 	resources={
-		chromium = 5.00
+		chromium=5.000
 	}
 
 	history={
-		owner = BAW
+		owner = BAV
 		victory_points = {
-			9517 15 
+			9517 15
 		}
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 2
 			arms_factory = 3
+
 		}
 		add_core_of = GER
-		add_core_of = BAW
+		add_core_of = BAV
+
 	}
+
 	provinces={
-		6555 6581 9517 9545
+		589 3574 6555 6581 9517 9545
 	}
 	manpower=724659
-	state_category = large_city
 	buildings_max_level_factor=1.000
+	state_category=large_city
 }

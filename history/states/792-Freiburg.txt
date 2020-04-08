@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = BAW
+		owner = BAV
 		victory_points = {
 			3692 10
 		}
@@ -15,7 +15,7 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = GER
-		add_core_of = BAW
+		add_core_of = BAV
 	}
 	provinces={
 		694 3679 3692 6542 6712 11640

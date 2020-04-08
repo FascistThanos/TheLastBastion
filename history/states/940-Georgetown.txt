@@ -13,11 +13,11 @@ state={
 			   naval_base = 3
       }
 		}
+	}
 
-		resources = {
-			steel = 3
-			oil = 1
-		}
+	resources = {
+		steel = 3
+		oil = 1
 	}
 
 	provinces={
