@@ -19,9 +19,6 @@ focus_tree = {
 
 	focus = {
 		id = ENG_anniversery_of_the_birmingham_strike
-		available = {
-			always = no
-			}
 		icon = GFX
 		x = 7
 		y = 0
@@ -40,6 +37,7 @@ focus_tree = {
 		id = ENG_wilkins_debates
 		prerequisite = { focus = ENG_anniversery_of_the_birmingham_strike }
 		relative_position_id = ENG_anniversery_of_the_birmingham_strike
+		custom_effect_tooltip = ENG_wilkins_debate_tt
 		icon = GFX
 		x = 0
 		y = 1
@@ -58,6 +56,9 @@ focus_tree = {
 		id = ENG_extend_the_campbell_act
 		prerequisite = { focus = ENG_wilkins_debates }
 		mutually_exclusive = { focus = ENG_reformation_of_parliament }
+		available = {
+			has_country_flag = ENG_campbell_act_extended
+			}
 		relative_position_id = ENG_wilkins_debates
 		icon = GFX
 		x = -1
@@ -77,6 +78,9 @@ focus_tree = {
 		id = ENG_reformation_of_parliament
 		prerequisite = { focus = ENG_wilkins_debates }
 		mutually_exclusive = { focus = ENG_extend_the_campbell_act }
+		available = {
+			has_country_flag = ENG_parliament_restored
+			}
 		relative_position_id = ENG_wilkins_debates
 		icon = GFX
 		x = 1
@@ -188,6 +192,9 @@ focus_tree = {
 		id = ENG_expand_comittee_influence
 		prerequisite = { focus = ENG_anti-trotskyist_raids }
 		mutually_exclusive = { focus = ENG_14th_congress }
+		available = {
+			has_country_flag = ENG_NSC_empowered
+		}
 		relative_position_id = ENG_anti-trotskyist_raids
 		icon = GFX
 		x = -1
@@ -207,6 +214,9 @@ focus_tree = {
 		id = ENG_14th_congress
 		prerequisite = { focus = ENG_anti-trotskyist_raids }
 		mutually_exclusive = { focus = expand_comittee_influence }
+		available = {
+			has_country_flag = ENG_NSC_stopped
+		}
 		relative_position_id = ENG_anti-trotskyist_raids
 		icon = GFX
 		x = 1
@@ -292,6 +302,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				set_variable = { var = coup_support value = 0 }
+			}
 		}
 	}
 

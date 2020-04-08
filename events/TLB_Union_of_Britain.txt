@@ -11,14 +11,15 @@ country_event = {
 
 	option = {
 		name = tlbbritain.1.a
-		set_country_flag = { flag = ENG_campbell_act_extension days = 50 }
+		set_country_flag = ENG_campbell_act_extended
 		add_stability = -0.05
 	}
 
 	option = {
 		name = tlbbritain.1.b
-		set_country_flag = { flag = ENG_restoration_of_parliament days = 50 }
 		add_stability = 0.05
+		remove_ideas = ENG_13th_congress
+		set_country_flag = ENG_parliament_restored
 	}
 }
 
@@ -34,17 +35,381 @@ country_event = {
 		name = tlbbritain.2.a
 		add_stability = 0.05
 		add_popularity = { ideology = socialism popularity = 0.05 }
-		add_political_power = 20
+		add_political_power = -50
 	}
 
 	option = {
 		name = tlbbritain.2.b
-		add_popularity = { ideology = communism popularity = 0.5 }
+		add_popularity = { ideology = communism popularity = 0.05 }
+		add_popularity = { ideology = democratic popularity = -0.05 }
+		add_popularity = { ideology = liberal popularity = -0.05 }
 		add_stability = -0.1
+		add_political_power = 50
 	}
 
 	option = {
 		name = tlbbritain.2.c
 		set_country_flag = { flag = ENG_democratic_ministers_in_government}
+		add_popularity = { ideology = democratic popularity = 0.05 }
+		add_popularity = { ideology = liberal popularity = 0.05 }
+		add_political_power = -150
+	}
+}
+
+country_event = {
+	id = tlbbritain.3
+	title = tlbbritain.3.t
+	desc = tlbbritain.3.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.3.a
+
+		hidden_effect = {
+			if = {
+  				limit = {
+    				has_country_flag = ENG_campbell_act_extended
+  				}
+
+  				country_event = { id = tlbbritain.34 hours = 24 }
+
+  				else = {
+  					  complete_national_focus = ENG_restoration_of_parliament
+  					  country_event = { id = tlbbritain.4 hours = 24 }
+  				}
+			}
+		}
+	}
+
+	option = {
+		name = tlbbritain.3.b
+		set_capital = 133
+
+		hidden_effect = {
+			if = {
+  				limit = {
+    				has_country_flag = ENG_campbell_act_extended
+  				}
+  			
+  				country_event = { id = tlbbritain.34 hours = 24 }
+
+  				else = {
+  					  complete_national_focus = ENG_restoration_of_parliament
+  					  country_event = { id = tlbbritain.4 hours = 24 }
+  				}
+			}
+		}
+	}
+
+	option = {
+		name = tlbbritain.3.c
+		set_capital = 128
+
+		hidden_effect = {
+			if = {
+  				limit = {
+    				has_country_flag = ENG_campbell_act_extended 
+  				}
+
+  			country_event = { id = tlbbritain.34 hours = 24 }
+
+  				else = {
+  					  complete_national_focus = ENG_restoration_of_parliament
+  					  country_event = { id = tlbbritain.4 hours = 24 }
+  				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.34
+	title = tlbbritain.34.t
+	desc = tlbbritain.34.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.34.a
+
+		hidden_effect = {
+			complete_national_focus = ENG_extend_the_campbell_act
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.4
+	title = tlbbritain.4.t
+	desc = tlbbritain.4.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.4.a
+
+		hidden_effect = {
+			complete_national_focus = ENG_reformation_of_parliament
+		}
+			
+	}
+}
+
+country_event = {
+	id = tlbbritain.5
+	title = tlbbritain.5.t
+	desc = tlbbritain.5.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.5.a
+		remove_ideas = ENG_13th_congress
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = tlbbritain.6
+	title = tlbbritain.6.t
+	desc = tlbbritain.6.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.6.a
+		add_stability = 0.05
+		add_political_power = -50
+
+		hidden_effect = {
+			set_country_flag = ENG_NSC_stopped
+		}
+	}
+
+	option = {
+		name = tlbbritain.6.b
+		add_stability = -0.25
+		add_political_power = 50
+
+		hidden_effect = {
+			set_country_flag = ENG_NSC_empowered
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.7
+	title = tlbbritain.7.t
+	desc = tlbbritain.7.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.7.a
+		add_stability = -0.1
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Oswald Moesly"
+			desc = "POLITICS_OSWALD_MOESLY_DESC"
+			picture = "Portrait_ENG_Oswald_Mosley.dds"
+			expire = "1965.1.1"
+			ideology = anti_revisionism
+			traits = {
+				
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = tlbbritain.8
+	title = tlbbritain.8.t
+	desc = tlbbritain.8.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.8.a
+		remove_ideas = ENG_national_security_council
+		add_stability = 0.1
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = tlbbritain.9
+	title = tlbbritain.9.t
+	desc = tlbbritain.9.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.9.a
+		
+		hidden_effect = {
+			add_to_variable = { var = coup_support value = 5 }
+			set_country_flag = ENG_trotskyist_ministers
+		}
+	}
+
+	option = {
+		name = tlbbritain.9.a
+	}
+}
+
+country_event = {
+	id = tlbbritain.10
+	title = tlbbritain.10.t
+	desc = tlbbritain.10.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.10.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}
+		add_political_power = -500
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.11 hours = 24 }
+			}
+		}
+	}
+
+	option = {
+		name = tlbbritain.10.a
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.12 hours = 24 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.11
+	title = tlbbritain.11.t
+	desc = tlbbritain.11.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.11.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+		}
+		add_political_power = 50
+
+		hidden_effect = {
+			add_to_variable = { var = coup_support value = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.35
+	title = tlbbritain.35.t
+	desc = tlbbritain.35.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.35.a
+	}
+}
+
+country_event = {
+	id = tlbbritain.12
+	title = tlbbritain.12.t
+	desc = tlbbritain.12.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.12.a
+
+		hidden_effect = {
+			if = {
+	  			limit = {
+	    			check_variable = { coup_support > 7 }
+	  			}
+
+	  			country_event = { id = tlbbritain.15 hours = 24 }
+
+	  			else = {
+	  				  country_event = { id = tlbbritain.13 hours = 24 }
+	  			}
+	  		}
+	  	}
+	}
+}
+
+country_event = {
+	id = tlbbritain.15
+	title = tlbbritain.15.t
+	desc = tlbbritain.15.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.15.a
+
+		set_politics = {
+			ruling_party = trotskyism
+			elections_allowed = no
+		}
+
+		hidden_effect = {
+			if = {
+	  			limit = {
+	    			has_country_flag = ENG_trotskyist_ministers
+	  			}
+
+	  			country_event = { id = tlbbritain.36 days = 30 }
+
+	  			else = {
+	  			}
+	  		}
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.36
+	title = tlbbritain.36.t
+	desc = tlbbritain.36.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.36.a
+		add_political_power = -500
+	}
+
+	option = {
+		name = tlbbritain.36.b
+		add_stability = -0.35
+		add_war_support = -0.35
 	}
 }
