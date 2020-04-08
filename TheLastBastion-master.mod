@@ -7,5 +7,5 @@ tags={
 }
 replace_path="history/states"
 supported_version="1.9.*"
-path="mod/TheLastBastion-master"
+path="mod/TheLastBastion"
 remote_file_id="2047216673"

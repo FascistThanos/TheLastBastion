@@ -6,6 +6,9 @@ state = {
 		owner = USA
 		buildings = {
 			infrastructure = 2
+			7884 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = USA
 	}
