@@ -426,28 +426,13 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		has_country_flag = ENG_civil_war_won
+	}
+
 	option = {
 		name = tlbbritain.14.a
-
-		hidden_effect = {
-			remove_state_core = 123
-			remove_state_core = 122
-			remove_state_core = 904
-			remove_state_core = 338
-			remove_state_core = 121
-			remove_state_core = 133
-			remove_state_core = 136
-			remove_state_core = 905
-			remove_state_core = 120
-			remove_state_core = 132
-			remove_state_core = 128
-			remove_state_core = 131
-			remove_state_core = 130
-			remove_state_core = 129
-			remove_state_core = 125
-			remove_state_core = 126
-			remove_state_core = 507
-		}
+		add_stability = 0.15
 	}
 }
 
