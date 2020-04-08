@@ -394,7 +394,7 @@ focus_tree = {
     prerequisite = { focus = GER_banks }
     mutually_exclusive = { focus = GER_declare_the_treaty_of_versailles_dead }
 
-    x = 8
+    x = 4
     y = 8
 
     cost = 10
@@ -415,6 +415,26 @@ focus_tree = {
       }
     }
   }
+  focus = {
+    id = GER_request_the_return_of_the_rhineland
+    icon = GFX_focus_chi_reach_out_to_france
+    prerequisite = { focus = GER_ask_france_to_lift_the_treaty_of_versailles }
+
+    x = 4
+    y = 9
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      FRA = {
+        country_event = tlbgermany.8
+      }
+    }
+  }
 
   focus = {
     id = GER_declare_the_treaty_of_versailles_dead
@@ -422,7 +442,7 @@ focus_tree = {
     prerequisite = { focus = GER_banks }
     mutually_exclusive = { focus = GER_ask_france_to_lift_the_treaty_of_versailles }
 
-    x = 12
+    x = 14
     y = 8
 
     cost = 10
@@ -484,7 +504,184 @@ focus_tree = {
       }
     }
   }
+  focus = {
+    id = GER_annex_the_rhineland
+    icon = GFX_Generic_Invasion
+    prerequisite = { focus = GER_declare_the_treaty_of_versailles_dead }
 
+    x = 16
+    y = 9
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    bypass = {
+      owns_state = 42
+      owns_state = 51
+    }
+
+    completion_reward = {
+      annex_country = {
+        target = FOZ
+        transfer_troops = yes
+      }
+    }
+  }
+#######Monarchist
+  focus = {
+    id = GER_trust_in_the_monarchy
+    icon = GFX_focus_ger_revive_kaiserreich
+    prerequisite = { focus = GER_annex_the_rhineland }
+    mutually_exclusive = { focus = GER_deutschnationale_volkspartei }
+
+    x = 10
+    y = 10
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 10
+    }
+
+    completion_reward = {
+      custom_effect_tooltip = GER_tt_monarchy
+      if = {
+        limit = {
+          monarchist > 0.6
+        }
+        add_stability = 0.1
+        set_politics = {
+          ruling_party = monarchist
+        }
+      }
+      else = {
+        add_popularity = {
+          ideology = monarchist
+          popularity = 0.15
+        }
+      }
+    }
+  }
+##Fascist
+  focus = {
+    id = GER_deutschnationale_volkspartei
+    icon = GFX_GER_nationalism
+    prerequisite = { focus = GER_annex_the_rhineland }
+    mutually_exclusive = { focus = GER_trust_in_the_monarchy }
+
+    x = 20
+    y = 10
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 10
+    }
+
+    completion_reward = {
+      custom_effect_tooltip = GER_tt_fascism
+      if = {
+        limit = {
+          fascism > 0.6
+        }
+        add_stability = 0.1
+        set_politics = {
+          ruling_party = fascism
+        }
+      }
+      else = {
+        add_popularity = {
+          ideology = fascism
+          popularity = 0.2
+        }
+      }
+    }
+  }
+  focus = {
+    id = GER_persecute_the_socialists
+    icon = GFX_Generic_Arrests
+    prerequisite = { focus = GER_deutschnationale_volkspartei }
+
+    x = 22
+    y = 11
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_political_power = 50
+      add_stability = -0.1
+      add_popularity = {
+        ideology = socialism
+        popularity = -0.12
+      }
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.08
+      }
+    }
+  }
+
+  focus = {
+    id = GER_military_youth
+    icon = GFX_Generic_Partisan
+    prerequisite = { focus = GER_deutschnationale_volkspartei }
+
+    x = 18
+    y = 11
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_military_youth
+    }
+  }
+#########Democracy
+  focus = {
+    id = GER_democracy_is_the_only_way
+    icon = GFX_Generic_Blue_Democracy
+    prerequisite = { focus = GER_request_the_return_of_the_rhineland }
+
+    x = 4
+    y = 10
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 80
+    }
+
+    completion_reward = {
+      custom_effect_tooltip = GER_tt_democracy
+      if = {
+        limit = {
+          democratic > 0.6
+        }
+        add_stability = 0.1
+        set_politics = {
+          ruling_party = democratic
+        }
+      }
+      else = {
+        add_popularity = {
+          ideology = democratic
+          popularity = 0.1
+        }
+      }
+    }
+  }
+
+#############Civil War Interventionism
   focus = {
     id = GER_declare_support_for_the_republic
     icon = GFX_FRA_FrenchFlag
@@ -537,114 +734,7 @@ focus_tree = {
     }
   }
 
-  focus = {
-    id = GER_trust_in_the_monarchy
-    icon = GFX_focus_ger_revive_kaiserreich
-    prerequisite = { focus = GER_request_the_return_of_the_rhineland focus = GER_annex_the_rhineland }
-    mutually_exclusive = { focus = GER_democracy_is_the_only_way }
-    mutually_exclusive = { focus = GER_deutschnationale_volkspartei }
-
-    x = 10
-    y = 10
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 10
-    }
-
-    completion_reward = {
-      custom_effect_tooltip = GER_tt_monarchy
-      if = {
-        limit = {
-          monarchist > 0.6
-        }
-        add_stability = 0.1
-        set_politics = {
-          ruling_party = monarchist
-        }
-      }
-      else = {
-        add_popularity = {
-          ideology = monarchist
-          popularity = 0.15
-        }
-      }
-    }
-  }
-
-  focus = {
-    id = GER_deutschnationale_volkspartei
-    icon = GFX_GER_nationalism
-    prerequisite = { focus = GER_annex_the_rhineland }
-    mutually_exclusive = { focus = GER_trust_in_the_monarchy }
-    mutually_exclusive = { focus = GER_democracy_is_the_only_way }
-
-    x = 18
-    y = 10
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 10
-    }
-
-    completion_reward = {
-      custom_effect_tooltip = GER_tt_fascism
-      if = {
-        limit = {
-          fascism > 0.6
-        }
-        add_stability = 0.1
-        set_politics = {
-          ruling_party = fascism
-        }
-      }
-      else = {
-        add_popularity = {
-          ideology = fascism
-          popularity = 0.2
-        }
-      }
-    }
-  }
-
-
-  focus = {
-    id = GER_democracy_is_the_only_way
-    icon = GFX_Generic_Blue_Democracy
-    prerequisite = { focus = GER_request_the_return_of_the_rhineland }
-    mutually_exclusive = { focus = GER_trust_in_the_monarchy }
-    mutually_exclusive = { focus = GER_deutschnationale_volkspartei }
-
-    x = 2
-    y = 10
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 80
-    }
-
-    completion_reward = {
-      custom_effect_tooltip = GER_tt_democracy
-      if = {
-        limit = {
-          democratic > 0.6
-        }
-        add_stability = 0.1
-        set_politics = {
-          ruling_party = democratic
-        }
-      }
-      else = {
-        add_popularity = {
-          ideology = democratic
-          popularity = 0.1
-        }
-      }
-    }
-  }
+#########Industry
 
   focus = {
     id = GER_military_industry_in_the_east
@@ -874,53 +964,6 @@ focus_tree = {
   }
 
   focus = {
-    id = GER_military_youth
-    icon = GFX_Generic_Partisan
-    prerequisite = { focus = GER_deutschnationale_volkspartei }
-
-    x = 16
-    y = 11
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      add_ideas = GER_military_youth
-    }
-  }
-
-  focus = {
-    id = GER_persecute_the_socialists
-    icon = GFX_Generic_Arrests
-    prerequisite = { focus = GER_deutschnationale_volkspartei }
-
-    x = 18
-    y = 11
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      add_political_power = 50
-      add_stability = -0.1
-      add_popularity = {
-        ideology = socialism
-        popularity = -0.12
-      }
-      add_popularity = {
-        ideology = fascism
-        popularity = 0.08
-      }
-    }
-  }
-
-  focus = {
     id = GER_restore_imperial_borders
     icon = GFX_GER_imperial_ambitions
     prerequisite = { focus = GER_trust_in_the_monarchy }
@@ -935,7 +978,24 @@ focus_tree = {
     }
 
     completion_reward = {
-
+      add_state_claim = 762
+      add_state_claim = 86
+      add_state_claim = 85
+      add_state_claim = 864
+      add_state_claim = 5
+      add_state_claim = 763
+      add_state_claim = 872
+      add_state_claim = 912
+      add_state_claim = 789
+      add_state_claim = 790
+      add_state_claim = 906
+      add_state_claim = 53
+      add_state_claim = 52
+      add_state_claim = 54
+      add_state_claim = 794
+      add_state_claim = 793
+      add_state_claim = 50
+      add_state_claim = 792
     }
   }
 
@@ -1006,56 +1066,6 @@ focus_tree = {
         type = oil
         amount = 3
         state = 57
-      }
-    }
-  }
-
-  focus = {
-    id = GER_request_the_return_of_the_rhineland
-    icon = GFX_focus_chi_reach_out_to_france
-    prerequisite = { focus = GER_ask_france_to_lift_the_treaty_of_versailles }
-    mutually_exclusive = { focus = GER_annex_the_rhineland }
-
-    x = 7
-    y = 9
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      FRA = {
-        country_event = tlbgermany.8
-      }
-    }
-  }
-
-  focus = {
-    id = GER_annex_the_rhineland
-    icon = GFX_Generic_Invasion
-    prerequisite = { focus = GER_declare_the_treaty_of_versailles_dead }
-    mutually_exclusive = { focus = GER_request_the_return_of_the_rhineland }
-
-    x = 13
-    y = 9
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    bypass = {
-      owns_state = 42
-      owns_state = 51
-    }
-
-    completion_reward = {
-      annex_country = {
-        target = FOZ
-        transfer_troops = yes
       }
     }
   }

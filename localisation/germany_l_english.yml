@@ -44,6 +44,7 @@
  SGF_communism_DEF:0 "the South German Union"
  SGF_communism_ADJ:0 "German"
 #Focuses
+#Beginning
  GER_weimar_situation:0 "Weimar Situation"
  GER_take_money_out_of_circulation:0 "Take Money Out Of Circulation"
  GER_build_up_the_elbe_river:0 "Subsidize Civilian Industry On The Elbe River"
@@ -52,23 +53,38 @@
  GER_german_coast_infrastructure:0 "German Coast Infrastructure"
  GER_learn_from_our_losses:0 "Learn From Our Losses"
  GER_coast_line_industry:0 "Coast Line Industry"
- GER_intervene_in_france:0 "Intervene In The French Civil War"
- GER_expand_our_industry:0 "Expand Our Industry"
- GER_field_exercises:0 "Field Exercises"
- GER_evolve_our_military:0 "The Reichswehr"
  GER_introduce_minimum_wage_laws:0 "Introduce Minimum Wage Laws"
  GER_pay_off_the_versailles_debt:0 "Pay Off The Versailles Debt"
- GER_banks:0 "Give More Power To The Reichsbank"
- GER_ask_france_to_lift_the_treaty_of_versailles:0 "Ask France To Lift The Treaty Of Versailles"
- GER_declare_the_treaty_of_versailles_dead:0 "Declare The Treaty Of Versailles Dead"
+ GER_field_exercises:0 "Field Exercises"
+#French Civil War
+ GER_intervene_in_france:0 "Intervene In The French Civil War"
  GER_declare_support_for_the_republic:0 "Declare Support For The Republic"
  GER_guns_france:0 "The French Equipment Act"
- GER_trust_in_the_monarchy:0 "Trust In The Monarchy"
- GER_deutschnationale_volkspartei:0 "Deutschnationale Volkspartei"
+ GER_french_lend_lease_act:0 "French Lend Lease Act"
+ GER_french_volunteers_act:0 "French Volunteers Act"
+#Political Tree
+ GER_banks:0 "Give More Power To The Reichsbank"
+ GER_declare_the_treaty_of_versailles_dead:0 "Renounce the Treaty of Versailles"
+
+#Democratic
+ GER_ask_france_to_lift_the_treaty_of_versailles:0 "Ask France To Lift The Treaty Of Versailles"
+ GER_request_the_return_of_the_rhineland:0 "Request The Return Of The Rhineland"
  GER_democracy_is_the_only_way:0 "Democracy Is The Only Way"
+ GER_annex_the_rhineland:0 "Annex The Rhineland"
+ #Monarchy
+ GER_trust_in_the_monarchy:0 "Trust In the Kaiserreich"
+ #Fascism
+ GER_deutschnationale_volkspartei:0 "Deutschnationale Volkspartei"
+#Industry
+ GER_expand_our_industry:0 "Expand Our Industry"
  GER_military_industry_in_the_east:0 "Military Industry In The East"
  GER_construction_effort:0 "Construction Effort"
  GER_consumer_factories_in_the_west:0 "Consumer Factories In The West"
+#Military
+ GER_evolve_our_military:0 "The Reichswehr"
+
+
+
  GER_open_military_academies:0 "Open Military Academies"
  GER_army_of_steel:0 "Army Of Steel"
  GER_army_of_men:0 "Army Of Men"
@@ -80,8 +96,8 @@
  GER_the_luftstreitkrafte:0 "The Luftstreitkräfte"
  GER_the_kaiserliche_marine:0 "The Kaiserliche Marine"
  GER_oil_drilling_commissions:0 "Oil Drilling Commissions"
- GER_request_the_return_of_the_rhineland:0 "Request The Return Of The Rhineland"
- GER_annex_the_rhineland:0 "Annex The Rhineland"
+
+
  GER_expand_panzer_production:0 "Expand Panzer Production"
  GER_conscription_campaigns:0 "Conscription Campaigns"
  GER_improve_synthetic_refineries:0 "Improve Synthetic Refineries"
@@ -99,8 +115,6 @@
  GER_humiliation_from_world_war_i:0 "Humiliation From World War I"
  GER_military_reorganization:0 "Military Reorganization"
  GER_minimum_wage:0 "Minimum Wage"
- GER_french_lend_lease_act:0 "French Lend Lease Act"
- GER_french_volunteers_act:0 "French Volunteers Act"
  GER_military_academies:0 "Military Academies"
  GER_the_reichswehr:0 "The Reichswehr"
  GER_improved_synthetic_refineries:0 "Improved Synthetic Refineries"
