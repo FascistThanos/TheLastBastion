@@ -1,4 +1,4 @@
-name="The Last Bastion"
+name="The Last Bastion (Development)"
 tags={
 	"Alternative History"
 	"Map"

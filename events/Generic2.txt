@@ -10,6 +10,12 @@ country_event = {
 
 	option = {
 		name = generic2.1.a
+		modifier = {
+          factor = 100
+              ROOT = {
+                  has_government = democratic
+              }
+   		}
 		add_popularity = { ideology = democratic popularity = 0.5 }
 		add_popularity = { ideology = liberal popularity = 0.1 }
 		add_popularity = { ideology = socialism popularity = 0.1 }
@@ -26,6 +32,12 @@ country_event = {
 
 	option = {
 		name = generic2.1.b
+		modifier = {
+          factor = 100
+              ROOT = {
+                  has_government = liberal
+              }
+   		}
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = liberal popularity = 0.5 }
 		add_popularity = { ideology = socialism popularity = 0.1 }
@@ -41,7 +53,13 @@ country_event = {
 	}
 
 	option = {
-		name = generic2.1.b
+		name = generic2.1.c
+		modifier = {
+          factor = 100
+              ROOT = {
+                  has_government = socialism
+              }
+   		}
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = socialism popularity = 0.5 }
 		add_popularity = { ideology = liberal popularity = 0.1 }
