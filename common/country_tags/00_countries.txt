@@ -209,6 +209,7 @@ UOB = "countries/Union of the Benelux.txt"
 KUR = "countries/Kurdistan.txt"
 SSD = "countries/South Sudan.txt"
 BGE = "countries/British Government in Exile"
+PCW = "countries/Campbellian Britian"
 
 ##### For Spain Breakup #####
 
