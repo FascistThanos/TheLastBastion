@@ -1,3 +1,5 @@
+add_namespace = generic2
+
 country_event = {
 	id = generic2.1
 	title = generic2.1.t
