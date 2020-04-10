@@ -151,7 +151,7 @@ focus_tree = {
 		id = ENG_secret_courts
 		prerequisite = { focus = ENG_national_security_comittee }
 		relative_position_id = ENG_national_security_comittee
-		icon = GFX_Generic_Political_Purge
+		icon = GFX
 		x = -1
 		y = 1
 		cost = 10
@@ -189,7 +189,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_secret_courts }
 		prerequisite = { focus = ENG_implicate_the_congress }
 		relative_position_id = ENG_implicate_the_congress
-		icon = GFX
+		icon = GFX_Generic_Arrests
 		x = -1
 		y = 1
 		cost = 10
@@ -407,7 +407,7 @@ focus_tree = {
 		id = ENG_purge_totalists
 		prerequisite = { focus = ENG_countercoup }
 		relative_position_id = ENG_countercoup
-		icon = GFX
+		icon = GFX_Generic_Political_Purge
 		x = 0
 		y = 1
 		cost = 10
