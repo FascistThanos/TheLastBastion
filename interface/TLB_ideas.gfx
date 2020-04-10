@@ -40,6 +40,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SPR_manuel_azana"
+		texturefile = "gfx/interface/ideas/SPR_Manuel_Azana.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}
