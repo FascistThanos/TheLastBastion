@@ -1,13 +1,19 @@
 add_namespace = tlbbritain
 
-# Test Election Event
 country_event = {
 	id = tlbbritain.1
 	title = tlbbritain.1.t
 	desc = tlbbritain.1.desc
 	picture = GFX
 
-	is_triggered_only = yes
+	trigger = {
+		focus_progress = {
+			focus = ENG_wilkins_debates
+			progress > 0.2
+		}
+	}
+
+	fire_only_once = yes
 
 	option = {
 		name = tlbbritain.1.a
@@ -29,7 +35,14 @@ country_event = {
 	desc = tlbbritain.2.desc
 	picture = GFX
 
-	is_triggered_only = yes
+	trigger = {
+		focus_progress = {
+			focus = ENG_wilkins_debates
+			progress > 0.5
+		}
+	}
+
+	fire_only_once = yes
 
 	option = {
 		name = tlbbritain.2.a
@@ -49,7 +62,7 @@ country_event = {
 
 	option = {
 		name = tlbbritain.2.c
-		set_country_flag = { flag = ENG_democratic_ministers_in_government}
+		set_country_flag = { flag = ENG_democratic_ministers_in_government }
 		add_popularity = { ideology = democratic popularity = 0.05 }
 		add_popularity = { ideology = liberal popularity = 0.05 }
 		add_political_power = -150
@@ -62,82 +75,27 @@ country_event = {
 	desc = tlbbritain.3.desc
 	picture = GFX
 
-	is_triggered_only = yes
+	trigger = {
+		focus_progress = {
+			focus = ENG_wilkins_debates
+			progress > 0.8
+		}
+	}
+
+	fire_only_once = yes
 
 	option = {
 		name = tlbbritain.3.a
-
-		hidden_effect = {
-			if = {
-  				limit = {
-    				has_country_flag = ENG_campbell_act_extended
-  				}
-
-  				country_event = { id = tlbbritain.34 hours = 24 }
-
-  				else = {
-  					  complete_national_focus = ENG_restoration_of_parliament
-  					  country_event = { id = tlbbritain.4 hours = 24 }
-  				}
-			}
-		}
 	}
 
 	option = {
 		name = tlbbritain.3.b
 		set_capital = 133
-
-		hidden_effect = {
-			if = {
-  				limit = {
-    				has_country_flag = ENG_campbell_act_extended
-  				}
-  			
-  				country_event = { id = tlbbritain.34 hours = 24 }
-
-  				else = {
-  					  complete_national_focus = ENG_restoration_of_parliament
-  					  country_event = { id = tlbbritain.4 hours = 24 }
-  				}
-			}
-		}
 	}
 
 	option = {
 		name = tlbbritain.3.c
 		set_capital = 128
-
-		hidden_effect = {
-			if = {
-  				limit = {
-    				has_country_flag = ENG_campbell_act_extended 
-  				}
-
-  			country_event = { id = tlbbritain.34 hours = 24 }
-
-  				else = {
-  					  complete_national_focus = ENG_restoration_of_parliament
-  					  country_event = { id = tlbbritain.4 hours = 24 }
-  				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = tlbbritain.34
-	title = tlbbritain.34.t
-	desc = tlbbritain.34.desc
-	picture = GFX
-
-	is_triggered_only = yes
-
-	option = {
-		name = tlbbritain.34.a
-
-		hidden_effect = {
-			complete_national_focus = ENG_extend_the_campbell_act
-		}
 	}
 }
 
@@ -324,19 +282,6 @@ country_event = {
 }
 
 country_event = {
-	id = tlbbritain.35
-	title = tlbbritain.35.t
-	desc = tlbbritain.35.desc
-	picture = GFX
-
-	is_triggered_only = yes
-
-	option = {
-		name = tlbbritain.35.a
-	}
-}
-
-country_event = {
 	id = tlbbritain.12
 	title = tlbbritain.12.t
 	desc = tlbbritain.12.desc
@@ -410,6 +355,20 @@ country_event = {
 			}
 		}
 
+		set_politics = {
+			ruling_party = trotskyism
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Arthur Horner"
+			desc = "POLITICS_ARTHUR_HORNER_DESC"
+			picture = "Portrait_England_Arthur_Horner.dds"
+			expire = "1965.1.1"
+			ideology = trotskyism_type
+			traits = {
+				
+			}
+		}
 		declare_war_on = {
 			target = PCW
 			type = annex_everything
@@ -424,11 +383,14 @@ country_event = {
 	desc = tlbbritain.14.desc
 	picture = GFX
 
-	is_triggered_only = yes
-
 	trigger = {
-		has_country_flag = ENG_civil_war_won
+		AND = {
+			has_country_flag = ENG_civil_war_won
+			has_government = trotskyism
+		}
 	}
+
+	fire_only_once = yes
 
 	option = {
 		name = tlbbritain.14.a
@@ -451,6 +413,16 @@ country_event = {
 			ruling_party = trotskyism
 			elections_allowed = no
 		}
+		create_country_leader = {
+			name = "Arthur Horner"
+			desc = "POLITICS_ARTHUR_HORNER_DESC"
+			picture = "Portrait_England_Arthur_Horner.dds"
+			expire = "1965.1.1"
+			ideology = trotskyism_type
+			traits = {
+				
+			}
+		}
 
 		hidden_effect = {
 			if = {
@@ -464,6 +436,652 @@ country_event = {
 	  			}
 	  		}
 		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.16
+	title = tlbbritain.16.t
+	desc = tlbbritain.16.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.16.a
+
+		add_popularity = { ideology = socialism popularity = 0.2 }
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Ernest Bevin"
+			desc = "POLITICS_ERNEST_BEVIN_DESC"
+			picture = "Portrait_England_Ernest_Bevin.dds"
+			expire = "1965.1.1"
+			ideology = socialist
+			traits = {
+				
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = ENG_socialist_majority_flag
+			complete_national_focus = ENG_socialist_majority
+		}
+	}
+
+	option = {
+		name = tlbbritain.16.b
+
+		add_popularity = { ideology = socialism popularity = 0.2 }
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Hugh Dalton"
+			desc = "POLITICS_HUGH_DALTON_DESC"
+			picture = "Portrait_England_Hugh_Dalton.dds"
+			expire = "1965.1.1"
+			ideology = third_way
+			traits = {
+				
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = ENG_democratic_ministers_in_government
+				}
+
+				country_event = { id = tlbbritain.17 hours = 24 }
+
+				else = {
+					set_country_flag = ENG_socialist_majority_flag
+					complete_national_focus = ENG_socialist_majority
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.17
+	title = tlbbritain.17.t
+	desc = tlbbritain.17.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.17.a
+		add_stability = 0.15
+
+		hidden_effect = {
+			set_country_flag = ENG_socialist_majority_flag
+			complete_national_focus = ENG_socialist_majority
+		}
+	}
+
+	option = {
+		name = tlbbritain.17.b
+		add_popularity = { ideology = democratic popularity = 0.1 }
+		add_popularity = { ideology = liberal popularity = 0.1 }
+
+		hidden_effect = {
+			set_country_flag = ENG_secret_democratic_majority
+			complete_national_focus = ENG_unsung_victory		
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.18
+	title = tlbbritain.18.t
+	desc = tlbbritain.18.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.18.a
+		add_stability = 0.05
+		add_political_power = -100
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.19 hours = 24 }
+			}
+		}
+	}
+
+	option = {
+		name = tlbbritain.18.b
+		add_stability = -0.05
+		add_political_power = 100
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.20 hours = 24 }
+			}
+		}
+	}
+	option = {
+		name = tlbbritain.18.c
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.15
+		add_war_support = 0.15
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.37 hours = 24 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.19
+	title = tlbbritain.19.t
+	desc = tlbbritain.19.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.19.a
+		add_stability = -0.05
+		add_popularity = { ideology = democratic popularity = 0.1 }
+		add_popularity = { ideology = liberal popularity = 0.1 }
+		add_popularity = { ideology = communism popularity = -0.1 }
+		add_popularity = { ideology = trotskyism popularity = -0.1 }
+
+		annex_country = {
+			target = BGE
+			transfer_troops = yes
+		}
+
+		hidden_effect = {
+			country_event = { id = tlbbritain.24 days = 60 }
+			set_country_flag = ENG_successful_reconciliation
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.20
+	title = tlbbritain.20.t
+	desc = tlbbritain.20.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.20.a
+		add_stability = -0.2
+		add_popularity = { ideology = trotskyism popularity = -0.3 }
+		add_popularity = { ideology = trotskyism popularity = -0.3 }
+		add_timed_idea = { idea = ENG_reparations_to_corporations days = 730 }
+
+		hidden_effect = {
+			BGE = {
+				country_event = { id = tlbbritain.21 hours = 24 }
+			}
+			set_country_flag = ENG_successful_reconciliation
+		}
+	}
+
+
+	option = {
+		name = tlbbritain.20.b
+
+		add_stability = 0.1
+		add_political_power = 150
+		add_popularity = { ideology = democratic popularity = -0.1 }
+		add_popularity = { ideology = liberalism popularity = -0.1 }
+
+		hidden_effect = {
+			BGE = {
+				country_event = { id = tlbbritain.22 hours = 24 }
+			}
+			set_country_flag = ENG_war_is_inevitable
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.21
+	title = tlbbritain.21.t
+	desc = tlbbritain.21.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.21.a
+
+		ENG = {
+			annex_country = {
+				target = BGE
+				transfer_troops = yes
+			}
+		}
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.24 days = 60 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.22
+	title = tlbbritain.22.t
+	desc = tlbbritain.22.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.22.a
+		add_stability = -0.1
+		add_war_support = 0.25
+	}
+}
+
+country_event = {
+	id = tlbbritain.23
+	title = tlbbritain.23.t
+	desc = tlbbritain.23.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.23.a
+		remove_ideas = ENG_general_union
+		add_political_power = -300
+
+		hidden_effect = {
+			set_country_flag = ENG_general_union_disbanded
+		}
+	}
+
+	option = {
+		name = tlbbritain.23.b
+		add_political_power = 100
+		add_popularity = { ideology = communism popularity = 0.1 }
+	}
+}
+
+country_event = {
+	id = tlbbritain.24
+	title = tlbbritain.24.t
+	desc = tlbbritain.24.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.24.a
+
+		add_ideas = ENG_king_Edward_VIII
+	}
+
+	option = {
+		name = tlbbritain.24.b
+
+		add_ideas = ENG_king_George_VI
+	}
+
+	option = {
+		name = tlbbritain.24.c
+
+		add_ideas = ENG_queen_Elizabeth_II
+	}
+
+	option = {
+		name = tlbbritain.24.d
+
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = tlbbritain.25
+	title = tlbbritain.25.t
+	desc = tlbbritain.25.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.25.a
+
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_politcal_power = 50
+	}
+
+	option = {
+		name = tlbbritain.25.b
+
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = tlbbritain.26
+	title = tlbbritain.26.t
+	desc = tlbbritain.26.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.26.a
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.27 hours = 24 }
+			}
+		}
+	}
+
+	option = {
+		name = tlbbritain.26.b
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.28 hours = 24 }
+			}
+		}
+	}
+
+	option = {
+		name = tlbbritain.26.c
+
+		hidden_effect = {
+			ENG = {
+				country_event = { id = tlbbritain.29 hours = 24 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.27
+	title = tlbbritain.27.t
+	desc = tlbbritain.27.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.27.a
+		add_war_support = 0.15
+
+		hidden_effect = {
+			set_country_flag = ENG_BGE_prepared_for_war
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.28
+	title = tlbbritain.28.t
+	desc = tlbbritain.28.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.28.a
+		add_war_support = 0.05
+
+		hidden_effect = {
+			country_event = { id = tlbbritain.38 days = 180 }
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.29
+	title = tlbbritain.29.t
+	desc = tlbbritain.29.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.29.a
+		add_war_support = 0.05
+
+		hidden_effect = {
+			country_event = { id = tlbbritain.38 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.30
+	title = tlbbritain.30.t
+	desc = tlbbritain.30.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.30.a
+		hidden_effect = {
+			PCW = {
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+				transfer_state = 123
+				transfer_state = 122
+				transfer_state = 904
+				transfer_state = 338
+				transfer_state = 121
+				transfer_state = 133
+				transfer_state = 136
+				transfer_state = 905
+				transfer_state = 120
+				transfer_state = 132
+				transfer_state = 128
+				add_state_core = 123
+				add_state_core = 122
+				add_state_core = 904
+				add_state_core = 338
+				add_state_core = 121
+				add_state_core = 133
+				add_state_core = 136
+				add_state_core = 905
+				add_state_core = 120
+				add_state_core = 132
+				add_state_core = 128
+				add_state_core = 131
+				add_state_core = 130
+				add_state_core = 129
+				add_state_core = 125
+				add_state_core = 126
+				add_state_core = 507
+			}
+			BGE = {
+				dismantle_faction = yes
+			}
+			load_focus_tree = united_kingdom_focus
+		}
+
+		ENG = {
+			annex_country = {
+				target = BGE
+				transfer_troops = yes
+			}
+		}
+		declare_war_on = {
+			target = PCW
+			type = annex_everything
+		}
+		add_popularity = { ideology = liberal popularity = 0.3 }
+		add_popularity = { ideology = democratic popularity = 0.3 }
+		add_popularity = { ideology = neutrality popularity = 0.05 }
+		add_popularity = { ideology = communism popularity = -0.3 }
+		add_popularity = { ideology = trotskyism popularity = -0.3 }
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Dallas Brookes"
+			desc = "POLITICS_DALLAS_BROOKES_DESC"
+			picture = "Portrait_England_Dallas_Brooks.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+		ENG = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+					OR = {
+						has_dlc = "Man the Guns"
+					}
+				}
+
+				set_autonomy = {
+					target = CAN
+					autonomous_state = autonomy_federal_commonwealth
+				}
+
+				set_autonomy = {
+					target = AST
+					autonomous_state = autonomy_federal_commonwealth
+				}
+
+				set_autonomy = {
+					target = NZL
+					autonomous_state = autonomy_federal_commonwealth
+				}
+
+				set_autonomy = {
+					target = ISR
+					autonomous_state = autonomy_integrated_commonwealth
+				}
+
+				set_autonomy = {
+					target = EGY
+					autonomous_state = autonomy_integrated_commonwealth
+				}
+
+				set_autonomy = {
+					target = MAL
+					autonomous_state = autonomy_integrated_commonwealth
+				}
+
+				else = {
+					puppet = MAL
+					puppet = EGY
+					puppet = ISR
+				}
+			}
+		}
+		create_faction = "Commonwealth"
+		ENG = {
+			add_to_faction = CAN
+			add_to_faction = AST
+			add_to_faction = NZL
+			add_to_faction = EGY
+			add_to_faction = ISR
+			add_to_faction = MAL
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.31
+	title = tlbbritain.31.t
+	desc = tlbbritain.31.desc
+	picture = GFX
+
+	trigger = {
+		AND = {
+			has_country_flag = ENG_civil_war_won
+			has_government = neutrality
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = tlbbritain.31.a
+		add_stability = 0.15
+	}
+}
+
+country_event = {
+	id = tlbbritain.32
+	title = tlbbritain.32.t
+	desc = tlbbritain.32.desc
+	picture = GFX
+
+	trigger = {
+		AND = {
+			OR = {
+				has_government = democratic
+				has_government = liberal
+			}
+			375 = { is_controlled_by = ENG }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = tlbbritain.32.a
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = tlbbritain.34
+	title = tlbbritain.34.t
+	desc = tlbbritain.34.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.34.a
+
+		hidden_effect = {
+			complete_national_focus = ENG_extend_the_campbell_act
+		}
+	}
+}
+
+country_event = {
+	id = tlbbritain.35
+	title = tlbbritain.35.t
+	desc = tlbbritain.35.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.35.a
 	}
 }
 
@@ -484,5 +1102,38 @@ country_event = {
 		name = tlbbritain.36.b
 		add_stability = -0.35
 		add_war_support = -0.35
+	}
+}
+
+country_event = {
+	id = tlbbritain.37
+	title = tlbbritain.37.t
+	desc = tlbbritain.37.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.37.a
+		add_stability = -0.1
+		add_war_support = 0.25
+	}
+}
+
+country_event = {
+	id = tlbbritain.38
+	title = tlbbritain.38.t
+	desc = tlbbritain.38.desc
+	picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = tlbbritain.38.a
+		add_war_support = 0.10
+
+		hidden_effect = {
+			set_country_flag = ENG_BGE_prepared_for_war
+		}
 	}
 }
