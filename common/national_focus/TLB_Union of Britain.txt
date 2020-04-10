@@ -151,7 +151,7 @@ focus_tree = {
 		id = ENG_secret_courts
 		prerequisite = { focus = ENG_national_security_comittee }
 		relative_position_id = ENG_national_security_comittee
-		icon = GFX
+		icon = GFX_Generic_Political_Purge
 		x = -1
 		y = 1
 		cost = 10
@@ -386,7 +386,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_talks_with_congressmen }
 		prerequisite = { focus = ENG_request_international_support }
 		relative_position_id = ENG_request_international_support
-		icon = GFX
+		icon = GFX_Generic_Coup02
 		x = -1
 		y = 1
 		cost = 10
@@ -544,7 +544,7 @@ focus_tree = {
 		available = {
 			has_country_flag = ENG_successful_reconciliation
 		}
-		icon = GFX
+		icon = GFX_Focus_ENG_Eden_Redeemed
 		bypass = {
 			has_country_flag = ENG_war_is_inevitable
 			AND = {
@@ -572,7 +572,7 @@ focus_tree = {
 		id = ENG_disband_the_general_union
 		prerequisite = { focus = ENG_repeal_the_campbell_act }
 		relative_position_id = ENG_repeal_the_campbell_act
-		icon = GFX
+		icon = GFX_FLF_focus_Focus_On_The_Unions
 		x = -2
 		y = 2
 		cost = 10
@@ -670,7 +670,7 @@ focus_tree = {
 		id = ENG_operation_sunset
 		prerequisite = { focus = ENG_talks_with_the_BGE }
 		relative_position_id = ENG_talks_with_the_BGE
-		icon = GFX
+		icon = GFX_british_flag_raising
 		available = {
 			has_country_flag = ENG_BGE_prepared_for_war
 		}
