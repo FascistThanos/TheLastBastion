@@ -49,6 +49,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = ENG_wilkins_debates_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = ENG_campbell_act_extended
+					}
+
+					country_event = { id = tlbbritain.34 hours = 1 }
+
+					else = {
+						country_event = { id = tlbbritain.4 hours = 1 }
+					}
+				}
+			}
 		}
 	}
 
@@ -137,7 +151,7 @@ focus_tree = {
 		id = ENG_secret_courts
 		prerequisite = { focus = ENG_national_security_comittee }
 		relative_position_id = ENG_national_security_comittee
-		icon = GFX
+		icon = GFX_Generic_Political_Purge
 		x = -1
 		y = 1
 		cost = 10
@@ -166,6 +180,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.5 hours = 1 }
 		}
 	}
 
@@ -185,6 +200,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.6 hours = 1 }
 		}
 	}
 
@@ -247,6 +263,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.7 hours = 1 }
 		}
 	}
 
@@ -265,6 +282,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.8 hours = 1 }
 		}
 	}
 
@@ -341,6 +359,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.9 hours = 1 }
 		}
 	}
 
@@ -367,7 +386,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_talks_with_congressmen }
 		prerequisite = { focus = ENG_request_international_support }
 		relative_position_id = ENG_request_international_support
-		icon = GFX
+		icon = GFX_Generic_Coup02
 		x = -1
 		y = 1
 		cost = 10
@@ -378,6 +397,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.12 hours = 1 }
+			custom_effect_tooltip = ENG_countercoup_tt
 		}
 	}
 
@@ -433,6 +454,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.16 hours = 1 }
 		}
 	}
 
@@ -440,6 +462,9 @@ focus_tree = {
 		id = ENG_socialist_majority
 		prerequisite = { focus = ENG_1st_session }
 		mutually_exclusive = { focus = ENG_unsung_victory }
+		available = {
+			has_country_flag = ENG_socialist_majority_flag
+		}
 		relative_position_id = ENG_1st_session
 		icon = GFX
 		x = -2
@@ -506,6 +531,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			BGE = {
+				country_event = { id = tlbbritain.18 hours = 1 }
+			}
 		}
 	}
 
@@ -513,7 +541,20 @@ focus_tree = {
 		id = ENG_pardon_the_eden_government
 		prerequisite = { focus = ENG_reconcile_with_the_BGE }
 		relative_position_id = ENG_reconcile_with_the_BGE
-		icon = GFX
+		available = {
+			has_country_flag = ENG_successful_reconciliation
+		}
+		icon = GFX_Focus_ENG_Eden_Redeemed
+		bypass = {
+			has_country_flag = ENG_war_is_inevitable
+			AND = {
+				BGE = { exists = no }
+				NOT = {
+					has_country_flag = ENG_successful_reconciliation
+				}
+			}
+			
+		}
 		x = 0
 		y = 1
 		cost = 10
@@ -531,7 +572,7 @@ focus_tree = {
 		id = ENG_disband_the_general_union
 		prerequisite = { focus = ENG_repeal_the_campbell_act }
 		relative_position_id = ENG_repeal_the_campbell_act
-		icon = GFX
+		icon = GFX_FLF_focus_Focus_On_The_Unions
 		x = -2
 		y = 2
 		cost = 10
@@ -542,6 +583,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.23 hours = 1 }
 		}
 	}
 
@@ -578,6 +620,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = tlbbritain.25 hours = 1 }
 		}
 	}
 
@@ -586,6 +629,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_1st_session }
 		relative_position_id = ENG_1st_session
 		icon = GFX
+		available = {
+			has_country_flag = ENG_secret_democratic_majority
+		}
 		x = 2
 		y = 1
 		cost = 10
@@ -614,6 +660,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			BGE = { 
+				country_event = { id = tlbbritain.26 hours = 1 }
+			}
 		}
 	}
 
@@ -621,7 +670,10 @@ focus_tree = {
 		id = ENG_operation_sunset
 		prerequisite = { focus = ENG_talks_with_the_BGE }
 		relative_position_id = ENG_talks_with_the_BGE
-		icon = GFX
+		icon = GFX_british_flag_raising
+		available = {
+			has_country_flag = ENG_BGE_prepared_for_war
+		}
 		x = 0
 		y = 1
 		cost = 10
@@ -632,7 +684,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			load_focus_tree = united_kingdom_focus
+			country_event = { id = tlbbritain.30 hours = 1 }
+			custom_effect_tooltip = ENG_operation_sunset_tt
 		}
 	}
 }

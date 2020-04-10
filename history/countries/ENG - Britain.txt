@@ -106,6 +106,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	communism = 43
 	trotskyism = 27
@@ -115,23 +116,22 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Oswald Mosley"
-	desc = "POLITICS_OSWALD_MOSLEY_DESC"
-	picture = "Portrait_Britain_Oswald_Mosley.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		champion_of_peace_1
-		economic_reformer
-	}
-}
-
-create_country_leader = {
 	name = "Harry Pollitt"
 	desc = "POLITICS_HARRY_POLLITT_DESC"
 	picture = "portrait_eng_harry_pollitt.dds"
 	expire = "1965.1.1"
 	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Horner"
+	desc = "POLITICS_ARTHUR_HORNER_DESC"
+	picture = "Portrait_England_Arthur_Horner.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_type
 	traits = {
 		
 	}
