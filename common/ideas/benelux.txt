@@ -362,5 +362,37 @@ ideas = {
  		 		max_dig_in = 1 		 
 			}
 		}												
+		state_arsenals = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+ 				industrial_capacity_factory = 0.1
+			}
+		}	
+		ideological_struggle = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+ 				drift_defence_factor = 0.25 
+			}
+		}
 	}
 }

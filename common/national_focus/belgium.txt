@@ -555,16 +555,13 @@ focus_tree = {
 		x = 12
 		y = 7
 
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_popularity = {
-				ideology = trotskyism
-				popularity = -0.05
-			}				
+			add_ideas = state_arsenals				
 		}
 	}
 	focus = {
@@ -574,16 +571,13 @@ focus_tree = {
 		x = 12
 		y = 8
 
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_popularity = {
-				ideology = trotskyism
-				popularity = -0.05
-			}				
+			add_ideas = ideological_struggle			
 		}
 	}
 	focus = {
