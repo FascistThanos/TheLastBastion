@@ -212,7 +212,7 @@ BGE = "countries/British Government in Exile"
 <<<<<<< Updated upstream
 PCW = "countries/Campbellian Britian"
 =======
-FLA = "countries/Flanders"
+FLA = "countries/Flanders.txt"
 >>>>>>> Stashed changes
 
 ##### For Spain Breakup #####
