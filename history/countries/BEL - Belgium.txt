@@ -18,6 +18,9 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+add_ideas = {
+	add_ideas = french_hegemony
+}
 
 1939.1.1 = {
 	add_ideas = {
@@ -77,14 +80,15 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = trotskyism
+	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	trotskyism = 83
+	democratic = 72
+	trotskyism = 11
 	socialism = 11
 	communism = 6
 }

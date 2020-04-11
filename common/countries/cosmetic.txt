@@ -238,3 +238,7 @@ UCA = {
   color = rgb { 34 225 242 }
   color_ui = rgb { 34 225 242 }
 }
+UOB = {
+  color = rgb { 175 25 24 }
+  color_ui = rgb { 175 25 24 }
+}

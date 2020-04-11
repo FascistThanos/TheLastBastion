@@ -1,0 +1,366 @@
+ideas = {
+	country = {
+		dutch_depression = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25 
+ 				industrial_capacity_factory = -0.5 
+ 				industrial_capacity_dockyard = -0.5 
+			}
+		}
+		medium_depression = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10 
+ 				industrial_capacity_factory = -0.2 
+ 				industrial_capacity_dockyard = -0.2 
+			}
+		}
+		revitalized_industry = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05 
+			}
+		}
+		strong_unions = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+ 				industrial_capacity_factory = 0.1  
+			}
+		}
+		trotskyist_influence = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = trotskyism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = -0.1
+				trotskyism_drift = 0.1
+			}
+		}
+		decreased_business_taxes = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05 
+			}
+		}
+		industrial_growth = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				 production_speed_buildings_factor = 0.1  
+			}
+		}
+		corporate_subsidies = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				 production_speed_buildings_factor = 0.05 
+				 local_resources_factor = 0.10  
+			}
+		}
+		socialized_healthcare = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.35 
+			}
+		}
+		welfare_state = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_weekly = 0.001
+			}
+		}
+		eight_hour_work_day = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		french_hegemony = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+ 			conscription_factor = -0.1 
+ 			}
+		}
+		formations_du_combat = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015 
+			}
+		}
+		state_supported_military_research = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}				
+		beauracracy_destroyed = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1 
+			}
+		}
+		BEL_socialist_education = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}			
+		workers_culture = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1 
+			}
+		}
+		permanent_revolution = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				 justify_war_goal_time = -0.5 
+			}
+		}
+		arm_the_masses = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				 industrial_capacity_factory = 0.05
+				 training_time_factor = -0.1   
+			}
+		}
+		BEL_communes = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015  
+			}
+		}
+		armed_neutrality = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015 
+				 defence = 0.1  
+			}
+		}
+		fort_effort = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+ 				production_speed_bunker_factor = 0.25
+ 		 		max_dig_in = 1 		 
+			}
+		}												
+	}
+}

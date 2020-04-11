@@ -1,6 +1,6 @@
 ﻿capital = 7
 
-oob = "UOB_1936"
+#oob = "UOB_1936"
 set_naval_oob = UOB_1936_naval
 
 set_research_slots = 4

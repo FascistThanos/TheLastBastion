@@ -6,9 +6,9 @@ state={
 	}
 
 	history={
-		owner = UOB
+		owner = HOL
 		add_core_of = HOL
-		add_core_of = UOB
+
 		victory_points = {
 			391 40
 		}

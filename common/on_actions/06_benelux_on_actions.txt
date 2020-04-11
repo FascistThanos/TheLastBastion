@@ -1,0 +1,46 @@
+on_actions = {
+on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = BEL
+				}
+				FLA = {
+				transfer_state = 34
+				}
+				set_global_flag = flanders_wins
+				34  = {
+				add_core_of = FLA
+				}
+
+			}
+		}
+	}
+on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FLA
+				}
+				BEL = {
+				transfer_state = 6
+				}
+				set_global_flag = belgium_wins
+				6 = {
+				add_core_of = BEL
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = HOL
+				}
+				set_global_flag = BEL_annex_netherlands
+				set_global_flag = belgium_wins
+			}
+		}
+	}	
+}
