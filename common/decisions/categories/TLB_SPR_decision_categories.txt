@@ -1,0 +1,19 @@
+deal_with_catalonia = {
+	allowed = {
+		original_tag = SPR
+    CAT = {
+      exists = no
+    }
+	}
+
+	icon = deal_catalonia
+}
+
+secure_spanish_neutrality = {
+	allowed = {
+		original_tag = SPR
+		has_war = no
+	}
+
+	icon = generic_industry
+}

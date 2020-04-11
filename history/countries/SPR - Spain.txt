@@ -59,14 +59,21 @@ if = {
 }
 
 add_ideas = {
+	# Spirits #
 	SPR_manuel_azana
+	SPR_catalan_crisis1
+	SPR_act_of_neutrality
+
+	# Government #
+	limited_conscription
+	SPA_miguel_cabanellas_ferrer_vanilla
 }
 
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	neutrality = 43
@@ -82,7 +89,7 @@ set_war_support = 0.18
 create_country_leader = {
 	name = "Indalecio Prieto"
 	desc = "POLITICS_PRIETO_DESC"
-	picture = ""
+	picture = "portrait_spa_juan_yague.dds"
 	expire = "1965.1.1"
 	ideology = third_way
 	traits = {
@@ -175,7 +182,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
+		SPR_oligarchical_council
 	}
 }
 

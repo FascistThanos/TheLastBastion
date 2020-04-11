@@ -45,6 +45,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SPR_catalan_resists"
+		texturefile = "gfx/interface/ideas/SPR_Catalan_Resistance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SPR_act_of_neutrality"
+		texturefile = "gfx/interface/ideas/SPR_act_of_neutrality.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}
