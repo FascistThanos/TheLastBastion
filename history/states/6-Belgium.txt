@@ -33,6 +33,7 @@ state={
 
 		add_core_of = FLA
 		add_core_of = BEL
+		add_core_of = HOL
 	}
 
 	provinces={
