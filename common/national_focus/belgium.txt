@@ -1,5 +1,5 @@
 focus_tree = {
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 50 y = 1600 }
 	id = Belgium
 	
 	country = {
@@ -93,14 +93,14 @@ focus_tree = {
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {focus = BEL_support_industrial_growth focus = BEL_the_last_bastion}		
 		x = 1
-		y = 7
+		y = 8
 		cost = 5
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 25
+			add_research_slot = 1
 		}
 	}
 	##########MILITARY BONUSES###########
@@ -158,22 +158,7 @@ focus_tree = {
 		prerequisite = {focus = BEL_the_flemish_question}		
 		x = 10
 		y = 5
-		cost = 1
-		search_filters = {  FOCUS_FILTER_STABILITY }
-		cancel_if_invalid = no
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = BEL_invest_in_flanders
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_the_flemish_question}		
-		x = 10
-		y = 5
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -200,7 +185,7 @@ focus_tree = {
 		prerequisite = {focus = BEL_invest_in_flanders}		
 		x = 10
 		y = 6
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -224,7 +209,7 @@ focus_tree = {
 		prerequisite = {focus = BEL_invest_in_wallonia}		
 		x = 10
 		y = 7
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -237,7 +222,54 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 			}
 		}
-	}	
+	}
+	focus = {
+		id = BEL_exploit_the_congo
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}		
+		x = 10
+		y = 8
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			538 = {
+				add_resource = {
+				type = tungsten
+				amount = 3
+				}
+			}
+			850 = {
+				add_resource = {
+				type = rubber
+				amount = 3
+				}
+			}
+			295 = {
+				add_resource = {
+				type = rubber
+				amount = 3
+				}			
+			}
+		}
+	}
+	focus = {
+		id = BEL_expand_universities
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}		
+		x = 8
+		y = 8
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}			
 	#BEFRIEND AMERICA
 	focus = {
 		id = BEL_arsenal_of_democracy
@@ -246,7 +278,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BEL_armed_neutrality }						
 		x = 2
 		y = 4
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -278,7 +310,7 @@ focus_tree = {
 		prerequisite = {focus = BEL_arsenal_of_democracy}		
 		x = 2
 		y = 6
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -470,7 +502,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = -25
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}	
 		}
 	}
 	#FASCIST
@@ -489,7 +525,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-
+			add_ideas = fascist_state
 		}
 	}
 	focus = {
@@ -659,7 +695,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = state_supported_military_research
+			add_research_slot = 1
 		}
 	}	
 
@@ -679,8 +715,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_stability = .05
-			add_war_support = .05
+			add_ideas = peoples_commune
 		}
 	}
 	focus = {
@@ -877,7 +912,7 @@ focus_tree = {
 		id = BEL_learn_infantry_tactics
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {focus = BEL_military_research}			
-		x = 11
+		x = 10
 		y = 10
 		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -922,9 +957,55 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BEL_study_the_airforce
+		id = BEL_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BEL_learn_infantry_tactics }
+		x = 8
+		y = 11
+		relative_position_id = army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}	
+	focus = {
+		id = BEL_study_naval_tactics
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_study_naval_designs}		
+		prerequisite = {focus = BEL_military_research}		
+		x = 14
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 25
+			6 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}							
+		}
+	}
+	focus = {
+		id = BEL_large_navy
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_study_naval_tactics}
 		x = 13
 		y = 11
 		cost = 10
@@ -933,20 +1014,125 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
+				add_tech_bonus = {
+				name = fleet_in_being_bonus
 				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}			
+				uses = 2
+				category = fleet_in_being_tree
+			}					
 		}
 	}
 	focus = {
-		id = BEL_study_naval_designs
+		id = BEL_flexible_navy
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_study_naval_tactics}
+		x = 15
+		y = 11
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}							
+		}
+	}
+	focus = {
+		id = BEL_light_ship_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_large_navy focus = BEL_flexible_navy}
+		x = 13
+		y = 12
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+				category = cl_tech
+			}							
+		}
+	}
+	focus = {
+		id = BEL_heavy_ship_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_large_navy focus = BEL_flexible_navy}
+		x = 15
+		y = 12
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = ca_tech
+				category = bb_tech
+			}							
+		}
+	}
+	focus = {
+		id = BEL_submarine_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_light_ship_research focus = BEL_heavy_ship_research}
+		x = 13
+		y = 13
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}							
+		}
+	}
+	focus = {	
+		id = BEL_carrier_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_large_navy focus = BEL_flexible_navy}
+		x = 15
+		y = 13
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}							
+		}
+	}					
+	focus = {
+		id = BEL_study_the_airforce
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {focus = BEL_military_research}		
-		x = 13
+		x = 18
 		y = 10
 		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -954,19 +1140,140 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = tanks_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 1.0
-				uses = 1
-				technology = motorised_infantry
-			}							
+			air_experience = 25		
 		}
 	}
+	focus = {
+		id = BEL_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = BEL_study_the_airforce }
+		x = 12
+		y = 11
+		relative_position_id = aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	focus = {
+		id = BEL_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BEL_study_the_airforce }
+		x = 14
+		y = 11
+		relative_position_id = aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	####RETAKE LAND
+	focus = {
+		id = BEL_prepare_for_war
+		icon = GFX_goal_focus_generic_industry
+		x = 3
+		y = 9
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = .05
+		}
+	}
+	focus = {
+		id = BEL_capture_luxemburg
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus =BEL_prepare_for_war}
+		x = 2
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			8 = {
+			add_core_of = BEL
+			}
+		}
+	}
+	focus = {
+		id = BEL_capture_the_netherlands
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = { focus = BEL_prepare_for_war}		
+		x = 4
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			35 = {
+			add_core_of = BEL
+			}
+			36 = {
+			add_core_of = BEL
+			}
+			7 = {
+			add_core_of = BEL
+			}
+		}
+	}
+	focus = {
+		id = BEL_form_benelux
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_capture_the_netherlands}
+		prerequisite = {focus = BEL_capture_luxemburg}
+		available = {
+		BEL = {
+		owns_state = 35
+		owns_state = 36
+		owns_state = 7
+		owns_state = 8
+		}
+		}
+		x = 3
+		y = 11
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			set_cosmetic_tag = UOB
+			add_political_power = 50
+		}
+	}					
 }						
