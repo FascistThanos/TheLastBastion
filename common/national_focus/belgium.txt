@@ -112,7 +112,7 @@ focus_tree = {
 		prerequisite = {focus = BEL_status_quo focus = BEL_radical_ideals}
 		x = 10
 		y = 4
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no

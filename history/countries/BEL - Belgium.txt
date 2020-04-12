@@ -87,10 +87,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 72
-	trotskyism = 11
-	socialism = 11
-	communism = 6
+	democratic = 65
+	trotskyism = 12
+	socialism = 8
+	fascism = 15
 }
 
 set_convoys = 80

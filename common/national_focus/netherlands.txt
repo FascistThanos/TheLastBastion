@@ -375,13 +375,13 @@ focus_tree = {
 			309 = {
    				add_resource = {
 					type = aluminium
-					amount = 25
+					amount = 13
 				}
             }
             695 = {
    				add_resource = {
 					type = oil
-					amount = 25
+					amount = 13
 				}
             }
         } 
@@ -395,7 +395,7 @@ focus_tree = {
 		y = 1
 		cost = 1	
 		ai_will_do = {
-		factory = 100
+		factor = 100
 		}
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
@@ -409,12 +409,12 @@ focus_tree = {
 		id = HOL_flemish_workers_to_arms
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {focus = HOL_instigate_flanders }
+			ai_will_do = {
+		factor = 100
+		}	
 		x = 10
 		y = 2
 		cost = 5
-		ai_will_do = {
-		factory = 100
-		}
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -430,6 +430,9 @@ focus_tree = {
 		prerequisite = {
 			focus = HOL_flemish_workers_to_arms 
 		}
+		ai_will_do = {
+		factor = 100
+		}		
 		available = {
 			has_global_flag = flanders_wins
 			FLA = {
@@ -439,9 +442,7 @@ focus_tree = {
 		x = 8
 		y = 3
 		cost = 5
-		ai_will_do = {
-		factory = 100
-		}
+
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -461,7 +462,7 @@ focus_tree = {
 		y = 4
 		cost = 5
 		ai_will_do = {
-		factory = 100
+		factor = 100
 		}
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
@@ -478,6 +479,9 @@ focus_tree = {
 		id = HOL_form_benelux
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {focus = HOL_pressure_luxemburg }
+		ai_will_do = {
+		factor = 100
+		}		
 		available = {
 			owns_state = 34
 			owns_state = 8
@@ -507,9 +511,7 @@ focus_tree = {
 		x = 10
 		y = 3
 		cost = 5
-		ai_will_do = {
-		factory = 100
-		}
+
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -525,9 +527,7 @@ focus_tree = {
 		x = 10
 		y = 4
 		cost = 10
-		ai_will_do = {
-		factory = 100
-		}
+
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -546,9 +546,7 @@ focus_tree = {
 		x = 11
 		y = 5
 		cost = 10
-		ai_will_do = {
-		factory = 100
-		}
+
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -564,9 +562,7 @@ focus_tree = {
 		x = 11
 		y = 6
 		cost = 10
-		ai_will_do = {
-		factory = 100
-		}
+
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -585,9 +581,7 @@ focus_tree = {
 		x = 11
 		y = 7
 		cost = 10
-		ai_will_do = {
-		factory = 100
-		}
+
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no

@@ -12,27 +12,49 @@ country_event = {
 		name = belgium.0.a
 		set_country_flag = BEL_labor
 		ai_chance = {factor = 40}
-	
+		set_politics = {
+		ruling_party = socialism
+		elections_allowed = no
+		}		
 	}
 	option = {
 		#CONSERVATIVE DEMOCRACY
 		name = belgium.0.b
 		set_country_flag = BEL_conservatives
 		ai_chance = {factor = 40}
+		set_politics = {
+		ruling_party = democratic
+		elections_allowed = no
+		}		
 	
 	}	
 	option = {
 		#TROTSKYISM under JULIEN LAHAUT
 		name = belgium.0.c
 		set_country_flag = BEL_trotskyism
-		ai_chance = {factor = 10}		
+		ai_chance = {factor = 10}
+		set_politics = {
+		ruling_party = trotskyism
+		elections_allowed = no
+		}
+		add_popularity = {
+			ideology = trotskyism
+			popularity = 0.10
+		}					
 	}
 	option = {
 		#VERDINASO
 		name = belgium.0.d
 		set_country_flag = BEL_fascists
 		ai_chance = {factor = 10}
-
+		set_politics = {
+		ruling_party = fascism
+		elections_allowed = no
+		}
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+		}						
 	}	
 }
 country_event = {
