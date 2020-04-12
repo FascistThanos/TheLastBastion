@@ -17,12 +17,18 @@ country_event = {
 
 	option = {
 		name = tlbbritain.1.a
+		ai_chance = {
+			factor = 100
+		}
 		set_country_flag = ENG_campbell_act_extended
 		add_stability = -0.05
 	}
 
 	option = {
 		name = tlbbritain.1.b
+		ai_chance = {
+			factor = 0
+		}
 		add_stability = 0.05
 		remove_ideas = ENG_13th_congress
 		set_country_flag = ENG_parliament_restored
@@ -197,7 +203,7 @@ country_event = {
 
 	option = {
 		name = tlbbritain.8.a
-		remove_ideas = ENG_national_security_council
+		remove_ideas = ENG_national_security_committee_idea
 		add_stability = 0.1
 		add_political_power = 100
 	}
@@ -235,11 +241,14 @@ country_event = {
 
 	option = {
 		name = tlbbritain.10.a
+		ai_chance = {
+			factor = 75
+		}
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = -500
 		}
-		add_political_power = -500
+		add_political_power = -100
 
 		hidden_effect = {
 			ENG = {
@@ -250,6 +259,9 @@ country_event = {
 
 	option = {
 		name = tlbbritain.10.a
+		ai_chance = {
+			factor = 25
+		}
 
 		hidden_effect = {
 			ENG = {
@@ -292,7 +304,12 @@ country_event = {
 	option = {
 		name = tlbbritain.12.a
 
+		remove_ideas = ENG_agents_on_the_inside
+		remove_ideas = ENG_campbell_act
+		remove_ideas = ENG_13th_congress
+
 		hidden_effect = {
+
 			if = {
 	  			limit = {
 	    			check_variable = { coup_support > 7 }
@@ -609,6 +626,9 @@ country_event = {
 		}
 
 		hidden_effect = {
+			BGE = {
+				dismantle_faction = yes
+			}
 			country_event = { id = tlbbritain.24 days = 60 }
 			set_country_flag = ENG_successful_reconciliation
 		}
@@ -626,7 +646,7 @@ country_event = {
 	option = {
 		name = tlbbritain.20.a
 		add_stability = -0.2
-		add_popularity = { ideology = trotskyism popularity = -0.3 }
+		add_popularity = { ideology = communism popularity = -0.3 }
 		add_popularity = { ideology = trotskyism popularity = -0.3 }
 		add_timed_idea = { idea = ENG_reparations_to_corporations days = 730 }
 
@@ -744,12 +764,6 @@ country_event = {
 
 	option = {
 		name = tlbbritain.24.c
-
-		add_ideas = ENG_queen_Elizabeth_II
-	}
-
-	option = {
-		name = tlbbritain.24.d
 
 		add_stability = 0.05
 	}

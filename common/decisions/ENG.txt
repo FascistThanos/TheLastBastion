@@ -1,0 +1,151 @@
+prepare_for_the_countercoup = {
+     soviet_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               SOV = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               SOV = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     soviet_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               POL = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               POL = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     finnish_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               FIN = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               FIN = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     romanian_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               ROM = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               ROM = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     bulgarian_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               BUL = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               BUL = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     danish_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               DEN = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               DEN = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     french_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               FPR = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               FPR = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     lithuanian_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               LIT = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               LIT = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     latvian_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               LAT = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               LAT = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+
+     estonian_aid = {
+          cost = 50
+          fire_only_once = yes
+          available = {
+               EST = {
+                    has_government = trotskyism
+               }
+          }
+          complete_effect = {
+               EST = {
+                  country_event = { id = tlbbritain.10 hours = 12 }  
+               }
+          }
+     }
+}

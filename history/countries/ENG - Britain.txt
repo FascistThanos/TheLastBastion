@@ -16,7 +16,14 @@ if = {
 set_research_slots = 4
 
 set_stability = 0.6
-set_war_support = 0.1
+set_war_support = 0.35
+
+add_ideas = {
+	ENG_campbell_act
+	ENG_13th_congress
+	ENG_scientific_exodus
+	ENG_general_union
+}
 
 # Starting tech
 set_technology = {
