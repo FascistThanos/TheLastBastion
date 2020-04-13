@@ -723,7 +723,7 @@ focus_tree = {
 		id = ENG_expand_british_influence
 		prerequisite = { focus = ENG_downing_act focus = ENG_trotskyist_leadership }
 		relative_position_id = ENG_downing_act
-		icon = GFX
+		icon = GFX_focus_eng_global_defense
 		x = 2
 		y = 1
 		cost = 10
@@ -743,7 +743,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_join_the_comintern }
 		mutually_exclusive = { focus = ENG_a_new_world_revolution }
 		relative_position_id = ENG_expand_british_influence
-		icon = GFX
+		icon = GFX_focus_YUG_pan_slavic_congress
 		x = -2
 		y = 1
 		cost = 10
@@ -763,7 +763,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_british_communist_alternative }
 		mutually_exclusive = { focus = ENG_a_new_world_revolution }
 		relative_position_id = ENG_expand_british_influence
-		icon = GFX
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		x = 0
 		y = 1
 		cost = 10
@@ -783,7 +783,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_british_communist_alternative }
 		mutually_exclusive = { focus = ENG_join_the_comintern }
 		relative_position_id = ENG_expand_british_influence
-		icon = GFX
+		icon = GFX_focus_ger_great_red_menace
 		x = 2
 		y = 1
 		cost = 10
@@ -801,7 +801,7 @@ focus_tree = {
 		id = ENG_franco-british_alliance
 		prerequisite = { focus = ENG_british_communist_alternative }
 		relative_position_id = ENG_british_communist_alternative
-		icon = GFX
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		x = -1
 		y = 2
 		cost = 10
@@ -819,7 +819,7 @@ focus_tree = {
 		id = ENG_invite_denmark
 		prerequisite = { focus = ENG_british_communist_alternative }
 		relative_position_id = ENG_british_communist_alternative
-		icon = GFX
+		icon = GFX_goal_generic_major_alliance
 		x = 0
 		y = 1
 		cost = 10
@@ -837,7 +837,7 @@ focus_tree = {
 		id = ENG_expand_nordic_influence
 		prerequisite = { focus = ENG_invite_denmark }
 		relative_position_id = ENG_invite_denmark
-		icon = GFX
+		icon = GFX_goal_generic_national_unity
 		x = 0
 		y = 2
 		cost = 10
@@ -855,7 +855,7 @@ focus_tree = {
 		id = ENG_reds_in_western_europe
 		prerequisite = { focus = ENG_join_the_comintern }
 		relative_position_id = ENG_join_the_comintern
-		icon = GFX
+		icon = GFX_focus_generic_soviet_politics
 		x = 0
 		y = 1
 		cost = 10
@@ -873,7 +873,7 @@ focus_tree = {
 		id = ENG_second_french_civil_war
 		prerequisite = { focus = ENG_a_new_world_revolution }
 		relative_position_id = ENG_a_new_world_revolution
-		icon = GFX
+		icon = GFX_Focus_FRA_Year_Zero
 		x = 1
 		y = 1
 		cost = 10
@@ -891,7 +891,7 @@ focus_tree = {
 		id = ENG_bring_the_commune_into_the_fold
 		prerequisite = { focus = ENG_second_french_civil_war }
 		relative_position_id = ENG_second_french_civil_war
-		icon = GFX
+		icon = GFX_FRA_CommunistDefeat
 		x = 0
 		y = 1
 		cost = 10
@@ -909,7 +909,7 @@ focus_tree = {
 		id = ENG_topple_denmark
 		prerequisite = { focus = ENG_a_new_world_revolution }
 		relative_position_id = ENG_a_new_world_revolution
-		icon = GFX
+		icon = GFX_goal_generic_major_war
 		x = 0
 		y = 3
 		cost = 10
@@ -924,11 +924,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_subjugate_finland
+		id = ENG_subjugate_finland_focus
 		prerequisite = { focus = ENG_one_true_revolution }
 		mutually_exclusive = { focus = ENG_ally_finland }
 		relative_position_id = ENG_one_true_revolution
-		icon = GFX
+		icon = GFX_goal_generic_more_territorial_claims
 		x = -1
 		y = 1
 		cost = 10
@@ -947,7 +947,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_expand_nordic_influence focus = ENG_topple_denmark }
 		mutually_exclusive = { focus = ENG_one_true_revolution }
 		relative_position_id = ENG_expand_nordic_influence
-		icon = GFX
+		icon = GFX_Focus_ENG_Mitford_Faction
 		x = 3
 		y = 1
 		cost = 10
@@ -964,9 +964,9 @@ focus_tree = {
 	focus = {
 		id = ENG_ally_finland
 		prerequisite = { focus = ENG_one_true_revolution }
-		mutually_exclusive = { focus = ENG_subjugate_finland }
+		mutually_exclusive = { focus = ENG_subjugate_finland_focus }
 		relative_position_id = ENG_one_true_revolution
-		icon = GFX
+		icon = GFX_focus_invite_finland
 		x = 1
 		y = 1
 		cost = 10
@@ -984,7 +984,7 @@ focus_tree = {
 		id = ENG_end_of_the_american_dream
 		prerequisite = { focus = ENG_subjugate_finland focus = ENG_molotov-mitford_pact focus = ENG_ally_finland }
 		relative_position_id = ENG_molotov-mitford_pact
-		icon = GFX
+		icon = GFX_focus_eng_crush_the_dream
 		x = 0
 		y = 2
 		cost = 10
@@ -1003,7 +1003,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_expand_nordic_influence focus = ENG_topple_denmark }
 		mutually_exclusive = { focus = ENG_molotov-mitford_pact }
 		relative_position_id = ENG_expand_nordic_influence
-		icon = GFX
+		icon = GFX_goal_generic_war_with_comintern
 		x = 1
 		y = 1
 		cost = 10
@@ -1017,12 +1017,13 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = ENG_crush_the_soviets
-		prerequisite = { focus = ENG_subjugate_finland focus = ENG_ally_finland }
-		relative_position_id = ENG_subjugate_finland focus
-		icon = GFX
-		x = 1
+		prerequisite = { focus = ENG_subjugate_finland_focus focus = ENG_ally_finland }
+		icon = GFX_focus_attack_soviet
+		relative_position_id = ENG_ally_finland
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1039,7 +1040,7 @@ focus_tree = {
 		id = ENG_the_coming_storm
 		prerequisite = { focus = ENG_2nd_session }
 		relative_position_id = ENG_2nd_session
-		icon = GFX
+		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
 		cost = 10
@@ -1058,7 +1059,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_the_coming_storm }
 		mutually_exclusive = { focus = ENG_isolationism }
 		relative_position_id = ENG_the_coming_storm
-		icon = GFX
+		icon = GFX_focus_focus_fra_ratify_stresa
 		x = 1
 		y = 1
 		cost = 10
@@ -1076,7 +1077,7 @@ focus_tree = {
 		id = ENG_secure_the_bearing_strait
 		prerequisite = { focus = ENG_revive_the_stresa_front }
 		relative_position_id = ENG_revive_the_stresa_front
-		icon = GFX
+		icon = GFX_goal_generic_territory_or_war
 		x = 2
 		y = 1
 		cost = 10
@@ -1094,7 +1095,7 @@ focus_tree = {
 		id = ENG_norwegian_alliance
 		prerequisite = { focus = ENG_secure_the_bearing_strait }
 		relative_position_id = ENG_secure_the_bearing_strait
-		icon = GFX
+		icon = GFX_goal_tripartite_pact
 		x = 0
 		y = 1
 		cost = 10
@@ -1113,7 +1114,7 @@ focus_tree = {
 		id = ENG_talks_with_berlin
 		prerequisite = { focus = ENG_revive_the_stresa_front }
 		relative_position_id = ENG_revive_the_stresa_front
-		icon = GFX
+		icon = GFX_GER_french_deal
 		x = 0
 		y = 1
 		cost = 10
@@ -1132,7 +1133,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_talks_with_berlin }
 		prerequisite = { focus = ENG_norwegian_alliance }
 		relative_position_id = ENG_talks_with_berlin
-		icon = GFX
+		icon = GFX_focus_ger_strike_at_the_source
 		x = 0
 		y = 2s
 		cost = 10
@@ -1150,7 +1151,7 @@ focus_tree = {
 		id = ENG_threaten_leningrad
 		prerequisite = { focus = ENG_undo_the_revolution }
 		relative_position_id = ENG_undo_the_revolution
-		icon = GFX
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		x = 3
 		y = 1
 		cost = 10
@@ -1169,7 +1170,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_undo_the_revolution }
 		mutually_exclusive = { focus = ENG_invade_turkey }
 		relative_position_id = ENG_undo_the_revolution
-		icon = GFX
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = -1
 		y = 1
 		cost = 10
@@ -1188,7 +1189,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_undo_the_revolution }
 		mutually_exclusive = { focus = ENG_negotiate_black_sea_access }
 		relative_position_id = ENG_undo_the_revolution
-		icon = GFX
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 1
 		y = 1
 		cost = 10
@@ -1207,7 +1208,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_the_coming_storm }
 		mutually_exclusive = { focus = ENG_revive_the_stresa_front }
 		relative_position_id = ENG_the_coming_storm
-		icon = GFX
+		icon = GFX_Generic_British_Isles
 		x = -1
 		y = 1
 		cost = 10
@@ -1225,7 +1226,7 @@ focus_tree = {
 		id = ENG_homeland_defense
 		prerequisite = { focus = ENG_isolationism }
 		relative_position_id = ENG_isolationism
-		icon = GFX
+		icon = GFX_goal_generic_defence
 		x = 0
 		y = 1
 		cost = 10
@@ -1243,7 +1244,7 @@ focus_tree = {
 		id = ENG_plotting_a_steady_course
 		prerequisite = { focus = ENG_homeland_defense }
 		relative_position_id = ENG_homeland_defense
-		icon = GFX
+		icon = GFX_Focus_ENG_Steady_as_She_Goes
 		x = 0
 		y = 1
 		cost = 10
@@ -1259,7 +1260,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_3_year_plan
-		icon = GFX
+		icon = GFX_Generic_Factory_Planning
 		x = 20
 		y = 0
 		cost = 10
@@ -1278,7 +1279,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_3_year_plan }
 		mutually_exclusive = { focus = ENG_state_regulated_capitalism }
 		relative_position_id = ENG_3_year_plan
-		icon = GFX
+		icon = GFX_goal_generic_soviet_construction
 		x = -3
 		y = 1
 		cost = 10
@@ -1296,7 +1297,7 @@ focus_tree = {
 		id = ENG_textile_unions
 		prerequisite = { focus = ENG_unionized_economy }
 		relative_position_id = ENG_unionized_economy
-		icon = GFX
+		icon = GFX_Generic_Factory_Complex
 		x = -2
 		y = 1
 		cost = 10
@@ -1314,7 +1315,7 @@ focus_tree = {
 		id = ENG_steel_unions
 		prerequisite = { focus = ENG_unionized_economy }
 		relative_position_id = ENG_unionized_economy
-		icon = GFX
+		icon = GFX_Generic_Factory_Complex
 		x = 0
 		y = 1
 		cost = 10
@@ -1332,7 +1333,7 @@ focus_tree = {
 		id = ENG_electronics_unions
 		prerequisite = { focus = ENG_unionized_economy }
 		relative_position_id = ENG_unionized_economy
-		icon = GFX
+		icon = GFX_Generic_Factory_Complex
 		x = 2
 		y = 1
 		cost = 10
@@ -1350,7 +1351,7 @@ focus_tree = {
 		id = ENG_advanced_circuitry
 		prerequisite = { focus = ENG_electronics_unions }
 		relative_position_id = ENG_electronics_unions
-		icon = GFX
+		icon = GFX_Generic_Electrification
 		x = 0
 		y = 1
 		cost = 10
@@ -1369,7 +1370,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_3_year_plan }
 		mutually_exclusive = { focus = ENG_unionized_economy }
 		relative_position_id = ENG_3_year_plan
-		icon = GFX
+		icon = GFX_Generic_Market_Socialism
 		x = 3
 		y = 1
 		cost = 10
@@ -1387,7 +1388,7 @@ focus_tree = {
 		id = ENG_improved_computing
 		prerequisite = { focus = ENG_state_regulated_capitalism }
 		relative_position_id = ENG_state_regulated_capitalism
-		icon = GFX
+		icon = GFX_goal_generic_production2
 		x = -2
 		y = 1
 		cost = 10
@@ -1405,7 +1406,7 @@ focus_tree = {
 		id = ENG_expand_consumer_markets
 		prerequisite = { focus = ENG_state_regulated_capitalism }
 		relative_position_id = ENG_state_regulated_capitalism
-		icon = GFX
+		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
 		cost = 10
@@ -1423,7 +1424,7 @@ focus_tree = {
 		id = ENG_rural_planning
 		prerequisite = { focus = ENG_expand_consumer_markets }
 		relative_position_id = ENG_expand_consumer_markets
-		icon = GFX
+		icon = GFX_goal_generic_construct_civ_factory
 		x = -1
 		y = 1
 		cost = 10
@@ -1441,7 +1442,7 @@ focus_tree = {
 		id = ENG_urban_planning
 		prerequisite = { focus = ENG_expand_consumer_markets }
 		relative_position_id = ENG_expand_consumer_markets
-		icon = GFX
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 1
 		y = 1
 		cost = 10
@@ -1459,7 +1460,7 @@ focus_tree = {
 		id = ENG_radio_communications
 		prerequisite = { focus = ENG_advanced_circuitry focus = ENG_improved_computing }
 		relative_position_id = ENG_advanced_circuitry
-		icon = GFX
+		icon = GFX_Generic_Radio_Communication
 		x = 2
 		y = 1
 		cost = 10
@@ -1477,7 +1478,7 @@ focus_tree = {
 		id = ENG_british_mining_survey
 		prerequisite = { focus = ENG_3_year_plan }
 		relative_position_id = ENG_3_year_plan
-		icon = GFX
+		icon = GFX_Generic_Mining
 		x = -7
 		y = 1
 		cost = 10
@@ -1495,7 +1496,7 @@ focus_tree = {
 		id = ENG_expand_highlands_excavation
 		prerequisite = { focus = ENG_british_mining_survey }
 		relative_position_id = ENG_british_mining_survey
-		icon = GFX
+		icon = GFX_Generic_More_OIL
 		x = 0
 		y = 1
 		cost = 10
@@ -1514,7 +1515,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_textile_unions }
 		prerequisite = { focus = ENG_steel_unions }
 		relative_position_id = ENG_textile_unions
-		icon = GFX
+		icon = GFX_focus_mex_privatisation
 		x = 1
 		y = 2
 		cost = 10
@@ -1533,7 +1534,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_rural_planning }
 		prerequisite = { focus = ENG_urban_planning }
 		relative_position_id = ENG_rural_planning
-		icon = GFX
+		icon = GFX_GER_minimum_wage
 		x = 1
 		y = 1
 		cost = 10
@@ -1551,7 +1552,7 @@ focus_tree = {
 		id = ENG_large-scale_mobilization
 		prerequisite = { focus = ENG_income_equality focus = ENG_welfare_distribution}
 		relative_position_id = ENG_income_equality
-		icon = GFX
+		icon = GFX_Generic_Construction
 		x = 2
 		y = 1
 		cost = 10
@@ -1569,7 +1570,7 @@ focus_tree = {
 		id = ENG_military_construction_1
 		prerequisite = { focus = ENG_large-scale_mobilization }
 		relative_position_id = ENG_large-scale_mobilization
-		icon = GFX
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -1
 		y = 1
 		cost = 10
@@ -1587,7 +1588,7 @@ focus_tree = {
 		id = ENG_military_construction_2
 		prerequisite = { focus = ENG_military_construction_1 }
 		relative_position_id = ENG_military_construction_1
-		icon = GFX
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 1
 		cost = 10
@@ -1605,7 +1606,7 @@ focus_tree = {
 		id = ENG_synthetics_research
 		prerequisite = { focus = ENG_large-scale_mobilization }
 		relative_position_id = ENG_large-scale_mobilization
-		icon = GFX
+		icon = GFX_Generic_Oil_Concern
 		x = 1
 		y = 1
 		cost = 10
@@ -1623,7 +1624,7 @@ focus_tree = {
 		id = ENG_liverpool_refinery_enterprise
 		prerequisite = { focus = ENG_synthetics_research }
 		relative_position_id = ENG_synthetics_research
-		icon = GFX
+		icon = GFX_Generic_Oil_Production
 		x = 0
 		y = 1
 		cost = 10
@@ -1641,7 +1642,7 @@ focus_tree = {
 		id = ENG_britain's_best_and_brightest
 		prerequisite = { focus = ENG_income_equality focus = ENG_welfare_distribution }
 		relative_position_id = ENG_income_equality
-		icon = GFX
+		icon = GFX_goal_tfv_generic_tech_sharing
 		x = 5
 		y = 1
 		cost = 10
@@ -1659,7 +1660,7 @@ focus_tree = {
 		id = ENG_state_sponsored_college_tuition
 		prerequisite = { focus = ENG_britain's_best_and_brightest }
 		relative_position_id = ENG_britain's_best_and_brightest
-		icon = GFX
+		icon = GFX_focus_generic_socialist_science
 		x = 0
 		y = 1
 		cost = 10
