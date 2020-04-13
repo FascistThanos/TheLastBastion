@@ -1,0 +1,81 @@
+add_namespace = TLB_SPR
+
+country_event = {
+  id = TLB_SPR.1
+  title = TLB_SPR.1.t
+  desc = TLB_SPR.1.d
+  picture = GFX_report_event_catalonian_uprising
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_SPR.1.a # Down with these scum!
+    ai_chance = {
+      factor = 5
+    }
+
+    release = CAT
+    hidden_effect = {
+      CAT = {
+        load_oob = "CAT_1936"
+      }
+
+      remove_ideas = {
+        SPR_catalan_suppression
+        SPR_act_of_neutrality
+      }
+    }
+
+    add_named_threat = {
+      threat = 10
+      name = CAT_uprising
+    }
+
+    create_wargoal = {
+      type = annex_everything
+      target = CAT
+    }
+  }
+
+  option = {
+    name = TLB_SPR.1.b # They can exist, for now.
+    ai_chance = {
+      factor = 15
+    }
+
+    release = CAT
+    hidden_effect = {
+      CAT = {
+        load_oob = "CAT_1936"
+      }
+
+      remove_ideas = SPR_catalan_suppression
+    }
+
+    add_named_threat = {
+      threat = 5
+      name = CAT_uprising1
+    }
+
+    add_political_power = 100
+  }
+
+  option = {
+    name = TLB_SPR.1.c # Visca Catalunya!
+    ai_chance = {
+      factor = 1
+    }
+
+    release_puppet = CAT
+    hidden_effect = {
+      CAT = {
+        load_oob = "CAT_1936"
+      }
+
+      remove_ideas = SPR_catalan_suppression
+    }
+
+    add_political_power = 100
+    add_war_support = 0.05
+  }
+}

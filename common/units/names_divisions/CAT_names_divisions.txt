@@ -1,0 +1,18 @@
+CAT_GAR_01 = {
+  for_countries = { CAT }
+
+  can_use = { always = yes }
+
+  division_types = { "infantry" }
+
+  fallback_name = "%d. Milícia Federal Catalana"
+
+  ordered = {
+    1 = { "%d. Brigada de la Independència"}
+    2 = { "%d. Defensors de la Llibertat Obrera"}
+    3 = { "%d. Eagles Barcelonines"}
+    4 = { "%d. Defensors de l’Estat"}
+    5 = { "Guàrdies federals"}
+    6 = { "%d. Milícia Federal Catalana"}
+  }
+}

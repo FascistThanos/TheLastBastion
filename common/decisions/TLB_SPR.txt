@@ -133,8 +133,20 @@ deal_with_catalonia = {
     }
 
     complete_effect = {
-        add_ideas = SPR_catalan_suppression
-        remove_ideas = SPR_catalan_crisis1
+      add_ideas = SPR_catalan_suppression
+      remove_ideas = SPR_catalan_crisis1
+
+      hidden_effect = {
+        random_list = {
+          30 = {
+            country_event = TLB_SPR.1
+          }
+
+          70 = {
+            #
+          }
+        }
+      }
     }
   }
 }
