@@ -608,10 +608,8 @@ FOZ = {
 PCW = {
 	color = rgb { 255 0 0 }
 	color_ui = rgb { 255 0 0 }
-=======
-
+}
 FLA = {
 	color = rgb { 90 58 107 }
 	color_ui = rgb { 90 58 107 }
->>>>>>> Stashed changes
 }

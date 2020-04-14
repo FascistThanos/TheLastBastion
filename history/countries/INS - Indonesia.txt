@@ -46,22 +46,20 @@ if = {
 }
 
 set_cosmetic_tag = INS_HOL # Netherlands East Indies
-
-set_politics = {
-	ruling_party = communism
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = yes
-}
-
 set_convoys = 25
-set_popularities = {
-	communism = 82
-	neutrality = 11
-	fascism = 6
-	liberal = 1
+set_politics = {
+	ruling_party = trotskyism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
 }
-
+set_popularities = {
+	democratic = 5
+	liberal = 10
+	trotskyism = 50
+	communism = 20
+	socialism = 15
+}
 create_country_leader = {
 	name = "Sukarno"
 	desc = ""

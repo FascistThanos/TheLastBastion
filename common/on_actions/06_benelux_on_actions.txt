@@ -40,6 +40,12 @@ on_capitulation = {
 				}
 				set_global_flag = BEL_annex_netherlands
 				set_global_flag = belgium_wins
+				BEL = {
+				transfer_state = 6
+				}
+				6 = {
+				add_core_of = BEL
+				}
 			}
 		}
 	}	
