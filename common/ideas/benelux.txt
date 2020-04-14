@@ -199,7 +199,7 @@ ideas = {
  			conscription_factor = -0.1 
  			}
 		}
-		formations_du_combat = {
+		formations_de_combat = {
 			picture = generic_production_bonus
 			allowed = {	
 				always = no
@@ -428,6 +428,16 @@ ideas = {
  				democratic_drift = -0.1
 				fascism_drift = 0.1
 			}
+		}
+		interventionism = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+ 			 	send_volunteers_tension = -0.5
+ 			  	send_volunteer_divisions_required = -0.25 
+ 			  	rule = { can_send_volunteers = yes }		
+			}		
 		}		
 	}
 }

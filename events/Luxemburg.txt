@@ -1,0 +1,26 @@
+add_namespace = luxemburg
+country_event = {
+	id = luxemburg.0
+	title = luxemburg.0.t
+	desc = luxemburg.0.d
+	#picture = 
+	fire_only_once = yes
+
+	option = {
+	#### REPUBLICANS WIN
+		name = luxemburg.0.a
+		set_politics = {
+		ruling_party = democratic
+		elections_allowed = no
+		}
+	}
+	option = {
+	#### Socialists
+		name = luxemburg.0.b
+		add_stability = -.05
+		set_politics = {
+		ruling_party = trotskyism
+		elections_allowed = no
+		}
+	}
+}

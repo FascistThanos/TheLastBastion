@@ -110,6 +110,7 @@ country_event = {
 
 	option = {
 		name = benelux.2.a
+		ai_chance = {factor = 100}
 		add_to_war = {
 		targeted_alliance = FLA
 		enemy = BEL
@@ -118,10 +119,11 @@ country_event = {
 		HOL = {puppet = FLA}
 
 	}
-	#option = {
-	#	name = benelux.0.b
-	#	add_political_power = 150
-	#}
+	option = {
+		ai_chance = {factor = 0}
+		name = benelux.0.b
+		add_political_power = 50
+	}
 
 }
 country_event = {
@@ -134,6 +136,11 @@ country_event = {
 	trigger = {
 		tag = BEL
 		has_global_flag = BEL_annex_netherlands
+		NOT = {has_country_flag = BEL_choicemade
+		}
+	}
+	immediate = {
+	set_country_flag = BEL_choicemade
 	}
 
 	option = {
