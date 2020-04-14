@@ -108,7 +108,8 @@ bookmarks = {
 			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				#
+				SPR_catalan_crisis1
+				SPR_act_of_neutrality
 			}
 			focuses = {
 				#
