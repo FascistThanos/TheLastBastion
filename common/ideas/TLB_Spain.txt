@@ -144,6 +144,48 @@ ideas = {
         ai_focus_aggressive_factor = -0.10
       }
     }
+
+    SPR_foreign_debt = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = SPR_foreign_debt
+
+      modifier = {
+        stability_factor = -0.10
+        consumer_goods_factor = 0.10
+        economy_cost_factor = 0.15
+      }
+    }
+
+    SPR_foreign_debt_1 = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      name = SPR_foreign_debt
+
+      picture = SPR_foreign_debt
+
+      modifier = {
+        stability_factor = -0.05
+        consumer_goods_factor = 0.05
+        economy_cost_factor = 0.05
+      }
+    }
 	}
 
 	political_advisor = {
