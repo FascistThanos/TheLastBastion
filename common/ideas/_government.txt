@@ -1,0 +1,256 @@
+ideas = {
+  head_of_state = {
+    law = yes
+  }
+
+  recruitment_age = {
+    law = yes
+    twenty = {
+
+      removal_cost = -1
+      cost = 150
+
+      level = 5
+
+      modifier = {
+        war_support_factor = 0.05
+        conscription = 0.01
+      }
+
+      ai_will_do = {
+        factor = 2
+      }
+    }
+
+    nineteen = {
+
+      removal_cost = -1
+      cost = 150
+
+      level = 4
+
+      modifier = {
+        war_support_factor = 0.03
+        conscription = 0.0150
+      }
+
+      ai_will_do = {
+        factor = 3
+      }
+    }
+
+    eighteen = {
+
+      removal_cost = -1
+      cost = 150
+
+      level = 5
+
+      modifier = {
+        conscription = 0.02
+      }
+
+      ai_will_do = {
+        factor = 5
+      }
+    }
+
+    seventeen = {
+      available = {
+        NOT = {
+          has_government = socialism
+          has_government = democratic
+          has_government = liberal
+        }
+      }
+
+      removal_cost = -1
+      cost = 150
+
+      level = 3
+
+      modifier = {
+        war_support_factor = -0.015
+        conscription = 0.025
+      }
+
+      ai_will_do = {
+        factor = 8
+      }
+    }
+
+    sixteen = {
+      available = {
+        AND = {
+          NOT = {
+            has_government = socialism
+            has_government = democratic
+            has_government = liberal
+          }
+
+          OR = {
+            has_idea = extensive_conscription
+            has_idea = service_by_requirement
+            has_idea = all_adults_serve
+            has_idea = scraping_the_barrel
+          }
+        }
+      }
+
+      level = 2
+
+      modifier = {
+        war_support_factor = -0.025
+        conscription = 0.035
+        production_factory_max_efficiency_factor = -0.05
+        production_speed_buildings_factor = -0.05
+      }
+
+      ai_will_do = {
+        factor = 15
+      }
+    }
+
+    twelve = {
+      available = {
+        NOT = {
+          has_government = socialism
+          has_government = democratic
+          has_government = liberal
+        }
+
+        OR = {
+          has_idea = service_by_requirement
+          has_idea = all_adults_serve
+          has_idea = scraping_the_barrel
+        }
+      }
+
+      level = 1
+
+      modifier = {
+        war_support_factor = -0.035
+        stability_factor = -0.025
+        production_factory_max_efficiency_factor = -0.10
+        production_speed_buildings_factor = -0.10
+        conscription = 0.05
+      }
+    }
+  }
+
+  law_enforcement = {
+    law = yes
+    free_society = {
+      available = {
+        NOT = {
+          has_government = communism
+          has_government = trotskyism
+          has_government = fascism
+        }
+      }
+
+      level = 5
+
+      ai_will_do = {
+        factor = 3
+      }
+
+      modifier = {
+        stability_factor = 0.05
+        root_out_resistance_effectiveness_factor = -0.15
+        resistance_target = 0.10
+      }
+    }
+
+    volunteer_officers = {
+
+      level = 4
+
+      modifier = {
+        stability_factor = 0.03
+        root_out_resistance_effectiveness_factor = -0.10
+        resistance_target = 0.05
+      }
+    }
+
+    united_police_corp = {
+
+      level = 3
+
+      modifier = {
+        root_out_resistance_effectiveness_factor = -0.05
+        resistance_target = 0.05
+      }
+    }
+
+    police_state = {
+      level = 2
+
+      modifier = {
+        stability_factor = -0.05
+        resistance_target = -0.03
+        root_out_resistance_effectiveness_factor = 0.03
+      }
+    }
+
+    martial_law = {
+      available = {
+        OR = {
+          has_war = yes
+          has_government = communism
+          has_government = trotskyism
+          has_government = fascism
+        }
+
+        NOT = {
+          has_idea = SPR_act_of_neutrality
+        }
+      }
+
+      level = 1
+
+      modifier = {
+        stability_factor = -0.10
+        resistance_target = -0.10
+        root_out_resistance_effectiveness_factor = 0.10
+      }
+    }
+  }
+
+  censorship = {
+    law = yes
+    free_press = {
+      level = 3
+
+      modifier = {
+        stability_factor = -0.05
+        political_power_gain = 0.05
+      }
+    }
+
+    state_press = {
+      level = 2
+
+      modifier = {
+        stability_factor = -0.02
+        political_power_gain = 0.02
+      }
+    }
+
+    press_eliminated = {
+      available = {
+          has_government = communism
+          has_government = trotskyism
+          has_government = fascism
+      }
+
+      level = 1
+
+      modifier = {
+        stability_factor = 0.03
+        political_power_gain = -0.02
+        war_support_factor = 0.03
+      }
+    }
+  }
+}

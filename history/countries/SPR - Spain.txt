@@ -9,6 +9,13 @@ if = {
 	}
 }
 
+165 = {
+	start_resistance = yes
+	set_compliance = 2
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
 set_research_slots = 3
 
 set_technology = {

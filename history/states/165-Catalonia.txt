@@ -27,8 +27,8 @@ state={
 			}
 		}
 		add_claim_by = SPR
-		add_core_of = ARA
 		add_core_of = CAT
+		add_core_of = ARA
 	}
 
 	provinces={

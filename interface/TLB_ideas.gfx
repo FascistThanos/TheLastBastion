@@ -1169,6 +1169,24 @@ spriteTypes = {
 	}
 
 
+
+	spriteType = {
+		name = "GFX_idea_free_press"
+		texturefile = "gfx/interface/ideas/idea_free_press.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_state_press"
+		texturefile = "gfx/interface/ideas/idea_state_press.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_press_eliminated"
+		texturefile = "gfx/interface/ideas/idea_no_press.dds"
+	}
+
+
+
 	### CONSCRIPTION LAWS
 	spriteType = {
 		name = "GFX_idea_disarmed_nation"
