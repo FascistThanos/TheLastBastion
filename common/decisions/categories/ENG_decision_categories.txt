@@ -2,43 +2,17 @@
 ##### ENG ######
 ################
 
-ENG_appeal_to_imperial_loyalists = {
-
-	icon = eng_appeal_to_imperial_loyalists
-
-	allowed = {
-		OR = {
-			original_tag = ENG
-			original_tag = CAN
-			original_tag = SAF
-			original_tag = RAJ
-			original_tag = AST
-			original_tag = NZL
-		}
-	}
-}
-
-ENG_move_to_secure_the_dominions = {
-
-	icon = eng_move_to_secure_the_dominions
-
-	allowed = {
-		original_tag = ENG
-	}
-}
-
-ENG_imperial_conference_decision = {
-	icon = eng_imperial_conference
-
-	allowed = {
-		original_tag = ENG
-	}
-}
-
-ENG_enforce_the_naval_treaties = {
-	icon = generic_political_actions
-
-	allowed = {
-		original_tag = ENG
-	}
+prepare_for_the_countercoup = {
+     icon = GFX_decision_category_generic
+     available = { 
+         AND = {
+         	has_completed_focus = ENG_request_international_support
+         	original_tag = ENG
+         }
+     }
+     visible = {
+     	NOT = {
+         		has_completed_focus = ENG_countercoup
+         	}
+     }
 }

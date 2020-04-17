@@ -1,0 +1,42 @@
+add_namespace = scripted
+
+news_event = {
+	id = scripted.1
+	title = scripted.1.t
+	desc = scripted.1.desc
+
+	trigger = {
+		AND = {
+			date > 1938.5.6
+			country_exists = ENG
+			country_exists = BGE
+			TAG = BGE
+			NOT = {
+				ENG = {
+					has_country_flag = ENG_parliament_restored
+				}
+			}
+		}
+		
+		}
+
+	fire_only_once = yes
+
+	option = {
+		name = scripted.1.a
+		BGE = {
+			declare_war_on = { target = ENG type = annex_everything}
+		}
+
+		hidden_effect = {
+			set_global_flag = war_of_the_exiles
+			if = {
+				limit = {
+					country_exists = PCW
+				}
+
+				declare_war_on = { target = PCW type = annex_everything }
+			}
+		}
+	}
+}

@@ -1,10 +1,10 @@
 add_namespace = tlbbritain
 
+#The Wilkins Debates, End of the Campbell Act
 country_event = {
 	id = tlbbritain.1
 	title = tlbbritain.1.t
 	desc = tlbbritain.1.desc
-	picture = GFX
 
 	trigger = {
 		focus_progress = {
@@ -17,23 +17,29 @@ country_event = {
 
 	option = {
 		name = tlbbritain.1.a
+		ai_chance = {
+			factor = 100
+		}
 		set_country_flag = ENG_campbell_act_extended
 		add_stability = -0.05
 	}
 
 	option = {
 		name = tlbbritain.1.b
+		ai_chance = {
+			factor = 0
+		}
 		add_stability = 0.05
 		remove_ideas = ENG_13th_congress
 		set_country_flag = ENG_parliament_restored
 	}
 }
 
+#The Wilkins Debates, Former Ministers
 country_event = {
 	id = tlbbritain.2
 	title = tlbbritain.2.t
 	desc = tlbbritain.2.desc
-	picture = GFX
 
 	trigger = {
 		focus_progress = {
@@ -69,11 +75,11 @@ country_event = {
 	}
 }
 
+#The Wilkins Debates, Seat of the Government
 country_event = {
 	id = tlbbritain.3
 	title = tlbbritain.3.t
 	desc = tlbbritain.3.desc
-	picture = GFX
 
 	trigger = {
 		focus_progress = {
@@ -99,11 +105,11 @@ country_event = {
 	}
 }
 
+#Reformation of Parliament
 country_event = {
 	id = tlbbritain.4
 	title = tlbbritain.4.t
 	desc = tlbbritain.4.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -117,11 +123,11 @@ country_event = {
 	}
 }
 
+#Congress Implicated by NSC Findings
 country_event = {
 	id = tlbbritain.5
 	title = tlbbritain.5.t
 	desc = tlbbritain.5.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -132,11 +138,11 @@ country_event = {
 	}
 }
 
+#Rajani Palme Dutt Found Guilty by NSC
 country_event = {
 	id = tlbbritain.6
 	title = tlbbritain.6.t
 	desc = tlbbritain.6.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -161,11 +167,11 @@ country_event = {
 	}
 }
 
+#Pollitt's Folly
 country_event = {
 	id = tlbbritain.7
 	title = tlbbritain.7.t
 	desc = tlbbritain.7.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -187,27 +193,27 @@ country_event = {
 	}
 }
 
+#NSC Raids on Pollitt Administration Uncovered
 country_event = {
 	id = tlbbritain.8
 	title = tlbbritain.8.t
 	desc = tlbbritain.8.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
 	option = {
 		name = tlbbritain.8.a
-		remove_ideas = ENG_national_security_council
+		remove_ideas = ENG_national_security_committee_idea
 		add_stability = 0.1
 		add_political_power = 100
 	}
 }
 
+#Secret Talks with CPGB Congressman
 country_event = {
 	id = tlbbritain.9
 	title = tlbbritain.9.t
 	desc = tlbbritain.9.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -225,21 +231,24 @@ country_event = {
 	}
 }
 
+#Trotskyists in the Union of Britain Request Aid
 country_event = {
 	id = tlbbritain.10
 	title = tlbbritain.10.t
 	desc = tlbbritain.10.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
 	option = {
 		name = tlbbritain.10.a
+		ai_chance = {
+			factor = 75
+		}
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = -500
 		}
-		add_political_power = -500
+		add_political_power = -100
 
 		hidden_effect = {
 			ENG = {
@@ -250,6 +259,9 @@ country_event = {
 
 	option = {
 		name = tlbbritain.10.a
+		ai_chance = {
+			factor = 25
+		}
 
 		hidden_effect = {
 			ENG = {
@@ -259,11 +271,11 @@ country_event = {
 	}
 }
 
+#[FROM.getname] Agrees to Support Coup
 country_event = {
 	id = tlbbritain.11
 	title = tlbbritain.11.t
 	desc = tlbbritain.11.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -281,18 +293,23 @@ country_event = {
 	}
 }
 
+#Countercoup
 country_event = {
 	id = tlbbritain.12
 	title = tlbbritain.12.t
 	desc = tlbbritain.12.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
 	option = {
 		name = tlbbritain.12.a
 
+		remove_ideas = ENG_agents_on_the_inside
+		remove_ideas = ENG_campbell_act
+		remove_ideas = ENG_13th_congress
+
 		hidden_effect = {
+
 			if = {
 	  			limit = {
 	    			check_variable = { coup_support > 7 }
@@ -308,17 +325,18 @@ country_event = {
 	}
 }
 
+#Pollitt Evades Arrest
 country_event = {
 	id = tlbbritain.13
 	title = tlbbritain.13.t
 	desc = tlbbritain.13.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
 	option = {
 		name = tlbbritain.13.a
 		hidden_effect = {
+			set_global_flag = trotskyist_british_civil_war
 			PCW = {
 				declare_war_on = {
 					target = ENG
@@ -377,11 +395,11 @@ country_event = {
 	}
 }
 
+#End of the Civil War
 country_event = {
 	id = tlbbritain.14
 	title = tlbbritain.14.t
 	desc = tlbbritain.14.desc
-	picture = GFX
 
 	trigger = {
 		AND = {
@@ -398,11 +416,11 @@ country_event = {
 	}
 }
 
+#Countercoup Successful
 country_event = {
 	id = tlbbritain.15
 	title = tlbbritain.15.t
 	desc = tlbbritain.15.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -439,11 +457,11 @@ country_event = {
 	}
 }
 
+#First Session
 country_event = {
 	id = tlbbritain.16
 	title = tlbbritain.16.t
 	desc = tlbbritain.16.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -510,11 +528,11 @@ country_event = {
 	}
 }
 
+#Demoratic Ministers Appeal to Hugh Dalton
 country_event = {
 	id = tlbbritain.17
 	title = tlbbritain.17.t
 	desc = tlbbritain.17.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -540,11 +558,11 @@ country_event = {
 	}
 }
 
+#Union of Britain Requests Reconciliation
 country_event = {
 	id = tlbbritain.18
 	title = tlbbritain.18.t
 	desc = tlbbritain.18.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -587,11 +605,11 @@ country_event = {
 	}
 }
 
+#British Government in Exile Agrees to Reunify
 country_event = {
 	id = tlbbritain.19
 	title = tlbbritain.19.t
 	desc = tlbbritain.19.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -609,24 +627,28 @@ country_event = {
 		}
 
 		hidden_effect = {
+			set_global_flag = return_of_the_exiles
+			BGE = {
+				dismantle_faction = yes
+			}
 			country_event = { id = tlbbritain.24 days = 60 }
 			set_country_flag = ENG_successful_reconciliation
 		}
 	}
 }
 
+#British Government in Exile Seeks Reunification in Exchange for Compromises
 country_event = {
 	id = tlbbritain.20
 	title = tlbbritain.20.t
 	desc = tlbbritain.20.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
 	option = {
 		name = tlbbritain.20.a
 		add_stability = -0.2
-		add_popularity = { ideology = trotskyism popularity = -0.3 }
+		add_popularity = { ideology = communism popularity = -0.3 }
 		add_popularity = { ideology = trotskyism popularity = -0.3 }
 		add_timed_idea = { idea = ENG_reparations_to_corporations days = 730 }
 
@@ -656,11 +678,11 @@ country_event = {
 	}
 }
 
+#Union of Britain Accepts Demands
 country_event = {
 	id = tlbbritain.21
 	title = tlbbritain.21.t
 	desc = tlbbritain.21.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -682,11 +704,11 @@ country_event = {
 	}
 }
 
+#Union of Britain Declines Demands
 country_event = {
 	id = tlbbritain.22
 	title = tlbbritain.22.t
 	desc = tlbbritain.22.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -697,11 +719,11 @@ country_event = {
 	}
 }
 
+#Parliament Moves to Disband the General Union
 country_event = {
 	id = tlbbritain.23
 	title = tlbbritain.23.t
 	desc = tlbbritain.23.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -722,11 +744,11 @@ country_event = {
 	}
 }
 
+#Fate of the Royal Family
 country_event = {
 	id = tlbbritain.24
 	title = tlbbritain.24.t
 	desc = tlbbritain.24.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -745,21 +767,15 @@ country_event = {
 	option = {
 		name = tlbbritain.24.c
 
-		add_ideas = ENG_queen_Elizabeth_II
-	}
-
-	option = {
-		name = tlbbritain.24.d
-
 		add_stability = 0.05
 	}
 }
 
+#Second Session
 country_event = {
 	id = tlbbritain.25
 	title = tlbbritain.25.t
 	desc = tlbbritain.25.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -778,11 +794,11 @@ country_event = {
 	}
 }
 
+#An Early Return?
 country_event = {
 	id = tlbbritain.26
 	title = tlbbritain.26.t
 	desc = tlbbritain.26.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -817,11 +833,11 @@ country_event = {
 	}
 }
 
+#British Government in Exile Ready to Return
 country_event = {
 	id = tlbbritain.27
 	title = tlbbritain.27.t
 	desc = tlbbritain.27.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -835,11 +851,11 @@ country_event = {
 	}
 }
 
+#British Government in Exile Ready to Return in Six Months
 country_event = {
 	id = tlbbritain.28
 	title = tlbbritain.28.t
 	desc = tlbbritain.28.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -853,11 +869,11 @@ country_event = {
 	}
 }
 
+#British Government in Exile Ready to Return in a Year
 country_event = {
 	id = tlbbritain.29
 	title = tlbbritain.29.t
 	desc = tlbbritain.29.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -871,17 +887,18 @@ country_event = {
 	}
 }
 
+#Operation Sunset
 country_event = {
 	id = tlbbritain.30
 	title = tlbbritain.30.t
 	desc = tlbbritain.30.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
 	option = {
 		name = tlbbritain.30.a
 		hidden_effect = {
+			set_global_flag = democratic_british_civil_war
 			PCW = {
 				declare_war_on = {
 					target = ENG
@@ -1010,11 +1027,11 @@ country_event = {
 	}
 }
 
+#End of the British Civil War
 country_event = {
 	id = tlbbritain.31
 	title = tlbbritain.31.t
 	desc = tlbbritain.31.desc
-	picture = GFX
 
 	trigger = {
 		AND = {
@@ -1031,11 +1048,11 @@ country_event = {
 	}
 }
 
+#Death of a Hero
 country_event = {
 	id = tlbbritain.32
 	title = tlbbritain.32.t
 	desc = tlbbritain.32.desc
-	picture = GFX
 
 	trigger = {
 		AND = {
@@ -1055,11 +1072,11 @@ country_event = {
 	}
 }
 
+#Campbell Act Extended
 country_event = {
 	id = tlbbritain.34
 	title = tlbbritain.34.t
 	desc = tlbbritain.34.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -1072,11 +1089,11 @@ country_event = {
 	}
 }
 
+#[FROM.getname] Declines to Support Coup
 country_event = {
 	id = tlbbritain.35
 	title = tlbbritain.35.t
 	desc = tlbbritain.35.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -1085,11 +1102,11 @@ country_event = {
 	}
 }
 
+#Ministers Demand Compensation
 country_event = {
 	id = tlbbritain.36
 	title = tlbbritain.36.t
 	desc = tlbbritain.36.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -1105,11 +1122,11 @@ country_event = {
 	}
 }
 
+#British Government in Exile Declines Reunification
 country_event = {
 	id = tlbbritain.37
 	title = tlbbritain.37.t
 	desc = tlbbritain.37.desc
-	picture = GFX
 
 	is_triggered_only = yes
 
@@ -1120,11 +1137,11 @@ country_event = {
 	}
 }
 
+#British Government of Exile Prepared to Return
 country_event = {
 	id = tlbbritain.38
 	title = tlbbritain.38.t
 	desc = tlbbritain.38.desc
-	picture = GFX
 
 	is_triggered_only = yes
 

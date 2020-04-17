@@ -45,6 +45,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SPR_catalan_resists"
+		texturefile = "gfx/interface/ideas/SPR_Catalan_Resistance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SPR_act_of_neutrality"
+		texturefile = "gfx/interface/ideas/SPR_act_of_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SPR_foreign_debt"
+		texturefile = "gfx/interface/ideas/SPR_foreign_debt.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}
@@ -4177,5 +4192,75 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_TLB_Homeland_department"
 		texturefile = "gfx/interface/ideas/Homeland_Departmnet.dds"
+	}
+
+	### Union of Britain Ideas ###
+	spriteType = {
+		name = "GFX_idea_ENG_totalists_purged"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_agents_on_the_inside"
+		texturefile = "gfx/interface/ideas/generic_spy_coup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_scientific_exodus"
+		texturefile = "gfx/interface/ideas/SOV_scientist_defect.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_campbell_act"
+		texturefile = "gfx/interface/ideas/idea_hun_treaty_of_trianon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_national_security_committee_idea"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_national_security_committee_expanded_idea"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_reparations_to_corporations"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.ddsta"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_trotskyist_outlook"
+		texturefile = "gfx/interface/ideas/fourth_international.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_worker's_rights_act"
+		texturefile = "gfx/interface/ideas/idea_eng_tackle_capitalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_13th_congress"
+		texturefile = "gfx/interface/ideas/idea_hol_haven_of_tolerance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_14th_congress_idea"
+		texturefile = "gfx/interface/ideas/idea_hol_haven_of_tolerance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_general_union"
+		texturefile = "gfx/interface/ideas/idea_eng_spirit_of_the_industrial_revolution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_king_Edward_VIII"
+		texturefile = "gfx/interface/ideas/idea_king_edward.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_king_George_VI"
+		texturefile = "gfx/interface/ideas/idea_george_vi.dds"
 	}
 }

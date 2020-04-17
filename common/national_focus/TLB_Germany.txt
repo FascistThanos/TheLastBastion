@@ -680,6 +680,26 @@ focus_tree = {
       }
     }
   }
+  focus = {
+    id = GER_safeguard_FRA
+    icon = GFX_FRA_FrenchFlag
+    prerequisite = {
+      focus = GER_democracy_is_the_only_way
+    }
+
+    x = 0
+    y = 11
+
+    cost = 10
+
+    completion_reward = {
+      give_guarantee = FRA
+      FPR = {
+        country_event = tlbgermaninfluence.1
+      }
+    }
+  }
+
 
 #############Civil War Interventionism
   focus = {
@@ -735,7 +755,6 @@ focus_tree = {
   }
 
 #########Industry
-
   focus = {
     id = GER_military_industry_in_the_east
     icon = GFX_goal_generic_construct_mil_factory
@@ -821,6 +840,231 @@ focus_tree = {
         add_extra_state_shared_building_slots = 1
         add_building_construction = {
           type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+  }
+  focus = {
+    id = GER_improve_synthetic_refineries
+    icon = GFX_Generic_Oil_Production
+    prerequisite = { focus = GER_construction_effort focus = GER_military_industry_in_the_east }
+
+    x = 1
+    y = 6
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      add_ideas = GER_improved_synthetic_refineries
+      modify_building_resources = {
+        building = synthetic_refinery
+        resource = rubber
+        amount = 2
+      }
+    }
+  }
+
+  focus = {
+    id = GER_civilian_industry_in_berlin
+    icon = GFX_Generic_Industry
+    prerequisite = { focus = GER_consumer_factories_in_the_west }
+
+    x = 5
+    y = 6
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      64 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = industrial_complex
+          level = 2
+          instant_build = yes
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = GER_military_industry_in_berlin
+    icon = GFX_Generic_Industry
+    prerequisite = { focus = GER_military_industry_in_the_east }
+
+    x = -1
+    y = 6
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      64 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = arms_factory
+          level = 2
+          instant_build = yes
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = GER_military_industry_in_frankfurt
+    icon = GFX_Generic_Factory_Complex
+    prerequisite = { focus = GER_military_industry_in_berlin }
+
+    x = -2
+    y = 7
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      64 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = arms_factory
+          level = 2
+          instant_build = yes
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = GER_civilian_industry_in_frankfurt
+    icon = GFX_Generic_Factory_Complex
+    prerequisite = { focus = GER_civilian_industry_in_berlin }
+
+    x = 6
+    y = 7
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      64 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = industrial_complex
+          level = 2
+          instant_build = yes
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = GER_expand_the_autobahn
+    icon = GFX_goal_generic_construct_infrastructure
+    prerequisite = { focus = GER_civilian_industry_in_berlin focus = GER_oil_drilling_commissions }
+
+    x = 4
+    y = 7
+
+    cost = 10
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    completion_reward = {
+      68 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      64 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      59 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      56 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      57 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      55 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      60 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      58 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      61 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+      }
+      65 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = infrastructure
           level = 1
           instant_build = yes
         }
@@ -1105,232 +1349,6 @@ focus_tree = {
 
     completion_reward = {
       add_ideas = GER_conscription_campaigns
-    }
-  }
-
-  focus = {
-    id = GER_improve_synthetic_refineries
-    icon = GFX_Generic_Oil_Production
-    prerequisite = { focus = GER_construction_effort focus = GER_military_industry_in_the_east }
-
-    x = 1
-    y = 6
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      add_ideas = GER_improved_synthetic_refineries
-      modify_building_resources = {
-        building = synthetic_refinery
-        resource = rubber
-        amount = 2
-      }
-    }
-  }
-
-  focus = {
-    id = GER_civilian_industry_in_berlin
-    icon = GFX_Generic_Industry
-    prerequisite = { focus = GER_consumer_factories_in_the_west }
-
-    x = 5
-    y = 6
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      802 = {
-        add_extra_state_shared_building_slots = 2
-        add_building_construction = {
-          type = industrial_complex
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-
-  focus = {
-    id = GER_military_industry_in_berlin
-    icon = GFX_Generic_Industry
-    prerequisite = { focus = GER_military_industry_in_the_east }
-
-    x = -1
-    y = 6
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      802 = {
-        add_extra_state_shared_building_slots = 2
-        add_building_construction = {
-          type = arms_factory
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-
-  focus = {
-    id = GER_military_industry_in_frankfurt
-    icon = GFX_Generic_Factory_Complex
-    prerequisite = { focus = GER_military_industry_in_berlin }
-
-    x = -2
-    y = 7
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      802 = {
-        add_extra_state_shared_building_slots = 2
-        add_building_construction = {
-          type = arms_factory
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-
-  focus = {
-    id = GER_civilian_industry_in_frankfurt
-    icon = GFX_Generic_Factory_Complex
-    prerequisite = { focus = GER_civilian_industry_in_berlin }
-
-    x = 6
-    y = 7
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      802 = {
-        add_extra_state_shared_building_slots = 2
-        add_building_construction = {
-          type = industrial_complex
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-
-  focus = {
-    id = GER_expand_the_autobahn
-    icon = GFX_goal_generic_construct_infrastructure
-    prerequisite = { focus = GER_civilian_industry_in_berlin focus = GER_oil_drilling_commissions }
-
-    x = 4
-    y = 7
-
-    cost = 10
-
-    ai_will_do = {
-      factor = 50
-    }
-
-    completion_reward = {
-      802 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      64 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      59 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      56 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      57 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      55 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      60 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      58 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      61 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
-      65 = {
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-          type = infrastructure
-          level = 1
-          instant_build = yes
-        }
-      }
     }
   }
 

@@ -71,6 +71,8 @@
  GER_request_the_return_of_the_rhineland:0 "Request The Return Of The Rhineland"
  GER_democracy_is_the_only_way:0 "Democracy Is The Only Way"
  GER_annex_the_rhineland:0 "Annex The Rhineland"
+ GER_safeguard_FRA:0 "Safeguard the French"
+
  #Monarchy
  GER_trust_in_the_monarchy:0 "Trust In the Kaiserreich"
  #Fascism
@@ -148,6 +150,9 @@
  tlbgermany.9.t:0 "French Republic Has Agreed To Return The Rhineland"
  tlbgermany.9.d:0 "Placeholder"
  tlbgermany.9.a:0 "Exellent!"
+ tlbgermaninfluence.1.t:0 "The German Government Recognizes the French Republic!"
+ tlbgermaninfluence.1.d:0 "Placeholder"
+ tlbgermaninfluence.1.a"0 "Keep this information away from the citizens!"
 #Tooltips
  GER_tt_dead:0 "§R  If the French Republic is at war with FPR or Owns all core states The Treaty of Versailles will be removed, but the French Republic gets a puppet wargoal against you.§! \n-----------------------------------------------------------------\n§G  If the FPR wins the French civil war and the French Republic is put into exile then you can remove The Treaty of Versailles without any consequences.§!"
  GER_tt_monarchy:0 "§GIf popularity for the Monarchist party is more than 60% you government will switch to Monarchy.§! \n"

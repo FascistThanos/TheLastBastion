@@ -42,4 +42,30 @@ on_actions = {
             }
         }
     }
+    on_war = { 
+    	effect = { 
+    		if = {
+    			limit = {
+    				SOV = {
+    					has_war_with = USA
+    				}
+    			}
+
+    			news_event = { id = news.1 days = 2 }
+    		} 
+    	}
+    }
+    on_war = { 
+    	effect = { 
+    		if = {
+    			limit = {
+    				USA = {
+    					has_war_with = SOV
+    				}
+    			}
+
+    			set_global_flag = soviet_american_war
+    		} 
+    	}
+    }
 }
