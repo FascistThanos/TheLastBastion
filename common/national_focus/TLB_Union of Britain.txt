@@ -734,6 +734,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 
@@ -754,6 +755,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = "British Communist Alternative"
 		}
 	}
 
@@ -774,6 +779,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			SOV = {
+				country_event = { id = tlbbritain.42 days = 2 }
+			}
 		}
 	}
 
@@ -794,12 +802,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = "5th International"
 		}
 	}
 
 	focus = {
 		id = ENG_franco-british_alliance
 		prerequisite = { focus = ENG_british_communist_alternative }
+		available = {
+			FPR = {
+				exists = yes
+			}
+		}
 		relative_position_id = ENG_british_communist_alternative
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		x = -1
@@ -812,12 +829,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			FPR = {
+				country_event = { id = tlbbritain.43 days = 2 }
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_invite_denmark
 		prerequisite = { focus = ENG_british_communist_alternative }
+		bypass = {
+			DEN = {
+				exists = no
+			}
+		}
 		relative_position_id = ENG_british_communist_alternative
 		icon = GFX_goal_generic_major_alliance
 		x = 0
@@ -830,12 +855,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			DEN = {
+				country_event = { id = tlbbritain.44 days = 2 }
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_expand_nordic_influence
 		prerequisite = { focus = ENG_invite_denmark }
+		bypass = {
+			AND = {
+				NOR = { exists = no }
+				SWE = { exists = no }
+				FIN = { exists = no }
+			}
+		}
 		relative_position_id = ENG_invite_denmark
 		icon = GFX_goal_generic_national_unity
 		x = 0
@@ -848,6 +883,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			NOR = {
+				add_ideas = ENG_british_influence
+			}
+			SWE = {
+				add_ideas = ENG_british_influence
+			}
+			FIN = {
+				add_ideas = ENG_british_influence
+			}
 		}
 	}
 
@@ -866,6 +910,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = ENG_reds_in_the_west
 		}
 	}
 
@@ -884,6 +929,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				FPR = {
+					country_event = { id = tlbbritain.45 hours = 1 }
+				}
+			}
 		}
 	}
 
@@ -908,6 +958,9 @@ focus_tree = {
 	focus = {
 		id = ENG_topple_denmark
 		prerequisite = { focus = ENG_a_new_world_revolution }
+		bypass = {
+			DEN = { exists = no }
+		}
 		relative_position_id = ENG_a_new_world_revolution
 		icon = GFX_goal_generic_major_war
 		x = 0
@@ -920,6 +973,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DEN
+			}
 		}
 	}
 
@@ -927,6 +984,9 @@ focus_tree = {
 		id = ENG_subjugate_finland_focus
 		prerequisite = { focus = ENG_one_true_revolution }
 		mutually_exclusive = { focus = ENG_ally_finland }
+		bypass = {
+			FIN = { exists = no }
+		}
 		relative_position_id = ENG_one_true_revolution
 		icon = GFX_goal_generic_more_territorial_claims
 		x = -1
@@ -939,6 +999,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FIN
+			}
 		}
 	}
 
@@ -946,6 +1010,9 @@ focus_tree = {
 		id = ENG_molotov-mitford_pact
 		prerequisite = { focus = ENG_expand_nordic_influence focus = ENG_topple_denmark }
 		mutually_exclusive = { focus = ENG_one_true_revolution }
+		available = {
+			SOV = { exists = yes }
+		}
 		relative_position_id = ENG_expand_nordic_influence
 		icon = GFX_Focus_ENG_Mitford_Faction
 		x = 3
@@ -958,6 +1025,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			SOV = {
+				country_event = { id = tlbbritain.46 days = 2 }
+			}
 		}
 	}
 
@@ -965,6 +1035,24 @@ focus_tree = {
 		id = ENG_ally_finland
 		prerequisite = { focus = ENG_one_true_revolution }
 		mutually_exclusive = { focus = ENG_subjugate_finland_focus }
+		available = {
+			AND = {
+				ENG = {
+					has_government = trotskyism
+				}
+				FIN = {
+					has_government = trotskyism
+				}
+				NOT = {
+					FIN = {
+						is_in_faction = yes
+					}
+				}
+				FIN = {
+					exists = yes
+				}
+			}
+		}
 		relative_position_id = ENG_one_true_revolution
 		icon = GFX_focus_invite_finland
 		x = 1
@@ -977,12 +1065,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			FIN = {
+				country_event = { id = tlbbritain.47 days = 2 }
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_end_of_the_american_dream
 		prerequisite = { focus = ENG_subjugate_finland focus = ENG_molotov-mitford_pact focus = ENG_ally_finland }
+		available = {
+			USA = { exists = yes }
+		}
 		relative_position_id = ENG_molotov-mitford_pact
 		icon = GFX_focus_eng_crush_the_dream
 		x = 0
@@ -1002,6 +1096,9 @@ focus_tree = {
 		id = ENG_one_true_revolution
 		prerequisite = { focus = ENG_expand_nordic_influence focus = ENG_topple_denmark }
 		mutually_exclusive = { focus = ENG_molotov-mitford_pact }
+		available = {
+			SOV = { exists = yes }
+		}
 		relative_position_id = ENG_expand_nordic_influence
 		icon = GFX_goal_generic_war_with_comintern
 		x = 1
@@ -1021,6 +1118,9 @@ focus_tree = {
 	focus = {
 		id = ENG_crush_the_soviets
 		prerequisite = { focus = ENG_subjugate_finland_focus focus = ENG_ally_finland }
+		available = {
+			SOV = { exists = yes }
+		}
 		icon = GFX_focus_attack_soviet
 		relative_position_id = ENG_ally_finland
 		x = -1
@@ -1051,6 +1151,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -1070,6 +1171,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_rule = { 
+				can_create_factions = yes 
+			}
+			create_faction = "Stresa Front"
+			FRA = {
+				country_event = { id = tlbbritain.33 days = 2 }
+			}
+			ITA = {
+				country_event = { id = tlbbritain.33 days = 2 }
+			}
 		}
 	}
 
@@ -1088,6 +1199,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DEN
+			}
 		}
 	}
 
@@ -1106,6 +1221,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			NOR = {
+					country_event = { id = tlbbritain.40 days = 2 }
+				}
 		}
 	}
 
@@ -1125,6 +1243,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			GER = {
+					country_event = { id = tlbbritain.41 days = 2 }
+				}
 		}
 	}
 
@@ -1144,6 +1265,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = SOV
+			}
 		}
 	}
 
@@ -1162,6 +1287,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = FIN
+			}
 		}
 	}
 
@@ -1181,6 +1310,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+				NOR = {
+					country_event = { id = tlbbritain.39 days = 2 }
+				}
 		}
 	}
 
@@ -1200,6 +1332,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = TUR
+			}
 		}
 	}
 
@@ -1207,6 +1343,9 @@ focus_tree = {
 		id = ENG_isolationism
 		prerequisite = { focus = ENG_the_coming_storm }
 		mutually_exclusive = { focus = ENG_revive_the_stresa_front }
+		available = {
+			threat > 0.25
+		}
 		relative_position_id = ENG_the_coming_storm
 		icon = GFX_Generic_British_Isles
 		x = -1
@@ -1219,12 +1358,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = ENG_isolationist_outlook
 		}
 	}
 
 	focus = {
 		id = ENG_homeland_defense
 		prerequisite = { focus = ENG_isolationism }
+		available = {
+			threat > 0.5
+		}
 		relative_position_id = ENG_isolationism
 		icon = GFX_goal_generic_defence
 		x = 0
@@ -1237,12 +1380,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = ENG_defend_the_british_isless
 		}
 	}
 
 	focus = {
 		id = ENG_plotting_a_steady_course
 		prerequisite = { focus = ENG_homeland_defense }
+		available = {
+			threat > 0.75
+		}
 		relative_position_id = ENG_homeland_defense
 		icon = GFX_Focus_ENG_Steady_as_She_Goes
 		x = 0
@@ -1255,6 +1402,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = ENG_our_course_never_falters
 		}
 	}
 

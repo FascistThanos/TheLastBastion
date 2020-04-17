@@ -618,6 +618,10 @@
   tlbbritain.32.t:0 "Death of a Hero"
   tlbbritain.32.desc:0 "The nation of Britain has gone into mourning today after it was discovered that the wildly popular businessman Robert E. O. Speedwagon was found dead in his London home. Having risen to prominence throughout the 20th century as an oil tycoon who used his immense wealth for the common good, the nation will never forget all the good that he did for this nation. His name lives on posthumously in the charity he founded know as the Speedwagon Foundation, which is responsible for over 100000 pounds in charity work annually."
   tlbbritain.32.a:0 "He shall be remembered as one of the greatest men Britain has ever known!"
+  tlbbritain.33.t:0 "Reformation of the Stresa Front?"
+  tlbbritain.33.t.desc:0 "The British embassy has been very busy lately planning what appears to be a large-scale diplomatic mission. That work was unveiled today when the British ambassador announced that the Union of Britain wishes to reform the Stresa Front. An alliance dedicated to keeping Germany in check after the events of Great War, it fell apart with the German Civil War over a decade ago. The British now propose that the alliance should be repuposed to halt Soviet expansion into Western Europe."
+  tlbbritain.33.a:0 "To our British allies! Together we are strong!"
+  tlbbritain.33.b:0 "These kinds of alliances caused the Great War in the first place, and we have no need of them now."
   tlbbritain.34.t:0 "Campbell Act Extended"
   tlbbritain.34.desc:0 "As the Wilkins Debates came to a close it became clear that the Pollitt government was going to stay in power. Earlier this morning they passed a measure extending the Campbell Act and the length of the provisional government indefinitely."
   tlbbritain.34.a:0 "Pollitt will bring continued prosperity to this nation!"
@@ -634,6 +638,11 @@
   tlbbritain.38.t:0 "British Government of Exile Prepared to Return"
   tlbbritain.38.desc:0 "After requesting time to prepare before we intiate a democratic civil war in the Union of Britian, the BGE went to work extensively increasing their military capiblities to ready themselves for the war. It now appears they are finally ready and the liberation of Britain can soon begin."
   tlbbritain.38.a:0 "To the liberation!"
+  tlbbritain.39.t:0 "Union of Britain Demands Black Sea Access"
+  tlbbritain.40.t:0 "Union of Britain Proposes Alliance"
+  tlbbritain.40.desc:0 "The Union of Britain has extended an alliance offer to us. While many consider it prudent that we ally with a larger nation, our access to the North Sea and larger mineral deposits give us a large amount of bargining power, and we might want to wait for a better offer. However, if we wait too long we might miss out on our chance for protection and fall victim to the agressive conquests of the Soviets to the east."
+  tlbbritain.40.a:0 "We shall accept the offer."
+  tlbbritain.40.b:0 "It would be best to stay neutral for now."
 
   #Union of Britain Country Flags
   ENG_campbell_act_extended:0 "The CPGB has voted to extend the Campbell Act"
