@@ -1,0 +1,26 @@
+﻿l_english:
+
+  # COUNTRY NAMES
+  BEL:0 "Belgium"
+  FLA:0 "Revolutionary Flanders"
+
+
+
+  # FOCUS TREE
+
+
+
+
+
+
+
+
+
+
+  ##### EVENTS ######
+  belgium.0.t:0  "The Socialist Democrats Win!"  
+  belgium.0.a:0  "The Socialist Democrats Win!"
+  belgium.0.b:0  "The Conservatives Win"
+  belgium.0.c:0  "Degrelle and his Fascists steal the victory!"
+  belgium.0.d:0  "The Trotskyist party wins!"
+     

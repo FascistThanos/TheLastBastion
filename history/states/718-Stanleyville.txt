@@ -10,7 +10,7 @@ state = {
 	}
 
 	history = {
-		owner = UOB
+		owner = BEL
 		buildings = {
 			infrastructure = 2
 		}
