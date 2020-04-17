@@ -1188,7 +1188,7 @@ focus_tree = {
 	focus = {
 		id = HOL_prepare_for_war
 		icon = GFX_goal_generic_military_deal
-		prerequisite = {focus = HOL_our_own_path}
+		prerequisite = {focus = HOL_our_own_path focus = HOL_join_the_soviets}
 		relative_position_id = 	HOL_our_own_path
 		x = -1
 		y = 1
@@ -1271,7 +1271,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				country_event = {id = benelux.14}
+				#country_event = {id = benelux.14}
 			}
 
 	}	

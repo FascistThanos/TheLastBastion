@@ -45,7 +45,10 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = fcw_triggered
+		set_global_flag = fcw_help
+	
 	}
+
 
 	option = {
 		name = benelux.1.a
@@ -72,6 +75,7 @@ country_event = {
 		FLA = {
 		load_oob = "FLA_1936"
 		}
+
 	}
 	#option = {
 	#	name = ben.1.b
@@ -93,13 +97,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		
-		tag = HOL
-#		FLA = {
-#		has_war
-#		}
-		has_global_flag = flanders_call_to_arms
 
+		tag = HOL
+#		has_global_flag = fcw_help
 		NOT = {
 			has_country_flag = help_triggered
 		}
@@ -116,12 +116,12 @@ country_event = {
 		enemy = BEL
 		hostility_reason -= asked_to_join
 		}
-		HOL = {puppet = FLA}
+		HOL = {puppet = FLA}	
 
 	}
 	option = {
 		ai_chance = {factor = 0}
-		name = benelux.0.b
+		name = benelux.2.b
 		add_political_power = 50
 	}
 
@@ -246,7 +246,7 @@ country_event = {
 	}
 	
 }
-#DEMAND LUX
+#LUX DENIED
 country_event = {
 	id = benelux.8
 	title = benelux.8.t
@@ -256,12 +256,13 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	###ACCEPTED
+	###DENIED
 		name = benelux.8.a
 		annex_country = { target = LUX}
+
 	}
 }
-#LUX DENIED
+#DEMAND LUX
 country_event = {
 	id = benelux.9
 	title = benelux.9.t
@@ -271,16 +272,17 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	###DENIED
+	###ACCEPTED
 		name = benelux.9.a
 		HOL = {
 			declare_war_on = {
-			target = FLA
+			target = LUX
 			type = annex_everything
 			}
-		}
+		}		
 	}
 }
+
 country_event = {
 	id = benelux.10
 	title = benelux.10.t
