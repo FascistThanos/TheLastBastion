@@ -63,11 +63,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Velimir Deželić"
+	name = "Ivan Šubašić"
+	desc = "POLITICS_SUBASIC_DESC"
+	picture = "Portrait_Croatia_Ivan_Subasic.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Velimir Đuro Josip Deželić"
 	desc = "POLITICS_DEZELIC_DESC"
 	picture = "Portrait_Croatia_Velimir_Dezelic.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = economic
 	traits = {
 		#
 	}

@@ -1,0 +1,225 @@
+add_namespace = TLB_SPR
+
+country_event = {
+  id = TLB_SPR.1
+  title = TLB_SPR.1.t
+  desc = TLB_SPR.1.d
+  picture = GFX_report_event_catalonian_uprising
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_SPR.1.a # Down with these scum!
+    ai_chance = {
+      factor = 5
+    }
+
+    release = CAT
+    hidden_effect = {
+      CAT = {
+        load_oob = "CAT_1936"
+      }
+
+      remove_ideas = {
+        SPR_catalan_suppression
+        SPR_act_of_neutrality
+      }
+    }
+
+    add_named_threat = {
+      threat = 10
+      name = CAT_uprising
+    }
+
+    create_wargoal = {
+      type = annex_everything
+      target = CAT
+    }
+  }
+
+  option = {
+    name = TLB_SPR.1.b # They can exist, for now.
+    ai_chance = {
+      factor = 15
+    }
+
+    release = CAT
+    hidden_effect = {
+      CAT = {
+        load_oob = "CAT_1936"
+      }
+
+      remove_ideas = SPR_catalan_suppression
+    }
+
+    add_named_threat = {
+      threat = 5
+      name = CAT_uprising1
+    }
+
+    add_political_power = 100
+  }
+
+  option = {
+    name = TLB_SPR.1.c # Visca Catalunya!
+    ai_chance = {
+      factor = 1
+    }
+
+    release_puppet = CAT
+    hidden_effect = {
+      CAT = {
+        load_oob = "CAT_1936"
+      }
+
+      remove_ideas = SPR_catalan_suppression
+    }
+
+    add_political_power = 100
+    add_war_support = 0.05
+  }
+}
+
+country_event = {
+  id = TLB_SPR.2
+  title = TLB_SPR.2.t
+  desc = TLB_SPR.2.d
+  picture = GFX_report_event_purge_trial
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_SPR.2.a # Execute the traitor!
+
+    remove_unit_leader = 1111
+    add_stability = 0.05
+
+    hidden_effect = {
+      add_popularity = {
+        ideology = fascism
+        popularity = -0.10
+      }
+    }
+  }
+
+  option = {
+    name = TLB_SPR.2.b # Imprison him for life!
+
+    remove_unit_leader = 1111
+    add_war_support = 0.05
+
+    hidden_effect = {
+      add_popularity = {
+        ideology = fascism
+        popularity = -0.05
+      }
+    }
+  }
+
+  option = {
+    name = TLB_SPR.2.c # He may be of use still
+
+    add_stability = -0.5
+
+    hidden_effect = {
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.10
+      }
+    }
+  }
+}
+
+country_event = {
+  id = TLB_SPR.3
+  title = TLB_SPR.3.t
+  desc = TLB_SPR.3.d
+  picture = GFX_report_event_king_speech
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_SPR.3.a # King Javier of the Carlists!
+
+    add_stability = 0.05
+
+    retire_country_leader = yes
+
+    set_party_name = {
+      ideology = neutrality
+      name = "PC"
+      long_name = "Partido Carlista"
+    }
+
+    hidden_effect = {
+      add_popularity = {
+        ideology = monarchism
+        popularity = -0.10
+      }
+
+      add_popularity = {
+        ideology = fascism
+        popularity = -0.10
+      }
+
+      add_popularity = {
+        ideology = neutrality
+        popularity = 0.05
+      }
+    }
+  }
+
+  option = {
+    name = TLB_SPR.3.b # King Alfonso XIII, the rightful heir!
+
+    add_stability = 0.05
+
+    set_politics = {
+      ruling_party = monarchist
+    }
+
+    hidden_effect = {
+      add_popularity = {
+        ideology = neutrality
+        popularity = -0.10
+      }
+
+      add_popularity = {
+        ideology = fascism
+        popularity = -0.10
+      }
+
+      add_popularity = {
+        ideology = monarchism
+        popularity = 0.10
+      }
+    }
+  }
+
+  option = {
+    name = TLB_SPR.3.c # Caudillo Franco, the democratic candidate!
+
+    add_stability = 0.05
+
+    set_politics = {
+      ruling_party = fascism
+    }
+
+    hidden_effect = {
+      add_popularity = {
+        ideology = neutrality
+        popularity = -0.10
+      }
+
+      add_popularity = {
+        ideology = monarchism
+        popularity = -0.10
+      }
+
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.10
+      }
+    }
+  }
+}
