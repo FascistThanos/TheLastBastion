@@ -44,13 +44,17 @@ bookmarks = {
 			}
 		}
 		"ENG"={
-			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
+			history = "ENG_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				#
+				ENG_campbell_act
+				ENG_general_union
+				ENG_13th_congress
 			}
 			focuses = {
-				#
+				ENG_extend_the_campbell_act
+				ENG_reformation_of_parliament
+				ENG_scarlet_circle
 			}
 		}
 
