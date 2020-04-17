@@ -4,6 +4,12 @@ on_capitulation = {
 			if = {
 				limit = {
 					original_tag = BEL
+					not = {
+					has_global_flag = flanders_wins
+					OR = {
+					has_global_flag = belgium_wins
+					}
+					}
 				}
 				FLA = {
 				transfer_state = 34
@@ -21,6 +27,12 @@ on_capitulation = {
 			if = {
 				limit = {
 					original_tag = FLA
+					not = {
+					has_global_flag = flanders_wins
+					OR = {
+					has_global_flag = belgium_wins
+					}
+					}					
 				}
 				BEL = {
 				transfer_state = 6
@@ -37,6 +49,12 @@ on_capitulation = {
 			if = {
 				limit = {
 					original_tag = HOL
+					not = {
+					has_global_flag = flanders_wins
+					OR = {
+					has_global_flag = belgium_wins
+					}
+					}					
 				}
 				set_global_flag = BEL_annex_netherlands
 				set_global_flag = belgium_wins

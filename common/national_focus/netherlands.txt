@@ -1,5 +1,5 @@
 focus_tree = {
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 2500 y = 1000 }
 	id = Netherlands
 	
 	country = {
@@ -19,9 +19,9 @@ focus_tree = {
 
 ##########INDUSTRY BRANCH#######
 	focus = {
-		id = HOL_TEST_depression_recovery
-		icon = GFX_goal_focus_generic_industry
-		x = 4
+		id = HOL_depression_recovery
+		icon = GFX_Generic_Industry
+		x = 2
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -34,9 +34,9 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_abandon_gold_standard
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_TEST_depression_recovery }
-		x = 5
+		icon = GFX_GER_pay_the_debt
+		prerequisite = { focus = HOL_depression_recovery }
+		x = 2
 		y = 2
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -51,9 +51,9 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_stimulate_spending
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = HOL_abandon_gold_standard }
-		x = 5
+		x = 2
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -67,9 +67,9 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_revitalize_industries
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Industrialization
 		prerequisite = { focus = HOL_stimulate_spending }
-		x = 5
+		x = 2
 		y = 4
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -85,7 +85,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = HOL_revitalize_industries}
 		x = 4
-		y = 5
+		y = 8
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
@@ -210,9 +210,9 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_expand_infrastructure
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HOL_revitalize_industries}
-		x = 6
+		x = 2
 		y = 5
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -220,15 +220,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-       		7 = {
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = infrastructure
-                    level = 2
-                    instant_build = yes
-                }
 
-            }
             35 = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
@@ -250,10 +242,10 @@ focus_tree = {
         } 
 	}
 	focus = {
-		id = HOL_civilian_expansion
-		icon = GFX_goal_focus_generic_industry
+		id = HOL_koninklijke_DSM
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HOL_expand_infrastructure}
-		x = 6
+		x = 2
 		y = 6
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -261,15 +253,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-       		7 = {
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-
-            }
+       		#7 = {
+            #    add_extra_state_shared_building_slots = 1
+            #    add_building_construction = {
+            #        type = industrial_complex
+            #        level = 1
+            #        instant_build = yes
+            #    }
+            #
+            #}
             35 = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
@@ -277,15 +269,19 @@ focus_tree = {
                     level = 1
                     instant_build = yes
                 }
-
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
             }
         } 
 	}
 	focus = {
 		id = HOL_develop_the_north
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_civilian_expansion}
-		x = 5
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = HOL_koninklijke_DSM}
+		x = 0
 		y = 7
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -306,9 +302,9 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_expand_universities
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_focus_research
 		prerequisite = { focus = HOL_develop_the_north}
-		x = 5
+		x = 0
 		y = 8
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -321,9 +317,9 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_industrialize_the_colonies
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_civilian_expansion}
-		x = 7
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = HOL_koninklijke_DSM}
+		x = 2
 		y = 7
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -362,9 +358,9 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_exploit_the_colonies
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_civilian_expansion}
-		x = 7
+		icon = GFX_Generic_Railroads
+		prerequisite = { focus = HOL_industrialize_the_colonies}
+		x = 2
 		y = 8
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -390,8 +386,8 @@ focus_tree = {
 ##########POLITICAL BRANCH#########
 	focus = {
 		id = HOL_instigate_flanders
-		icon = GFX_goal_focus_generic_industry
-		x = 10
+		icon = GFX_instigate_flanders
+		x = 0
 		y = 1
 		cost = 1	
 		ai_will_do = {
@@ -407,12 +403,12 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_flemish_workers_to_arms
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_TotSoc_Focus
 		prerequisite = {focus = HOL_instigate_flanders }
 			ai_will_do = {
 		factor = 100
 		}	
-		x = 10
+		x = 0
 		y = 2
 		cost = 5
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -439,7 +435,7 @@ focus_tree = {
 			is_puppet_of = HOL
 			}
 		}
-		x = 8
+		x = 0
 		y = 3
 		cost = 5
 
@@ -458,7 +454,7 @@ focus_tree = {
 		id = HOL_pressure_luxemburg
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {focus = HOL_integrate_flanders }
-		x = 8
+		x = 0
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -487,9 +483,9 @@ focus_tree = {
 			owns_state = 8
 			owns_state = 6
 		}
-		x = 8
+		x = 0
 		y = 5
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -505,11 +501,114 @@ focus_tree = {
 
 	#######################
 	focus = {
-		id = HOL_stabilize_the_nation
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_flemish_workers_to_arms}	
-		x = 10
-		y = 3
+		id = HOL_trotskyist_elections
+		icon = GFX_focus_generic_soviet_politics
+		x = 13
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = {id = benelux.14}
+		}
+	}
+	######## CATHOLIC DEMOCRATS
+	focus = {
+		id = HOL_the_RKSP_resurgent
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_trotskyist_elections}
+		available = { has_country_flag = HOL_democracy}
+		relative_position_id = HOL_trotskyist_elections		
+		x = -5
+		y = 1
+		cost = 1
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HOL_freedom_of_press
+		icon = GFX_GER_french_deal
+		prerequisite = {focus =HOL_the_RKSP_resurgent}
+		relative_position_id = HOL_the_RKSP_resurgent	
+		x = 1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = HOL_support_schools
+		icon = GFX_focus_research
+		prerequisite = {focus =HOL_freedom_of_press focus = HOL_align_with_the_conservatives}
+		relative_position_id = HOL_freedom_of_press
+		x = 1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = HOL_support_agricultural_sector
+		icon = GFX_focus_research
+		prerequisite = {focus = HOL_support_schools}
+		relative_position_id = HOL_support_schools
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = strong_agriculture
+		}
+	}	
+	focus = {
+		id = HOL_eight_hour_work_day
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_support_agricultural_sector}
+		relative_position_id = HOL_support_agricultural_sector
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = eight_hour_work_day
+		}
+	}				
+	focus = {
+		id = HOL_reaffirm_our_grip
+		icon = GFX_Generic_Legislation
+		prerequisite = {focus = HOL_the_RKSP_resurgent}
+		relative_position_id = 	HOL_the_RKSP_resurgent	
+		x = -1
+		y = 1
 		cost = 5
 
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -517,15 +616,171 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_stability = .05
+			add_popularity = {
+				ideology = liberal
+				popularity = .05
+			}
 		}
 	}
 	focus = {
-		id = HOL_strengthen_communist_party
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_stabilize_the_nation}	
-		x = 10
-		y = 4
+		id = HOL_conservative_values
+		icon = GFX_Generic_Blue_Democracy
+		prerequisite = {focus = HOL_reaffirm_our_grip}
+		relative_position_id = 	HOL_reaffirm_our_grip
+		mutually_exclusive = {focus = HOL_a_broad_coalition}			
+		x = -1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = .1
+		}
+	}
+	focus = {
+		id = HOL_corporatism
+		icon = GFX_Generic_Industrialization
+		prerequisite = {focus = HOL_conservative_values}
+		relative_position_id = 	HOL_conservative_values	
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = corporatism
+		}
+	}
+	focus = {
+		id = HOL_neutrality
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = HOL_corporatism focus = HOL_monitor_the_radicals}
+		relative_position_id = 	HOL_corporatism
+		mutually_exclusive = {focus =  HOL_intervention}		
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = armed_neutrality
+		}
+	}
+	focus = {
+		id = HOL_prepare_for_the_inevitable
+		icon = GFX_goal_generic_construct_military
+		prerequisite = {focus = HOL_neutrality focus = HOL_intervention}
+		relative_position_id = 	HOL_neutrality
+		x = 3
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}	
+	focus = {
+		id = HOL_intervention
+		icon = GFX_Generic_War_Propaganda03
+		prerequisite = {focus = HOL_corporatism focus = HOL_monitor_the_radicals}
+		relative_position_id = 	HOL_corporatism
+		mutually_exclusive = {focus = HOL_neutrality}
+		x = 2
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = interventionism
+		}
+	}
+	focus = {
+		id = HOL_join_the_usa
+		icon = GFX_TLB_usaflagguns
+		prerequisite = {focus = HOL_intervention focus = HOL_align_with_the_conservatives}
+		relative_position_id = 	HOL_intervention
+		x = 3
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			USA = {
+			country_event = {id = benelux.15}
+			}
+		}
+	}
+	focus = {
+		id = HOL_rearmament
+		icon = GFX_Generic_Machine_Gun
+		prerequisite = {focus = HOL_prepare_for_the_inevitable focus = HOL_prepare_for_war focus = HOL_join_the_usa focus= HOL_permanent_revolution}
+		relative_position_id = 	HOL_join_the_usa
+		x = 2
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			7 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}			
+		}
+	}
+	focus = {
+		id = HOL_return_to_south_africa
+		icon = GFX_Generic_Machine_Gun
+		prerequisite = {focus = HOL_rearmament}
+		relative_position_id = 	HOL_rearmament
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			SAF = {
+			country_event = {id = benelux.16}
+			}			
+		}
+	}
+					
+	focus = {
+		id = HOL_a_broad_coalition
+		icon = GFX_GER_french_deal
+		prerequisite = {focus = HOL_reaffirm_our_grip}
+		relative_position_id = 	HOL_reaffirm_our_grip
+		mutually_exclusive = {focus = HOL_conservative_values}
+		x = 1
+		y = 1
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -534,17 +789,117 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_popularity = {
-				ideology = trotskyism
-				popularity = 0.05
-			}	
+				ideology = liberal
+				popularity = .05
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -.05
+			}
+
+		}
+	}
+	focus = {
+		id = HOL_monitor_the_radicals
+		icon = GFX_decryption
+		prerequisite = {focus = HOL_a_broad_coalition}
+		relative_position_id = 	HOL_a_broad_coalition	
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = state_surveillance
+		}
+	}				
+	####### SOCiALIST DEMOCRATS
+	focus = {
+		id = HOL_the_SDAP
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_trotskyist_elections}
+		relative_position_id = 	HOL_trotskyist_elections
+		available = {
+		has_country_flag = HOL_socdem
+		}
+		x = 0
+		y = 1
+		cost = 1
+		available = {
+		has_country_flag = HOL_socdem
+		}
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HOL_align_with_the_conservatives
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_the_SDAP}
+		relative_position_id = 	HOL_the_SDAP
+		mutually_exclusive = {focus = HOL_align_with_the_trotskyists}		
+		x = -1
+		y = 1
+		cost = 1
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HOL_align_with_the_trotskyists
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_the_SDAP}
+		relative_position_id = 	HOL_the_SDAP
+		mutually_exclusive = {focus = HOL_align_with_the_conservatives}		
+		x = 1
+		y = 1
+		cost = 1
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HOL_socialist_education
+		icon = GFX_focus_research
+		prerequisite = {focus = HOL_align_with_the_trotskyists focus = HOL_work_with_the_moderates}
+		relative_position_id = 	HOL_align_with_the_trotskyists
+		x = 2
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
 		id = HOL_strengthen_the_unions
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_strengthen_communist_party}	
-		x = 11
-		y = 5
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_socialist_education}
+		relative_position_id = 	HOL_socialist_education
+		x = 0
+		y = 1
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -556,11 +911,268 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = HOL_join_the_internationale
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_strengthen_the_unions}	
-		x = 11
-		y = 6
+		id = HOL_the_issue_of_the_royal_family
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = HOL_strengthen_the_unions}
+		relative_position_id = HOL_strengthen_the_unions	
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				country_event = { id = benelux.12}
+		}
+	}				
+	focus = {
+		id = HOL_democratic_socialism
+		icon = GFX_Generic_Social_Democracy
+		prerequisite = {focus = HOL_the_SDAP}
+		relative_position_id = 	HOL_the_SDAP
+		x = 0
+		y = 2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = .1
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HOL_welfare_state
+		icon = GFX_GER_minimum_wage
+		prerequisite = {focus = HOL_democratic_socialism}
+		relative_position_id = 	HOL_democratic_socialism
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = welfare_state
+		}
+	}
+	focus = {
+		id = HOL_fund_small_businesses
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = HOL_welfare_state}
+		relative_position_id = 	HOL_welfare_state
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = small_business_funding
+		}
+	}
+	focus = {
+		id = HOL_tax_the_rich
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_fund_small_businesses}
+		relative_position_id = 	HOL_fund_small_businesses
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = tax_the_rich
+			add_stability = -.03
+		}
+	}						
+#	focus = {
+#		id = HOL_the_SDAP
+#		icon = GFX_focus_generic_soviet_politics
+#		prerequisite = {focus = HOL_trotskyist_elections}
+#		relative_position_id = 	HOL_trotskyist_elections
+#		available = {
+#		has_country_flag = HOL_socdem
+#		}
+#		x = 0
+#		y = 1
+#		cost = 10
+#
+	#	search_filters = {  FOCUS_FILTER_STABILITY }
+	#	cancel_if_invalid = no
+	#	continue_if_invalid = no
+	#	available_if_capitulated = yes
+	#	completion_reward = {
+	#		add_political_power = 50
+	#	}
+	#}		
+	#### COMMUNISTS		
+	focus = {
+		id = HOL_the_RSP
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_trotskyist_elections}
+		relative_position_id = 	HOL_trotskyist_elections
+		available = {
+		has_country_flag = HOL_trotskyism
+		}		
+		x = 5
+		y = 1
+		cost = 1
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HOL_work_with_the_moderates
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_the_RSP}
+		relative_position_id = 	HOL_the_RSP
+		x = -1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}	
+	focus = {
+		id = HOL_stabilize_the_nation
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = HOL_the_RSP}
+		relative_position_id = 	HOL_the_RSP
+		x = 1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = HOL_free_press
+		icon = GFX_GER_french_deal
+		prerequisite = {focus = HOL_stabilize_the_nation}
+		relative_position_id = 	HOL_stabilize_the_nation
+		mutually_exclusive = {focus = HOL_secret_police}
+		x = -1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = HOL_destroy_the_bourgeoisie
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_free_press}
+		relative_position_id = 	HOL_free_press
+		mutually_exclusive = {focus = HOL_dissolve_the_bourgeoisie}		
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = -.05
+			add_ideas = bourgeoisie_destroyed
+		}
+	}
+	focus = {
+		id = HOL_our_own_path
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {focus = HOL_destroy_the_bourgeoisie focus = HOL_secret_police}
+		relative_position_id = 	HOL_destroy_the_bourgeoisie
+		mutually_exclusive = {focus = HOL_join_the_soviets}		
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.1
+			set_rule = { can_create_factions = yes }		
+		}
+	}
+	focus = {
+		id = HOL_secret_police
+		icon = GFX_decryption
+		prerequisite = {focus = HOL_stabilize_the_nation}
+		relative_position_id = 	HOL_stabilize_the_nation
+		mutually_exclusive = {focus = HOL_free_press}
+		x = 1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = -.05
+			add_ideas = secret_police
+		}
+	}	
+	focus = {
+		id = HOL_dissolve_the_bourgeoisie
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {focus = HOL_secret_police focus = HOL_free_press}
+		relative_position_id = 	HOL_stabilize_the_nation
+		mutually_exclusive = {focus = HOL_destroy_the_bourgeoise}
+		x = 1
+		y = 2
+		cost = 15
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = bourgeoisie_destroyed
+		}
+	}	
+	focus = {
+		id = HOL_join_the_soviets
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {focus = HOL_dissolve_the_bourgeoisie}
+		relative_position_id = 	HOL_destroy_the_bourgeoisie
+		mutually_exclusive = {focus = HOL_our_own_path}
+		x = 2
+		y = 1
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -569,17 +1181,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			SOV = {
-				country_event = { id = benelux.11}
+			country_event = {id = benelux.11}
 			}
 		}
 	}
-################WORLD REVOLUTION#################
 	focus = {
-		id = HOL_spread_worldwide_revolution
-		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = HOL_join_the_internationale}	
-		x = 11
-		y = 7
+		id = HOL_prepare_for_war
+		icon = GFX_goal_generic_military_deal
+		prerequisite = {focus = HOL_our_own_path}
+		relative_position_id = 	HOL_our_own_path
+		x = -1
+		y = 1
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_STABILITY }
@@ -587,31 +1199,95 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			DOM = {
-				country_event = { id = benelux.10}
-			}
-			HAI = {
-				country_event = { id = benelux.10}
-			}
-			CUB = {
-				country_event = { id = benelux.10}
-			}
+			add_war_support = 0.1
 		}
 	}
+	focus = {
+		id = HOL_permanent_revolution
+		icon = GFX_goal_generic_construct_military
+		prerequisite = {focus = HOL_our_own_path focus = HOL_align_with_the_trotskyists}
+		relative_position_id = 	HOL_our_own_path
+		x = -3
+		y = 1
+		cost = 10
 
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = permanent_revolution
+		}
+	}			
+################WORLD REVOLUTION#################
+
+	#focus = {
+	#	id = HOL_reestablish_boer_colonies
+	#	icon = GFX_focus_ger_great_red_menace
+	#	prerequisite = { focus = HOL_our_own_path}	
+	#	x = 12
+	#	y = 6
+	#	cost = 10
+#
+#		search_filters = {  FOCUS_FILTER_STABILITY }
+#		cancel_if_invalid = no
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		completion_reward = {
+#			SAF ={
+#			country_event = {id = benelux.13}
+#			}
+#		}
+#	}
 	######GENERIC MILITARY BONUSES###############
 	focus = {
-		id = HOL_army_effort
+		id = HOL_reform_the_military
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 16
+		x = 28
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_new_leadership
+		icon = GFX_focus_generic_military_academy
+		prerequisite = {focus = HOL_reform_the_military}
+		relative_position_id = HOL_reform_the_military
+		x = -2
+		y = 1
+		cost = 15
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				country_event = {id = benelux.14}
+			}
+
+	}	
+	focus = {
+		id = HOL_revolutionaire_landmacht
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {focus = HOL_reform_the_military}
+		relative_position_id = HOL_reform_the_military
+
+		x = -4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
@@ -620,332 +1296,407 @@ focus_tree = {
 			}
 		}
 	}
-
-
+	
 	focus = {
-		id = HOL_equipment_effort
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = HOL_army_effort }
-		x = 14
-		y = 2
-		relative_position_id = army_effort
+		id = HOL_remobilize_the_army
+		icon = GFX_Generic_Army_Focus_Red02
+		prerequisite = {focus = HOL_revolutionaire_landmacht}
+		relative_position_id = HOL_revolutionaire_landmacht	
+		x = 1
+		y = 1
 		cost = 10
 
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = remobilized_army
+		}
+	}
+	focus = {
+		id = HOL_increased_military_production
+		icon = GFX_Generic_Factory_Complex
+		prerequisite = {focus = HOL_revolutionaire_landmacht}
+		relative_position_id = HOL_revolutionaire_landmacht	
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas =	state_arsenals
+		}
+	}
+	focus = {
+		id = HOL_artillerie_inrichtingen
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {focus = HOL_reform_the_military}
+		relative_position_id = HOL_reform_the_military
+
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			35 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_small_arms_development
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {focus = HOL_increased_military_production}
+		relative_position_id = HOL_increased_military_production
+		x = 0
+		y = 1
+		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_artillery_bonus
+				name = land_doc_bonus
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
-				category = artillery
-			}
+			}		
 		}
 	}
-
 	focus = {
-		id = HOL_motorization_effort
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = HOL_army_effort }
-		bypass = { has_tech = motorised_infantry }
-		x = 16
-		y = 2
-		relative_position_id = army_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 3.0
-				technology = motorised_infantry
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_doctrine_effort
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = HOL_army_effort }
-		x = 15
-		y = 3
-		relative_position_id = army_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = HOL_equipment_effort }
-		x = 15
-		y = 3
-		relative_position_id = equipment_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_mechanization_effort
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = HOL_motorization_effort }
-		x = 15
-		y = 3
-		relative_position_id = motorization_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_doctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = HOL_doctrine_effort }
-		x = 15
-		y = 3
-		relative_position_id = doctrine_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_equipment_effort_3
+		id = HOL_artillery_research
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = HOL_equipment_effort_2 }
-		x = 15
-		y = 3
-		relative_position_id = equipment_effort_2
+		prerequisite = {focus = HOL_small_arms_development}
+		relative_position_id = 	HOL_small_arms_development
+		x = 0
+		y = 1
 		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 2
+				name = land_doc_bonus
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
-				category = artillery
-			}
+			}		
 		}
 	}
-
 	focus = {
-		id = HOL_armor_effort
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = HOL_mechanization_effort }
-		x = 15
-		y = 3
-		relative_position_id = mechanization_effort
+		id = HOL_anti_tank_and_anti_air
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = {focus = HOL_artillery_research}
+		relative_position_id = 	HOL_artillery_research
+		x = 0
+		y = 1
 		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_special_forces
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = HOL_equipment_effort_3 }
-		prerequisite = { focus = HOL_doctrine_effort_2 }
-		prerequisite = { focus = HOL_armor_effort }
-		x = 16
-		y = 2
-		relative_position_id = equipment_effort_3
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = special_forces
-			add_tech_bonus = {
-				name = special_forces_bonus
+				name = land_doc_bonus
 				bonus = 1.0
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-			}
+				category = infantry_weapons
+			}		
 		}
 	}	
-	#####GENERIC AIRFORCE######
 	focus = {
-		id = HOL_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 21
+		id = HOL_study_soviet_tank_designs
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = {focus = HOL_increased_military_production}
+		relative_position_id = 	HOL_increased_military_production
+		x = 2
 		y = 1
 		cost = 10
 
-		search_filters = {   FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}		
+		}
+	}
+	focus = {
+		id = HOL_motorized_corps
+		icon = GFX_goal_generic_build_tank
+		prerequisite = {focus = HOL_study_soviet_tank_designs}
+		relative_position_id = 	HOL_study_soviet_tank_designs
+		x = 0
+		y = 1
+		cost = 10
 
 		available_if_capitulated = yes
 
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}		
+		}
+	}
+	focus = {
+		id = HOL_the_t-27_tankette
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = {focus = HOL_motorized_corps}
+		relative_position_id = 	HOL_motorized_corps		
+		x = 0
+		y = 1
+		cost = 10
 
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_AB }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2.0
+				uses = 1
+				category = armor
+			}		
+		}
+	}																		
+	focus = {
+		id = HOL_damen_group
+		icon = GFX_Generic_Naval_Industry
+		prerequisite = { focus = HOL_revolutionaire_marine }
+		relative_position_id = HOL_revolutionaire_marine 			
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 10
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = air_base
+					type = dockyard
 					level = 2
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
 			}
-		}
+	}	
+	focus = {
+		id = HOL_revolutionaire_marine
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = {focus = HOL_reform_the_military}	
+		relative_position_id = 	HOL_reform_the_military
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
-
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
 			add_tech_bonus = {
-				name = air_doc_bonus
+				name = carrier_bonus
 				bonus = 1.0
 				uses = 1
-				category = air_doctrine
+				category = naval_doctrine
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_hollandse_signaalapparaten_B.V.
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = {focus = HOL_revolutionaire_marine}	
+		relative_position_id = 	HOL_revolutionaire_marine
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 10
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}
-
 	focus = {
-		id = HOL_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = HOL_aviation_effort }
-		mutually_exclusive = { focus = bomber_focus }
-		x = 15
-		y = 2
-		relative_position_id = aviation_effort
+		id = HOL_new_cruiser_designs
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = { focus = HOL_damen_group focus = HOL_hollandse_signaalapparaten_B.V.}		
+		relative_position_id = 	HOL_damen_group		
+		x = 0
+		y = 1
 		cost = 10
 
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
 
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_destroyer_research
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = HOL_damen_group focus = HOL_hollandse_signaalapparaten_B.V.}
+		relative_position_id = 	HOL_hollandse_signaalapparaten_B.V.		
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 2.0
+				uses = 2
+				category = dd_tech
+			}
+			}
+
+	}		
+	focus = {
+		id = HOL_heavy_ship_research
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = HOL_new_cruiser_designs focus = HOL_destroyer_research}
+		relative_position_id = 	HOL_destroyer_research		
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 2.0
+				uses = 2
+				category = dd_tech
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_submarine_designs
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = HOL_new_cruiser_designs focus = HOL_destroyer_research}
+		relative_position_id = 	HOL_new_cruiser_designs		
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 2.0
+				uses = 2
+				category = dd_tech
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_revolutionaire_luchtmacht
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = {focus = HOL_reform_the_military}	
+		relative_position_id = 	HOL_reform_the_military		
+		x = 4
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = airdoctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_work_with_fokker
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = {focus = HOL_revolutionaire_luchtmacht}	
+		relative_position_id = 	HOL_revolutionaire_luchtmacht	
+		x = 3
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = airdoctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			}
+
+	}	
+	focus = {
+		id = HOL_fighter_squadrons
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = HOL_revolutionaire_luchtmacht }
+		mutually_exclusive = { focus = HOL_bombing_runs }
+		relative_position_id = 	HOL_revolutionaire_luchtmacht		
+		x = -1
+		y = 1		
+		cost = 10
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
@@ -954,20 +1705,18 @@ focus_tree = {
 				technology = heavy_fighter2
 				technology = heavy_fighter3
 			}
-		}
-	}
+			}
 
+	}	
 	focus = {
-		id = HOL_bomber_focus
+		id = HOL_bombing_runs
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = HOL_aviation_effort }
-		mutually_exclusive = { focus = fighter_focus }
-		x = 17
-		y = 2
-		relative_position_id = aviation_effort
+		prerequisite = { focus = HOL_revolutionaire_luchtmacht }
+		mutually_exclusive = { focus = HOL_fighter_squadrons }
+		relative_position_id = 	HOL_revolutionaire_luchtmacht
+		x = 1
+		y = 1
 		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -975,114 +1724,44 @@ focus_tree = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
 				technology = strategic_bomber3
 				category = tactical_bomber
 			}
-		}
+			}
+
 	}
-
 	focus = {
-		id = HOL_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = HOL_bomber_focus focus = HOL_fighter_focus }
-		x = 15
-		y = 2
-		relative_position_id = bomber_focus
+		id = HOL_naval_strike
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = HOL_bombing_runs }
+		relative_position_id = 	HOL_bombing_runs
+		x = 0
+		y = 1
 		cost = 10
-
-		search_filters = {   FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_2_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name =  air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-		}
 		completion_reward = {
-			air_experience = 25
-			if = {
-				limit = {
-					capital_scope = {
-						OR = {
-							NOT = { is_controlled_by = ROOT }
-							NOT = {
-								free_building_slots = {
-									building = air_base
-									size > 1
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
 			add_tech_bonus = {
-				name =  air_doc_bonus
+				name = nav_bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = air_doctrine
+				category = naval_bomber
 			}
-		}
+			}
+
 	}
-
 	focus = {
-		id = HOL_CAS_effort
+		id = HOL_CAS_program
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = HOL_aviation_effort_2 }
-		x = 16
-		y = 3
-		relative_position_id = aviation_effort_2
+		prerequisite = { focus = HOL_fighter_squadrons }
+		relative_position_id = 	HOL_fighter_squadrons
+		x = 0
+		y = 1
 		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -1090,375 +1769,94 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAS_bonus
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = cas_bomber
 			}
-		}
-	}
-	##########NAVAL AREA#########
+			}
 
+	}
 	focus = {
-		id = HOL_naval_effort
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 26
+		id = HOL_air_defense
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = HOL_revolutionaire_luchtmacht}
+		relative_position_id = 	HOL_revolutionaire_luchtmacht		
+		x = 5
+		y = 1
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = anti-air_bonus
+				bonus = 1.0
+				uses = 1
+				technology = interwar_antiair
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = antiair4
+				technology = antiair5
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_interception
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HOL_air_defense }
+		mutually_exclusive = { focus = HOL_anti-air_construction }
+		relative_position_id = 	HOL_air_defense		
+		x = -1
 		y = 1
 		cost = 10
 
-		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+			}
+
+	}
+	focus = {
+		id = HOL_anti-air_construction
+		icon = GFX_Generic_Air_Defense
+		prerequisite = { focus = HOL_air_defense }
+		mutually_exclusive = { focus = HOL_interception }
+		relative_position_id = 	HOL_air_defense
+		x = 1
+		y = 1
+		cost = 10
 
 		available_if_capitulated = yes
 
-
-		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
-			}
-		}
-
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-			}
-		}
-
 		completion_reward = {
-			navy_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
+				7 = {
 					add_building_construction = {
-						type = dockyard
-						level = 3
+						type = anti_air_building
+						level = 2
 						instant_build = yes
 					}
 				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
+				35 = {
 					add_building_construction = {
-						type = dockyard
-						level = 3
+						type = anti_air_building
+						level = 2
 						instant_build = yes
 					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-		}
+				}	
+		}	
 	}
-
-	focus = {
-		id = HOL_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = HOL_naval_effort }
-		mutually_exclusive = { focus = HOL_large_navy }
-		x = 16
-		y = 2
-		relative_position_id = naval_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 1.0
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = HOL_naval_effort }
-		mutually_exclusive = { focus = HOL_flexible_navy }
-		x = 18
-		y = 2
-		relative_position_id = naval_effort
-		cost = 10
-
-		search_filters = {   FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 1.0
-				uses = 2
-				category = fleet_in_being_tree
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = HOL_flexible_navy focus = HOL_large_navy }
-		x = 17
-		y = 2
-		relative_position_id = flexible_navy
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = HOL_large_navy focus = HOL_flexible_navy }
-		x = 17
-		y = 2
-		relative_position_id = large_navy
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_destroyer_effort
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = HOL_submarine_effort }
-		x = 17
-		y = 2
-		relative_position_id = submarine_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = HOL_cruiser_effort }
-		x = 17
-		y = 2
-		relative_position_id = cruiser_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = bc_tech
-				category = bb_tech
-				category = cv_tech
-			}
-		}
-	}
-
 }

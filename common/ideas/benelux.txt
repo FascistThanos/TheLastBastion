@@ -180,7 +180,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.02
+ 				production_speed_buildings_factor = 0.1 				
 			}
 		}
 		french_hegemony = {
@@ -439,5 +440,156 @@ ideas = {
  			  	rule = { can_send_volunteers = yes }		
 			}		
 		}		
+		remobilized_army = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+ 			 	conscription = 0.01	
+			}		
+		}	
+		communist_brigades = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+ 			 	conscription = 0.02	
+			}		
+		}
+		secret_police = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+ 			 	operative_slot = 1
+ 			  	encryption_factor = 0.1			}		
+		}
+		corporatism = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		state_surveillance = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+ 			 	operative_slot = 1
+				trotskyism_drift = -0.05
+			}		
+		}
+		strong_agriculture = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				consumer_goods_factor = -0.03 
+			}
+		}
+		small_business_funding = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+
+			}
+		}
+		tax_the_rich = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				 
+			}
+		}
+		bourgeoisie_destroyed = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.07
+				
+			}
+		}
+		siezed_all_royal_property = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				
+			}
+		}
+		siezed_royal_lands = {
+			picture = generic_production_bonus
+			allowed = {	
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				
+			}
+		}																
 	}
 }
