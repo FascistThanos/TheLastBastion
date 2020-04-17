@@ -185,6 +185,7 @@ country_event = {
 	}
 
 }
+#FLANDERS SAYS YE
 country_event = {
 	id = benelux.5
 	title = benelux.5.t
@@ -199,6 +200,7 @@ country_event = {
 		annex_country = { target = FLA}
 	}
 }
+#FLANDERS DECLINES
 country_event = {
 	id = benelux.6
 	title = benelux.6.t
@@ -219,6 +221,7 @@ country_event = {
 		}
 	}
 }
+#DEMAND LUX
 country_event = {
 	id = benelux.7
 	title = benelux.7.t
@@ -243,6 +246,7 @@ country_event = {
 	}
 	
 }
+#DEMAND LUX
 country_event = {
 	id = benelux.8
 	title = benelux.8.t
@@ -257,6 +261,7 @@ country_event = {
 		annex_country = { target = LUX}
 	}
 }
+#LUX DENIED
 country_event = {
 	id = benelux.9
 	title = benelux.9.t
@@ -293,6 +298,7 @@ country_event = {
 		}
 	}
 }
+##ADD SOV
 country_event = {
 	id = benelux.11
 	title = benelux.11.t
@@ -313,8 +319,210 @@ country_event = {
 	###DENY
 		name = benelux.11.b
 		HOL = {
-		add_opinion_modifier = { target = SOV modifier = medium_increase }
+		add_opinion_modifier = { target = SOV modifier = medium_decrease }
 		}
 	}
-	
+}
+
+#### ROYAL FAMILY ###
+country_event = {
+	id = benelux.12
+	title = benelux.12.t
+	desc = benelux.12.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###KICK THEM OUT AND TAKE EVERYTHING
+		name = benelux.12.a
+		add_political_power = -75
+		add_timed_idea = { idea = siezed_all_royal_property days = 720}
+	}
+	option = {
+	###SIEZE THEIR RICHES
+	name = benelux.12.b
+		ai_chance = {factor = 0}
+		add_timed_idea = { idea = siezed_royal_lands days = 720 }		
+	}	
+	option = {
+	name = benelux.12.c
+	### LEAVE THEM BE
+	add_political_power = 75
+	}
+}
+########## NO 13
+country_event = {
+	id = benelux.14
+	title = benelux.14.t
+	desc = benelux.14.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		#THE SDAP and SOCDEM
+		name = benelux.14.a
+		set_country_flag = HOL_socdem
+		ai_chance = {factor = 40}
+		set_politics = {
+		ruling_party = socialism
+		elections_allowed = no
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.10
+		}							
+	}
+	option = {
+		#THE TROTSKYISTS IN THE RSP
+		name = benelux.14.b
+		set_country_flag = HOL_trotskyism
+		ai_chance = {factor = 50}
+		set_politics = {
+		ruling_party = trotskyism
+		elections_allowed = no
+		}		
+		add_popularity = {
+			ideology = trotskyism
+			popularity = 0.10
+		}
+				
+	}	
+	option = {
+		#DEMOCRATS AND RKSP
+		name = benelux.14.c
+		set_country_flag = HOL_democracy
+		ai_chance = {factor = 10}
+
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.15
+		}
+		set_politics = {
+		ruling_party = liberal
+		elections_allowed = no
+		}							
+	}
+}
+country_event = {
+	id = benelux.15
+	title = benelux.15.t
+	desc = benelux.15.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPT
+		name = benelux.15.a
+		ai_chance = {factor = 100}
+		USA = {
+			add_to_faction = HOL
+		}
+	}
+	option = {
+	###DENY
+		name = benelux.15.b
+		HOL = {
+		add_opinion_modifier = { target = USA modifier = medium_decrease }
+		}
+	}
+}
+country_event = {
+	id = benelux.16
+	title = benelux.16.t
+	desc = benelux.16.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPT
+		name = benelux.16.a
+		ai_chance = {factor = 30}
+		HOL = {
+		country_event = benelux.17
+		}
+	}
+	option = {
+	###DENY
+		name = benelux.16.b
+		ai_chance = {factor = 70}
+		HOL = {
+		country_event = benelux.18
+		}
+	}
+}
+country_event = {
+	id = benelux.17
+	title = benelux.17.t
+	desc = benelux.17.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPT
+		name = benelux.17.a
+		HOL = {
+			annex_country = { target = SAF transfer_troops = yes }	
+		}
+		681  = {
+		add_core_of = HOL
+		}
+		719  = {
+		add_core_of = HOL
+		}	
+		275  = {
+		add_core_of = HOL
+		}	
+		541  = {
+		add_core_of = HOL
+		}	
+		854  = {
+		add_core_of = HOL
+		}	
+		542  = {
+		add_core_of = HOL
+		}	
+		545  = {
+		add_core_of = HOL
+		}	
+	}
+
+}
+country_event = {
+	id = benelux.18
+	title = benelux.18.t
+	desc = benelux.18.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPT
+		name = benelux.18.a
+		681  = {
+		add_core_of = HOL
+		}
+		719  = {
+		add_core_of = HOL
+		}	
+		275  = {
+		add_core_of = HOL
+		}	
+		541  = {
+		add_core_of = HOL
+		}	
+		854  = {
+		add_core_of = HOL
+		}	
+		542  = {
+		add_core_of = HOL
+		}	
+		545  = {
+		add_core_of = HOL
+		}														
+	}
+
 }
