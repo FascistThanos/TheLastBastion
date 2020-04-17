@@ -7,12 +7,19 @@ prepare_for_the_countercoup = {
      available = { 
          AND = {
          	has_completed_focus = ENG_request_international_support
-         	original_tag = ENG
+         	TAG = ENG
          }
-     }
+          NOT = {
+                has_completed_focus = ENG_countercoup
+            }
+        }
      visible = {
-     	NOT = {
-         		has_completed_focus = ENG_countercoup
-         	}
+     	AND = {
+            TAG = ENG
+            has_completed_focus = ENG_request_international_support
+            NOT = {
+                has_completed_focus = ENG_countercoup
+            }
+        }
      }
 }
