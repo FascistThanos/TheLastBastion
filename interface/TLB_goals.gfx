@@ -131,6 +131,31 @@ spriteType = {
 }
 
 spriteType = {
+  name = "GFX_SPR_El_Estado_Espanol"
+  texturefile = "gfx/interface/goals/SPR_El_Estado_Espanol.dds"
+}
+
+spriteType = {
+  name = "GFX_SPR_blanco"
+  texturefile = "gfx/interface/goals/SPR_deal_with_blanco.dds"
+}
+
+spriteType = {
+  name = "GFX_SPR_alfonso"
+  texturefile = "gfx/interface/goals/SPR_alfonso.dds"
+}
+
+spriteType = {
+  name = "GFX_SPR_javier"
+  texturefile = "gfx/interface/goals/SPR_javier.dds"
+}
+
+spriteType = {
+  name = "GFX_SPR_franco"
+  texturefile = "gfx/interface/goals/SPR_franco.dds"
+}
+
+spriteType = {
 	name = "GFX_Authoritarian_Democracy"
 	texturefile = "gfx/interface/goals/Authoritarian_Democracy.dds"
 }

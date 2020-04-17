@@ -1,4 +1,5 @@
 add_namespace = tlbgermany
+add_namespace = tlbgermaninfluence
 
 country_event = {
   id = tlbgermany.1
@@ -211,6 +212,22 @@ country_event = {
       create_wargoal = {
 
       }
+    }
+  }
+}
+
+#German Influence
+country_event = {
+  id = tlbgermaninfluence.1
+  title = tlbgermaninfluence.1.t
+  desc = tlbgermaninfluence.1.d
+  picture = GFX_news_event_romania_parliament
+  is_triggered_only = yes
+
+  option = {
+    name = tlbgermaninfluence.1.a
+    add_ideas = {
+      democratic_influence
     }
   }
 }

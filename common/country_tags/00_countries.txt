@@ -208,8 +208,9 @@ BAW = "countries/Bade-Wurtemberg.txt"
 UOB = "countries/Union of the Benelux.txt"
 KUR = "countries/Kurdistan.txt"
 SSD = "countries/South Sudan.txt"
-BGE = "countries/British Government in Exile"
-PCW = "countries/Campbellian Britian"
+BGE = "countries/British Government in Exile.txt"
+PCW = "countries/Campbellian Britian.txt"
+FLA = "countries/Flanders.txt"
 
 ##### For Spain Breakup #####
 

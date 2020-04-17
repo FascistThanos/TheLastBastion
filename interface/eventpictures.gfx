@@ -828,6 +828,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_event_catalonian_uprising"
+		texturefile = "gfx/event_pictures/SPR_Catalan_Uprising.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_event_spain_civil_war_soldiers"
 		texturefile = "gfx/event_pictures/report_event_spain_civil_war_soldiers.dds"
 	}

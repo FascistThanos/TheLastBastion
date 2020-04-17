@@ -59,14 +59,22 @@ if = {
 }
 
 add_ideas = {
+	# Spirits #
 	SPR_manuel_azana
+	SPR_catalan_crisis1
+	SPR_act_of_neutrality
+	SPR_foreign_debt
+
+	# Government #
+	limited_conscription
+	SPA_miguel_cabanellas_ferrer_vanilla
 }
 
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	neutrality = 43
@@ -82,7 +90,7 @@ set_war_support = 0.18
 create_country_leader = {
 	name = "Indalecio Prieto"
 	desc = "POLITICS_PRIETO_DESC"
-	picture = ""
+	picture = "portrait_spa_juan_yague.dds"
 	expire = "1965.1.1"
 	ideology = third_way
 	traits = {
@@ -175,7 +183,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
+		SPR_oligarchical_council
 	}
 }
 
@@ -212,17 +220,152 @@ create_country_leader = {
 #	}
 #}
 
-create_field_marshal = {
-	name = "José Asensio Torrado"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 2
-    attack_skill = 1
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 1
-}
+create_corps_commander = {
+		name = "Vicente Rojo Lluch"
+		id = 1102
+		gfx = "portrait_spa_jose_sanjurjo.dds"
+		traits = { brilliant_strategist }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
 
+	create_corps_commander = {
+		name = "José Miaja"
+		id = 1103
+		gfx = "portrait_spa_jose_enrique_varela.dds"
+		traits = { infantry_leader }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "José Asensio Torrado"
+		id = 1101
+		gfx = "portrait_spa_jose_millan_astray.dds"
+		traits = { career_officer infantry_leader }
+		skill = 2
+	    attack_skill = 1
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+	}
+
+	create_corps_commander = { # Becomes Field Marshal at SCW start
+		name = "Valentín González"
+		id = 1104
+		gfx = "portrait_spa_gonzalo_queipo_de_llano.dds"
+		traits = { harsh_leader }
+		skill = 3
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 3
+	    logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Antonio Cordón García"
+		id = 1106
+		gfx = "portrait_spa_jose_antonio_primo_de_rivera.dds"
+		traits = { infantry_leader }
+		skill = 2
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 3
+	    logistics_skill = 1
+	}
+
+	create_field_marshal = {
+		name = "Francisco Franco"
+		id = 1108
+		gfx = "GFX_portrait_spain_francisco_franco"
+		traits = { organisational_leader logistics_wizard expert_delegator }
+		skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 3
+	    logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Mohamed Meziane"
+		id = 1109
+		gfx = "portrait_spa_mohamed_meziane.dds"
+		traits = { harsh_leader career_officer trait_SPA_nationalist_sympathies }
+		skill = 4
+	    attack_skill = 5
+	    defense_skill = 2
+	    planning_skill = 3
+	    logistics_skill = 3
+	}
+
+	create_field_marshal = {
+		name = "Emilio Mola"
+		id = 9999
+		gfx = "portrait_spa_emilio_mola.dds"
+		traits = { organisational_leader trait_cautious thorough_planner trait_SPA_nationalist_sympathies }
+		skill = 3
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Juan Yagüe"
+		id = 1112
+		gfx = "portrait_spa_juan_yague.dds"
+		traits = { brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+		skill = 3
+	    attack_skill = 4
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Agustín Muñoz Grandes"
+		id = 1113
+		gfx = "portrait_spa_augustin_muynoz_grandes.dds"
+		traits = { infantry_officer trait_SPA_nationalist_sympathies }
+		skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Miguel Cabanellas"
+		id = 1115
+		gfx = "portrait_spa_miguel_cabanellas.dds"
+		traits = { cavalry_officer old_guard trait_SPA_nationalist_sympathies }
+		skill = 3
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 3
+	    logistics_skill = 3
+	}
+
+	# Naval Leaders - Nationalists
+
+	create_navy_leader = {
+		name = "Luis Carrero Blanco"
+		id = 1118
+		gfx = "portrait_spa_luis_carrero_blanco.dds"
+		traits = { seawolf trait_SPA_nationalist_sympathies }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		maneuvering_skill = 2
+		coordination_skill = 1
+	}
+}
 
 ### VARIANTS ###
 # 1936 Start #

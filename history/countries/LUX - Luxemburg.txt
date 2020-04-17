@@ -15,15 +15,15 @@ set_war_support = 0.1
 set_stability = 0.8
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 92
-	fascism = 3
-	democratic = 5
+	communism = 39
+	fascism = 20
+	democratic = 41
 }
 
 create_country_leader = {

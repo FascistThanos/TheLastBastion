@@ -110,9 +110,10 @@ bookmarks = {
 		"SPR"={
 			minor = yes
 			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = neutrality
 			ideas = {
-				#
+				SPR_catalan_crisis1
+				SPR_act_of_neutrality
 			}
 			focuses = {
 				#
@@ -121,7 +122,7 @@ bookmarks = {
 		"BGE"={
 			minor = yes
 			history = "NOT_COMPLETE_GATHERING_STORM_DESC"
-			ideology = monarchist
+			ideology = democratic
 			ideas = {
 				#
 			}

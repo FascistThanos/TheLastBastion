@@ -10,7 +10,7 @@ state = {
   }
 
   history = {
-    owner = UOB
+    owner = BEL
     add_core_of = COG
     buildings = {
       infrastructure = 2

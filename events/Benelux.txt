@@ -1,0 +1,320 @@
+add_namespace = benelux
+
+#template
+country_event = {
+	id = benelux.0
+	title = benelux.0.t
+	desc = benelux.0.d
+	picture = 
+	fire_only_once = yes
+
+	trigger = {
+		tag = BEL
+		has_global_flag = FLA_agitation
+		NOT = {
+			has_country_flag = agitation_triggered
+		}
+	}
+	immediate = {
+		set_country_flag = agitation_triggered
+	}
+	option = {
+		name = benelux.0.a
+		add_stability = -.05
+	}
+
+}
+#Flanders Civil War
+country_event = {
+	id = benelux.1
+	title = benelux.1.t
+	desc = benelux.1.d
+	picture = 
+	fire_only_once = yes
+
+	trigger = {
+		
+		tag = BEL
+		BEL = {
+		date > 1936.1.5
+		has_global_flag = FLA_civil_war_start
+		}
+		NOT = {
+			has_country_flag = fcw_triggered
+		}
+	}
+	immediate = {
+		set_country_flag = fcw_triggered
+	}
+
+	option = {
+		name = benelux.1.a
+		set_global_flag = fcwinprogress
+		FLA = {
+			transfer_state = 6
+		}
+		FLA = {
+		set_ruling_party = trotskyism
+		}
+		
+		FLA = {
+		declare_war_on = {
+			target = BEL
+			type = annex_everything	
+			}
+		}
+		BEL = {
+		declare_war_on = {
+			target = FLA
+			type = annex_everything	
+			}
+		}
+		FLA = {
+		load_oob = "FLA_1936"
+		}
+	}
+	#option = {
+	#	name = ben.1.b
+	#	add_manpower = 800
+	#	BEL = {
+	#	declare_war_on = {
+	#		target = BEN
+	#		type = annex
+	#		}
+	#	}
+	#}
+
+}
+country_event = {
+	id = benelux.2
+	title = benelux.2.t
+	desc = benelux.2.d
+	picture = 
+	fire_only_once = yes
+
+	trigger = {
+		
+		tag = HOL
+#		FLA = {
+#		has_war
+#		}
+		has_global_flag = flanders_call_to_arms
+
+		NOT = {
+			has_country_flag = help_triggered
+		}
+	}
+	immediate = {
+		set_country_flag = help_triggered
+	}
+
+	option = {
+		name = benelux.2.a
+		ai_chance = {factor = 100}
+		add_to_war = {
+		targeted_alliance = FLA
+		enemy = BEL
+		hostility_reason -= asked_to_join
+		}
+		HOL = {puppet = FLA}
+
+	}
+	option = {
+		ai_chance = {factor = 0}
+		name = benelux.0.b
+		add_political_power = 50
+	}
+
+}
+country_event = {
+	id = benelux.3
+	title = benelux.3.t
+	desc = benelux.3.d
+	picture = 
+	fire_only_once = yes
+
+	trigger = {
+		tag = BEL
+		has_global_flag = BEL_annex_netherlands
+		NOT = {has_country_flag = BEL_choicemade
+		}
+	}
+	immediate = {
+	set_country_flag = BEL_choicemade
+	}
+
+	option = {
+		name = benelux.3.a
+		BEL = {
+		transfer_state = 35
+		transfer_state = 36
+		transfer_state = 7
+		}
+
+	}
+	option = {
+		name = benelux.3.b
+		add_political_power = 100
+		add_stability = .1
+	}
+
+}
+#ANNEX FLANDERS
+country_event = {
+	id = benelux.4
+	title = benelux.4.t
+	desc = benelux.4.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPT
+		name = benelux.4.a
+		ai_chance = {factor = 100}
+		HOL = {
+			country_event = { id = benelux.5}
+		}
+	}
+	option = {
+	###DENY
+		name = benelux.4.b
+		HOL = {
+			country_event = { id = benelux.6}
+		}
+	}
+
+}
+country_event = {
+	id = benelux.5
+	title = benelux.5.t
+	desc = benelux.5.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPTED
+		name = benelux.5.a
+		annex_country = { target = FLA}
+	}
+}
+country_event = {
+	id = benelux.6
+	title = benelux.6.t
+	desc = benelux.6.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###DECLINED
+		name = benelux.6.a
+			end_puppet = FLA
+			HOL = {
+			declare_war_on = {
+			target = FLA
+			type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = benelux.7
+	title = benelux.7.t
+	desc = benelux.7.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPT
+		name = benelux.7.a
+		HOL = {
+			country_event = { id = benelux.8}
+		}
+	}
+	option = {
+	###DENY
+		name = benelux.7.b
+		HOL = {
+			country_event = { id = benelux.9}
+		}
+	}
+	
+}
+country_event = {
+	id = benelux.8
+	title = benelux.8.t
+	desc = benelux.8.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPTED
+		name = benelux.8.a
+		annex_country = { target = LUX}
+	}
+}
+country_event = {
+	id = benelux.9
+	title = benelux.9.t
+	desc = benelux.9.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###DENIED
+		name = benelux.9.a
+		HOL = {
+			declare_war_on = {
+			target = FLA
+			type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = benelux.10
+	title = benelux.10.t
+	desc = benelux.10.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = benelux.10.a
+		add_ideas = trotskyist_influence
+		add_popularity = {
+			ideology = trotskyism
+			popularity = 0.05
+		}
+	}
+}
+country_event = {
+	id = benelux.11
+	title = benelux.11.t
+	desc = benelux.11.d
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	###ACCEPT
+		name = benelux.11.a
+		ai_chance = {factor = 100}
+		SOV = {
+			add_to_faction = HOL
+		}
+	}
+	option = {
+	###DENY
+		name = benelux.11.b
+		HOL = {
+		add_opinion_modifier = { target = SOV modifier = medium_increase }
+		}
+	}
+	
+}

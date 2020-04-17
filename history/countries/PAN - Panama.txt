@@ -55,3 +55,14 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Trade Union Federation"
+	desc = "POLITICS_TUF_DESC"
+	picture = "Portrait_Panama_PTUF.dds"
+	expire = "1965.1.1"
+	ideology = anti_revisionism
+	traits = {
+		#
+	}
+}

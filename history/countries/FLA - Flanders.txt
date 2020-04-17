@@ -1,16 +1,33 @@
-﻿capital = 7
+capital = 6
 
-oob = "UOB_1936"
-set_naval_oob = UOB_1936_naval
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "HOL_1936_naval_mtg"
+	else = {
+		set_naval_oob = "HOL_1936_naval_legacy"
+	}
+}
 
-set_research_slots = 4
-set_stability = 0.34
-set_war_support = 0.24
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0
+set_politics = {
+	ruling_party = troskyism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	liberal = 25
+	fascism = 7
+	trotskyism = 40
+	neutrality = 8
+}
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	motorised_infantry = 1
 	tech_support = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -20,13 +37,6 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = { bicycle_infantry = 1 }
 }
 
 if = {
@@ -59,178 +69,6 @@ if = {
 		coastal_defense_ships = 1
 		mtg_transport = 1
 	}
-}
-
-# DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = INS
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = INS
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-		limited_conscription
-	}
-}
-
-set_politics = {
-	ruling_party = trotskyism
-	last_election = "1933.4.26"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 15
-	socialism = 20
-	trotskyism = 65
-}
-
-set_convoys = 150
-set_stability = 0.75
-
-create_country_leader = {
-	name = "Hendrikus Colijn"
-	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "GFX_portrait_holland_hendrikus_colijn"
-	expire = "1965.1.1"
-	ideology = conservative
-	traits = {
-		strict_austerity_adherent
-	}
-}
-
-create_country_leader = {
-	name = "Anton Mussert"
-	desc = "POLITICS_ANTON_MUSSERT_DESC"
-	picture = "GFX_portrait_hol_anton_mussert"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		leider
-	}
-}
-
-create_country_leader = {
-	name = "Lou de Visser"
-	desc = "POLITICS_LOU_DE_VISSER_DESC"
-	picture = "GFX_portrait_HOL_lou_de_visser"
-	expire = "1965.1.1"
-	ideology = trotskyism_type
-	traits = {
-		veteran_communist
-	}
-}
-
-create_country_leader = {
-	name = "Willem Schermerhorn"
-	desc = "POLITICS_WIM_SCHERMERHORN_DESC"
-	picture = "GFX_portrait_hol_wim_schermerhorn"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Izaak Reijnders"
-	gfx = "GFX_portrait_hol_izaak_reijnders"
-	traits = { old_guard inflexible_strategist trait_reckless }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Petrus Wilhelmus Best"
-	gfx = "GFX_portrait_hol_petrus_wilhelmus_best"
-	traits = { organizer skilled_staffer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Godfried van Voorst tot Voorst"
-	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
-	traits = { brilliant_strategist career_officer armor_officer politically_connected }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "M.C.L. Keyaerts"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trait_mountaineer hill_fighter }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_navy_leader = {
-	name = "Georges Timmermans"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
-	traits = { bold }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
-
-create_navy_leader = {
-	name = "Johannes Theodorus Furstner"
-	gfx = "GFX_portrait_hol_johannes_theodorus_furstner"
-	traits = { caustic_personality fly_swatter blockade_runner }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	maneuvering_skill = 2
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Conrad Helfrich"
-	gfx = "GFX_portrait_hol_conrad_helfrich"
-	traits = { seawolf superior_tactician bold navy_career_officer }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Karel Doorman"
-	gfx = "GFX_portrait_hol_karel_doorman"
-	traits = { fleet_protector naval_lineage bold }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
 }
 
 

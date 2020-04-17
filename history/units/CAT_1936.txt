@@ -1,0 +1,116 @@
+division_template = {
+  name = "Milícia Federal Catalana"
+  division_names_group = CAT_GAR_01
+
+  regiments = {
+    infantry = { x = 0 y = 0 }
+    infantry = { x = 0 y = 0 }
+    infantry = { x = 0 y = 0 }
+    infantry = { x = 0 y = 0 }
+  }
+}
+
+division_template = {
+  name = "Protectors Catalans Majors"
+
+  regiments = {
+    infantry = { x = 0 y = 0 }
+    infantry = { x = 0 y = 1 }
+    infantry = { x = 1 y = 0 }
+    infantry = { x = 1 y = 1 }
+    cavalry = { x = 2 y = 0 }
+    cavalry = { x = 2 y = 1 }
+    light_armor = { x = 0 y = 2}
+  }
+}
+
+units = {
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 1
+    }
+
+    location = 9764
+    division_template = "Milícia Federal Catalana"
+    start_experience_factor = 0.2
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 2
+    }
+
+    location = 9764
+    division_template = "Milícia Federal Catalana"
+    start_experience_factor = 0.2
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = "1st Protectors"
+    location = 9764
+    division_template = "Protectors Catalans Majors"
+    start_experience_factor = 0.2
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 3
+    }
+
+    location = 3899
+    division_template = "Milícia Federal Catalana"
+    start_experience_factor = 0.2
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 4
+    }
+
+    location = 6927
+    division_template = "Milícia Federal Catalana"
+    start_experience_factor = 0.2
+    start_equipment_factor = 0.3
+  }
+
+  division = {
+    division_name = {
+      is_name_ordered = yes
+      name_order = 6
+    }
+
+    location = 6836
+    division_template = "Milícia Federal Catalana"
+    start_experience_factor = 0.5
+    start_equipment_factor = 0.8
+  }
+}
+
+air_wings = {
+  165 = {
+    fighter_equipment_0 = {
+      owner = "CAT"
+      amount = 16
+    }
+  }
+}
+
+instant_effect = {
+  add_equipment_production = {
+    equipment = {
+      type = infantry_equipment_1
+      creator = "CAT"
+    }
+    requested_factories = 1
+    progress = 0.73
+    efficiency = 100
+  }
+}

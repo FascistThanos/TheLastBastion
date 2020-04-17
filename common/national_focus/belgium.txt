@@ -1,0 +1,1285 @@
+focus_tree = {
+	continuous_focus_position = { x = 50 y = 1600 }
+	id = Belgium
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BEL
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = industrial_effort
+	}
+
+########## INDUSTRY BRANCH #######
+	focus = {
+		id = BEL_the_last_european_democracy
+		icon = GFX_goal_focus_generic_industry
+		x = 6
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BEL_1936_elections
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_the_last_european_democracy}
+		x = 6
+		y = 2
+		cost = 1
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = { id = belgium.0}
+		}
+	}
+	##### DEMOCRACY #######
+	focus = {
+		id = BEL_status_quo
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_1936_elections}		
+		x = 5
+		y = 3
+		cost = 1
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		available = {
+			OR = {has_country_flag = BEL_conservatives	
+			has_country_flag = BEL_liberals
+			has_country_flag = BEL_labor
+			}
+
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BEL_invite_american_investment
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_status_quo}		
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			USA = {
+			country_event = { id = belgium.4}
+			}
+		}
+	}
+	focus = {
+		id = BEL_american_military_experts
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_support_industrial_growth focus = BEL_the_last_bastion}		
+		x = 1
+		y = 8
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	##########MILITARY BONUSES###########
+	
+	########################
+	focus = {
+		id = BEL_the_flemish_question
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_status_quo focus = BEL_radical_ideals}
+		x = 10
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = {id = belgium.2}
+		}
+	}	
+	#################INDUSTRY
+	focus = {
+		id = BEL_decrease_business_taxes
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_invite_american_investment}	
+		x = 0
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = decreased_business_taxes
+		}
+	}
+	focus = {
+		id = BEL_support_industrial_growth
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_decrease_business_taxes}	
+		x = 0
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = industrial_growth
+		}
+	}	
+	focus = {
+		id = BEL_invest_in_flanders
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_the_flemish_question}		
+		x = 10
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			6 = {
+				add_resource = {
+				type = steel
+				amount = 24
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	focus = {
+		id = BEL_invest_in_wallonia
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_invest_in_flanders}		
+		x = 10
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			34 = {
+
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_pave_way_for_industrial_expansion
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_invest_in_wallonia}		
+		x = 10
+		y = 7
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			34 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			6 = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	focus = {
+		id = BEL_exploit_the_congo
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}		
+		x = 10
+		y = 8
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			538 = {
+				add_resource = {
+				type = tungsten
+				amount = 3
+				}
+			}
+			850 = {
+				add_resource = {
+				type = rubber
+				amount = 3
+				}
+			}
+			295 = {
+				add_resource = {
+				type = rubber
+				amount = 3
+				}			
+			}
+		}
+	}
+	focus = {
+		id = BEL_expand_universities
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}		
+		x = 8
+		y = 8
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}			
+	#BEFRIEND AMERICA
+	focus = {
+		id = BEL_arsenal_of_democracy
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_status_quo}	
+		mutually_exclusive = { focus = BEL_armed_neutrality }						
+		x = 2
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			34 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+
+            }
+			6 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+
+            }            
+		}
+	}
+	focus = {
+		id = BEL_the_last_bastion
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_arsenal_of_democracy}		
+		x = 2
+		y = 6
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			USA = {
+				country_event = { id = belgium.1}
+			}
+		}
+	}
+	focus = {
+		id = BEL_armed_neutrality
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_status_quo}	
+		mutually_exclusive = { focus = BEL_arsenal_of_democracy }			
+		x = 4
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = armed_neutrality
+		}
+	}
+	#####FORTS
+	focus = {
+		id = BEL_surrounded_on_all_sides
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_armed_neutrality}	
+		x = 4
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = fort_effort
+		}
+	}
+	####CONSERVATISM
+	focus = {
+		id = BEL_conservative_values
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_status_quo}	
+		mutually_exclusive = { focus = BEL_democratic_socialism }								
+		x = 6
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = .05
+		}
+	}	
+	focus = {
+		id = BEL_back_the_church
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_conservative_values}	
+		x = 6
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = .05
+			add_stability = .05
+		}
+	}
+	focus = {
+		id = BEL_corporate_subsidies
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_back_the_church}	
+		x = 6
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = corporate_subsidies
+		}
+	}	
+	focus = {
+		id = BEL_silence_trotskyists
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_corporate_subsidies}	
+		x = 6
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_popularity = {
+				ideology = trotskyism
+				popularity = -0.05
+			}	
+		}
+	}			
+	#SOCIAL DEMOCRACY
+	focus = {
+		id = BEL_democratic_socialism
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_status_quo}	
+		mutually_exclusive = { focus = BEL_conservative_values }						
+	
+		x = 8
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BEL_eight_hour_work_day
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_democratic_socialism}	
+		x = 8
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = eight_hour_work_day
+		}
+	}
+	focus = {
+		id = BEL_socialized_healthcare
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_eight_hour_work_day}	
+		x = 8
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = socialized_healthcare
+		}
+	}
+	focus = {
+		id = BEL_welfare_state
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_socialized_healthcare}	
+		x = 8
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = welfare_state
+
+		}
+	}																			
+	###### RADICALISM #######
+	focus = {
+		id = BEL_radical_ideals
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_1936_elections}		
+		x = 17
+		y = 3
+		available = {
+			OR = {has_country_flag = BEL_trotskyists
+			has_country_flag = BEL_fascists
+			}
+
+		}
+		cost = 1
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = -25
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}	
+		}
+	}
+	#FASCIST
+	focus = {
+		id = BEL_fascist_state
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_radical_ideals}		
+		x = 15
+		y = 4
+		available = {
+			has_country_flag = BEL_fascists
+		}
+		cost = 1
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = fascist_state
+		}
+	}
+	focus = {
+		id = BEL_censor_the_communists
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_fascist_state}		
+		x = 12
+		y = 5
+
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = trotskyism
+				popularity = -0.05
+			}				
+		}
+	}
+	focus = {
+		id = BEL_expand_the_military_complex
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_censor_the_communists}		
+		x = 12
+		y = 6
+
+		cost = 1
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+	
+				34 = {
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+
+		}
+	}
+	focus = {
+		id = BEL_state_owned_arsenals
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_fascist_state}		
+		x = 16
+		y = 5
+
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = state_arsenals				
+		}
+	}
+	focus = {
+		id = BEL_ideological_struggle
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_state_owned_arsenals}		
+		x = 12
+		y = 8
+
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ideological_struggle			
+		}
+	}
+	focus = {
+		id = BEL_church_dominance
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_fascist_state}		
+		x = 14
+		y = 5
+
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = .05			
+		}
+	}
+	focus = {
+		id = BEL_work_with_de_clercq
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_church_dominance}		
+		x = 14
+		y = 6
+
+		cost = 5
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				remove_ideas = french_hegemony				
+		}
+	}	
+	focus = {
+		id = BEL_formations_de_combat
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_work_with_de_clercq}		
+		x = 14
+		y = 7
+
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = formations_de_combat
+		}
+	}
+	focus = {
+		id = BEL_lesser_of_the_evils
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_formations_de_combat}		
+		x = 14
+		y = 8
+
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			USA = {
+				country_event = { id = belgium.1}
+			}
+		}
+	}
+	focus = {
+		id = BEL_state_supported_military_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_expand_the_military_complex}		
+		x = 12
+		y = 7
+
+		cost = 12
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}	
+
+	######TROTSKYSIM
+	focus = {
+		id = BEL_peoples_commune
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_radical_ideals}		
+		x = 20
+		y = 4
+		available = {
+			has_country_flag = BEL_trotskyism
+		}
+		cost = 1
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = peoples_commune
+		}
+	}
+	focus = {
+		id = BEL_cleave_through_the_beauracracy
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_peoples_commune}		
+		x = 18
+		y = 5
+		available = {
+			has_country_flag = BEL_trotskyism
+		}
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = beauracracy_destroyed
+		}
+	}
+	focus = {
+		id = BEL_form_communes
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_cleave_through_the_beauracracy}		
+		x = 18
+		y = 6
+		available = {
+			has_country_flag = BEL_trotskyism
+		}
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BEL_communes
+		}
+	}	
+	focus = {
+		id = BEL_socialist_education
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_form_communes}		
+		x = 18
+		y = 7
+		available = {
+			has_country_flag = BEL_trotskyism
+		}
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BEL_socialist_education
+		}
+	}
+	focus = {
+		id = BEL_workers_culture
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_socialist_education}		
+		x = 18
+		y = 8
+		available = {
+			has_country_flag = BEL_trotskyism
+		}
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = workers_culture
+		}
+	}
+	#BEL TAKE STUFF OVER
+	focus = {
+		id = BEL_join_the_soviets
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_peoples_commune}		
+		x = 20
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			SOV = {
+			country_event = {id = belgium.3}
+			}
+		}
+	}
+	focus = {
+		id = BEL_permanent_revolution
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_join_the_soviets}		
+		x = 20
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = permanent_revolution
+		}
+	}
+	focus = {
+		id = BEL_arm_the_masses
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_permanent_revolution}		
+		x = 20
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = arm_the_masses
+		}
+	}
+	focus = {
+		id = BEL_heavy_industry
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_arm_the_masses}		
+		x = 20
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			34 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+
+            }
+			6 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+
+            }            
+		}
+	}
+	focus = {
+		id = BEL_soviet_military_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_join_the_soviets}		
+		x = 22
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BEL_military_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_american_military_experts focus = BEL_state_supported_military_research focus = BEL_soviet_military_research}		
+		x = 12
+		y = 9
+		cost = 1
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}			
+		}
+	}
+	focus = {
+		id = BEL_learn_infantry_tactics
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_military_research}			
+		x = 10
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}			
+		}
+	}	
+	focus = {
+		id = BEL_study_armor
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_learn_infantry_tactics}
+		x = 11
+		y = 11
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = tanks_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 1
+				technology = motorised_infantry
+			}							
+		}
+	}
+	focus = {
+		id = BEL_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BEL_learn_infantry_tactics }
+		x = 8
+		y = 11
+		relative_position_id = army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}	
+	focus = {
+		id = BEL_study_naval_tactics
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_military_research}		
+		x = 14
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 25
+			6 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}							
+		}
+	}
+	focus = {
+		id = BEL_large_navy
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_study_naval_tactics}
+		x = 13
+		y = 11
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}					
+		}
+	}
+	focus = {
+		id = BEL_flexible_navy
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_study_naval_tactics}
+		x = 15
+		y = 11
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}							
+		}
+	}
+	focus = {
+		id = BEL_light_ship_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_large_navy focus = BEL_flexible_navy}
+		x = 13
+		y = 12
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+				category = cl_tech
+			}							
+		}
+	}
+	focus = {
+		id = BEL_heavy_ship_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_large_navy focus = BEL_flexible_navy}
+		x = 15
+		y = 12
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = ca_tech
+				category = bb_tech
+			}							
+		}
+	}
+	focus = {
+		id = BEL_submarine_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_light_ship_research focus = BEL_heavy_ship_research}
+		x = 13
+		y = 13
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}							
+		}
+	}
+	focus = {	
+		id = BEL_carrier_research
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_large_navy focus = BEL_flexible_navy}
+		x = 15
+		y = 13
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}							
+		}
+	}					
+	focus = {
+		id = BEL_study_the_airforce
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_military_research}		
+		x = 18
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25		
+		}
+	}
+	focus = {
+		id = BEL_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = BEL_study_the_airforce }
+		x = 12
+		y = 11
+		relative_position_id = aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	focus = {
+		id = BEL_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BEL_study_the_airforce }
+		x = 14
+		y = 11
+		relative_position_id = aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	####RETAKE LAND
+	focus = {
+		id = BEL_prepare_for_war
+		icon = GFX_goal_focus_generic_industry
+		x = 3
+		y = 9
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = .05
+		}
+	}
+	focus = {
+		id = BEL_capture_luxemburg
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus =BEL_prepare_for_war}
+		x = 2
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			8 = {
+			add_core_of = BEL
+			}
+		}
+	}
+	focus = {
+		id = BEL_capture_the_netherlands
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = { focus = BEL_prepare_for_war}		
+		x = 4
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			35 = {
+			add_core_of = BEL
+			}
+			36 = {
+			add_core_of = BEL
+			}
+			7 = {
+			add_core_of = BEL
+			}
+		}
+	}
+	focus = {
+		id = BEL_form_benelux
+		icon = GFX_goal_focus_generic_industry
+		prerequisite = {focus = BEL_capture_the_netherlands}
+		prerequisite = {focus = BEL_capture_luxemburg}
+		available = {
+		BEL = {
+		owns_state = 35
+		owns_state = 36
+		owns_state = 7
+		owns_state = 8
+		}
+		}
+		x = 3
+		y = 11
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			set_cosmetic_tag = UOB
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BEL_interventionism
+		icon = GFX_goal_focus_generic_industry
+		available = {
+			has_globa_flag = belgium_wins
+		}
+		x = 10
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = interventionism
+			set_rule = { can_send_volunteers = yes }
+		}
+	}						
+}						

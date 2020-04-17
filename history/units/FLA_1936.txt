@@ -1,0 +1,75 @@
+division_template = {
+	name = "Infanterie Divisie"
+	division_names_group = HOL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+
+	division= {	# "1e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3576  # Kortjirk
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "2e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 516  # Brussels
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "3e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 13068  # Leuven
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "4e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3576  # Kortjik
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "5e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6598  # Antwerpen
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}				
+}

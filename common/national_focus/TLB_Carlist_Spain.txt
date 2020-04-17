@@ -1,0 +1,183 @@
+focus_tree = {
+	id = TLB_Carlist_Spain
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+
+	continuous_focus_position = {
+		x = 1
+		y = 1
+	}
+
+	default = no
+
+  focus = {
+    id = SPR_El_Estado_Espanol
+    icon = GFX_SPR_El_Estado_Espanol
+    x = 18
+    y = 0
+    cost = 1
+
+    ai_will_do = {
+      factor = 50
+    }
+
+    available = {
+      has_government = neutrality
+    }
+
+    completion_reward = {
+      add_political_power = 150
+    }
+  }
+
+  focus = {
+    id = SPR_economic_subsidies
+    icon = GFX_Generic_Industry
+    relative_position_id = SPR_El_Estado_Espanol
+
+    x = 0
+    y = 1
+    cost = 5
+
+    available = {
+      has_idea = SPR_foreign_debt
+    }
+
+    prerequisite = { focus = SPR_El_Estado_Espanol }
+
+    completion_reward = {
+      swap_ideas = {
+        add_idea = SPR_foreign_debt_1
+        remove_idea = SPR_foreign_debt
+      }
+    }
+  }
+
+  focus = {
+    id = SPR_deal_with_mola
+    icon = GFX_Generic_Execution
+    relative_position_id = SPR_El_Estado_Espanol
+
+    x = -4
+    y = 1
+    cost = 5
+
+    available = {
+      any_army_leader = {
+          has_id = 9999
+      }
+    }
+
+    prerequisite = { focus = SPR_El_Estado_Espanol }
+
+    completion_reward = {
+      country_event = TLB_SPR.2
+    }
+  }
+
+  focus = {
+    id = SPR_loyalty_of_blanco
+    icon = GFX_SPR_blanco
+    relative_position_id = SPR_El_Estado_Espanol
+
+    x = 4
+    y = 1
+    cost = 5
+
+    prerequisite = { focus = SPR_El_Estado_Espanol }
+
+    available = {
+      any_unit_leader = {
+        has_id = 1118
+      }
+    }
+
+    completion_reward = {
+      add_political_power = -100
+      add_war_support = 0.05
+    }
+  }
+
+  focus = {
+    id = SPR_election_of_a_new_monarch
+    icon = GFX_Generic_Crown_Box
+    relative_position_id = SPR_El_Estado_Espanol
+
+    x = 0
+    y = 2
+    cost = 1
+
+    prerequisite = { focus = SPR_loyalty_of_blanco }
+    prerequisite = { focus = SPR_deal_with_mola }
+    prerequisite = { focus = SPR_economic_subsidies }
+
+    completion_reward = {
+      add_political_power = 150
+      country_event = TLB_SPR.3
+    }
+  }
+
+  focus = {
+    id = SPR_casa_de_borbon
+    icon = GFX_SPR_alfonso
+    relative_position_id = SPR_election_of_a_new_monarch
+
+    x = -10
+    y = 1
+    cost = 0
+
+    available = {
+      has_government = monarchist
+    }
+
+    prerequisite = { focus = SPR_election_of_a_new_monarch }
+
+    completion_reward = {
+      add_political_power = 100
+    }
+  }
+
+  focus = {
+    id = SPR_Carlistas_de_Nuevo
+    icon = GFX_SPR_javier
+    relative_position_id = SPR_election_of_a_new_monarch
+
+    x = 0
+    y = 1
+    cost = 0
+
+    available = {
+      has_government = neutrality
+    }
+
+    prerequisite = { focus = SPR_election_of_a_new_monarch }
+
+    completion_reward = {
+      add_political_power = 100
+    }
+  }
+
+  focus = {
+    id = SPR_Republica_de_Franco
+    icon = GFX_SPR_franco
+    relative_position_id = SPR_election_of_a_new_monarch
+
+    x = 10
+    y = 1
+    cost = 0
+
+    available = {
+      has_government = fascism
+    }
+
+    prerequisite = { focus = SPR_election_of_a_new_monarch }
+
+    completion_reward = {
+      add_political_power = 100
+    }
+  }
