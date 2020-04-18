@@ -252,5 +252,12 @@ ideas = {
 			traits = { naval_theorist }
 		}
 	}
+hidden_ideas = {
+      foreign_scientists = {
+           modifier = {
+                 research_speed_factor = 0.05 # Reduces research time by 5%
+           }
+      }
+ }
 
 }
