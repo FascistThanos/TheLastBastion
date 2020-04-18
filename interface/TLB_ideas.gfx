@@ -1186,6 +1186,32 @@ spriteTypes = {
 	}
 
 
+	spriteType = {
+		name = "GFX_idea_free_society"
+		texturefile = "gfx/interface/ideas/idea_no_police.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_volunteer_officers"
+		texturefile = "gfx/interface/ideas/idea_volunteer_police.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_united_police_corp"
+		texturefile = "gfx/interface/ideas/idea_organized_police.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_police_state"
+		texturefile = "gfx/interface/ideas/idea_police_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_martial_law"
+		texturefile = "gfx/interface/ideas/idea_martial_law.dds"
+	}
+
+
 
 	### CONSCRIPTION LAWS
 	spriteType = {

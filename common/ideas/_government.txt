@@ -53,6 +53,8 @@ ideas = {
       ai_will_do = {
         factor = 5
       }
+
+      default = yes
     }
 
     seventeen = {
@@ -171,6 +173,8 @@ ideas = {
         root_out_resistance_effectiveness_factor = -0.10
         resistance_target = 0.05
       }
+
+      default = yes
     }
 
     united_police_corp = {
@@ -226,6 +230,8 @@ ideas = {
         stability_factor = -0.05
         political_power_gain = 0.05
       }
+
+      default = yes
     }
 
     state_press = {
