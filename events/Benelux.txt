@@ -99,7 +99,7 @@ country_event = {
 	trigger = {
 
 		tag = HOL
-#		has_global_flag = fcw_help
+		has_global_flag = fcw_help
 		NOT = {
 			has_country_flag = help_triggered
 		}
