@@ -464,7 +464,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	###ACCEPT
 		name = benelux.17.a
 		HOL = {
 			annex_country = { target = SAF transfer_troops = yes }	
@@ -502,7 +501,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	###ACCEPT
 		name = benelux.18.a
 		681  = {
 		add_core_of = HOL
@@ -524,7 +522,11 @@ country_event = {
 		}	
 		545  = {
 		add_core_of = HOL
-		}														
+		}
+		create_wargoal = {
+		type = annex
+		target = SAF
+		}															
 	}
 
 }

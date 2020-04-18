@@ -1473,6 +1473,27 @@ focus_tree = {
 		}
 	}																		
 	focus = {
+		id = HOL_revolutionaire_marine
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = {focus = HOL_reform_the_military}	
+		relative_position_id = 	HOL_reform_the_military
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+			}
+
+	}
+	focus = {
 		id = HOL_damen_group
 		icon = GFX_Generic_Naval_Industry
 		prerequisite = { focus = HOL_revolutionaire_marine }
@@ -1503,27 +1524,6 @@ focus_tree = {
 			}
 			}
 	}	
-	focus = {
-		id = HOL_revolutionaire_marine
-		icon = GFX_goal_generic_navy_carrier
-		prerequisite = {focus = HOL_reform_the_military}	
-		relative_position_id = 	HOL_reform_the_military
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = carrier_bonus
-				bonus = 1.0
-				uses = 1
-				category = naval_doctrine
-			}
-			}
-
-	}
 	focus = {
 		id = HOL_hollandse_signaalapparaten_B.V.
 		icon = GFX_goal_generic_navy_carrier
