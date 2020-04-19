@@ -1,0 +1,47 @@
+add_namespace = luxemburg
+country_event = {
+    id = luxemburg.0
+    title = luxemburg.0.t
+    desc = luxemburg.0.d
+    #picture = 
+    fire_only_once = no
+	is_triggered_only = yes
+    option = {
+    #### REPUBLICANS WIN
+        name = luxemburg.0.a
+        set_politics = {
+        ruling_party = democratic
+        elections_allowed = no
+        }
+    }
+    option = {
+    #### socialists
+        name = luxemburg.0.b
+        add_stability = -.05
+        set_politics = {
+        ruling_party = trotskyism
+        elections_allowed = no
+        }
+    }
+}
+country_event = {
+    id = luxemburg.1
+    title = luxemburg.1.t
+    desc = luxemburg.1.d
+    #picture = 
+    fire_only_once = no
+    is_triggered_only = yes
+    option = {
+    #### INVEST IN BETTER EQUIPMENT
+        name = luxemburg.1.a
+        every_unit_leader = {
+    limit = { has_id = 65 }
+    add_unit_leader_trait = inflexible_strategist
+}
+    }
+    option = {
+    #### INCREASE PAY
+        name = luxemburg.1.b
+        add_manpower = 200
+    }
+}
