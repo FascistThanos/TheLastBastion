@@ -1,0 +1,21 @@
+state = {
+	id = 947
+	name = "STATE_947"
+	manpower = 89400
+
+	state_category = pastoral
+
+	history = {
+		owner = ISR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		add_core_of = ISR
+	}
+
+	provinces={
+		4562 4591 4603 11976
+	}
+}

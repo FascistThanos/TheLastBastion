@@ -2,18 +2,24 @@ state={
 	id=675
 	name="STATE_675"
 	manpower = 122093
-	
-	state_category = wasteland
+
+	state_category = rural
 
 	history={
 		owner = IRQ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			2089 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = IRQ
+		victory_points = {
+			2089 1
+		}
 	}
-	
+
 	provinces={
-		1631 4951 10744 12413 12879 
+		2089 8001 10744 10876 12879
 	}
 }

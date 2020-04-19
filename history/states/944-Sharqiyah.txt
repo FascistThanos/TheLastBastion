@@ -1,0 +1,22 @@
+state = {
+	id = 944
+	name = "STATE_944"
+	manpower = 79600
+
+	state_category = rural
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+			12702 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = SAU
+	}
+
+	provinces={
+		 1955 5024 7995 10791 10850 10923 12702 12749
+	}
+}

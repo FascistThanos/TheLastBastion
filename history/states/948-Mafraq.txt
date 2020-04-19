@@ -1,0 +1,20 @@
+state = {
+	id = 948
+	name = "STATE_948"
+	manpower = 104300
+
+	state_category = rural
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = ISR
+	}
+
+	provinces={
+		1544 4440 
+	}
+}

@@ -5,6 +5,8 @@ state={
 	manpower=42
 	state_category = wasteland
 
+	impassable = yes
+
 	history={
 		owner = SAU
 		buildings = {
@@ -14,6 +16,6 @@ state={
 	}
 
 	provinces={
-		4932 5081 8030 8118 10870 12740 12768 
+		4932 5081 8030 8118 10870 12740 12768
 	}
 }

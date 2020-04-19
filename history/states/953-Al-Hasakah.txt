@@ -1,0 +1,21 @@
+state = {
+	id = 953
+	name = "STATE_953"
+	manpower = 108400
+
+	state_category = pastoral
+
+	history={
+		owner = SYR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SYR
+
+	}
+
+
+	provinces={
+		901 1549 1578 1606 1634 6883 10882
+	}
+}

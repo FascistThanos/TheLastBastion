@@ -1,0 +1,22 @@
+state = {
+	id = 941
+	name = "STATE_941"
+	manpower = 28400
+
+	state_category = rural
+
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 2
+			10760 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = OMA
+	}
+
+	provinces={
+		2018 2059 2103 8002 
+	}
+}
