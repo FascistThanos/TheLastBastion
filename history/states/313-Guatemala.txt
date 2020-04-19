@@ -1,12 +1,11 @@
-
-state={
-	id=313
-	name="STATE_313"
-	resources={
+state = {
+	id = 313
+	name = "STATE_313"
+	resources = {
 		chromium=4.000
 	}
 
-	history={
+	history = {
 		owner = GUA
 		buildings = {
 			infrastructure = 4
@@ -15,25 +14,20 @@ state={
 			air_base = 1
 			10886 = {
 				naval_base = 1
-
 			}
 			13085 = {
 				naval_base = 1
-
 			}
-
 		}
 		add_core_of = GUA
 		victory_points = {
-			10886 3 
+			10886 3
 		}
-
 	}
 
-	provinces={
-		4991 10842 10886 13085 13824 13825 13827 13829 13833 13835 13838 13840 13846 13848 
+	provinces = {
+		10886 13085 13825 13827 13833
 	}
-	manpower=1771000
-	buildings_max_level_factor=1.000
-	state_category=town
+	manpower = 1554600
+	state_category = town
 }

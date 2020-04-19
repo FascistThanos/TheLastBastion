@@ -1,0 +1,24 @@
+state = {
+	id = 955
+	name = "STATE_955"
+
+	history = {
+		owner = CUB
+		buildings = {
+			infrastructure = 4
+			1550 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CUB
+		victory_points = {
+			7590 1
+		}
+	}
+
+	provinces = {
+		1550 3721 7590 12347 13879 13881 13884
+	}
+	manpower = 1043600
+	state_category = large_town
+}

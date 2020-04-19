@@ -1,0 +1,22 @@
+state = {
+	id = 956
+	name = "STATE_956"
+
+	history = {
+		owner = DOM
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+		add_core_of = DOM
+		victory_points = {
+			4598 1
+		}
+	}
+
+	provinces = {
+		4598 7632 13851 13860 13868
+	}
+	manpower = 208500
+	state_category = town
+}

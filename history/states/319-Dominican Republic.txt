@@ -1,38 +1,29 @@
-
-state={
-	id=319
-	name="STATE_319"
-	resources={
+state = {
+	id = 319
+	name = "STATE_319"
+	resources = {
 		chromium=1.000
 	}
 
-	history={
+	history = {
 		owner = DOM
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
 			7660 = {
 				naval_base = 2
-
 			}
-
 		}
 		add_core_of = DOM
 		victory_points = {
-			7660 5 
+			7660 5
 		}
-		victory_points = {
-			4598 1 
-		}
-
 	}
 
-	provinces={
-		4598 7632 7660 10484 13851 13858 13859 13860 13862 13866 13868 
+	provinces = {
+		7660 10484 13858 13859 13862 13866
 	}
-	manpower=1256000
-	buildings_max_level_factor=1.000
-	state_category=town
+	manpower = 1045600
+	state_category = town
 }

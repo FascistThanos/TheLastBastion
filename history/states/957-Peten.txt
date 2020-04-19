@@ -1,0 +1,18 @@
+state = {
+	id = 957
+	name = "STATE_957"
+
+	history = {
+		owner = GUA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GUA
+	}
+
+	provinces = {
+		4991 13838 13840 13846 13848
+	}
+	manpower = 45600
+	state_category = rural
+}

@@ -1,0 +1,21 @@
+state = {
+	id = 954
+	name = "STATE_954"
+	resources={
+		steel = 3
+	}
+
+	history = {
+		owner = CUB
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CUB
+	}
+
+	provinces = {
+		4476 7546 10374 13892 13888 13895
+	}
+	manpower = 806400
+	state_category = town
+}

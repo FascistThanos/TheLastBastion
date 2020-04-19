@@ -1,0 +1,20 @@
+state = {
+	id = 962
+	name = "STATE_962"
+
+	history = {
+		owner = COS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 1
+		}
+		add_core_of = COS
+	}
+
+	provinces = {
+		12878 13784 13789 13794
+	}
+	manpower = 102430
+	state_category = town
+}

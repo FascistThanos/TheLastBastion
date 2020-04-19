@@ -1,0 +1,21 @@
+state = {
+	id = 960
+	name = "STATE_960"
+
+	history = {
+		owner = HON
+		buildings = {
+			infrastructure = 3
+			8017 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = HON
+	}
+
+	provinces = {
+		8017 13823 13826 13828 13834
+	}
+	manpower = 105400
+	state_category = rural
+}

@@ -14,30 +14,19 @@ state={
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
-			7622 = {
+			13865 = {
 				naval_base = 3
-
 			}
-			1550 = {
-				naval_base = 1
-
-			}
-
 		}
 		add_core_of = CUB
 		victory_points = {
-			7622 5
+			13865 5
 		}
-		victory_points = {
-			7590 1
-		}
-
 	}
 
 	provinces={
-		1550 3721 4476 4600 7451 7546 7590 7622 10374 10498 12347 13865 13879 13881 13884 13888 13892 13894 13895 13896 13897 13898 
+		4600 7451 7622 10498 13865 13894 13896 13897 13898
 	}
-	manpower=3607919
-	buildings_max_level_factor=1.000
-	state_category=town
+	manpower=2074300
+	state_category = city
 }

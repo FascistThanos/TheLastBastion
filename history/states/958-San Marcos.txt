@@ -1,0 +1,18 @@
+state = {
+	id = 958
+	name = "STATE_958"
+
+	history = {
+		owner = GUA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GUA
+	}
+
+	provinces = {
+		10842 13824 13829 13835
+	}
+	manpower = 107540
+	state_category = town
+}
