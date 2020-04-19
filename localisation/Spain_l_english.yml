@@ -58,6 +58,7 @@
   SPR_foreign_debt:0 "Foreign Debt"
   SPR_foreign_debt_desc:0 "The Spanish State has been borrowing money from the United States of America to ensure the government does not collapse. The pesetas has been falling in value ever since Alfonso XII died, especially since his face had been on every paper varient of the currency."
 
+  weak_controller:0 "Weak Ruler"
 
   SPR_artillery_equipment_1_short:0 "Schneider M06"
   SPR_artillery_equipment_1:0 "75 mm Schneider M06 Field Gun"
