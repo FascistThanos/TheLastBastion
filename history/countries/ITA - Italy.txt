@@ -142,7 +142,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Benedetto Croce"
+	name = "Enrico de Nicola"
 	desc = "POLITICS_CROCE_DESC"
 	picture = "Portrait_Italy_Benedetto_Croce.dds"
 	expire = "1965.1.1"
@@ -181,11 +181,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = trotskyism_type
 	traits = {
-
+		#
 	}
-}
-
-
 }
 
 create_country_leader = {
