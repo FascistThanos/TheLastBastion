@@ -10,7 +10,7 @@ focus_tree = {
         }
 			focus = {
 		id = LUX_public_elections
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_goal_find_leader
 		x = 6
 		y = 1
 		search_filters = {}
@@ -25,7 +25,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_general_rearmant
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_goal_military_trade
 		prerequisite = {focus = LUX_public_elections} 
 		x = 6
 		y = 2
@@ -47,7 +47,7 @@ focus_tree = {
 	}
 		focus = {
 		id = LUX_gain_french_military_advisors
-		icon = GFX_luxfradeal
+		icon = GFX_luxfradeal_shine
 		prerequisite = {focus = LUX_general_rearmant} 
 		x = 6
 		y = 3
@@ -73,7 +73,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_create_military_academy
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_FLF_focus_Focus_On_The_Military
 		prerequisite = {focus = LUX_gain_french_military_advisors} 
 		x = 6
 		y = 4
@@ -98,7 +98,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_increase_army_pay
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_FRA_MilitaryLoyalty
 		prerequisite = {focus = LUX_create_military_academy} 
 		x = 6
 		y = 5
@@ -113,7 +113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_build_land_forts
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Invasion
 		prerequisite = {focus = LUX_increase_army_pay} 
 		x = 6
 		y = 6
@@ -135,7 +135,7 @@ focus_tree = {
     }
 	focus = {
 		id = LUX_self_preservation_military_act
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Machine_Gun
 		prerequisite = {} 
 		available = {
 		has_global_flag = FLA_civil_war_start
@@ -156,7 +156,7 @@ focus_tree = {
 	}
 		focus = {
 		id = LUX_help_Flanders
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Machine_Gun02
 		prerequisite = {focus = LUX_self_preservation_military_act} 
 		mutually_exclusive = {focus = LUX_help_Belgium}
 		available = {
@@ -180,7 +180,7 @@ focus_tree = {
 	}
 		focus = {
 		id = LUX_take_back_Belgium
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_War_Propaganda05
 		prerequisite = {focus = LUX_help_Flanders} 
 		available = {
 		country_exists = BEL
@@ -205,7 +205,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_expand_our_industry
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Industry
 		prerequisite = {focus = LUX_take_back_Belgium} 
 		available = {
 		country_exists = LUX
@@ -229,7 +229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_expand_our_industry_more
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Industry_04
 		prerequisite = {focus = LUX_expand_our_industry} 
 		available = {
 		country_exists = LUX
@@ -255,7 +255,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_invite_French_military_engineers
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_FRA_MilitaryLoyalty
 		prerequisite = {focus = LUX_expand_our_industry_more focus = LUX_expand_railroad_system} 
 		x = 8
 		y = 6
@@ -270,7 +270,7 @@ focus_tree = {
 	}
 		focus = {
 		id = LUX_help_Belgium
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_ITA_nomoretrenches
 		prerequisite = {focus = LUX_self_preservation_military_act} 
 		mutually_exclusive = {focus = LUX_help_Flanders}
 		available = {
