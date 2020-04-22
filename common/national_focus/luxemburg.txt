@@ -98,7 +98,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_increase_army_pay
-		icon = GFX_FRA_MilitaryLoyalty
+		icon = GFX_luxsoldier
 		prerequisite = {focus = LUX_create_military_academy} 
 		x = 6
 		y = 5
@@ -294,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_draw_up_war_plans
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_War_Propaganda03
 		prerequisite = {focus = LUX_help_Belgium} 
 		available = {
 		country_exists = LUX
@@ -313,7 +313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_build_railroad_system
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Railroads
 		prerequisite = {focus = LUX_draw_up_war_plans} 
 		available = {
 		country_exists = LUX
@@ -337,7 +337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_expand_railroad_system
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Train
 		prerequisite = {focus = LUX_build_railroad_system} 
 		available = {
 		country_exists = LUX
@@ -361,7 +361,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_build_airport
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Industry_Planes
 		prerequisite = {focus = LUX_expand_our_industry_more focus = LUX_expand_railroad_system}
 		available = {
 		country_exists = LUX
@@ -385,7 +385,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_radio_Luxemburg
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Generic_Radar_Station
 		available = {
 		country_exists = LUX
 		}
@@ -408,7 +408,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_foreign_scientists
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_Focus_Examine_Foreign_Science
 		prerequisite = {focus = LUX_radio_Luxemburg}
 		available = {
 		country_exists = LUX
@@ -426,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_Luxemburg_Space_Program
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_WAW_jet_engine
 		prerequisite = {focus = LUX_foreign_scientists}
 		available = {
 		country_exists = LUX
