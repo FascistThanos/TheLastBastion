@@ -1,0 +1,29 @@
+add_namespace = south_africa
+country_event = {
+    id = south_africa.0
+    title = south_africa.0.t
+    desc = south_africa.0.d
+    #picture = 
+    fire_only_once = no
+	is_triggered_only = yes
+    option = {
+    #### ACCEPT AUSTRIAN PROPOSAL
+        name = south_africa.0.a
+        set_politics = {
+        ruling_party = facist
+        elections_allowed = no
+        }
+        AUS = {
+        create_faction = Austro-African Joint Expansion Pact
+        add_to_faction = SAF
+        }
+    }
+    option = {
+    #### REFUSE PROPOSAL
+        name = south_africa.0.b
+        add_stability = .05
+        AUS = { 
+				add_opinion_modifier = { target = SAF modifier = medium_decrease } 
+			}
+    }
+}
