@@ -259,6 +259,10 @@ ideas = {
 				original_tag = SPR
 			}
 
+			available = {
+				has_completed_focus = SPR_Republica_de_Franco
+			}
+
 			visible = {
 				NOT = {
 					tag = SPD
@@ -285,6 +289,10 @@ ideas = {
 			}
 
 			traits = { loyal_falangist }
+
+			available = {
+				has_completed_focus = SPR_Republica_de_Franco
+			}
 		}
 
 		SPA_tomas_dominguez_arevalo = {
@@ -303,6 +311,10 @@ ideas = {
 			}
 
 			traits = { lifelong_carlist }
+
+			available = {
+				has_completed_focus = SPR_Carlistas_de_Nuevo
+			}
 		}
 
 		SPA_diego_hidalgo_y_duran = {
@@ -357,6 +369,10 @@ ideas = {
 			}
 
 			traits = { traditionalist_theorist }
+
+			available = {
+				has_completed_focus = SPR_Carlistas_de_Nuevo
+			}
 		}
 
 		SPA_jose_antonio_primo_de_rivera = {
@@ -375,66 +391,14 @@ ideas = {
 			}
 
 			traits = { falangist_figurehead }
-		}
 
-		SPA_martin_de_riquer = { #Carlist
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = SPR
+			available = {
+				has_completed_focus = SPR_Republica_de_Franco
 			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
-			traits = { carlist_intellectual }
-		}
-
-		SPA_mauricio_de_sivatte = { #Carlist
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
-			traits = { regional_traditionalist_leader }
 		}
 	}
 
 	theorist = {
-
-		### Vanilla ###
-
-		SPA_jose_enrique_varela_vanilla = {
-			ledger = army
-
-			name = SPA_jose_enrique_varela
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			picture = generic_army_europe_3
-
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-
-			traits = { military_theorist }
-		}
 
 		SPA_emilio_herrera_vanilla = {
 			ledger = air
@@ -461,6 +425,10 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
+			}
+
+			available = {
+				has_completed_focus = SPR_Carlistas_de_Nuevo
 			}
 
 			visible = {
@@ -499,71 +467,281 @@ ideas = {
 				cat_mobile_warfare = 0.15
 			}
 
+			available = {
+				has_completed_focus = SPR_Republica_de_Franco
+			}
+
 			traits = { mobile_warfare_expert }
+		}
+	}
+
+	naval_manufacturer = {
+
+		designer = yes
+
+		### La Resistance ###
+
+		secn = {
+
+			picture = SPR_sociedad_espanola_de_construccion_naval
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			equipment_bonus = {
+				# fast and well armed
+			}
+
+			traits = { atlantic_fleet_naval_manufacturer }
+
+			modifier = {
+				# Weak defence vs air
+			}
+		}
+
+		SPR_euskalduna = {
+
+			picture = SPR_euskalduna
+
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			equipment_bonus = {
+				# fast and well armed
+			}
+
+			traits = { raiding_fleet_naval_manufacturer }
+
+			modifier = {
+				# Weak defence vs air
+			}
+		}
+	}
+
+	aircraft_manufacturer = {
+
+		designer = yes
+
+		### Vanilla ###
+
+		### La Resistance ###
+
+		casa = {
+
+			picture = SPR_casa
+
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { medium_aircraft_manufacturer }
+
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_hispano_aviacion = {
+
+			picture = SPR_hispano_aviacion
+
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { light_aircraft_manufacturer }
+
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		SPR_star_bonifacio_echeverria = {
+
+			picture = SPR_star_bonifacio_echeverria
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		SPR_esperanza_y_cia = {
+
+			picture = SPR_esperanza_y_cia
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				artillery = 0.15
+			}
+
+			traits = { artillery_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		SPR_llama_gabilondo_y_cia = {
+
+			picture = SPR_llama_gabilondo_y_cia_sa
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				support_tech = 0.10
+			}
+
+			traits = { support_equipment_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		SPR_hispano_suiza = {
+
+			picture = SPR_hispano_suiza
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+
+			traits = { motorized_equipment_manufacturer }
+
+			modifier = {
+			}
+		}
+
+	}
+
+
+	industrial_concern = {
+
+		SPR_compania_telefonica_nacional = {
+
+			picture = SPR_compania_telefonica_nacional
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				electronics = 0.15
+			}
+
+			traits = { electronics_concern }
+
+			modifier = {
+			}
+		}
+
+		SPR_industria_de_guerra_de_cataluna = {
+
+			picture = SPR_industrias_de_guerra_de_cataluna
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+			}
+
+			traits = { construction_company }
+
+			modifier = {
+			}
+		}
+
+		SPR_altos_hornos_de_vizcaya = {
+
+			picture = SPR_altos_hornos_de_vizcaya
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				industry = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+			}
+		}
+
+		SPR_campsa = {
+
+			picture = SPR_campsa
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.05
+			}
+
+			traits = { refinery_concern }
+
+			modifier = {
+			}
 		}
 	}
 
 	# MILITARY
 	army_chief = {
-
-		### Vanilla ###
-
-		SPA_miguel_cabanellas_ferrer_vanilla = {
-
-			name = SPA_miguel_cabanellas_ferrer
-
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { army_chief_old_guard }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_ricardo_rada_vanilla = {
-
-			name = SPA_ricardo_rada
-
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { army_chief_defensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_emilio_mola_vidal_vanilla = {
-
-			name = SPA_emilio_mola_vidal
-
-			picture = generic_army_europe_5
-
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { army_chief_offensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		### La Resistance ###
 
@@ -641,6 +819,10 @@ ideas = {
 				original_tag = SPR
 			}
 
+			available = {
+				has_completed_focus = SPR_Republica_de_Franco
+			}
+
 			visible = {
 				NOT = {
 					tag = SPD
@@ -658,46 +840,6 @@ ideas = {
 	}
 	air_chief = {
 
-		### Vanilla ###
-
-		SPA_alfredo_kindelan_duany_vanilla = {
-
-			name = SPA_alfredo_kindelan_duany
-
-			picture = generic_air_europe_1
-
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { air_chief_ground_support_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_juan_yague_blanco_vanilla = {
-
-			name = SPA_juan_yague_blanco
-
-			picture = generic_air_europe_3
-
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { air_chief_reform_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 		### La Resistance ###
 
 		SPA_joaquin_garcia_morato = { # Francoist
@@ -706,6 +848,10 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
+			}
+
+			available = {
+				has_completed_focus = SPR_Republica_de_Franco
 			}
 
 			visible = {
@@ -730,11 +876,8 @@ ideas = {
 				original_tag = SPR
 			}
 
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+			available = {
+				has_completed_focus = SPR_Carlistas_de_Nuevo
 			}
 
 			traits = { air_chief_reform_2 }
@@ -747,63 +890,6 @@ ideas = {
 
 	navy_chief = {
 
-		### Vanilla ###
-
-		SPA_salvador_moreno_fernandez_vanilla = {
-
-			name = SPA_salvador_moreno_fernandez
-
-			picture = generic_navy_europe_1
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			traits = { navy_chief_decisive_battle_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_fransisco_moreno_fernandez_vanilla = {
-
-			name = SPA_fransisco_moreno_fernandez
-
-			picture = generic_navy_europe_2
-
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { navy_chief_reform_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_luis_carrero_blanco_vanilla = {
-
-			name = SPA_luis_carrero_blanco
-
-			picture = generic_navy_europe_1
-
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { navy_chief_old_guard }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 		### La Resistance ###
 
 		SPA_luis_carrero_blanco = { # Francoist
@@ -814,14 +900,8 @@ ideas = {
 				original_tag = SPR
 			}
 
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
 			available = {
+				has_completed_focus = SPR_loyalty_of_blanco
 			}
 
 			traits = { navy_chief_decisive_battle_2 }
@@ -834,27 +914,6 @@ ideas = {
 
 
 	high_command = {
-
-		### Vanilla ###
-
-		SPA_emilio_esteban_infantes_vanilla = {
-			ledger = army
-
-			name = SPA_emilio_esteban_infantes
-
-			picture = generic_army_europe_5
-			allowed = {
-				original_tag = SPR
-			}
-
-
-
-			traits = { army_logistics_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		SPA_agustin_munoz_grandes_vanilla = {
 			ledger = army
@@ -924,6 +983,12 @@ ideas = {
 				original_tag = SPR
 			}
 
+			available = {
+				NOT = {
+					has_completed_focus = SPR_deal_with_mola
+				}
+			}
+
 			visible = {
 				NOT = {
 					tag = SPD
@@ -970,6 +1035,10 @@ ideas = {
 				original_tag = SPR
 			}
 
+			available = {
+				has_completed_focus = SPR_Republica_de_Franco
+			}
+
 			visible = {
 				NOT = {
 					tag = SPD
@@ -993,6 +1062,10 @@ ideas = {
 				original_tag = SPR
 			}
 
+			available = {
+				has_completed_focus = SPR_Carlistas_de_Nuevo
+			}
+
 			visible = {
 				NOT = {
 					tag = SPD
@@ -1014,6 +1087,10 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
+			}
+
+			available = {
+				has_completed_focus = SPR_Carlistas_de_Nuevo
 			}
 
 			visible = {
