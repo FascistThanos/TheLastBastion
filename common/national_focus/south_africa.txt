@@ -1,0 +1,61 @@
+focus_tree = {
+    id = south_africa
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SAF
+}
+        }
+        focus = {
+		id = SAF_ally_BGE
+		icon = GFX
+		mutually_exclusive = { focus = SAF_abandon_BGE }
+		x = 6
+		y = 1
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			diplomatic_relation = { 
+				country = BGE
+				relation = non_aggression_pact 
+			}
+		}
+	}
+	focus = {
+		id = SAF_abandon_BGE
+		icon = GFX
+		mutually_exclusive = { focus = SAF_ally_BGE }
+		x = 8
+		y = 1
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			BGE = { 
+				add_opinion_modifier = { target = SAF modifier = large_decrease } 
+			}
+		}
+	}
+	focus = {
+		id = SAF_Austrian_Expansion_Program
+		icon = GFX
+		prerequisite = { focus = SAF_ally_BGE OR = SAF_abandon_BGE }
+		x = 7
+		y = 2
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				country_event = { id = south_africa.0 days = 0 }
+		}
+	}
+}        
