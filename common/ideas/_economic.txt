@@ -175,16 +175,8 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
+					has_government = trotskyism
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
-					AND = {
-						has_war = yes
-						any_enemy_country = {
-							ic_ratio = {
-								tag = ROOT
-								ratio > 0.4
-							}
-						}
-					}
 				}
 
 				if = {
@@ -199,7 +191,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
-					congress_high_support_trigger = yes
 				}
 			}
 

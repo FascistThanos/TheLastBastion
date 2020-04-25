@@ -53,7 +53,7 @@
   SOV_stalinthreat_desc:0 "When Stalin fled to Siberian wilderness when Trotsky took power, a decent amount of his most loyal supporters objected. We may need to track down and dispose of him if we want to remain stable."
   SOV_target_stalin:0 "Track Down Stalin"
   SOV_target_stalin_desc:0 "With the escape of Stalin back in 1924, the Soviet Union under Trotsky has feared his return. Some members of the Communist Party fear Trotsky will eliminate them, and now send off teams to search for Stalin across the world."
-  SOV_ignore_stalin:0 "Focus on More Important Matters"
+  SOV_ignore_stalin:0 "A New Red Dawn"
   SOV_ignore_stalin_desc:0 ""
   SOV_red_wind:0 "Spread the Revolution"
   SOV_red_wind_desc:0 ""
@@ -61,6 +61,7 @@
   SOV_finland_diplomat_desc:0 ""
   SOV_rebuild_georgia:0 "Finish Reconstruction of Georgia"
   SOV_rebuild_georgia_desc:0 ""
+  SOV_execute_stalin:0 "The Execution of Stalin"
 
 
   #############3
@@ -418,6 +419,7 @@ great_comintern:0 "The Great Comintern"
   stalin_not_found1:0 "Stalin was not found in Europe"
   stalin_not_found2:0 "Stalin was not found in Asia"
   stalin_not_found3:0 "Stalin was not found in Africa"
+  sov_stalin_executed:0 "Stalin has been Executed"
 
 
 USA_us_ussr_economic_cooperation:0 "US-USSR Economic Cooperation"

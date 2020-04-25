@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 
-continuous_focus_position = { x = 50 y = 1200 }
+continuous_focus_position = { x = 50 y = 1400 }
 
 	default = no
 	focus = {
@@ -20,9 +20,6 @@ continuous_focus_position = { x = 50 y = 1200 }
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
-		mutually_exclusive = {
-        focus = SOV_ignore_stalin
-    }
 		completion_reward = {
 			add_political_power = 75
 		}
@@ -34,33 +31,16 @@ continuous_focus_position = { x = 50 y = 1200 }
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
-		mutually_exclusive = {
-        focus = SOV_target_stalin
-    }
+		available = {
+		has_global_flag = sov_stalin_executed
+		has_completed_focus = SOV_execute_stalin
+		}
 		completion_reward = {
 			add_political_power = 75
 			set_global_flag = stalinignored
 		}
 	}
 
-	focus = {
-		id = SOV_stalin_not_found
-		icon = GFX_goal_generic_political_pressure
-		x = 24
-		y = 0
-		cost = 10
-		available ={
-has_global_flag = stalin_not_found1
-has_global_flag = stalin_not_found2
-has_global_flag = stalin_not_found3
-
-		}
-		available_if_capitulated = yes
-				completion_reward = {
-			add_political_power = 75
-			add_stability = 0.05
-		}
-	}
 
 	focus = {
 		id = SOV_red_wind
@@ -71,7 +51,7 @@ has_global_flag = stalin_not_found3
 		available_if_capitulated = yes
 		prerequisite = {
         focus = SOV_ignore_stalin
-				focus = SOV_stalin_not_found
+
     }
 		completion_reward = {
 			country_event = {
@@ -152,9 +132,8 @@ relative_position_id = SOV_red_wind
         focus = SOV_red_wind
     }
 		completion_reward = {
-			remove_ideas = {
-				SOV_destroyedgeorgia
-			}
+add_stability = 0.02
+add_political_power = 50
 		}
 	}
 	focus = {
@@ -267,6 +246,10 @@ mutually_exclusive = {focus = SOV_show_trials}
 		y = 1
 		cost = 10
 relative_position_id = SOV_show_trials
+available = {
+has_global_flag = sov_stalin_executed
+has_completed_focus = SOV_execute_stalin
+}
 prerequisite = {focus = SOV_show_trials focus = SOV_no_trials}
 		available_if_capitulated = yes
 				completion_reward = {
@@ -293,7 +276,7 @@ prerequisite = {focus = SOV_final_destalin }
 		y = 2
 		cost = 10
 relative_position_id = SOV_ignore_stalin
-prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found }
+prerequisite = {focus = SOV_ignore_stalin   }
 available = { is_faction_leader = yes  }
 		available_if_capitulated = yes
 				completion_reward = {
@@ -349,7 +332,7 @@ available = { is_faction_leader = yes  }
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 relative_position_id = SOV_invite_baltics
 prerequisite = {focus = SOV_invite_baltics }
 		available_if_capitulated = yes
@@ -414,7 +397,7 @@ prerequisite = {focus = SOV_great_comintern }
 		y = 2
 		relative_position_id = SOV_ignore_stalin
 		cost = 10
-prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found}
+prerequisite = {focus = SOV_ignore_stalin  }
 		available_if_capitulated = yes
 				completion_reward = {
 			add_political_power = 100
@@ -456,6 +439,7 @@ prerequisite = {focus = SOV_communism_abroad }
 		relative_position_id = SOV_distribute_leaflets
 		cost = 10
 prerequisite = {focus = SOV_distribute_leaflets }
+mutually_exclusive = {focus = SOV_old_ways}
 		available_if_capitulated = yes
 				completion_reward = {
 			add_stability = -0.05
@@ -471,6 +455,7 @@ prerequisite = {focus = SOV_distribute_leaflets }
 		relative_position_id = SOV_distribute_leaflets
 		cost = 10
 prerequisite = {focus = SOV_distribute_leaflets }
+mutually_exclusive = {focus = SOV_new_research}
 		available_if_capitulated = yes
 				completion_reward = {
 		add_stability = 0.05
@@ -515,7 +500,7 @@ prerequisite = {focus = SOV_research_foundation }
 		y = 2
 		relative_position_id = SOV_ignore_stalin
 		cost = 10
-prerequisite = {focus = SOV_ignore_stalin focus = SOV_stalin_not_found }
+prerequisite = {focus = SOV_ignore_stalin   }
 		available_if_capitulated = yes
 				completion_reward = {
 			add_political_power = -100
@@ -603,7 +588,7 @@ prerequisite = {focus = SOV_trotsky_cult focus = SOV_great_comintern }
 		x = -1
 		y = 1
 		relative_position_id = SOV_prepare_marines
-		cost = 10
+		cost = 5
 		prerequisite = {focus = SOV_prepare_marines }
 		available_if_capitulated = yes
 				completion_reward = {
@@ -616,7 +601,7 @@ prerequisite = {focus = SOV_trotsky_cult focus = SOV_great_comintern }
 		x = 1
 		y = 1
 		relative_position_id = SOV_prepare_marines
-		cost = 10
+		cost = 5
 prerequisite = {focus = SOV_prepare_marines }
 available = { is_faction_leader = yes  }
 		available_if_capitulated = yes
@@ -2522,7 +2507,7 @@ prerequisite = {focus = SOV_target_stalin}
 		x = -2
 		y = 1
 		relative_position_id = SOV_search_party
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_search_party}
 available = {
@@ -2553,7 +2538,7 @@ country_event = {id = tlbsoviet.4 days = 5}
 		x = 2
 		y = 1
 	relative_position_id = SOV_search_party
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_search_party}
 available = {
@@ -2582,7 +2567,7 @@ country_event = {id = tlbsoviet.4 days = 5}
 		icon = GFX_Generic_Intelligence_Gathering
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 relative_position_id = SOV_search_party
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_search_party}
@@ -2594,13 +2579,7 @@ has_global_flag = stalin_found
 		completion_reward = {
 custom_effect_tooltip = SOV_search_africa_tt
 hidden_effect = {
-	random_list = {
-	50 = {
-	country_event = {id = tlbsoviet.3 days = 5}
-	}
-	50 = {
 	country_event = {id = tlbsoviet.4 days = 5}
-	}
 	}
 }
 		}
@@ -2609,11 +2588,12 @@ hidden_effect = {
 	focus = {
 		id = SOV_stalin_back
 		icon = GFX_focus_fra_loyalty_stalin
-		x = 0
+		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = SOV_search_africa
 prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
+mutually_exclusive = {focus = SOV_execute_stalin}
 		available_if_capitulated = yes
 
 available = {
@@ -2637,6 +2617,22 @@ elections_allowed = no
 }
 		}
 	}
+
+	focus = {
+		id = SOV_execute_stalin
+		icon = GFX_Generic_Machine_Gun02
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = SOV_search_africa
+prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
+mutually_exclusive = {focus = SOV_stalin_back}
+		completion_reward = {
+		add_stability = 0.02
+		set_global_flag = sov_stalin_executed
+		}
+	}
 ###############
 ###############
 ###############
@@ -2648,7 +2644,7 @@ focus = {
 	cost = 10
 	prerequisite = {
 			focus = SOV_ignore_stalin
-			focus = SOV_stalin_not_found
+
 	}
 	ai_will_do = {
 		factor = 10
@@ -2928,7 +2924,7 @@ focus = {
 	cost = 10
 	prerequisite = {
 			focus = SOV_ignore_stalin
-			focus = SOV_stalin_not_found
+
 	}
 	ai_will_do = {
 		factor = 1
@@ -3205,7 +3201,7 @@ focus = {
 	cost = 10
 	prerequisite = {
 			focus = SOV_ignore_stalin
-			focus = SOV_stalin_not_found
+
 	}
 	ai_will_do = {
 		factor = 2
@@ -3508,7 +3504,7 @@ focus = {
 	cost = 10
 	prerequisite = {
 			focus = SOV_ignore_stalin
-			focus = SOV_stalin_not_found
+
 	}
 	ai_will_do = {
 		factor = 1

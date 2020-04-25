@@ -70,6 +70,9 @@ country_event = {
   option = {
     	name = tlbsoviet.5.a
       SOV = { add_to_faction = ROOT }
+      hidden_effect = {
+      ROOT = {set_politics = {	ruling_party = trotskyism }}
+      }
       ai_chance = { base = 40 }
   }
   option = {
