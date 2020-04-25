@@ -44,9 +44,78 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SAF_Austrian_Expansion_Program
+		id = SAF_Pressure_Egypt_To_Break_With_The_BGE
+		icon = GFX
+		prerequisite = { focus = SAF_abandon_BGE }
+		x = 9
+		y = 2
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			BGE = { 
+				end_puppet = EGY
+			}
+			EGY = {
+			leave_faction = yes
+			}
+		}
+	}
+	focus = {
+		id = SAF_Stage_A_Coup_In_Ethiopia
+		icon = GFX
+		prerequisite = { focus = SAF_Pressure_Egypt_To_Break_With_The_BGE }
+		x = 9
+		y = 3
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			ETH = {
+			start_civil_war = {
+    ideology = fascism
+    size = 0.99
+    capital = 271
+    states = { 
+        842 271 841 840
+    }
+}
+}
+}
+}
+focus = {
+		id = SAF_Help_Overthrow_The_Monarchy
+		icon = GFX
+		prerequisite = { focus = SAF_Stage_A_Coup_In_Ethiopia }
+		x = 9
+		y = 4
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+	send_equipment = {
+    	equipment = infantry_equipment
+    	amount = 500
+    	target = D01
+}
+}
+}
+	focus = {
+		id = SAF_Ethiopian_Expansion_Program
 		icon = GFX
 		prerequisite = { focus = SAF_ally_BGE OR = SAF_abandon_BGE }
+		available = {
+		D01 = {
+		has_government = fascism
+		has_war = no
+		}
+		}
 		x = 7
 		y = 2
 		search_filters = {}
@@ -56,6 +125,98 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 				country_event = { id = south_africa.0 days = 0 }
+		}
+	}
+	focus = {
+		id = SAF_Start_Building_The_Empire
+		icon = GFX
+		prerequisite = { focus = SAF_Ethiopian_Expansion_Program }
+		available = {
+		has_government = fascism
+		}
+		x = 6
+		y = 3
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				create_wargoal = {
+    type = annex_everything
+    target = ZAM
+}
+		}
+	}
+	focus = {
+		id = SAF_Expand_The_Empire
+		icon = GFX
+		prerequisite = { focus = SAF_Start_Building_The_Empire }
+		available = {
+		controls_state = 771
+		}
+		x = 6
+		y = 4
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				create_wargoal = {
+    type = annex_everything
+    target = TZN
+}
+		}
+	}
+	focus = {
+		id = SAF_Expand_The_Empire_More
+		icon = GFX
+		prerequisite = { focus = SAF_Expand_The_Empire }
+		available = {
+		controls_state = 856 
+		controls_state = 546
+		controls_state = 857
+		controls_state = 858
+		}
+		x = 6
+		y = 5
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				create_wargoal = {
+    type = annex_everything
+    target = KEN
+}
+create_wargoal = {
+    type = annex_everything
+    target = UGA
+}
+		}
+	}
+	focus = {
+		id = SAF_Expand_Our_Borders
+		icon = GFX
+		prerequisite = { focus = SAF_Expand_The_Empire_More }
+		available = {
+		controls_state = 548
+		controls_state = 547
+		}
+		x = 6
+		y = 6
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				create_wargoal = {
+    type = annex_everything
+    target = SUD
+}
 		}
 	}
 }        
