@@ -1,15 +1,15 @@
 focus_tree = {
 	continuous_focus_position = { x = 2500 y = 1000 }
 	id = Netherlands
-	
+
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = HOL	
+			tag = HOL
 		}
 	}
-	
+
 	default = no
 	reset_on_civilwar = no
 
@@ -40,11 +40,11 @@ focus_tree = {
 		y = 2
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+
 				remove_ideas = dutch_depression
 				add_ideas = medium_depression
 		}
@@ -57,12 +57,12 @@ focus_tree = {
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
-		completion_reward = {	
+		completion_reward = {
 			political_power_gain = -.05
-			remove_ideas = medium_depression 
+			remove_ideas = medium_depression
 		}
 	}
 	focus = {
@@ -73,10 +73,10 @@ focus_tree = {
 		y = 4
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
-		completion_reward = {	
+		completion_reward = {
 			add_ideas = revitalized_industry
 		}
 	}
@@ -89,7 +89,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
-		
+
 		available_if_capitulated = yes
 
 
@@ -109,7 +109,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
 			if = {
@@ -205,7 +205,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}			
+			}
 		}
 	}
 	focus = {
@@ -216,7 +216,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -239,7 +239,7 @@ focus_tree = {
                 }
 
             }
-        } 
+        }
 	}
 	focus = {
 		id = HOL_koninklijke_DSM
@@ -249,7 +249,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -275,7 +275,7 @@ focus_tree = {
                     instant_build = yes
                 }
             }
-        } 
+        }
 	}
 	focus = {
 		id = HOL_develop_the_north
@@ -285,7 +285,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -298,7 +298,7 @@ focus_tree = {
                 }
 
             }
-        } 
+        }
 	}
 	focus = {
 		id = HOL_expand_universities
@@ -308,12 +308,12 @@ focus_tree = {
 		y = 8
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_research_slot = 1
-        } 
+        }
 	}
 	focus = {
 		id = HOL_industrialize_the_colonies
@@ -323,7 +323,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -354,7 +354,7 @@ focus_tree = {
                 }
             }
 
-        } 
+        }
 	}
 	focus = {
 		id = HOL_exploit_the_colonies
@@ -364,7 +364,7 @@ focus_tree = {
 		y = 8
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -380,16 +380,16 @@ focus_tree = {
 					amount = 13
 				}
             }
-        } 
+        }
 	}
 
 ##########POLITICAL BRANCH#########
 	focus = {
 		id = HOL_instigate_flanders
-		icon = GFX_instigate_flanders
+		icon = GFX_intigate_flanders
 		x = 0
 		y = 1
-		cost = 1	
+		cost = 1
 		ai_will_do = {
 		factor = 100
 		}
@@ -407,7 +407,7 @@ focus_tree = {
 		prerequisite = {focus = HOL_instigate_flanders }
 			ai_will_do = {
 		factor = 100
-		}	
+		}
 		x = 0
 		y = 2
 		cost = 5
@@ -424,11 +424,11 @@ focus_tree = {
 		id = HOL_integrate_flanders
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {
-			focus = HOL_flemish_workers_to_arms 
+			focus = HOL_flemish_workers_to_arms
 		}
 		ai_will_do = {
 		factor = 100
-		}		
+		}
 		available = {
 			has_global_flag = flanders_wins
 			FLA = {
@@ -477,7 +477,7 @@ focus_tree = {
 		prerequisite = {focus = HOL_pressure_luxemburg }
 		ai_will_do = {
 		factor = 100
-		}		
+		}
 		available = {
 			owns_state = 34
 			owns_state = 8
@@ -521,7 +521,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {focus = HOL_trotskyist_elections}
 		available = { has_country_flag = HOL_democracy}
-		relative_position_id = HOL_trotskyist_elections		
+		relative_position_id = HOL_trotskyist_elections
 		x = -5
 		y = 1
 		cost = 1
@@ -538,7 +538,7 @@ focus_tree = {
 		id = HOL_freedom_of_press
 		icon = GFX_GER_french_deal
 		prerequisite = {focus =HOL_the_RKSP_resurgent}
-		relative_position_id = HOL_the_RKSP_resurgent	
+		relative_position_id = HOL_the_RKSP_resurgent
 		x = 1
 		y = 1
 		cost = 10
@@ -584,7 +584,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = strong_agriculture
 		}
-	}	
+	}
 	focus = {
 		id = HOL_eight_hour_work_day
 		icon = GFX_focus_generic_soviet_politics
@@ -601,12 +601,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = eight_hour_work_day
 		}
-	}				
+	}
 	focus = {
 		id = HOL_reaffirm_our_grip
 		icon = GFX_Generic_Legislation
 		prerequisite = {focus = HOL_the_RKSP_resurgent}
-		relative_position_id = 	HOL_the_RKSP_resurgent	
+		relative_position_id = 	HOL_the_RKSP_resurgent
 		x = -1
 		y = 1
 		cost = 5
@@ -628,7 +628,7 @@ focus_tree = {
 		icon = GFX_Generic_Blue_Democracy
 		prerequisite = {focus = HOL_reaffirm_our_grip}
 		relative_position_id = 	HOL_reaffirm_our_grip
-		mutually_exclusive = {focus = HOL_a_broad_coalition}			
+		mutually_exclusive = {focus = HOL_a_broad_coalition}
 		x = -1
 		y = 1
 		cost = 10
@@ -645,7 +645,7 @@ focus_tree = {
 		id = HOL_corporatism
 		icon = GFX_Generic_Industrialization
 		prerequisite = {focus = HOL_conservative_values}
-		relative_position_id = 	HOL_conservative_values	
+		relative_position_id = 	HOL_conservative_values
 		x = 0
 		y = 1
 		cost = 10
@@ -663,7 +663,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = {focus = HOL_corporatism focus = HOL_monitor_the_radicals}
 		relative_position_id = 	HOL_corporatism
-		mutually_exclusive = {focus =  HOL_intervention}		
+		mutually_exclusive = {focus =  HOL_intervention}
 		x = 0
 		y = 1
 		cost = 10
@@ -692,7 +692,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 		}
-	}	
+	}
 	focus = {
 		id = HOL_intervention
 		icon = GFX_Generic_War_Propaganda03
@@ -751,7 +751,7 @@ focus_tree = {
 				level = 2
 				instant_build = yes
 				}
-			}			
+			}
 		}
 	}
 	focus = {
@@ -770,10 +770,10 @@ focus_tree = {
 		completion_reward = {
 			SAF = {
 			country_event = {id = benelux.16}
-			}			
+			}
 		}
 	}
-					
+
 	focus = {
 		id = HOL_a_broad_coalition
 		icon = GFX_GER_french_deal
@@ -804,7 +804,7 @@ focus_tree = {
 		id = HOL_monitor_the_radicals
 		icon = GFX_decryption
 		prerequisite = {focus = HOL_a_broad_coalition}
-		relative_position_id = 	HOL_a_broad_coalition	
+		relative_position_id = 	HOL_a_broad_coalition
 		x = 0
 		y = 1
 		cost = 10
@@ -816,7 +816,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = state_surveillance
 		}
-	}				
+	}
 	####### SOCiALIST DEMOCRATS
 	focus = {
 		id = HOL_the_SDAP
@@ -846,7 +846,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {focus = HOL_the_SDAP}
 		relative_position_id = 	HOL_the_SDAP
-		mutually_exclusive = {focus = HOL_align_with_the_trotskyists}		
+		mutually_exclusive = {focus = HOL_align_with_the_trotskyists}
 		x = -1
 		y = 1
 		cost = 1
@@ -864,7 +864,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {focus = HOL_the_SDAP}
 		relative_position_id = 	HOL_the_SDAP
-		mutually_exclusive = {focus = HOL_align_with_the_conservatives}		
+		mutually_exclusive = {focus = HOL_align_with_the_conservatives}
 		x = 1
 		y = 1
 		cost = 1
@@ -915,7 +915,7 @@ focus_tree = {
 		id = HOL_the_issue_of_the_royal_family
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = HOL_strengthen_the_unions}
-		relative_position_id = HOL_strengthen_the_unions	
+		relative_position_id = HOL_strengthen_the_unions
 		x = 0
 		y = 1
 		cost = 10
@@ -927,7 +927,7 @@ focus_tree = {
 		completion_reward = {
 				country_event = { id = benelux.12}
 		}
-	}				
+	}
 	focus = {
 		id = HOL_democratic_socialism
 		icon = GFX_Generic_Social_Democracy
@@ -997,7 +997,7 @@ focus_tree = {
 			add_ideas = tax_the_rich
 			add_stability = -.03
 		}
-	}						
+	}
 #	focus = {
 #		id = HOL_the_SDAP
 #		icon = GFX_focus_generic_soviet_politics
@@ -1017,8 +1017,8 @@ focus_tree = {
 	#	completion_reward = {
 	#		add_political_power = 50
 	#	}
-	#}		
-	#### COMMUNISTS		
+	#}
+	#### COMMUNISTS
 	focus = {
 		id = HOL_the_RSP
 		icon = GFX_focus_generic_soviet_politics
@@ -1026,7 +1026,7 @@ focus_tree = {
 		relative_position_id = 	HOL_trotskyist_elections
 		available = {
 		has_country_flag = HOL_trotskyism
-		}		
+		}
 		x = 5
 		y = 1
 		cost = 1
@@ -1055,7 +1055,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 		}
-	}	
+	}
 	focus = {
 		id = HOL_stabilize_the_nation
 		icon = GFX_goal_generic_political_pressure
@@ -1096,7 +1096,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {focus = HOL_free_press}
 		relative_position_id = 	HOL_free_press
-		mutually_exclusive = {focus = HOL_dissolve_the_bourgeoisie}		
+		mutually_exclusive = {focus = HOL_dissolve_the_bourgeoisie}
 		x = 0
 		y = 1
 		cost = 10
@@ -1115,7 +1115,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = {focus = HOL_destroy_the_bourgeoisie focus = HOL_secret_police}
 		relative_position_id = 	HOL_destroy_the_bourgeoisie
-		mutually_exclusive = {focus = HOL_join_the_soviets}		
+		mutually_exclusive = {focus = HOL_join_the_soviets}
 		x = 0
 		y = 1
 		cost = 10
@@ -1126,7 +1126,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_war_support = 0.1
-			set_rule = { can_create_factions = yes }		
+			set_rule = { can_create_factions = yes }
 		}
 	}
 	focus = {
@@ -1147,7 +1147,7 @@ focus_tree = {
 			add_stability = -.05
 			add_ideas = secret_police
 		}
-	}	
+	}
 	focus = {
 		id = HOL_dissolve_the_bourgeoisie
 		icon = GFX_focus_generic_soviet_politics
@@ -1165,7 +1165,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = bourgeoisie_destroyed
 		}
-	}	
+	}
 	focus = {
 		id = HOL_join_the_soviets
 		icon = GFX_focus_chi_mission_to_the_soviet_union
@@ -1219,13 +1219,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = permanent_revolution
 		}
-	}			
+	}
 ################WORLD REVOLUTION#################
 
 	#focus = {
 	#	id = HOL_reestablish_boer_colonies
 	#	icon = GFX_focus_ger_great_red_menace
-	#	prerequisite = { focus = HOL_our_own_path}	
+	#	prerequisite = { focus = HOL_our_own_path}
 	#	x = 12
 	#	y = 6
 	#	cost = 10
@@ -1275,7 +1275,7 @@ focus_tree = {
 				#country_event = {id = benelux.14}
 			}
 
-	}	
+	}
 	focus = {
 		id = HOL_revolutionaire_landmacht
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1297,12 +1297,12 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = HOL_remobilize_the_army
 		icon = GFX_Generic_Army_Focus_Red02
 		prerequisite = {focus = HOL_revolutionaire_landmacht}
-		relative_position_id = HOL_revolutionaire_landmacht	
+		relative_position_id = HOL_revolutionaire_landmacht
 		x = 1
 		y = 1
 		cost = 10
@@ -1317,7 +1317,7 @@ focus_tree = {
 		id = HOL_increased_military_production
 		icon = GFX_Generic_Factory_Complex
 		prerequisite = {focus = HOL_revolutionaire_landmacht}
-		relative_position_id = HOL_revolutionaire_landmacht	
+		relative_position_id = HOL_revolutionaire_landmacht
 		x = -1
 		y = 1
 		cost = 10
@@ -1369,7 +1369,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
-			}		
+			}
 		}
 	}
 	focus = {
@@ -1389,7 +1389,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
-			}		
+			}
 		}
 	}
 	focus = {
@@ -1409,9 +1409,9 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
-			}		
+			}
 		}
-	}	
+	}
 	focus = {
 		id = HOL_study_soviet_tank_designs
 		icon = GFX_goal_generic_army_tanks
@@ -1429,7 +1429,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = armor
-			}		
+			}
 		}
 	}
 	focus = {
@@ -1449,14 +1449,14 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = motorized_equipment
-			}		
+			}
 		}
 	}
 	focus = {
 		id = HOL_the_t-27_tankette
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = {focus = HOL_motorized_corps}
-		relative_position_id = 	HOL_motorized_corps		
+		relative_position_id = 	HOL_motorized_corps
 		x = 0
 		y = 1
 		cost = 10
@@ -1469,13 +1469,13 @@ focus_tree = {
 				bonus = 2.0
 				uses = 1
 				category = armor
-			}		
+			}
 		}
-	}																		
+	}
 	focus = {
 		id = HOL_revolutionaire_marine
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = {focus = HOL_reform_the_military}	
+		prerequisite = {focus = HOL_reform_the_military}
 		relative_position_id = 	HOL_reform_the_military
 		x = 0
 		y = 1
@@ -1497,7 +1497,7 @@ focus_tree = {
 		id = HOL_damen_group
 		icon = GFX_Generic_Naval_Industry
 		prerequisite = { focus = HOL_revolutionaire_marine }
-		relative_position_id = HOL_revolutionaire_marine 			
+		relative_position_id = HOL_revolutionaire_marine
 		x = -1
 		y = 1
 		cost = 10
@@ -1523,11 +1523,11 @@ focus_tree = {
 				}
 			}
 			}
-	}	
+	}
 	focus = {
 		id = HOL_hollandse_signaalapparaten_B.V.
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = {focus = HOL_revolutionaire_marine}	
+		prerequisite = {focus = HOL_revolutionaire_marine}
 		relative_position_id = 	HOL_revolutionaire_marine
 		x = 1
 		y = 1
@@ -1558,8 +1558,8 @@ focus_tree = {
 	focus = {
 		id = HOL_new_cruiser_designs
 		icon = GFX_focus_generic_cruiser2
-		prerequisite = { focus = HOL_damen_group focus = HOL_hollandse_signaalapparaten_B.V.}		
-		relative_position_id = 	HOL_damen_group		
+		prerequisite = { focus = HOL_damen_group focus = HOL_hollandse_signaalapparaten_B.V.}
+		relative_position_id = 	HOL_damen_group
 		x = 0
 		y = 1
 		cost = 10
@@ -1581,7 +1581,7 @@ focus_tree = {
 		id = HOL_destroyer_research
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = HOL_damen_group focus = HOL_hollandse_signaalapparaten_B.V.}
-		relative_position_id = 	HOL_hollandse_signaalapparaten_B.V.		
+		relative_position_id = 	HOL_hollandse_signaalapparaten_B.V.
 		x = 0
 		y = 1
 		cost = 10
@@ -1597,12 +1597,12 @@ focus_tree = {
 			}
 			}
 
-	}		
+	}
 	focus = {
 		id = HOL_heavy_ship_research
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = HOL_new_cruiser_designs focus = HOL_destroyer_research}
-		relative_position_id = 	HOL_destroyer_research		
+		relative_position_id = 	HOL_destroyer_research
 		x = 0
 		y = 1
 		cost = 10
@@ -1623,7 +1623,7 @@ focus_tree = {
 		id = HOL_submarine_designs
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = HOL_new_cruiser_designs focus = HOL_destroyer_research}
-		relative_position_id = 	HOL_new_cruiser_designs		
+		relative_position_id = 	HOL_new_cruiser_designs
 		x = 0
 		y = 1
 		cost = 10
@@ -1643,8 +1643,8 @@ focus_tree = {
 	focus = {
 		id = HOL_revolutionaire_luchtmacht
 		icon = GFX_goal_generic_build_airforce
-		prerequisite = {focus = HOL_reform_the_military}	
-		relative_position_id = 	HOL_reform_the_military		
+		prerequisite = {focus = HOL_reform_the_military}
+		relative_position_id = 	HOL_reform_the_military
 		x = 4
 		y = 1
 		cost = 5
@@ -1664,8 +1664,8 @@ focus_tree = {
 	focus = {
 		id = HOL_work_with_fokker
 		icon = GFX_goal_generic_build_airforce
-		prerequisite = {focus = HOL_revolutionaire_luchtmacht}	
-		relative_position_id = 	HOL_revolutionaire_luchtmacht	
+		prerequisite = {focus = HOL_revolutionaire_luchtmacht}
+		relative_position_id = 	HOL_revolutionaire_luchtmacht
 		x = 3
 		y = 1
 		cost = 5
@@ -1681,15 +1681,15 @@ focus_tree = {
 			}
 			}
 
-	}	
+	}
 	focus = {
 		id = HOL_fighter_squadrons
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = HOL_revolutionaire_luchtmacht }
 		mutually_exclusive = { focus = HOL_bombing_runs }
-		relative_position_id = 	HOL_revolutionaire_luchtmacht		
+		relative_position_id = 	HOL_revolutionaire_luchtmacht
 		x = -1
-		y = 1		
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 
@@ -1708,7 +1708,7 @@ focus_tree = {
 			}
 			}
 
-	}	
+	}
 	focus = {
 		id = HOL_bombing_runs
 		icon = GFX_goal_generic_air_bomber
@@ -1780,7 +1780,7 @@ focus_tree = {
 		id = HOL_air_defense
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = HOL_revolutionaire_luchtmacht}
-		relative_position_id = 	HOL_revolutionaire_luchtmacht		
+		relative_position_id = 	HOL_revolutionaire_luchtmacht
 		x = 5
 		y = 1
 
@@ -1808,7 +1808,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HOL_air_defense }
 		mutually_exclusive = { focus = HOL_anti-air_construction }
-		relative_position_id = 	HOL_air_defense		
+		relative_position_id = 	HOL_air_defense
 		x = -1
 		y = 1
 		cost = 10
@@ -1857,7 +1857,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-				}	
-		}	
+				}
+		}
 	}
 }

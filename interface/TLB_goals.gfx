@@ -156,6 +156,11 @@ spriteType = {
 }
 
 spriteType = {
+  name = "GFX_intigate_flanders"
+  texturefile = "gfx/interface/goals/TLB_Instigate_Flanders.dds"
+}
+
+spriteType = {
 	name = "GFX_Authoritarian_Democracy"
 	texturefile = "gfx/interface/goals/Authoritarian_Democracy.dds"
 }
