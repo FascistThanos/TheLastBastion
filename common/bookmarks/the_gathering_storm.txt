@@ -187,6 +187,8 @@ bookmarks = {
 		}
 
 		effect = {
+			add_named_threat = { threat = 10 name = chinacivilthreat }
+			add_named_threat = { threat = 10 name = frenchcivilthreat }
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
