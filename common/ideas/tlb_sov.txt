@@ -95,7 +95,7 @@ planning_speed = 0.10
 			picture = SOV_stalin_threat
 
 			modifier = {
-				stability_factor = -0.2
+				weekly_stability_factor = -0.2
 			}
 		}
 		SOV_destroyedgeorgia = {

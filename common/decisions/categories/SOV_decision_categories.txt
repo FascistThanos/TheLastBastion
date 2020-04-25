@@ -9,7 +9,7 @@ SOV_industry_relocation = {
 	}
 
 	available = {
-	
+
 	}
 
 	visible = {
@@ -24,5 +24,19 @@ SOV_great_patriotic_war = {
 	visible = {
 		has_war = yes
 	}
+
+}
+
+SOV_stability = {
+
+allowed = {
+original_tag = SOV
+}
+
+visible = {
+NOT = {has_global_flag = SOV_civil_war}
+}
+
+
 
 }

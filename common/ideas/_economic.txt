@@ -2,6 +2,8 @@ ideas = {
 
 	economy = {
 		law = yes
+		use_list_view = yes
+
 		undisturbed_isolation = {
 
 
@@ -31,6 +33,7 @@ ideas = {
 				OR = {
 					has_war_support > 0.5
 					has_war = yes
+					has_completed_focus = USA_limited_intervention
 				}
 			}
 
@@ -63,6 +66,7 @@ ideas = {
 				OR = {
 					has_war_support > 0.75
 					has_war = yes
+					has_completed_focus = USA_limited_intervention
 				}
 			}
 
@@ -94,6 +98,31 @@ ideas = {
 
 			available = {
 				has_war_support > 0.15
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						has_completed_focus = USA_limited_intervention
+						has_defensive_war = no
+					}
+					has_war_support > 0.3
+					congress_high_support_trigger = yes
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USA
+						has_completed_focus = USA_limited_intervention
+						has_defensive_war = no
+					}
+					USA_congress_large_opposition = yes
+				}
 			}
 
 			cost = 150
@@ -133,6 +162,25 @@ ideas = {
 
 			available = {
 				has_war_support > 0.25
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					OR = {
+						has_completed_focus = HUN_secret_rearmament
+						NOT = { has_idea = HUN_treaty_of_triannon }
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = USA_limited_intervention
+						has_defensive_war = no
+					}
+					has_war_support > 0.5
+					congress_high_support_trigger = yes
+				}
 			}
 
 			cost = 150
@@ -151,6 +199,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -175,8 +224,16 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					has_government = trotskyism
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+					AND = {
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = {
+								tag = ROOT
+								ratio > 0.4
+							}
+						}
+					}
 				}
 
 				if = {
@@ -188,9 +245,11 @@ ideas = {
 				}
 				if = {
 					limit = {
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
+					congress_high_support_trigger = yes
 				}
 			}
 
@@ -209,6 +268,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -221,6 +281,14 @@ ideas = {
 					#High prio on production
 					factor = 20
 					manpower_per_military_factory >  1000
+				}
+
+				modifier = {
+					add = 1800
+
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
 				}
    			}
 		}
@@ -247,7 +315,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.9
@@ -258,6 +326,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -331,11 +400,18 @@ ideas = {
 
 	trade_laws = {
 		law = yes
+		use_list_view = yes
 
 		free_trade = {
 
 			available = {
-
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
 
 			cost = 150
@@ -398,7 +474,7 @@ ideas = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
 					}
-
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 			}
 
@@ -443,8 +519,6 @@ ideas = {
 		}
 
 		limited_exports = {
-
-
 			available = {
 				OR = {
 					AND = {
@@ -465,6 +539,22 @@ ideas = {
 							has_idea = tot_economic_mobilisation
 						}
 					}
+				}
+
+
+				if = {
+					limit = {
+						original_tag = CHI
+						has_dlc = "Waking the Tiger"
+					}
+					NOT = { has_idea = CHI_nine_power_treaty }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 			}
 
@@ -487,7 +577,7 @@ ideas = {
    				factor = 1
 
    				modifier = {
-					factor = 0
+					add = -1
 
 					is_major = no
 					is_in_faction = yes
@@ -496,10 +586,18 @@ ideas = {
 
 				# minors not at war should want to get the bonuses from free trade
 				modifier = {
-					factor = 0
+					add = -1
 
 					is_major = no
 					has_war = no
+				}
+
+				modifier = {
+					add = 1500
+
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
 				}
    			}
 		}
@@ -563,6 +661,14 @@ ideas = {
 
 					is_major = no
 					has_war = no
+				}
+
+				modifier = {
+					factor = 0
+
+					# don't take if we have a reasonable sized ally
+					# since they will require our trades
+					has_large_ally_not_pick_closed_economy = yes
 				}
    			}
 		}
