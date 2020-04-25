@@ -12,6 +12,8 @@ if = {
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.15
+add_named_threat = { threat = 10 name = frenchcivilthreat }
+
 
 # Starting tech
 set_technology = {
