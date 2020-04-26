@@ -106,6 +106,36 @@ focus = {
 }
 }
 }
+focus = {
+		id = SAF_Offer_Egypt_Protection
+		icon = GFX
+		prerequisite = { focus = SAF_Help_Overthrow_The_Monarchy }
+		x = 9
+		y = 5
+		search_filters = {}
+		cost = 5
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		puppet = EGY
+}
+}
+focus = {
+		id = SAF_Complete_The_Egyptian_Promise
+		icon = GFX
+		prerequisite = { focus = SAF_Offer_Egypt_Protection }
+		x = 9
+		y = 6
+		search_filters = {}
+		cost = 5
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		give_guarantee = EGY
+}
+}
 	focus = {
 		id = SAF_Ethiopian_Expansion_Program
 		icon = GFX
@@ -115,6 +145,7 @@ focus = {
 		has_government = fascism
 		has_war = no
 		}
+		country_exists = D01
 		}
 		x = 7
 		y = 2
@@ -128,13 +159,76 @@ focus = {
 		}
 	}
 	focus = {
+		id = SAF_Preserve_Our_Ideology
+		icon = GFX
+		prerequisite = { focus = SAF_Ethiopian_Expansion_Program }
+		available = {
+		has_government = neutrality
+		}
+		x = 7
+		y = 3
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				ZAM = {
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.5
+				}
+				}
+				TZN = {
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.5
+				}
+				}
+				D01 = {
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.5
+				}
+				}
+		}
+	}
+	focus = {
+		id = SAF_Help_Our_Morrocan_Brothers
+		icon = GFX
+		prerequisite = { focus = SAF_Preserve_Our_Ideology }
+		available = {
+		has_government = neutrality
+		}
+		x = 7
+		y = 4
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				FRA = {
+				start_civil_war = {
+    ideology = neutrality
+    size = 0.8
+    capital = 461
+    states = { 
+        461 861 862 462
+    }
+}
+				}
+		}
+	}
+	focus = {
 		id = SAF_Start_Building_The_Empire
 		icon = GFX
 		prerequisite = { focus = SAF_Ethiopian_Expansion_Program }
 		available = {
 		has_government = fascism
 		}
-		x = 6
+		will_lead_to_war_with = ZAM
+		x = 5
 		y = 3
 		search_filters = {}
 		cost = 10
@@ -155,7 +249,8 @@ focus = {
 		available = {
 		controls_state = 771
 		}
-		x = 6
+		will_lead_to_war_with = TZN
+		x = 5
 		y = 4
 		search_filters = {}
 		cost = 10
@@ -179,7 +274,9 @@ focus = {
 		controls_state = 857
 		controls_state = 858
 		}
-		x = 6
+		will_lead_to_war_with = KEN
+		will_lead_to_war_with = UGA
+		x = 5
 		y = 5
 		search_filters = {}
 		cost = 10
@@ -205,7 +302,8 @@ create_wargoal = {
 		controls_state = 548
 		controls_state = 547
 		}
-		x = 6
+		will_lead_to_war_with = SUD
+		x = 5
 		y = 6
 		search_filters = {}
 		cost = 10
