@@ -714,33 +714,52 @@ prerequisite = {focus = SOV_stalin_back}
 		cost = 10
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
 		}
 
 		available = {
-			has_war = yes
-			573 = {
+			581= {
 				is_owned_and_controlled_by = SOV
 			}
-			582 = {
+			573 = {
 				is_owned_and_controlled_by = SOV
 			}
 		}
 
 		bypass = {
-			NOT = { 219 = { is_owned_and_controlled_by = ROOT } }
-			NOT = { 195 = { is_owned_and_controlled_by = ROOT } }
-			NOT = { 242 = { is_owned_and_controlled_by = ROOT } }
+
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			#unlock_decision_tooltip = SOV_relocate_industry_from_moscow
-			#unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
-			#unlock_decision_tooltip = SOV_relocate_industry_from_smolensk
+581 = {
+add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+}
+}
+573 = {
+add_building_construction = {
+    type = arms_factory
+    level = 3
+    instant_build = yes
+}
+}
+581 = {
+add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+}
+}
+573 = {
+add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+}
+}
+
 		}
 	}
 
@@ -749,20 +768,13 @@ prerequisite = {focus = SOV_stalin_back}
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = SOV_move_industry_to_urals }
 		available = {
+		has_war = yes
 			#any_owned_state = {
 			#	any_neighbor_state = { state = 219 } # Moscow
 			#	NOT = { is_controlled_by = ROOT }
 			#}
-			219 = {
-				is_controlled_by = ROOT
-
-				OR = {
-					any_neighbor_state = {
-						NOT = { is_controlled_by = ROOT }
-					}
-
-					SOV = { surrender_progress > 0.1 }
-				}
+			873 = {
+				is_owned_by = SOV
 			}
 		}
 		x = 0
@@ -1705,49 +1717,11 @@ prerequisite = {focus = SOV_stalin_back}
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = SOV_far_east_fortification }
 		available = {
-			has_equipment = {
-				infantry_equipment > 199
-			}
-		}
+}
 		continue_if_invalid = yes
 		bypass = {
-			CHI = {
-				OR = {
-					exists = no
-					is_puppet = yes
-				}
+		}
 
-			}
-		}
-		select_effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_war_with = CHI
-						CHI = {
-							has_war_with = PRC
-						}
-					}
-				}
-				send_equipment = {
-					target = CHI
-					type = infantry_equipment
-					amount = 200
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_war_with = PRC
-					}
-				}
-				send_equipment = {
-					target = PRC
-					type = infantry_equipment
-					amount = 200
-				}
-			}
-		}
 		x = 0
 		y = 1
 		relative_position_id = SOV_far_east_fortification
@@ -1756,41 +1730,20 @@ prerequisite = {focus = SOV_stalin_back}
 			factor = 1
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_war_with = CHI
-						CHI = {
-							has_war_with = PRC
-						}
-					}
-				}
-				CHI = {
-					add_opinion_modifier = { target = SOV modifier = operation_zet_chi }
-				}
-				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_war_with = PRC
-					}
-				}
-				CHI = {
-					add_opinion_modifier = { target = SOV modifier = operation_zet_jap }
-				}
-				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_chi } }
-			}
+		create_wargoal = {
+		    type = puppet_wargoal_focus
+		    target = MON
+		}
 		}
 	}
 
 	focus = {
-		id = SOV_annex_tannu_tuva
+		id = SOV_qing_question
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = SOV_operation_zet }
 		available = { is_puppet = no }
 		bypass = {
-			NOT = { country_exists = TAN }
+			NOT = { country_exists = MAN }
 		}
 		x = 0
 		y = 1
@@ -1802,17 +1755,20 @@ prerequisite = {focus = SOV_stalin_back}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-
+		create_wargoal = {
+		    type = puppet_wargoal_focus
+		    target = MAN
+		}
 		}
 	}
 
 	focus = {
 		id = SOV_war_with_japan
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = SOV_annex_tannu_tuva }
+		prerequisite = { focus = SOV_qing_question }
 		x = 0
 		y = 1
-		relative_position_id = SOV_annex_tannu_tuva
+		relative_position_id = SOV_qing_question
 		available = {
 			country_exists = JAP
 			NOT = { has_idea = trotskyite_plot }
@@ -1874,7 +1830,7 @@ prerequisite = {focus = SOV_stalin_back}
 		id = SOV_improve_stalin_line
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
-		available = { has_offensive_war = no }
+		available = { }
 		x = 1
 		y = 1
 		relative_position_id = SOV_anti_fascist_diplomacy
@@ -2392,7 +2348,7 @@ prerequisite = {focus = SOV_stalin_back}
 	}
 
 	focus = {
-		id = SOV_claim_bessarabia
+		id = SOV_invade_afghan
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_claims_on_poland }
 		x = -2
@@ -2402,81 +2358,22 @@ prerequisite = {focus = SOV_stalin_back}
 		ai_will_do = {
 			factor = 2.5
 			modifier = {
-				factor = 0
-				date < 1939.1.1
-			}
-			modifier = {
 				factor = 200
-				GER = { has_government = democratic }
+				NOT = {
+				AFG = { has_government = democratic }
+				}
 			}
 		}
 		bypass = {
-			OR = {
-				owns_state = 78
-				78 = { is_claimed_by = ROOT }
-			}
-			OR = {
-				owns_state = 80
-				80 = { is_claimed_by = ROOT }
-			}
+		AFG = {ecists = no}
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			if = {
-				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 78
-			}
-			if = {
-				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 766
-			}
-			if = {
-				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 80
-			}
-			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
-			random_other_country = {
-				limit = { owns_state = 78 }
-				add_opinion_modifier = { target = SOV modifier = claimed_bessarabia }
-				set_country_flag = SOV_added_claimed_bessarabia
-			}
-			if = {
-				limit = {
-					any_other_country = {
-						owns_state = 78
-						NOT = {	owns_state = 80 }
-					}
-				}
-				random_other_country = {
-					limit = {
-						owns_state = 80
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						any_other_country = {
-							owns_state = 78
-							NOT = {	owns_state = 766 }
-						}
-						any_other_country = {
-							owns_state = 80
-							NOT = {	owns_state = 766 }
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						owns_state = 766
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-				}
-			}
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = AFG
+		}
 		}
 	}
 
@@ -2582,7 +2479,6 @@ hidden_effect = {
 	country_event = {id = tlbsoviet.4 days = 5}
 	}
 }
-		}
 	}
 
 	focus = {
@@ -2630,6 +2526,7 @@ prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_a
 mutually_exclusive = {focus = SOV_stalin_back}
 		completion_reward = {
 		add_stability = 0.02
+		custom_effect_tooltip = sov_unlock_trotsky
 		set_global_flag = sov_stalin_executed
 		}
 	}
