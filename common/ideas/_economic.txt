@@ -2,11 +2,8 @@ ideas = {
 
 	economy = {
 		law = yes
-		use_list_view = yes
 
 		undisturbed_isolation = {
-
-
 			allowed = {
 				always = no
 			}
@@ -75,7 +72,6 @@ ideas = {
 
 		civilian_economy = {
 
-
 			cost = 150
 			removal_cost = -1
 
@@ -111,17 +107,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.3
-					congress_high_support_trigger = yes
-				}
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
 				}
 			}
 
@@ -179,7 +164,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.5
-					congress_high_support_trigger = yes
 				}
 			}
 
@@ -195,16 +179,6 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
 			ai_will_do = {
    				factor = 2
 
@@ -217,7 +191,6 @@ ideas = {
 		}
 
 		war_economy = {
-
 
 			available = {
 				has_war_support > 0.5
@@ -243,14 +216,6 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.75
-					congress_high_support_trigger = yes
-				}
 			}
 
 			cost = 150
@@ -264,16 +229,6 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
 			ai_will_do = {
    				factor = 5
 
@@ -294,7 +249,6 @@ ideas = {
 		}
 
 		tot_economic_mobilisation = {
-
 
 			available = {
 				has_war = yes
@@ -319,17 +273,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.9
-					congress_high_support_trigger = yes
-				}
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -400,20 +343,8 @@ ideas = {
 
 	trade_laws = {
 		law = yes
-		use_list_view = yes
 
 		free_trade = {
-
-			available = {
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-			}
-
 			cost = 150
 			removal_cost = -1
 
@@ -455,30 +386,10 @@ ideas = {
 					tag = ROM
 					is_in_faction_with = GER
 				}
-   			}
+   		}
 		}
 
 		export_focus = {
-
-			available = {
-
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-			}
-
-
 			cost = 150
 			removal_cost = -1
 
@@ -540,22 +451,6 @@ ideas = {
 						}
 					}
 				}
-
-
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
 			}
 
 			cost = 150
@@ -599,11 +494,10 @@ ideas = {
 					has_idea = closed_economy
 					has_large_ally_not_pick_closed_economy = yes
 				}
-   			}
+			}
 		}
 
 		closed_economy = {
-
 
 			available = {
 				has_war = yes
@@ -618,14 +512,6 @@ ideas = {
 				OR = {
 					NOT = {	tag = SOV }
 					NOT = { has_opinion_modifier = MR_pact }
-				}
-
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
 
