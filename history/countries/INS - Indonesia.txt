@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_INS_Suharto.dds"
 	expire = "1953.3.1"
-	ideology = socialism_type #Marhaenism his own unique mix of stuff
+	ideology = trotskyism_type #Marhaenism his own unique mix of stuff
 	traits = {
 
 	}

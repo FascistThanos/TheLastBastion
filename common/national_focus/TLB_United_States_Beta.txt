@@ -1,9 +1,9 @@
 focus_tree = {
-	id = TLB_United_States_focus
+	id = TLB_United_States_focus_beta
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 20
 			tag = USA
 		}
 	}

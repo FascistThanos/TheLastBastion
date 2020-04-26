@@ -11,7 +11,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				consumer_goods_factor = -0.1
 				trade_laws_cost_factor = 0.33
@@ -30,7 +30,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				research_speed_factor = -0.1
 			}
@@ -47,7 +47,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_factor = -0.05
 				political_advisor_cost_factor = 0.1
@@ -65,7 +65,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_factor = 0.1
 				political_advisor_cost_factor = -0.1
@@ -83,7 +83,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = -0.1
 				political_power_factor = 0.1
@@ -101,7 +101,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -118,7 +118,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -135,7 +135,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_industrial_complex_factor = -0.2
@@ -154,7 +154,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_weekly = -0.005
 				drift_defence_factor = 0.5
@@ -172,10 +172,10 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_weekly = 0.005
-				drift_defence_factor = 0.5 = 0.75
+				drift_defence_factor = 0.75
 			}
 		}
 
@@ -190,12 +190,12 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_weekly = -0.001
 				political_power_factor = -0.3
 				army_core_attack_factor = -0.15
-				army_core_defense_factor = -0.15
+				army_core_defence_factor = -0.15
 			}
 		}
 
@@ -210,7 +210,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_factor = 0.1
 				war_support_weekly = 0.005
@@ -227,7 +227,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				justify_war_goal_time = -0.25
 			}
@@ -244,7 +244,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_industrial_complex_factor = 0.15

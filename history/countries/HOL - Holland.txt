@@ -67,29 +67,9 @@ if = {
 }
 
 # DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = INS
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = INS
-	}
-}
-
-set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
-
 add_ideas = {
 	dutch_depression
 }
-
-
 
 set_politics = {
 	ruling_party = trotskyism
@@ -105,8 +85,21 @@ set_popularities = {
 	socialism = 15
 }
 
-set_convoys = 20
-set_stability = 0. 5
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = INS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = INS
+	}
+}
 
 
 create_country_leader = {

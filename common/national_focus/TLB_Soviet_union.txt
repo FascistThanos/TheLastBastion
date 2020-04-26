@@ -2365,7 +2365,7 @@ prerequisite = {focus = SOV_stalin_back}
 			}
 		}
 		bypass = {
-		AFG = {ecists = no}
+		AFG = { exists = no}
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
