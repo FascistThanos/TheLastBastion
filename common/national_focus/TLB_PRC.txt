@@ -455,7 +455,7 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = JAP
 	completion_reward = {
 	create_wargoal = {
 	    type = annex_everything
@@ -489,7 +489,7 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = KOR
 	completion_reward = {
 	create_wargoal = {
 			type = annex_everything
@@ -524,7 +524,7 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = TIB
 	completion_reward = {
 	create_wargoal = {
 			type = annex_everything
@@ -679,7 +679,7 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = SOV
 	completion_reward = {
 	create_wargoal = {
 	    type = annex_everything
@@ -1096,7 +1096,7 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = MAL
 	completion_reward = {
 	create_wargoal = {
 			type = annex_everything
@@ -1129,7 +1129,7 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = INS
 	completion_reward = {
 	create_wargoal = {
 			type = annex_everything
@@ -1162,7 +1162,7 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = PHI
 	completion_reward = {
 	create_wargoal = {
 			type = annex_everything
@@ -1381,6 +1381,7 @@ focus = {
 	bypass = {
 
 	}
+	will_lead_to_war_with = MAN
 completion_reward = {
 create_wargoal = {
 		type = annex_everything
@@ -1416,7 +1417,7 @@ VIN = {exists = yes}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = VIN
 	completion_reward = {
 	create_wargoal = {
 	    type = annex_everything
@@ -1450,7 +1451,7 @@ LAO = {exists = yes}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
+will_lead_to_war_with = LAO
 	completion_reward = {
 	create_wargoal = {
 			type = annex_everything

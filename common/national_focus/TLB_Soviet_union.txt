@@ -378,6 +378,8 @@ prerequisite = {focus = SOV_secret_deals }
 		cost = 10
 relative_position_id = SOV_great_comintern
 prerequisite = {focus = SOV_great_comintern }
+will_lead_to_war_with = IRQ
+will_lead_to_war_with = PER
 		available_if_capitulated = yes
 				completion_reward = {
 				create_wargoal = {
@@ -617,6 +619,7 @@ available = { is_faction_leader = yes  }
 		relative_position_id = SOV_strike_canal
 		cost = 10
 prerequisite = {focus = SOV_strike_canal focus = SOV_invite_benelux }
+will_lead_to_war_with = USA
 		available_if_capitulated = yes
 				completion_reward = {
 				create_wargoal = {
@@ -1721,7 +1724,7 @@ prerequisite = {focus = SOV_stalin_back}
 		continue_if_invalid = yes
 		bypass = {
 		}
-
+will_lead_to_war_with = MON
 		x = 0
 		y = 1
 		relative_position_id = SOV_far_east_fortification
@@ -1749,6 +1752,7 @@ prerequisite = {focus = SOV_stalin_back}
 		y = 1
 		relative_position_id = SOV_operation_zet
 		cost = 10
+		will_lead_to_war_with = MAN
 		ai_will_do = {
 			factor = 1
 		}
@@ -1769,6 +1773,7 @@ prerequisite = {focus = SOV_stalin_back}
 		x = 0
 		y = 1
 		relative_position_id = SOV_qing_question
+		will_lead_to_war_with = JAP
 		available = {
 			country_exists = JAP
 			NOT = { has_idea = trotskyite_plot }
