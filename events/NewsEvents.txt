@@ -229,6 +229,7 @@ is_triggered_only = yes
 	fire_only_once = yes
 
 immediate = {
+hidden_effect = {
 CAM  =  { declare_war_on = {
     target = LAO
     type = annex_everything
@@ -244,29 +245,39 @@ VIN =  { country_event = {
 	days = 10
 	}
 }
-
+}
+}
 
 	option = {
 		name = news.6.a
 trigger = {
-NOT = {tag = LAO}
-NOT = {tag = VIN}
-NOT = {tag = CAM}
+tag = LAO
 }
-
-		}
-
+}
 		option = {
 	 name =	news.6.b
 trigger = {
-OR = {
-tag = LAO
-tag = VIN
 tag = CAM
 }
 }
+option = {
+name =	news.6.c
+trigger = {
+tag = VIN
+}
+}
 
-		}
+option = {
+name =	news.6.e
+trigger = {
+	NOT = {
+		tag = VIN
+		tag = CAM
+		tag = LAO
+	}
+}
+
+}
 }
 
 #Pre-Paske War
@@ -274,14 +285,21 @@ tag = CAM
 news_event = {
 	id = news.7
 	title = news.7.t
-	desc =  { text = news.7.d trigger = {OR = {tag = LAO tag = VIN tag = CAM }} }
-	desc =  { text = news.7.d_2 trigger = { NOT = { tag = LAO } NOT = { tag = VIN } NOT = { tag = CAM } } }
+	desc =  { text = news.7.d trigger = {tag = LAO  } }
+		desc =  { text = news.7.d_2 trigger = {tag = CAM  } }
+			desc =  { text = news.7.d_3 trigger = {tag = VIN  } }
 	picture = news_event_001
 
-	major = no
+	major = yes
 
 	trigger = {
 date > 1940.01.01
+date < 1940.02.01
+OR = {
+tag = CAM
+tag = LAO
+tag = VIN
+}
 	}
 
 	fire_only_once = yes
@@ -289,26 +307,36 @@ date > 1940.01.01
 	option = {
 		name = news.7.a
 trigger = {
-NOT = {tag = LAO}
-NOT = {tag = VIN}
-NOT = {tag = CAM}
+tag = LAO
 }
-
+news_event = {
+    id = news.6
+    days = 2
 }
-		}
+}
 
 		option = {
 	 name =	news.7.b
 trigger = {
-OR = {
-tag = LAO
-tag = VIN
 tag = CAM
-}
 }
 news_event = {
     id = news.6
-    days = 10
+    days = 2
 }
+}
+
+option = {
+name =	news.7.c
+trigger = {
+tag = VIN
+}
+news_event = {
+    id = news.6
+    days = 2
+}
+}
+
+
 		}
 }
