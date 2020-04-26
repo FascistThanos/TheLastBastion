@@ -108,12 +108,12 @@ news_event = {
 	trigger = {
 		has_global_flag = return_of_the_exiles
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
 		name = news.2.a
-		
+
 		}
 }
 
@@ -128,7 +128,7 @@ news_event = {
 	trigger = {
 		has_global_flag = trotskyist_british_civil_war
 	}
-	
+
 	fire_only_once = yes
 
 	option = {
@@ -177,7 +177,7 @@ news_event = {
 	trigger = {
 		has_global_flag = democratic_british_civil_war
 	}
-	
+
 	fire_only_once = yes
 	option = {
 		name = news.5.a
@@ -212,4 +212,103 @@ news_event = {
 			}
 		}
 	}
+}
+
+# Paske War
+
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = news_event_001
+
+	major = yes
+
+is_triggered_only = yes
+
+	fire_only_once = yes
+
+immediate = {
+CAM  =  { declare_war_on = {
+    target = LAO
+    type = annex_everything
+}
+}
+LAO  =  { declare_war_on = {
+    target = CAM
+    type = annex_everything
+}
+}
+VIN =  { country_event = {
+	id = tlbpaske.1
+	days = 10
+	}
+}
+
+
+	option = {
+		name = news.6.a
+trigger = {
+NOT = {tag = LAO}
+NOT = {tag = VIN}
+NOT = {tag = CAM}
+}
+
+		}
+
+		option = {
+	 name =	news.6.b
+trigger = {
+OR = {
+tag = LAO
+tag = VIN
+tag = CAM
+}
+}
+
+		}
+}
+
+#Pre-Paske War
+
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc =  { text = news.7.d trigger = {OR = {tag = LAO tag = VIN tag = CAM }} }
+	desc =  { text = news.7.d_2 trigger = { NOT = { tag = LAO } NOT = { tag = VIN } NOT = { tag = CAM } } }
+	picture = news_event_001
+
+	major = no
+
+	trigger = {
+date > 1940.01.01
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = news.7.a
+trigger = {
+NOT = {tag = LAO}
+NOT = {tag = VIN}
+NOT = {tag = CAM}
+}
+
+}
+		}
+
+		option = {
+	 name =	news.7.b
+trigger = {
+OR = {
+tag = LAO
+tag = VIN
+tag = CAM
+}
+}
+news_event = {
+    id = news.6
+    days = 10
+}
+		}
 }

@@ -4,7 +4,7 @@ news_event = {
 	id = scripted.1
 	title = scripted.1.t
 	desc = scripted.1.desc
-
+	picture = blank
 	trigger = {
 		AND = {
 			date > 1938.5.6
@@ -17,7 +17,7 @@ news_event = {
 				}
 			}
 		}
-		
+
 		}
 
 	fire_only_once = yes
