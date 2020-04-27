@@ -405,6 +405,7 @@ will_lead_to_war_with = IRQ
 will_lead_to_war_with = PER
 		available_if_capitulated = yes
 				completion_reward = {
+				add_threat = 3
 				news_event = {
 			    id = news.8
 			    days = 2
