@@ -421,7 +421,7 @@ focus_tree = {
 	##ANNEX FLA
 	focus = {
 		id = HOL_integrate_flanders
-		icon = GFX_goal_focus_generic_industry
+		icon = GFX_focus_generic_industry_1
 		prerequisite = {
 			focus = HOL_flemish_workers_to_arms
 		}
@@ -712,7 +712,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HOL_join_the_usa
-		icon = GFX_TLB_usaflagguns
+		icon = GFX_usflagguns
 		prerequisite = {focus = HOL_intervention focus = HOL_align_with_the_conservatives}
 		relative_position_id = 	HOL_intervention
 		x = 3
