@@ -16,11 +16,11 @@ chinacivilthreat:0 "The Chinese Civil War"
 #Paske War
 
 news.6.t:0 "The Paske War"
-news.6.d:0 "Along the [CAM.GetNameDef] and [LAO.GetNameDef] border, the two nations have engaged in a fierce skirmish over the region of Paske in southern Laos. After the battle ended, the Laos government ceased all communication with Cambodia, and there have been [LAO.GetNameDef] troops gathering on the border. At midnight, Cambodia has declared war on Laos stating threats against the security of Cambodia with the pile-up of troops."
+news.6.d:0 "Along the [CAM.GetAdjective] and [LAO.GetAdjective] border, the two nations have engaged in a fierce skirmish over the region of Paske in southern Laos. After the battle ended, the Laos government ceased all communication with Cambodia, and there have been [LAO.GetAdjective] troops gathering on the border. At midnight, Cambodia has declared war on Laos stating threats against the security of Cambodia with the pile-up of troops."
 news.6.a:0 "Down with those communists scum!"
 news.6.b:0 "They want a war, they can have it!"
 news.6.c:0 "Idly we stand by, for now."
-news.6.e:0 "A tradgety that was destined to happen."
+news.6.e:0 "A tragedy that was destined to happen."
 
 news.7.t:0 "Cambodia and Laos Mobilize Their Armies"
 news.7.d:0 "Cambodian Infantrymen have marched into the region of Paske, claiming it to be rightful Cambodian land. The local defense force is putting up a heavy resistance, but is being overwhelmed and running out of supplies."
