@@ -407,7 +407,7 @@ will_lead_to_war_with = PER
 				completion_reward = {
 				news_event = {
 			    id = news.8
-			    days = 5
+			    days = 2
 						}
 						custom_effect_tooltip = sov_south_america_tt
 		}
