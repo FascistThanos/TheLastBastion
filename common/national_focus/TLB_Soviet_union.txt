@@ -2504,6 +2504,7 @@ has_global_flag = stalin_found
 custom_effect_tooltip = SOV_search_africa_tt
 hidden_effect = {
 	country_event = {id = tlbsoviet.4 days = 5}
+	set_global_flag = stalin_found
 	}
 }
 	}
@@ -2549,6 +2550,9 @@ elections_allowed = no
 		x = 1
 		y = 1
 		cost = 5
+		available = {
+		has_global_flag = stalin_found
+		}
 		available_if_capitulated = yes
 		relative_position_id = SOV_search_africa
 prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
