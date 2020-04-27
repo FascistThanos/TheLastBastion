@@ -78,7 +78,7 @@ focus_tree = {
 			ETH = {
 			start_civil_war = {
     ideology = fascism
-    size = 0.99
+    size = 0.999
     capital = 271
     states = { 
         842 271 841 840
@@ -200,6 +200,7 @@ focus = {
 		available = {
 		has_government = neutrality
 		}
+		will_lead_to_war_with = FRA
 		x = 7
 		y = 4
 		search_filters = {}
@@ -211,11 +212,34 @@ focus = {
 				FRA = {
 				start_civil_war = {
     ideology = neutrality
-    size = 0.8
+    size = 0.01
     capital = 461
     states = { 
         461 861 862 462
     }
+}
+				}
+		}
+	}
+	focus = {
+		id = SAF_Intervene_In_Morooco
+		icon = GFX
+		prerequisite = { focus = SAF_Help_Our_Morrocan_Brothers }
+		available = {
+		country_exists = FRA
+		}
+		x = 7
+		y = 5
+		search_filters = {}
+		cost = 5 
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				FRA = {
+				set_truce = {
+    target = D02
+    days = 90
 }
 				}
 		}
