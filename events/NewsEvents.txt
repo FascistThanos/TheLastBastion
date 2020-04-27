@@ -240,6 +240,9 @@ LAO  =  { declare_war_on = {
     type = annex_everything
 }
 }
+CAM  = { add_named_threat = { threat = 5 name = paskewar } }
+LAO  = { add_named_threat = { threat = 5 name = paskewar } }
+
 VIN =  { country_event = {
 	id = tlbpaske.1
 	days = 10
@@ -292,51 +295,116 @@ news_event = {
 
 	major = yes
 
-	trigger = {
-date > 1940.01.01
-date < 1940.02.01
-OR = {
-tag = CAM
-tag = LAO
-tag = VIN
-}
+		trigger = {
+	date > 1940.01.01
+	date < 1940.02.01
+	OR = {
+	tag = CAM
+	tag = LAO
+	tag = VIN
 	}
+		}
 
 	fire_only_once = yes
 
 	option = {
 		name = news.7.a
-trigger = {
-tag = LAO
-}
-news_event = {
-    id = news.6
-    days = 2
-}
-}
+		trigger = {
+		tag = LAO
+		}
+		news_event = {
+		    id = news.6
+		    days = 5
+		}
+		}
 
 		option = {
 	 name =	news.7.b
-trigger = {
-tag = CAM
-}
-news_event = {
-    id = news.6
-    days = 2
-}
-}
-
-option = {
-name =	news.7.c
-trigger = {
-tag = VIN
-}
-news_event = {
-    id = news.6
-    days = 2
-}
-}
-
-
+		trigger = {
+		tag = CAM
+			}
+		news_event = {
+		    id = news.6
+		    days = 5
+				}
 		}
+
+	option = {
+		name =	news.7.c
+		trigger = {
+		tag = VIN
+		}
+	news_event = {
+    id = news.6
+    days = 5
+			}
+		}
+
 }
+
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_soldiers_marching
+
+	major = yes
+
+is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = news.8.a
+		trigger = {
+		NOT = {tag = USA tag = CUB tag = SOV}
+		}
+	}
+		option = {
+			name = news.8.b
+			trigger = {
+			tag = USA
+			}
+		}
+			option = {
+				name = news.8.c
+				trigger = {
+				tag = SOV
+				}
+			}
+		option = {
+			name = news.8.e
+			trigger = {	tag = CUB }
+					random_list = {
+						80 = {
+							set_politics = {
+							ruling_party = trotskyism
+							elections_allowed = no
+							}
+							set_popularities = {
+								democratic = 0
+								neutrality = 0
+								fascism = 5
+								communism = 5
+								trotskyism = 90
+									}
+									give_military_access = SOV
+							}
+
+						20 = {
+								give_military_access = SOV
+								start_civil_war = {
+								    ruling_party = trotskyism
+								    ideology = trotskyism
+								    size = 0.8
+								    only_own_territory = no
+								    capital = 954
+								    states = {
+								       954 955
+								    }
+								}
+							}
+						}
+
+			}
+	}

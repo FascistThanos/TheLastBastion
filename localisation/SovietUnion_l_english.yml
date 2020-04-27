@@ -348,7 +348,9 @@ SOV_qing_question:0 "The Qing Question"
 SOV_qing_question_desc:0 ""
 SOV_invade_afghan:0 "Invasion of Afghaistan"
 SOV_invade_afghan_desc:0 ""
-
+SOV_south_america:0 "The Cuban Coup"
+SOV_south_america_desc:0 ""
+sov_south_america_tt:0 "§YWe will gain miltary acess to the Trotskyist rebels or the new Trotskyist government."
 
 
 ###############
@@ -419,6 +421,13 @@ great_comintern:0 "The Great Comintern"
   tlbsoviet.9.d:0 ""
   tlbsoviet.9.a:0 ""
   tlbsoviet.9.b:0 ""
+
+  news.8.t:0 "The Cuban coup d'etat"
+  news.8.d:0 "At noon, armed militants stormed [CUB.Capital.GetName], Cuba in hopes of toppling the [CUB.GetRulingParty]'s regime. The rebels are said to be supporters of [SOV.GetLeader]. It is currently unclear whether this will lead to a civil war or if the government will cede power peacefully."
+  news.8.a:0 "[SOV.GetLeader] continues his revolution..."
+  news.8.b:0 "Them communist scum!"
+  news.8.c:0 "We are successful!"
+  news.8.e:0 "Uh oh..."
 
   ##############
   stalin_found:0 "Stalin Has Been Found"
