@@ -2518,7 +2518,9 @@ hidden_effect = {
 prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
 mutually_exclusive = {focus = SOV_execute_stalin}
 		available_if_capitulated = yes
-
+ai_will_do = {
+base = 0
+}
 available = {
 has_global_flag = stalin_found
 }
