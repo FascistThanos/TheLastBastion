@@ -12,7 +12,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_pricinipaliaitalia
-		icon = GFX_pricinipaliaitalia
+		icon = GFX_Focus_ITA_Pricinipalia_Italia
 		x = 38
 		y = 0
 		cost = 8
@@ -28,7 +28,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_lightarmor
-		icon = GFX_lighttanks
+		icon = GFX_Focus_ITA_Light_Tanks
 		x = 12
 		y = 3
 		cost = 10
@@ -72,7 +72,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_thevenicedebates
-		icon = GFX_thevenicedebates
+		icon = GFX_GFX_thevenicedebates
 		x = -1
 		y = 1
 		cost = 1.5
@@ -91,7 +91,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_theitalianflotilla
-		icon = GFX_theitalianflotilla
+		icon = GFX_GFX_theitalianflotilla
 		x = 19
 		y = 1
 		cost = 10
@@ -108,7 +108,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_thesicilydebates
-		icon = GFX_thesicilydebates
+		icon = GFX_GFX_thesicilydebates
 		x = 1
 		y = 1
 		cost = 1.5
@@ -225,7 +225,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_lendweaponstofrance
-		icon = GFX_lendweaponstofrance
+		icon = GFX_GFX_lendweaponstofrance
 		x = 1
 		y = 5
 		cost = 12
@@ -336,7 +336,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_thenewromanarmy
-		icon = GFX_thenewromanarmy
+		icon = GFX_GFX_thenewromanarmy
 		x = 11
 		y = 1
 		cost = 10
@@ -353,7 +353,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_grazianisplanningprogram
-		icon = GFX_grazianisplanningprogram
+		icon = GFX_GFX_grazianisplanningprogram
 		x = 19
 		y = 0
 		cost = 8
@@ -480,7 +480,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_theromedebate
-		icon = GFX_theromedebate
+		icon = GFX_GFX_theromedebate
 		x = 0
 		y = 2
 		cost = 2
@@ -504,7 +504,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_theelectionof1936
-		icon = GFX_theelectionof1936
+		icon = GFX_GFX_theelectionof1936
 		x = 0
 		y = 3
 		cost = 4
@@ -523,7 +523,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_theparriprogram
-		icon = GFX_theparriprogram
+		icon = GFX_GFX_theparriprogram
 		x = 3
 		y = 0
 		cost = 10
@@ -1005,7 +1005,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_supportingartillery
-		icon = GFX_supportingartillery
+		icon = GFX_GFX_supportingartillery
 		x = 10
 		y = 3
 		cost = 8
@@ -1164,7 +1164,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_expandtheregiaaeronautica
-		icon = GFX_expandtheregiaaeronautica
+		icon = GFX_GFX_expandtheregiaaeronautica
 		x = 27
 		y = 1
 		cost = 10
@@ -1393,7 +1393,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_navaldeterrent
-		icon = GFX_navaldeterrent
+		icon = GFX_GFX_navaldeterrent
 		x = 22
 		y = 4
 		cost = 10
@@ -1691,7 +1691,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_parrisgovernment
-		icon = GFX_parrisgovernment
+		icon = GFX_GFX_parrisgovernment
 		x = 0
 		y = 1
 		cost = 10
@@ -1754,7 +1754,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_thepnfcoup
-		icon = GFX_thepnfcoup
+		icon = GFX_GFX_thepnfcoup
 		x = 7
 		y = 1
 		cost = 10
@@ -1981,7 +1981,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_theswissmenace
-		icon = GFX_theswissmenace
+		icon = GFX_GFX_theswissmenace
 		x = 0
 		y = 1
 		cost = 10
@@ -2268,7 +2268,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_spreadtherevolutiontoiberia
-		icon = GFX_spreadtherevolutiontoiberia
+		icon = GFX_GFX_spreadtherevolutiontoiberia
 		x = -4
 		y = 6
 		cost = 10
@@ -2321,7 +2321,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_thekingdecision
-		icon = GFX_thekingdecision
+		icon = GFX_GFX_thekingdecision
 		x = -2
 		y = 2
 		cost = 10
@@ -2373,7 +2373,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_thepsicouncil
-		icon = GFX_thepsicouncil
+		icon = GFX_GFX_thepsicouncil
 		x = 2
 		y = 1
 		cost = 10
@@ -2392,7 +2392,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_theredguard
-		icon = GFX_theredguard
+		icon = GFX_GFX_theredguard
 		x = -2
 		y = 1
 		cost = 10
@@ -2485,7 +2485,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_acominterneconomicsystem
-		icon = GFX_acominterneconomicsystem
+		icon = GFX_GFX_acominterneconomicsystem
 		x = -2
 		y = 6
 		cost = 10
@@ -2869,7 +2869,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_bidforafricanfreedom
-		icon = GFX_bidforafricanfreedom
+		icon = GFX_GFX_bidforafricanfreedom
 		x = 0
 		y = 1
 		cost = 10
@@ -3011,7 +3011,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_formthemarenostrum
-		icon = GFX_formthemarenostrum
+		icon = GFX_GFX_formthemarenostrum
 		x = 0
 		y = 1
 		cost = 10
@@ -3189,7 +3189,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_joinnato
-		icon = GFX_joinnato
+		icon = GFX_GFX_joinnato
 		x = 0
 		y = 1
 		cost = 10
