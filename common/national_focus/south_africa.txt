@@ -209,15 +209,15 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-				FRA = {
-				start_civil_war = {
-    ideology = neutrality
-    size = 0.01
-    capital = 461
-    states = { 
-        461 861 862 462
-    }
-}
+				MOR = {
+set_state_owner = 461 
+set_state_controller = 461
+set_state_owner = 861
+set_state_controller = 861
+set_state_owner = 862
+set_state_controller = 862
+set_state_owner = 462
+set_state_controller = 462
 				}
 		}
 	}
@@ -238,7 +238,7 @@ focus = {
 		completion_reward = {
 				FRA = {
 				set_truce = {
-    target = D02
+    target = MOR
     days = 90
 }
 				}
