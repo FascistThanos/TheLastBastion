@@ -157,10 +157,14 @@ bookmarks = {
 			history = "PRC_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				#
+				CHI_broken_army
+				CHI_unknown_bandits
+				CHI_economic_debuff
 			}
 			focuses = {
-				#
+				PRC_northern_war
+				PRC_northern_steppe
+				PRC_mainland_development
 			}
 		}
 		"FPR"={

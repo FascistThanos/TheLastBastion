@@ -64,7 +64,7 @@ continuous_focus_position = { x = 50 y = 1400 }
 		icon = GFX_goal_support_communism
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 relative_position_id = SOV_red_wind
 		available_if_capitulated = yes
 prerequisite = {focus = SOV_red_wind}
@@ -261,7 +261,7 @@ prerequisite = {focus = SOV_show_trials focus = SOV_no_trials}
 		icon = GFX_Generic_Trotsky
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 relative_position_id = SOV_final_destalin
 prerequisite = {focus = SOV_final_destalin }
 		available_if_capitulated = yes
@@ -274,7 +274,7 @@ prerequisite = {focus = SOV_final_destalin }
 		icon = GFX_focus_generic_join_comintern
 		x = 8
 		y = 2
-		cost = 10
+		cost = 5
 relative_position_id = SOV_ignore_stalin
 prerequisite = {focus = SOV_ignore_stalin   }
 available = { is_faction_leader = yes  }
@@ -360,7 +360,7 @@ available = { is_faction_leader = yes  }
 		icon = GFX_goal_support_communism
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 relative_position_id = SOV_secret_deals
 prerequisite = {focus = SOV_secret_deals }
 		available_if_capitulated = yes
@@ -392,6 +392,28 @@ will_lead_to_war_with = PER
 				}
 		}
 	}
+
+	focus = {
+		id = SOV_south_america
+		icon = GFX_goal_cuban_civilwar
+		x = 0
+		y = 1
+		cost = 10
+relative_position_id = SOV_great_comintern
+prerequisite = {focus = SOV_great_comintern }
+will_lead_to_war_with = IRQ
+will_lead_to_war_with = PER
+		available_if_capitulated = yes
+				completion_reward = {
+				add_threat = 3
+				news_event = {
+			    id = news.8
+			    days = 2
+						}
+						custom_effect_tooltip = sov_south_america_tt
+		}
+	}
+
 	focus = {
 		id = SOV_trotsky_plan
 		icon = GFX_goal_trotsky
@@ -571,8 +593,8 @@ available = { is_faction_leader = yes PRC = { has_war = no }  }
 		x = 2
 		y = 1
 		relative_position_id = SOV_trotsky_cult
-		cost = 10
-prerequisite = {focus = SOV_trotsky_cult focus = SOV_great_comintern }
+		cost = 5
+prerequisite = {focus = SOV_trotsky_cult focus = SOV_south_america }
 		available_if_capitulated = yes
 				completion_reward = {
 				add_tech_bonus = {
@@ -2496,7 +2518,9 @@ hidden_effect = {
 prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
 mutually_exclusive = {focus = SOV_execute_stalin}
 		available_if_capitulated = yes
-
+ai_will_do = {
+base = 0
+}
 available = {
 has_global_flag = stalin_found
 }

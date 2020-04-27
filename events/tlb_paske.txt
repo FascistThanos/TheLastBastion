@@ -12,6 +12,7 @@ country_event = {
   option = {
   ai_chance = { base = 40 }
     	name = tlbpaske.1.a
+VIN  = { add_named_threat = { threat = 5 name = paskewar } }
       VIN  =  { declare_war_on = {
           target = LAO
           type = annex_everything
