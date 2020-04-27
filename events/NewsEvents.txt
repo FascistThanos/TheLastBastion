@@ -297,7 +297,6 @@ news_event = {
 
 		trigger = {
 	date > 1940.01.01
-	date < 1940.02.01
 	OR = {
 	tag = CAM
 	tag = LAO
@@ -395,7 +394,7 @@ is_triggered_only = yes
 								give_military_access = SOV
 								start_civil_war = {
 								    ruling_party = trotskyism
-								    ideology = trotskyism
+								    ideology = centrism
 								    size = 0.8
 								    only_own_territory = no
 								    capital = 954
@@ -408,3 +407,73 @@ is_triggered_only = yes
 
 			}
 	}
+
+#Adolf My Victory
+	news_event = {
+		id = news.9
+		title = news.9.t
+		desc = news.9.d
+		picture = GFX_news_event_hitler_speech
+
+		major = yes
+
+		trigger = {
+		date > 1937.01.01
+
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = news.9.a
+		}
+}
+
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_news_event_japanese_parade
+
+	major = yes
+
+	trigger = {
+	date > 1939.01.01
+	}
+
+	fire_only_once = yes
+
+immediate = {
+JAP = {transfer_state = 638}
+
+}
+
+	option = {
+		name = news.10.a
+	}
+}
+
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_news_event_005
+
+	major = yes
+
+	trigger = {
+	date > 1936.05.05
+	ENG = {has_government = communism}
+	}
+
+	fire_only_once = yes
+
+
+	option = {
+		name = news.11.a
+	ENG = {
+	add_political_power = 20
+	add_war_support = 0.02
+	}
+	}
+}
