@@ -27,6 +27,84 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SAF_follow_Democratic_examples
+		icon = GFX
+		prerequisite = { focus = SAF_recognize_BGE }
+		x = 3
+		y = 2
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			set_politics = {
+        ruling_party = liberal
+        elections_allowed = yes
+        }
+        kill_country_leader = yes
+        create_country_leader = { name = "James Hertzog" desc = "POLITICS_JAMES_HERTZOG_DESC" picture = "Portrait_South_Africa_James_Hertzog.dds" expire = "1965.1.1" ideology = centrism traits = { } set_country_leader_ideology = liberal }
+		}
+	}
+	focus = {
+		id = SAF_pressure_Portugal_to_release_African_colonies
+		icon = GFX
+		prerequisite = { focus = SAF_follow_Democratic_examples }
+		x = 3
+		y = 3
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		    set_state_owner = 540
+			set_state_controller = 540
+			set_state_owner = 853
+			set_state_controller = 853
+			set_state_owner = 770
+			set_state_controller = 770
+			set_state_owner = 855
+			set_state_controller = 855
+			set_state_owner = 544
+			set_state_controller = 544
+			set_state_owner = 296
+			set_state_controller = 296
+			set_state_owner = 705
+			set_state_controller = 705
+		}
+	}
+	focus = {
+		id = SAF_pressure_Belgium_to_release_African_colonies
+		icon = GFX
+		prerequisite = { focus = SAF_pressure_Portugal_to_release_African_colonies }
+		x = 3
+		y = 4
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		    set_state_owner = 849
+			set_state_controller = 849
+			set_state_owner = 850
+			set_state_controller = 850
+			set_state_owner = 538
+			set_state_controller = 538
+			set_state_owner = 718
+			set_state_controller = 718
+			set_state_owner = 851
+			set_state_controller = 851
+			set_state_owner = 768
+			set_state_controller = 768
+			set_state_owner = 769
+			set_state_controller = 769
+			set_state_owner = 295
+			set_state_controller = 295
+		}
+	}
         focus = {
 		id = SAF_ally_BGE
 		icon = GFX
