@@ -1,3 +1,4 @@
+add_namespace = luxemburg
 country_event = {
     id = luxemburg.0
     title = luxemburg.0.t
