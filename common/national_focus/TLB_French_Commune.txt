@@ -1,10 +1,10 @@
 focus_tree = {
-	id = TLB_British_Exiles
+	id = TLB_Second_Commune
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = BGE
+			tag = FPR
       is_debug = yes
 		}
 	}

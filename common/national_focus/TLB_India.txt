@@ -1,17 +1,12 @@
 focus_tree = {
-	id = TLB_British_Exiles
+	id = TLB_India
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = BGE
+			tag = RAJ
       is_debug = yes
 		}
-	}
-
-	continuous_focus_position = {
-		x = 2600
-		y = 675
 	}
 
 	default = no
