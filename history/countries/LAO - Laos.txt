@@ -90,9 +90,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Kaili Phankham"
+	name = "Souvanna Phouma"
 	desc = "POLITICS_PHANKHAM_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	picture = "Portrait_Laos_Souvanna_Phouma.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

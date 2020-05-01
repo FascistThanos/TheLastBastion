@@ -12,6 +12,8 @@ if = {
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.15
+add_named_threat = { threat = 10 name = frenchcivilthreat }
+
 
 # Starting tech
 set_technology = {
@@ -237,17 +239,6 @@ create_country_leader = {
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
 	ideology = 	leninism
-	traits = {
-
-	}
-}
-
-create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
 	traits = {
 
 	}

@@ -1,0 +1,23 @@
+focus_tree = {
+	id = TLB_Second_Commune
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FPR
+      is_debug = yes
+		}
+	}
+
+	continuous_focus_position = {
+		x = 2600
+		y = 675
+	}
+
+	default = no
+
+	shared_focus = GEN_economic_growth
+	shared_focus = GEN_army_innovations
+	shared_focus = GEN_expand_the_airforce
+	shared_focus = GEN_dockyard_construction
+  shared_focus = GEN_our_place_in_the_world

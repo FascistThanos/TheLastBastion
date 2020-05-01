@@ -23,11 +23,33 @@ set_popularities = {
 }
 
 create_country_leader = {
+	name = "Yi Un"
+	desc = ""
+	picture = "Portrait_Korea_Yi_Un.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarch
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Syngman Rhee"
 	desc = ""
 	picture = "Portrait_Korea_Syngman_Rhee.dds"
 	expire = "1965.1.1"
-	ideology = libertarian
+	ideology = radical
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anh Chang-Ho"
+	desc = "POLITICS_CHANGHO_DESC"
+	picture = "Portrait_Korea_Ahn_Chang-Ho.dds"
+	expire = "1965.1.1"
+	ideology = economic
 	traits = {
 		#
 	}
@@ -49,7 +71,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Korea_Kim_Il-Sung.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = trotskyism_type
 	traits = {
 		#
 	}
@@ -67,9 +89,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Yi Un"
+	name = "An Jung-Geun"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	picture = "Portrait_Korea_An_Jung-Geun.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

@@ -1,7 +1,7 @@
 focus_tree = {
 	continuous_focus_position = { x = 50 y = 1600 }
-	id = Belgium
-	
+	id = TLB_belgian_focus
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 			tag = BEL
 		}
 	}
-	
+
 	default = no
 	reset_on_civilwar = no
 
@@ -51,7 +51,7 @@ focus_tree = {
 	focus = {
 		id = BEL_status_quo
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_1936_elections}		
+		prerequisite = {focus = BEL_1936_elections}
 		x = 5
 		y = 3
 		cost = 1
@@ -60,7 +60,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		available = {
-			OR = {has_country_flag = BEL_conservatives	
+			OR = {has_country_flag = BEL_conservatives
 			has_country_flag = BEL_liberals
 			has_country_flag = BEL_labor
 			}
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = BEL_invite_american_investment
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_status_quo}		
+		prerequisite = {focus = BEL_status_quo}
 		x = 0
 		y = 4
 		cost = 10
@@ -91,7 +91,7 @@ focus_tree = {
 	focus = {
 		id = BEL_american_military_experts
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_support_industrial_growth focus = BEL_the_last_bastion}		
+		prerequisite = {focus = BEL_support_industrial_growth focus = BEL_the_last_bastion}
 		x = 1
 		y = 8
 		cost = 5
@@ -104,7 +104,7 @@ focus_tree = {
 		}
 	}
 	##########MILITARY BONUSES###########
-	
+
 	########################
 	focus = {
 		id = BEL_the_flemish_question
@@ -120,12 +120,12 @@ focus_tree = {
 		completion_reward = {
 			country_event = {id = belgium.2}
 		}
-	}	
+	}
 	#################INDUSTRY
 	focus = {
 		id = BEL_decrease_business_taxes
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_invite_american_investment}	
+		prerequisite = {focus = BEL_invite_american_investment}
 		x = 0
 		y = 5
 		cost = 10
@@ -140,7 +140,7 @@ focus_tree = {
 	focus = {
 		id = BEL_support_industrial_growth
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_decrease_business_taxes}	
+		prerequisite = {focus = BEL_decrease_business_taxes}
 		x = 0
 		y = 6
 		cost = 10
@@ -151,11 +151,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = industrial_growth
 		}
-	}	
+	}
 	focus = {
 		id = BEL_invest_in_flanders
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_the_flemish_question}		
+		prerequisite = {focus = BEL_the_flemish_question}
 		x = 10
 		y = 5
 		cost = 10
@@ -178,11 +178,11 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = BEL_invest_in_wallonia
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_invest_in_flanders}		
+		prerequisite = {focus = BEL_invest_in_flanders}
 		x = 10
 		y = 6
 		cost = 10
@@ -206,7 +206,7 @@ focus_tree = {
 	focus = {
 		id = BEL_pave_way_for_industrial_expansion
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_invest_in_wallonia}		
+		prerequisite = {focus = BEL_invest_in_wallonia}
 		x = 10
 		y = 7
 		cost = 5
@@ -226,7 +226,7 @@ focus_tree = {
 	focus = {
 		id = BEL_exploit_the_congo
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}		
+		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}
 		x = 10
 		y = 8
 		cost = 5
@@ -251,14 +251,14 @@ focus_tree = {
 				add_resource = {
 				type = rubber
 				amount = 3
-				}			
+				}
 			}
 		}
 	}
 	focus = {
 		id = BEL_expand_universities
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}		
+		prerequisite = {focus = BEL_pave_way_for_industrial_expansion}
 		x = 8
 		y = 8
 		cost = 5
@@ -269,13 +269,13 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
-	}			
+	}
 	#BEFRIEND AMERICA
 	focus = {
 		id = BEL_arsenal_of_democracy
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_status_quo}	
-		mutually_exclusive = { focus = BEL_armed_neutrality }						
+		prerequisite = {focus = BEL_status_quo}
+		mutually_exclusive = { focus = BEL_armed_neutrality }
 		x = 2
 		y = 4
 		cost = 10
@@ -301,13 +301,13 @@ focus_tree = {
                     instant_build = yes
                 }
 
-            }            
+            }
 		}
 	}
 	focus = {
 		id = BEL_the_last_bastion
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_arsenal_of_democracy}		
+		prerequisite = {focus = BEL_arsenal_of_democracy}
 		x = 2
 		y = 6
 		cost = 5
@@ -324,8 +324,8 @@ focus_tree = {
 	focus = {
 		id = BEL_armed_neutrality
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_status_quo}	
-		mutually_exclusive = { focus = BEL_arsenal_of_democracy }			
+		prerequisite = {focus = BEL_status_quo}
+		mutually_exclusive = { focus = BEL_arsenal_of_democracy }
 		x = 4
 		y = 4
 		cost = 10
@@ -341,7 +341,7 @@ focus_tree = {
 	focus = {
 		id = BEL_surrounded_on_all_sides
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_armed_neutrality}	
+		prerequisite = {focus = BEL_armed_neutrality}
 		x = 4
 		y = 5
 		cost = 10
@@ -357,8 +357,8 @@ focus_tree = {
 	focus = {
 		id = BEL_conservative_values
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_status_quo}	
-		mutually_exclusive = { focus = BEL_democratic_socialism }								
+		prerequisite = {focus = BEL_status_quo}
+		mutually_exclusive = { focus = BEL_democratic_socialism }
 		x = 6
 		y = 4
 		cost = 10
@@ -369,11 +369,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = .05
 		}
-	}	
+	}
 	focus = {
 		id = BEL_back_the_church
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_conservative_values}	
+		prerequisite = {focus = BEL_conservative_values}
 		x = 6
 		y = 5
 		cost = 10
@@ -389,7 +389,7 @@ focus_tree = {
 	focus = {
 		id = BEL_corporate_subsidies
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_back_the_church}	
+		prerequisite = {focus = BEL_back_the_church}
 		x = 6
 		y = 6
 		cost = 10
@@ -400,11 +400,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = corporate_subsidies
 		}
-	}	
+	}
 	focus = {
 		id = BEL_silence_trotskyists
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_corporate_subsidies}	
+		prerequisite = {focus = BEL_corporate_subsidies}
 		x = 6
 		y = 7
 		cost = 10
@@ -416,16 +416,16 @@ focus_tree = {
 				add_popularity = {
 				ideology = trotskyism
 				popularity = -0.05
-			}	
+			}
 		}
-	}			
+	}
 	#SOCIAL DEMOCRACY
 	focus = {
 		id = BEL_democratic_socialism
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_status_quo}	
-		mutually_exclusive = { focus = BEL_conservative_values }						
-	
+		prerequisite = {focus = BEL_status_quo}
+		mutually_exclusive = { focus = BEL_conservative_values }
+
 		x = 8
 		y = 4
 		cost = 10
@@ -440,7 +440,7 @@ focus_tree = {
 	focus = {
 		id = BEL_eight_hour_work_day
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_democratic_socialism}	
+		prerequisite = {focus = BEL_democratic_socialism}
 		x = 8
 		y = 5
 		cost = 10
@@ -455,7 +455,7 @@ focus_tree = {
 	focus = {
 		id = BEL_socialized_healthcare
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_eight_hour_work_day}	
+		prerequisite = {focus = BEL_eight_hour_work_day}
 		x = 8
 		y = 6
 		cost = 10
@@ -470,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = BEL_welfare_state
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_socialized_healthcare}	
+		prerequisite = {focus = BEL_socialized_healthcare}
 		x = 8
 		y = 7
 		cost = 10
@@ -482,12 +482,12 @@ focus_tree = {
 			add_ideas = welfare_state
 
 		}
-	}																			
+	}
 	###### RADICALISM #######
 	focus = {
 		id = BEL_radical_ideals
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_1936_elections}		
+		prerequisite = {focus = BEL_1936_elections}
 		x = 17
 		y = 3
 		available = {
@@ -506,14 +506,14 @@ focus_tree = {
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.1
-			}	
+			}
 		}
 	}
 	#FASCIST
 	focus = {
 		id = BEL_fascist_state
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_radical_ideals}		
+		prerequisite = {focus = BEL_radical_ideals}
 		x = 15
 		y = 4
 		available = {
@@ -531,7 +531,7 @@ focus_tree = {
 	focus = {
 		id = BEL_censor_the_communists
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_fascist_state}		
+		prerequisite = {focus = BEL_fascist_state}
 		x = 12
 		y = 5
 
@@ -544,13 +544,13 @@ focus_tree = {
 			add_popularity = {
 				ideology = trotskyism
 				popularity = -0.05
-			}				
+			}
 		}
 	}
 	focus = {
 		id = BEL_expand_the_military_complex
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_censor_the_communists}		
+		prerequisite = {focus = BEL_censor_the_communists}
 		x = 12
 		y = 6
 
@@ -560,7 +560,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-	
+
 				34 = {
 
 				add_extra_state_shared_building_slots = 1
@@ -577,7 +577,7 @@ focus_tree = {
 	focus = {
 		id = BEL_state_owned_arsenals
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_fascist_state}		
+		prerequisite = {focus = BEL_fascist_state}
 		x = 16
 		y = 5
 
@@ -587,13 +587,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = state_arsenals				
+			add_ideas = state_arsenals
 		}
 	}
 	focus = {
 		id = BEL_ideological_struggle
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_state_owned_arsenals}		
+		prerequisite = {focus = BEL_state_owned_arsenals}
 		x = 12
 		y = 8
 
@@ -603,13 +603,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = ideological_struggle			
+			add_ideas = ideological_struggle
 		}
 	}
 	focus = {
 		id = BEL_church_dominance
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_fascist_state}		
+		prerequisite = {focus = BEL_fascist_state}
 		x = 14
 		y = 5
 
@@ -619,13 +619,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_stability = .05			
+			add_stability = .05
 		}
 	}
 	focus = {
 		id = BEL_work_with_de_clercq
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_church_dominance}		
+		prerequisite = {focus = BEL_church_dominance}
 		x = 14
 		y = 6
 
@@ -635,13 +635,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-				remove_ideas = french_hegemony				
+				remove_ideas = french_hegemony
 		}
-	}	
+	}
 	focus = {
 		id = BEL_formations_de_combat
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_work_with_de_clercq}		
+		prerequisite = {focus = BEL_work_with_de_clercq}
 		x = 14
 		y = 7
 
@@ -657,7 +657,7 @@ focus_tree = {
 	focus = {
 		id = BEL_lesser_of_the_evils
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_formations_de_combat}		
+		prerequisite = {focus = BEL_formations_de_combat}
 		x = 14
 		y = 8
 
@@ -675,7 +675,7 @@ focus_tree = {
 	focus = {
 		id = BEL_state_supported_military_research
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_expand_the_military_complex}		
+		prerequisite = {focus = BEL_expand_the_military_complex}
 		x = 12
 		y = 7
 
@@ -687,13 +687,13 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
-	}	
+	}
 
 	######TROTSKYSIM
 	focus = {
 		id = BEL_peoples_commune
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_radical_ideals}		
+		prerequisite = {focus = BEL_radical_ideals}
 		x = 20
 		y = 4
 		available = {
@@ -711,7 +711,7 @@ focus_tree = {
 	focus = {
 		id = BEL_cleave_through_the_beauracracy
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_peoples_commune}		
+		prerequisite = {focus = BEL_peoples_commune}
 		x = 18
 		y = 5
 		available = {
@@ -729,7 +729,7 @@ focus_tree = {
 	focus = {
 		id = BEL_form_communes
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_cleave_through_the_beauracracy}		
+		prerequisite = {focus = BEL_cleave_through_the_beauracracy}
 		x = 18
 		y = 6
 		available = {
@@ -743,11 +743,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = BEL_communes
 		}
-	}	
+	}
 	focus = {
 		id = BEL_socialist_education
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_form_communes}		
+		prerequisite = {focus = BEL_form_communes}
 		x = 18
 		y = 7
 		available = {
@@ -765,7 +765,7 @@ focus_tree = {
 	focus = {
 		id = BEL_workers_culture
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_socialist_education}		
+		prerequisite = {focus = BEL_socialist_education}
 		x = 18
 		y = 8
 		available = {
@@ -784,7 +784,7 @@ focus_tree = {
 	focus = {
 		id = BEL_join_the_soviets
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_peoples_commune}		
+		prerequisite = {focus = BEL_peoples_commune}
 		x = 20
 		y = 5
 		cost = 10
@@ -801,7 +801,7 @@ focus_tree = {
 	focus = {
 		id = BEL_permanent_revolution
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_join_the_soviets}		
+		prerequisite = {focus = BEL_join_the_soviets}
 		x = 20
 		y = 6
 		cost = 10
@@ -816,7 +816,7 @@ focus_tree = {
 	focus = {
 		id = BEL_arm_the_masses
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_permanent_revolution}		
+		prerequisite = {focus = BEL_permanent_revolution}
 		x = 20
 		y = 7
 		cost = 10
@@ -831,7 +831,7 @@ focus_tree = {
 	focus = {
 		id = BEL_heavy_industry
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_arm_the_masses}		
+		prerequisite = {focus = BEL_arm_the_masses}
 		x = 20
 		y = 8
 		cost = 10
@@ -857,13 +857,13 @@ focus_tree = {
                     instant_build = yes
                 }
 
-            }            
+            }
 		}
 	}
 	focus = {
 		id = BEL_soviet_military_research
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_join_the_soviets}		
+		prerequisite = {focus = BEL_join_the_soviets}
 		x = 22
 		y = 6
 		cost = 10
@@ -878,7 +878,7 @@ focus_tree = {
 	focus = {
 		id = BEL_military_research
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_american_military_experts focus = BEL_state_supported_military_research focus = BEL_soviet_military_research}		
+		prerequisite = {focus = BEL_american_military_experts focus = BEL_state_supported_military_research focus = BEL_soviet_military_research}
 		x = 12
 		y = 9
 		cost = 1
@@ -893,13 +893,13 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = land_doctrine
-			}			
+			}
 		}
 	}
 	focus = {
 		id = BEL_learn_infantry_tactics
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_military_research}			
+		prerequisite = {focus = BEL_military_research}
 		x = 10
 		y = 10
 		cost = 10
@@ -914,9 +914,9 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = land_doctrine
-			}			
+			}
 		}
-	}	
+	}
 	focus = {
 		id = BEL_study_armor
 		icon = GFX_goal_focus_generic_industry
@@ -941,7 +941,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				technology = motorised_infantry
-			}							
+			}
 		}
 	}
 	focus = {
@@ -950,7 +950,6 @@ focus_tree = {
 		prerequisite = { focus = BEL_learn_infantry_tactics }
 		x = 8
 		y = 11
-		relative_position_id = army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -966,11 +965,11 @@ focus_tree = {
 				category = artillery
 			}
 		}
-	}	
+	}
 	focus = {
 		id = BEL_study_naval_tactics
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_military_research}		
+		prerequisite = {focus = BEL_military_research}
 		x = 14
 		y = 10
 		cost = 10
@@ -987,7 +986,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}							
+			}
 		}
 	}
 	focus = {
@@ -1007,7 +1006,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = fleet_in_being_tree
-			}					
+			}
 		}
 	}
 	focus = {
@@ -1031,7 +1030,7 @@ focus_tree = {
 				technology = wolfpacks
 				technology = advanced_submarine_warfare
 				technology = combined_operations_raiding
-			}							
+			}
 		}
 	}
 	focus = {
@@ -1052,7 +1051,7 @@ focus_tree = {
 				uses = 2
 				category = dd_tech
 				category = cl_tech
-			}							
+			}
 		}
 	}
 	focus = {
@@ -1073,7 +1072,7 @@ focus_tree = {
 				uses = 2
 				category = ca_tech
 				category = bb_tech
-			}							
+			}
 		}
 	}
 	focus = {
@@ -1093,10 +1092,10 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = ss_tech
-			}							
+			}
 		}
 	}
-	focus = {	
+	focus = {
 		id = BEL_carrier_research
 		icon = GFX_goal_focus_generic_industry
 		prerequisite = {focus = BEL_large_navy focus = BEL_flexible_navy}
@@ -1113,13 +1112,13 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = cv_tech
-			}							
+			}
 		}
-	}					
+	}
 	focus = {
 		id = BEL_study_the_airforce
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = {focus = BEL_military_research}		
+		prerequisite = {focus = BEL_military_research}
 		x = 18
 		y = 10
 		cost = 10
@@ -1128,16 +1127,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			air_experience = 25		
+			air_experience = 25
 		}
 	}
 	focus = {
 		id = BEL_fighter_focus
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = BEL_study_the_airforce }
-		x = 12
-		y = 11
-		relative_position_id = aviation_effort
+		x = -1
+		y = 1
+		relative_position_id = BEL_study_the_airforce
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1163,9 +1162,9 @@ focus_tree = {
 		id = BEL_bomber_focus
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = BEL_study_the_airforce }
-		x = 14
-		y = 11
-		relative_position_id = aviation_effort
+		x = 1
+		y = 1
+		relative_position_id = BEL_study_the_airforce
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1219,7 +1218,7 @@ focus_tree = {
 	focus = {
 		id = BEL_capture_the_netherlands
 		icon = GFX_goal_focus_generic_industry
-		prerequisite = { focus = BEL_prepare_for_war}		
+		prerequisite = { focus = BEL_prepare_for_war}
 		x = 4
 		y = 10
 		cost = 10
@@ -1268,7 +1267,7 @@ focus_tree = {
 		id = BEL_interventionism
 		icon = GFX_goal_focus_generic_industry
 		available = {
-			has_globa_flag = belgium_wins
+			has_global_flag = belgium_wins
 		}
 		x = 10
 		y = 2
@@ -1281,5 +1280,5 @@ focus_tree = {
 			add_ideas = interventionism
 			set_rule = { can_send_volunteers = yes }
 		}
-	}						
-}						
+	}
+}

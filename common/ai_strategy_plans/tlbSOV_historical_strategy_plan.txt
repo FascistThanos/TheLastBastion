@@ -12,6 +12,12 @@ tlbSOV_historical_plan = {
 
     # Defines which national focuses the AI picks first during this plan.
     ai_national_focuses = {
+SOV_target_stalin
+SOV_search_party
+SOV_search_asia
+SOV_search_europe
+SOV_search_africa
+SOV_execute_stalin
 SOV_ignore_stalin
 SOV_red_wind
 SOV_reorganize_military
@@ -44,14 +50,14 @@ SOV_trotsky_cult
 SOV_send_diplo
 SOV_secret_deals
 SOV_great_comintern
-SOV_moscow_to_cape
-SOV_strike_the_bastion
+SOV_south_america
 SOV_new_guns
 SOV_mobile_tanks
 SOV_prepare_marines
 SOV_strike_canal
 SOV_invite_benelux
 SOV_strike_the_bastion
+SOV_moscow_to_cape
 
 
     }

@@ -1,0 +1,18 @@
+focus_tree = {
+	id = TLB_India
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RAJ
+      is_debug = yes
+		}
+	}
+
+	default = no
+
+	shared_focus = GEN_economic_growth
+	shared_focus = GEN_army_innovations
+	shared_focus = GEN_expand_the_airforce
+	shared_focus = GEN_dockyard_construction
+  shared_focus = GEN_our_place_in_the_world

@@ -93,17 +93,18 @@ declare_war_on = {
 }
 
 set_politics = {
-	ruling_party = socialism
+	ruling_party = democratic
 	last_election = "1934.5.1"
 	election_frequency = 47
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 15
-	socialism = 56
+	democratic = 56
+	socialism = 14
 	fascism = 10
 	communism = 6
 	liberal = 13
+	trotskyism = 1
 }
 
 add_ideas = {
@@ -112,7 +113,6 @@ add_ideas = {
 	tot_economic_mobilisation
 }
 
-#Order matters here Daladier will start as leaders because added last
 create_country_leader = {
 	name = "Édouard Daladier"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -120,7 +120,18 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism_type
 	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Paul Reynaud"
+	desc = "POLITICS_REYNAUD_DESC"
+	picture = "Portrait_France_Paul_Reynaud.dds"
+	expire = "1965.1.1"
+	ideology = libertarian
+	traits = {
+		conservative_grandee
 	}
 }
 
@@ -132,6 +143,61 @@ create_country_leader = {
 	ideology = fascism_ideology
 	traits = {
 
+	}
+}
+
+create_country_leader = {
+	name = "Philippe Pétain"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		headstrong
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "GFX_portrait_fra_maurice_thorez"
+	expire = "1965.1.1"
+	ideology = 	leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pierre Naville"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = 	trotskyism_type
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Infante Jaime"
+	desc = "POLITICS_JAIME_DESC"
+	picture = "portrait_fra_infante_jaime.dds"
+	expire = "1965.1.1"
+	ideology = monarchist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vicomte de Curières de Castelnau"
+	desc = "POLITICS_VICOMTE_DESC"
+	picture = "Portrait_France_Vicomte_Castelnau.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
 	}
 }
 

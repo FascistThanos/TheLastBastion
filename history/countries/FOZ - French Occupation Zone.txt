@@ -1,4 +1,4 @@
-capital = 42
+capital = 51
 
 oob = "FOZ_1936"
 if = {
@@ -101,6 +101,8 @@ declare_war_on = {
     target = FPR
     type = topple_government
 }
+
+set_cosmetic_tag = FOZ_french_protectorate
 
 create_country_leader = {
 	name = "Alphonse Joseph Georges"

@@ -1,0 +1,35 @@
+add_namespace = tlbpaske
+
+
+#Vietnam
+country_event = {
+  id = tlbpaske.1
+  title = tlbpaske.1.t
+  desc = tlbpaske.1.d
+
+  is_triggered_only = yes
+
+  option = {
+  ai_chance = { base = 40 }
+    	name = tlbpaske.1.a
+VIN  = { add_named_threat = { threat = 5 name = paskewar } }
+      VIN  =  { declare_war_on = {
+          target = LAO
+          type = annex_everything
+      }
+      }
+      VIN  =  { declare_war_on = {
+          target = CAM
+          type = annex_everything
+      }
+      }
+  }
+
+  option = {
+ai_chance = { base = 20
+ }
+    	name = tlbpaske.1.b
+add_stability = -0.2
+add_war_support = -0.2
+  }
+}

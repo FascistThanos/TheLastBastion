@@ -1,4 +1,4 @@
-﻿capital = 6
+﻿capital = 34
 
 oob = "BEL_1936"
 
@@ -18,8 +18,9 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
 add_ideas = {
-	add_ideas = french_hegemony
+	french_hegemony
 }
 
 1939.1.1 = {

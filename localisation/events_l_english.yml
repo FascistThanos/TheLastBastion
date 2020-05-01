@@ -3135,3 +3135,16 @@
  southgermany.3.t:0 "[From.Owner.GetName] has rejected our proposal"
  southgermany.3.d:0 "A response has been recieved. It contains grave news indeed. The [From.Owner.GetAdjective] government has decided against a union. We don't know how much they would've been able to help, but it was better than nothing. Hopefully we will not fail without them."
  southgermany.3.a:0 "This is not good..."
+
+
+ ##### Flavor News ######
+
+ news.9.t:0 "Adolf Hitler writes "Mein Sieg""
+ news.9.d:0 "Adolf Hitler celebrated and wrote about his various accomplishments in his best selling book "Mein Sieg". In this book he describes how happy he is in Austria. Some critics question the various points in his book in which he goes off on tangets about imaginary tales of invading Poland, or almost ruling the world. These things could of simply never of happened with Austria's current army."
+ news.9.a:0 "Ah, good for him."
+ news.10.t:0 "Two Peaceful Nations"
+ news.10.d:0 "As a token of friendship, the United States has announced that they will be transfering the island of Guam to Japan."
+ news.10.a:0 "Ah, such good friends."
+ news.11.t:0 "The Union of Britain Releases Propaganda Film"
+ news.11.d:0 "The film "My Lovely Country", directed by Alex T.R. Bailey, has given the Union of Britain a large global boost of respect. Critics call the movie a moving repersentaion of how well communism is working in the country."
+ news.11.a:0 "Time to go to the theater..."

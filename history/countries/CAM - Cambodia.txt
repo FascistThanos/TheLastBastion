@@ -81,11 +81,22 @@ set_popularities = {
 create_country_leader = {
 	name = "Pol Pot"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+	picture = "Portrait_Cambodia_Pol_Pot.dds"
 	expire = "1953.3.1"
-	ideology = anarchist_communism #insanity
+	ideology = trotskyism_type
 	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Tou Samouth"
+	desc = ""
+	picture = "Portrait_Cambodia_Tou_Samouth.dds"
+	expire = "1953.3.1"
+	ideology = leninism
+	traits = {
+		#
 	}
 }
 

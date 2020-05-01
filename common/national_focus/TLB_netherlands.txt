@@ -1,6 +1,6 @@
 focus_tree = {
 	continuous_focus_position = { x = 2500 y = 1000 }
-	id = Netherlands
+	id = TLB_netherlands_focus
 
 	country = {
 		factor = 0
@@ -61,7 +61,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			political_power_gain = -.05
 			remove_ideas = medium_depression
 		}
 	}
@@ -1094,7 +1093,7 @@ focus_tree = {
 	focus = {
 		id = HOL_destroy_the_bourgeoisie
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = {focus = HOL_free_press}
+		prerequisite = {focus = HOL_free_press focus = HOL_secret_police }
 		relative_position_id = 	HOL_free_press
 		mutually_exclusive = {focus = HOL_dissolve_the_bourgeoisie}
 		x = 0
@@ -1113,7 +1112,7 @@ focus_tree = {
 	focus = {
 		id = HOL_our_own_path
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = {focus = HOL_destroy_the_bourgeoisie focus = HOL_secret_police}
+		prerequisite = {focus = HOL_destroy_the_bourgeoisie focus = HOL_dissolve_the_bourgeoisie }
 		relative_position_id = 	HOL_destroy_the_bourgeoisie
 		mutually_exclusive = {focus = HOL_join_the_soviets}
 		x = 0
@@ -1153,7 +1152,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {focus = HOL_secret_police focus = HOL_free_press}
 		relative_position_id = 	HOL_stabilize_the_nation
-		mutually_exclusive = {focus = HOL_destroy_the_bourgeoise}
+		mutually_exclusive = {focus = HOL_destroy_the_bourgeoisie}
 		x = 1
 		y = 2
 		cost = 15
@@ -1169,7 +1168,7 @@ focus_tree = {
 	focus = {
 		id = HOL_join_the_soviets
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = {focus = HOL_dissolve_the_bourgeoisie}
+		prerequisite = {focus = HOL_dissolve_the_bourgeoisie focus = HOL_destroy_the_bourgeoisie }
 		relative_position_id = 	HOL_destroy_the_bourgeoisie
 		mutually_exclusive = {focus = HOL_our_own_path}
 		x = 2

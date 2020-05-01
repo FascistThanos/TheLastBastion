@@ -580,7 +580,7 @@ focus_tree = {
 					has_country_flag = ENG_successful_reconciliation
 				}
 			}
-			
+
 		}
 		x = 0
 		y = 1
@@ -657,6 +657,7 @@ focus_tree = {
 	focus = {
 		id = ENG_unsung_victory
 		prerequisite = { focus = ENG_1st_session }
+		mutually_exclusive = { focus = ENG_socialist_majority }
 		relative_position_id = ENG_1st_session
 		icon = GFX_goal_support_democracy
 		available = {
@@ -690,7 +691,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			BGE = { 
+			BGE = {
 				country_event = { id = tlbbritain.26 hours = 1 }
 			}
 		}
@@ -1073,7 +1074,11 @@ focus_tree = {
 
 	focus = {
 		id = ENG_end_of_the_american_dream
-		prerequisite = { focus = ENG_subjugate_finland focus = ENG_molotov-mitford_pact focus = ENG_ally_finland }
+		prerequisite = {
+			focus = ENG_subjugate_finland_focus
+			focus = ENG_molotov-mitford_pact
+			focus = ENG_ally_finland
+		}
 		available = {
 			USA = { exists = yes }
 		}
@@ -1171,8 +1176,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_rule = { 
-				can_create_factions = yes 
+			set_rule = {
+				can_create_factions = yes
 			}
 			create_faction = "Stresa Front"
 			FRA = {
@@ -2153,7 +2158,6 @@ focus_tree = {
 	focus = {
 		id = ENG_new_transport_technologies
 		prerequisite = { focus = ENG_strike_first_doctrine }
-		mutually_exclusive = { focus = ENG_fortify_the_home_isle }
 		relative_position_id = ENG_strike_first_doctrine
 		icon = GFX_
 		x = 0
@@ -2210,7 +2214,7 @@ focus_tree = {
 	focus = {
 		id = ENG_fortify_the_home_isle
 		prerequisite = { focus = ENG_prepare_for_the_BGE's_return }
-		mutually_exclusive = { focus = ENG_strike_first_doctrine }
+		mutually_exclusive = { focus = ENG_preemptive_strike }
 		relative_position_id = ENG_prepare_for_the_BGE's_return
 		icon = GFX_
 		x = 2

@@ -8,3 +8,29 @@
  WAR_TAKE_CORE_NAME:0 "$ORDER$$FIRST$ reclamation of $STATE$"
  WAR_TAKE_CLAIM_NAME:0 "$ORDER$$FIRST$ Aggression for $STATE$"
  WAR_NAME_FRA_FPR:0 "The 6th French Civil War"
+
+
+frenchcivilthreat:0 "The French Civil War"
+chinacivilthreat:0 "The Chinese Civil War"
+paskewar:0 "The Paske War"
+
+#Paske War
+
+news.6.t:0 "The Paske War"
+news.6.d:0 "Along the [CAM.GetAdjective] and [LAO.GetAdjective] border, the two nations have engaged in a fierce skirmish over the region of Paske in southern Laos. After the battle ended, the Laos government ceased all communication with Cambodia, and there have been [LAO.GetAdjective] troops gathering on the border. At midnight, Cambodia has declared war on Laos stating threats against the security of Cambodia with the pile-up of troops."
+news.6.a:0 "Down with those communists scum!"
+news.6.b:0 "They want a war, they can have it!"
+news.6.c:0 "Idly we stand by, for now."
+news.6.e:0 "A tragedy that was destined to happen."
+
+news.7.t:0 "Cambodia and Laos Mobilize Their Armies"
+news.7.d:0 "Cambodian Infantrymen have marched into the region of Paske, claiming it to be rightful Cambodian land. The local defense force is putting up a heavy resistance, but is being overwhelmed and running out of supplies."
+news.7.d_2:0 "Our offensive into Laos has not been as effective as was planned. They had a garrison in the region, and are putting up resistance, but they seem to be planning to surrender to our mighty nation shortly."
+news.7.d_3:0 "Gunshots have been reported by some near the southern Laos border, and Laos civilians have been arriving at our border to ask for sanctuary claiming a [CAM.GetNameDef] offensive have devastated their homes. "
+news.7.a:0 "Resupply them immediately! And send in the nearest division to help defend!"
+news.7.b:0 "A shame they had to fight"
+news.7.c:0 "What shall we do?"
+tlbpaske.1.t:0 "The Paske War: Shall we Join?"
+tlbpaske.1.d:0 "After the outbreak of war on our border some of our citizens and most prominent politicians have asked for us to help put down the conflcit. Of course if we were to join we would be fighting both powers, making for a three way war."
+tlbpaske.1.a:0 "Join the War"
+tlbpaske.1.b:0 "We will pass..."

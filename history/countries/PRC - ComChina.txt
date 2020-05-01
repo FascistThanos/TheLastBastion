@@ -16,6 +16,8 @@ declare_war_on = {
 	target = CHI
 	type = annex_everything
 }
+add_named_threat = { threat = 10 name = chinacivilthreat }
+
 
 set_politics = {
 	ruling_party = communism
