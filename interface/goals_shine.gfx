@@ -962,8 +962,40 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_generic_soviet_politics_shine"
-		texturefile = "gfx/interface/goals/focus_generic_soviet_politics.dds"
+		name = "GFX_intigate_flanders_shine"
+		texturefile = "gfx/interface/goals/TLB_Instigate_Flanders.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TLB_Instigate_Flanders.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TLB_Instigate_Flanders.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+	name = "GFX_focus_generic_soviet_politics_shine"
+	texturefile = "gfx/interface/goals/focus_generic_soviet_politics.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_generic_soviet_politics.dds"
@@ -24553,11 +24585,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_luftstreitkräfte_shine"
-		texturefile = "gfx/interface/goals/GER_luftstreitkräfte.dds"
+		name = "GFX_GER_luftstreitkrï¿½fte_shine"
+		texturefile = "gfx/interface/goals/GER_luftstreitkrï¿½fte.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_luftstreitkräfte.dds"
+			animationmaskfile = "gfx/interface/goals/GER_luftstreitkrï¿½fte.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -24569,7 +24601,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_luftstreitkräfte.dds"
+			animationmaskfile = "gfx/interface/goals/GER_luftstreitkrï¿½fte.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

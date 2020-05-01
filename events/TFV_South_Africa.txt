@@ -10,11 +10,11 @@ country_event = {
     #### ACCEPT AUSTRIAN PROPOSAL
         name = south_africa.0.a
         set_politics = {
-        ruling_party = facist
+        ruling_party = fascism
         elections_allowed = no
         }
-        AUS = {
-        create_faction = Austro-African Joint Expansion Pact
+        D01 = {
+        create_faction = African_Joint_Expansion_Pact
         add_to_faction = SAF
         }
     }
@@ -22,7 +22,7 @@ country_event = {
     #### REFUSE PROPOSAL
         name = south_africa.0.b
         add_stability = .05
-        AUS = { 
+        D01 = { 
 				add_opinion_modifier = { target = SAF modifier = medium_decrease } 
 			}
     }
