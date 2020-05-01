@@ -7,7 +7,7 @@ country_event = {
     fire_only_once = no
 	is_triggered_only = yes
     option = {
-    #### ACCEPT AUSTRIAN PROPOSAL
+    #### ACCEPT ETHIOPIAN PROPOSAL
         name = south_africa.0.a
         set_politics = {
         ruling_party = fascism

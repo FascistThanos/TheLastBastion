@@ -626,4 +626,6 @@ focus = {
 			}
 
 	}
+	shared_focus = GEN_expand_the_airforce
+	shared_focus = GEN_dockyard_construction
 	}
