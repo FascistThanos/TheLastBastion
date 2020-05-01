@@ -43,9 +43,7 @@ focus_tree = {
         ruling_party = liberal
         elections_allowed = yes
         }
-        kill_country_leader = yes
-        create_country_leader = { name = "James Hertzog" desc = "POLITICS_JAMES_HERTZOG_DESC" picture = "Portrait_South_Africa_James_Hertzog.dds" expire = "1965.1.1" ideology = centrism traits = { } set_country_leader_ideology = liberal }
-		}
+	}
 	}
 	focus = {
 		id = SAF_pressure_Portugal_to_release_African_colonies
