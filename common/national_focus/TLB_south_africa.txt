@@ -109,6 +109,9 @@ focus_tree = {
 		mutually_exclusive = { focus = SAF_abandon_BGE }
 		x = 6
 		y = 1
+		ai_will_do = {
+  factor = 20
+}
 		search_filters = {}
 		cost = 10
 		cancel_if_invalid = no
@@ -127,6 +130,9 @@ focus_tree = {
 		mutually_exclusive = { focus = SAF_ally_BGE }
 		x = 8
 		y = 1
+		ai_will_do = {
+  factor = 80
+}
 		search_filters = {}
 		cost = 10
 		cancel_if_invalid = no
