@@ -2,6 +2,121 @@ ideas = {
 
 	country = {
 
+
+	FOZ_Eliminate_Pacifists = {
+		picture = FRA_national_mobilization_focus
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			war_support_factor = 0.15
+			stability_factor = -0.05
+			surrender_limit = 0.20
+			conscription = -0.005
+		}
+	}
+
+	FOZ_Rhineland_Company = {
+		picture = FRA_national_mobilization_focus
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = 0.05
+			local_resources_factor = 0.10
+			consumer_goods_factor = 0.05
+			local_building_slots_factor = -0.10
+		}
+	}
+
+	FOZ_unemployment = {
+		picture = generic_economic_increase
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			consumer_goods_factor = -0.05
+			line_change_production_efficiency_factor = -0.10
+			economy_cost_factor = -0.10
+			trade_laws_cost_factor = -0.10
+		}
+	}
+
+	FOZ_Paramilitaire_National-Socialiste = {
+		picture = FRA_scw_intervention_republicans_focus
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			fascism_drift = 0.03
+			stability_factor = -0.05
+		}
+	}
+
+	FOZ_Workers_Rights = {
+		picture = generic_communism_drift_bonus
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			communism_drift = 0.03
+			stability_factor = -0.05
+		}
+	}
+
+	FOZ_Libery_Council = {
+		picture = idea_hol_haven_of_tolerance
+		allowed = {
+			original_tag = FOZ
+			always  no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = 0.10
+			war_support_factor = 0.05
+			conscription_factor = 0.10
+		}
+	}
+
+	FOZ_Three_Truths = {
+		picture = SOV_scientist_defect
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			war_support_factor = 0.10
+			political_power_gain = 0.05
+			surrender_limit = 0.15
+		}
+	}
+
+
 	FRA_full_employment = {
 		picture = generic_production_bonus
 		allowed = {
@@ -2723,7 +2838,7 @@ ideas = {
 					original_tag = FRA
 				}
 				available = {
-					
+
 				}
 
 				cost = 75

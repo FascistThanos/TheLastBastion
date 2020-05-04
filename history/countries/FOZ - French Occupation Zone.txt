@@ -107,12 +107,89 @@ set_cosmetic_tag = FOZ_french_protectorate
 create_country_leader = {
 	name = "Alphonse Joseph Georges"
 	desc = "POLITICS_ALPHONSE_GEORGES_DESC"
-	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
+	picture = "gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		military_governor
 		quartermaster_general
+	}
+}
+
+create_country_leader = {
+	name = "Regional Council of the Rhineland"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_France_Rhineland_Parliament.dds"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Regional Council of the Rhineland"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_France_Rhineland_Parliament.dds"
+	expire = "1965.1.1"
+	ideology = socialism_type
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Regional Council of the Rhineland"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_France_Rhineland_Parliament.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josef Bürckel"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_Rhineland_Josef_Bürckel.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		headstrong
+	}
+}
+
+create_country_leader = {
+	name = "Worker's Council"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_Rhineland_Workers_Council.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Worker's Council"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_Rhineland_Workers_Council.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_type
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm II"
+	desc = "POLITICS_WILHELM_II_DESC"
+	picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarch
+	traits = {
+		#
 	}
 }
 

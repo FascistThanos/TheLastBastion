@@ -173,9 +173,24 @@
   FOZ_socialism_ADJ:0 "Rhinish"
   FOZ_liberal_ADJ:0 "Rhinish"
 
+  FOZ_neutrality_party:0 "PIN"
+  FOZ_neutrality_party_long:0 "Parti d'Intérêt National"
+  FOZ_fascism_party:0 "NSDAP"
+  FOZ_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
+  FOZ_socialism_party:0 "RC"
+  FOZ_socialism_party_long:0 "Regional Council"
+  FOZ_democratic_party:0 "RC"
+  FOZ_democratic_party_long:0 "Regional Council"
+  FOZ_liberal_party:0 "RC"
+  FOZ_liberal_party_long:0 "Regional Council"
+  FOZ_communism_party:0 "CPR"
+  FOZ_communism_party_long:0 "Communist Party of the Rhineland"
+  FOZ_trotskyism_party:0 "CPR"
+  FOZ_trotskyism_party_long:0 "Communist Party of the Rhineland"
+
   FOZ_french_protectorate:0 "$OVERLORDADJ$ Rhineland"
   FOZ_french_protectorate_DEF:0 "the $OVERLORDADJ$ Rhineland"
-  FOZ_french_protectorate_ADJ:0 "$OVERLORDADJ$"  
+  FOZ_french_protectorate_ADJ:0 "$OVERLORDADJ$"
 
   WAR_NAME_FRA_FPR:0 "The 6th French Civil War"
 
@@ -295,3 +310,15 @@
   FRA_destroythecommunistsinthenorth:0 "Take Our Natural Borders From The Reds"
   FRA_expandthefozwithnewlands:0 "Expand The FOZ"
   FRA_expandthefozwithnewlands_desc:0 "The French Occupation Zone used currently to occupy the Ruhn Industrial Lands of Germany has stayed loyal to us during these hard times. Our recent victory of the Benelux War has given us new lands that may be hard to efficently govern with the culture of these lands. We should reward the Occupation Zone with new lands which would also help us take some stress off our backs."
+
+
+  Rhineland_Loyalty:0 "Loyalty to France"
+  Rhineland_Freedom:0 "Our Own Destiny"
+
+  FOZ_Eliminate_Pacifists:0 "Eliminate Pacificism"
+  FOZ_Rhineland_Company:0 "Rhineland Company"
+  FOZ_unemployment:0 "Unemployment Benefits"
+  FOZ_Paramilitaire_National-Socialiste:0 "Paramilitaire National-Socialiste"
+  FOZ_Workers_Rights:0 "Worker's Rights Granted"
+  FOZ_Libery_Council:0 "Liberty Council"
+  FOZ_Three_Truths:0 "The Three Truths"
