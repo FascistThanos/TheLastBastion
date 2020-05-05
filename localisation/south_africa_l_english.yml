@@ -1,4 +1,4 @@
-l_english: 
+﻿l_english: 
 
   EGY_fascism:0 "Egyptian Empire"
 
@@ -8,6 +8,7 @@ l_english:
   south_africa.0.d:0 "With the recent civil war in Ethiopia, fascists have taken control of the country. A diplomatic envoy has arrived yesterday and stated that the newly created GEL Ethiopia would be interested in forming an alliance with us. However, they require us to change our government to a more rightist form. Our advisors say that this change is inevitable, but this may alarm major countries in Europe who have African colonies."
   south_africa.0.a:0 "Accept the alliance and cooperate with Ethiopia"
   south_africa.0.b:0 "Our beliefs should be stronger than our military"
+  African_Joint_Expansion_Pact:0 "Suid-Afrika Alliansie"
 
 
   #Focuses
@@ -29,4 +30,29 @@ l_english:
   SAF_Pressure_Egypt_To_Break_With_The_BGE_desc:0 "With Egypt having many important cities in the African continent, we should get them to consider breaking with the BGE. This will help us avoid danger from the North in case the BGE retaliates against us."
   SAF_Stage_A_Coup_In_Ethiopia:0 "Ethiopian Citizens To Arms!"
   SAF_Stage_A_Coup_In_Ethiopia_desc:0 "Long have the people of Ethiopia suffered at the hands of their overpowering monarch! The GEL Ethiopia shall rise and free the people!"
-  
+  SAF_Help_Overthrow_The_Monarchy:0 "Provide Arms to GEL Ethiopia"
+  SAF_Help_Overthrow_The_Monarchy_desc:0 "While not required, sending weapons to GEL Ethiopia will help in negotiations later as they will acknowledge our help in their civil war."
+  SAF_Offer_Egypt_Protection:0 "Offer Protection To Egypt"
+  SAF_Offer_Egypt_Protection_desc:0 "Now that we have wrestled Egypt out of the weak grasp of the British, we can proceed to incorporate them into our empire. To do this, we should make promises of protection to them."
+  SAF_Complete_The_Egyptian_Promise:0 "Fulfill Our Promise To Egypt"
+  SAF_Complete_The_Egyptian_Promise_desc:0 "To ensure that all citizens in our empire are equally protected, we should divert any threats to our Egyptian sector. A promise to declare war on any nation that threatens the security of Egypt should be enough."
+  SAF_Ethiopian_Expansion_Program:0 "Suid-Afrika Alliansie"
+  SAF_Ethiopian_Expansion_Program_desc:0 "With the recent emergence of a fascist nation nearby, it would be wise to send diplomats to the country to make sure that there will be peace between our nations. Perhaps this might even land us an alliance with them."
+  SAF_Preserve_Our_Ideology:0 "Maintain Our Beliefs"
+  SAF_Preserve_Our_Ideology_desc:0 "As we have turned down Ethiopia's request for an alliance, we must make sure that our ideology is strong against all threats, both internal and external."
+  SAF_Help_Our_Morrocan_Brothers:0 "Rise Up Morroco!"
+  SAF_Help_Our_Morrocan_Brothers_desc:0 "We are in desperate need of allies! If we can have Morroco break away from the Republic of France, we stand a higher chance of fighting against the fascists all around us!"
+  SAF_Intervene_In_Morroco:0 "Ensure Peace Between France And Morroco"
+  SAF_Intervene_In_Morroco_desc:0 "Even though France has its hands full in a civil war that is not going well for them, they could still strike at Morroco. If we force a truce between them, this could prevent unneeded bloodshed."
+  SAF_South_African_Troops_In_Morroco:0 "Army Training In Morroco"
+  SAF_South_African_Troops_In_Morroco_desc:0 "Recently, Morroco has allowed us to train our troops on their soil. In return our government is considering offering them protection for their generous contribution."
+  SAF_Start_Building_The_Empire:0 "Start Our Empire"
+  SAF_Start_Building_The_Empire_desc:0 "Long have the weak rulers of Zambia plagued the fair lands of Africa! With the removal of them, we can start our massive empire!"
+  SAF_Expand_The_Empire:0 "Expand The Empire!"
+  SAF_Expand_The_Empire_desc:0 "Now that we have secured all of Zambia, we can proceed to invade Tanzania. The addition of this land will be crucial in the days of our empire."
+  SAF_Expand_The_Empire_More:0 "Further Expand The Empire"
+  SAF_Expand_The_Empire_More_desc:0 "The countries of Kenya and Uganda are no match for our military! We will crush them and forge a strong empire out of their ashes."
+  SAF_Expand_Our_Borders:0 "Link The Empire"
+  SAF_Expand_Our_Borders_desc:0 "As trade with Egypt flourishes, it is inconvenient to have to trade supplies by boat. If we invade Sudan, we can link with Egypt and trade our goods with them easily."
+  SAF_economic_growth:0 "Economic Growth"
+  SAF_economic_growth_desc:0 "With our economy booming, our people now are buying more products from other countries. We should focus on trade to gain a steady supply of government funding."
