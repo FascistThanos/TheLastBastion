@@ -723,3 +723,211 @@ focus_tree = {
 			army_experience = 20
 		}
 	}
+
+	focus = {
+		id = Rhineland_German_Integration
+		icon = GFX_Generic_German_General
+		relative_position_id = Rhineland_Allow_The_Paramilitaire_National-Socialiste
+
+		x = 0
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Allow_The_Paramilitaire_National-Socialiste }
+
+		completion_reward = {
+			AUS = {
+				give_guarantee = FOZ
+			}
+
+			give_guarantee = AUS
+
+			set_politics = { ruling_party = fascism elections_allowed = no }
+		}
+	}
+
+	focus = {
+		id = Rhineland_Recognize_German_Heritige
+		icon = GFX_Generic_Liberation
+		relative_position_id = Rhineland_German_Integration
+
+		x = -1
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_German_Integration }
+
+		completion_reward = {
+			add_ideas = FOZ_Germanic_Heritige
+		}
+	}
+
+	focus = {
+		id = Rhineland_Enemies_All_Around
+		icon = GFX_Generic_Partisan
+		relative_position_id = Rhineland_German_Integration
+
+		x = 1
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_German_Integration }
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.10
+			hidden_effect = {
+				add_ideas = FOZ_Enemies
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Death_Before_Surrender
+		icon = GFX_Generic_German_Soldier
+		relative_position_id = Rhineland_German_Integration
+
+		x = 1
+		y = 2
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Enemies_All_Around }
+
+		completion_reward = {
+			add_ideas = GEN_never_surrender
+		}
+	}
+
+	focus = {
+		id = Rhineland_Service_Wurde_Und_Familie
+		icon = GFX_Fascist_Liberty
+		relative_position_id = Rhineland_German_Integration
+
+		x = -1
+		y = 2
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Recognize_German_Heritige }
+
+		completion_reward = {
+			add_ideas = FOZ_German_Text
+		}
+	}
+
+	focus = {
+		id = Rhineland_Remove_Eligimiate_Germans
+		icon = GFX_Generic_Coalition_Army
+		relative_position_id = Rhineland_German_Integration
+
+		x = -1
+		y = 3
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_Service_Wurde_Und_Familie }
+		prerequisite = { focus = Rhineland_Death_Before_Surrender }
+
+		mutually_exclusive = { focus = Rhineland_Purge_Communists_Disgrace }
+
+		available = {
+			GER = {
+				exists = yes
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Purge_Communists_Disgrace
+		icon = GFX_Generic_Helmet_Knife
+		relative_position_id = Rhineland_German_Integration
+
+		x = 1
+		y = 3
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_Service_Wurde_Und_Familie }
+		prerequisite = { focus = Rhineland_Death_Before_Surrender }
+
+		mutually_exclusive = { focus = Rhineland_Remove_Eligimiate_Germans }
+
+		available = {
+			OR = {
+				UOB = {
+					exists = yes
+					OR = {
+						has_government = trotskyism
+						has_government = communism
+					}
+				}
+
+				HOL = {
+					exists = yes
+					OR = {
+						has_government = trotskyism
+						has_government = communism
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					UOB = {
+						exists = yes
+					}
+				}
+
+				create_wargoal = {
+					type = annex_everything
+					target = UOB
+				}
+			}
+
+			if = {
+				limit = {
+					HOL = {
+						exists = yes
+					}
+				}
+
+				create_wargoal = {
+					type = annex_everything
+					target = HOL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_The_Great_Western_Reich
+		icon = GFX_Generic_Morale_Bonus_Focus
+		relative_position_id = Rhineland_German_Integration
+
+		x = 0
+		y = 4
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Rhineland_Remove_Eligimiate_Germans focus = Rhineland_Purge_Communists_Disgrace }
+
+		completion_reward = {
+			set_cosmetic_tag = Rhineland_Western_Reich
+		}
+	}

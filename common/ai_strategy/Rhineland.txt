@@ -1,0 +1,39 @@
+Rhineland_Defeat_Communists = {
+	enable = {
+		original_tag = FOZ
+    is_historical_focus_on = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 130
+	}
+
+  ai_strategy = {
+    type = invade
+    target = FPR
+  }
+
+  ai_strategy = {
+    type = antagonize
+    target = FPR
+  }
+}
+
+Rhineland_Freedom = {
+  enable = {
+    original_tag = FOZ
+    is_historical_focus_on = no
+  }
+
+  ai_strategy = {
+    type = ignore
+    target = FRA
+  }
+
+  ai_strategy = {
+    type = ignore
+    target = FPR
+  }
+}

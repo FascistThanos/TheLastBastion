@@ -88,7 +88,7 @@ ideas = {
 		picture = idea_hol_haven_of_tolerance
 		allowed = {
 			original_tag = FOZ
-			always  no
+			always = no
 		}
 
 		removal_cost = -1
@@ -113,6 +113,52 @@ ideas = {
 			war_support_factor = 0.10
 			political_power_gain = 0.05
 			surrender_limit = 0.15
+		}
+	}
+
+	FOZ_Germanic_Heritige = {
+		picture = idea_generic_reserve_divisions
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			conscription_factor = 0.10
+			war_support_factor = 0.05
+			training_time_army_factor = 0.03
+		}
+	}
+
+	FOZ_Enemies = {
+		picture = idea_generic_purge
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			ai_focus_aggressive_factor = 0.20
+		}
+	}
+
+	FOZ_German_Text = {
+		picture = idea_generic_war_preparation
+		allowed = {
+			original_tag = FOZ
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			training_time_factor = -0.10
+			non_core_manpower = 0.03
+			production_factory_max_efficiency_factor = 0.10
 		}
 	}
 
