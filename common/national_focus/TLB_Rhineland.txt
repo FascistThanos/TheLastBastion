@@ -5,7 +5,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = FOZ
-      is_debug = yes
 		}
 	}
 

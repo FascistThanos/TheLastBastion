@@ -34,7 +34,7 @@ just download a ZIP archive.
 **Warning:** You may fall behind from the latest version of the mod. Make sure
 to check this page often, and redownload.
 
-1. Download the [ZIP file](https://github.com/FascistThanos/TheLastBastion/archive/master.zip) for the mod. 
+1. Download the [ZIP file](https://github.com/FascistThanos/TheLastBastion/archive/master.zip) for the mod.
 2. Extract the ZIP to `Documents/Paradox Interactive/Hearts of Iron IV/mod`. Make sure to rename the folder to `TheLastBastion` (or just change the directory in step 4). Please check the folder first before proceeding, it should have several directories inside of it. If this is not the case, you might not have completely extracted the folder.
 3. Copy "thelastbastion.mod" to `Documents/Paradox Interactive/Hearts of Iron IV/mod`.
 4. Open up `thelastbastion.mod` (the one that you just dragged into your mods folder) with your favorite text editor and go to line 10. Where you see `YOURUSERNAMEHERE` in `path="C:/Users/YOURUSERNAMEHERE/Documents/Paradox Interactive/Hearts of Iron IV/mod/TheLastBastion"`, make sure to change it to your actual Windows username. If you are not using the default location, make sure to specify the exact file location of the `TheLastBastion` folder. IMPORTANT: Make sure to follow step 3 exactly for this to work, if the `thelastbastion.mod` file is not read by the game, this will not work.
@@ -42,6 +42,6 @@ to check this page often, and redownload.
 
 
 **You can try running it with other mods, but we will not provide any support for bugs that occur.** If you have any
-questions, join our discord at: https://discord.gg/Z2wzKYZ, and ask for help in #general.
+questions, join our discord at: https://discord.gg/kGeucXW, and ask for help in #general.
 
 **Enjoy!**
