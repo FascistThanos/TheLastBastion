@@ -12,7 +12,7 @@
 
 
   #Focuses
-  SAF_recognize_BGE:0 "Recognize The BGE As The Rightful Owner Of England"
+  SAF_recognize_BGE:0 "Recognize BGE As Rightful Owner Of England"
   SAF_recognize_BGE_desc:0 "To demonstrate our alliance with the BGE. We should recognize their claims over the British Union territory. Since we are so far away from them, this should not pose us with any severe threat."
   SAF_follow_Democratic_examples:0 "The Republic Of South Africa"
   SAF_follow_Democratic_examples_desc:0 "With our closest allies being democracies, we should rework our government to make sure there is no reason for the BGE to betray us and leave us to die at the hands of the British Union."
@@ -56,3 +56,13 @@
   SAF_Expand_Our_Borders_desc:0 "As trade with Egypt flourishes, it is inconvenient to have to trade supplies by boat. If we invade Sudan, we can link with Egypt and trade our goods with them easily."
   SAF_economic_growth:0 "Economic Growth"
   SAF_economic_growth_desc:0 "With our economy booming, our people now are buying more products from other countries. We should focus on trade to gain a steady supply of government funding."
+  SAF_market_projections:0 "Predict Future Markets"
+  SAF_market_projections_desc:0 "If we can figure out the best ways to improve our economy, then we will have strong markets for all."
+  SAF_domestic_industry_1:0 "Build Up Domestic Industry"
+  SAF_domestic_industry_1_desc:0 "With a country that has millions of people, we must build up our industry to be able to provide for them all."
+  SAF_domestic_industry_2:0 "Build Some More Factories"
+  SAF_domestic_industry_2_desc:0 "Our current industry is not enough! We need to add more factories in our system to please the people and provide them with goods."
+  SAF_new_universities:0 "New Universities"
+  SAF_new_universities_desc:0 "With today's youth thirsty for knowledge, we should build more learning facilities for them. We may even use this to our advantage by encouraging new discoveries."
+  SAF_government_sponsored_laboratories:0 "Sponsor Laboratories"
+  SAF_government_sponsored_laboratories_desc:0 "By throwing government funds at scientists, we can speed up their research and we can provide our country with new and modern equipment."
