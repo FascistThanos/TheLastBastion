@@ -1,7 +1,5 @@
 ﻿l_english: 
 
-  EGY_fascism:0 "Egyptian Empire"
-
 
   #Events
   south_africa.0.t:0 "GEL Ethiopia Requests Alliance"
@@ -12,7 +10,7 @@
 
 
   #Focuses
-  SAF_recognize_BGE:0 "Recognize BGE As Rightful Owner Of England"
+  SAF_recognize_BGE:0 "Recognize BGE As True Owner Of England"
   SAF_recognize_BGE_desc:0 "To demonstrate our alliance with the BGE. We should recognize their claims over the British Union territory. Since we are so far away from them, this should not pose us with any severe threat."
   SAF_follow_Democratic_examples:0 "The Republic Of South Africa"
   SAF_follow_Democratic_examples_desc:0 "With our closest allies being democracies, we should rework our government to make sure there is no reason for the BGE to betray us and leave us to die at the hands of the British Union."
