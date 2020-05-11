@@ -71,6 +71,10 @@ focus_tree = {
 			set_state_controller = 296
 			set_state_owner = 705
 			set_state_controller = 705
+			set_state_owner = 702
+			set_state_controller = 702
+			set_state_owner = 697
+			set_state_controller = 697
 		}
 	}
 	focus = {
@@ -313,7 +317,7 @@ focus = {
 	}
 	focus = {
 		id = SAF_Help_Our_Morrocan_Brothers
-		icon = GFX
+		icon = GFX_Generic_Morale_Bonus_Focus
 		prerequisite = { focus = SAF_Preserve_Our_Ideology }
 		available = {
 		has_government = neutrality
@@ -341,7 +345,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Intervene_In_Morroco
-		icon = GFX
+		icon = GFX_Generic_Bread_and_Peace
 		prerequisite = { focus = SAF_Help_Our_Morrocan_Brothers }
 		available = {
 		country_exists = FRA
@@ -364,7 +368,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_South_African_Troops_In_Morroco
-		icon = GFX
+		icon = GFX_Generic_Coalition_Army
 		prerequisite = { focus = SAF_Intervene_In_Morroco }
 		available = {
 		country_exists = MOR
@@ -382,7 +386,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Start_Building_The_Empire
-		icon = GFX
+		icon = GFX_Generic_Tank_with_Flags
 		prerequisite = { focus = SAF_Ethiopian_Expansion_Program }
 		available = {
 		has_government = fascism
@@ -404,7 +408,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Expand_The_Empire
-		icon = GFX
+		icon = GFX_Generic_Machine_Gun
 		prerequisite = { focus = SAF_Start_Building_The_Empire }
 		available = {
 		controls_state = 771
@@ -426,7 +430,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Expand_The_Empire_More
-		icon = GFX
+		icon = GFX_Generic_Machine_Gun02
 		prerequisite = { focus = SAF_Expand_The_Empire }
 		available = {
 		controls_state = 856 
@@ -456,7 +460,7 @@ create_wargoal = {
 	}
 	focus = {
 		id = SAF_Expand_Our_Borders
-		icon = GFX
+		icon = GFX_Generic_Helmet_Knife
 		prerequisite = { focus = SAF_Expand_The_Empire_More }
 		available = {
 		controls_state = 548
