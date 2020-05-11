@@ -12,12 +12,12 @@ Rhineland_Defeat_Communists = {
 
   ai_strategy = {
     type = invade
-    target = FPR
+    target_country = FPR
   }
 
   ai_strategy = {
     type = antagonize
-    target = FPR
+    target_country = FPR
   }
 }
 
@@ -29,11 +29,11 @@ Rhineland_Freedom = {
 
   ai_strategy = {
     type = ignore
-    target = FRA
+    target_country = FRA
   }
 
   ai_strategy = {
     type = ignore
-    target = FPR
+    target_country = FPR
   }
 }

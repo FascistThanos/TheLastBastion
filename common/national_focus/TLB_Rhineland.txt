@@ -924,7 +924,7 @@ focus_tree = {
 
 		cost = 8
 
-		prerequisite = { focus = Rhineland_Rhineland_Remove_Eligimiate_Germans focus = Rhineland_Purge_Communists_Disgrace }
+		prerequisite = { focus = Rhineland_Remove_Eligimiate_Germans focus = Rhineland_Purge_Communists_Disgrace }
 
 		completion_reward = {
 			set_cosmetic_tag = Rhineland_Western_Reich

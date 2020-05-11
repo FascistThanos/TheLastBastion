@@ -3154,8 +3154,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER_lower_government_spending.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_luftstreitkr�fte"
-		texturefile = "gfx/interface/goals/GER_luftstreitkr�fte.dds"
+		name = "GFX_GER_luftstreitkräfte"
+		texturefile = "gfx/interface/goals/GER_luftstreitkräfte.dds"
 	}
 	SpriteType = {
 		name = "GFX_GER_minimum_wage"
