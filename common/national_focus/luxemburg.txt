@@ -229,7 +229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_expand_our_industry_more
-		icon = GFX_Generic_Industry_04
+		icon = GFX_GFX_Generic_Industry_04
 		prerequisite = {focus = LUX_expand_our_industry} 
 		available = {
 		country_exists = LUX
@@ -255,7 +255,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_invite_French_military_engineers
-		icon = GFX_FRA_MilitaryLoyalty
+		icon = GFX_GFX_FRA_MilitaryLoyalty
 		prerequisite = {focus = LUX_expand_our_industry_more focus = LUX_expand_railroad_system} 
 		x = 8
 		y = 6

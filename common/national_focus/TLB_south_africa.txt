@@ -10,7 +10,7 @@ focus_tree = {
         }
         focus = {
 		id = SAF_recognize_BGE
-		icon = GFX
+		icon = GFX_Focus_ENG_Steady_as_She_Goes
 		available = {
 		has_completed_focus = SAF_ally_BGE
 		}
@@ -29,7 +29,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAF_follow_Democratic_examples
-		icon = GFX
+		icon = GFX_Generic_Revolutionary_Republic
 		prerequisite = { focus = SAF_recognize_BGE }
 		x = 3
 		y = 2
@@ -47,7 +47,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAF_pressure_Portugal_to_release_African_colonies
-		icon = GFX
+		icon = GFX_Generic_Female_African_Soldier
 		prerequisite = { focus = SAF_follow_Democratic_examples }
 		x = 3
 		y = 3
@@ -71,11 +71,15 @@ focus_tree = {
 			set_state_controller = 296
 			set_state_owner = 705
 			set_state_controller = 705
+			set_state_owner = 702
+			set_state_controller = 702
+			set_state_owner = 697
+			set_state_controller = 697
 		}
 	}
 	focus = {
 		id = SAF_pressure_Belgium_to_release_African_colonies
-		icon = GFX
+		icon = GFX_Generic_African_Soldier
 		prerequisite = { focus = SAF_pressure_Portugal_to_release_African_colonies }
 		x = 3
 		y = 4
@@ -105,7 +109,7 @@ focus_tree = {
 	}
         focus = {
 		id = SAF_ally_BGE
-		icon = GFX
+		icon = GFX_Focus_ENG_Stability_Secured
 		mutually_exclusive = { focus = SAF_abandon_BGE }
 		x = 6
 		y = 1
@@ -126,7 +130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAF_abandon_BGE
-		icon = GFX
+		icon = GFX_Focus_ENG_Calm_the_Hell_Down
 		mutually_exclusive = { focus = SAF_ally_BGE }
 		x = 8
 		y = 1
@@ -146,7 +150,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAF_join_Commonwealth
-		icon = GFX
+		icon = GFX_Focus_ENG_New_Commonwealths
 		prerequisite = { focus = SAF_ally_BGE }
 		x = 5
 		y = 2
@@ -163,7 +167,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAF_Pressure_Egypt_To_Break_With_The_BGE
-		icon = GFX
+		icon = GFX_Generic_Africa02
 		prerequisite = { focus = SAF_abandon_BGE }
 		x = 9
 		y = 2
@@ -183,7 +187,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAF_Stage_A_Coup_In_Ethiopia
-		icon = GFX
+		icon = GFX_Generic_Revolutionary_Government
 		prerequisite = { focus = SAF_Pressure_Egypt_To_Break_With_The_BGE }
 		x = 9
 		y = 3
@@ -207,7 +211,7 @@ focus_tree = {
 }
 focus = {
 		id = SAF_Help_Overthrow_The_Monarchy
-		icon = GFX
+		icon = GFX_Generic_Colonial_Army
 		prerequisite = { focus = SAF_Stage_A_Coup_In_Ethiopia }
 		x = 9
 		y = 4
@@ -226,7 +230,7 @@ focus = {
 }
 focus = {
 		id = SAF_Offer_Egypt_Protection
-		icon = GFX
+		icon = GFX_Generic_Protectionist_Economics
 		prerequisite = { focus = SAF_Help_Overthrow_The_Monarchy }
 		x = 9
 		y = 5
@@ -241,7 +245,7 @@ focus = {
 }
 focus = {
 		id = SAF_Complete_The_Egyptian_Promise
-		icon = GFX
+		icon = GFX_Generic_Protectionism
 		prerequisite = { focus = SAF_Offer_Egypt_Protection }
 		x = 9
 		y = 6
@@ -256,7 +260,7 @@ focus = {
 }
 	focus = {
 		id = SAF_Ethiopian_Expansion_Program
-		icon = GFX
+		icon = GFX_Generic_Factionalism
 		prerequisite = { focus = SAF_ally_BGE OR = SAF_abandon_BGE }
 		available = {
 		D01 = {
@@ -278,7 +282,7 @@ focus = {
 	}
 	focus = {
 		id = SAF_Preserve_Our_Ideology
-		icon = GFX
+		icon = GFX_GFX_Generic_Authority
 		prerequisite = { focus = SAF_Ethiopian_Expansion_Program }
 		available = {
 		has_government = neutrality
@@ -313,7 +317,7 @@ focus = {
 	}
 	focus = {
 		id = SAF_Help_Our_Morrocan_Brothers
-		icon = GFX
+		icon = GFX_Generic_Morale_Bonus_Focus
 		prerequisite = { focus = SAF_Preserve_Our_Ideology }
 		available = {
 		has_government = neutrality
@@ -341,7 +345,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Intervene_In_Morroco
-		icon = GFX
+		icon = GFX_Generic_Bread_and_Peace
 		prerequisite = { focus = SAF_Help_Our_Morrocan_Brothers }
 		available = {
 		country_exists = FRA
@@ -364,7 +368,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_South_African_Troops_In_Morroco
-		icon = GFX
+		icon = GFX_Generic_Coalition_Army
 		prerequisite = { focus = SAF_Intervene_In_Morroco }
 		available = {
 		country_exists = MOR
@@ -382,7 +386,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Start_Building_The_Empire
-		icon = GFX
+		icon = GFX_Generic_Tank_with_Flags
 		prerequisite = { focus = SAF_Ethiopian_Expansion_Program }
 		available = {
 		has_government = fascism
@@ -404,7 +408,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Expand_The_Empire
-		icon = GFX
+		icon = GFX_Generic_Machine_Gun
 		prerequisite = { focus = SAF_Start_Building_The_Empire }
 		available = {
 		controls_state = 771
@@ -426,7 +430,7 @@ set_state_controller = 462
 	}
 	focus = {
 		id = SAF_Expand_The_Empire_More
-		icon = GFX
+		icon = GFX_Generic_Machine_Gun02
 		prerequisite = { focus = SAF_Expand_The_Empire }
 		available = {
 		controls_state = 856 
@@ -456,7 +460,7 @@ create_wargoal = {
 	}
 	focus = {
 		id = SAF_Expand_Our_Borders
-		icon = GFX
+		icon = GFX_Generic_Helmet_Knife
 		prerequisite = { focus = SAF_Expand_The_Empire_More }
 		available = {
 		controls_state = 548
