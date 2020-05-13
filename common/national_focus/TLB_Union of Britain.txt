@@ -38,7 +38,6 @@ focus_tree = {
 		id = ENG_wilkins_debates
 		prerequisite = { focus = ENG_anniversery_of_the_birmingham_strike }
 		relative_position_id = ENG_anniversery_of_the_birmingham_strike
-		custom_effect_tooltip = ENG_wilkins_debate_tt
 		icon = GFX_Generic_Factionalism
 		x = 0
 		y = 1
@@ -884,15 +883,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			NOR = {
-				add_ideas = ENG_british_influence
-			}
-			SWE = {
-				add_ideas = ENG_british_influence
-			}
-			FIN = {
-				add_ideas = ENG_british_influence
-			}
+			#NOR = {
+			#	add_ideas = ENG_british_influence
+			#}
+			#SWE = {
+			#	add_ideas = ENG_british_influence
+			#}
+			#FIN = {
+			#	add_ideas = ENG_british_influence
+			#}
 		}
 	}
 
@@ -911,7 +910,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = ENG_reds_in_the_west
+			#add_ideas = ENG_reds_in_the_west
 		}
 	}
 
@@ -1033,6 +1032,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_one_true_revolution
+		prerequisite = { focus = ENG_expand_nordic_influence focus = ENG_topple_denmark }
+		mutually_exclusive = { focus = ENG_molotov-mitford_pact }
+		available = {
+			SOV = { exists = yes }
+		}
+		relative_position_id = ENG_expand_nordic_influence
+		icon = GFX_goal_generic_war_with_comintern
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = ENG_ally_finland
 		prerequisite = { focus = ENG_one_true_revolution }
 		mutually_exclusive = { focus = ENG_subjugate_finland_focus }
@@ -1096,29 +1117,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
-	focus = {
-		id = ENG_one_true_revolution
-		prerequisite = { focus = ENG_expand_nordic_influence focus = ENG_topple_denmark }
-		mutually_exclusive = { focus = ENG_molotov-mitford_pact }
-		available = {
-			SOV = { exists = yes }
-		}
-		relative_position_id = ENG_expand_nordic_influence
-		icon = GFX_goal_generic_war_with_comintern
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
 
 	focus = {
 		id = ENG_crush_the_soviets
@@ -1363,7 +1361,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = ENG_isolationist_outlook
+			#add_ideas = ENG_isolationist_outlook
 		}
 	}
 
@@ -1385,7 +1383,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = ENG_defend_the_british_isless
+			add_ideas = ENG_defend_the_british_isles
 		}
 	}
 
@@ -1407,7 +1405,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = ENG_our_course_never_falters
+			#add_ideas = ENG_our_course_never_falters
 		}
 	}
 
@@ -2215,6 +2213,7 @@ focus_tree = {
 		id = ENG_fortify_the_home_isle
 		prerequisite = { focus = ENG_prepare_for_the_BGE's_return }
 		mutually_exclusive = { focus = ENG_preemptive_strike }
+		mutually_exclusive = { focus = ENG_strike_first_doctrine }
 		relative_position_id = ENG_prepare_for_the_BGE's_return
 		icon = GFX_
 		x = 2

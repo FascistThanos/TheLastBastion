@@ -1313,7 +1313,7 @@ shared_focus = {
 		add_popularity = { ideology = democratic popularity = 0.50 }
 		set_politics = {
 			ruling_party = democratic
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -1351,7 +1351,7 @@ shared_focus = {
 		add_popularity = { ideology = liberal popularity = 0.50 }
 		set_politics = {
 			ruling_party = liberal
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 }
@@ -1386,10 +1386,10 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		add_popularity = { ideology = democratic popularity = 0.50 }
+		add_popularity = { ideology = socialism popularity = 0.50 }
 		set_politics = {
-			ruling_party = democratic
-			elections_allowed = no
+			ruling_party = socialism
+			elections_allowed = yes
 		}
 	}
 }

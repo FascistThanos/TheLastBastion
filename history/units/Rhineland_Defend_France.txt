@@ -1,0 +1,39 @@
+division_template = {
+	name = "Défenseurs de la Démocratie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division= {
+		name = "Brigade de la Liberté"
+		location = 11502
+		division_template = "Défenseurs de la Démocratie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+  division= {
+		name = "Brigade de la Liberté"
+		location = 6657
+		division_template = "Défenseurs de la Démocratie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+  division= {
+		name = "Brigade de la Liberté"
+		location = 11560
+		division_template = "Défenseurs de la Démocratie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+}

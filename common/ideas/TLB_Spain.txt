@@ -159,7 +159,7 @@ ideas = {
       modifier = {
         stability_factor = -0.10
         consumer_goods_factor = 0.10
-        economy_cost_factor = 0.15
+        #economy_cost_factor = 0.15
       }
     }
 
@@ -181,7 +181,7 @@ ideas = {
       modifier = {
         stability_factor = -0.05
         consumer_goods_factor = 0.05
-        economy_cost_factor = 0.05
+        #economy_cost_factor = 0.05
       }
     }
 	}

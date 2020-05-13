@@ -1,0 +1,34 @@
+TLB_Rhineland_Historical_Strategy = {
+    name = "Rhineland Historical Plan"
+    desc = "This plan follows the lore."
+
+    # When this plan is enabled.
+    enable = {
+      is_historical_focus_on = yes
+      tag = FOZ
+    }
+
+    #When this plan is aborted.
+
+    # Defines which national focuses the AI picks first during this plan.
+    ai_national_focuses = {
+      Rhineland_Draft_Constitution
+      Rhineland_Loyalty_to_France
+      Rhineland_All_Must_Serve
+      Rhineland_Eliminate_Pacifists
+      Rhineland_Defend_the_Motherland
+      Rhineland_Defense_Along_The_Moselle
+      GEN_army_innovations
+      GEN_small_arms
+      GEN_expand_the_airforce
+      GEN_air_defense
+      GEN_fighter_squadrons
+    }
+
+    weight = {
+        factor = 1.0
+        modifier = {
+            factor = 1.0
+        }
+    }
+}

@@ -3154,8 +3154,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER_lower_government_spending.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_luftstreitkr�fte"
-		texturefile = "gfx/interface/goals/GER_luftstreitkr�fte.dds"
+		name = "GFX_GER_luftstreitkräfte"
+		texturefile = "gfx/interface/goals/GER_luftstreitkräfte.dds"
 	}
 	SpriteType = {
 		name = "GFX_GER_minimum_wage"
@@ -3661,7 +3661,6 @@ spriteTypes = {
 		name = "GFX_WAW_jet_engine"
 		texturefile = "gfx/interface/goals/WAW_jet_engine.dds"
 	}
-}
 
 spriteType = {
 	name = "GFX_ITA_nomoretrenches"
@@ -5866,3 +5865,14 @@ SpriteType = { name = "GFX_goal_beijing1"       texturefile = "gfx/interface/goa
 SpriteType = { name = "GFX_goal_beijing2"       texturefile = "gfx/interface/goals/goal_beijing2.dds" }
 SpriteType = { name = "GFX_goal_manchu_flames"       texturefile = "gfx/interface/goals/goal_manchu_flames.dds" }
 SpriteType = { name = "GFX_goal_manchu_league"      texturefile = "gfx/interface/goals/goal_manchu_league.dds" }
+
+
+spriteType = {
+	name = "GFX_Rhineland_Constitution"
+	texturefile = "gfx/interface/goals/Rhineland_Constitution.dds"
+}
+
+spriteType = {
+	name = "GFX_Rhineland_France_Loyalty"
+	texturefile = "gfx/interface/goals/Rhineland_Obedience.dds"
+}

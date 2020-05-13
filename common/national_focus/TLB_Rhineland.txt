@@ -5,7 +5,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = FOZ
-      is_debug = yes
 		}
 	}
 
@@ -21,3 +20,913 @@ focus_tree = {
 	shared_focus = GEN_expand_the_airforce
 	shared_focus = GEN_dockyard_construction
   #shared_focus = GEN_our_place_in_the_world
+
+	focus = {
+		id = Rhineland_Draft_Constitution
+		icon = GFX_Rhineland_Constitution
+
+		x = 6
+		y = 0
+
+		cost = 1
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = Rhineland_Loyalty_to_France
+		icon = GFX_Rhineland_France_Loyalty
+		relative_position_id = Rhineland_Draft_Constitution
+
+		prerequisite = { focus = Rhineland_Draft_Constitution }
+
+		mutually_exclusive = { focus = Rhineland_Our_Own_Destiny }
+
+		x = -3
+		y = 1
+
+		cost = 5
+
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = Rhineland_Loyalty
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Our_Own_Destiny
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = Rhineland_Draft_Constitution
+
+		prerequisite = { focus = Rhineland_Draft_Constitution }
+
+		mutually_exclusive = { focus = Rhineland_Loyalty_to_France }
+
+		x = 3
+		y = 1
+
+		cost = 5
+
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.2
+				localization = Rhineland_Freedom
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Defend_the_Motherland
+		icon = GFX_goal_rhineland
+		relative_position_id = Rhineland_Loyalty_to_France
+
+		x = -2
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Loyalty_to_France }
+
+		completion_reward = {
+			army_experience = 5
+			hidden_effect = {
+				load_oob = Rhineland_Defend_France
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_All_Must_Serve
+		icon = GFX_focus_generic_manpower
+		relative_position_id = Rhineland_Loyalty_to_France
+
+		x = 2
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Loyalty_to_France }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = eighteen
+				add_idea = sixteen
+			}
+
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Defense_Along_The_Moselle
+		icon = GFX_Generic_Machine_Gun
+		relative_position_id = Rhineland_Loyalty_to_France
+
+		x = -2
+		y = 2
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Defend_the_Motherland }
+
+		completion_reward = {
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+
+					province = 11494
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+
+					province = 11470
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+
+					province = 11435
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Eliminate_Pacifists
+		icon = GFX_Generic_Espionage
+		relative_position_id = Rhineland_Loyalty_to_France
+
+		x = 2
+		y = 2
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_All_Must_Serve }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+
+			add_ideas = FOZ_Eliminate_Pacifists
+		}
+	}
+
+	focus = {
+		id = Rhineland_long_live_democracy
+		icon = GFX_Generic_Party_Bottle
+		relative_position_id = Rhineland_Loyalty_to_France
+
+		x = -2
+		y = 3
+
+		cost = 2
+
+		prerequisite = { focus = Rhineland_Eliminate_Pacifists }
+		prerequisite = { focus = Rhineland_Defense_Along_The_Moselle }
+
+		available = {
+			has_war = no
+			has_government = neutrality
+		}
+
+		mutually_exclusive = { focus = Rhineland_The_Republic_Has_Fallen }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = Rhineland_The_Republic_Has_Fallen
+		icon = GFX_Generic_Revolutionary_Women
+		relative_position_id = Rhineland_Loyalty_to_France
+
+		x = 2
+		y = 3
+
+		cost = 2
+
+		prerequisite = { focus = Rhineland_Eliminate_Pacifists }
+		prerequisite = { focus = Rhineland_Defense_Along_The_Moselle }
+
+		available = {
+			has_war = no
+			has_government = communism
+		}
+
+		mutually_exclusive = { focus = Rhineland_long_live_democracy }
+
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = Rhineland_Restore_Civil_Government
+		icon = GFX_Generic_Parliament_Box
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_long_live_democracy }
+
+		completion_reward = {
+			set_politics = { ruling_party = socialism elections_allowed = yes }
+			add_popularity = { ideology = socialism popularity = 0.35 }
+		}
+	}
+
+	focus = {
+		id = Rhineland_Ban_Unions
+		icon = GFX_Generic_Tear_Paper
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = -1
+		y = 2
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Restore_Civil_Government }
+		mutually_exclusive = { focus = Rhineland_Workers_Representation }
+
+		completion_reward = {
+			add_timed_idea = { idea = FRA_communism_banned days = 180 }
+
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.30
+			}
+
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.20
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Workers_Representation
+		icon = GFX_Generic_Pass_Legislation
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = 1
+		y = 2
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Restore_Civil_Government }
+		mutually_exclusive = { focus = Rhineland_Ban_Unions }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.30
+			}
+
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = Rhineland_Revive_The_Rhineland_Company
+		icon = GFX_Generic_Monopoly
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = -1
+		y = 3
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Ban_Unions }
+
+		completion_reward = {
+			add_ideas = FOZ_Rhineland_Company
+		}
+	}
+
+	focus = {
+		id = Rhineland_Unemployment_For_Workers
+		icon = GFX_Generic_Loadsamoney
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = 1
+		y = 3
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Workers_Representation }
+
+		completion_reward = {
+			add_ideas = FOZ_unemployment
+		}
+	}
+
+	focus = {
+		id = Rhineland_Autonomy
+		icon = GFX_Generic_Checkmate
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = -1
+		y = 4
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_Unemployment_For_Workers focus = Rhineland_Revive_The_Rhineland_Company }
+
+		available = {
+			is_subject = yes
+		}
+
+		mutually_exclusive = { focus = Rhineland_Expand_Rhineland }
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+
+				FRA = {
+					set_autonomy = {
+    				target = FOZ
+    				autonomy_state = autonomy_colony
+					}
+				}
+			}
+
+			else = {
+				FRA = {
+					release = FOZ
+
+					give_guarantee = FOZ
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Expand_Rhineland
+		icon =  GFX_Generic_Crouched_Soldier
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = 1
+		y = 4
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_Unemployment_For_Workers focus = Rhineland_Revive_The_Rhineland_Company }
+
+		available = {
+			LUX = {
+				exists = yes
+			}
+		}
+
+		mutually_exclusive = { focus = Rhineland_Autonomy }
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+
+				FRA = {
+					set_autonomy = {
+    				target = FOZ
+    				autonomy_state = autonomy_puppet
+					}
+				}
+			}
+
+			create_wargoal = {
+				type = annex_everything
+				target = LUX
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Arm_of_Democracy
+		icon = GFX_Generic_Mutual_Cooperation
+		relative_position_id = Rhineland_long_live_democracy
+
+		x = 0
+		y = 5
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Autonomy focus = Rhineland_Expand_Rhineland }
+
+		completion_reward = {
+			add_ideas = GEN_land_of_the_free
+		}
+	}
+
+	focus = {
+		id = Rhineland_Peace_with_Communists
+		icon = GFX_GER_french_deal
+		relative_position_id = Rhineland_Our_Own_Destiny
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Our_Own_Destiny }
+
+		completion_reward = {
+			white_peace = FPR
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = Rhineland_Independence_From_France
+		icon = GFX_Generic_Break_Free
+		relative_position_id = Rhineland_Peace_with_Communists
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Peace_with_Communists }
+
+		completion_reward = {
+			FRA = {
+				set_autonomy = {
+					target = FOZ
+					autonomy_state = autonomy_free
+				}
+			}
+
+			add_stability = -0.05
+			add_war_support = -0.05
+			drop_cosmetic_tag = yes
+		}
+	}
+
+	focus = {
+		id = Rhineland_Allow_The_Paramilitaire_National-Socialiste
+		icon = GFX_Generic_Partisan
+		relative_position_id = Rhineland_Peace_with_Communists
+
+		x = 1
+		y = 2
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Independence_From_France }
+		mutually_exclusive = { focus = Rhineland_Cave_To_Workers_Demands }
+
+		completion_reward = {
+			add_timed_idea = { idea = FOZ_Paramilitaire_National-Socialiste days = 180 }
+		}
+	}
+
+	focus = {
+		id = Rhineland_Cave_To_Workers_Demands
+		icon = GFX_Generic_Bread_and_Peace
+		relative_position_id = Rhineland_Peace_with_Communists
+
+		x = -2
+		y = 2
+
+		cost = 5
+
+		prerequisite = { focus = Rhineland_Independence_From_France }
+		mutually_exclusive = { focus = Rhineland_Allow_The_Paramilitaire_National-Socialiste }
+
+		completion_reward = {
+			add_timed_idea = { idea = FOZ_Workers_Rights days = 180 }
+		}
+	}
+
+	focus = {
+		id = Rhineland_The_Great_Revolution
+		icon = GFX_Generic_Red_Liberation
+		relative_position_id = Rhineland_Cave_To_Workers_Demands
+
+		x = -1
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Cave_To_Workers_Demands focus = Rhineland_The_Republic_Has_Fallen }
+
+		completion_reward = {
+			set_politics = { ruling_party = communism elections_allowed = no }
+			add_popularity = { ideology = communism popularity = 0.25 }
+		}
+	}
+
+	focus = {
+		id = Rhineland_Wealth_Redistribution
+		icon = GFX_GER_minimum_wage
+		relative_position_id = Rhineland_The_Great_Revolution
+
+		x = -1
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_The_Great_Revolution }
+
+		completion_reward = {
+			add_ideas = GEN_wealth_redistribution_scheme
+		}
+	}
+
+	focus = {
+		id = Rhineland_Land_Organization
+		icon = GFX_Generic_Land_Reform
+		relative_position_id = Rhineland_The_Great_Revolution
+
+		x = 1
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_The_Great_Revolution }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Liberty_Council
+		icon = GFX_Generic_Brandenburg_Gate
+		relative_position_id = Rhineland_The_Great_Revolution
+
+		x = -1
+		y = 2
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Wealth_Redistribution }
+
+		completion_reward = {
+			add_ideas = FOZ_Libery_Council
+		}
+	}
+
+	focus = {
+		id = Rhineland_The_Three_Truths
+		icon = GFX_Generic_Workers_Democracy
+		relative_position_id = Rhineland_The_Great_Revolution
+
+		x = 1
+		y = 2
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Land_Organization }
+
+		completion_reward = {
+			add_ideas = FOZ_Three_Truths
+		}
+	}
+
+	focus = {
+		id = Rhineland_strategic_allies
+		icon = GFX_Generic_Scouts
+		relative_position_id = Rhineland_The_Great_Revolution
+
+		x = 1
+		y = 3
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_The_Three_Truths }
+		prerequisite = { focus = Rhineland_Liberty_Council }
+
+		mutually_exclusive = { focus = Rhineland_develop_the_homeland }
+
+		completion_reward = {
+			create_faction = "The Liberation Pact"
+			every_neighbor_country = {
+				limit = {
+					NOT = {
+						is_in_faction = yes
+					}
+
+					OR = {
+						has_government = communism
+						has_government = trotskyism
+					}
+				}
+
+				country_event = TLB_Rhineland.1
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_develop_the_homeland
+		icon = GFX_Generic_Revolutionary_Republic
+		relative_position_id = Rhineland_The_Great_Revolution
+
+		x = -1
+		y = 3
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_The_Three_Truths }
+		prerequisite = { focus = Rhineland_Liberty_Council }
+
+		mutually_exclusive = { focus = Rhineland_strategic_allies }
+
+		completion_reward = {
+			42 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			51 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Long_Live_The_Great_Revolution
+		icon = GFX_Generic_Revolutionary_Government
+		relative_position_id = Rhineland_The_Great_Revolution
+
+		x = 0
+		y = 4
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_strategic_allies focus = Rhineland_develop_the_homeland }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.10
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = Rhineland_German_Integration
+		icon = GFX_Generic_German_General
+		relative_position_id = Rhineland_Allow_The_Paramilitaire_National-Socialiste
+
+		x = 0
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Allow_The_Paramilitaire_National-Socialiste }
+
+		completion_reward = {
+			AUS = {
+				give_guarantee = FOZ
+			}
+
+			give_guarantee = AUS
+
+			set_politics = { ruling_party = fascism elections_allowed = no }
+		}
+	}
+
+	focus = {
+		id = Rhineland_Recognize_German_Heritige
+		icon = GFX_Generic_Liberation
+		relative_position_id = Rhineland_German_Integration
+
+		x = -1
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_German_Integration }
+
+		completion_reward = {
+			add_ideas = FOZ_Germanic_Heritige
+		}
+	}
+
+	focus = {
+		id = Rhineland_Enemies_All_Around
+		icon = GFX_Generic_Partisan
+		relative_position_id = Rhineland_German_Integration
+
+		x = 1
+		y = 1
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_German_Integration }
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.10
+			hidden_effect = {
+				add_ideas = FOZ_Enemies
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Death_Before_Surrender
+		icon = GFX_Generic_German_Soldier
+		relative_position_id = Rhineland_German_Integration
+
+		x = 1
+		y = 2
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Enemies_All_Around }
+
+		completion_reward = {
+			add_ideas = GEN_never_surrender
+		}
+	}
+
+	focus = {
+		id = Rhineland_Service_Wurde_Und_Familie
+		icon = GFX_Fascist_Liberty
+		relative_position_id = Rhineland_German_Integration
+
+		x = -1
+		y = 2
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Recognize_German_Heritige }
+
+		completion_reward = {
+			add_ideas = FOZ_German_Text
+		}
+	}
+
+	focus = {
+		id = Rhineland_Remove_Eligimiate_Germans
+		icon = GFX_Generic_Coalition_Army
+		relative_position_id = Rhineland_German_Integration
+
+		x = -1
+		y = 3
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_Service_Wurde_Und_Familie }
+		prerequisite = { focus = Rhineland_Death_Before_Surrender }
+
+		mutually_exclusive = { focus = Rhineland_Purge_Communists_Disgrace }
+
+		available = {
+			GER = {
+				exists = yes
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_Purge_Communists_Disgrace
+		icon = GFX_Generic_Helmet_Knife
+		relative_position_id = Rhineland_German_Integration
+
+		x = 1
+		y = 3
+
+		cost = 10
+
+		prerequisite = { focus = Rhineland_Service_Wurde_Und_Familie }
+		prerequisite = { focus = Rhineland_Death_Before_Surrender }
+
+		mutually_exclusive = { focus = Rhineland_Remove_Eligimiate_Germans }
+
+		available = {
+			OR = {
+				UOB = {
+					exists = yes
+					OR = {
+						has_government = trotskyism
+						has_government = communism
+					}
+				}
+
+				HOL = {
+					exists = yes
+					OR = {
+						has_government = trotskyism
+						has_government = communism
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					UOB = {
+						exists = yes
+					}
+				}
+
+				create_wargoal = {
+					type = annex_everything
+					target = UOB
+				}
+			}
+
+			if = {
+				limit = {
+					HOL = {
+						exists = yes
+					}
+				}
+
+				create_wargoal = {
+					type = annex_everything
+					target = HOL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Rhineland_The_Great_Western_Reich
+		icon = GFX_Generic_Morale_Bonus_Focus
+		relative_position_id = Rhineland_German_Integration
+
+		x = 0
+		y = 4
+
+		cost = 8
+
+		prerequisite = { focus = Rhineland_Remove_Eligimiate_Germans focus = Rhineland_Purge_Communists_Disgrace }
+
+		completion_reward = {
+			set_cosmetic_tag = Rhineland_Western_Reich
+		}
+	}

@@ -5,7 +5,7 @@ country_event = {
 	id = benelux.0
 	title = benelux.0.t
 	desc = benelux.0.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 
 	trigger = {
@@ -29,15 +29,14 @@ country_event = {
 	id = benelux.1
 	title = benelux.1.t
 	desc = benelux.1.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 
 	trigger = {
-		
 		tag = BEL
 		BEL = {
-		date > 1936.1.5
-		has_global_flag = FLA_civil_war_start
+			date > 1936.1.5
+			has_global_flag = FLA_civil_war_start
 		}
 		NOT = {
 			has_country_flag = fcw_triggered
@@ -46,9 +45,7 @@ country_event = {
 	immediate = {
 		set_country_flag = fcw_triggered
 		set_global_flag = fcw_help
-	
 	}
-
 
 	option = {
 		name = benelux.1.a
@@ -57,19 +54,19 @@ country_event = {
 			transfer_state = 6
 		}
 		FLA = {
-		set_ruling_party = trotskyism
+			set_politics = { ruling_party = trotskyism }
 		}
-		
+
 		FLA = {
 		declare_war_on = {
 			target = BEL
-			type = annex_everything	
+			type = annex_everything
 			}
 		}
 		BEL = {
 		declare_war_on = {
 			target = FLA
-			type = annex_everything	
+			type = annex_everything
 			}
 		}
 		FLA = {
@@ -93,7 +90,7 @@ country_event = {
 	id = benelux.2
 	title = benelux.2.t
 	desc = benelux.2.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 
 	trigger = {
@@ -116,7 +113,7 @@ country_event = {
 		enemy = BEL
 		hostility_reason -= asked_to_join
 		}
-		HOL = {puppet = FLA}	
+		HOL = {puppet = FLA}
 
 	}
 	option = {
@@ -130,7 +127,7 @@ country_event = {
 	id = benelux.3
 	title = benelux.3.t
 	desc = benelux.3.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 
 	trigger = {
@@ -164,7 +161,7 @@ country_event = {
 	id = benelux.4
 	title = benelux.4.t
 	desc = benelux.4.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -190,7 +187,7 @@ country_event = {
 	id = benelux.5
 	title = benelux.5.t
 	desc = benelux.5.d
-	picture = 
+	picture =
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -205,7 +202,7 @@ country_event = {
 	id = benelux.6
 	title = benelux.6.t
 	desc = benelux.6.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -226,7 +223,7 @@ country_event = {
 	id = benelux.7
 	title = benelux.7.t
 	desc = benelux.7.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -244,14 +241,14 @@ country_event = {
 			country_event = { id = benelux.9}
 		}
 	}
-	
+
 }
 #LUX DENIED
 country_event = {
 	id = benelux.8
 	title = benelux.8.t
 	desc = benelux.8.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -267,7 +264,7 @@ country_event = {
 	id = benelux.9
 	title = benelux.9.t
 	desc = benelux.9.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -279,7 +276,7 @@ country_event = {
 			target = LUX
 			type = annex_everything
 			}
-		}		
+		}
 	}
 }
 
@@ -287,7 +284,7 @@ country_event = {
 	id = benelux.10
 	title = benelux.10.t
 	desc = benelux.10.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -305,7 +302,7 @@ country_event = {
 	id = benelux.11
 	title = benelux.11.t
 	desc = benelux.11.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -331,7 +328,7 @@ country_event = {
 	id = benelux.12
 	title = benelux.12.t
 	desc = benelux.12.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -345,8 +342,8 @@ country_event = {
 	###SIEZE THEIR RICHES
 	name = benelux.12.b
 		ai_chance = {factor = 0}
-		add_timed_idea = { idea = siezed_royal_lands days = 720 }		
-	}	
+		add_timed_idea = { idea = siezed_royal_lands days = 720 }
+	}
 	option = {
 	name = benelux.12.c
 	### LEAVE THEM BE
@@ -358,7 +355,7 @@ country_event = {
 	id = benelux.14
 	title = benelux.14.t
 	desc = benelux.14.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -373,7 +370,7 @@ country_event = {
 		add_popularity = {
 			ideology = socialism
 			popularity = 0.10
-		}							
+		}
 	}
 	option = {
 		#THE TROTSKYISTS IN THE RSP
@@ -383,13 +380,13 @@ country_event = {
 		set_politics = {
 		ruling_party = trotskyism
 		elections_allowed = no
-		}		
+		}
 		add_popularity = {
 			ideology = trotskyism
 			popularity = 0.10
 		}
-				
-	}	
+
+	}
 	option = {
 		#DEMOCRATS AND RKSP
 		name = benelux.14.c
@@ -403,14 +400,14 @@ country_event = {
 		set_politics = {
 		ruling_party = liberal
 		elections_allowed = no
-		}							
+		}
 	}
 }
 country_event = {
 	id = benelux.15
 	title = benelux.15.t
 	desc = benelux.15.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -434,7 +431,7 @@ country_event = {
 	id = benelux.16
 	title = benelux.16.t
 	desc = benelux.16.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -459,36 +456,36 @@ country_event = {
 	id = benelux.17
 	title = benelux.17.t
 	desc = benelux.17.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		name = benelux.17.a
 		HOL = {
-			annex_country = { target = SAF transfer_troops = yes }	
+			annex_country = { target = SAF transfer_troops = yes }
 		}
 		681  = {
 		add_core_of = HOL
 		}
 		719  = {
 		add_core_of = HOL
-		}	
+		}
 		275  = {
 		add_core_of = HOL
-		}	
+		}
 		541  = {
 		add_core_of = HOL
-		}	
+		}
 		854  = {
 		add_core_of = HOL
-		}	
+		}
 		542  = {
 		add_core_of = HOL
-		}	
+		}
 		545  = {
 		add_core_of = HOL
-		}	
+		}
 	}
 
 }
@@ -496,7 +493,7 @@ country_event = {
 	id = benelux.18
 	title = benelux.18.t
 	desc = benelux.18.d
-	picture = 
+	picture = event_test
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -507,26 +504,26 @@ country_event = {
 		}
 		719  = {
 		add_core_of = HOL
-		}	
+		}
 		275  = {
 		add_core_of = HOL
-		}	
+		}
 		541  = {
 		add_core_of = HOL
-		}	
+		}
 		854  = {
 		add_core_of = HOL
-		}	
+		}
 		542  = {
 		add_core_of = HOL
-		}	
+		}
 		545  = {
 		add_core_of = HOL
 		}
 		create_wargoal = {
-		type = annex
+		type = annex_everything
 		target = SAF
-		}															
+		}
 	}
 
 }

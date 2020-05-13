@@ -1,0 +1,32 @@
+add_namespace = TLB_Rhineland
+
+country_event = {
+  id = TLB_Rhineland.1
+  title = TLB_Rhineland.1.t # Invitation to the Liberation Front
+  desc = TLB_Rhineland.d
+  picture = report_event_chinese_japanese_handshake
+
+  is_triggered_only = yes
+
+  option = {
+    name = TLB_Rhineland.1.a # Accept the Invititation
+    FOZ = {
+      add_to_faction = ROOT
+    }
+  }
+
+  option = {
+    name = TLB_Rhineland.1.b # Reject the Invititation
+    FOZ = {
+      add_opinion_modifier = {
+        target = ROOT
+        modifier = medium_decrease
+      }
+    }
+
+    add_opinion_modifier = {
+      target = FOZ
+      modifier = medium_decrease
+    }
+  }
+}
