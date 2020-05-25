@@ -1,0 +1,93 @@
+focus_tree = {
+	id = qing_empire
+	country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = MAN
+		}
+	}
+focus = {
+		id = MAN_aquire_railway
+		icon = GFX_Generic_Railroads
+		x = 0
+		y = 0
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_steel_works
+		icon = GFX_Generic_Industry
+		prerequisite = {focus = MAN_aquire_railway}
+		x = 0
+		y = 1
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+    		type = steel
+    		amount = 50
+    		state = 716
+			}
+		}
+	}
+	focus = {
+		id = MAN_unite_empire
+		icon = GFX_Generic_Qing_China
+		prerequisite = {focus = MAN_steel_works}
+		x = 0
+		y = 2
+		search_filters = {}
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+	shared_focus = GEN_economic_growth
+	shared_focus = GEN_army_innovations
+	shared_focus = GEN_expand_the_airforce
+	shared_focus = GEN_dockyard_construction
+    shared_focus = GEN_our_place_in_the_world
+}
