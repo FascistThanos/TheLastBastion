@@ -9,7 +9,7 @@ focus_tree = {
 	}
 focus = {
 		id = MAN_aquire_railway
-		icon = GFX
+		icon = GFX_Generic_Railroads
 		x = 0
 		y = 0
 		search_filters = {}
@@ -52,7 +52,7 @@ focus = {
 	}
 	focus = {
 		id = MAN_steel_works
-		icon = GFX
+		icon = GFX_Generic_Industry
 		prerequisite = {focus = MAN_aquire_railway}
 		x = 0
 		y = 1
@@ -71,7 +71,7 @@ focus = {
 	}
 	focus = {
 		id = MAN_unite_empire
-		icon = GFX
+		icon = GFX_Generic_Qing_China
 		prerequisite = {focus = MAN_steel_works}
 		x = 0
 		y = 2
