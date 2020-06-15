@@ -1,0 +1,33 @@
+state={
+	id=967
+	name="STATE_967"
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = {
+			6241 5
+		}
+		victory_points = {
+			9363 1
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			6336 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6241 9363 9403 16106
+
+    # 6241 9363 9403 16106
+	}
+	manpower=1245600
+	state_category=city
+}
