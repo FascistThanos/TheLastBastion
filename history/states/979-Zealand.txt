@@ -1,0 +1,21 @@
+state = {
+	id = 979
+	name = "STATE_979"
+	manpower = 1024400
+
+	state_category = city
+
+	history = {
+		owner = DEN
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 3
+		}
+		add_core_of = DEN
+	}
+
+	provinces= {
+		3260 3305 6393 16113 16114 16115 16116 16117 16118 16119 16120
+	}
+}
