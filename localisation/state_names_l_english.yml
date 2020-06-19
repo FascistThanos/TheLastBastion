@@ -869,7 +869,7 @@
  STATE_869:0 "Savoia Occidentale"
  STATE_870:0 "Toulouse"
  STATE_871:0 "Aragon"
- STATE_872:0 "Syddanmark"
+ STATE_872:0 "Slesvig"
  STATE_873:0 "Downtown Moscow"
  STATE_874:0 "Southern Moskva"
  STATE_875:0 "Kosino"
@@ -976,7 +976,7 @@
  STATE_976:0 "Lae"
  STATE_977:0 "Jayapura"
  STATE_978:0 "Odense"
- STATE_979:0 "Sjaelland"
+ STATE_979:0 "Sjælland"
  STATE_980:0 "Nordjylland"
 
  STRATEGIC_REGION_213:0 "Central France"
