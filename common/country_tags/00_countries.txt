@@ -230,3 +230,6 @@ YAK = "countries/Yakutia.txt"
 
 ###### For France #######
 FOZ = "countries/"French Occupation Zone.txt"
+
+###### For The United States ######
+NEW = "countries/New England.txt"
