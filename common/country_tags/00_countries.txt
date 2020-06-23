@@ -233,4 +233,3 @@ FOZ = "countries/"French Occupation Zone.txt"
 
 ###### For The United States ######
 NEW = "countries/New England.txt"
-NEW = "countries/NEW - New England.txt"
