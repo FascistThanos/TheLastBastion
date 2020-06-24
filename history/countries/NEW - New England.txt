@@ -60,3 +60,13 @@ add_state_core = 357
 add_state_core = 827
 add_state_core = 828
 add_state_core = 829
+create_country_leader = {
+	name = "Herbert Hoover"
+	desc = "POLITICS_HERBERT_HOOVER_DESC"
+	picture = "gfx/leaders/NEW/Hoover.dds"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		rearmer
+	}
+}
