@@ -1,0 +1,29 @@
+state = {
+	id = 964
+	name = "STATE_964"
+	manpower = 2083500
+	resources={
+		steel=8
+	}
+
+	state_category = large_city
+
+	history={
+		owner = BEL
+		victory_points = { 6598 30 }
+		victory_points = { 13068 1 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+			air_base = 1
+		}
+
+		add_core_of = FLA
+		add_core_of = BEL
+		add_core_of = HOL
+	}
+
+	provinces={
+		6598 9574 11419 13068
+	}
+}

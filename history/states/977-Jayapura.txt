@@ -1,0 +1,24 @@
+state = {
+	id = 977
+	name = "STATE_977"
+	manpower = 201500
+
+	state_category = rural
+
+	history= {
+		owner = INS
+		add_core_of = INS
+		victory_points = {
+			12371 1
+		}
+		buildings = {
+			infrastructure = 2
+			12371 = {
+				naval_base = 2
+			}
+		}
+	}
+	provinces={
+		4509 4552 7529 7542 7570 10369 10396 10990 12371 16111 16112 
+	}
+}

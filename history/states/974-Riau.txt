@@ -1,0 +1,25 @@
+state = {
+	id = 974
+	name = "STATE_974"
+	manpower = 2043900
+
+	state_category = town
+
+	resources = {
+		rubber=41 # was: 268
+	}
+
+	history = {
+		owner = INS
+		add_core_of = INS
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 1
+		}
+	}
+	provinces={
+	 1277 1332 1460 4446 7327 7463 10209 10225 10354 10382 12181 12184 12212 12343 12302
+	}
+}

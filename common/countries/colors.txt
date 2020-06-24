@@ -612,7 +612,8 @@ FLA = {
 	color = rgb { 90 58 107 }
 	color_ui = rgb { 90 58 107 }
 }
+
 NEW = {
-  color = rgb { 255  255  255 }
-  color_ui = rgb { 255 255 255}
+  color = rgb { 33 102 23 }
+  color_ui = rgb { 33 102 23 }
 }

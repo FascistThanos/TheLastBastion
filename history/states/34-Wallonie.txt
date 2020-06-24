@@ -3,33 +3,24 @@ state={
 	id=34
 	name="STATE_34"
 	manpower = 3381300
-	
+
 	state_category = large_city
 
 	history={
 		owner = BEL
-		victory_points = {
-			3516 5
-		}
-		victory_points = {
-			11519 10
-		}
-		victory_points = {
-			9536 3
-		}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 5
 			arms_factory = 3
-			industrial_complex = 6
 			air_base = 1
 
 		}
 		add_extra_state_shared_building_slots = 2
 		add_core_of = BEL
-
+		add_claim_by = FLA
+		add_claim_by = HOL
 	}
 
 	provinces={
-		516 3488 3516 6537 9418 9444 9536 11407 11519 13081 
+		3488 6537 9418 9444 11407
 	}
 }
