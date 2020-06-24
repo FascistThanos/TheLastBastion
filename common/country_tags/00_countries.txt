@@ -212,6 +212,8 @@ BGE = "countries/British Government in Exile.txt"
 PCW = "countries/Campbellian Britian.txt"
 FLA = "countries/Flanders.txt"
 
+NEW = "countries/New England.txt"
+
 ##### For Spain Breakup #####
 
 ARA = "countries/Aragon.txt"
@@ -230,6 +232,3 @@ YAK = "countries/Yakutia.txt"
 
 ###### For France #######
 FOZ = "countries/"French Occupation Zone.txt"
-
-###### For The United States ######
-NEW = "countries/New England.txt"
