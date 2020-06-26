@@ -63,11 +63,22 @@ set_popularities = {
 create_country_leader = {
 	name = "Sukarno"
 	desc = ""
-	picture = "Portrait_INS_Suharto.dds"
+	picture = "Portrait_INS_Sukarno.dds"
 	expire = "1953.3.1"
 	ideology = trotskyism_type #Marhaenism his own unique mix of stuff
 	traits = {
 
+	}
+}
+
+create_country_leader = {
+	name = "Mohammad Hatta"
+	desc = ""
+	picture = "Portrait_INS_Mohammad_Hatta.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
 	}
 }
 

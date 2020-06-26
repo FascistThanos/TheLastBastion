@@ -83,11 +83,22 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Onn Jaafar"
-	desc = ""
-	picture = "Portrait_Malaysia_Onn_Jaafar.dds"
-	expire = "1953.3.1"
+	name = "Shenton Thomas"
+	desc = "POLITICS_THOMAS_DESC"
+	picture = "Portrait_Malaysia_Shenton_Thomas.dds"
+	expire = "1965.1.1"
 	ideology = conservative
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmad Khairi Waddien"
+	desc = ""
+	picture = "Portrait_Malaysia_Ahmad_Khairi_Waddien.dds"
+	expire = "1953.3.1"
+	ideology = liberalism
 	traits = {
 
 	}

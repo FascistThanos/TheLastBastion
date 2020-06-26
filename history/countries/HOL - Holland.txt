@@ -136,9 +136,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Henk Sneevilet"
+	name = "Johan Willem Albarda"
 	desc = "POLITICS_SNEEVILET_DESC"
-	picture = "Portrait_Netherlands_Henk_Sneevilet.dds"
+	picture = "Portrait_Netherlands_Johan_Willem_Albarda.dds"
 	expire = "1965.1.1"
 	ideology = trotskyism_type
 	traits = {
