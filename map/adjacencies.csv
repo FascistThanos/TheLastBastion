@@ -226,4 +226,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1129;7316;impassable;-1;-1;-1;-1;-1;;Test4
 1129;12884;impassable;-1;-1;-1;-1;-1;;Test4
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
+10482;7630;impassable;-1;-1;-1;-1;-1;;Darien
+4969;13769;impassable;-1;-1;-1;-1;-1;;Darien
+4969;13760;impassable;-1;-1;-1;-1;-1;;Darien
+4969;13772;impassable;-1;-1;-1;-1;-1;;Darien
+4969;10864;impassable;-1;-1;-1;-1;-1;;Darien
 -1;-1;;-1;-1;-1;-1;-1;-1
