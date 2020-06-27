@@ -211,7 +211,7 @@ SSD = "countries/South Sudan.txt"
 BGE = "countries/British Government in Exile.txt"
 PCW = "countries/Campbellian Britian.txt"
 FLA = "countries/Flanders.txt"
-
+COA = "countries/Confederacy of America.txt"
 NEW = "countries/New England.txt"
 
 ##### For Spain Breakup #####
