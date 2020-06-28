@@ -64,3 +64,13 @@ add_state_core = 366
 add_state_core = 364
 add_state_core = 363
 add_state_core = 362
+create_country_leader = {
+	name = "Leverett Saltonstall"
+	desc = "POLITICS_LEVERETT_SALTONSTALL_DESC"
+	picture = "gfx/leaders/COA/Leverett_Saltonstall.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		warmonger
+	}
+}

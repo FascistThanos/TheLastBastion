@@ -1,0 +1,13 @@
+﻿l_english:
+
+
+  #Country Names
+  COA_fascism:0 "Confederacy of America"
+  COA_fascism_DEF:0 "The Confederacy of America"
+  COA_democratic:0 "United Confederacy of America"
+  COA_democratic_DEF:0 "The United Confederacy of America"
+  COA_communism:0 "Commune of the American Confederacy"
+  COA_communism_DEF:0 "The Commune of the American Confederacy"
+  COA_neutrality:0 "Nation of the Confederacy of America"
+  COA_neutrality_DEF:0 "The Nation of the Confederacy of America"
+  COA_ADJ:0 "American"
