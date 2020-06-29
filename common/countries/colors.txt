@@ -617,3 +617,13 @@ NEW = {
   color = rgb { 33 102 23 }
   color_ui = rgb { 33 102 23 }
 }
+
+COA = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+
+DES = {
+	color = rgb { 0 0 128 }
+	color_ui = rgb { 0 0 128 }
+}

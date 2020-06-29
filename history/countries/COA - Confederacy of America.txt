@@ -1,5 +1,5 @@
-capital = 357
-set_research_slots = 3
+capital = 362
+set_research_slots = 4
 set_stability = 0.7
 set_war_support = 0.5
 set_technology = {
@@ -42,31 +42,35 @@ if = {
 	}
 }
 set_popularities = {
-	democratic = 80
-	communism = 5
-	fascism = 10
+	democratic = 5
+	communism = 10
+	fascism = 80
 	neutrality = 5
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
-diplomatic_relation = { country = USA relation = non_aggression_pact }
-add_state_core = 826
-add_state_core = 919
-add_state_core = 357
-add_state_core = 827
-add_state_core = 828
-add_state_core = 829
+add_state_core = 375
+add_state_core = 372
+add_state_core = 371
+add_state_core = 368
+add_state_core = 370
+add_state_core = 367
+add_state_core = 365
+add_state_core = 366
+add_state_core = 364
+add_state_core = 363
+add_state_core = 362
 create_country_leader = {
-	name = "Herbert Hoover"
-	desc = "POLITICS_HERBERT_HOOVER_DESC"
-	picture = "gfx/leaders/NEW/Hoover.dds"
+	name = "Leverett Saltonstall"
+	desc = "POLITICS_LEVERETT_SALTONSTALL_DESC"
+	picture = "gfx/leaders/COA/Leverett_Saltonstall.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = fascism_ideology
 	traits = {
-		rearmer
+		warmonger
 	}
 }
