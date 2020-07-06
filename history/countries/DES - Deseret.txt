@@ -2,3 +2,24 @@ capital = 380
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+  name = "Henry H. Blood"
+  desc = ""
+  picture = "Portrait_Deseret_Henry_Blood.dds"
+  expire = "1965.1.1"
+  ideology = despotism
+  traits = {
+    #
+  }
+}

@@ -60,9 +60,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karl Sare"
+	name = "Nikolai Karotamm"
 	desc = "POLITICS_SARE_DESC"
-	picture = "Portrait_Estonia_Karl_Sare.dds"
+	picture = "Portrait_Estonia_Nikolai_Karotamm.dds"
 	expire = "1965.1.1"
 	ideology = trotskyism_type
 	traits = {
