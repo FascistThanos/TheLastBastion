@@ -317,3 +317,9 @@ lar_local_recruitment = {
 		}
 	}
 }
+find_stalin = {
+	icon = decision_category_stalin
+	available = {
+		has_completed_focus = SOV_find_stalin
+	}
+}
