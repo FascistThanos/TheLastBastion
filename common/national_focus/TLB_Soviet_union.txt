@@ -2425,98 +2425,99 @@ prerequisite = {focus = SOV_target_stalin}
 
 
 
-	focus = {
-		id = SOV_search_europe
-		icon = GFX_Generic_Intelligence_Gathering
-		x = -2
-		y = 1
-		relative_position_id = SOV_search_party
-		cost = 5
-		available_if_capitulated = yes
-prerequisite = {focus = SOV_search_party}
-available = {
-NOT = {
-has_global_flag = stalin_found
-}
-}
+#	focus = {
+#		id = SOV_search_europe
+#		icon = GFX_Generic_Intelligence_Gathering
+#		x = -2
+#		y = 1
+#		relative_position_id = SOV_search_party
+#		cost = 5
+#		available_if_capitulated = yes
+#prerequisite = {focus = SOV_search_party}
+#available = {
+#NOT = {
+#has_global_flag = stalin_found
+#}
+#}
 
-		completion_reward = {
-custom_effect_tooltip = SOV_search_europe_tt
-hidden_effect = {
-random_list = {
-50 = {
-country_event = {id = tlbsoviet.1 days = 5}
-}
-50 = {
-country_event = {id = tlbsoviet.4 days = 5}
-}
-}
+#		completion_reward = {
+#custom_effect_tooltip = SOV_search_europe_tt
+#hidden_effect = {
+#random_list = {
+#50 = {
+#country_event = {id = tlbsoviet.1 days = 5}
+#}
+#50 = {
+#country_event = {id = tlbsoviet.4 days = 5}
+#}
+#}
 
-}
-		}
-	}
+#}
+#		}
+#	}
 
-	focus = {
-		id = SOV_search_asia
-		icon = GFX_Generic_Intelligence_Gathering
-		x = 2
-		y = 1
-	relative_position_id = SOV_search_party
-		cost = 5
-		available_if_capitulated = yes
-prerequisite = {focus = SOV_search_party}
-available = {
-NOT = {
-has_global_flag = stalin_found
-}
-}
-		completion_reward = {
-custom_effect_tooltip = SOV_search_asia_tt
-hidden_effect = {
-random_list = {
-50 = {
-country_event = {id = tlbsoviet.2 days = 5}
-}
-50 = {
-country_event = {id = tlbsoviet.4 days = 5}
-}
-}
+#	focus = {
+#		id = SOV_search_asia
+#		icon = GFX_Generic_Intelligence_Gathering
+#		x = 2
+#		y = 1
+#	relative_position_id = SOV_search_party
+#		cost = 5
+#		available_if_capitulated = yes
+#prerequisite = {focus = SOV_search_party}
+#available = {
+#NOT = {
+#has_global_flag = stalin_found
+#}
+#}
+#		completion_reward = {
+#custom_effect_tooltip = SOV_search_asia_tt
+#hidden_effect = {
+#random_list = {
+#50 = {
+#country_event = {id = tlbsoviet.2 days = 5}
+#}
+#50 = {
+#country_event = {id = tlbsoviet.4 days = 5}
+#}
+#}
 
-}
-		}
-	}
-
-	focus = {
-		id = SOV_search_africa
-		icon = GFX_Generic_Intelligence_Gathering
-		x = 0
-		y = 1
-		cost = 5
-relative_position_id = SOV_search_party
-		available_if_capitulated = yes
-prerequisite = {focus = SOV_search_party}
-available = {
-NOT = {
-has_global_flag = stalin_found
-}
-}
-		completion_reward = {
-custom_effect_tooltip = SOV_search_africa_tt
-hidden_effect = {
-	country_event = {id = tlbsoviet.4 days = 5}
-	set_global_flag = stalin_found
-	}
-}
-	}
+#}
+#		}
+#	}
+#
+#	focus = {
+#		id = SOV_search_africa
+#		icon = GFX_Generic_Intelligence_Gathering
+#		x = 0
+#		y = 1
+#		cost = 5
+#relative_position_id = SOV_search_party
+#		available_if_capitulated = yes
+#prerequisite = {focus = SOV_search_party}
+#available = {
+#NOT = {
+#has_global_flag = stalin_found
+#}
+#}
+#		completion_reward = {
+#custom_effect_tooltip = SOV_search_africa_tt
+#hidden_effect = {
+#	country_event = {id = tlbsoviet.4 days = 5}
+#	set_global_flag = stalin_found
+#	}
+#}
+#	}
 
 	focus = {
 		id = SOV_stalin_back
 		icon = GFX_focus_fra_loyalty_stalin
-		x = -1
-		y = 1
+		x = 5
+		y = 3
 		cost = 5
-		relative_position_id = SOV_search_africa
-prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
+		#relative_position_id = SOV_search_africa
+#prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
+prerequisite = {focus = SOV_search_party}
 mutually_exclusive = {focus = SOV_execute_stalin}
 		available_if_capitulated = yes
 ai_will_do = {
@@ -2547,15 +2548,16 @@ elections_allowed = no
 	focus = {
 		id = SOV_execute_stalin
 		icon = GFX_Generic_Machine_Gun02
-		x = 1
-		y = 1
+		x = 7
+		y = 3
 		cost = 5
 		available = {
 		has_global_flag = stalin_found
 		}
 		available_if_capitulated = yes
-		relative_position_id = SOV_search_africa
-prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
+#		relative_position_id = SOV_search_africa
+#prerequisite = {focus=SOV_search_europe focus=SOV_search_asia focus=SOV_search_africa }
+prerequisite = {focus = SOV_search_party}
 mutually_exclusive = {focus = SOV_stalin_back}
 		completion_reward = {
 		add_stability = 0.02
