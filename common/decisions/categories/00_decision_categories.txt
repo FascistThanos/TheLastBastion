@@ -317,3 +317,6 @@ lar_local_recruitment = {
 		}
 	}
 }
+find_stalin = {
+	
+}
