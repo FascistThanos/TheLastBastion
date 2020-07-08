@@ -1,0 +1,18 @@
+state = {
+	id = 983
+	name = "STATE_983"
+
+	history = {
+		owner = PAN
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = PAN
+	}
+
+	provinces={
+		13773 16142 16143 16144
+	}
+	manpower=93200
+	state_category=town
+}

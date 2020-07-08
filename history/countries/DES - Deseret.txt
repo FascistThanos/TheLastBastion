@@ -41,19 +41,31 @@ if = {
 		basic_depth_charges = 1
 	}
 }
-set_popularities = {
-	democratic = 5
-	communism = 5
-	fascism = 10
-	neutrality = 80
-}
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = no
-}
+
 add_state_core = 927
 add_state_core = 379
 add_state_core = 380
 add_state_core = 377
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+  name = "Henry H. Blood"
+  desc = ""
+  picture = "Portrait_Deseret_Henry_Blood.dds"
+  expire = "1965.1.1"
+  ideology = despotism
+  traits = {
+    #
+  }
+}
+
